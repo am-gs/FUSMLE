@@ -270,7 +270,6 @@ if(md==='timed'&&timeLimit>0){
 document.getElementById('timerDisplay').style.display='flex';
 se=timeLimit*60;
 document.getElementById('timer').textContent=timeLimit+':00';
-startTimer();
 }
 document.getElementById('modeText').textContent='USMLE Step 1';
 
@@ -290,7 +289,8 @@ endIdx=999;
 tq=999;
 }
 await hydrateAnswerStats();
-await loadQ(startIdx);
+var initialLoadOk=await loadQ(startIdx);
+if(initialLoadOk&&md==='timed'&&timeLimit>0)startTimer();
 }
 
 async function loadQ(idx){
@@ -306,9 +306,9 @@ document.querySelectorAll('.option-item').forEach(function(e){e.classList.remove
 
 try{
 var r=await fetch(API+'/api/qbank/test/'+ts+'/question/'+idx,{headers:{'Authorization': 'Bearer '+getAuthToken()}});
-if(!r.ok){document.getElementById('loadingState').innerHTML='<p>Error loading item (HTTP '+r.status+')</p>';return}
+if(!r.ok){document.getElementById('loadingState').innerHTML='<p>Error loading item (HTTP '+r.status+')</p>';return false}
 var d=await r.json();
-if(d.error){document.getElementById('loadingState').innerHTML='<p>Error: '+d.error+'</p>';return}
+if(d.error){document.getElementById('loadingState').innerHTML='<p>Error: '+d.error+'</p>';return false}
 var q=d.question;
 qs[idx]=q.id;
 
@@ -356,7 +356,8 @@ document.getElementById('loadingState').style.display='none';
 document.getElementById('questionArea').style.display='block';
 document.getElementById('examMain').scrollTop=0;
 updateScoreCounters();
-}catch(e){document.getElementById('loadingState').innerHTML='<p>Error: '+e.message+'</p>';}
+return true;
+}catch(e){document.getElementById('loadingState').innerHTML='<p>Error: '+e.message+'</p>';return false;}
 }
 
 function updateScoreCounters(){
