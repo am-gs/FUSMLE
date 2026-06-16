@@ -1,0 +1,73 @@
+{
+  "updates": {},
+  "additions": [
+    {
+      "id": "nbme27_page-198",
+      "text": "A 70-year-old man comes to the physician because of a rash for 7 days. Physical examination shows multiple 4- to 6-cm tense bullae filled with clear fluid over the inner aspects of the forearms, lower abdomen, groin, and thighs. Examination of a skin biopsy specimen shows a non-acantholytic blister with separation of the epidermis from the basement membrane. Serologic studies are most likely to show an autoantibody directed against which of the following?",
+      "correct_answer": 4,
+      "explanation": "This patient has bullous pemphigoid: tense bullae in an older adult with a subepidermal, non-acantholytic blister. Bullous pemphigoid is caused by autoantibodies against hemidesmosomal proteins (BP180/BP230) that anchor basal keratinocytes to the basement membrane.",
+      "subject": "Dermatology",
+      "options": [
+        {
+          "id": 1,
+          "text": "Anchoring filaments",
+          "letter": "A"
+        },
+        {
+          "id": 2,
+          "text": "Collagen, type IV",
+          "letter": "B"
+        },
+        {
+          "id": 3,
+          "text": "Desmosomal proteins",
+          "letter": "C"
+        },
+        {
+          "id": 4,
+          "text": "Hemidesmosomal proteins",
+          "letter": "D"
+        },
+        {
+          "id": 5,
+          "text": "Intracellular adhesion molecule-1",
+          "letter": "E"
+        }
+      ]
+    },
+    {
+      "id": "nbme27_page-199",
+      "text": "A 32-year-old man has had generalized band-like headaches and dizziness almost every day for the past 6 months. Physical examination and CT scan of the head show no abnormalities. Which of the following additional findings in this patient is consistent with a diagnosis of hypochondriasis rather than undifferentiated somatoform disorder?",
+      "correct_answer": 1,
+      "explanation": "Hypochondriasis is characterized by disproportionate fear or preoccupation with having a serious illness despite minimal objective findings. Frequent visits, depressive symptoms, chronicity, and a history of unexplained symptoms can occur in several somatoform presentations and are less specific than intense disease fear.",
+      "subject": "Psychiatry",
+      "options": [
+        {
+          "id": 1,
+          "text": "Disproportionate fear of serious disease",
+          "letter": "A"
+        },
+        {
+          "id": 2,
+          "text": "Frequent health care visits",
+          "letter": "B"
+        },
+        {
+          "id": 3,
+          "text": "Past history of unexplained symptoms",
+          "letter": "C"
+        },
+        {
+          "id": 4,
+          "text": "Persistence of symptoms longer than 6 months",
+          "letter": "D"
+        },
+        {
+          "id": 5,
+          "text": "Presence of depressive symptoms",
+          "letter": "E"
+        }
+      ]
+    }
+  ]
+}

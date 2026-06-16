@@ -1,0 +1,650 @@
+<!DOCTYPE html><html lang="en-US"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FUuSMLE | Exam</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script>(function(){var o=window.fetch;window.fetch=function(u,t){if(typeof u=="string"&&u.startsWith("/api/")){u+=(u.includes("?")?"&":"?")+"x-vercel-protection-bypass=aiQnOHnOxAigGfoxw5QLjs4u03EZm0Pg"}}return o.call(this,u,t)}})();</script>
+<style>
+:root{--nbme-navy:#1c5277;--nbme-navy-2:#15466b;--nbme-rail:#e9edf1;--nbme-rail-active:#1c5277;--accent:#1565c0;--correct:#2e7d32;--wrong:#c62828;--ink:#1a1a1a}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:'Open Sans',Arial,sans-serif;background:#fff;color:var(--ink);font-size:16px}
+/* ---- Top toolbar ---- */
+.fred-top{position:fixed;top:0;left:0;right:0;height:54px;background:linear-gradient(180deg,var(--nbme-navy) 0%,var(--nbme-navy-2) 100%);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 14px;z-index:40;box-shadow:0 1px 0 rgba(0,0,0,.25)}
+.fred-top .grp{display:flex;align-items:center;gap:14px}
+.fred-icon-btn{background:none;border:none;color:#fff;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:10px;line-height:1;padding:4px 8px;border-radius:4px}
+.fred-icon-btn i{font-size:16px}
+.fred-icon-btn:hover{background:rgba(255,255,255,.12)}
+.fred-hamburger{background:rgba(255,255,255,.14);border:none;color:#fff;width:34px;height:34px;border-radius:4px;cursor:pointer;font-size:16px}
+.fred-item-id{font-size:13px;font-weight:600;opacity:.95}
+.fred-mark{display:flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;user-select:none}
+.fred-mark i{color:#ff5252;font-size:15px}
+.fred-mark.marked i{color:#ff1744}
+#timerDisplay{display:flex;flex-direction:column;align-items:flex-end;font-size:11px;line-height:1.1;background:rgba(0,0,0,.18);padding:4px 12px;border-radius:5px}
+#timerDisplay #timer{font-size:18px;font-weight:700;letter-spacing:.5px}
+.fred-sep{width:1px;height:30px;background:rgba(255,255,255,.22)}
+/* ---- Shell ---- */
+.fred-shell{position:fixed;top:54px;bottom:46px;left:0;right:0;display:flex;overflow:hidden}
+.fred-rail{width:46px;background:var(--nbme-rail);border-right:1px solid #c9d2da;overflow-y:auto;flex-shrink:0;transition:width .15s}
+.fred-rail.collapsed{width:0;border:none}
+#questionNav{display:flex;flex-direction:column}
+.nav-dot{height:26px;display:flex;align-items:center;justify-content:center;font-size:12px;cursor:pointer;border-bottom:1px solid #d7dde3;color:#33475b;background:var(--nbme-rail)}
+.nav-dot:hover{background:#dde6ee}
+.nav-dot.active{background:var(--nbme-rail-active);color:#fff;font-weight:700}
+.nav-dot.answered{box-shadow:inset 3px 0 0 #2e7d32}
+.nav-dot.correct{box-shadow:inset 3px 0 0 var(--correct)}
+.nav-dot.wrong{box-shadow:inset 3px 0 0 var(--wrong)}
+.fred-main{flex:1;overflow-y:auto;background:#fff;padding:26px 5vw 40px 5vw}
+.fred-main.zoom1{font-size:17px}.fred-main.zoom2{font-size:19px}.fred-main.zoom3{font-size:21px}
+/* reverse color */
+body.reverse .fred-main{background:#1a1a1a;color:#eee}
+body.reverse .question-text,body.reverse .opt-text{color:#eee}
+body.reverse .option-item{background:#262626;border-color:#444}
+body.reverse .option-item:hover{background:#2f3b46}
+/* ---- Question ---- */
+.question-card{max-width:1000px;margin:0 auto}
+.subject-badge{display:none}
+.question-text{font-size:1.02em;line-height:1.65;color:inherit;margin-bottom:22px;white-space:pre-wrap}
+#imageContainer{margin:0 auto 22px auto;text-align:center}
+.nbme-table{border-collapse:collapse;margin:18px auto 20px auto;font-size:1em;line-height:1.35;min-width:55%;white-space:normal}
+.nbme-table caption{font-weight:700;margin-bottom:6px}
+.nbme-table th{font-weight:700;text-align:center;padding:2px 18px 5px 18px;border-bottom:2px solid #333}
+.nbme-table td{padding:3px 18px;text-align:center;vertical-align:top}
+.nbme-table td:first-child,.nbme-table th:first-child{text-align:left}
+.nbme-option-table{width:auto;min-width:70%;margin-left:0}
+.nbme-option-table tbody tr{cursor:pointer}
+.nbme-option-table tbody tr:hover{background:#eef5fc}
+.nbme-option-table tbody tr.selected{background:#d6e8fb}
+/* options box like NBME */
+#optionsContainer{max-width:760px}
+.option-item{padding:9px 14px;border:1px solid #e3e3e3;border-radius:3px;margin-bottom:7px;cursor:pointer;display:flex;align-items:flex-start;gap:12px;transition:background .12s,border-color .12s}
+.option-item:hover{background:#eef5fc;border-color:#9cc3e8}
+.option-item .opt-radio{flex-shrink:0;width:17px;height:17px;border:2px solid #8a98a6;border-radius:50%;margin-top:3px;position:relative}
+.option-item.selected{background:#d6e8fb;border-color:var(--accent)}
+.option-item.selected .opt-radio{border-color:var(--accent)}
+.option-item.selected .opt-radio:after{content:"";position:absolute;inset:2px;border-radius:50%;background:var(--accent)}
+.option-item.correct{background:#e6f4ea;border-color:var(--correct)}
+.option-item.correct .opt-radio{border-color:var(--correct)}.option-item.correct .opt-radio:after{content:"";position:absolute;inset:2px;border-radius:50%;background:var(--correct)}
+.option-item.wrong{background:#fdecea;border-color:var(--wrong)}
+.option-item.wrong .opt-radio{border-color:var(--wrong)}
+.option-letter{font-weight:700;margin-right:2px}
+.opt-text{flex:1}
+.explanation-box{background:#f4f8fc;border-left:4px solid var(--accent);border-radius:4px;padding:18px;margin-top:22px;display:none}
+.explanation-box h5{margin-bottom:8px;font-size:1em}
+.explanation-text{font-size:.95em;line-height:1.7;color:inherit}
+/* ---- Bottom bar ---- */
+.fred-bottom{position:fixed;bottom:0;left:0;right:0;height:46px;background:linear-gradient(180deg,var(--nbme-navy) 0%,var(--nbme-navy-2) 100%);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 14px;z-index:40}
+.fred-bottom .grp{display:flex;align-items:center;gap:6px}
+.bbtn{background:none;border:none;color:#fff;cursor:pointer;font-size:11px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 10px;border-radius:4px}
+.bbtn i{font-size:15px}
+.bbtn:hover{background:rgba(255,255,255,.12)}
+.bbtn.danger{color:#ff8a80}.bbtn.danger:hover{background:rgba(255,82,82,.18)}
+.navbtn{background:#2f6e9b;border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:4px;padding:7px 16px;font-size:13px;font-weight:600;cursor:pointer;margin-left:6px}
+.navbtn:hover{background:#3a82b6}
+.navbtn:disabled{opacity:.4;cursor:default}
+.navbtn.primary{background:#1e88e5;border-color:#1e88e5}
+.navbtn.primary:hover{background:#1565c0}
+/* ---- Loading / complete ---- */
+.loading-state{text-align:center;padding:80px 20px;color:#888}
+#completeState{max-width:1000px;margin:0 auto;text-align:center;padding:50px 20px}
+.review-table{width:100%;border-collapse:collapse;margin-top:18px;background:#fff;text-align:left}
+.review-table th,.review-table td{border-bottom:1px solid #eee;padding:8px;font-size:13px;vertical-align:top}
+.review-table th{background:#f1f5f9;color:#445}
+.review-correct{color:var(--correct);font-weight:600}.review-wrong{color:var(--wrong);font-weight:600}.review-empty{color:#999}
+.review-summary{font-size:15px;margin:0 auto 18px auto;max-width:920px;padding:12px 16px;background:#f1f5f9;border-radius:6px;text-align:center}
+.review-list{text-align:left;max-width:920px;margin:0 auto}
+.rev-card{border:1px solid #e3e8ee;border-radius:8px;padding:16px 18px;margin-bottom:14px;background:#fff}
+.rev-head{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.rev-badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:12px}
+.rev-badge.ok{background:#e6f4ea;color:#2e7d32}
+.rev-badge.bad{background:#fdecea;color:#c62828}
+.rev-badge.omit{background:#eceff1;color:#607d8b}
+.rev-meta{font-size:12px;color:#888}
+.rev-stem{font-size:14px;line-height:1.6;margin-bottom:12px;white-space:pre-wrap;color:#222}
+.rev-img img{max-width:100%;max-height:320px;border:1px solid #ddd;border-radius:4px;margin:6px 0;display:block}
+.rev-opts{margin-bottom:12px}
+.rev-opt{padding:7px 12px;border:1px solid #eee;border-radius:4px;margin-bottom:5px;font-size:14px}
+.rev-opt.correct{background:#e6f4ea;border-color:#2e7d32}
+.rev-opt.chosen-wrong{background:#fdecea;border-color:#c62828}
+.rev-tag{font-size:11px;font-weight:700;padding:1px 7px;border-radius:10px;margin-left:6px;white-space:nowrap}
+.rev-tag.ok{background:#2e7d32;color:#fff}
+.rev-tag.you{background:#1565c0;color:#fff}
+.rev-exp{background:#f4f8fc;border-left:4px solid var(--accent);border-radius:4px;padding:12px 14px;font-size:13px;line-height:1.7;white-space:pre-wrap;color:#333}
+.rev-exp-h{font-weight:700;color:var(--accent);margin-bottom:4px}
+/* ---- Modals ---- */
+.fred-modal{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:60;display:none;align-items:center;justify-content:center}
+.fred-modal.open{display:flex}
+.fred-modal-card{background:#fff;color:#222;border-radius:8px;max-width:680px;width:92%;max-height:80vh;overflow:auto;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.fred-modal-head{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:var(--nbme-navy);color:#fff;position:sticky;top:0}
+.fred-modal-head h5{font-size:15px;font-weight:600}
+.fred-modal-head button{background:none;border:none;color:#fff;font-size:18px;cursor:pointer}
+.fred-modal-body{padding:18px}
+.lab-table{width:100%;border-collapse:collapse;font-size:13px}
+.lab-table th{text-align:left;background:#eef2f6;padding:6px 8px;font-weight:700}
+.lab-table td{padding:5px 8px;border-bottom:1px solid #eee}
+.lab-section{font-weight:700;color:var(--nbme-navy);margin:14px 0 4px}
+/* calculator */
+.calc{width:240px;margin:0 auto}
+.calc-display{background:#10222e;color:#fff;font-size:24px;text-align:right;padding:12px 14px;border-radius:6px;margin-bottom:10px;min-height:48px;word-break:break-all}
+.calc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.calc-grid button{padding:12px 0;font-size:16px;border:1px solid #d4dae0;background:#f6f8fa;border-radius:5px;cursor:pointer}
+.calc-grid button:hover{background:#e9eef3}
+.calc-grid .op{background:#1e88e5;color:#fff;border-color:#1e88e5}
+.calc-grid .eq{background:#2e7d32;color:#fff;border-color:#2e7d32}
+.calc-grid .wide{grid-column:span 2}
+@media(max-width:640px){.fred-main{padding:18px 16px 30px}.fred-icon-btn span{display:none}}
+</style></head><body>
+
+<!-- Top toolbar -->
+<div class="fred-top">
+  <div class="grp">
+    <button class="fred-hamburger" onclick="toggleRail()" title="Item navigation"><i class="fas fa-bars"></i></button>
+    <span class="fred-item-id" id="modeText">Block</span>
+    <span class="fred-item-id" id="blockBadge" style="display:none">Block 1 of 6</span>
+    <div class="fred-sep"></div>
+    <span class="fred-item-id"><span id="questionPosition">Question 1 of 20</span></span>
+    <span class="subject-badge" id="subjectBadge"></span>
+    <div class="fred-mark" id="markToggle" onclick="flagQuestion()"><i class="far fa-flag"></i> Mark</div>
+  </div>
+  <div class="grp">
+    <button class="fred-icon-btn" onclick="toggleReverse()"><i class="fas fa-adjust"></i><span>Reverse Color</span></button>
+    <button class="fred-icon-btn" onclick="cycleZoom()"><i class="fas fa-text-height"></i><span>Text Zoom</span></button>
+    <button class="fred-icon-btn" onclick="openModal('settingsModal')"><i class="fas fa-cog"></i><span>Settings</span></button>
+    <div class="fred-sep"></div>
+    <div id="timerDisplay" style="display:none"><span style="opacity:.8">Block Time Remaining</span><span id="timer">30:00</span></div>
+  </div>
+</div>
+
+<!-- Exam shell -->
+<div class="fred-shell">
+  <div class="fred-rail" id="railWrap"><div id="questionNav"></div></div>
+  <div class="fred-main" id="examMain">
+    <div id="loadingState" class="loading-state"><i class="fas fa-spinner fa-spin fa-2x"></i><p class="mt-2">Loading item…</p></div>
+
+    <div id="questionArea" style="display:none">
+      <div class="question-card">
+        <div class="question-text" id="questionText"></div>
+        <div id="imageContainer"></div>
+        <div id="optionsContainer"></div>
+        <div class="explanation-box" id="explanationBox">
+          <h5 id="explanationHeader" style="font-weight:700;color:var(--correct)"></h5>
+          <div class="explanation-text" id="explanationText"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="completeState" style="display:none">
+      <i class="fas fa-clipboard-check" style="font-size:46px;color:var(--nbme-navy)"></i>
+      <h4 class="mt-3" style="font-weight:300" id="completeTitle">Block Complete</h4>
+      <div id="completeStats" style="font-size:16px;color:#555"></div>
+      <div class="mt-4" id="completeButtons">
+        <button class="navbtn primary" onclick="window.location.href='/createtest'">New Test</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bottom bar -->
+<div class="fred-bottom">
+  <div class="grp">
+    <button class="bbtn" onclick="openModal('labModal')"><i class="fas fa-vial"></i> Lab Values</button>
+    <button class="bbtn" onclick="openModal('calcModal')"><i class="fas fa-calculator"></i> Calculator</button>
+    <button class="bbtn" onclick="openModal('notesModal')"><i class="far fa-sticky-note"></i> Notes</button>
+  </div>
+  <div class="grp">
+    <button class="navbtn" id="prevBtn" onclick="navigateQuestion(-1)"><i class="fas fa-chevron-left"></i> Previous</button>
+    <button class="navbtn primary" id="submitBtn" onclick="submitAnswer()">Submit</button>
+    <button class="navbtn primary" id="nextBtn" style="display:none">Next <i class="fas fa-chevron-right"></i></button>
+    <div class="fred-sep"></div>
+    <button class="bbtn" onclick="suspendBlock()"><i class="fas fa-pause"></i> Suspend</button>
+    <button class="bbtn danger" onclick="endSession()"><i class="fas fa-stop-circle"></i> End Block</button>
+  </div>
+</div>
+
+<!-- Lab Values modal -->
+<div class="fred-modal" id="labModal"><div class="fred-modal-card">
+  <div class="fred-modal-head"><h5><i class="fas fa-vial"></i> Laboratory Reference Values</h5><button onclick="closeModal('labModal')">&times;</button></div>
+  <div class="fred-modal-body" id="labBody"></div>
+</div></div>
+
+<!-- Calculator modal -->
+<div class="fred-modal" id="calcModal"><div class="fred-modal-card" style="max-width:320px">
+  <div class="fred-modal-head"><h5><i class="fas fa-calculator"></i> Calculator</h5><button onclick="closeModal('calcModal')">&times;</button></div>
+  <div class="fred-modal-body"><div class="calc">
+    <div class="calc-display" id="calcDisplay">0</div>
+    <div class="calc-grid">
+      <button onclick="calcClear()">C</button><button onclick="calcDel()">&larr;</button><button onclick="calcInput('%')">%</button><button class="op" onclick="calcInput('/')">&divide;</button>
+      <button onclick="calcInput('7')">7</button><button onclick="calcInput('8')">8</button><button onclick="calcInput('9')">9</button><button class="op" onclick="calcInput('*')">&times;</button>
+      <button onclick="calcInput('4')">4</button><button onclick="calcInput('5')">5</button><button onclick="calcInput('6')">6</button><button class="op" onclick="calcInput('-')">&minus;</button>
+      <button onclick="calcInput('1')">1</button><button onclick="calcInput('2')">2</button><button onclick="calcInput('3')">3</button><button class="op" onclick="calcInput('+')">+</button>
+      <button class="wide" onclick="calcInput('0')">0</button><button onclick="calcInput('.')">.</button><button class="eq" onclick="calcEquals()">=</button>
+    </div>
+  </div></div>
+</div></div>
+
+<!-- Notes modal -->
+<div class="fred-modal" id="notesModal"><div class="fred-modal-card" style="max-width:520px">
+  <div class="fred-modal-head"><h5><i class="far fa-sticky-note"></i> Scratch Notes</h5><button onclick="closeModal('notesModal')">&times;</button></div>
+  <div class="fred-modal-body"><textarea id="notesArea" style="width:100%;height:240px;border:1px solid #d4dae0;border-radius:6px;padding:10px;font-size:14px" placeholder="Notes are kept for this session only…"></textarea></div>
+</div></div>
+
+<!-- Settings modal -->
+<div class="fred-modal" id="settingsModal"><div class="fred-modal-card" style="max-width:380px">
+  <div class="fred-modal-head"><h5><i class="fas fa-cog"></i> Display Settings</h5><button onclick="closeModal('settingsModal')">&times;</button></div>
+  <div class="fred-modal-body">
+    <p style="margin-bottom:12px"><button class="navbtn" onclick="toggleReverse()">Toggle Reverse Color</button></p>
+    <p style="margin-bottom:12px"><button class="navbtn" onclick="cycleZoom()">Cycle Text Size</button></p>
+    <p><button class="navbtn" onclick="toggleRail()">Toggle Item Navigation</button></p>
+  </div>
+</div></div>
+
+<!-- Suspend / break overlay -->
+<div id="suspendOverlay" style="position:fixed;inset:0;background:#0f3a5f;color:#fff;z-index:80;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px">
+  <i class="fas fa-pause-circle" style="font-size:54px;margin-bottom:16px;opacity:.9"></i>
+  <h3 style="font-weight:300;margin-bottom:8px">Block Suspended</h3>
+  <p style="opacity:.85;margin-bottom:22px;max-width:420px">Your timer is paused and your progress is saved. Resume when you're ready to continue the block.</p>
+  <button class="navbtn primary" onclick="resumeBlock()" style="font-size:15px;padding:10px 26px"><i class="fas fa-play"></i> Resume Block</button>
+</div>
+
+<script>
+var API=window.location.origin;
+var ts,md,qs=[],ci=0,tq=0,so=null,sub=false,st=null,ti=null,se=0,cc=0,wc=0,aq=0;
+var blockNum=0,blockSize=0,startIdx=0,endIdx=0,examType='';
+var zoomLevel=0,marks={},suspendStart=0;
+function getAuthToken(){return localStorage.getItem('uworldToken')||''}
+function requireAuth(){if(!getAuthToken()){window.location.href='/index.html';return false}return true}
+
+async function init(){
+if(!requireAuth())return;
+var p=new URLSearchParams(window.location.search);
+ts=p.get('session');md=p.get('mode')||'tutor';
+examType=p.get('exam')||'';
+blockNum=parseInt(p.get('block'))||0;
+var timeLimit=parseInt(p.get('time'))||0;
+
+// Review mode: directly show the solutions for a previously taken exam.
+if(p.get('review')==='1'&&ts){enterReviewMode();return;}
+
+if(md==='timed'&&timeLimit>0){
+document.getElementById('timerDisplay').style.display='flex';
+se=timeLimit*60;
+document.getElementById('timer').textContent=timeLimit+':00';
+startTimer();
+}
+document.getElementById('modeText').textContent='USMLE Step 1';
+
+if(!ts){document.getElementById('loadingState').innerHTML='<p>No test session. <a href="/createtest">Create one</a>.</p>';return}
+
+// Block setup
+if(blockNum>0){
+startIdx=(blockNum-1)*20;
+blockSize=((examType==='free120'||examType==='test1')&&blockNum===6)?19:20;
+endIdx=startIdx+blockSize;
+tq=blockSize;
+document.getElementById('blockBadge').style.display='inline-block';
+document.getElementById('blockBadge').textContent='Block '+blockNum+' of 6';
+}else{
+startIdx=0;
+endIdx=999;
+tq=999;
+}
+await loadQ(startIdx);
+}
+
+async function loadQ(idx){
+so=null;sub=false;ci=idx;st=Date.now();
+var btn=document.getElementById('submitBtn');
+btn.style.display='inline-block';btn.disabled=false;
+btn.innerHTML='Submit';
+document.getElementById('nextBtn').style.display='none';
+document.getElementById('explanationBox').style.display='none';
+document.getElementById('loadingState').style.display='block';
+document.getElementById('questionArea').style.display='none';
+document.querySelectorAll('.option-item').forEach(function(e){e.classList.remove('selected','correct','wrong')});
+
+try{
+var r=await fetch(API+'/api/qbank/test/'+ts+'/question/'+idx,{headers:{'Authorization': 'Bearer '+getAuthToken()}});
+if(!r.ok){document.getElementById('loadingState').innerHTML='<p>Error loading item (HTTP '+r.status+')</p>';return}
+var d=await r.json();
+if(d.error){document.getElementById('loadingState').innerHTML='<p>Error: '+d.error+'</p>';return}
+var q=d.question;
+qs[idx]=q.id;
+
+document.getElementById('subjectBadge').textContent=q.subject||'';
+var pos=idx-startIdx+1;
+document.getElementById('questionPosition').textContent='Question '+pos+' of '+(md==='free120'?'119':tq);
+syncMark();
+
+document.getElementById('questionText').innerHTML=renderQuestionText(q);
+
+// Images
+var ic=document.getElementById('imageContainer');ic.innerHTML='';
+var imageUrls=(q.imageUrls&&q.imageUrls.length?q.imageUrls:(q.image_url?[q.image_url]:[]));
+if(imageUrls.length){
+ic.innerHTML=imageUrls.map(function(u){return '<img src="'+API+u+'" style="max-width:100%;max-height:440px;border:1px solid #ddd;border-radius:4px;margin:8px auto;display:block" onerror="this.style.display=\'none\'">'}).join('');
+}
+
+// Options
+var oc=document.getElementById('optionsContainer');oc.innerHTML='';
+if(q.option_table){
+oc.innerHTML=renderOptionTable(q.option_table);
+document.querySelectorAll('.nbme-option-table tbody tr').forEach(function(row,i){
+row.onclick=function(){selectOption(i)};
+});
+}else{
+(q.options||[]).forEach(function(o,i){
+var div=document.createElement('div');div.className='option-item';div.onclick=function(){selectOption(i)};
+div.innerHTML='<span class="opt-radio"></span><span class="option-letter">'+(o.letter||String.fromCharCode(65+i))+'.</span><span class="opt-text">'+o.text+'</span>';
+oc.appendChild(div);
+});
+}
+
+document.getElementById('prevBtn').disabled=idx<=startIdx;
+
+// Item rail
+var nav=document.getElementById('questionNav');nav.innerHTML='';
+var totalDots=md==='free120'?119:tq;
+for(var i=0;i<totalDots;i++){
+var dot=document.createElement('div');dot.className='nav-dot'+(i+startIdx===idx?' active':'')+(marks[i+startIdx]?' wrong':'');
+dot.textContent=i+1;dot.onclick=function(j){return function(){loadQ(j+startIdx)}}(i);
+nav.appendChild(dot);
+}
+
+document.getElementById('loadingState').style.display='none';
+document.getElementById('questionArea').style.display='block';
+document.getElementById('examMain').scrollTop=0;
+updateScoreCounters();
+}catch(e){document.getElementById('loadingState').innerHTML='<p>Error: '+e.message+'</p>';}
+}
+
+function updateScoreCounters(){
+var correctEl=document.getElementById('correctCount');
+var wrongEl=document.getElementById('wrongCount');
+if(correctEl)correctEl.textContent=cc;
+if(wrongEl)wrongEl.textContent=wc;
+}
+
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function renderTable(t){
+var html='<table class="nbme-table">';
+if(t.title)html+='<caption>'+esc(t.title)+'</caption>';
+html+='<thead><tr>';
+(t.columns||[]).forEach(function(c){html+='<th>'+esc(c)+'</th>'});
+html+='</tr></thead><tbody>';
+(t.rows||[]).forEach(function(r){html+='<tr>';r.forEach(function(c){html+='<td>'+esc(c)+'</td>'});html+='</tr>'});
+html+='</tbody></table>';
+return html;
+}
+function renderQuestionText(q){
+var text=esc(q.text||'');
+(q.tables||[]).forEach(function(t,i){
+text=text.replace('[[table:'+i+']]', renderTable(t));
+});
+return text.replace(/\n/g,'<br>');
+}
+function renderOptionTable(t){
+var html='<table class="nbme-table nbme-option-table"><thead><tr><th></th>';
+(t.columns||[]).forEach(function(c){html+='<th>'+esc(c)+'</th>'});
+html+='</tr></thead><tbody>';
+(t.rows||[]).forEach(function(r){
+html+='<tr class="option-item"><td><span class="option-letter">'+esc(r[0])+'</span></td>';
+r.slice(1).forEach(function(c){html+='<td>'+esc(c)+'</td>'});
+html+='</tr>';
+});
+html+='</tbody></table>';
+return html;
+}
+
+function selectOption(i){
+document.querySelectorAll('.option-item').forEach(function(e,i2){e.classList.toggle('selected',i2===i)});
+so=i;
+}
+
+async function submitAnswer(){
+if(sub||so===null){if(so===null)alert('Select an answer.');return}
+sub=true;var btn=document.getElementById('submitBtn');
+btn.disabled=true;btn.innerHTML='<i class="fas fa-refresh fa-spin"></i> Checking…';
+try{
+var qid=qs[ci];
+if(!qid){alert('Question ID not found. Try reloading.');btn.disabled=false;btn.innerHTML='Submit';sub=false;return}
+var r=await fetch(API+'/api/qbank/test/'+ts+'/submit',{method:'POST',headers:{'Content-Type':'application/json','Authorization': 'Bearer '+getAuthToken()},body:JSON.stringify({questionId:qid,selectedOption:so+1,timeSpent:Math.round((Date.now()-st)/1000)})});
+if(!r.ok){throw new Error('HTTP '+r.status)}
+var d=await r.json();
+if(d.error){throw new Error(d.error)}
+
+var ca=d.correctAnswer;
+aq++; // answered count
+
+// TIMED MODE: no feedback, auto-advance, no explanation shown
+if(md==='timed'){
+if(d.correct)cc++;else wc++;
+updateScoreCounters();
+if(ci>=endIdx-1){
+btn.style.display='none';
+document.getElementById('nextBtn').style.display='inline-block';
+document.getElementById('nextBtn').innerHTML='<i class="fas fa-flag-checkered"></i> End Block';
+document.getElementById('nextBtn').onclick=function(){showBlockResults()};
+}else{
+navigateQuestion(1);
+}
+return;
+}
+
+// TUTOR MODE: show correct/incorrect + explanation
+document.querySelectorAll('.option-item').forEach(function(el,i){
+if(i+1===ca)el.classList.add('correct');
+else if(i===so&&!d.correct)el.classList.add('wrong');
+});
+var eh=document.getElementById('explanationHeader');
+if(d.correct){eh.textContent='Correct';eh.style.color='var(--correct)';cc++}
+else{eh.textContent='Incorrect — correct answer: '+String.fromCharCode(64+ca);eh.style.color='var(--wrong)';wc++}
+document.getElementById('explanationText').innerHTML=d.explanation||'No explanation.';
+document.getElementById('explanationBox').style.display='block';btn.style.display='none';
+
+updateScoreCounters();
+
+if(ci>=endIdx-1){
+document.getElementById('nextBtn').style.display='inline-block';
+document.getElementById('nextBtn').innerHTML='<i class="fas fa-flag-checkered"></i> End Block';
+document.getElementById('nextBtn').onclick=function(){showBlockResults()};
+}else{
+document.getElementById('nextBtn').style.display='inline-block';
+document.getElementById('nextBtn').innerHTML='Next <i class="fas fa-chevron-right"></i>';
+document.getElementById('nextBtn').onclick=function(){navigateQuestion(1)};
+}
+}catch(e){
+alert('Error: '+e.message);
+btn.disabled=false;
+btn.innerHTML='Submit';
+sub=false;
+}
+}
+
+function navigateQuestion(d){
+var ni=ci+d;
+if(ni<startIdx||ni>=endIdx)return;
+loadQ(ni);
+}
+
+function flagQuestion(){marks[ci]=!marks[ci];syncMark();var dots=document.querySelectorAll('#questionNav .nav-dot');var ri=ci-startIdx;if(dots[ri])dots[ri].classList.toggle('wrong',!!marks[ci]);}
+function syncMark(){var m=document.getElementById('markToggle');if(m)m.classList.toggle('marked',!!marks[ci]);}
+
+function showBlockResults(){
+if(ti)clearInterval(ti);
+var total=cc+wc;
+var pct=total>0?Math.round(cc/total*100):0;
+var unanswered=tq-aq;
+document.getElementById('questionArea').style.display='none';
+document.getElementById('completeState').style.display='block';
+
+if(blockNum>0&&blockNum<6){
+document.getElementById('completeTitle').textContent='Block '+blockNum+' Complete';
+document.getElementById('completeStats').innerHTML=
+'Correct: <strong>'+cc+'</strong> &middot; Wrong: <strong>'+wc+'</strong> &middot; Score: <strong>'+pct+'%</strong><br>'+
+'Unanswered: '+unanswered+' of '+tq;
+var btns=document.getElementById('completeButtons');btns.innerHTML='';
+var nextExamParam=examType==='free120'?'&exam=free120':(examType==='test1'?'&exam=test1':'');
+btns.innerHTML+='<button class="navbtn primary" onclick="window.location.href=\'/qbank.html?session='+ts+'&block='+(blockNum+1)+'&mode=timed&time=30'+nextExamParam+'\'" style="margin-right:10px">Start Block '+(blockNum+1)+'</button> ';
+btns.innerHTML+='<button class="navbtn" onclick="window.location.href=\'/createtest\'">New Test</button>';
+}else{
+showExamReview();
+var btns=document.getElementById('completeButtons');btns.innerHTML='';
+btns.innerHTML+='<button class="navbtn primary" onclick="window.location.href=\'/createtest\'">New Test</button>';
+}
+}
+
+async function showExamReview(){
+document.getElementById('completeStats').innerHTML='Loading full exam review…';
+try{
+var r=await fetch(API+'/api/qbank/test/'+ts+'/review',{headers:{'Authorization':'Bearer '+getAuthToken()}});
+if(!r.ok)throw new Error('HTTP '+r.status);
+var d=await r.json();
+document.getElementById('completeTitle').textContent=d.mode==='free120'?'Sample Exam Review':(d.mode==='nbme120'?'NBME 120 Review':'Test Review');
+var reviewRows=d.rows||[];
+var correct=reviewRows.filter(function(row){return isCorrectValue(row.isCorrect)}).length;
+var wrong=reviewRows.filter(function(row){return isWrongValue(row.isCorrect)}).length;
+var answered=correct+wrong;
+var pct=answered>0?Math.round(correct/answered*100):0;
+var html='<div class="review-summary">Answered <strong>'+answered+'</strong> of <strong>'+reviewRows.length+'</strong> &middot; Correct <strong>'+correct+'</strong> &middot; Wrong <strong>'+wrong+'</strong> &middot; Score <strong>'+pct+'%</strong><br><span style="font-size:12px;color:#777">Review every item with the correct answer and full explanation below.</span></div>';
+html+='<div class="review-list">';
+reviewRows.forEach(function(row,i){html+=renderSolutionCard(row,i);});
+html+='</div>';
+document.getElementById('completeStats').innerHTML=html;
+}catch(e){
+document.getElementById('completeStats').innerHTML='Exam complete, but review failed to load: '+e.message;
+}
+}
+
+function renderSolutionCard(row,i){
+var ok=isCorrectValue(row.isCorrect);
+var wrongAns=isWrongValue(row.isCorrect);
+var badge=ok?'<span class="rev-badge ok">Correct</span>':(wrongAns?'<span class="rev-badge bad">Incorrect</span>':'<span class="rev-badge omit">Omitted</span>');
+var blockLbl=row.block?('Block '+row.block+' &middot; Item '+row.blockQuestion):('Item '+(i+1));
+var h='<div class="rev-card">';
+h+='<div class="rev-head">'+badge+'<span class="rev-meta">'+blockLbl+(row.subject?(' &middot; '+esc(row.subject)):'')+'</span></div>';
+h+='<div class="rev-stem">'+renderQuestionText({text:row.text||'',tables:row.tables||[]})+'</div>';
+var imgs=(row.imageUrls&&row.imageUrls.length)?row.imageUrls:[];
+if(imgs.length){h+='<div class="rev-img">'+imgs.map(function(u){return '<img src="'+API+u+'" onerror="this.style.display=\'none\'">'}).join('')+'</div>';}
+if(row.optionTable){
+h+=renderOptionTable(row.optionTable);
+var rws=(row.optionTable.rows)||[];
+var corL=(row.correctAnswer&&rws[row.correctAnswer-1])?rws[row.correctAnswer-1][0]:row.correctAnswer;
+h+='<div class="rev-opts"><div class="rev-opt correct"><span class="option-letter">'+esc(String(corL))+'.</span> <span class="rev-tag ok">Correct answer</span></div>';
+if(row.selectedOption){
+var selL=rws[row.selectedOption-1]?rws[row.selectedOption-1][0]:row.selectedOption;
+var sc=(row.selectedOption===row.correctAnswer)?'rev-opt correct':'rev-opt chosen-wrong';
+h+='<div class="'+sc+'"><span class="option-letter">'+esc(String(selL))+'.</span> <span class="rev-tag you">Your answer</span></div>';
+}else{
+h+='<div class="rev-opt"><span class="rev-tag you">Your answer</span> Omitted</div>';
+}
+h+='</div>';
+}else if(row.options&&row.options.length){
+h+='<div class="rev-opts">';
+row.options.forEach(function(o,idx){
+var letter=o.letter||String.fromCharCode(65+idx);
+var cls='rev-opt';
+if(idx+1===row.correctAnswer)cls+=' correct';
+if(row.selectedOption&&idx+1===row.selectedOption&&idx+1!==row.correctAnswer)cls+=' chosen-wrong';
+var tag='';
+if(idx+1===row.correctAnswer)tag+=' <span class="rev-tag ok">Correct answer</span>';
+if(row.selectedOption&&idx+1===row.selectedOption)tag+=' <span class="rev-tag you">Your answer</span>';
+h+='<div class="'+cls+'"><span class="option-letter">'+esc(letter)+'.</span> '+esc(o.text||'')+tag+'</div>';
+});
+h+='</div>';
+}
+h+='<div class="rev-exp"><div class="rev-exp-h">Explanation</div>'+(row.explanation?esc(row.explanation):'No explanation available.')+'</div>';
+h+='</div>';
+return h;
+}
+
+function isCorrectValue(value){return value===true||value===1||value==='1'}
+function isWrongValue(value){return value===false||value===0||value==='0'}
+
+function enterReviewMode(){
+var bottom=document.querySelector('.fred-bottom');if(bottom)bottom.style.display='none';
+var rail=document.getElementById('railWrap');if(rail)rail.style.display='none';
+document.getElementById('timerDisplay').style.display='none';
+document.getElementById('modeText').textContent='Exam Review';
+var bb=document.getElementById('blockBadge');if(bb)bb.style.display='none';
+document.getElementById('questionPosition').textContent='Results';
+document.getElementById('loadingState').style.display='none';
+document.getElementById('questionArea').style.display='none';
+document.getElementById('completeState').style.display='block';
+document.getElementById('completeButtons').innerHTML='<button class="navbtn primary" onclick="window.location.href=\'/history\'">Back to History</button> <button class="navbtn" onclick="window.location.href=\'/createtest\'">New Test</button>';
+showExamReview();
+}
+
+function endSession(){
+if(!confirm('End this block? Your answered items will be scored.'))return;
+if(ti)clearInterval(ti);
+showBlockResults();
+}
+
+function startTimer(){
+if(ti)clearInterval(ti);
+ti=setInterval(function(){
+se--;
+var m=Math.floor(se/60),s=se%60;
+document.getElementById('timer').textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+if(se<=0){clearInterval(ti);ti=null;showBlockResults()}
+},1000);
+}
+function suspendBlock(){
+if(ti){clearInterval(ti);ti=null;}
+suspendStart=Date.now();
+document.getElementById('suspendOverlay').style.display='flex';
+}
+function resumeBlock(){
+document.getElementById('suspendOverlay').style.display='none';
+// Exclude the paused break from the current item's active time.
+if(suspendStart){st+=(Date.now()-suspendStart);suspendStart=0;}
+// Only resume the countdown while an active item is shown (not after completion).
+if(md==='timed'&&se>0&&document.getElementById('completeState').style.display==='none')startTimer();
+}
+
+/* ---- Tools ---- */
+function toggleRail(){document.getElementById('railWrap').classList.toggle('collapsed');}
+function toggleReverse(){document.body.classList.toggle('reverse');}
+function cycleZoom(){var m=document.getElementById('examMain');m.classList.remove('zoom1','zoom2','zoom3');zoomLevel=(zoomLevel+1)%4;if(zoomLevel>0)m.classList.add('zoom'+zoomLevel);}
+function openModal(id){document.getElementById(id).classList.add('open');if(id==='labModal')renderLabValues();}
+function closeModal(id){document.getElementById(id).classList.remove('open');}
+document.addEventListener('click',function(e){if(e.target.classList&&e.target.classList.contains('fred-modal'))e.target.classList.remove('open');});
+
+/* Calculator */
+var calcExpr='';
+function calcRender(){document.getElementById('calcDisplay').textContent=calcExpr||'0';}
+function calcInput(v){calcExpr+=v;calcRender();}
+function calcClear(){calcExpr='';calcRender();}
+function calcDel(){calcExpr=calcExpr.slice(0,-1);calcRender();}
+function calcEquals(){try{var safe=calcExpr.replace(/[^0-9+\-*/.%() ]/g,'');var r=Function('"use strict";return ('+safe.replace(/%/g,'/100')+')')();calcExpr=String(parseFloat(r.toFixed(6)));}catch(e){calcExpr='Error';}calcRender();}
+
+/* Lab values reference */
+function renderLabValues(){
+var b=document.getElementById('labBody');if(b.dataset.done)return;
+var data=[
+['Serum Chemistry',[
+['Sodium','136–146 mEq/L'],['Potassium','3.5–5.0 mEq/L'],['Chloride','95–105 mEq/L'],
+['Bicarbonate','22–28 mEq/L'],['BUN','7–18 mg/dL'],['Creatinine','0.6–1.2 mg/dL'],
+['Glucose (fasting)','70–100 mg/dL'],['Calcium','8.4–10.2 mg/dL'],['Magnesium','1.5–2.0 mEq/L']]],
+['Liver / Pancreas',[
+['AST','8–20 U/L'],['ALT','8–20 U/L'],['Alkaline phosphatase','20–70 U/L'],
+['Bilirubin, total','0.1–1.0 mg/dL'],['Albumin','3.5–5.5 g/dL'],['Amylase','25–125 U/L']]],
+['Hematologic',[
+['Hemoglobin (M)','13.5–17.5 g/dL'],['Hemoglobin (F)','12.0–16.0 g/dL'],['Hematocrit (M)','41–53%'],
+['Leukocytes','4,500–11,000/mm³'],['Platelets','150,000–400,000/mm³'],['MCV','80–100 µm³'],
+['PT','11–15 sec'],['PTT','25–40 sec']]],
+['Endocrine / Other',[
+['TSH','0.4–4.0 µU/mL'],['Cortisol (AM)','5–23 µg/dL'],['HbA1c','<5.7%'],
+['Cholesterol, total','<200 mg/dL'],['Triglycerides','<150 mg/dL'],['CSF glucose','40–70 mg/dL']]]
+];
+var html='';
+data.forEach(function(sec){
+html+='<div class="lab-section">'+sec[0]+'</div><table class="lab-table"><tbody>';
+sec[1].forEach(function(r){html+='<tr><td>'+r[0]+'</td><td style="text-align:right;white-space:nowrap">'+r[1]+'</td></tr>';});
+html+='</tbody></table>';
+});
+b.innerHTML=html;b.dataset.done='1';
+}
+
+init();
+</script></body></html>

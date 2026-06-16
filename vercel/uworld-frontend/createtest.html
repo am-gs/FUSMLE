@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Test - FUuSMLE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/mainapp.css">
+    <style>
+        .create-test-container { display: flex; flex-wrap: wrap; gap: 30px; }
+        .left-sidebar { flex: 1; min-width: 280px; }
+        .right-panel { flex: 2; min-width: 300px; }
+        .question-count-controls { display: flex; align-items: center; margin: 20px 0; }
+        .question-count-controls input { width: 80px; text-align: center; margin: 0 10px; }
+        .subject-list-container { max-height: 500px; overflow-y: auto; border: 1px solid #e7eaec; border-radius: 6px; padding: 15px; }
+        .subject-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .subject-header h5 { margin-bottom: 0; }
+        .subject-checkbox { margin-right: 10px; }
+        .subject-item { padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
+        .subject-item:last-child { border-bottom: none; }
+        .systems-section { margin-top: 25px; }
+        .system-collapse-header { background: #f8f9fa; padding: 12px 15px; border-radius: 6px; cursor: pointer; margin-bottom: 10px; }
+        .system-collapse-header h6 { margin-bottom: 0; display: flex; justify-content: space-between; }
+        .status-bar { background: #fff; border: 1px solid #e7eaec; border-radius: 6px; padding: 15px; margin-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .status-item { text-align: center; padding: 0 15px; }
+        .status-circle { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+        .unused .status-circle { background: var(--unused-gray); }
+        .incorrect .status-circle { background: var(--incorrect-red); }
+        .marked .status-circle { background: var(--btn-yellow); }
+        .omitted .status-circle { background: var(--omitted-blue); }
+        .correct .status-circle { background: var(--success-green); }
+        .generate-btn { margin-top: 25px; }
+         .nbme-simulation-btn { background: linear-gradient(135deg, #1e88e5, #1565c0); color: white; border: none; padding: 15px; border-radius: 8px; text-align: center; cursor: pointer; margin-top: 20px; transition: all 0.3s; }
+         .nbme-simulation-btn:hover { background: linear-gradient(135deg, #1565c0, #0d47a1); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+         .nbme-simulation-btn i { font-size: 1.2em; margin-right: 10px; }
+         .nbme-blocks-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 20px; }
+         .nbme-block { background: #f8f9fa; border: 2px solid #e7eaec; border-radius: 8px; padding: 15px; cursor: pointer; transition: all 0.2s; }
+         .nbme-block:hover { border-color: #1e88e5; background: #e3f2fd; }
+         .nbme-block-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+         .nbme-block-title { font-weight: bold; color: #1565c0; }
+         .nbme-block-stats { font-size: 0.9em; color: #666; }
+         .nbme-block-time { font-size: 0.85em; color: #1e88e5; font-weight: bold; }
+         .nbme-block-subjects { font-size: 0.8em; color: #777; margin-top: 5px; }
+         .nbme-loading { text-align: center; padding: 30px; }
+         .nbme-loading-spinner { border: 4px solid #f3f3f3; border-top: 4px solid #1e88e5; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 0 auto 15px; }
+         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        </style>
+<script>(function(){var o=window.fetch;window.fetch=function(u,t){if(typeof u=="string"&&u.startsWith("/api/")){u+=(u.includes("?")?"&":"?")+"x-vercel-protection-bypass=aiQnOHnOxAigGfoxw5QLjs4u03EZm0Pg"}}return o.call(this,u,t)}})();</script></head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-uworld navbar-expand">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/120x28/ffffff?text=FUuSMLE" alt="FUuSMLE Logo" height="28">
+            </a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li class="nav-item">
+                        <span class="user-name"><i class="fas fa-user-circle"></i> <span id="currentUserName">Student</span></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar-uworld">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="createtest.html">
+                    <i class="fas fa-plus-circle"></i> Create Test
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="qbank.html">
+                    <i class="fas fa-book"></i> QBank
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="history.html">
+                    <i class="fas fa-history"></i> My Results
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="performance.html">
+                    <i class="fas fa-chart-line"></i> Performance
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="settings.html">
+                    <i class="fas fa-cog"></i> Settings
+                </a>
+            </li>
+            <li class="nav-item mt-4">
+                <a class="nav-link" href="index.html" id="logoutLink">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h3 class="mb-4"><i class="fas fa-plus-circle"></i> Create New Test</h3>
+        <p class="text-muted mb-4">Select test settings and subjects to generate a custom practice test.</p>
+
+        <div class="create-test-container">
+            <!-- Left Sidebar -->
+            <div class="left-sidebar">
+                <div class="create-test-sidebar">
+                    <h5><i class="fas fa-cogs"></i> Test Settings</h5>
+                    <div class="mb-4">
+                        <label class="d-block mb-2"><strong>Test Mode</strong></label>
+                        <div class="test-mode-btn active" data-mode="tutor">
+                            <div class="mode-icon"><i class="fas fa-user-graduate"></i></div>
+                            <div>
+                                <div class="mode-label">Tutor Mode</div>
+                                <div class="mode-desc">See answers and explanations as you go</div>
+                            </div>
+                        </div>
+                        <div class="test-mode-btn" data-mode="timed">
+                            <div class="mode-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <div class="mode-label">Timed Mode</div>
+                                <div class="mode-desc">Simulate exam conditions with a timer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="d-block mb-2"><strong>Question Mode</strong></label>
+                        <div class="test-mode-btn active" data-qmode="standard">
+                            <div class="mode-icon"><i class="fas fa-th-list"></i></div>
+                            <div>
+                                <div class="mode-label">Standard</div>
+                                <div class="mode-desc">Questions from all selected subjects</div>
+                            </div>
+                        </div>
+                        <div class="test-mode-btn" data-qmode="custom">
+                            <div class="mode-icon"><i class="fas fa-sliders-h"></i></div>
+                            <div>
+                                <div class="mode-label">Custom</div>
+                                <div class="mode-desc">Choose specific question types</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="d-block mb-2"><strong>Number of Questions</strong></label>
+                        <div class="question-count-controls">
+                            <button class="btn btn-outline-secondary btn-sm" id="decreaseQ">-</button>
+                            <input type="number" id="questionCount" min="1" max="200" value="40">
+                            <button class="btn btn-outline-secondary btn-sm" id="increaseQ">+</button>
+                        </div>
+                        <small class="text-muted">Max 200 questions per test.</small>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="d-block mb-2"><strong>Test Duration (Timed Mode)</strong></label>
+                        <div class="d-flex align-items-center">
+                            <input type="number" id="hours" min="0" max="8" class="form-control mr-2" style="width:70px" value="1"> hrs
+                            <input type="number" id="minutes" min="0" max="59" class="form-control mx-2" style="width:70px" value="0"> mins
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="d-block mb-2"><strong>Question Sorting</strong></label>
+                        <select class="form-control form-control-sm">
+                            <option>Random</option>
+                            <option>By Subject</option>
+                            <option>By Difficulty</option>
+                            <option>By Unused First</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="includeMarked">
+                            <label class="form-check-label" for="includeMarked">Include previously marked questions</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="includeIncorrect">
+                            <label class="form-check-label" for="includeIncorrect">Include previously incorrect questions</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="shuffleOptions">
+                            <label class="form-check-label" for="shuffleOptions">Shuffle answer options</label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="d-block mb-2"><strong>Exam Simulation</strong></label>
+                        <button class="nbme-simulation-btn btn-block" id="generateTest1Btn" onclick="startTest1()" style="background: linear-gradient(135deg, #2e7d32, #1b5e20);">
+                            <i class="fas fa-flag-checkered"></i> TEST 1
+                        </button>
+                        <small class="text-muted d-block mt-2">Official NBME April 2026 Step 1 sample &middot; 119 questions &middot; 6 blocks &middot; 30 min/block &middot; timed</small>
+                        <button class="nbme-simulation-btn btn-block mt-3" id="generateNBME120Btn" onclick="startNBME120()">
+                            <i class="fas fa-dna"></i> 🧬 NBME 120 Exam Simulation
+                        </button>
+                        <small class="text-muted d-block mt-2">Generate 6 blocks of 20 questions each (30 min per block)</small>
+                        <button class="nbme-simulation-btn btn-block mt-3" id="generateFree120Btn" onclick="startFree120()">
+                            <i class="fas fa-file-medical"></i> Step 1 Sample Exam
+                        </button>
+                        <small class="text-muted d-block mt-2">Full-length 120-question sample exam &middot; 6 blocks &middot; 30 minutes each</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="right-panel">
+                <div class="subject-list-container">
+                    <div class="subject-header">
+                        <h5><i class="fas fa-book-medical"></i> Subjects</h5>
+                        <div>
+                            <button class="btn btn-sm btn-outline-primary mr-2" id="selectAll">Select All</button>
+                            <button class="btn btn-sm btn-outline-secondary" id="deselectAll">Deselect All</button>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-3">Select subjects to include in your test. Numbers indicate available questions.</p>
+
+                    <div id="subjectList">
+                        <!-- Subjects will be populated by JavaScript -->
+                    </div>
+
+                    <div class="systems-section">
+                        <div class="system-collapse-header" data-toggle="collapse" data-target="#systemsCollapse">
+                            <h6><i class="fas fa-caret-down"></i> Systems <span class="badge badge-secondary">Expand</span></h6>
+                        </div>
+                        <div class="collapse" id="systemsCollapse">
+                            <div class="p-3 border rounded">
+                                <p class="small text-muted">Select specific organ systems within subjects (e.g., Cardiovascular within Physiology).</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="sysCardio">
+                                            <label class="form-check-label" for="sysCardio">Cardiovascular</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="sysResp">
+                                            <label class="form-check-label" for="sysResp">Respiratory</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="sysRenal">
+                                            <label class="form-check-label" for="sysRenal">Renal</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="sysGI">
+                                            <label class="form-check-label" for="sysGI">Gastrointestinal</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="sysNeuro">
+                                            <label class="form-check-label" for="sysNeuro">Neurology</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="sysEndo">
+                                            <label class="form-check-label" for="sysEndo">Endocrine</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="sysMusculo">
+                                            <label class="form-check-label" for="sysMusculo">Musculoskeletal</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="sysHeme">
+                                            <label class="form-check-label" for="sysHeme">Hematology</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NBME 120 Simulation Results -->
+                <div id="nbmeSimulationResults" style="display: none;">
+                    <div class="subject-list-container">
+                        <div class="subject-header">
+                            <h5><i class="fas fa-dna"></i> NBME 120 Exam Simulation</h5>
+                            <button class="btn btn-sm btn-outline-secondary" id="backToSubjects">Back to Subjects</button>
+                        </div>
+                        <div class="nbme-loading" id="nbmeLoading">
+                            <div class="nbme-loading-spinner"></div>
+                            <p>Generating NBME 120 exam simulation...</p>
+                            <p class="small text-muted">Creating 6 blocks of 20 questions each</p>
+                        </div>
+                        <div id="nbmeBlocks" style="display: none;">
+                            <p class="mb-3">Click a block to start. Each block has 20 questions with a 30-minute timer.</p>
+                            <div class="nbme-blocks-container" id="nbmeBlocksContainer">
+                                <!-- blocks will be populated here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Status Bar -->
+                <div class="status-bar">
+                    <div class="status-item">
+                        <div class="unused">
+                            <span class="status-circle"></span> <strong id="unusedCount">1250</strong> Unused
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <div class="incorrect">
+                            <span class="status-circle"></span> <strong id="incorrectCount">45</strong> Incorrect
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <div class="marked">
+                            <span class="status-circle"></span> <strong id="markedCount">12</strong> Marked
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <div class="omitted">
+                            <span class="status-circle"></span> <strong id="omittedCount">8</strong> Omitted
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <div class="correct">
+                            <span class="status-circle"></span> <strong id="correctCount">890</strong> Correct
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generate Button -->
+                <div class="generate-btn">
+                    <button class="btn btn-uworld btn-lg btn-block" id="generateTestBtn">
+                        <i class="fas fa-bolt"></i> GENERATE TEST
+                    </button>
+                    <p class="text-center mt-2 small text-muted">Estimated time: 2 minutes for 40 questions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	    <script>
+            function getAuthToken(){return localStorage.getItem('uworldToken')||''}
+            function requireAuth(){if(!getAuthToken()){window.location.href='/index.html';return false}return true}
+            function authHeaders(extra){return Object.assign(extra||{}, {'Authorization': 'Bearer '+getAuthToken()})}
+	        $(document).ready(function() {
+	            if(!requireAuth())return;
+	            try{var user=JSON.parse(localStorage.getItem('uworldUser')||'{}');if(user.name||user.email)$('#currentUserName').text(user.name||user.email)}catch(e){}
+	            
+
+            // Logout handler
+            $('#logoutLink').click(function(e) {
+                e.preventDefault();
+                var token = getAuthToken();
+                localStorage.removeItem('uworldToken');
+                localStorage.removeItem('uworldUser');
+                function done(){ window.location.href='/index.html'; }
+                fetch('/api/logout', {method:'POST', headers:{'Authorization':'Bearer '+token}, keepalive:true}).then(done, done);
+            });
+
+            // Load subject counts from API
+            fetch('/api/qbank/info', {
+                headers: authHeaders()
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data && data.subjects) {
+                    const subjectList = $('#subjectList').empty();
+                    Object.entries(data.subjects).forEach(([name, count]) => {
+                        const id = 'subj-' + name.replace(/[^a-zA-Z0-9]/g, '-');
+                        subjectList.append(`
+                            <div class="subject-item">
+                                <div class="form-check">
+                                    <input class="form-check-input subject-checkbox" type="checkbox" id="${id}" checked>
+                                    <label class="form-check-label d-flex justify-content-between" for="${id}">
+                                        <span>${name}</span>
+                                        <span class="text-muted">${count} questions</span>
+                                    </label>
+                                </div>
+                            </div>
+                        `);
+                    });
+                }
+            })
+            .catch(() => {
+                // Use hardcoded fallback if API fails
+                const subjects = [
+                    { name: 'Anatomy', count: 320 }, { name: 'Behavioral science', count: 180 },
+                    { name: 'Biochemistry', count: 250 }, { name: 'Biostatistics', count: 120 },
+                    { name: 'Embryology', count: 90 }, { name: 'Genetics', count: 110 },
+                    { name: 'Histology', count: 85 }, { name: 'Immunology', count: 140 },
+                    { name: 'Microbiology', count: 300 }, { name: 'Pathology', count: 400 },
+                    { name: 'Pathophysiology', count: 380 }, { name: 'Pharmacology', count: 350 },
+                    { name: 'Physiology', count: 320 }
+                ];
+                const subjectList = $('#subjectList').empty();
+                subjects.forEach(subject => {
+                    const id = 'subj-' + subject.name.replace(/[^a-zA-Z0-9]/g, '-');
+                    subjectList.append(`
+                        <div class="subject-item">
+                            <div class="form-check">
+                                <input class="form-check-input subject-checkbox" type="checkbox" id="${id}" checked>
+                                <label class="form-check-label d-flex justify-content-between" for="${id}">
+                                    <span>${subject.name}</span>
+                                    <span class="text-muted">${subject.count} questions</span>
+                                </label>
+                            </div>
+                        </div>
+                    `);
+                });
+            });
+
+            // Test mode buttons
+            $('.test-mode-btn').click(function() {
+                const parent = $(this).parent();
+                parent.find('.test-mode-btn').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // Question count controls
+            $('#increaseQ').click(function() {
+                const input = $('#questionCount');
+                let val = parseInt(input.val()) || 40;
+                if (val < 200) val++;
+                input.val(val);
+            });
+            $('#decreaseQ').click(function() {
+                const input = $('#questionCount');
+                let val = parseInt(input.val()) || 40;
+                if (val > 1) val--;
+                input.val(val);
+            });
+
+            // Select all / deselect all subjects
+            $('#selectAll').click(function() {
+                $('.subject-checkbox').prop('checked', true);
+            });
+            $('#deselectAll').click(function() {
+                $('.subject-checkbox').prop('checked', false);
+            });
+
+            // Generate test button
+            $('#generateTestBtn').click(function() {
+                const selectedSubjects = [];
+                $('.subject-checkbox:checked').each(function() {
+                    selectedSubjects.push($(this).next().find('span:first').text());
+                });
+                if (selectedSubjects.length === 0) {
+                    alert('Please select at least one subject.');
+                    return;
+                }
+                const testMode = $('.test-mode-btn[data-mode].active').data('mode');
+                const questionMode = $('.test-mode-btn[data-qmode].active').data('qmode');
+                const questionCount = $('#questionCount').val();
+                // Generate test via API
+	                fetch('/api/qbank/generate-test', {
+	                    method: 'POST',
+	                    headers: {
+	                        'Content-Type': 'application/json',
+	                        'Authorization': 'Bearer '+getAuthToken()
+	                    },
+                    body: JSON.stringify({
+                        subjects: selectedSubjects,
+                        mode: testMode || 'tutor',
+                        totalQuestions: parseInt(questionCount) || 40
+                    })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.testSessionId) {
+                        alert('Test generated! Redirecting to test page...');
+                        window.location.href = 'qbank.html?session=' + data.testSessionId;
+                    } else {
+                        alert('Error: ' + (data.error || 'Failed to generate test'));
+                    }
+                })
+                .catch(err => {
+                    alert('Network error. Please try again.');
+                });
+            });
+
+            // TEST 1 — official NBME April 2026 sample, fixed 119 items, timed
+            window.startTest1 = function() {
+                var btn = document.getElementById('generateTest1Btn');
+                var label = '<i class="fas fa-flag-checkered"></i> TEST 1';
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading TEST 1\u2026';
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/api/qbank/generate-test1', true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.setRequestHeader('Authorization', 'Bearer '+getAuthToken());
+                xhr.onload = function() {
+                    try {
+                        var data = JSON.parse(xhr.responseText);
+                        if (data.testSessionId && data.blocks && data.blocks.length > 0) {
+                            window.location.replace('/qbank.html?session=' + data.testSessionId + '&block=1&mode=timed&time=30&exam=test1');
+                        } else {
+                            alert('Error: ' + (data.error || 'Failed to start TEST 1'));
+                            btn.disabled = false; btn.innerHTML = label;
+                        }
+                    } catch(e) { alert('Parse error'); btn.disabled = false; btn.innerHTML = label; }
+                };
+                xhr.onerror = function() { alert('Network error'); btn.disabled = false; btn.innerHTML = label; };
+                xhr.send('{}');
+            };
+
+            // NBME 120 — also define as global function for onclick
+            window.startNBME120 = function() {
+                var btn = document.getElementById('generateNBME120Btn');
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating...';
+                
+	                var xhr = new XMLHttpRequest();
+	                xhr.open('POST', '/api/qbank/generate-nbme120', true);
+	                xhr.setRequestHeader('Content-Type', 'application/json');
+	                xhr.setRequestHeader('Authorization', 'Bearer '+getAuthToken());
+                xhr.onload = function() {
+                    try {
+                        var data = JSON.parse(xhr.responseText);
+                        if (data.testSessionId && data.blocks && data.blocks.length > 0) {
+                            window.location.replace('/qbank.html?session=' + data.testSessionId + '&block=1&mode=timed&time=30');
+                        } else {
+                            alert('Error: ' + (data.error || 'Failed to generate'));
+                            btn.disabled = false;
+                            btn.innerHTML = '<i class="fas fa-dna"></i> \u{1F9EC} NBME 120 Exam Simulation';
+                        }
+                    } catch(e) {
+                        alert('Parse error');
+                        btn.disabled = false;
+                        btn.innerHTML = '<i class="fas fa-dna"></i> \u{1F9EC} NBME 120 Exam Simulation';
+                    }
+                };
+                xhr.onerror = function() {
+                    alert('Network error');
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-dna"></i> \u{1F9EC} NBME 120 Exam Simulation';
+                };
+                xhr.send('{}');
+            };
+
+            window.startFree120 = function() {
+                var btn = document.getElementById('generateFree120Btn');
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating Sample Exam…';
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/api/qbank/generate-free120', true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.setRequestHeader('Authorization', 'Bearer '+getAuthToken());
+                xhr.onload = function() {
+                    try {
+                        var data = JSON.parse(xhr.responseText);
+                        if (data.testSessionId) {
+                            window.location.replace('/qbank.html?session=' + data.testSessionId + '&block=1&mode=timed&time=30&exam=free120');
+                        } else {
+                            alert('Error: ' + (data.error || 'Failed to generate the sample exam'));
+                            btn.disabled = false;
+                            btn.innerHTML = '<i class="fas fa-file-medical"></i> Step 1 Sample Exam';
+                        }
+                    } catch(e) {
+                        alert('Parse error');
+                        btn.disabled = false;
+                        btn.innerHTML = '<i class="fas fa-file-medical"></i> Step 1 Sample Exam';
+                    }
+                };
+                xhr.onerror = function() {
+                    alert('Network error');
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-file-medical"></i> Step 1 Sample Exam';
+                };
+                xhr.send('{}');
+            };
+
+            // Back to subjects button
+            $('#backToSubjects').click(function() {
+                $('#nbmeSimulationResults').hide();
+                $('.subject-list-container').show();
+            });
+
+            // Load question bank info from API
+            fetch('/api/qbank/info', {
+                headers: authHeaders()
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data && data.totalQuestions) {
+                    $('#unusedCount').text(data.totalQuestions);
+                    $('#incorrectCount').text('0');
+                    $('#markedCount').text('0');
+                    $('#omittedCount').text('0');
+                    $('#correctCount').text('0');
+                }
+            })
+            .catch(err => console.error('Failed to load status:', err));
+        });
+    </script>
+</body>
+</html>

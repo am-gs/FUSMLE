@@ -1,0 +1,2038 @@
+{
+  "form30_page-10": [
+    {
+      "category": "histology",
+      "height": 320,
+      "label": "mold_photomicrograph_with_arrow",
+      "source_page": 11,
+      "url": "/api/images_crop/form30_page-10.webp",
+      "width": 300
+    }
+  ],
+  "form30_page-100": [
+    {
+      "category": "graph",
+      "height": 295,
+      "label": "opioid_receptor_dose_response_graph",
+      "source_page": 101,
+      "url": "/api/images_crop/form30_page-100.webp",
+      "width": 285
+    }
+  ],
+  "form30_page-102": [
+    {
+      "category": "radiology",
+      "height": 305,
+      "label": "chest_CT_axial_image",
+      "source_page": 103,
+      "url": "/api/images_crop/form30_page-102.webp",
+      "width": 310
+    }
+  ],
+  "form30_page-106": [
+    {
+      "category": "clinical",
+      "height": 450,
+      "label": "purpuric_leg_rash_clinical_photo",
+      "source_page": 107,
+      "url": "/api/images_crop/form30_page-106.webp",
+      "width": 610
+    },
+    {
+      "category": "table",
+      "height": 215,
+      "label": "purpura_case_lab_table",
+      "source_page": 107,
+      "url": "/api/images_crop/form30_page-106_1.webp",
+      "width": 355
+    }
+  ],
+  "form30_page-108": [
+    {
+      "category": "table",
+      "height": 370,
+      "label": "burn_resuscitation_answer_table",
+      "source_page": 109,
+      "url": "/api/images_crop/form30_page-108.webp",
+      "width": 445
+    }
+  ],
+  "form30_page-118": [
+    {
+      "category": "radiology",
+      "height": 445,
+      "label": "chest_xray_AP_lateral_panels",
+      "source_page": 119,
+      "url": "/api/images_crop/form30_page-118.webp",
+      "width": 930
+    }
+  ],
+  "form30_page-120": [
+    {
+      "category": "radiology",
+      "height": 505,
+      "label": "testicular_ultrasound",
+      "source_page": 121,
+      "url": "/api/images_crop/form30_page-120.webp",
+      "width": 635
+    }
+  ],
+  "form30_page-121": [
+    {
+      "category": "graph",
+      "height": 310,
+      "label": "gastrointestinal_muscle_bar_chart",
+      "source_page": 122,
+      "url": "/api/images_crop/form30_page-121.webp",
+      "width": 365
+    }
+  ],
+  "form30_page-125": [
+    {
+      "category": "clinical",
+      "height": 480,
+      "label": "hypopigmented_skin_clinical_photo",
+      "source_page": 126,
+      "url": "/api/images_crop/form30_page-125.webp",
+      "width": 635
+    }
+  ],
+  "form30_page-13": [
+    {
+      "category": "histology",
+      "height": 317,
+      "label": "brain_biopsy_photomicrograph",
+      "source_page": 14,
+      "url": "/api/images_crop/form30_page-13.webp",
+      "width": 400
+    }
+  ],
+  "form30_page-134": [
+    {
+      "category": "radiology",
+      "height": 585,
+      "label": "sagittal_knee_MRI",
+      "source_page": 135,
+      "url": "/api/images_crop/form30_page-134.webp",
+      "width": 520
+    }
+  ],
+  "form30_page-137": [
+    {
+      "category": "table",
+      "height": 170,
+      "label": "cardiac_measurements_before_after_table",
+      "source_page": 138,
+      "url": "/api/images_crop/form30_page-137.webp",
+      "width": 710
+    }
+  ],
+  "form30_page-144": [
+    {
+      "category": "diagram",
+      "height": 395,
+      "label": "purine_metabolism_pathway_diagram",
+      "source_page": 145,
+      "url": "/api/images_crop/form30_page-144.webp",
+      "width": 370
+    }
+  ],
+  "form30_page-148": [
+    {
+      "category": "table",
+      "height": 370,
+      "label": "stroke_volume_EDV_answer_table",
+      "source_page": 149,
+      "url": "/api/images_crop/form30_page-148.webp",
+      "width": 420
+    }
+  ],
+  "form30_page-149": [
+    {
+      "category": "table",
+      "height": 415,
+      "label": "shock_response_answer_table",
+      "source_page": 150,
+      "url": "/api/images_crop/form30_page-149.webp",
+      "width": 925
+    }
+  ],
+  "form30_page-15": [
+    {
+      "category": "graph",
+      "height": 540,
+      "label": "left_ventricular_pressure_volume_loop",
+      "source_page": 16,
+      "url": "/api/images_crop/form30_page-15.webp",
+      "width": 740
+    }
+  ],
+  "form30_page-158": [
+    {
+      "category": "diagram",
+      "height": 395,
+      "label": "nephron_transport_experimental_figure",
+      "source_page": 159,
+      "url": "/api/images_crop/form30_page-158.webp",
+      "width": 760
+    }
+  ],
+  "form30_page-159": [
+    {
+      "category": "clinical",
+      "height": 515,
+      "label": "rectal_area_clinical_photo",
+      "source_page": 160,
+      "url": "/api/images_crop/form30_page-159.webp",
+      "width": 475
+    }
+  ],
+  "form30_page-16": [
+    {
+      "category": "graph",
+      "height": 305,
+      "label": "cardiac_function_curve",
+      "source_page": 17,
+      "url": "/api/images_crop/form30_page-16.webp",
+      "width": 400
+    }
+  ],
+  "form30_page-161": [
+    {
+      "category": "histology",
+      "height": 605,
+      "label": "jaw_mass_aspirate_photomicrograph",
+      "source_page": 162,
+      "url": "/api/images_crop/form30_page-161.webp",
+      "width": 410
+    }
+  ],
+  "form30_page-164": [
+    {
+      "category": "table",
+      "height": 295,
+      "label": "hormone_lab_table",
+      "source_page": 165,
+      "url": "/api/images_crop/form30_page-164.webp",
+      "width": 445
+    }
+  ],
+  "form30_page-165": [
+    {
+      "category": "table",
+      "height": 125,
+      "label": "zidovudine_inhibitory_concentration_table",
+      "source_page": 166,
+      "url": "/api/images_crop/form30_page-165.webp",
+      "width": 470
+    }
+  ],
+  "form30_page-174": [
+    {
+      "category": "radiology",
+      "height": 415,
+      "label": "abdominal_CT_axial_image",
+      "source_page": 175,
+      "url": "/api/images_crop/form30_page-174.webp",
+      "width": 475
+    }
+  ],
+  "form30_page-18": [
+    {
+      "category": "histology",
+      "height": 495,
+      "label": "lung_tissue_photomicrograph",
+      "source_page": 19,
+      "url": "/api/images_crop/form30_page-18.webp",
+      "width": 350
+    }
+  ],
+  "form30_page-182": [
+    {
+      "category": "table",
+      "height": 145,
+      "label": "employment_exam_cbc_table",
+      "source_page": 183,
+      "url": "/api/images_crop/form30_page-182.webp",
+      "width": 450
+    },
+    {
+      "category": "table",
+      "height": 160,
+      "label": "flow_cytometry_phenotype_table",
+      "source_page": 183,
+      "url": "/api/images_crop/form30_page-182_1.webp",
+      "width": 330
+    }
+  ],
+  "form30_page-184": [
+    {
+      "category": "radiology",
+      "height": 515,
+      "label": "lateral_lumbar_spine_xray",
+      "source_page": 185,
+      "url": "/api/images_crop/form30_page-184.webp",
+      "width": 365
+    }
+  ],
+  "form30_page-188": [
+    {
+      "category": "table",
+      "height": 130,
+      "label": "urinalysis_table",
+      "source_page": 189,
+      "url": "/api/images_crop/form30_page-188.webp",
+      "width": 275
+    },
+    {
+      "category": "gross",
+      "height": 370,
+      "label": "gross_pathology_photo",
+      "source_page": 189,
+      "url": "/api/images_crop/form30_page-188_1.webp",
+      "width": 330
+    }
+  ],
+  "form30_page-192": [
+    {
+      "category": "histology",
+      "height": 420,
+      "label": "blood_smear_photomicrograph",
+      "source_page": 193,
+      "url": "/api/images_crop/form30_page-192.webp",
+      "width": 635
+    },
+    {
+      "category": "table",
+      "height": 160,
+      "label": "hematology_lab_table",
+      "source_page": 193,
+      "url": "/api/images_crop/form30_page-192_1.webp",
+      "width": 690
+    }
+  ],
+  "form30_page-197": [
+    {
+      "category": "clinical",
+      "height": 425,
+      "label": "forehead_skin_lesion_photo",
+      "source_page": 198,
+      "url": "/api/images_crop/form30_page-197.webp",
+      "width": 625
+    }
+  ],
+  "form30_page-198": [
+    {
+      "category": "table",
+      "height": 120,
+      "label": "arterial_blood_gas_table",
+      "source_page": 199,
+      "url": "/api/images_crop/form30_page-198.webp",
+      "width": 220
+    },
+    {
+      "category": "radiology",
+      "height": 515,
+      "label": "chest_xray",
+      "source_page": 199,
+      "url": "/api/images_crop/form30_page-198_1.webp",
+      "width": 485
+    }
+  ],
+  "form30_page-22": [
+    {
+      "category": "table",
+      "height": 305,
+      "label": "metabolic_effects_answer_table",
+      "source_page": 23,
+      "url": "/api/images_crop/form30_page-22.webp",
+      "width": 385
+    }
+  ],
+  "form30_page-25": [
+    {
+      "category": "gross",
+      "height": 443,
+      "label": "brain_autopsy_gross_photo",
+      "source_page": 26,
+      "url": "/api/images_crop/form30_page-25.webp",
+      "width": 640
+    }
+  ],
+  "form30_page-30": [
+    {
+      "category": "gross",
+      "height": 232,
+      "label": "gross_esophagus_specimen",
+      "source_page": 31,
+      "url": "/api/images_crop/form30_page-30.webp",
+      "width": 510
+    },
+    {
+      "category": "histology",
+      "height": 355,
+      "label": "esophagus_histology_panel",
+      "source_page": 31,
+      "url": "/api/images_crop/form30_page-30_1.webp",
+      "width": 510
+    }
+  ],
+  "form30_page-37": [
+    {
+      "category": "table",
+      "height": 295,
+      "label": "autoimmune_serology_lab_table",
+      "source_page": 38,
+      "url": "/api/images_crop/form30_page-37.webp",
+      "width": 215
+    }
+  ],
+  "form30_page-42": [
+    {
+      "category": "table",
+      "height": 235,
+      "label": "LH_testosterone_answer_table",
+      "source_page": 43,
+      "url": "/api/images_crop/form30_page-42.webp",
+      "width": 270
+    }
+  ],
+  "form30_page-49": [
+    {
+      "category": "graph",
+      "height": 305,
+      "label": "drug_concentration_time_graph",
+      "source_page": 50,
+      "url": "/api/images_crop/form30_page-49.webp",
+      "width": 420
+    }
+  ],
+  "form30_page-50": [
+    {
+      "category": "graph",
+      "height": 220,
+      "label": "phosphorylase_enzyme_kinetics_graph",
+      "source_page": 51,
+      "url": "/api/images_crop/form30_page-50.webp",
+      "width": 310
+    }
+  ],
+  "form30_page-51": [
+    {
+      "category": "table",
+      "height": 100,
+      "label": "hematology_lab_table",
+      "source_page": 52,
+      "url": "/api/images_crop/form30_page-51.webp",
+      "width": 335
+    }
+  ],
+  "form30_page-52": [
+    {
+      "category": "table",
+      "height": 325,
+      "label": "infant_development_answer_table",
+      "source_page": 53,
+      "url": "/api/images_crop/form30_page-52.webp",
+      "width": 485
+    }
+  ],
+  "form30_page-53": [
+    {
+      "category": "table",
+      "height": 125,
+      "label": "hemolysis_lab_table",
+      "source_page": 54,
+      "url": "/api/images_crop/form30_page-53.webp",
+      "width": 330
+    }
+  ],
+  "form30_page-56": [
+    {
+      "category": "diagram",
+      "height": 385,
+      "label": "pedigree_with_legend",
+      "source_page": 57,
+      "url": "/api/images_crop/form30_page-56.webp",
+      "width": 325
+    }
+  ],
+  "form30_page-58": [
+    {
+      "category": "histology",
+      "height": 465,
+      "label": "peripheral_blood_smear",
+      "source_page": 59,
+      "url": "/api/images_crop/form30_page-58.webp",
+      "width": 640
+    },
+    {
+      "category": "table",
+      "height": 100,
+      "label": "hematology_lab_table",
+      "source_page": 59,
+      "url": "/api/images_crop/form30_page-58_1.webp",
+      "width": 510
+    }
+  ],
+  "form30_page-59": [
+    {
+      "category": "table",
+      "height": 350,
+      "label": "renal_bone_serum_findings_answer_table",
+      "source_page": 60,
+      "url": "/api/images_crop/form30_page-59.webp",
+      "width": 835
+    }
+  ],
+  "form30_page-60": [
+    {
+      "category": "table",
+      "height": 405,
+      "label": "pulmonary_renal_lab_table",
+      "source_page": 61,
+      "url": "/api/images_crop/form30_page-60.webp",
+      "width": 200
+    }
+  ],
+  "form30_page-61": [
+    {
+      "category": "radiology",
+      "height": 460,
+      "label": "upright_chest_xray",
+      "source_page": 62,
+      "url": "/api/images_crop/form30_page-61.webp",
+      "width": 600
+    }
+  ],
+  "form30_page-62": [
+    {
+      "category": "table",
+      "height": 265,
+      "label": "laryngeal_infiltration_coughing_answer_table",
+      "source_page": 63,
+      "url": "/api/images_crop/form30_page-62.webp",
+      "width": 705
+    }
+  ],
+  "form30_page-7": [
+    {
+      "category": "graph",
+      "height": 360,
+      "label": "diagnostic_cutoff_distribution_graph",
+      "source_page": 8,
+      "url": "/api/images_crop/form30_page-7.webp",
+      "width": 560
+    }
+  ],
+  "form30_page-72": [
+    {
+      "category": "gross",
+      "height": 295,
+      "label": "gross_lung_specimen",
+      "source_page": 73,
+      "url": "/api/images_crop/form30_page-72.webp",
+      "width": 450
+    },
+    {
+      "category": "histology",
+      "height": 295,
+      "label": "lung_histology_panel",
+      "source_page": 73,
+      "url": "/api/images_crop/form30_page-72_1.webp",
+      "width": 425
+    }
+  ],
+  "form30_page-77": [
+    {
+      "category": "clinical",
+      "height": 415,
+      "label": "facial_lip_clinical_photo",
+      "source_page": 78,
+      "url": "/api/images_crop/form30_page-77.webp",
+      "width": 610
+    }
+  ],
+  "form30_page-80": [
+    {
+      "category": "table",
+      "height": 150,
+      "label": "cancer_survival_table",
+      "source_page": 81,
+      "url": "/api/images_crop/form30_page-80.webp",
+      "width": 830
+    }
+  ],
+  "form30_page-89": [
+    {
+      "category": "diagram",
+      "height": 465,
+      "label": "spinal_cord_cross_section_labeled",
+      "source_page": 90,
+      "url": "/api/images_crop/form30_page-89.webp",
+      "width": 705
+    }
+  ],
+  "form30_page-93": [
+    {
+      "category": "table",
+      "height": 110,
+      "label": "liver_disease_lab_table",
+      "source_page": 94,
+      "url": "/api/images_crop/form30_page-93.webp",
+      "width": 415
+    }
+  ],
+  "form30_page-95": [
+    {
+      "category": "table",
+      "height": 285,
+      "label": "newborn_cbc_table",
+      "source_page": 96,
+      "url": "/api/images_crop/form30_page-95.webp",
+      "width": 875
+    }
+  ],
+  "form30_page-96": [
+    {
+      "category": "gross",
+      "height": 515,
+      "label": "mitral_valve_gross_specimen",
+      "source_page": 97,
+      "url": "/api/images_crop/form30_page-96.webp",
+      "width": 385
+    }
+  ],
+  "form30_page-97": [
+    {
+      "category": "histology",
+      "height": 565,
+      "label": "hepatitis_histology_photomicrograph",
+      "source_page": 98,
+      "url": "/api/images_crop/form30_page-97.webp",
+      "width": 715
+    }
+  ],
+  "form30_page-98": [
+    {
+      "category": "table",
+      "height": 110,
+      "label": "calcium_phosphate_pth_lab_table",
+      "source_page": 99,
+      "url": "/api/images_crop/form30_page-98.webp",
+      "width": 700
+    }
+  ],
+  "form31_page-102": [
+    {
+      "category": "diagrams_flowcharts",
+      "height": 415,
+      "label": "labeled brainstem photograph",
+      "source_page": 103,
+      "url": "/api/images_crop/form31_page-102.webp",
+      "width": 270
+    }
+  ],
+  "form31_page-104": [
+    {
+      "category": "clinical_images",
+      "height": 239,
+      "label": "cutaneous lesion photograph",
+      "source_page": 105,
+      "url": "/api/images_crop/form31_page-104.webp",
+      "width": 346
+    }
+  ],
+  "form31_page-105": [
+    {
+      "category": "histology_pathology",
+      "height": 339,
+      "label": "microscopy image of tissue/organism",
+      "source_page": 106,
+      "url": "/api/images_crop/form31_page-105.webp",
+      "width": 255
+    }
+  ],
+  "form31_page-107": [
+    {
+      "category": "radiology",
+      "height": 402,
+      "label": "sagittal and axial CT scan panel of thigh",
+      "source_page": 108,
+      "url": "/api/images_crop/form31_page-107.webp",
+      "width": 671
+    }
+  ],
+  "form31_page-112": [
+    {
+      "category": "ecg",
+      "height": 110,
+      "label": "Lead II rhythm strip",
+      "source_page": 113,
+      "url": "/api/images_crop/form31_page-112.webp",
+      "width": 480
+    }
+  ],
+  "form31_page-114": [
+    {
+      "category": "radiology",
+      "height": 275,
+      "label": "sagittal T1-weighted MRI with arrow",
+      "source_page": 115,
+      "url": "/api/images_crop/form31_page-114.webp",
+      "width": 523
+    }
+  ],
+  "form31_page-117": [
+    {
+      "category": "radiology",
+      "height": 345,
+      "label": "chest x-ray",
+      "source_page": 118,
+      "url": "/api/images_crop/form31_page-117.webp",
+      "width": 394
+    },
+    {
+      "category": "histology_pathology",
+      "height": 345,
+      "label": "lung biopsy photomicrograph with arrow",
+      "source_page": 118,
+      "url": "/api/images_crop/form31_page-117_2.webp",
+      "width": 518
+    }
+  ],
+  "form31_page-129": [
+    {
+      "category": "tables",
+      "height": 290,
+      "label": "renal physiology answer-choice table",
+      "source_page": 130,
+      "url": "/api/images_crop/form31_page-129.webp",
+      "width": 545
+    }
+  ],
+  "form31_page-130": [
+    {
+      "category": "tables",
+      "height": 275,
+      "label": "acid-base answer-choice table",
+      "source_page": 131,
+      "url": "/api/images_crop/form31_page-130.webp",
+      "width": 522
+    }
+  ],
+  "form31_page-137": [
+    {
+      "category": "histology_pathology",
+      "height": 550,
+      "label": "retroperitoneal mass histology",
+      "source_page": 138,
+      "url": "/api/images_crop/form31_page-137.webp",
+      "width": 369
+    }
+  ],
+  "form31_page-140": [
+    {
+      "category": "radiology",
+      "height": 464,
+      "label": "thyroid iodine uptake scan",
+      "source_page": 141,
+      "url": "/api/images_crop/form31_page-140.webp",
+      "width": 590
+    }
+  ],
+  "form31_page-144": [
+    {
+      "category": "clinical_images",
+      "height": 290,
+      "label": "hand skin findings photograph",
+      "source_page": 145,
+      "url": "/api/images_crop/form31_page-144.webp",
+      "width": 483
+    }
+  ],
+  "form31_page-15": [
+    {
+      "category": "clinical_images",
+      "height": 371,
+      "label": "pigmented skin lesion with 1 cm scale",
+      "source_page": 16,
+      "url": "/api/images_crop/form31_page-15.webp",
+      "width": 457
+    }
+  ],
+  "form31_page-157": [
+    {
+      "category": "gross_pathology",
+      "height": 453,
+      "label": "gross heart sections",
+      "source_page": 158,
+      "url": "/api/images_crop/form31_page-157.webp",
+      "width": 346
+    }
+  ],
+  "form31_page-158": [
+    {
+      "category": "charts_graphs",
+      "height": 145,
+      "label": "E coli growth curve graph",
+      "source_page": 159,
+      "url": "/api/images_crop/form31_page-158.webp",
+      "width": 245
+    }
+  ],
+  "form31_page-163": [
+    {
+      "category": "tables",
+      "height": 105,
+      "label": "erythrocyte sedimentation, C-reactive protein, and urinalysis table",
+      "source_page": 164,
+      "url": "/api/images_crop/form31_page-163.webp",
+      "width": 465
+    }
+  ],
+  "form31_page-168": [
+    {
+      "category": "histology_pathology",
+      "height": 398,
+      "label": "artery histology photomicrograph",
+      "source_page": 169,
+      "url": "/api/images_crop/form31_page-168.webp",
+      "width": 311
+    }
+  ],
+  "form31_page-17": [
+    {
+      "category": "tables",
+      "height": 209,
+      "label": "arterial blood gas answer-choice table",
+      "source_page": 18,
+      "url": "/api/images_crop/form31_page-17.webp",
+      "width": 390
+    }
+  ],
+  "form31_page-170": [
+    {
+      "category": "tables",
+      "height": 80,
+      "label": "vitamin deficiency laboratory table",
+      "source_page": 171,
+      "url": "/api/images_crop/form31_page-170.webp",
+      "width": 330
+    }
+  ],
+  "form31_page-171": [
+    {
+      "category": "tables",
+      "height": 80,
+      "label": "vitamin deficiency follow-up laboratory table",
+      "source_page": 172,
+      "url": "/api/images_crop/form31_page-171.webp",
+      "width": 400
+    }
+  ],
+  "form31_page-172": [
+    {
+      "category": "tables",
+      "height": 155,
+      "label": "hematology and arterial blood gas laboratory table",
+      "source_page": 173,
+      "url": "/api/images_crop/form31_page-172.webp",
+      "width": 405
+    }
+  ],
+  "form31_page-176": [
+    {
+      "category": "radiology",
+      "height": 262,
+      "label": "axial and coronal CT image panel",
+      "source_page": 177,
+      "url": "/api/images_crop/form31_page-176.webp",
+      "width": 527
+    }
+  ],
+  "form31_page-180": [
+    {
+      "category": "tables",
+      "height": 102,
+      "label": "pulmonary function testing table",
+      "source_page": 181,
+      "url": "/api/images_crop/form31_page-180.webp",
+      "width": 245
+    }
+  ],
+  "form31_page-20": [
+    {
+      "category": "clinical_images",
+      "height": 317,
+      "label": "diffuse truncal rash photograph",
+      "source_page": 21,
+      "url": "/api/images_crop/form31_page-20.webp",
+      "width": 496
+    }
+  ],
+  "form31_page-25": [
+    {
+      "category": "clinical_images",
+      "height": 343,
+      "label": "vaginal area clinical photograph",
+      "source_page": 26,
+      "url": "/api/images_crop/form31_page-25.webp",
+      "width": 587
+    }
+  ],
+  "form31_page-29": [
+    {
+      "category": "diagrams_flowcharts",
+      "height": 366,
+      "label": "family pedigree and legend",
+      "source_page": 30,
+      "url": "/api/images_crop/form31_page-29.webp",
+      "width": 690
+    }
+  ],
+  "form31_page-42": [
+    {
+      "category": "gross_pathology",
+      "height": 382,
+      "label": "gross specimen photograph",
+      "source_page": 43,
+      "url": "/api/images_crop/form31_page-42.webp",
+      "width": 609
+    }
+  ],
+  "form31_page-43": [
+    {
+      "category": "radiology",
+      "height": 371,
+      "label": "axial and sagittal CT scan panel",
+      "source_page": 44,
+      "url": "/api/images_crop/form31_page-43.webp",
+      "width": 880
+    }
+  ],
+  "form31_page-47": [
+    {
+      "category": "ecg",
+      "height": 456,
+      "label": "12-lead ECG and rhythm strip",
+      "source_page": 48,
+      "url": "/api/images_crop/form31_page-47.webp",
+      "width": 588
+    }
+  ],
+  "form31_page-48": [
+    {
+      "category": "histology_pathology",
+      "height": 236,
+      "label": "CSF Gram stain photomicrograph",
+      "source_page": 49,
+      "url": "/api/images_crop/form31_page-48.webp",
+      "width": 217
+    }
+  ],
+  "form31_page-50": [
+    {
+      "category": "radiology",
+      "height": 377,
+      "label": "labeled axial brain MRI",
+      "source_page": 51,
+      "url": "/api/images_crop/form31_page-50.webp",
+      "width": 358
+    }
+  ],
+  "form31_page-53": [
+    {
+      "category": "gross_pathology",
+      "height": 265,
+      "label": "gross brain autopsy photograph",
+      "source_page": 54,
+      "url": "/api/images_crop/form31_page-53.webp",
+      "width": 435
+    }
+  ],
+  "form31_page-54": [
+    {
+      "category": "tables",
+      "height": 235,
+      "label": "right and left pupil response table",
+      "source_page": 55,
+      "url": "/api/images_crop/form31_page-54.webp",
+      "width": 470
+    }
+  ],
+  "form31_page-73": [
+    {
+      "category": "gross_pathology",
+      "height": 238,
+      "label": "gross ileal mass specimen",
+      "source_page": 74,
+      "url": "/api/images_crop/form31_page-73.webp",
+      "width": 419
+    },
+    {
+      "category": "histology_pathology",
+      "height": 286,
+      "label": "ileal mass histology photomicrograph",
+      "source_page": 74,
+      "url": "/api/images_crop/form31_page-73_2.webp",
+      "width": 428
+    }
+  ],
+  "form31_page-84": [
+    {
+      "category": "histology_pathology",
+      "height": 550,
+      "label": "transbronchial biopsy photomicrograph",
+      "source_page": 85,
+      "url": "/api/images_crop/form31_page-84.webp",
+      "width": 405
+    }
+  ],
+  "form31_page-89": [
+    {
+      "category": "histology_pathology",
+      "height": 380,
+      "label": "peripheral blood smear photomicrograph",
+      "source_page": 90,
+      "url": "/api/images_crop/form31_page-89.webp",
+      "width": 586
+    }
+  ],
+  "form31_page-90": [
+    {
+      "category": "histology_pathology",
+      "height": 454,
+      "label": "peripheral blood smear photomicrograph",
+      "source_page": 91,
+      "url": "/api/images_crop/form31_page-90.webp",
+      "width": 337
+    }
+  ],
+  "form31_page-91": [
+    {
+      "category": "radiology",
+      "height": 455,
+      "label": "shoulder/humerus x-ray",
+      "source_page": 92,
+      "url": "/api/images_crop/form31_page-91.webp",
+      "width": 303
+    }
+  ],
+  "form31_page-96": [
+    {
+      "category": "charts_graphs",
+      "height": 376,
+      "label": "drug effect on heart rate, AV conduction and contractility",
+      "source_page": 97,
+      "url": "/api/images_crop/form31_page-96.webp",
+      "width": 605
+    }
+  ],
+  "form31_page-97": [
+    {
+      "category": "charts_graphs",
+      "height": 255,
+      "label": "blood pressure responses in control, prazosin and cocaine",
+      "source_page": 98,
+      "url": "/api/images_crop/form31_page-97.webp",
+      "width": 470
+    }
+  ],
+  "form31_page-99": [
+    {
+      "category": "radiology",
+      "height": 446,
+      "label": "cerebral angiography image",
+      "source_page": 100,
+      "url": "/api/images_crop/form31_page-99.webp",
+      "width": 533
+    }
+  ],
+  "nbme27_page-10": [
+    {
+      "category": "clinical_images",
+      "height": 320,
+      "label": "labeled cardiac CT scans",
+      "source_page": 11,
+      "url": "/api/images_crop/nbme27_page-10.webp",
+      "width": 700
+    }
+  ],
+  "nbme27_page-100": [
+    {
+      "category": "clinical_images",
+      "height": 415,
+      "label": "bone marrow/adipose photomicrograph",
+      "source_page": 101,
+      "url": "/api/images_crop/nbme27_page-100.webp",
+      "width": 285
+    }
+  ],
+  "nbme27_page-103": [
+    {
+      "category": "charts_tables",
+      "height": 200,
+      "label": "coagulation studies table",
+      "source_page": 104,
+      "url": "/api/images_crop/nbme27_page-103.webp",
+      "width": 585
+    }
+  ],
+  "nbme27_page-106": [
+    {
+      "category": "clinical_images",
+      "height": 530,
+      "label": "skin lesion photograph",
+      "source_page": 107,
+      "url": "/api/images_crop/nbme27_page-106.webp",
+      "width": 310
+    }
+  ],
+  "nbme27_page-116": [
+    {
+      "category": "clinical_images",
+      "height": 480,
+      "label": "wrist/hand x-rays",
+      "source_page": 117,
+      "url": "/api/images_crop/nbme27_page-116.webp",
+      "width": 605
+    }
+  ],
+  "nbme27_page-121": [
+    {
+      "category": "charts_tables",
+      "height": 250,
+      "label": "mucus/cilia/macrophage table",
+      "source_page": 122,
+      "url": "/api/images_crop/nbme27_page-121.webp",
+      "width": 470
+    }
+  ],
+  "nbme27_page-124": [
+    {
+      "category": "clinical_images",
+      "height": 265,
+      "label": "uterus/adnexa gross specimen",
+      "source_page": 125,
+      "url": "/api/images_crop/nbme27_page-124.webp",
+      "width": 430
+    },
+    {
+      "category": "clinical_images",
+      "height": 270,
+      "label": "uterine/cervical histology",
+      "source_page": 125,
+      "url": "/api/images_crop/nbme27_page-124_2.webp",
+      "width": 430
+    }
+  ],
+  "nbme27_page-126": [
+    {
+      "category": "charts_tables",
+      "height": 275,
+      "label": "plasma drug concentration over time",
+      "source_page": 127,
+      "url": "/api/images_crop/nbme27_page-126.webp",
+      "width": 345
+    }
+  ],
+  "nbme27_page-127": [
+    {
+      "category": "charts_tables",
+      "height": 190,
+      "label": "cancer antigen table",
+      "source_page": 128,
+      "url": "/api/images_crop/nbme27_page-127.webp",
+      "width": 525
+    }
+  ],
+  "nbme27_page-13": [
+    {
+      "category": "charts_tables",
+      "height": 195,
+      "label": "normal vs diseased distributions graph",
+      "source_page": 14,
+      "url": "/api/images_crop/nbme27_page-13.webp",
+      "width": 370
+    }
+  ],
+  "nbme27_page-134": [
+    {
+      "category": "charts_tables",
+      "height": 125,
+      "label": "sodium and lithium concentration table",
+      "source_page": 135,
+      "url": "/api/images_crop/nbme27_page-134.webp",
+      "width": 520
+    }
+  ],
+  "nbme27_page-135": [
+    {
+      "category": "charts_tables",
+      "height": 215,
+      "label": "acid-base parameters table",
+      "source_page": 136,
+      "url": "/api/images_crop/nbme27_page-135.webp",
+      "width": 710
+    }
+  ],
+  "nbme27_page-140": [
+    {
+      "category": "clinical_images",
+      "height": 190,
+      "label": "ECG rhythm strip",
+      "source_page": 141,
+      "url": "/api/images_crop/nbme27_page-140.webp",
+      "width": 360
+    }
+  ],
+  "nbme27_page-143": [
+    {
+      "category": "clinical_images",
+      "height": 340,
+      "label": "liver biopsy photomicrograph",
+      "source_page": 144,
+      "url": "/api/images_crop/nbme27_page-143.webp",
+      "width": 510
+    }
+  ],
+  "nbme27_page-148": [
+    {
+      "category": "charts_tables",
+      "height": 275,
+      "label": "allele frequency histogram",
+      "source_page": 149,
+      "url": "/api/images_crop/nbme27_page-148.webp",
+      "width": 440
+    }
+  ],
+  "nbme27_page-149": [
+    {
+      "category": "charts_tables",
+      "height": 385,
+      "label": "sarcoma tumor growth graphs",
+      "source_page": 150,
+      "url": "/api/images_crop/nbme27_page-149.webp",
+      "width": 735
+    }
+  ],
+  "nbme27_page-15": [
+    {
+      "category": "charts_tables",
+      "height": 520,
+      "label": "bicarbonate-pH relationship graph",
+      "source_page": 16,
+      "url": "/api/images_crop/nbme27_page-15.webp",
+      "width": 330
+    }
+  ],
+  "nbme27_page-151": [
+    {
+      "category": "charts_tables",
+      "height": 195,
+      "label": "management group crossover table",
+      "source_page": 152,
+      "url": "/api/images_crop/nbme27_page-151.webp",
+      "width": 435
+    }
+  ],
+  "nbme27_page-156": [
+    {
+      "category": "charts_tables",
+      "height": 100,
+      "label": "cholesterol/HDL/triglyceride table",
+      "source_page": 157,
+      "url": "/api/images_crop/nbme27_page-156.webp",
+      "width": 550
+    }
+  ],
+  "nbme27_page-158": [
+    {
+      "category": "charts_tables",
+      "height": 335,
+      "label": "serum and urine chemistries table",
+      "source_page": 159,
+      "url": "/api/images_crop/nbme27_page-158.webp",
+      "width": 300
+    }
+  ],
+  "nbme27_page-159": [
+    {
+      "category": "charts_tables",
+      "height": 330,
+      "label": "lipid/chemistry laboratory values",
+      "source_page": 160,
+      "url": "/api/images_crop/nbme27_page-159.webp",
+      "width": 560
+    }
+  ],
+  "nbme27_page-160": [
+    {
+      "category": "charts_tables",
+      "height": 380,
+      "label": "patient lab values table",
+      "source_page": 161,
+      "url": "/api/images_crop/nbme27_page-160.webp",
+      "width": 740
+    },
+    {
+      "category": "charts_tables",
+      "height": 405,
+      "label": "peripheral blood smear",
+      "source_page": 161,
+      "url": "/api/images_crop/nbme27_page-160_2.webp",
+      "width": 315
+    }
+  ],
+  "nbme27_page-162": [
+    {
+      "category": "charts_tables",
+      "height": 270,
+      "label": "family pedigree",
+      "source_page": 163,
+      "url": "/api/images_crop/nbme27_page-162.webp",
+      "width": 255
+    }
+  ],
+  "nbme27_page-164": [
+    {
+      "category": "charts_tables",
+      "height": 260,
+      "label": "lab value list",
+      "source_page": 165,
+      "url": "/api/images_crop/nbme27_page-164.webp",
+      "width": 340
+    }
+  ],
+  "nbme27_page-176": [
+    {
+      "category": "charts_tables",
+      "height": 150,
+      "label": "CBC/coagulation table",
+      "source_page": 177,
+      "url": "/api/images_crop/nbme27_page-176.webp",
+      "width": 595
+    }
+  ],
+  "nbme27_page-180": [
+    {
+      "category": "charts_tables",
+      "height": 140,
+      "label": "antiestrogenic/estrogenic effects table",
+      "source_page": 181,
+      "url": "/api/images_crop/nbme27_page-180.webp",
+      "width": 420
+    }
+  ],
+  "nbme27_page-183": [
+    {
+      "category": "clinical_images",
+      "height": 445,
+      "label": "renal/tissue photomicrograph",
+      "source_page": 184,
+      "url": "/api/images_crop/nbme27_page-183.webp",
+      "width": 315
+    }
+  ],
+  "nbme27_page-184": [
+    {
+      "category": "charts_tables",
+      "height": 80,
+      "label": "CD4/CD8 table",
+      "source_page": 185,
+      "url": "/api/images_crop/nbme27_page-184.webp",
+      "width": 375
+    }
+  ],
+  "nbme27_page-186": [
+    {
+      "category": "diagrams",
+      "height": 260,
+      "label": "cross-sectional anatomy diagram",
+      "source_page": 187,
+      "url": "/api/images_crop/nbme27_page-186.webp",
+      "width": 275
+    }
+  ],
+  "nbme27_page-188": [
+    {
+      "category": "clinical_images",
+      "height": 380,
+      "label": "sagittal brain MRI",
+      "source_page": 189,
+      "url": "/api/images_crop/nbme27_page-188.webp",
+      "width": 470
+    }
+  ],
+  "nbme27_page-190": [
+    {
+      "category": "charts_tables",
+      "height": 190,
+      "label": "potassium/chloride/bicarbonate answer table",
+      "source_page": 191,
+      "url": "/api/images_crop/nbme27_page-190.webp",
+      "width": 575
+    }
+  ],
+  "nbme27_page-191": [
+    {
+      "category": "diagrams",
+      "height": 465,
+      "label": "brainstem/cerebellum labeled diagram",
+      "source_page": 192,
+      "url": "/api/images_crop/nbme27_page-191.webp",
+      "width": 520
+    }
+  ],
+  "nbme27_page-192": [
+    {
+      "category": "charts_tables",
+      "height": 170,
+      "label": "blood pressure/glucose/cholesterol table",
+      "source_page": 193,
+      "url": "/api/images_crop/nbme27_page-192.webp",
+      "width": 270
+    }
+  ],
+  "nbme27_page-193": [
+    {
+      "category": "clinical_images",
+      "height": 485,
+      "label": "chest x-ray",
+      "source_page": 194,
+      "url": "/api/images_crop/nbme27_page-193.webp",
+      "width": 455
+    }
+  ],
+  "nbme27_page-197": [
+    {
+      "category": "clinical_images",
+      "height": 420,
+      "label": "GI/colon photomicrograph panels",
+      "source_page": 198,
+      "url": "/api/images_crop/nbme27_page-197.webp",
+      "width": 605
+    }
+  ],
+  "nbme27_page-22": [
+    {
+      "category": "charts_tables",
+      "height": 295,
+      "label": "cardiac output vs right atrial pressure graph",
+      "source_page": 23,
+      "url": "/api/images_crop/nbme27_page-22.webp",
+      "width": 520
+    }
+  ],
+  "nbme27_page-23": [
+    {
+      "category": "charts_tables",
+      "height": 125,
+      "label": "lung exam findings table",
+      "source_page": 24,
+      "url": "/api/images_crop/nbme27_page-23.webp",
+      "width": 610
+    }
+  ],
+  "nbme27_page-29": [
+    {
+      "category": "charts_tables",
+      "height": 380,
+      "label": "cancer survival curves",
+      "source_page": 30,
+      "url": "/api/images_crop/nbme27_page-29.webp",
+      "width": 445
+    }
+  ],
+  "nbme27_page-3": [
+    {
+      "category": "clinical_images",
+      "height": 360,
+      "label": "cellulitis leg photo + Gram stain",
+      "source_page": 4,
+      "url": "/api/images_crop/nbme27_page-3.webp",
+      "width": 800
+    }
+  ],
+  "nbme27_page-31": [
+    {
+      "category": "clinical_images",
+      "height": 540,
+      "label": "sagittal cerebellum specimen",
+      "source_page": 32,
+      "url": "/api/images_crop/nbme27_page-31.webp",
+      "width": 385
+    }
+  ],
+  "nbme27_page-32": [
+    {
+      "category": "charts_tables",
+      "height": 85,
+      "label": "normal epp/mepp/ACh table",
+      "source_page": 33,
+      "url": "/api/images_crop/nbme27_page-32.webp",
+      "width": 860
+    },
+    {
+      "category": "charts_tables",
+      "height": 205,
+      "label": "botulism electrophysiology choice table",
+      "source_page": 33,
+      "url": "/api/images_crop/nbme27_page-32_2.webp",
+      "width": 515
+    }
+  ],
+  "nbme27_page-36": [
+    {
+      "category": "clinical_images",
+      "height": 480,
+      "label": "gastric mucosa labeled photomicrograph",
+      "source_page": 37,
+      "url": "/api/images_crop/nbme27_page-36.webp",
+      "width": 295
+    }
+  ],
+  "nbme27_page-37": [
+    {
+      "category": "clinical_images",
+      "height": 465,
+      "label": "head CT",
+      "source_page": 38,
+      "url": "/api/images_crop/nbme27_page-37.webp",
+      "width": 340
+    }
+  ],
+  "nbme27_page-46": [
+    {
+      "category": "charts_tables",
+      "height": 115,
+      "label": "urine specific gravity and osmolality table",
+      "source_page": 47,
+      "url": "/api/images_crop/nbme27_page-46.webp",
+      "width": 340
+    }
+  ],
+  "nbme27_page-47": [
+    {
+      "category": "charts_tables",
+      "height": 295,
+      "label": "serum and urine studies table",
+      "source_page": 48,
+      "url": "/api/images_crop/nbme27_page-47.webp",
+      "width": 285
+    }
+  ],
+  "nbme27_page-59": [
+    {
+      "category": "clinical_images",
+      "height": 505,
+      "label": "resected kidney gross specimen",
+      "source_page": 60,
+      "url": "/api/images_crop/nbme27_page-59.webp",
+      "width": 275
+    }
+  ],
+  "nbme27_page-6": [
+    {
+      "category": "clinical_images",
+      "height": 340,
+      "label": "colon biopsy photomicrograph",
+      "source_page": 7,
+      "url": "/api/images_crop/nbme27_page-6.webp",
+      "width": 405
+    }
+  ],
+  "nbme27_page-71": [
+    {
+      "category": "clinical_images",
+      "height": 310,
+      "label": "abdominal infant skin photograph",
+      "source_page": 72,
+      "url": "/api/images_crop/nbme27_page-71.webp",
+      "width": 450
+    }
+  ],
+  "nbme27_page-72": [
+    {
+      "category": "clinical_images",
+      "height": 300,
+      "label": "lower extremity skin photograph",
+      "source_page": 73,
+      "url": "/api/images_crop/nbme27_page-72.webp",
+      "width": 365
+    }
+  ],
+  "nbme27_page-73": [
+    {
+      "category": "clinical_images",
+      "height": 465,
+      "label": "cerebral angiogram",
+      "source_page": 74,
+      "url": "/api/images_crop/nbme27_page-73.webp",
+      "width": 385
+    }
+  ],
+  "nbme27_page-77": [
+    {
+      "category": "charts_tables",
+      "height": 225,
+      "label": "blood flow percentage table",
+      "source_page": 78,
+      "url": "/api/images_crop/nbme27_page-77.webp",
+      "width": 510
+    }
+  ],
+  "nbme27_page-78": [
+    {
+      "category": "charts_tables",
+      "height": 125,
+      "label": "exercise stress test table",
+      "source_page": 79,
+      "url": "/api/images_crop/nbme27_page-78.webp",
+      "width": 630
+    }
+  ],
+  "nbme27_page-80": [
+    {
+      "category": "charts_tables",
+      "height": 115,
+      "label": "LH/DHEA/testosterone labs",
+      "source_page": 81,
+      "url": "/api/images_crop/nbme27_page-80.webp",
+      "width": 630
+    }
+  ],
+  "nbme27_page-81": [
+    {
+      "category": "charts_tables",
+      "height": 280,
+      "label": "CBC/differential table",
+      "source_page": 82,
+      "url": "/api/images_crop/nbme27_page-81.webp",
+      "width": 720
+    }
+  ],
+  "nbme27_page-84": [
+    {
+      "category": "charts_tables",
+      "height": 165,
+      "label": "pancreatic enzyme activity table",
+      "source_page": 85,
+      "url": "/api/images_crop/nbme27_page-84.webp",
+      "width": 490
+    }
+  ],
+  "nbme27_page-9": [
+    {
+      "category": "charts_tables",
+      "height": 245,
+      "label": "erythrocyte color/size/shape table",
+      "source_page": 10,
+      "url": "/api/images_crop/nbme27_page-9.webp",
+      "width": 590
+    }
+  ],
+  "nbme27_page-91": [
+    {
+      "category": "charts_tables",
+      "height": 130,
+      "label": "peristalsis/sphincter tone table",
+      "source_page": 92,
+      "url": "/api/images_crop/nbme27_page-91.webp",
+      "width": 335
+    }
+  ],
+  "nbme27_page-92": [
+    {
+      "category": "clinical_images",
+      "height": 300,
+      "label": "hand deformity photograph",
+      "source_page": 93,
+      "url": "/api/images_crop/nbme27_page-92.webp",
+      "width": 375
+    },
+    {
+      "category": "charts_tables",
+      "height": 240,
+      "label": "motor deficit table",
+      "source_page": 93,
+      "url": "/api/images_crop/nbme27_page-92_2.webp",
+      "width": 360
+    }
+  ],
+  "nbme27_page-95": [
+    {
+      "category": "clinical_images",
+      "height": 465,
+      "label": "peripheral blood smear",
+      "source_page": 96,
+      "url": "/api/images_crop/nbme27_page-95.webp",
+      "width": 380
+    },
+    {
+      "category": "charts_tables",
+      "height": 160,
+      "label": "blood smear/CBC table",
+      "source_page": 96,
+      "url": "/api/images_crop/nbme27_page-95_2.webp",
+      "width": 630
+    }
+  ],
+  "free120_2021_q010": [
+    {
+      "url": "/api/images_crop/free120_2021_q010_img01.webp",
+      "width": 760,
+      "height": 493,
+      "source_page": 12,
+      "category": "dermatology",
+      "label": "forearm_contact_dermatitis_photograph",
+      "bbox": {
+        "x": 189.57000732421875,
+        "y": 53.999969482421875,
+        "width": 232.79998779296875,
+        "height": 145.60000610351562
+      }
+    }
+  ],
+  "free120_2021_q017": [
+    {
+      "url": "/api/images_crop/free120_2021_q017_img01.webp",
+      "width": 818,
+      "height": 779,
+      "source_page": 14,
+      "category": "radiology",
+      "label": "renal_ct_wedge_hypodensity",
+      "bbox": {
+        "x": 180.0,
+        "y": 272.4800109863281,
+        "width": 251.97000122070312,
+        "height": 239.25
+      }
+    }
+  ],
+  "free120_2021_q019": [
+    {
+      "url": "/api/images_crop/free120_2021_q019_img01.webp",
+      "width": 519,
+      "height": 763,
+      "source_page": 15,
+      "category": "histology",
+      "label": "gastric_biopsy_steiner_silver_photomicrograph",
+      "bbox": {
+        "x": 228.75,
+        "y": 54.00001525878906,
+        "width": 154.04998779296875,
+        "height": 233.9499969482422
+      }
+    }
+  ],
+  "free120_2021_q029": [
+    {
+      "url": "/api/images_crop/free120_2021_q029_img01.webp",
+      "width": 1118,
+      "height": 840,
+      "source_page": 18,
+      "category": "diagram",
+      "label": "brainstem_cross_section_labeled_sites",
+      "bbox": {
+        "x": 130.92999267578125,
+        "y": 168.989990234375,
+        "width": 350.1499938964844,
+        "height": 259.19000244140625
+      }
+    }
+  ],
+  "free120_2021_q031": [
+    {
+      "url": "/api/images_crop/free120_2021_q031_img01.webp",
+      "width": 703,
+      "height": 812,
+      "source_page": 19,
+      "category": "experimental_figure",
+      "label": "southern_blot_immunoglobulin_constant_region",
+      "bbox": {
+        "x": 198.75,
+        "y": 54.0,
+        "width": 214.29998779296875,
+        "height": 249.94000244140625
+      }
+    }
+  ],
+  "free120_2021_q048": [
+    {
+      "url": "/api/images_crop/free120_2021_q048_img01.webp",
+      "width": 928,
+      "height": 843,
+      "source_page": 25,
+      "category": "radiology",
+      "label": "abdominal_ct_fluid_arrow",
+      "bbox": {
+        "x": 162.0,
+        "y": 54.0,
+        "width": 287.989990234375,
+        "height": 260.1499938964844
+      }
+    }
+  ],
+  "free120_2021_q058": [
+    {
+      "url": "/api/images_crop/free120_2021_q058_img01.webp",
+      "width": 708,
+      "height": 482,
+      "source_page": 28,
+      "category": "dermatology",
+      "label": "herpetic_whitlow_thumb_photograph",
+      "bbox": {
+        "x": 198.0,
+        "y": 260.97998046875,
+        "width": 215.95001220703125,
+        "height": 142.04998779296875
+      }
+    }
+  ],
+  "free120_2021_q064": [
+    {
+      "url": "/api/images_crop/free120_2021_q064_img01.webp",
+      "width": 536,
+      "height": 699,
+      "source_page": 31,
+      "category": "histology",
+      "label": "lung_autopsy_photomicrograph_arrow",
+      "bbox": {
+        "x": 226.1999969482422,
+        "y": 53.999969482421875,
+        "width": 159.58998107910156,
+        "height": 213.10000610351562
+      }
+    }
+  ],
+  "free120_2021_q070": [
+    {
+      "url": "/api/images_crop/free120_2021_q070_img01.webp",
+      "width": 654,
+      "height": 708,
+      "source_page": 33,
+      "category": "radiology",
+      "label": "orbital_ct_blowout_fracture",
+      "bbox": {
+        "x": 206.77000427246094,
+        "y": 53.999969482421875,
+        "width": 198.4499969482422,
+        "height": 215.97000122070312
+      }
+    }
+  ],
+  "free120_2021_q078": [
+    {
+      "url": "/api/images_crop/free120_2021_q078_img01.webp",
+      "width": 1478,
+      "height": 639,
+      "source_page": 36,
+      "category": "histology",
+      "label": "colon_crohn_disease_photomicrographs",
+      "bbox": {
+        "x": 72.0,
+        "y": 54.000030517578125,
+        "width": 467.9000244140625,
+        "height": 193.39999389648438
+      }
+    }
+  ],
+  "free120_2021_q097": [
+    {
+      "url": "/api/images_crop/free120_2021_q097_img01.webp",
+      "width": 818,
+      "height": 553,
+      "source_page": 42,
+      "category": "histology",
+      "label": "jaw_lesion_biopsy_photomicrographs_arrows",
+      "bbox": {
+        "x": 180.0,
+        "y": 53.999969482421875,
+        "width": 251.97998046875,
+        "height": 165.35000610351562
+      }
+    }
+  ],
+  "free120_2021_q113": [
+    {
+      "url": "/api/images_crop/free120_2021_q113_img01.webp",
+      "width": 578,
+      "height": 763,
+      "source_page": 46,
+      "category": "radiology",
+      "label": "knee_xray_tibial_tubercle",
+      "bbox": {
+        "x": 219.0,
+        "y": 180.49000549316406,
+        "width": 173.25,
+        "height": 233.9600067138672
+      }
+    }
+  ],
+  "nbme27_page-196": [
+    {
+      "url": "/api/images_crop/nbme27_page-196.webp",
+      "width": 528,
+      "height": 773,
+      "category": "image"
+    },
+    {
+      "url": "/api/images_crop/nbme27_page-196_1.webp",
+      "width": 529,
+      "height": 770,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-187": [
+    {
+      "url": "/api/images_crop/nbme27_page-187.webp",
+      "width": 793,
+      "height": 647,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-185": [
+    {
+      "url": "/api/images_crop/nbme27_page-185.webp",
+      "width": 484,
+      "height": 488,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-182": [
+    {
+      "url": "/api/images_crop/nbme27_page-182.webp",
+      "width": 526,
+      "height": 816,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-161": [
+    {
+      "url": "/api/images_crop/nbme27_page-161.webp",
+      "width": 285,
+      "height": 526,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-147": [
+    {
+      "url": "/api/images_crop/nbme27_page-147.webp",
+      "width": 881,
+      "height": 550,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-142": [
+    {
+      "url": "/api/images_crop/nbme27_page-142.webp",
+      "width": 1008,
+      "height": 669,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-125": [
+    {
+      "url": "/api/images_crop/nbme27_page-125.webp",
+      "width": 635,
+      "height": 491,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-123": [
+    {
+      "url": "/api/images_crop/nbme27_page-123.webp",
+      "width": 766,
+      "height": 425,
+      "category": "image"
+    },
+    {
+      "url": "/api/images_crop/nbme27_page-123_1.webp",
+      "width": 744,
+      "height": 481,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-105": [
+    {
+      "url": "/api/images_crop/nbme27_page-105.webp",
+      "width": 652,
+      "height": 995,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-99": [
+    {
+      "url": "/api/images_crop/nbme27_page-99.webp",
+      "width": 554,
+      "height": 815,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-87": [
+    {
+      "url": "/api/images_crop/nbme27_page-87.webp",
+      "width": 685,
+      "height": 800,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-76": [
+    {
+      "url": "/api/images_crop/nbme27_page-76.webp",
+      "width": 1011,
+      "height": 589,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-35": [
+    {
+      "url": "/api/images_crop/nbme27_page-35.webp",
+      "width": 619,
+      "height": 811,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-30": [
+    {
+      "url": "/api/images_crop/nbme27_page-30.webp",
+      "width": 725,
+      "height": 808,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-28": [
+    {
+      "url": "/api/images_crop/nbme27_page-28.webp",
+      "width": 864,
+      "height": 727,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-139": [
+    {
+      "url": "/api/images_crop/nbme27_page-139.webp",
+      "width": 1010,
+      "height": 412,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-58": [
+    {
+      "url": "/api/images_crop/nbme27_page-58.webp",
+      "width": 496,
+      "height": 650,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-70": [
+    {
+      "url": "/api/images_crop/nbme27_page-70.webp",
+      "width": 968,
+      "height": 718,
+      "category": "image"
+    }
+  ]
+}
