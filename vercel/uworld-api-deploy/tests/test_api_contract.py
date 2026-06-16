@@ -41,6 +41,21 @@ class ApiContractTests(unittest.TestCase):
 
         self.assertEqual(app.test_client().get("/api/session").status_code, 401)
 
+    def test_cookie_session_survives_stale_authorization_header(self):
+        client = app.test_client()
+        import uuid
+        email = f"cookie-fallback-{uuid.uuid4().hex}@example.com"
+        register = client.post("/api/register", json={"email": email, "password": "TestPass123!", "name": "Cookie Fallback"})
+        self.assertIn(register.status_code, (201, 409))
+        if register.status_code == 409:
+            register = client.post("/api/auth/login", json={"email": email, "password": "TestPass123!"})
+        token = register.get_json()["token"]
+
+        client.set_cookie("token", token)
+        session = client.get("/api/session", headers={"Authorization": "Bearer stale-token"})
+        self.assertEqual(session.status_code, 200)
+        self.assertEqual(session.get_json()["user"]["email"], email)
+
     def test_logout_revokes_session_server_side(self):
         client = app.test_client()
         import uuid
@@ -191,6 +206,30 @@ class ApiContractTests(unittest.TestCase):
         self.assertEqual(len(answers), 1)
         self.assertEqual(answers[0]["question_id"], qid)
         self.assertEqual(answers[0]["selected_option"], 1)
+
+    def test_qbank_submit_accepts_valid_cookie_when_header_token_is_stale(self):
+        client = app.test_client()
+        import uuid
+        email = f"submit-fallback-{uuid.uuid4().hex}@example.com"
+        register = client.post("/api/register", json={"email": email, "password": "TestPass123!", "name": "Submit Fallback"})
+        self.assertIn(register.status_code, (201, 409))
+        if register.status_code == 409:
+            register = client.post("/api/auth/login", json={"email": email, "password": "TestPass123!"})
+        token = register.get_json()["token"]
+        good_headers = {"Authorization": f"Bearer {token}"}
+
+        session_payload = client.post("/api/qbank/generate-test", json={"totalQuestions": 1}, headers=good_headers).get_json()
+        sid = session_payload["testSessionId"]
+        qid = session_payload["questionIds"][0]
+
+        client.set_cookie("token", token)
+        stale_headers = {"Authorization": "Bearer stale-token"}
+        submit = client.post(
+            f"/api/qbank/test/{sid}/submit",
+            json={"questionId": qid, "selectedOption": 1, "timeSpent": 12},
+            headers=stale_headers,
+        )
+        self.assertEqual(submit.status_code, 200)
 
     def test_answering_last_question_first_does_not_complete_session(self):
         client = app.test_client()
