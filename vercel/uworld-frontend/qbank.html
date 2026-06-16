@@ -474,13 +474,15 @@ if(ti)clearInterval(ti);
 var total=cc+wc;
 var pct=total>0?Math.round(cc/total*100):0;
 var unanswered=tq-aq;
+var hideIntermediateScore=examType==='test1'&&blockNum>0&&blockNum<6;
 document.getElementById('questionArea').style.display='none';
 document.getElementById('completeState').style.display='block';
 
 if(blockNum>0&&blockNum<6){
 document.getElementById('completeTitle').textContent='Block '+blockNum+' Complete';
-document.getElementById('completeStats').innerHTML=
-'Correct: <strong>'+cc+'</strong> &middot; Wrong: <strong>'+wc+'</strong> &middot; Score: <strong>'+pct+'%</strong><br>'+
+document.getElementById('completeStats').innerHTML=hideIntermediateScore
+?'This block has been recorded. Start the next block when you are ready.'
+:'Correct: <strong>'+cc+'</strong> &middot; Wrong: <strong>'+wc+'</strong> &middot; Score: <strong>'+pct+'%</strong><br>'+
 'Unanswered: '+unanswered+' of '+tq;
 var btns=document.getElementById('completeButtons');btns.innerHTML='';
 var nextExamParam=examType==='free120'?'&exam=free120':(examType==='test1'?'&exam=test1':'');
