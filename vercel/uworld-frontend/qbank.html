@@ -249,6 +249,7 @@ body.reverse .option-item:hover{background:#2f3b46}
 <script>
 var API=window.location.origin;
 var ts,md,qs=[],ci=0,tq=0,so=null,sub=false,st=null,ti=null,se=0,cc=0,wc=0,aq=0;
+var answerStatsByQuestion={};
 var blockNum=0,blockSize=0,startIdx=0,endIdx=0,examType='';
 var zoomLevel=0,marks={},suspendStart=0;
 function getAuthToken(){return localStorage.getItem('uworldToken')||''}
@@ -260,6 +261,7 @@ var p=new URLSearchParams(window.location.search);
 ts=p.get('session');md=p.get('mode')||'tutor';
 examType=p.get('exam')||'';
 blockNum=parseInt(p.get('block'))||0;
+var resumeQuestion=parseInt(p.get('question'));
 var timeLimit=parseInt(p.get('time'))||0;
 
 // Review mode: directly show the solutions for a previously taken exam.
@@ -269,7 +271,6 @@ if(md==='timed'&&timeLimit>0){
 document.getElementById('timerDisplay').style.display='flex';
 se=timeLimit*60;
 document.getElementById('timer').textContent=timeLimit+':00';
-startTimer();
 }
 document.getElementById('modeText').textContent='USMLE Step 1';
 
@@ -288,7 +289,10 @@ startIdx=0;
 endIdx=999;
 tq=999;
 }
-await loadQ(startIdx);
+await hydrateAnswerStats();
+var initialQuestion=Number.isInteger(resumeQuestion)&&resumeQuestion>=startIdx&&resumeQuestion<endIdx?resumeQuestion:startIdx;
+var initialLoadOk=await loadQ(initialQuestion);
+if(initialLoadOk&&md==='timed'&&timeLimit>0)startTimer();
 }
 
 async function loadQ(idx){
@@ -304,9 +308,9 @@ document.querySelectorAll('.option-item').forEach(function(e){e.classList.remove
 
 try{
 var r=await fetch(API+'/api/qbank/test/'+ts+'/question/'+idx,{headers:{'Authorization': 'Bearer '+getAuthToken()}});
-if(!r.ok){document.getElementById('loadingState').innerHTML='<p>Error loading item (HTTP '+r.status+')</p>';return}
+if(!r.ok){document.getElementById('loadingState').innerHTML='<p>Error loading item (HTTP '+r.status+')</p>';return false}
 var d=await r.json();
-if(d.error){document.getElementById('loadingState').innerHTML='<p>Error: '+d.error+'</p>';return}
+if(d.error){document.getElementById('loadingState').innerHTML='<p>Error: '+d.error+'</p>';return false}
 var q=d.question;
 qs[idx]=q.id;
 
@@ -354,7 +358,8 @@ document.getElementById('loadingState').style.display='none';
 document.getElementById('questionArea').style.display='block';
 document.getElementById('examMain').scrollTop=0;
 updateScoreCounters();
-}catch(e){document.getElementById('loadingState').innerHTML='<p>Error: '+e.message+'</p>';}
+return true;
+}catch(e){document.getElementById('loadingState').innerHTML='<p>Error: '+e.message+'</p>';return false;}
 }
 
 function updateScoreCounters(){
@@ -362,6 +367,36 @@ var correctEl=document.getElementById('correctCount');
 var wrongEl=document.getElementById('wrongCount');
 if(correctEl)correctEl.textContent=cc;
 if(wrongEl)wrongEl.textContent=wc;
+}
+
+function recalcAnswerStats(){
+var vals=Object.keys(answerStatsByQuestion).map(function(k){return !!answerStatsByQuestion[k]});
+aq=vals.length;
+cc=vals.filter(Boolean).length;
+wc=aq-cc;
+updateScoreCounters();
+}
+
+function syncAnswerStat(questionId,isCorrect){
+if(!questionId)return;
+answerStatsByQuestion[String(questionId)]=!!isCorrect;
+recalcAnswerStats();
+}
+
+async function hydrateAnswerStats(){
+answerStatsByQuestion={};
+try{
+var r=await fetch(API+'/api/qbank/test/'+ts+'/state',{headers:{'Authorization':'Bearer '+getAuthToken()}});
+if(!r.ok)return;
+var d=await r.json();
+var blockQuestionIds=(d.questionIds||[]).slice(startIdx,endIdx).map(function(id){return String(id)});
+var blockQuestionSet=new Set(blockQuestionIds);
+(d.answers||[]).forEach(function(answer){
+var qid=String(answer.question_id);
+if(blockQuestionSet.has(qid))answerStatsByQuestion[qid]=!!answer.is_correct;
+});
+recalcAnswerStats();
+}catch(e){}
 }
 
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
@@ -413,12 +448,10 @@ var d=await r.json();
 if(d.error){throw new Error(d.error)}
 
 var ca=d.correctAnswer;
-aq++; // answered count
+syncAnswerStat(qid,d.correct);
 
 // TIMED MODE: no feedback, auto-advance, no explanation shown
 if(md==='timed'){
-if(d.correct)cc++;else wc++;
-updateScoreCounters();
 if(ci>=endIdx-1){
 btn.style.display='none';
 document.getElementById('nextBtn').style.display='inline-block';
@@ -436,12 +469,10 @@ if(i+1===ca)el.classList.add('correct');
 else if(i===so&&!d.correct)el.classList.add('wrong');
 });
 var eh=document.getElementById('explanationHeader');
-if(d.correct){eh.textContent='Correct';eh.style.color='var(--correct)';cc++}
-else{eh.textContent='Incorrect — correct answer: '+String.fromCharCode(64+ca);eh.style.color='var(--wrong)';wc++}
+if(d.correct){eh.textContent='Correct';eh.style.color='var(--correct)'}
+else{eh.textContent='Incorrect — correct answer: '+String.fromCharCode(64+ca);eh.style.color='var(--wrong)'}
 document.getElementById('explanationText').innerHTML=d.explanation||'No explanation.';
 document.getElementById('explanationBox').style.display='block';btn.style.display='none';
-
-updateScoreCounters();
 
 if(ci>=endIdx-1){
 document.getElementById('nextBtn').style.display='inline-block';

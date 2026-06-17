@@ -41,6 +41,21 @@ class ApiContractTests(unittest.TestCase):
 
         self.assertEqual(app.test_client().get("/api/session").status_code, 401)
 
+    def test_cookie_session_survives_stale_authorization_header(self):
+        client = app.test_client()
+        import uuid
+        email = f"cookie-fallback-{uuid.uuid4().hex}@example.com"
+        register = client.post("/api/register", json={"email": email, "password": "TestPass123!", "name": "Cookie Fallback"})
+        self.assertIn(register.status_code, (201, 409))
+        if register.status_code == 409:
+            register = client.post("/api/auth/login", json={"email": email, "password": "TestPass123!"})
+        token = register.get_json()["token"]
+
+        client.set_cookie("token", token)
+        session = client.get("/api/session", headers={"Authorization": "Bearer stale-token"})
+        self.assertEqual(session.status_code, 200)
+        self.assertEqual(session.get_json()["user"]["email"], email)
+
     def test_logout_revokes_session_server_side(self):
         client = app.test_client()
         import uuid
@@ -192,6 +207,30 @@ class ApiContractTests(unittest.TestCase):
         self.assertEqual(answers[0]["question_id"], qid)
         self.assertEqual(answers[0]["selected_option"], 1)
 
+    def test_qbank_submit_accepts_valid_cookie_when_header_token_is_stale(self):
+        client = app.test_client()
+        import uuid
+        email = f"submit-fallback-{uuid.uuid4().hex}@example.com"
+        register = client.post("/api/register", json={"email": email, "password": "TestPass123!", "name": "Submit Fallback"})
+        self.assertIn(register.status_code, (201, 409))
+        if register.status_code == 409:
+            register = client.post("/api/auth/login", json={"email": email, "password": "TestPass123!"})
+        token = register.get_json()["token"]
+        good_headers = {"Authorization": f"Bearer {token}"}
+
+        session_payload = client.post("/api/qbank/generate-test", json={"totalQuestions": 1}, headers=good_headers).get_json()
+        sid = session_payload["testSessionId"]
+        qid = session_payload["questionIds"][0]
+
+        client.set_cookie("token", token)
+        stale_headers = {"Authorization": "Bearer stale-token"}
+        submit = client.post(
+            f"/api/qbank/test/{sid}/submit",
+            json={"questionId": qid, "selectedOption": 1, "timeSpent": 12},
+            headers=stale_headers,
+        )
+        self.assertEqual(submit.status_code, 200)
+
     def test_answering_last_question_first_does_not_complete_session(self):
         client = app.test_client()
         headers = self.auth_headers()
@@ -289,6 +328,30 @@ class ApiContractTests(unittest.TestCase):
         # IDs returned by history must work with the review endpoint.
         review = client.get(f"/api/qbank/test/{match['id']}/review", headers=headers)
         self.assertEqual(review.status_code, 200)
+
+    def test_history_exposes_resume_target_for_incomplete_block_exam(self):
+        client = app.test_client()
+        headers = self.auth_headers()
+        gen = client.post("/api/qbank/generate-test1", json={}, headers=headers).get_json()
+        sid = gen["testSessionId"]
+
+        for qid in gen["questionIds"][:40]:
+            submit = client.post(
+                f"/api/qbank/test/{sid}/submit",
+                json={"questionId": qid, "selectedOption": 1, "timeSpent": 5},
+                headers=headers,
+            )
+            self.assertEqual(submit.status_code, 200)
+
+        history = client.get("/api/qbank/history", headers=headers).get_json()
+        match = next((s for s in history["sessions"] if s["id"] == sid), None)
+        self.assertIsNotNone(match)
+        self.assertFalse(match["completed"])
+        self.assertEqual(match["resumeBlock"], 3)
+        self.assertEqual(match["nextQuestionIndex"], 40)
+        self.assertIn("block=3", match["resumeUrl"])
+        self.assertIn("question=40", match["resumeUrl"])
+        self.assertEqual(match["resumeLabel"], "Resume Block 3")
 
     def test_history_is_scoped_to_the_requesting_user(self):
         client = app.test_client()

@@ -22,16 +22,23 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-secret-key-change-i
 # Initialize database
 init_db()
 
+def get_current_session():
+    auth_header = request.headers.get('Authorization', '')
+    header_token = auth_header.split(' ', 1)[1].strip() if auth_header.startswith('Bearer ') else ''
+    cookie_token = request.cookies.get('token', '')
+    checked = set()
+    for token in (header_token, cookie_token):
+        if not token or token in checked:
+            continue
+        checked.add(token)
+        session = validate_session(token)
+        if session:
+            return token, session
+    return '', None
+
 # Helper function to get user from token
 def get_current_user():
-    auth_header = request.headers.get('Authorization', '')
-    token = ''
-    if auth_header.startswith('Bearer '):
-        token = auth_header.split(' ', 1)[1].strip()
-    token = token or request.cookies.get('token', '')
-    if not token:
-        return None
-    session = validate_session(token)
+    _, session = get_current_session()
     if not session:
         return None
     return get_user_by_id(session['user_id'])
@@ -102,11 +109,11 @@ def auth_session():
 
 @app.route('/api/logout', methods=['POST'])
 def auth_logout():
-    auth_header = request.headers.get('Authorization', '')
-    token = ''
-    if auth_header.startswith('Bearer '):
-        token = auth_header.split(' ', 1)[1].strip()
-    token = token or request.cookies.get('token', '')
+    token, _ = get_current_session()
+    if not token:
+        auth_header = request.headers.get('Authorization', '')
+        token = auth_header.split(' ', 1)[1].strip() if auth_header.startswith('Bearer ') else ''
+        token = token or request.cookies.get('token', '')
     if token:
         try:
             delete_session(token)
@@ -149,11 +156,7 @@ def account_change_password():
     update_user_password(user['id'], new_hash)
     # Security: revoke every other session for this account so a stolen token
     # cannot survive a password rotation. Keep the caller's current session.
-    auth_header = request.headers.get('Authorization', '')
-    current_token = ''
-    if auth_header.startswith('Bearer '):
-        current_token = auth_header.split(' ', 1)[1].strip()
-    current_token = current_token or request.cookies.get('token', '')
+    current_token, _ = get_current_session()
     try:
         delete_user_sessions(user['id'], keep_session_id=current_token or None)
     except Exception:
@@ -464,6 +467,7 @@ def qbank_history():
     labels = {
         'free120': 'Step 1 Sample Exam',
         'nbme120': 'NBME 120 Simulation',
+        'test1': 'Test 1',
         'timed': 'Custom Test (Timed)',
         'tutor': 'Custom Test (Tutor)',
     }
@@ -476,6 +480,19 @@ def qbank_history():
             continue  # only surface exams that were actually taken
         correct = sum(1 for a in answers if a.get('is_correct') in (True, 1, '1'))
         total = session.get('total_questions') or 0
+        question_ids = json.loads(session['question_ids'])
+        answered_ids = {str(a.get('question_id')) for a in answers}
+        next_index = next((idx for idx, qid in enumerate(question_ids) if str(qid) not in answered_ids), len(question_ids) - 1)
+        completed = bool(session.get('completed')) or answered >= total
+        block_mode = session['mode'] in ('free120', 'nbme120', 'test1')
+        resume_block = (next_index // 20) + 1 if block_mode else None
+        if block_mode:
+            exam_param = '&exam=free120' if session['mode'] == 'free120' else ('&exam=test1' if session['mode'] == 'test1' else '')
+            resume_url = f"qbank.html?session={session['id']}&block={resume_block}&mode=timed&time=30&question={next_index}{exam_param}"
+            resume_label = f"Resume Block {resume_block}"
+        else:
+            resume_url = f"qbank.html?session={session['id']}&mode={session['mode']}&question={next_index}"
+            resume_label = 'Resume Test'
         history.append({
             'id': session['id'],
             'mode': session['mode'],
@@ -484,7 +501,12 @@ def qbank_history():
             'answered': answered,
             'correct': correct,
             'score': round(correct / answered * 100) if answered else 0,
-            'completed': bool(session.get('completed')) or answered >= total,
+            'completed': completed,
+            'currentQuestion': session.get('current_question') or 0,
+            'nextQuestionIndex': next_index,
+            'resumeBlock': resume_block,
+            'resumeUrl': None if completed else resume_url,
+            'resumeLabel': None if completed else resume_label,
             'createdAt': session.get('created_at'),
             'completedAt': session.get('completed_at'),
         })

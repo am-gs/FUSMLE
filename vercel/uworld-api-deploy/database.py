@@ -5,9 +5,24 @@ import sqlite3
 import uuid
 from urllib import parse, request as urlrequest
 
-DB_PATH = os.environ.get("SQLITE_DATABASE_PATH", os.environ.get("DATABASE_URL", "/tmp/uworld.db"))
-SUPABASE_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
-SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY") or os.environ.get("SUPABASE_ANON_KEY", "")
+try:
+    import psycopg
+except ImportError:  # optional outside persistent Postgres environments
+    psycopg = None
+
+def _env(name, default=""):
+    value = os.environ.get(name, default)
+    if isinstance(value, str):
+        value = value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in ('"', "'"):
+            value = value[1:-1]
+    return value
+
+
+DB_PATH = _env("SQLITE_DATABASE_PATH") or _env("DATABASE_URL", "/tmp/uworld.db")
+SUPABASE_URL = _env("SUPABASE_URL", "").rstrip("/")
+SUPABASE_KEY = _env("SUPABASE_SERVICE_ROLE_KEY") or _env("SUPABASE_ANON_KEY", "")
+POSTGRES_URL = _env("POSTGRES_URL_NON_POOLING") or _env("POSTGRES_URL", "")
 USE_SUPABASE = bool(SUPABASE_URL and SUPABASE_KEY)
 
 
@@ -59,9 +74,77 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
+def init_postgres_schema():
+    if not POSTGRES_URL or psycopg is None:
+        return
+    with psycopg.connect(POSTGRES_URL) as conn:
+        with conn.cursor() as cursor:
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS users (
+                    id BIGSERIAL PRIMARY KEY,
+                    email TEXT UNIQUE NOT NULL,
+                    password_hash TEXT NOT NULL,
+                    name TEXT,
+                    created_at TIMESTAMPTZ DEFAULT NOW()
+                )
+            """)
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS sessions (
+                    id TEXT PRIMARY KEY,
+                    user_id BIGINT NOT NULL REFERENCES users (id) ON DELETE CASCADE,
+                    created_at TIMESTAMPTZ DEFAULT NOW(),
+                    expires_at TIMESTAMPTZ
+                )
+            """)
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS user_progress (
+                    id BIGSERIAL PRIMARY KEY,
+                    user_id BIGINT NOT NULL REFERENCES users (id) ON DELETE CASCADE,
+                    question_id TEXT NOT NULL,
+                    is_correct BOOLEAN NOT NULL,
+                    time_spent INTEGER NOT NULL,
+                    subject TEXT NOT NULL,
+                    system TEXT,
+                    answered_at TIMESTAMPTZ DEFAULT NOW()
+                )
+            """)
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS test_sessions (
+                    id BIGSERIAL PRIMARY KEY,
+                    user_id BIGINT NOT NULL REFERENCES users (id) ON DELETE CASCADE,
+                    mode TEXT NOT NULL,
+                    question_ids JSONB NOT NULL,
+                    total_questions INTEGER NOT NULL,
+                    current_question INTEGER DEFAULT 0,
+                    score INTEGER,
+                    completed BOOLEAN DEFAULT FALSE,
+                    created_at TIMESTAMPTZ DEFAULT NOW(),
+                    completed_at TIMESTAMPTZ,
+                    block_info JSONB
+                )
+            """)
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS test_answers (
+                    id BIGSERIAL PRIMARY KEY,
+                    test_session_id BIGINT NOT NULL REFERENCES test_sessions (id) ON DELETE CASCADE,
+                    user_id BIGINT NOT NULL REFERENCES users (id) ON DELETE CASCADE,
+                    question_id TEXT NOT NULL,
+                    selected_option INTEGER NOT NULL,
+                    is_correct BOOLEAN NOT NULL,
+                    time_spent INTEGER NOT NULL DEFAULT 0,
+                    answered_at TIMESTAMPTZ DEFAULT NOW(),
+                    UNIQUE(test_session_id, question_id)
+                )
+            """)
+            cursor.execute("GRANT USAGE ON SCHEMA public TO anon, authenticated, service_role")
+            cursor.execute("GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO service_role")
+            cursor.execute("GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO service_role")
+            cursor.execute("NOTIFY pgrst, 'reload schema'")
+        conn.commit()
 
 def init_db():
     if USE_SUPABASE:
+        init_postgres_schema()
         return
 
     conn = get_db_connection()
