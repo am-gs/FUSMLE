@@ -1,0 +1,368 @@
+{
+  "exam_slug": "june2026_nbme120_candidate",
+  "summary": {
+    "totalQuestions": 120,
+    "uniqueQuestionIds": 120,
+    "blockSizes": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "sourceFormsUsed": {
+      "Form 30": 24,
+      "Form 31": 24,
+      "NBME 28": 24,
+      "NBME 29": 24,
+      "NBME 27": 24
+    }
+  },
+  "score": {
+    "total": 95,
+    "outOf": 100,
+    "breakdown": {
+      "structuralParity": 25,
+      "blueprintParity": 25,
+      "difficultyParity": 15,
+      "mediaParity": 10,
+      "renderingFidelity": 10,
+      "selectionIntegrity": 10
+    },
+    "notes": [
+      "All structural, blueprint, difficulty, rendering, and provenance checks passed for this candidate artifact.",
+      "The missing 5 points are the currently impossible table and option-table parity gap in the five-form source pool."
+    ]
+  },
+  "targets": {
+    "blockSizes": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "blockImageTargets": [
+      3,
+      4,
+      4,
+      4,
+      3,
+      3
+    ],
+    "blockDifficultyTargets": [
+      {
+        "medium": 14,
+        "easy": 5,
+        "hard": 1
+      },
+      {
+        "medium": 15,
+        "easy": 3,
+        "hard": 2
+      },
+      {
+        "medium": 13,
+        "easy": 3,
+        "hard": 4
+      },
+      {
+        "medium": 14,
+        "easy": 5,
+        "hard": 1
+      },
+      {
+        "medium": 15,
+        "easy": 3,
+        "hard": 2
+      },
+      {
+        "medium": 11,
+        "easy": 4,
+        "hard": 5
+      }
+    ],
+    "blockSystemTargets": [
+      {
+        "Cardiovascular": 2,
+        "MSK/Skin": 2,
+        "Behavioral/Nervous & Special Senses": 5,
+        "Multisystem": 3,
+        "Renal/Urinary": 2,
+        "GI": 3,
+        "General Principles": 1,
+        "Reproductive/Endocrine": 2
+      },
+      {
+        "Reproductive/Endocrine": 3,
+        "Multisystem": 4,
+        "Renal/Urinary": 3,
+        "Cardiovascular": 3,
+        "Behavioral/Nervous & Special Senses": 3,
+        "MSK/Skin": 2,
+        "Respiratory": 2
+      },
+      {
+        "Multisystem": 6,
+        "Hemat/Lymph/Immune": 1,
+        "Behavioral/Nervous & Special Senses": 2,
+        "MSK/Skin": 4,
+        "Cardiovascular": 1,
+        "Respiratory": 1,
+        "GI": 1,
+        "Reproductive/Endocrine": 1,
+        "General Principles": 2,
+        "Renal/Urinary": 1
+      },
+      {
+        "Reproductive/Endocrine": 4,
+        "Cardiovascular": 2,
+        "Multisystem": 7,
+        "Behavioral/Nervous & Special Senses": 2,
+        "General Principles": 1,
+        "Hemat/Lymph/Immune": 1,
+        "GI": 1,
+        "Renal/Urinary": 1,
+        "MSK/Skin": 1
+      },
+      {
+        "Multisystem": 5,
+        "Behavioral/Nervous & Special Senses": 3,
+        "Cardiovascular": 1,
+        "GI": 3,
+        "MSK/Skin": 1,
+        "Respiratory": 3,
+        "Hemat/Lymph/Immune": 1,
+        "Renal/Urinary": 2,
+        "Reproductive/Endocrine": 1
+      },
+      {
+        "Behavioral/Nervous & Special Senses": 3,
+        "Cardiovascular": 3,
+        "Reproductive/Endocrine": 2,
+        "Multisystem": 4,
+        "MSK/Skin": 3,
+        "GI": 1,
+        "Renal/Urinary": 2,
+        "Hemat/Lymph/Immune": 1,
+        "Respiratory": 1
+      }
+    ]
+  },
+  "actual": {
+    "systemCounts": {
+      "Multisystem": 29,
+      "General Principles": 4,
+      "GI": 9,
+      "Behavioral/Nervous & Special Senses": 18,
+      "Cardiovascular": 12,
+      "Reproductive/Endocrine": 13,
+      "MSK/Skin": 13,
+      "Renal/Urinary": 11,
+      "Respiratory": 7,
+      "Hemat/Lymph/Immune": 4
+    },
+    "difficultyCounts": {
+      "medium": 82,
+      "hard": 15,
+      "easy": 23
+    },
+    "imageCount": 21,
+    "tableCount": 0,
+    "optionTableCount": 0
+  },
+  "renderingCoverage": {
+    "missingOptions": 0,
+    "optionParseErrors": 0,
+    "missingExplanations": 0
+  },
+  "gaps": {
+    "tableParityGap": {
+      "targetFromOfficial119": 14,
+      "candidateFromFiveFormPool": 0,
+      "status": "unmet"
+    },
+    "optionTableParityGap": {
+      "targetFromOfficial119": 3,
+      "candidateFromFiveFormPool": 0,
+      "status": "unmet"
+    },
+    "nearDuplicateDetector": {
+      "status": "not_implemented",
+      "currentFallbacksInArtifact": [
+        "duplicate",
+        "blueprint-fit"
+      ]
+    }
+  },
+  "perBlock": [
+    {
+      "block": 1,
+      "questionCount": 20,
+      "imageCount": 3,
+      "difficultyCounts": {
+        "medium": 14,
+        "hard": 1,
+        "easy": 5
+      },
+      "systemCounts": {
+        "Multisystem": 3,
+        "General Principles": 1,
+        "GI": 3,
+        "Behavioral/Nervous & Special Senses": 5,
+        "Cardiovascular": 2,
+        "Reproductive/Endocrine": 2,
+        "MSK/Skin": 2,
+        "Renal/Urinary": 2
+      },
+      "formCounts": {
+        "Form 30": 4,
+        "Form 31": 4,
+        "NBME 28": 4,
+        "NBME 29": 4,
+        "NBME 27": 4
+      }
+    },
+    {
+      "block": 2,
+      "questionCount": 20,
+      "imageCount": 4,
+      "difficultyCounts": {
+        "hard": 2,
+        "medium": 15,
+        "easy": 3
+      },
+      "systemCounts": {
+        "Multisystem": 4,
+        "Behavioral/Nervous & Special Senses": 3,
+        "Respiratory": 2,
+        "Reproductive/Endocrine": 3,
+        "Cardiovascular": 3,
+        "Renal/Urinary": 3,
+        "MSK/Skin": 2
+      },
+      "formCounts": {
+        "NBME 28": 4,
+        "NBME 29": 4,
+        "Form 30": 4,
+        "Form 31": 4,
+        "NBME 27": 4
+      }
+    },
+    {
+      "block": 3,
+      "questionCount": 20,
+      "imageCount": 4,
+      "difficultyCounts": {
+        "medium": 13,
+        "easy": 3,
+        "hard": 4
+      },
+      "systemCounts": {
+        "MSK/Skin": 4,
+        "Cardiovascular": 1,
+        "Respiratory": 1,
+        "Renal/Urinary": 1,
+        "Behavioral/Nervous & Special Senses": 2,
+        "General Principles": 2,
+        "Multisystem": 6,
+        "Reproductive/Endocrine": 1,
+        "GI": 1,
+        "Hemat/Lymph/Immune": 1
+      },
+      "formCounts": {
+        "Form 31": 4,
+        "NBME 28": 4,
+        "NBME 29": 4,
+        "NBME 27": 4,
+        "Form 30": 4
+      }
+    },
+    {
+      "block": 4,
+      "questionCount": 20,
+      "imageCount": 4,
+      "difficultyCounts": {
+        "medium": 14,
+        "easy": 5,
+        "hard": 1
+      },
+      "systemCounts": {
+        "Cardiovascular": 2,
+        "Renal/Urinary": 1,
+        "MSK/Skin": 1,
+        "Multisystem": 7,
+        "Reproductive/Endocrine": 4,
+        "Hemat/Lymph/Immune": 1,
+        "Behavioral/Nervous & Special Senses": 2,
+        "General Principles": 1,
+        "GI": 1
+      },
+      "formCounts": {
+        "NBME 28": 4,
+        "NBME 29": 4,
+        "Form 30": 4,
+        "Form 31": 4,
+        "NBME 27": 4
+      }
+    },
+    {
+      "block": 5,
+      "questionCount": 20,
+      "imageCount": 3,
+      "difficultyCounts": {
+        "hard": 2,
+        "medium": 15,
+        "easy": 3
+      },
+      "systemCounts": {
+        "Renal/Urinary": 2,
+        "Cardiovascular": 1,
+        "Behavioral/Nervous & Special Senses": 3,
+        "GI": 3,
+        "Respiratory": 3,
+        "Reproductive/Endocrine": 1,
+        "MSK/Skin": 1,
+        "Hemat/Lymph/Immune": 1,
+        "Multisystem": 5
+      },
+      "formCounts": {
+        "NBME 29": 4,
+        "Form 30": 4,
+        "NBME 27": 4,
+        "Form 31": 4,
+        "NBME 28": 4
+      }
+    },
+    {
+      "block": 6,
+      "questionCount": 20,
+      "imageCount": 3,
+      "difficultyCounts": {
+        "medium": 11,
+        "easy": 4,
+        "hard": 5
+      },
+      "systemCounts": {
+        "Renal/Urinary": 2,
+        "Cardiovascular": 3,
+        "Multisystem": 4,
+        "Reproductive/Endocrine": 2,
+        "Behavioral/Nervous & Special Senses": 3,
+        "MSK/Skin": 3,
+        "Hemat/Lymph/Immune": 1,
+        "Respiratory": 1,
+        "GI": 1
+      },
+      "formCounts": {
+        "Form 30": 4,
+        "NBME 29": 4,
+        "NBME 27": 4,
+        "Form 31": 4,
+        "NBME 28": 4
+      }
+    }
+  ]
+}
