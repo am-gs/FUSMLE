@@ -56,8 +56,10 @@ def validation_error_for_field_value(field_info, field_value):
     field_type = field_info["type"]
     field_id = field_info["field_id"]
     if field_type == "checkbox":
-        checked_val = field_info["checked_value"]
-        unchecked_val = field_info["unchecked_value"]
+        checked_val = field_info.get("checked_value")
+        unchecked_val = field_info.get("unchecked_value")
+        if checked_val is None or unchecked_val is None:
+            return f'ERROR: Checkbox field "{field_id}" is missing checked/unchecked state metadata. Re-run extraction or visually verify the field before filling it.'
         if field_value != checked_val and field_value != unchecked_val:
             return f'ERROR: Invalid value "{field_value}" for checkbox field "{field_id}". The checked value is "{checked_val}" and the unchecked value is "{unchecked_val}"'
     elif field_type == "radio_group":
