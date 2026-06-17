@@ -505,7 +505,7 @@ if(ti)clearInterval(ti);
 var total=cc+wc;
 var pct=total>0?Math.round(cc/total*100):0;
 var unanswered=tq-aq;
-var hideIntermediateScore=examType==='test1'&&blockNum>0&&blockNum<6;
+var hideIntermediateScore=(examType==='test1'||examType==='test2')&&blockNum>0&&blockNum<6;
 document.getElementById('questionArea').style.display='none';
 document.getElementById('completeState').style.display='block';
 
@@ -516,7 +516,7 @@ document.getElementById('completeStats').innerHTML=hideIntermediateScore
 :'Correct: <strong>'+cc+'</strong> &middot; Wrong: <strong>'+wc+'</strong> &middot; Score: <strong>'+pct+'%</strong><br>'+
 'Unanswered: '+unanswered+' of '+tq;
 var btns=document.getElementById('completeButtons');btns.innerHTML='';
-var nextExamParam=examType==='free120'?'&exam=free120':(examType==='test1'?'&exam=test1':'');
+var nextExamParam=examType==='free120'?'&exam=free120':(examType==='test2'?'&exam=test2':(examType==='test1'?'&exam=test1':''));
 btns.innerHTML+='<button class="navbtn primary" onclick="window.location.href=\'/qbank.html?session='+ts+'&block='+(blockNum+1)+'&mode=timed&time=30'+nextExamParam+'\'" style="margin-right:10px">Start Block '+(blockNum+1)+'</button> ';
 btns.innerHTML+='<button class="navbtn" onclick="window.location.href=\'/createtest\'">New Test</button>';
 }else{
@@ -532,7 +532,7 @@ try{
 var r=await fetch(API+'/api/qbank/test/'+ts+'/review',{headers:{'Authorization':'Bearer '+getAuthToken()}});
 if(!r.ok)throw new Error('HTTP '+r.status);
 var d=await r.json();
-document.getElementById('completeTitle').textContent=d.mode==='free120'?'Sample Exam Review':(d.mode==='nbme120'?'NBME 120 Review':'Test Review');
+document.getElementById('completeTitle').textContent=d.mode==='free120'?'Sample Exam Review':(d.mode==='nbme120'?'NBME 120 Review':(d.mode==='test2'?'Test 2 Review':'Test Review'));
 var reviewRows=d.rows||[];
 var correct=reviewRows.filter(function(row){return isCorrectValue(row.isCorrect)}).length;
 var wrong=reviewRows.filter(function(row){return isWrongValue(row.isCorrect)}).length;

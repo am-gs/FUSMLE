@@ -8,7 +8,7 @@ from database import init_db, create_user, get_user_by_email, get_user_by_id, cr
 from database import get_user_progress, update_user_progress, create_test_session, get_test_session, get_user_test_sessions
 from database import record_test_answer, get_test_answers, update_test_session
 from qbank_data import load_questions, get_subject_counts, get_system_counts, generate_test, get_question_by_id
-from nbme120 import generate_nbme120, generate_test1
+from nbme120 import generate_nbme120, generate_test1, generate_test2
 from free120_questions import FREE120_QUESTIONS
 
 app = Flask(__name__)
@@ -272,6 +272,26 @@ def qbank_generate_test1():
     result['testSessionId'] = test_session_id
     return jsonify(result)
 
+
+@app.route('/api/qbank/generate-test2', methods=['POST'])
+def qbank_generate_test2():
+    user = get_current_user()
+    if not user:
+        return jsonify({'error': 'Unauthorized'}), 401
+    result = generate_test2()
+    all_ids = result['questionIds']
+
+    test_session_id = create_test_session(
+        user_id=user['id'],
+        mode='test2',
+        question_ids=all_ids,
+        total_questions=len(all_ids),
+        block_info=result['blocks']
+    )
+
+    result['testSessionId'] = test_session_id
+    return jsonify(result)
+
 @app.route('/api/qbank/generate-free120', methods=['POST'])
 def qbank_generate_free120():
     user = get_current_user()
@@ -437,8 +457,8 @@ def qbank_test_review(test_id):
         selected = answer.get('selected_option')
         rows.append({
             'index': idx,
-            'block': idx // 20 + 1 if test_session['mode'] in ('nbme120', 'free120', 'test1') else None,
-            'blockQuestion': idx % 20 + 1 if test_session['mode'] in ('nbme120', 'free120', 'test1') else None,
+            'block': idx // 20 + 1 if test_session['mode'] in ('nbme120', 'free120', 'test1', 'test2') else None,
+            'blockQuestion': idx % 20 + 1 if test_session['mode'] in ('nbme120', 'free120', 'test1', 'test2') else None,
             'questionId': question_id,
             'subject': question.get('subject', ''),
             'system': question.get('system', ''),
@@ -468,6 +488,7 @@ def qbank_history():
         'free120': 'Step 1 Sample Exam',
         'nbme120': 'NBME 120 Simulation',
         'test1': 'Test 1',
+        'test2': 'Test 2',
         'timed': 'Custom Test (Timed)',
         'tutor': 'Custom Test (Tutor)',
     }
@@ -484,10 +505,10 @@ def qbank_history():
         answered_ids = {str(a.get('question_id')) for a in answers}
         next_index = next((idx for idx, qid in enumerate(question_ids) if str(qid) not in answered_ids), len(question_ids) - 1)
         completed = bool(session.get('completed')) or answered >= total
-        block_mode = session['mode'] in ('free120', 'nbme120', 'test1')
+        block_mode = session['mode'] in ('free120', 'nbme120', 'test1', 'test2')
         resume_block = (next_index // 20) + 1 if block_mode else None
         if block_mode:
-            exam_param = '&exam=free120' if session['mode'] == 'free120' else ('&exam=test1' if session['mode'] == 'test1' else '')
+            exam_param = '&exam=free120' if session['mode'] == 'free120' else ('&exam=test2' if session['mode'] == 'test2' else ('&exam=test1' if session['mode'] == 'test1' else ''))
             resume_url = f"qbank.html?session={session['id']}&block={resume_block}&mode=timed&time=30&question={next_index}{exam_param}"
             resume_label = f"Resume Block {resume_block}"
         else:

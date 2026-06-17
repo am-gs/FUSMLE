@@ -77,11 +77,11 @@ def generate_nbme120(exclude_ids=None):
 
 
 ROOT = Path(__file__).resolve().parents[2]
-TEST1_MANIFEST_PATH = ROOT / "artifacts" / "manifests" / "june2026_nbme120_candidate.json"
+TEST2_MANIFEST_PATH = ROOT / "artifacts" / "manifests" / "june2026_nbme120_candidate.json"
 
 
-def _load_test1_manifest():
-    manifest = json.loads(TEST1_MANIFEST_PATH.read_text())
+def _load_test2_manifest():
+    manifest = json.loads(TEST2_MANIFEST_PATH.read_text())
     blocks = manifest.get("blocks", [])
     all_ids = [qid for block in blocks for qid in block.get("questionIds", [])]
     available = {q["id"]: q for q in load_questions()}
@@ -89,22 +89,27 @@ def _load_test1_manifest():
     not_ready_ids = [qid for qid in all_ids if qid in available and not available[qid].get("exam_ready", True)]
 
     if manifest.get("total_questions") != 120:
-        raise ValueError("Test 1 manifest must contain 120 questions")
+        raise ValueError("Test 2 manifest must contain 120 questions")
     if manifest.get("block_sizes") != [20, 20, 20, 20, 20, 20]:
-        raise ValueError("Test 1 manifest must contain 6 blocks of 20 questions")
+        raise ValueError("Test 2 manifest must contain 6 blocks of 20 questions")
     if len(all_ids) != 120 or len(set(all_ids)) != 120:
-        raise ValueError("Test 1 manifest must contain 120 unique question IDs")
+        raise ValueError("Test 2 manifest must contain 120 unique question IDs")
     if missing_ids:
-        raise ValueError(f"Test 1 manifest references missing qbank IDs: {missing_ids[:5]}")
+        raise ValueError(f"Test 2 manifest references missing qbank IDs: {missing_ids[:5]}")
     if not_ready_ids:
-        raise ValueError(f"Test 1 manifest references non-ready qbank IDs: {not_ready_ids[:5]}")
+        raise ValueError(f"Test 2 manifest references non-ready qbank IDs: {not_ready_ids[:5]}")
 
     return manifest, all_ids
 
 
 def generate_test1():
+    """Legacy alias for the deterministic June-style 120 candidate reconstruction."""
+    return generate_test2(format_slug="test1", title="TEST 1 — June 2026 NBME 120 Candidate Reconstruction")
+
+
+def generate_test2(format_slug="test2", title="TEST 2 — June 2026 NBME 120 Candidate Reconstruction"):
     """Return the fixed deterministic June-style 120 candidate reconstruction."""
-    manifest, all_ids = _load_test1_manifest()
+    manifest, all_ids = _load_test2_manifest()
     blocks = [
         {
             "blockNumber": block["block"],
@@ -116,8 +121,8 @@ def generate_test1():
         for block in manifest["blocks"]
     ]
     return {
-        "format": "test1",
-        "title": "TEST 1 — June 2026 NBME 120 Candidate Reconstruction",
+        "format": format_slug,
+        "title": title,
         "timed": True,
         "totalQuestions": manifest["total_questions"],
         "blocks": blocks,

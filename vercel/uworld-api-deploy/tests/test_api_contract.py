@@ -188,15 +188,15 @@ class ApiContractTests(unittest.TestCase):
         self.assertEqual(state_payload["questionIds"], payload["questionIds"])
         self.assertEqual([block["questionIds"] for block in state_payload["blocks"]], [block["questionIds"] for block in payload["blocks"]])
 
-    def test_test1_endpoint_uses_frozen_120_manifest_order(self):
+    def test_test2_endpoint_uses_frozen_120_manifest_order(self):
         client = app.test_client()
         headers = self.auth_headers()
-        response = client.post("/api/qbank/generate-test1", json={}, headers=headers)
+        response = client.post("/api/qbank/generate-test2", json={}, headers=headers)
         self.assertEqual(response.status_code, 200)
         payload = response.get_json()
         block_ids = [qid for block in payload["blocks"] for qid in block["questionIds"]]
         self.assertEqual(payload["questionIds"], block_ids)
-        self.assertEqual(payload["format"], "test1")
+        self.assertEqual(payload["format"], "test2")
         self.assertEqual(payload["manifestSlug"], "june2026_nbme120_candidate")
         self.assertEqual(payload["totalQuestions"], 120)
         self.assertEqual(len(payload["blocks"]), 6)
@@ -216,6 +216,14 @@ class ApiContractTests(unittest.TestCase):
         state_payload = state.get_json()
         self.assertEqual(state_payload["questionIds"], payload["questionIds"])
         self.assertEqual([block["questionIds"] for block in state_payload["blocks"]], [block["questionIds"] for block in payload["blocks"]])
+
+    def test_test1_endpoint_remains_a_compatible_alias(self):
+        client = app.test_client()
+        headers = self.auth_headers()
+        payload = client.post("/api/qbank/generate-test1", json={}, headers=headers).get_json()
+        self.assertEqual(payload["format"], "test1")
+        self.assertEqual(payload["totalQuestions"], 120)
+        self.assertEqual([len(block["questionIds"]) for block in payload["blocks"]], [20] * 6)
 
     def test_answer_submission_is_persisted_in_test_state(self):
         client = app.test_client()
@@ -324,10 +332,10 @@ class ApiContractTests(unittest.TestCase):
         self.assertTrue(first["explanation"].strip(), "review row is missing explanation/solution")
         self.assertEqual(first["selectedOption"], 1)
 
-    def test_test1_review_returns_120_rows_with_block_metadata(self):
+    def test_test2_review_returns_120_rows_with_block_metadata(self):
         client = app.test_client()
         headers = self.auth_headers()
-        gen = client.post("/api/qbank/generate-test1", json={}, headers=headers).get_json()
+        gen = client.post("/api/qbank/generate-test2", json={}, headers=headers).get_json()
         sid = gen["testSessionId"]
         q0 = client.get(f"/api/qbank/test/{sid}/question/0", headers=headers).get_json()["question"]
         client.post(f"/api/qbank/test/{sid}/submit", json={"questionId": q0["id"], "selectedOption": 1, "timeSpent": 5}, headers=headers)
@@ -377,7 +385,7 @@ class ApiContractTests(unittest.TestCase):
     def test_history_exposes_resume_target_for_incomplete_block_exam(self):
         client = app.test_client()
         headers = self.auth_headers()
-        gen = client.post("/api/qbank/generate-test1", json={}, headers=headers).get_json()
+        gen = client.post("/api/qbank/generate-test2", json={}, headers=headers).get_json()
         sid = gen["testSessionId"]
 
         for qid in gen["questionIds"][:40]:
@@ -392,10 +400,13 @@ class ApiContractTests(unittest.TestCase):
         match = next((s for s in history["sessions"] if s["id"] == sid), None)
         self.assertIsNotNone(match)
         self.assertFalse(match["completed"])
+        self.assertEqual(match["mode"], "test2")
+        self.assertEqual(match["label"], "Test 2")
         self.assertEqual(match["resumeBlock"], 3)
         self.assertEqual(match["nextQuestionIndex"], 40)
         self.assertIn("block=3", match["resumeUrl"])
         self.assertIn("question=40", match["resumeUrl"])
+        self.assertIn("exam=test2", match["resumeUrl"])
         self.assertEqual(match["resumeLabel"], "Resume Block 3")
 
     def test_history_is_scoped_to_the_requesting_user(self):
