@@ -10,10 +10,19 @@ try:
 except ImportError:  # optional outside persistent Postgres environments
     psycopg = None
 
-DB_PATH = os.environ.get("SQLITE_DATABASE_PATH", os.environ.get("DATABASE_URL", "/tmp/uworld.db"))
-SUPABASE_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
-SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY") or os.environ.get("SUPABASE_ANON_KEY", "")
-POSTGRES_URL = os.environ.get("POSTGRES_URL_NON_POOLING") or os.environ.get("POSTGRES_URL", "")
+def _env(name, default=""):
+    value = os.environ.get(name, default)
+    if isinstance(value, str):
+        value = value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in ('"', "'"):
+            value = value[1:-1]
+    return value
+
+
+DB_PATH = _env("SQLITE_DATABASE_PATH") or _env("DATABASE_URL", "/tmp/uworld.db")
+SUPABASE_URL = _env("SUPABASE_URL", "").rstrip("/")
+SUPABASE_KEY = _env("SUPABASE_SERVICE_ROLE_KEY") or _env("SUPABASE_ANON_KEY", "")
+POSTGRES_URL = _env("POSTGRES_URL_NON_POOLING") or _env("POSTGRES_URL", "")
 USE_SUPABASE = bool(SUPABASE_URL and SUPABASE_KEY)
 
 
