@@ -19,7 +19,8 @@ echo "Test pattern: $TEST_PATTERN"
 echo ""
 
 # Get list of test files
-TEST_FILES=$(find . -path "$TEST_PATTERN" | sort)
+NORMALIZED_PATTERN="./${TEST_PATTERN#./}"
+TEST_FILES=$(find . -path "$NORMALIZED_PATTERN" | sort)
 TOTAL=$(echo "$TEST_FILES" | wc -l | tr -d ' ')
 
 echo "Found $TOTAL test files"

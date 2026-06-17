@@ -109,7 +109,7 @@ test("swipe carousel", async ({ page }) => {
 
 ```typescript
 // fixtures/touch.fixture.ts
-import { test as base, Page } from "@playwright/test";
+import { test as base, Locator } from "@playwright/test";
 
 type TouchFixtures = {
   swipe: (
@@ -154,7 +154,8 @@ export const test = base.extend<TouchFixtures>({
       };
 
       const move = moves[direction];
-      await page.touchscreen.tap(move.startX, move.startY ?? move.y);
+      await page.mouse.move(move.startX, move.startY ?? move.y);
+      await page.mouse.down();
       await page.mouse.move(move.endX, move.endY ?? move.y, { steps: 10 });
       await page.mouse.up();
     });
@@ -182,11 +183,18 @@ test("long press for context menu", async ({ page }) => {
   const box = await file.boundingBox();
 
   if (box) {
-    // Touch down
-    await page.touchscreen.tap(box.x + box.width / 2, box.y + box.height / 2);
+    const centerX = box.x + box.width / 2;
+    const centerY = box.y + box.height / 2;
+
+    // Press and hold
+    await page.mouse.move(centerX, centerY);
+    await page.mouse.down();
 
     // Hold for 500ms
     await page.waitForTimeout(500);
+
+    // Release after the hold
+    await page.mouse.up();
 
     // Context menu should appear
     await expect(page.getByRole("menu")).toBeVisible();
