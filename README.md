@@ -9,7 +9,7 @@ Clean deployment snapshot for the live FUSMLE app.
 - `vercel/uworld-api-deploy/gold_runtime.json` — runtime QBank data loaded by the backend
 - `vercel/uworld-api-deploy/images_crop/` and `images_pages/` — runtime image assets used by the QBank
 
-This repo intentionally excludes curation workspaces, source PDFs/OCR dumps, calibration artifacts, and agent/docs folders.
+This repo intentionally excludes bulky curation workspaces, source PDFs/OCR dumps, and calibration artifacts. It now includes a project agent operating system across `AGENTS.md`, `CLAUDE.md`, `CAPTAIN.md`, `BUILD.md`, and `REVIEW.md`, plus project-local skills under `skills/` for deterministic exam curation workflows.
 
 ## TEST 1
 
