@@ -1,6 +1,6 @@
 # React Best Practices
 
-A structured repository for creating and maintaining React Best Practices optimized for agents and LLMs.
+Vendored React/Next.js rule pack for agent consumption. This repo intentionally ships the rule content, not the upstream package's build pipeline.
 
 ## Structure
 
@@ -8,32 +8,16 @@ A structured repository for creating and maintaining React Best Practices optimi
   - `_sections.md` - Section metadata (titles, impacts, descriptions)
   - `_template.md` - Template for creating new rules
   - `area-description.md` - Individual rule files
-- `src/` - Build scripts and utilities
-- `metadata.json` - Document metadata (version, organization, abstract)
-- __`AGENTS.md`__ - Compiled output (generated)
-- __`test-cases.json`__ - Test cases for LLM evaluation (generated)
+- `AGENTS.md` - compiled guidance consumed by agents in the original source package
+- `README.md` - maintainer notes for this vendored copy
 
 ## Getting Started
 
-1. Install dependencies:
-   ```bash
-   pnpm install
-   ```
+1. Start with `SKILL.md` to understand when this rule pack should be invoked.
+2. Open the relevant files in `rules/` for the specific React or Next.js concern you are touching.
+3. Treat examples here as guidance to adapt, not as copy-paste truth without checking framework/runtime details.
 
-2. Build AGENTS.md from rules:
-   ```bash
-   pnpm build
-   ```
-
-3. Validate rule files:
-   ```bash
-   pnpm validate
-   ```
-
-4. Extract test cases:
-   ```bash
-   pnpm extract-tests
-   ```
+If you need the original authoring/build workflow, fetch the upstream package rather than assuming those scripts exist in this repository.
 
 ## Creating a New Rule
 
@@ -49,13 +33,13 @@ A structured repository for creating and maintaining React Best Practices optimi
    - `advanced-` for Advanced Patterns (Section 8)
 3. Fill in the frontmatter and content
 4. Ensure you have clear examples with explanations
-5. Run `pnpm build` to regenerate AGENTS.md and test-cases.json
+5. Keep examples accurate and self-contained for agent consumption
 
 ## Rule File Structure
 
 Each rule file should follow this structure:
 
-```markdown
+````markdown
 ---
 title: Rule Title Here
 impact: MEDIUM
@@ -82,6 +66,7 @@ Brief explanation of the rule and why it matters.
 Optional explanatory text after examples.
 
 Reference: [Link](https://example.com)
+````
 
 ## File Naming Convention
 
@@ -100,13 +85,6 @@ Reference: [Link](https://example.com)
 - `LOW-MEDIUM` - Low-medium gains
 - `LOW` - Incremental improvements
 
-## Scripts
-
-- `pnpm build` - Compile rules into AGENTS.md
-- `pnpm validate` - Validate all rule files
-- `pnpm extract-tests` - Extract test cases for LLM evaluation
-- `pnpm dev` - Build and validate
-
 ## Contributing
 
 When adding or modifying rules:
@@ -115,8 +93,8 @@ When adding or modifying rules:
 2. Follow the `_template.md` structure
 3. Include clear bad/good examples with explanations
 4. Add appropriate tags
-5. Run `pnpm build` to regenerate AGENTS.md and test-cases.json
-6. Rules are automatically sorted by title - no need to manage numbers!
+5. Verify any claimed framework behavior against the source docs
+6. Rules are automatically sorted by title in the upstream pack - no need to manage numbers here
 
 ## Acknowledgments
 

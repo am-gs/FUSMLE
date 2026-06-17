@@ -7,7 +7,7 @@ tags: advanced, hooks, useEffectEvent, dependencies, effects
 
 ## Do Not Put Effect Events in Dependency Arrays
 
-Effect Event functions do not have a stable identity. Their identity intentionally changes on every render. Do not include the function returned by `useEffectEvent` in a `useEffect` dependency array. Keep the actual reactive values as dependencies and call the Effect Event from inside the effect body or subscriptions created by that effect.
+Effect Event functions are intentionally non-reactive. Do not include the function returned by `useEffectEvent` in a `useEffect` dependency array. Keep the actual reactive values as dependencies and call the Effect Event from inside the effect body or subscriptions created by that effect so it can read the latest props and state without making the effect reactive to the callback itself.
 
 **Incorrect (Effect Event added as a dependency):**
 
@@ -30,7 +30,7 @@ function ChatRoom({ roomId, onConnected }: {
 }
 ```
 
-Including the Effect Event in dependencies makes the effect re-run every render and triggers the React Hooks lint rule.
+Including the Effect Event in dependencies is unnecessary and conflicts with React's guidance. Depend on the reactive values the effect actually uses instead.
 
 **Correct (depend on reactive values, not the Effect Event):**
 

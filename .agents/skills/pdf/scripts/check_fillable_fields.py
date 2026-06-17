@@ -1,8 +1,13 @@
 import sys
+
+
+
+
+if len(sys.argv) != 2:
+    print("Usage: check_fillable_fields.py [input pdf]")
+    sys.exit(1)
+
 from pypdf import PdfReader
-
-
-
 
 reader = PdfReader(sys.argv[1])
 if (reader.get_fields()):

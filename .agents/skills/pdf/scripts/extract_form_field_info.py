@@ -6,13 +6,18 @@ from pypdf import PdfReader
 
 
 
+def resolve_pdf_object(value):
+    return value.get_object() if hasattr(value, "get_object") else value
+
+
 def get_full_annotation_field_id(annotation):
+    annotation = resolve_pdf_object(annotation)
     components = []
     while annotation:
         field_name = annotation.get('/T')
         if field_name:
             components.append(field_name)
-        annotation = annotation.get('/Parent')
+        annotation = resolve_pdf_object(annotation.get('/Parent'))
     return ".".join(reversed(components)) if components else None
 
 
@@ -61,7 +66,7 @@ def get_field_info(reader: PdfReader):
     radio_fields_by_id = {}
 
     for page_index, page in enumerate(reader.pages):
-        annotations = page.get('/Annots', [])
+        annotations = [resolve_pdf_object(annotation) for annotation in page.get('/Annots', [])]
         for ann in annotations:
             field_id = get_full_annotation_field_id(ann)
             if field_id in field_info_by_id:
@@ -69,7 +74,9 @@ def get_field_info(reader: PdfReader):
                 field_info_by_id[field_id]["rect"] = ann.get('/Rect')
             elif field_id in possible_radio_names:
                 try:
-                    on_values = [v for v in ann["/AP"]["/N"] if v != "/Off"]
+                    appearance = resolve_pdf_object(ann["/AP"])
+                    normal_appearance = resolve_pdf_object(appearance["/N"])
+                    on_values = [v for v in normal_appearance if v != "/Off"]
                 except KeyError:
                     continue
                 if len(on_values) == 1:

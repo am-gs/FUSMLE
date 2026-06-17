@@ -45,7 +45,7 @@ export async function POST(request: Request) {
     const userAgent = (await headers()).get('user-agent') || 'unknown'
     const sessionCookie = (await cookies()).get('session-id')?.value || 'anonymous'
     
-    logUserAction({ sessionCookie, userAgent })
+    await logUserAction({ sessionCookie, userAgent })
   })
   
   return new Response(JSON.stringify({ status: 'success' }), {

@@ -28,4 +28,4 @@ function AnimationPlayer({ enabled, setEnabled }: { enabled: boolean; setEnabled
 }
 ```
 
-The `typeof window !== 'undefined'` check prevents bundling this module for SSR, optimizing server bundle size and build speed.
+The dynamic `import()` is what splits this code out of the initial bundle. The `typeof window !== 'undefined'` guard keeps the load on a browser-only execution path, which is useful for SSR safety but is not, by itself, a bundling guarantee.
