@@ -59,7 +59,9 @@ The user has already stated the source qbank contains real extracted NBME Step 1
     {
       "block": 1,
       "question_ids": ["..."],
-      "selection_rationale": "exact|duplicate|blueprint-fit"
+      "selection_rationale_by_question": {
+        "<question_id>": "exact|duplicate|blueprint-fit"
+      }
     }
   ]
 }

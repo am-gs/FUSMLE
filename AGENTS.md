@@ -72,31 +72,31 @@ Use project-local skills first:
 
 ## 6. Upstream skill catalogs available in this environment
 
-These are workspace resources, not repo content:
+These may be available as workspace resources, not repo content. Verify presence before relying on them:
 
 - `/home/agent-skill-sources/anthropic-skills`
 - `/home/agent-skill-sources/openai-skills`
 - `/home/agent-skill-sources/agent-skills-hub`
 - `/home/agent-skill-sources/claude-skills`
 
-Use them as pattern libraries and reusable tactics. Do **not** vendor bulk noise into the repo without a clear project benefit.
+If a path is missing, continue with the repo-local `skills/` stack first and only treat the absent catalog as optional context. Use these catalogs as pattern libraries and reusable tactics; do **not** vendor bulk noise into the repo without a clear project benefit.
 
 ## 7. SOTA tool repos available in this environment
 
-- `/home/sota-skills/docling` — high-fidelity document/PDF/layout extraction
-- `/home/sota-skills/instructor` — typed structured extraction and validation
-- `/home/sota-skills/dspy` — ranking and prompt/program optimization
-- `/home/sota-skills/promptfoo` — eval/regression harness
-- `/home/sota-skills/pydantic-ai` — typed agents, evals, durable execution
-- `/home/andrej-karpathy-skills` — anti-bloat / anti-assumption execution discipline
+- `/home/sota-skills/docling` — if present, use for high-fidelity document/PDF/layout extraction
+- `/home/sota-skills/instructor` — if present, use for typed structured extraction and validation
+- `/home/sota-skills/dspy` — if present, use for ranking and prompt/program optimization
+- `/home/sota-skills/promptfoo` — if present, use for eval/regression harness
+- `/home/sota-skills/pydantic-ai` — if present, use for typed agents, evals, durable execution
+- `/home/andrej-karpathy-skills` — if present, use for anti-bloat / anti-assumption execution discipline
 
 ### Default tool mapping
 
-- source PDF or screenshot extraction → `docling` first, OCR only where needed
-- schema repair / content normalization → `instructor` + Pydantic models
-- selector optimization / retrieval ranking → `dspy`
-- side-by-side candidate evaluation / regression gating → `promptfoo`
-- durable multi-step orchestration if needed → `pydantic-ai`
+- source PDF or screenshot extraction → `docling` first if present, otherwise use repo-local extraction skills and OCR only where needed
+- schema repair / content normalization → `instructor` + Pydantic models if present, otherwise use explicit local schemas and validators
+- selector optimization / retrieval ranking → `dspy` if present, otherwise keep the selector deterministic and rules-based
+- side-by-side candidate evaluation / regression gating → `promptfoo` if present, otherwise use repo-local eval artifacts and scripted checks
+- durable multi-step orchestration if needed → `pydantic-ai` if present, otherwise keep the flow artifact-driven and resumable via files
 
 ## 8. Canonical artifact contract
 

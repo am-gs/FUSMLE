@@ -26,12 +26,12 @@ Read `AGENTS.md` first. It is the canonical project operating manual.
 
 ## Useful workspace resources
 
-- `/home/sota-skills/docling`
-- `/home/sota-skills/instructor`
-- `/home/sota-skills/dspy`
-- `/home/sota-skills/promptfoo`
-- `/home/sota-skills/pydantic-ai`
-- `/home/agent-skill-sources/anthropic-skills`
-- `/home/agent-skill-sources/openai-skills`
+- `/home/sota-skills/docling` if present
+- `/home/sota-skills/instructor` if present
+- `/home/sota-skills/dspy` if present
+- `/home/sota-skills/promptfoo` if present
+- `/home/sota-skills/pydantic-ai` if present
+- `/home/agent-skill-sources/anthropic-skills` if present
+- `/home/agent-skill-sources/openai-skills` if present
 
 If you need details, stop being heroic and open `AGENTS.md`.
