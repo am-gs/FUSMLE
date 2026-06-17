@@ -501,7 +501,7 @@ function AnimationPlayer({ enabled, setEnabled }: { enabled: boolean; setEnabled
 }
 ```
 
-The `typeof window !== 'undefined'` check prevents bundling this module for SSR, optimizing server bundle size and build speed.
+The dynamic `import()` is what splits this code out of the initial bundle. The `typeof window !== 'undefined'` guard keeps the load on a browser-only execution path, which is useful for SSR safety but is not, by itself, a bundling guarantee.
 
 ### 2.3 Defer Non-Critical Third-Party Libraries
 
@@ -1329,7 +1329,7 @@ export async function POST(request: Request) {
     const userAgent = (await headers()).get('user-agent') || 'unknown'
     const sessionCookie = (await cookies()).get('session-id')?.value || 'anonymous'
     
-    logUserAction({ sessionCookie, userAgent })
+    await logUserAction({ sessionCookie, userAgent })
   })
   
   return new Response(JSON.stringify({ status: 'success' }), {
@@ -1525,7 +1525,7 @@ function StaticContent() {
 **For mutations:**
 
 ```tsx
-import { useSWRMutation } from 'swr/mutation'
+import useSWRMutation from 'swr/mutation'
 
 function UpdateButton() {
   const { trigger } = useSWRMutation('/api/user', updateUser)
@@ -2530,28 +2530,27 @@ Component first renders with default value (`light`), then updates after hydrati
 function ThemeWrapper({ children }: { children: ReactNode }) {
   return (
     <>
-      <div id="theme-wrapper">
-        {children}
-      </div>
       <script
         dangerouslySetInnerHTML={{
           __html: `
             (function() {
               try {
                 var theme = localStorage.getItem('theme') || 'light';
-                var el = document.getElementById('theme-wrapper');
-                if (el) el.className = theme;
+                document.documentElement.dataset.theme = theme;
               } catch (e) {}
             })();
           `,
         }}
       />
+      <div>
+        {children}
+      </div>
     </>
   )
 }
 ```
 
-The inline script executes synchronously before showing the element, ensuring the DOM already has the correct value. No flickering, no hydration mismatch.
+The inline script executes synchronously before hydration and writes the theme to `document.documentElement`, which React does not own in this component. That lets CSS respond immediately without mutating the component's own server-rendered markup before hydration.
 
 This pattern is especially useful for theme toggles, user preferences, authentication states, and any client-only data that should render immediately without flashing default values.
 
@@ -2812,20 +2811,24 @@ function SearchResults() {
 **Correct: useTransition with built-in pending state**
 
 ```tsx
-import { useTransition, useState } from 'react'
+import { useRef, useTransition, useState } from 'react'
 
 function SearchResults() {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState([])
+  const requestIdRef = useRef(0)
   const [isPending, startTransition] = useTransition()
 
   const handleSearch = (value: string) => {
     setQuery(value) // Update input immediately
+    const requestId = ++requestIdRef.current
     
     startTransition(async () => {
       // Fetch and update results
       const data = await fetchResults(value)
-      setResults(data)
+      if (requestId === requestIdRef.current) {
+        setResults(data)
+      }
     })
   }
 
@@ -2847,7 +2850,7 @@ function SearchResults() {
 
 - **Better responsiveness**: Keeps the UI responsive during updates
 
-- **Interrupt handling**: New transitions automatically cancel pending ones
+- **Interruptible rendering**: React can interrupt and restart transition renders, but async requests still need their own stale-response or cancellation guard
 
 Reference: [https://react.dev/reference/react/useTransition](https://react.dev/reference/react/useTransition)
 
@@ -3640,7 +3643,7 @@ Advanced patterns for specific cases that require careful implementation.
 
 **Impact: LOW (avoids unnecessary effect re-runs and lint errors)**
 
-Effect Event functions do not have a stable identity. Their identity intentionally changes on every render. Do not include the function returned by `useEffectEvent` in a `useEffect` dependency array. Keep the actual reactive values as dependencies and call the Effect Event from inside the effect body or subscriptions created by that effect.
+Effect Event functions are intentionally non-reactive. Do not include the function returned by `useEffectEvent` in a `useEffect` dependency array. Keep the actual reactive values as dependencies and call the Effect Event from inside the effect body or subscriptions created by that effect so it can read the latest props and state without making the effect reactive to the callback itself.
 
 **Incorrect: Effect Event added as a dependency**
 
