@@ -279,7 +279,7 @@ if(!ts){document.getElementById('loadingState').innerHTML='<p>No test session. <
 // Block setup
 if(blockNum>0){
 startIdx=(blockNum-1)*20;
-blockSize=((examType==='free120'||examType==='test1')&&blockNum===6)?19:20;
+blockSize=(examType==='free120'&&blockNum===6)?19:20;
 endIdx=startIdx+blockSize;
 tq=blockSize;
 document.getElementById('blockBadge').style.display='inline-block';
@@ -316,7 +316,7 @@ qs[idx]=q.id;
 
 document.getElementById('subjectBadge').textContent=q.subject||'';
 var pos=idx-startIdx+1;
-document.getElementById('questionPosition').textContent='Question '+pos+' of '+(md==='free120'?'119':tq);
+document.getElementById('questionPosition').textContent='Question '+pos+' of '+tq;
 syncMark();
 
 document.getElementById('questionText').innerHTML=renderQuestionText(q);
@@ -347,7 +347,7 @@ document.getElementById('prevBtn').disabled=idx<=startIdx;
 
 // Item rail
 var nav=document.getElementById('questionNav');nav.innerHTML='';
-var totalDots=md==='free120'?119:tq;
+var totalDots=tq;
 for(var i=0;i<totalDots;i++){
 var dot=document.createElement('div');dot.className='nav-dot'+(i+startIdx===idx?' active':'')+(marks[i+startIdx]?' wrong':'');
 dot.textContent=i+1;dot.onclick=function(j){return function(){loadQ(j+startIdx)}}(i);

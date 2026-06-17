@@ -188,6 +188,35 @@ class ApiContractTests(unittest.TestCase):
         self.assertEqual(state_payload["questionIds"], payload["questionIds"])
         self.assertEqual([block["questionIds"] for block in state_payload["blocks"]], [block["questionIds"] for block in payload["blocks"]])
 
+    def test_test1_endpoint_uses_frozen_120_manifest_order(self):
+        client = app.test_client()
+        headers = self.auth_headers()
+        response = client.post("/api/qbank/generate-test1", json={}, headers=headers)
+        self.assertEqual(response.status_code, 200)
+        payload = response.get_json()
+        block_ids = [qid for block in payload["blocks"] for qid in block["questionIds"]]
+        self.assertEqual(payload["questionIds"], block_ids)
+        self.assertEqual(payload["format"], "test1")
+        self.assertEqual(payload["manifestSlug"], "june2026_nbme120_candidate")
+        self.assertEqual(payload["totalQuestions"], 120)
+        self.assertEqual(len(payload["blocks"]), 6)
+        self.assertEqual([len(block["questionIds"]) for block in payload["blocks"]], [20] * 6)
+        self.assertEqual(payload["sourceProxyForm"], "NBME 120")
+        self.assertEqual(len(payload["sourceForms"]), 5)
+
+        sid = payload["testSessionId"]
+        for idx in [0, 19, 20, 39, 40, 59, 100, 119]:
+            question_response = client.get(f"/api/qbank/test/{sid}/question/{idx}", headers=headers)
+            self.assertEqual(question_response.status_code, 200)
+            question = question_response.get_json()["question"]
+            self.assertEqual(question["id"], payload["questionIds"][idx])
+
+        state = client.get(f"/api/qbank/test/{sid}/state", headers=headers)
+        self.assertEqual(state.status_code, 200)
+        state_payload = state.get_json()
+        self.assertEqual(state_payload["questionIds"], payload["questionIds"])
+        self.assertEqual([block["questionIds"] for block in state_payload["blocks"]], [block["questionIds"] for block in payload["blocks"]])
+
     def test_answer_submission_is_persisted_in_test_state(self):
         client = app.test_client()
         headers = self.auth_headers()
@@ -294,6 +323,22 @@ class ApiContractTests(unittest.TestCase):
         self.assertTrue(first["text"], "review row is missing question stem text")
         self.assertTrue(first["explanation"].strip(), "review row is missing explanation/solution")
         self.assertEqual(first["selectedOption"], 1)
+
+    def test_test1_review_returns_120_rows_with_block_metadata(self):
+        client = app.test_client()
+        headers = self.auth_headers()
+        gen = client.post("/api/qbank/generate-test1", json={}, headers=headers).get_json()
+        sid = gen["testSessionId"]
+        q0 = client.get(f"/api/qbank/test/{sid}/question/0", headers=headers).get_json()["question"]
+        client.post(f"/api/qbank/test/{sid}/submit", json={"questionId": q0["id"], "selectedOption": 1, "timeSpent": 5}, headers=headers)
+        review = client.get(f"/api/qbank/test/{sid}/review", headers=headers).get_json()
+        rows = review["rows"]
+        self.assertEqual(len(rows), 120)
+        self.assertEqual(rows[0]["block"], 1)
+        self.assertEqual(rows[19]["block"], 1)
+        self.assertEqual(rows[20]["block"], 2)
+        self.assertEqual(rows[119]["block"], 6)
+        self.assertEqual(rows[119]["blockQuestion"], 20)
 
     def test_history_requires_auth(self):
         client = app.test_client()

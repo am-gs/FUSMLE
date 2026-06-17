@@ -201,7 +201,7 @@
                         <button class="nbme-simulation-btn btn-block" id="generateTest1Btn" onclick="startTest1()" style="background: linear-gradient(135deg, #2e7d32, #1b5e20);">
                             <i class="fas fa-flag-checkered"></i> TEST 1
                         </button>
-                        <small class="text-muted d-block mt-2">Official NBME April 2026 Step 1 sample &middot; 119 questions &middot; 6 blocks &middot; 30 min/block &middot; timed</small>
+                        <small class="text-muted d-block mt-2">Deterministic June 2026-style NBME 120 reconstruction &middot; 120 questions &middot; 6 blocks &middot; 30 min/block &middot; timed</small>
                         <button class="nbme-simulation-btn btn-block mt-3" id="generateNBME120Btn" onclick="startNBME120()">
                             <i class="fas fa-dna"></i> 🧬 NBME 120 Exam Simulation
                         </button>
@@ -485,7 +485,7 @@
                 });
             });
 
-            // TEST 1 — official NBME April 2026 sample, fixed 119 items, timed
+            // TEST 1 — deterministic June 2026-style 120 reconstruction, fixed 120 items, timed
             window.startTest1 = function() {
                 var btn = document.getElementById('generateTest1Btn');
                 var label = '<i class="fas fa-flag-checkered"></i> TEST 1';

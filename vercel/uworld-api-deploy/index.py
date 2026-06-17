@@ -437,8 +437,8 @@ def qbank_test_review(test_id):
         selected = answer.get('selected_option')
         rows.append({
             'index': idx,
-            'block': idx // 20 + 1 if test_session['mode'] in ('nbme120', 'free120') else None,
-            'blockQuestion': idx % 20 + 1 if test_session['mode'] in ('nbme120', 'free120') else None,
+            'block': idx // 20 + 1 if test_session['mode'] in ('nbme120', 'free120', 'test1') else None,
+            'blockQuestion': idx % 20 + 1 if test_session['mode'] in ('nbme120', 'free120', 'test1') else None,
             'questionId': question_id,
             'subject': question.get('subject', ''),
             'system': question.get('system', ''),

@@ -2,7 +2,11 @@
 6 blocks x 20, matched to NBME Step 1 organ-system blueprint + difficulty mix,
 deduplicated by concept_fingerprint. Returns {format,totalQuestions,blocks,questionIds}.
 """
-import random, collections
+import collections
+import json
+import random
+from pathlib import Path
+
 from qbank_data import load_questions
 
 BLUEPRINT = {
@@ -72,37 +76,54 @@ def generate_nbme120(exclude_ids=None):
     }
 
 
-# ---- TEST 1: the OFFICIAL April 2026 Step 1 Sample (119 items, fixed order) ----
-import re as _re
-from qbank_data import get_question_by_id as _get
+ROOT = Path(__file__).resolve().parents[2]
+TEST1_MANIFEST_PATH = ROOT / "artifacts" / "manifests" / "june2026_nbme120_candidate.json"
 
-# Official block boundaries (last block has 19 items)
-_TEST1_BLOCKS = [(1, 20), (21, 40), (41, 60), (61, 80), (81, 100), (101, 119)]
+
+def _load_test1_manifest():
+    manifest = json.loads(TEST1_MANIFEST_PATH.read_text())
+    blocks = manifest.get("blocks", [])
+    all_ids = [qid for block in blocks for qid in block.get("questionIds", [])]
+    available = {q["id"]: q for q in load_questions()}
+    missing_ids = [qid for qid in all_ids if qid not in available]
+    not_ready_ids = [qid for qid in all_ids if qid in available and not available[qid].get("exam_ready", True)]
+
+    if manifest.get("total_questions") != 120:
+        raise ValueError("Test 1 manifest must contain 120 questions")
+    if manifest.get("block_sizes") != [20, 20, 20, 20, 20, 20]:
+        raise ValueError("Test 1 manifest must contain 6 blocks of 20 questions")
+    if len(all_ids) != 120 or len(set(all_ids)) != 120:
+        raise ValueError("Test 1 manifest must contain 120 unique question IDs")
+    if missing_ids:
+        raise ValueError(f"Test 1 manifest references missing qbank IDs: {missing_ids[:5]}")
+    if not_ready_ids:
+        raise ValueError(f"Test 1 manifest references non-ready qbank IDs: {not_ready_ids[:5]}")
+
+    return manifest, all_ids
 
 
 def generate_test1():
-    """Return the fixed official April 2026 NBME 120 sample exam: 119 items in
-    official order, split into the 6 official blocks, timed (30 min/block)."""
-    blocks = []
-    for bi, (lo, hi) in enumerate(_TEST1_BLOCKS, start=1):
-        ids = []
-        for n in range(lo, hi + 1):
-            qid = "nbme120_q%03d" % n
-            q = _get(qid)
-            if q and q.get("exam_ready", False):
-                ids.append(qid)
-        blocks.append({
-            "blockNumber": bi,
-            "timeLimit": 30,
-            "questionIds": ids,
-            "itemRange": "%d-%d" % (lo, hi),
-        })
-    all_ids = [qid for blk in blocks for qid in blk["questionIds"]]
+    """Return the fixed deterministic June-style 120 candidate reconstruction."""
+    manifest, all_ids = _load_test1_manifest()
+    blocks = [
+        {
+            "blockNumber": block["block"],
+            "timeLimit": block.get("timeLimitMinutes", 30),
+            "questionIds": block["questionIds"],
+            "selectionRationaleByQuestion": block.get("selection_rationale_by_question", {}),
+            "selectionDetailsByQuestion": block.get("selection_details_by_question", {}),
+        }
+        for block in manifest["blocks"]
+    ]
     return {
         "format": "test1",
-        "title": "TEST 1 — NBME April 2026 Official Sample",
+        "title": "TEST 1 — June 2026 NBME 120 Candidate Reconstruction",
         "timed": True,
-        "totalQuestions": len(all_ids),
+        "totalQuestions": manifest["total_questions"],
         "blocks": blocks,
         "questionIds": all_ids,
+        "strategy": manifest.get("strategy"),
+        "sourceForms": manifest.get("source_forms", []),
+        "sourceProxyForm": manifest.get("source_proxy_form"),
+        "manifestSlug": manifest.get("exam_slug"),
     }
