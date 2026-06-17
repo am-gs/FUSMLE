@@ -467,6 +467,7 @@ def qbank_history():
     labels = {
         'free120': 'Step 1 Sample Exam',
         'nbme120': 'NBME 120 Simulation',
+        'test1': 'Test 1',
         'timed': 'Custom Test (Timed)',
         'tutor': 'Custom Test (Tutor)',
     }
@@ -479,6 +480,19 @@ def qbank_history():
             continue  # only surface exams that were actually taken
         correct = sum(1 for a in answers if a.get('is_correct') in (True, 1, '1'))
         total = session.get('total_questions') or 0
+        question_ids = json.loads(session['question_ids'])
+        answered_ids = {str(a.get('question_id')) for a in answers}
+        next_index = next((idx for idx, qid in enumerate(question_ids) if str(qid) not in answered_ids), len(question_ids) - 1)
+        completed = bool(session.get('completed')) or answered >= total
+        block_mode = session['mode'] in ('free120', 'nbme120', 'test1')
+        resume_block = (next_index // 20) + 1 if block_mode else None
+        if block_mode:
+            exam_param = '&exam=free120' if session['mode'] == 'free120' else ('&exam=test1' if session['mode'] == 'test1' else '')
+            resume_url = f"qbank.html?session={session['id']}&block={resume_block}&mode=timed&time=30&question={next_index}{exam_param}"
+            resume_label = f"Resume Block {resume_block}"
+        else:
+            resume_url = f"qbank.html?session={session['id']}&mode={session['mode']}&question={next_index}"
+            resume_label = 'Resume Test'
         history.append({
             'id': session['id'],
             'mode': session['mode'],
@@ -487,7 +501,12 @@ def qbank_history():
             'answered': answered,
             'correct': correct,
             'score': round(correct / answered * 100) if answered else 0,
-            'completed': bool(session.get('completed')) or answered >= total,
+            'completed': completed,
+            'currentQuestion': session.get('current_question') or 0,
+            'nextQuestionIndex': next_index,
+            'resumeBlock': resume_block,
+            'resumeUrl': None if completed else resume_url,
+            'resumeLabel': None if completed else resume_label,
             'createdAt': session.get('created_at'),
             'completedAt': session.get('completed_at'),
         })

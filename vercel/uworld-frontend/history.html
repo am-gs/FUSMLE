@@ -85,7 +85,7 @@
         <div class="page-head">
             <div>
                 <h3 class="mb-1">My Results</h3>
-                <p class="text-muted mb-0">Every exam you've taken. Open any one to review the full solutions.</p>
+                <p class="text-muted mb-0">Every exam you've taken. Resume in-progress tests or open completed ones to review the full solutions.</p>
             </div>
             <a href="createtest.html" class="btn btn-uworld"><i class="fas fa-plus-circle"></i> New Test</a>
         </div>
@@ -180,13 +180,18 @@
                     ? '<span class="status-badge status-complete"><i class="fas fa-check"></i> Completed</span>'
                     : '<span class="status-badge status-progress"><i class="fas fa-clock"></i> In progress</span>';
                 var reviewUrl = 'qbank.html?session=' + encodeURIComponent(s.id) + '&review=1';
+                var actionHtml = s.completed
+                    ? '<a href="' + reviewUrl + '" class="btn btn-sm btn-uworld-outline"><i class="fas fa-eye"></i> Review</a>'
+                    : '<a href="' + escapeHtml(s.resumeUrl || reviewUrl) + '" class="btn btn-sm btn-uworld"><i class="fas fa-play"></i> ' + escapeHtml(s.resumeLabel || 'Resume') + '</a>';
+                var progressText = (s.answered || 0) + (s.totalQuestions ? ' / ' + s.totalQuestions : '') + ' answered';
+                if (!s.completed && s.resumeBlock) progressText += ' · next up Block ' + s.resumeBlock;
                 return '<tr>' +
                     '<td><span class="exam-label">' + escapeHtml(s.label || 'Practice Test') + '</span></td>' +
                     '<td><span class="exam-date">' + escapeHtml(fmtDate(s.completedAt || s.createdAt)) + '</span></td>' +
-                    '<td>' + (s.answered || 0) + (s.totalQuestions ? ' / ' + s.totalQuestions : '') + ' answered</td>' +
+                    '<td>' + progressText + '</td>' +
                     '<td><span class="score-pill ' + scoreClass(score) + '">' + score + '%</span></td>' +
                     '<td>' + statusBadge + '</td>' +
-                    '<td class="text-right"><a href="' + reviewUrl + '" class="btn btn-sm btn-uworld-outline"><i class="fas fa-eye"></i> Review</a></td>' +
+                    '<td class="text-right">' + actionHtml + '</td>' +
                 '</tr>';
             }).join('');
             document.getElementById('historyBody').innerHTML = rows;

@@ -261,6 +261,7 @@ var p=new URLSearchParams(window.location.search);
 ts=p.get('session');md=p.get('mode')||'tutor';
 examType=p.get('exam')||'';
 blockNum=parseInt(p.get('block'))||0;
+var resumeQuestion=parseInt(p.get('question'));
 var timeLimit=parseInt(p.get('time'))||0;
 
 // Review mode: directly show the solutions for a previously taken exam.
@@ -289,7 +290,8 @@ endIdx=999;
 tq=999;
 }
 await hydrateAnswerStats();
-var initialLoadOk=await loadQ(startIdx);
+var initialQuestion=Number.isInteger(resumeQuestion)&&resumeQuestion>=startIdx&&resumeQuestion<endIdx?resumeQuestion:startIdx;
+var initialLoadOk=await loadQ(initialQuestion);
 if(initialLoadOk&&md==='timed'&&timeLimit>0)startTimer();
 }
 

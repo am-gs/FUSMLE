@@ -329,6 +329,30 @@ class ApiContractTests(unittest.TestCase):
         review = client.get(f"/api/qbank/test/{match['id']}/review", headers=headers)
         self.assertEqual(review.status_code, 200)
 
+    def test_history_exposes_resume_target_for_incomplete_block_exam(self):
+        client = app.test_client()
+        headers = self.auth_headers()
+        gen = client.post("/api/qbank/generate-test1", json={}, headers=headers).get_json()
+        sid = gen["testSessionId"]
+
+        for qid in gen["questionIds"][:40]:
+            submit = client.post(
+                f"/api/qbank/test/{sid}/submit",
+                json={"questionId": qid, "selectedOption": 1, "timeSpent": 5},
+                headers=headers,
+            )
+            self.assertEqual(submit.status_code, 200)
+
+        history = client.get("/api/qbank/history", headers=headers).get_json()
+        match = next((s for s in history["sessions"] if s["id"] == sid), None)
+        self.assertIsNotNone(match)
+        self.assertFalse(match["completed"])
+        self.assertEqual(match["resumeBlock"], 3)
+        self.assertEqual(match["nextQuestionIndex"], 40)
+        self.assertIn("block=3", match["resumeUrl"])
+        self.assertIn("question=40", match["resumeUrl"])
+        self.assertEqual(match["resumeLabel"], "Resume Block 3")
+
     def test_history_is_scoped_to_the_requesting_user(self):
         client = app.test_client()
         owner = self.auth_headers()
