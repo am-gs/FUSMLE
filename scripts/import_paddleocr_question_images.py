@@ -146,8 +146,6 @@ def main():
 
     updated_count = 0
     imported_assets = 0
-    existing_replacements = 0
-    new_asset_questions = 0
 
     for question in questions:
         prefix = question["id"].split("_")[0]
@@ -198,12 +196,13 @@ def main():
 
         assets = []
         for index, source_url in enumerate(chunk["image_urls"]):
-            raw_path = downloads.get(source_url)
-            if not raw_path or not raw_path.is_file():
-                raise FileNotFoundError(f"missing downloaded OCR asset for {question['id']}: {source_url}")
             output_name = build_output_name(question["id"], index, len(chunk["image_urls"]))
             output_path = IMAGES_CROP_DIR / output_name
-            ffmpeg_convert_to_webp(raw_path, output_path)
+            raw_path = downloads.get(source_url)
+            if raw_path and raw_path.is_file():
+                ffmpeg_convert_to_webp(raw_path, output_path)
+            elif not output_path.is_file():
+                raise FileNotFoundError(f"missing downloaded OCR asset for {question['id']}: {source_url}")
             width, height = ffprobe_dimensions(output_path)
             assets.append(
                 {
@@ -219,11 +218,6 @@ def main():
             )
 
         prior_asset_count = len(question.get("imageUrls") or [])
-        if prior_asset_count:
-            existing_replacements += 1
-        else:
-            new_asset_questions += 1
-
         question["imageUrls"] = [asset["url"] for asset in assets]
         question["image_url"] = assets[0]["url"]
         question["image_assets"] = assets
@@ -256,8 +250,7 @@ def main():
     report["summary"] = {
         "updated_questions": updated_count,
         "imported_assets": imported_assets,
-        "replaced_existing_image_sets": existing_replacements,
-        "added_new_image_sets": new_asset_questions,
+        "questions_now_with_images": sum(1 for question in questions if question.get("imageUrls")),
         "skipped_questions": len(report["skipped_questions"]),
     }
     REPORT_PATH.write_text(json.dumps(report, indent=2))

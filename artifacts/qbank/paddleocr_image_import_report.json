@@ -5959,8 +5959,7 @@
   "summary": {
     "updated_questions": 197,
     "imported_assets": 235,
-    "replaced_existing_image_sets": 197,
-    "added_new_image_sets": 0,
+    "questions_now_with_images": 403,
     "skipped_questions": 782
   }
 }
