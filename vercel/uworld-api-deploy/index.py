@@ -975,6 +975,87 @@ def stats_overview():
 def serve_image(form, filename):
     return send_from_directory(os.path.join(os.path.dirname(__file__), 'images_webp', form), filename)
 
+@app.route('/api/qbank/browse', methods=['GET'])
+def qbank_browse():
+    """Read-only qbank browser feed: filter/search the curated pool with
+    metadata, answer key, explanation, and image URLs for viewing."""
+    questions = load_questions()
+    form = (request.args.get('form') or '').strip()
+    system = (request.args.get('system') or '').strip()
+    difficulty = (request.args.get('difficulty') or '').strip()
+    has_image = request.args.get('has_image')
+    search = (request.args.get('q') or '').strip().lower()
+    try:
+        limit = min(200, max(1, int(request.args.get('limit', 50))))
+        offset = max(0, int(request.args.get('offset', 0)))
+    except ValueError:
+        limit, offset = 50, 0
+
+    def sys_of(q):
+        return q.get('system') or q.get('organ_system') or ''
+
+    def matches(q):
+        if form and q.get('form') != form:
+            return False
+        if system and sys_of(q) != system:
+            return False
+        if difficulty and (q.get('difficulty_band') or q.get('difficulty')) != difficulty:
+            return False
+        if has_image in ('1', 'true', 'yes') and not q.get('imageUrls'):
+            return False
+        if has_image in ('0', 'false', 'no') and q.get('imageUrls'):
+            return False
+        if search:
+            hay = (q.get('text', '') + ' ' + q.get('id', '') + ' ' + sys_of(q)).lower()
+            if search not in hay:
+                return False
+        return True
+
+    filtered = [q for q in questions if matches(q)]
+    total = len(filtered)
+    page = filtered[offset:offset + limit]
+
+    def shape(q):
+        opts = q.get('options', []) or []
+        ca = q.get('correct_answer')
+        correct_letter = correct_text = None
+        if isinstance(ca, int) and 1 <= ca <= len(opts):
+            correct_letter = opts[ca - 1].get('letter') or chr(64 + ca)
+            correct_text = opts[ca - 1].get('text')
+        return {
+            'id': q.get('id'),
+            'form': q.get('form'),
+            'system': sys_of(q),
+            'subject': q.get('subject'),
+            'discipline': q.get('discipline'),
+            'difficulty': q.get('difficulty_band') or q.get('difficulty') or 'unknown',
+            'highYield': bool(q.get('high_yield')),
+            'stem': q.get('text', ''),
+            'options': opts,
+            'optionTable': q.get('option_table'),
+            'correctAnswer': ca if isinstance(ca, int) else None,
+            'correctLetter': correct_letter,
+            'correctText': correct_text,
+            'explanation': q.get('explanation', ''),
+            'imageUrls': q.get('imageUrls', []) or ([q['image_url']] if q.get('image_url') else []),
+            'hasImage': bool(q.get('imageUrls')),
+            'hasTable': bool(q.get('tables') or q.get('option_table')),
+            'sourcePdfPage': q.get('source_pdf_page'),
+            'pdfVerified': bool(q.get('pdf_verified')),
+            'examReady': bool(q.get('exam_ready', True)),
+        }
+
+    forms = sorted({q.get('form') for q in questions if q.get('form')})
+    systems = sorted({sys_of(q) for q in questions if sys_of(q)})
+    return jsonify({
+        'total': total,
+        'limit': limit,
+        'offset': offset,
+        'items': [shape(q) for q in page],
+        'facets': {'forms': forms, 'systems': systems, 'difficulties': ['easy', 'medium', 'hard', 'unknown']},
+    })
+
+
 @app.route('/api/images_crop/<filename>')
 def serve_cropped_image(filename):
     response = send_from_directory(os.path.join(os.path.dirname(__file__), 'images_crop'), filename, mimetype='image/webp')

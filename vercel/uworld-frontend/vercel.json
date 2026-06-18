@@ -6,6 +6,8 @@
     { "source": "/dashboard", "destination": "/dashboard.html" },
     { "source": "/createtest", "destination": "/createtest.html" },
     { "source": "/qbank", "destination": "/qbank.html" },
+    { "source": "/qbank-browser", "destination": "/qbank-browser.html" },
+    { "source": "/browse", "destination": "/qbank-browser.html" },
     { "source": "/history", "destination": "/history.html" },
     { "source": "/performance", "destination": "/performance.html" },
     { "source": "/settings", "destination": "/settings.html" },
