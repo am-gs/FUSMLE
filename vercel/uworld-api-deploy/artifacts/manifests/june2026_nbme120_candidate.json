@@ -1,0 +1,1404 @@
+{
+  "exam_slug": "june2026_nbme120_candidate",
+  "title": "June 2026 NBME 120 candidate reconstruction",
+  "strategy": "deterministic_fixed_manifest",
+  "source_forms": [
+    "NBME 27",
+    "NBME 28",
+    "NBME 29",
+    "Form 30",
+    "Form 31"
+  ],
+  "source_proxy_form": "NBME 120",
+  "total_questions": 120,
+  "block_sizes": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20
+  ],
+  "blocks": [
+    {
+      "block": 1,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "form30_page-174",
+        "form31_page-43",
+        "nbme28_q0156",
+        "nbme29_q0004",
+        "form30_page-107",
+        "form30_page-109",
+        "form30_page-142",
+        "form31_page-149",
+        "form31_page-154",
+        "nbme27_page-0",
+        "nbme27_page-112",
+        "nbme28_q0036",
+        "nbme29_q0011",
+        "nbme29_q0017",
+        "nbme29_q0021",
+        "form31_page-100",
+        "nbme27_page-107",
+        "nbme27_page-52",
+        "nbme28_q0003",
+        "nbme28_q0005"
+      ],
+      "selection_rationale_by_question": {
+        "form30_page-174": "blueprint-fit",
+        "form31_page-43": "blueprint-fit",
+        "nbme28_q0156": "blueprint-fit",
+        "nbme29_q0004": "blueprint-fit",
+        "form30_page-107": "blueprint-fit",
+        "form30_page-109": "blueprint-fit",
+        "form30_page-142": "blueprint-fit",
+        "form31_page-149": "blueprint-fit",
+        "form31_page-154": "duplicate",
+        "nbme27_page-0": "blueprint-fit",
+        "nbme27_page-112": "blueprint-fit",
+        "nbme28_q0036": "blueprint-fit",
+        "nbme29_q0011": "blueprint-fit",
+        "nbme29_q0017": "blueprint-fit",
+        "nbme29_q0021": "blueprint-fit",
+        "form31_page-100": "blueprint-fit",
+        "nbme27_page-107": "blueprint-fit",
+        "nbme27_page-52": "duplicate",
+        "nbme28_q0003": "blueprint-fit",
+        "nbme28_q0005": "blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "form30_page-174": {
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Spleen left upper quadrant trauma CT"
+        },
+        "form31_page-43": {
+          "form": "Form 31",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Neisseria meningitidis adrenal hemorrhage shock"
+        },
+        "nbme28_q0156": {
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Immunology",
+          "conceptFingerprint": "dermatomyositis gottron heliotrope proximal weakness"
+        },
+        "nbme29_q0004": {
+          "form": "NBME 29",
+          "broadSystem": "General Principles",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "Cholestyramine upregulates hepatic LDL receptors"
+        },
+        "form30_page-107": {
+          "form": "Form 30",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "p53 colorectal carcinoma molecular pathogenesis"
+        },
+        "form30_page-109": {
+          "form": "Form 30",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Physiology",
+          "conceptFingerprint": "cochlear implant auditory nerve requirement"
+        },
+        "form30_page-142": {
+          "form": "Form 30",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "AL amyloidosis light chain precursor"
+        },
+        "form31_page-149": {
+          "form": "Form 31",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "fluconazole inhibits ergosterol synthesis"
+        },
+        "form31_page-154": {
+          "form": "Form 31",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "PBC fat-soluble vitamin deficiency"
+        },
+        "nbme27_page-0": {
+          "form": "NBME 27",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Genetics",
+          "conceptFingerprint": "5 alpha reductase deficiency DSD"
+        },
+        "nbme27_page-112": {
+          "form": "NBME 27",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "fluoroquinolone tendon rupture"
+        },
+        "nbme28_q0036": {
+          "form": "NBME 28",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "mu opioid receptor respiratory depression"
+        },
+        "nbme29_q0011": {
+          "form": "NBME 29",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "gastric volvulus paraesophageal hernia"
+        },
+        "nbme29_q0017": {
+          "form": "NBME 29",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "renal tubular hypoxia vulnerability"
+        },
+        "nbme29_q0021": {
+          "form": "NBME 29",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "tyrosine hydroxylase dopamine deficiency dystonia"
+        },
+        "form31_page-100": {
+          "form": "Form 31",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "AV node anatomical location"
+        },
+        "nbme27_page-107": {
+          "form": "NBME 27",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "thiazide diuretic nephron site"
+        },
+        "nbme27_page-52": {
+          "form": "NBME 27",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Behavioral Science",
+          "conceptFingerprint": "borderline personality disorder diagnosis"
+        },
+        "nbme28_q0003": {
+          "form": "NBME 28",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "biceps brachii supination forearm"
+        },
+        "nbme28_q0005": {
+          "form": "NBME 28",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Physiology",
+          "conceptFingerprint": "granulosa aromatase two-cell theory"
+        }
+      }
+    },
+    {
+      "block": 2,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "nbme28_q0113",
+        "nbme28_q0189",
+        "nbme29_q0009",
+        "nbme29_q0193",
+        "nbme29_q0002",
+        "form30_page-101",
+        "form30_page-111",
+        "form30_page-147",
+        "form31_page-117",
+        "form31_page-121",
+        "form31_page-124",
+        "nbme27_page-101",
+        "nbme27_page-106",
+        "nbme27_page-14",
+        "nbme28_q0016",
+        "nbme28_q0054",
+        "nbme29_q0005",
+        "form30_page-103",
+        "form31_page-104",
+        "nbme27_page-109"
+      ],
+      "selection_rationale_by_question": {
+        "nbme28_q0113": "blueprint-fit",
+        "nbme28_q0189": "blueprint-fit",
+        "nbme29_q0009": "blueprint-fit",
+        "nbme29_q0193": "blueprint-fit",
+        "nbme29_q0002": "blueprint-fit",
+        "form30_page-101": "blueprint-fit",
+        "form30_page-111": "blueprint-fit",
+        "form30_page-147": "blueprint-fit",
+        "form31_page-117": "blueprint-fit",
+        "form31_page-121": "blueprint-fit",
+        "form31_page-124": "blueprint-fit",
+        "nbme27_page-101": "blueprint-fit",
+        "nbme27_page-106": "blueprint-fit",
+        "nbme27_page-14": "blueprint-fit",
+        "nbme28_q0016": "blueprint-fit",
+        "nbme28_q0054": "blueprint-fit",
+        "nbme29_q0005": "blueprint-fit",
+        "form30_page-103": "blueprint-fit",
+        "form31_page-104": "blueprint-fit",
+        "nbme27_page-109": "blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "nbme28_q0113": {
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "kernicterus hemolytic disease newborn brain"
+        },
+        "nbme28_q0189": {
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Borrelia Leptospira spirochete taxonomy"
+        },
+        "nbme29_q0009": {
+          "form": "NBME 29",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Immunology",
+          "conceptFingerprint": "type III hypersensitivity immune complex"
+        },
+        "nbme29_q0193": {
+          "form": "NBME 29",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "scleroderma interstitial fibrosis"
+        },
+        "nbme29_q0002": {
+          "form": "NBME 29",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "gag reflex afferent glossopharyngeal nerve"
+        },
+        "form30_page-101": {
+          "form": "Form 30",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Immunology",
+          "conceptFingerprint": "allergic rhinitis eosinophilia"
+        },
+        "form30_page-111": {
+          "form": "Form 30",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Physiology",
+          "conceptFingerprint": "thyroid T4 TBG circulation binding"
+        },
+        "form30_page-147": {
+          "form": "Form 30",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "HOCM dynamic murmur Valsalva preload"
+        },
+        "form31_page-117": {
+          "form": "Form 31",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "left renal vein SMA aorta compression"
+        },
+        "form31_page-121": {
+          "form": "Form 31",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "peripartum cardiomyopathy diagnosis"
+        },
+        "form31_page-124": {
+          "form": "Form 31",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Neisseria gonorrhoeae pelvic inflammatory disease"
+        },
+        "nbme27_page-101": {
+          "form": "NBME 27",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "histone acetylation transcription regulation"
+        },
+        "nbme27_page-106": {
+          "form": "NBME 27",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "STEMI anterolateral ST elevation"
+        },
+        "nbme27_page-14": {
+          "form": "NBME 27",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Kaposi sarcoma histology"
+        },
+        "nbme28_q0016": {
+          "form": "NBME 28",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "scaphoid fracture snuffbox FOOSH"
+        },
+        "nbme28_q0054": {
+          "form": "NBME 28",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Physiology",
+          "conceptFingerprint": "retrograde axonal transport nerve regeneration"
+        },
+        "nbme29_q0005": {
+          "form": "NBME 29",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "tamoxifen estrogen receptor competitive antagonism"
+        },
+        "form30_page-103": {
+          "form": "Form 30",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "perinephric abscess psoas fascia spread"
+        },
+        "form31_page-104": {
+          "form": "Form 31",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Physiology",
+          "conceptFingerprint": "bronchial circulation nutrient delivery"
+        },
+        "nbme27_page-109": {
+          "form": "NBME 27",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "ischemic acute tubular necrosis"
+        }
+      }
+    },
+    {
+      "block": 3,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "form31_page-96",
+        "nbme28_q0095",
+        "nbme29_q0025",
+        "nbme27_page-123",
+        "form31_page-12",
+        "nbme27_page-128",
+        "nbme28_q0066",
+        "nbme29_q0054",
+        "form30_page-105",
+        "form30_page-112",
+        "form30_page-12",
+        "form31_page-158",
+        "nbme27_page-117",
+        "nbme27_page-16",
+        "nbme28_q0008",
+        "nbme28_q0043",
+        "nbme29_q0039",
+        "nbme29_q0196",
+        "form30_page-152",
+        "form31_page-134"
+      ],
+      "selection_rationale_by_question": {
+        "form31_page-96": "blueprint-fit",
+        "nbme28_q0095": "blueprint-fit",
+        "nbme29_q0025": "blueprint-fit",
+        "nbme27_page-123": "blueprint-fit",
+        "form31_page-12": "blueprint-fit",
+        "nbme27_page-128": "blueprint-fit",
+        "nbme28_q0066": "blueprint-fit",
+        "nbme29_q0054": "blueprint-fit",
+        "form30_page-105": "blueprint-fit",
+        "form30_page-112": "blueprint-fit",
+        "form30_page-12": "blueprint-fit",
+        "form31_page-158": "blueprint-fit",
+        "nbme27_page-117": "blueprint-fit",
+        "nbme27_page-16": "blueprint-fit",
+        "nbme28_q0008": "blueprint-fit",
+        "nbme28_q0043": "blueprint-fit",
+        "nbme29_q0039": "blueprint-fit",
+        "nbme29_q0196": "duplicate",
+        "form30_page-152": "blueprint-fit",
+        "form31_page-134": "blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "form31_page-96": {
+          "form": "Form 31",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "posterior thigh mass compressing sciatic nerve"
+        },
+        "nbme28_q0095": {
+          "form": "NBME 28",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "mediastinal anatomy pericardial invasion vagus nerve"
+        },
+        "nbme29_q0025": {
+          "form": "NBME 29",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "opioid respiratory depression"
+        },
+        "nbme27_page-123": {
+          "form": "NBME 27",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "smoking urothelial carcinoma risk factor"
+        },
+        "form31_page-12": {
+          "form": "Form 31",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "prosencephalon holoprosencephaly embryology"
+        },
+        "nbme27_page-128": {
+          "form": "NBME 27",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "partial agonist antipsychotic parkinsonism"
+        },
+        "nbme28_q0066": {
+          "form": "NBME 28",
+          "broadSystem": "General Principles",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Behavioral Science",
+          "conceptFingerprint": "patient communication alternative therapy inquiry"
+        },
+        "nbme29_q0054": {
+          "form": "NBME 29",
+          "broadSystem": "General Principles",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Biostatistics/Epidemiology",
+          "conceptFingerprint": "central tendency data error effect"
+        },
+        "form30_page-105": {
+          "form": "Form 30",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Paget disease cortical thickening alk phos"
+        },
+        "form30_page-112": {
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "ETC Complex I NADH oxidation defect"
+        },
+        "form30_page-12": {
+          "form": "Form 30",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "OCP contraindication smoking"
+        },
+        "form31_page-158": {
+          "form": "Form 31",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Immunology",
+          "conceptFingerprint": "rheumatoid arthritis pleural effusion low glucose"
+        },
+        "nbme27_page-117": {
+          "form": "NBME 27",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Genetics",
+          "conceptFingerprint": "Zellweger syndrome absent peroxisomes"
+        },
+        "nbme27_page-16": {
+          "form": "NBME 27",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "infraspinatus external rotation scapular spine"
+        },
+        "nbme28_q0008": {
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Genetics",
+          "conceptFingerprint": "Fragile X trinucleotide repeat X-linked"
+        },
+        "nbme28_q0043": {
+          "form": "NBME 28",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Zenker diverticulum vagus motor innervation"
+        },
+        "nbme29_q0039": {
+          "form": "NBME 29",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "opioid overdose toxidrome"
+        },
+        "nbme29_q0196": {
+          "form": "NBME 29",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Immunology",
+          "conceptFingerprint": "NK cell missing self MHC I"
+        },
+        "form30_page-152": {
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Genetics",
+          "conceptFingerprint": "Turner syndrome cystic hygroma newborn"
+        },
+        "form31_page-134": {
+          "form": "Form 31",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "Organophosphate cholinergic crisis antidotes"
+        }
+      }
+    },
+    {
+      "block": 4,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "nbme28_q0096",
+        "nbme29_q0024",
+        "form30_page-125",
+        "form31_page-42",
+        "form31_page-64",
+        "form30_page-138",
+        "form30_page-162",
+        "form31_page-0",
+        "form31_page-126",
+        "nbme27_page-127",
+        "nbme27_page-158",
+        "nbme27_page-167",
+        "nbme28_q0014",
+        "nbme28_q0018",
+        "nbme28_q0107",
+        "nbme29_q0051",
+        "nbme29_q0139",
+        "form30_page-189",
+        "nbme27_page-110",
+        "nbme29_q0022"
+      ],
+      "selection_rationale_by_question": {
+        "nbme28_q0096": "blueprint-fit",
+        "nbme29_q0024": "blueprint-fit",
+        "form30_page-125": "blueprint-fit",
+        "form31_page-42": "blueprint-fit",
+        "form31_page-64": "blueprint-fit",
+        "form30_page-138": "blueprint-fit",
+        "form30_page-162": "blueprint-fit",
+        "form31_page-0": "blueprint-fit",
+        "form31_page-126": "blueprint-fit",
+        "nbme27_page-127": "blueprint-fit",
+        "nbme27_page-158": "blueprint-fit",
+        "nbme27_page-167": "blueprint-fit",
+        "nbme28_q0014": "blueprint-fit",
+        "nbme28_q0018": "blueprint-fit",
+        "nbme28_q0107": "blueprint-fit",
+        "nbme29_q0051": "blueprint-fit",
+        "nbme29_q0139": "duplicate",
+        "form30_page-189": "blueprint-fit",
+        "nbme27_page-110": "blueprint-fit",
+        "nbme29_q0022": "blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "nbme28_q0096": {
+          "form": "NBME 28",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Staphylococcus aureus endocarditis"
+        },
+        "nbme29_q0024": {
+          "form": "NBME 29",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "minimal change disease pediatric nephrotic syndrome"
+        },
+        "form30_page-125": {
+          "form": "Form 30",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "tinea versicolor Malassezia furfur"
+        },
+        "form31_page-42": {
+          "form": "Form 31",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Hypertensive diastolic heart failure"
+        },
+        "form31_page-64": {
+          "form": "Form 31",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "hypoketotic hypoglycemia fatty acid oxidation defect"
+        },
+        "form30_page-138": {
+          "form": "Form 30",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "diabetic neuropathy sodium channel nociceptor"
+        },
+        "form30_page-162": {
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "lysosomal storage mucopolysaccharidosis"
+        },
+        "form31_page-0": {
+          "form": "Form 31",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "ABO hemolytic transfusion reaction"
+        },
+        "form31_page-126": {
+          "form": "Form 31",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "GnRH agonist prostate cancer"
+        },
+        "nbme27_page-127": {
+          "form": "NBME 27",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "astrocyte glutamate reuptake excitotoxicity"
+        },
+        "nbme27_page-158": {
+          "form": "NBME 27",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Immunology",
+          "conceptFingerprint": "Anti-GBM pulmonary-renal syndrome"
+        },
+        "nbme27_page-167": {
+          "form": "NBME 27",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Nutrition",
+          "conceptFingerprint": "vitamin C procollagen hydroxylation scurvy"
+        },
+        "nbme28_q0014": {
+          "form": "NBME 28",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Physiology",
+          "conceptFingerprint": "androgen binding protein testosterone seminiferous tubule"
+        },
+        "nbme28_q0018": {
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "septic shock platelet aggregation"
+        },
+        "nbme28_q0107": {
+          "form": "NBME 28",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "GABA_B agonist MS spasticity"
+        },
+        "nbme29_q0051": {
+          "form": "NBME 29",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "congenital rubella syndrome"
+        },
+        "nbme29_q0139": {
+          "form": "NBME 29",
+          "broadSystem": "General Principles",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Biostatistics/Epidemiology",
+          "conceptFingerprint": "intention to treat analysis"
+        },
+        "form30_page-189": {
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "maple syrup urine disease valine restriction"
+        },
+        "nbme27_page-110": {
+          "form": "NBME 27",
+          "broadSystem": "GI",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Physiology",
+          "conceptFingerprint": "enterokinase activates trypsinogen"
+        },
+        "nbme29_q0022": {
+          "form": "NBME 29",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Immunology",
+          "conceptFingerprint": "Graves disease TSH receptor autoantibody"
+        }
+      }
+    },
+    {
+      "block": 5,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "nbme29_q0064",
+        "form30_page-15",
+        "nbme27_page-159",
+        "nbme29_q0072",
+        "form30_page-110",
+        "form31_page-107",
+        "form31_page-108",
+        "form31_page-127",
+        "form31_page-17",
+        "nbme27_page-11",
+        "nbme27_page-135",
+        "nbme27_page-172",
+        "nbme28_q0020",
+        "nbme28_q0022",
+        "nbme28_q0057",
+        "nbme28_q0131",
+        "nbme29_q0028",
+        "nbme29_q0095",
+        "form30_page-60",
+        "form30_page-93"
+      ],
+      "selection_rationale_by_question": {
+        "nbme29_q0064": "blueprint-fit",
+        "form30_page-15": "blueprint-fit",
+        "nbme27_page-159": "blueprint-fit",
+        "nbme29_q0072": "blueprint-fit",
+        "form30_page-110": "blueprint-fit",
+        "form31_page-107": "blueprint-fit",
+        "form31_page-108": "blueprint-fit",
+        "form31_page-127": "blueprint-fit",
+        "form31_page-17": "blueprint-fit",
+        "nbme27_page-11": "blueprint-fit",
+        "nbme27_page-135": "blueprint-fit",
+        "nbme27_page-172": "blueprint-fit",
+        "nbme28_q0020": "blueprint-fit",
+        "nbme28_q0022": "blueprint-fit",
+        "nbme28_q0057": "blueprint-fit",
+        "nbme28_q0131": "blueprint-fit",
+        "nbme29_q0028": "blueprint-fit",
+        "nbme29_q0095": "blueprint-fit",
+        "form30_page-60": "blueprint-fit",
+        "form30_page-93": "blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "nbme29_q0064": {
+          "form": "NBME 29",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": true,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Proteus urease struvite staghorn calculus"
+        },
+        "form30_page-15": {
+          "form": "Form 30",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Physiology",
+          "conceptFingerprint": "afterload reduction pressure volume loop"
+        },
+        "nbme27_page-159": {
+          "form": "NBME 27",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "hemolytic uremic syndrome triad"
+        },
+        "nbme29_q0072": {
+          "form": "NBME 29",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "MAOI increases monoamine neurotransmitters"
+        },
+        "form30_page-110": {
+          "form": "Form 30",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "insulin hepatic glucokinase upregulation"
+        },
+        "form31_page-107": {
+          "form": "Form 31",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "bosentan endothelin antagonist pulmonary hypertension"
+        },
+        "form31_page-108": {
+          "form": "Form 31",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Physiology",
+          "conceptFingerprint": "V/Q mismatch pneumonia hypoxemia"
+        },
+        "form31_page-127": {
+          "form": "Form 31",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Sertoli cell inhibin B FSH feedback"
+        },
+        "form31_page-17": {
+          "form": "Form 31",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "tinea cruris trichophyton rubrum"
+        },
+        "nbme27_page-11": {
+          "form": "NBME 27",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Monoclonal spike indicates B-cell neoplasm"
+        },
+        "nbme27_page-135": {
+          "form": "NBME 27",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Toxoplasma gondii cerebral transmission ingestion"
+        },
+        "nbme27_page-172": {
+          "form": "NBME 27",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Genetics",
+          "conceptFingerprint": "VHL hemangioblastoma cerebellum pancreas"
+        },
+        "nbme28_q0020": {
+          "form": "NBME 28",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "lung endoderm surfactant mesoderm derivatives"
+        },
+        "nbme28_q0022": {
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "stable cell G0 recruitment regeneration"
+        },
+        "nbme28_q0057": {
+          "form": "NBME 28",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "spontaneous bacterial peritonitis cirrhosis ascites neutrophils"
+        },
+        "nbme28_q0131": {
+          "form": "NBME 28",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "cervical cord lateral column ventral horn lesion"
+        },
+        "nbme29_q0028": {
+          "form": "NBME 29",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Physiology",
+          "conceptFingerprint": "SGLT1 glucose galactose malabsorption"
+        },
+        "nbme29_q0095": {
+          "form": "NBME 29",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "sarcoidosis epidemiology ethnicity"
+        },
+        "form30_page-60": {
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "c-ANCA necrotizing granulomatous vasculitis"
+        },
+        "form30_page-93": {
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Genetics",
+          "conceptFingerprint": "Zellweger absent peroxisomes VLCFA accumulation"
+        }
+      }
+    },
+    {
+      "block": 6,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "form30_page-188",
+        "nbme29_q0092",
+        "nbme27_page-58",
+        "form30_page-0",
+        "form31_page-56",
+        "nbme27_page-138",
+        "nbme28_q0063",
+        "nbme29_q0074",
+        "form30_page-131",
+        "form30_page-168",
+        "form31_page-171",
+        "form31_page-25",
+        "nbme27_page-178",
+        "nbme27_page-18",
+        "nbme28_q0044",
+        "nbme28_q0136",
+        "nbme29_q0030",
+        "form31_page-147",
+        "nbme28_q0072",
+        "nbme29_q0128"
+      ],
+      "selection_rationale_by_question": {
+        "form30_page-188": "blueprint-fit",
+        "nbme29_q0092": "blueprint-fit",
+        "nbme27_page-58": "blueprint-fit",
+        "form30_page-0": "blueprint-fit",
+        "form31_page-56": "blueprint-fit",
+        "nbme27_page-138": "blueprint-fit",
+        "nbme28_q0063": "blueprint-fit",
+        "nbme29_q0074": "blueprint-fit",
+        "form30_page-131": "blueprint-fit",
+        "form30_page-168": "blueprint-fit",
+        "form31_page-171": "blueprint-fit",
+        "form31_page-25": "blueprint-fit",
+        "nbme27_page-178": "blueprint-fit",
+        "nbme27_page-18": "blueprint-fit",
+        "nbme28_q0044": "blueprint-fit",
+        "nbme28_q0136": "blueprint-fit",
+        "nbme29_q0030": "blueprint-fit",
+        "form31_page-147": "blueprint-fit",
+        "nbme28_q0072": "blueprint-fit",
+        "nbme29_q0128": "blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "form30_page-188": {
+          "form": "Form 30",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "2-naphthylamine urothelial carcinoma"
+        },
+        "nbme29_q0092": {
+          "form": "NBME 29",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Physiology",
+          "conceptFingerprint": "cardiac vascular function curve equilibrium"
+        },
+        "nbme27_page-58": {
+          "form": "NBME 27",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Proteus mirabilis urease struvite staghorn calculus"
+        },
+        "form30_page-0": {
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Genetics",
+          "conceptFingerprint": "Waardenburg syndrome neural crest"
+        },
+        "form31_page-56": {
+          "form": "Form 31",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "clomiphene pituitary estrogen feedback"
+        },
+        "nbme27_page-138": {
+          "form": "NBME 27",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "opiate intoxication miosis stupor"
+        },
+        "nbme28_q0063": {
+          "form": "NBME 28",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Histology/Cell Bio",
+          "conceptFingerprint": "astrocyte neurotransmitter uptake tumor"
+        },
+        "nbme29_q0074": {
+          "form": "NBME 29",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Behavioral Science",
+          "conceptFingerprint": "Empathetic response patient emotion"
+        },
+        "form30_page-131": {
+          "form": "Form 30",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Median nerve carpal tunnel distribution"
+        },
+        "form30_page-168": {
+          "form": "Form 30",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "left varicocele infertility valsalva"
+        },
+        "form31_page-171": {
+          "form": "Form 31",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Takayasu arteritis granulomatous histology"
+        },
+        "form31_page-25": {
+          "form": "Form 31",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "osteosarcoma long bone metaphysis"
+        },
+        "nbme27_page-178": {
+          "form": "NBME 27",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "periosteum fracture callus osteoprogenitor"
+        },
+        "nbme27_page-18": {
+          "form": "NBME 27",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Yersinia pestis bubonic plague flea bite"
+        },
+        "nbme28_q0044": {
+          "form": "NBME 28",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "AATAAA polyadenylation signal function"
+        },
+        "nbme28_q0136": {
+          "form": "NBME 28",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pharmacology",
+          "conceptFingerprint": "prostaglandin analog bronchospasm glaucoma"
+        },
+        "nbme29_q0030": {
+          "form": "NBME 29",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "acute pancreatitis clinical presentation"
+        },
+        "form31_page-147": {
+          "form": "Form 31",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "cough syncope valsalva intrathoracic pressure cardiac output"
+        },
+        "nbme28_q0072": {
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Genetics",
+          "conceptFingerprint": "MELAS mitochondrial tRNA Leu"
+        },
+        "nbme29_q0128": {
+          "form": "NBME 29",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Streptococcal superantigen toxic shock mechanism"
+        }
+      }
+    }
+  ]
+}

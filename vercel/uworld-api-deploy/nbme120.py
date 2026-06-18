@@ -77,11 +77,13 @@ def generate_nbme120(exclude_ids=None):
 
 
 ROOT = Path(__file__).resolve().parents[2]
+LOCAL_MANIFEST_PATH = Path(__file__).resolve().parent / "artifacts" / "manifests" / "june2026_nbme120_candidate.json"
 TEST2_MANIFEST_PATH = ROOT / "artifacts" / "manifests" / "june2026_nbme120_candidate.json"
 
 
 def _load_test2_manifest():
-    manifest = json.loads(TEST2_MANIFEST_PATH.read_text())
+    manifest_path = LOCAL_MANIFEST_PATH if LOCAL_MANIFEST_PATH.exists() else TEST2_MANIFEST_PATH
+    manifest = json.loads(manifest_path.read_text())
     blocks = manifest.get("blocks", [])
     all_ids = [qid for block in blocks for qid in block.get("questionIds", [])]
     available = {q["id"]: q for q in load_questions()}
