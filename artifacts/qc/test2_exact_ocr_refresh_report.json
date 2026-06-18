@@ -1,0 +1,229 @@
+{
+  "refreshed_questions": [
+    {
+      "question_id": "form31_page-43",
+      "ocr_row_index": 849,
+      "asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-43_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0156",
+      "ocr_row_index": 357,
+      "asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme28_q0156_ocr01.webp",
+        "/api/images_crop/nbme28_q0156_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0189",
+      "ocr_row_index": 390,
+      "asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0189_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0009",
+      "ocr_row_index": 409,
+      "asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0009_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0193",
+      "ocr_row_index": 593,
+      "asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme29_q0193_ocr01.webp",
+        "/api/images_crop/nbme29_q0193_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-96",
+      "ocr_row_index": 908,
+      "asset_count": 2,
+      "urls": [
+        "/api/images_crop/form31_page-96_ocr01.webp",
+        "/api/images_crop/form31_page-96_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-125",
+      "ocr_row_index": 726,
+      "asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-125_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-42",
+      "ocr_row_index": 848,
+      "asset_count": 2,
+      "urls": [
+        "/api/images_crop/form31_page-42_ocr01.webp",
+        "/api/images_crop/form31_page-42_ocr02.webp"
+      ]
+    }
+  ],
+  "flagged_questions": [
+    {
+      "question_id": "form31_page-43",
+      "exact_ocr_row_index": 849,
+      "exact_ocr_referenced_images": 1,
+      "status": "refreshed"
+    },
+    {
+      "question_id": "nbme28_q0156",
+      "exact_ocr_row_index": 357,
+      "exact_ocr_referenced_images": 2,
+      "status": "refreshed"
+    },
+    {
+      "question_id": "form31_page-100",
+      "exact_ocr_row_index": 912,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "nbme29_q0193",
+      "exact_ocr_row_index": 593,
+      "exact_ocr_referenced_images": 2,
+      "status": "refreshed"
+    },
+    {
+      "question_id": "form31_page-117",
+      "exact_ocr_row_index": 929,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "nbme27_page-106",
+      "exact_ocr_row_index": 107,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "form31_page-104",
+      "exact_ocr_row_index": 916,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "form31_page-96",
+      "exact_ocr_row_index": 908,
+      "exact_ocr_referenced_images": 3,
+      "status": "refreshed"
+    },
+    {
+      "question_id": "nbme29_q0025",
+      "exact_ocr_row_index": 425,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "form31_page-12",
+      "exact_ocr_row_index": 815,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "form30_page-105",
+      "exact_ocr_row_index": 706,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "form30_page-12",
+      "exact_ocr_row_index": 613,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "form31_page-158",
+      "exact_ocr_row_index": 975,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "form31_page-42",
+      "exact_ocr_row_index": 848,
+      "exact_ocr_referenced_images": 2,
+      "status": "refreshed"
+    },
+    {
+      "question_id": "nbme27_page-127",
+      "exact_ocr_row_index": 128,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "nbme27_page-158",
+      "exact_ocr_row_index": 159,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "nbme28_q0014",
+      "exact_ocr_row_index": 214,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "nbme29_q0072",
+      "exact_ocr_row_index": 472,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "form31_page-107",
+      "exact_ocr_row_index": 919,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "form31_page-127",
+      "exact_ocr_row_index": 940,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "nbme27_page-135",
+      "exact_ocr_row_index": null,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "nbme29_q0092",
+      "exact_ocr_row_index": 492,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "form31_page-171",
+      "exact_ocr_row_index": 989,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "form31_page-25",
+      "exact_ocr_row_index": 828,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    },
+    {
+      "question_id": "nbme29_q0128",
+      "exact_ocr_row_index": 528,
+      "exact_ocr_referenced_images": 0,
+      "status": "manual_review_needed"
+    }
+  ],
+  "summary": {
+    "refreshed_count": 8,
+    "flagged_count": 25,
+    "still_flagged_count": 20
+  }
+}

@@ -45,6 +45,8 @@ body.reverse .option-item:hover{background:#2f3b46}
 .question-card{max-width:1000px;margin:0 auto}
 .subject-badge{display:none}
 .question-text{font-size:1.02em;line-height:1.65;color:inherit;margin-bottom:22px;white-space:pre-wrap}
+.render-flag{display:none;margin:0 0 18px 0;padding:13px 15px;border-radius:10px;border:1px solid #f0b429;background:#fff8e8;color:#8a5a00;line-height:1.55}
+.render-flag strong{display:block;font-size:13px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
 #imageContainer{margin:0 auto 22px auto;text-align:center}
 .nbme-table{border-collapse:collapse;margin:18px auto 20px auto;font-size:1em;line-height:1.35;min-width:55%;white-space:normal}
 .nbme-table caption{font-weight:700;margin-bottom:6px}
@@ -211,11 +213,12 @@ body.reverse .option-item:hover{background:#2f3b46}
   <div class="fred-main" id="examMain">
     <div id="loadingState" class="loading-state"><i class="fas fa-spinner fa-spin fa-2x"></i><p class="mt-2">Loading item…</p></div>
 
-    <div id="questionArea" style="display:none">
-      <div class="question-card">
-        <div class="question-text" id="questionText"></div>
-        <div id="imageContainer"></div>
-        <div id="optionsContainer"></div>
+	    <div id="questionArea" style="display:none">
+	      <div class="question-card">
+	        <div class="question-text" id="questionText"></div>
+	        <div id="renderFlag" class="render-flag"></div>
+	        <div id="imageContainer"></div>
+	        <div id="optionsContainer"></div>
         <div class="explanation-box" id="explanationBox">
           <h5 id="explanationHeader" style="font-weight:700;color:var(--correct)"></h5>
           <div class="explanation-text" id="explanationText"></div>
@@ -363,6 +366,14 @@ var d=await r.json();
 if(d.error){document.getElementById('loadingState').innerHTML='<p>Error: '+d.error+'</p>';return false}
 var q=d.question;
 qs[idx]=q.id;
+var rf=document.getElementById('renderFlag');
+if(q.rendering_flag){
+rf.style.display='block';
+rf.innerHTML='<strong>Rendering under review</strong>'+q.rendering_flag.reason;
+}else{
+rf.style.display='none';
+rf.textContent='';
+}
 
 document.getElementById('subjectBadge').textContent=q.subject||'';
 var pos=idx-startIdx+1;

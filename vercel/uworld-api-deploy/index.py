@@ -11,6 +11,7 @@ from database import get_user_progress, update_user_progress, create_test_sessio
 from database import record_test_answer, get_test_answers, update_test_session
 from qbank_data import load_questions, get_subject_counts, get_system_counts, generate_test, get_question_by_id
 from nbme120 import generate_nbme120, generate_test1, generate_test2
+from test2_render_flags import TEST2_RENDER_FLAGS
 from free120_questions import FREE120_QUESTIONS
 
 app = Flask(__name__)
@@ -338,6 +339,17 @@ def qbank_get_question(test_id, question_idx):
     if not question:
         return jsonify({'error': 'Question not found'}), 404
     
+    rendering_flag = None
+    image_url = question.get('image_url', '')
+    image_urls = question.get('imageUrls', [])
+    image_assets = question.get('image_assets', [])
+    if test_session.get('mode') == 'test2' and question_id in TEST2_RENDER_FLAGS:
+        rendering_flag = TEST2_RENDER_FLAGS[question_id]
+        if rendering_flag.get('suppressImages'):
+            image_url = ''
+            image_urls = []
+            image_assets = []
+
     # Don't include correct answer in question payload
     safe_question = {
         'id': question['id'],
@@ -345,13 +357,14 @@ def qbank_get_question(test_id, question_idx):
         'options': question['options'],
         'subject': question['subject'],
         'system': question.get('system', ''),
-        'image_url': question.get('image_url', ''),
-        'imageUrls': question.get('imageUrls', []),
-        'image_assets': question.get('image_assets', []),
+        'image_url': image_url,
+        'imageUrls': image_urls,
+        'image_assets': image_assets,
         'tables': question.get('tables', []),
         'option_table': question.get('option_table'),
         'explanation': question.get('explanation', ''),
-        'hint': question.get('hint', '')
+        'hint': question.get('hint', ''),
+        'rendering_flag': rendering_flag,
     }
     
     return jsonify({

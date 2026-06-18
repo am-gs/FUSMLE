@@ -225,6 +225,22 @@ class ApiContractTests(unittest.TestCase):
         self.assertEqual(payload["totalQuestions"], 120)
         self.assertEqual([len(block["questionIds"]) for block in payload["blocks"]], [20] * 6)
 
+    def test_test2_known_bad_media_is_flagged_and_suppressed(self):
+        client = app.test_client()
+        headers = self.auth_headers()
+        payload = client.post("/api/qbank/generate-test2", json={}, headers=headers).get_json()
+        sid = payload["testSessionId"]
+        q1 = client.get(f"/api/qbank/test/{sid}/question/1", headers=headers)
+        self.assertEqual(q1.status_code, 200)
+        question = q1.get_json()["question"]
+        self.assertEqual(question["id"], "form31_page-43")
+        self.assertEqual(question["imageUrls"], [])
+        self.assertEqual(question["image_assets"], [])
+        self.assertEqual(question["image_url"], "")
+        self.assertIsNotNone(question["rendering_flag"])
+        self.assertTrue(question["rendering_flag"]["suppressImages"])
+        self.assertIn("Gram stain", question["rendering_flag"]["reason"])
+
     def test_answer_submission_is_persisted_in_test_state(self):
         client = app.test_client()
         headers = self.auth_headers()
