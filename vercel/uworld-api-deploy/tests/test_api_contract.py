@@ -300,6 +300,8 @@ class ApiContractTests(unittest.TestCase):
         self.assertEqual(review_payload["rows"][20]["block"], 2)
         self.assertIn("correctAnswer", review_payload["rows"][0])
         self.assertIn("explanation", review_payload["rows"][0])
+        self.assertIn("summary", review_payload)
+        self.assertIn("conversationalHeadline", review_payload["summary"])
 
     def test_curated_image_endpoint_serves_webp_and_stale_asset_404(self):
         client = app.test_client()
@@ -326,11 +328,14 @@ class ApiContractTests(unittest.TestCase):
         self.assertEqual(len(rows), 119)
         first = rows[0]
         # The review payload must carry everything needed to render full solutions.
-        for key in ("text", "options", "correctAnswer", "explanation", "selectedOption"):
+        for key in ("text", "options", "correctAnswer", "explanation", "selectedOption", "timeSpent", "explanationSummary", "coachingNote"):
             self.assertIn(key, first)
         self.assertTrue(first["text"], "review row is missing question stem text")
         self.assertTrue(first["explanation"].strip(), "review row is missing explanation/solution")
         self.assertEqual(first["selectedOption"], 1)
+        self.assertIn("summary", review)
+        self.assertGreaterEqual(review["summary"]["answered"], 1)
+        self.assertIn("strongSystems", review["summary"])
 
     def test_test2_review_returns_120_rows_with_block_metadata(self):
         client = app.test_client()

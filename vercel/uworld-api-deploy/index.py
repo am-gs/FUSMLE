@@ -3,6 +3,8 @@ from flask_cors import CORS
 import datetime
 import json
 import os
+import re
+import statistics
 import bcrypt
 from database import init_db, create_user, get_user_by_email, get_user_by_id, create_session, validate_session, delete_session, delete_user_sessions, update_user_name, update_user_password
 from database import get_user_progress, update_user_progress, create_test_session, get_test_session, get_user_test_sessions
@@ -438,6 +440,332 @@ def qbank_test_state(test_id):
         'answers': answers,
     })
 
+def _safe_pct(numerator, denominator):
+    return round((numerator / denominator) * 100, 1) if denominator else 0.0
+
+def _stem_word_count(text):
+    return len((text or '').replace('\n', ' ').split())
+
+def _is_correct_value(value):
+    return value in (True, 1, '1')
+
+def _is_wrong_value(value):
+    return value in (False, 0, '0')
+
+def _coerce_number(value):
+    if isinstance(value, (int, float)):
+        return float(value)
+    if isinstance(value, str):
+        try:
+            return float(value.strip())
+        except ValueError:
+            return None
+    return None
+
+def _stem_bucket(word_count):
+    if word_count < 40:
+        return 'short'
+    if word_count < 90:
+        return 'medium'
+    if word_count < 160:
+        return 'long'
+    return 'very_long'
+
+def _simplify_explanation(raw_text):
+    text = (raw_text or '').replace('<br><br>', '\n\n').replace('<br>', '\n')
+    text = re.sub(r'^\s*©.*$', '', text, flags=re.MULTILINE)
+    text = text.replace('**', '')
+    text = re.sub(r'\n{3,}', '\n\n', text).strip()
+
+    split_markers = [
+        'Incorrect Answers:',
+        'Why the Other Choices Are Wrong',
+        'Distractors:',
+        'Educational Objective:',
+        'Key Takeaway',
+        'Video Review:',
+    ]
+    core = text
+    for marker in split_markers:
+        if marker in core:
+            core = core.split(marker, 1)[0].strip()
+
+    parts = [part.strip() for part in re.split(r'\n\s*\n', core) if part.strip()]
+    if len(parts) > 2:
+        core = '\n\n'.join(parts[:2]).strip()
+    else:
+        core = core.strip()
+    summary = parts[0] if parts else (text or 'No explanation available.')
+    summary = summary.split('. ', 1)[0].strip()
+    if summary and not summary.endswith('.'):
+        summary += '.'
+    return {
+        'summary': summary or 'No explanation available.',
+        'full': text or 'No explanation available.',
+        'core': core or text or 'No explanation available.',
+    }
+
+def _insight_tone(is_correct, time_spent, median_time):
+    if _is_correct_value(is_correct) and time_spent is not None and time_spent <= max(12, int(median_time * 0.45)):
+        return {
+            'label': 'Clean hit',
+            'style': 'green',
+            'message': 'You recognized the pattern quickly and closed without drama.',
+        }
+    if _is_correct_value(is_correct) and time_spent is not None and time_spent >= max(90, int(median_time * 1.6)):
+        return {
+            'label': 'Got it, but had to wrestle it',
+            'style': 'blue',
+            'message': 'Correct answer, but it took extra time. Good to review so this becomes cheaper next time.',
+        }
+    if _is_wrong_value(is_correct) and time_spent is not None and time_spent <= max(12, int(median_time * 0.45)):
+        return {
+            'label': 'Likely rushed',
+            'style': 'red',
+            'message': 'This looks more like a speed miss than a total knowledge miss.',
+        }
+    if _is_wrong_value(is_correct) and time_spent is not None and time_spent >= max(90, int(median_time * 1.6)):
+        return {
+            'label': 'You were in the neighborhood',
+            'style': 'amber',
+            'message': 'Long dwell time usually means partial recognition. The last step in the reasoning chain is what needs tightening.',
+        }
+    if is_correct is None:
+        return {
+            'label': 'Left on the table',
+            'style': 'slate',
+            'message': 'No submitted answer here, so this is a pure opportunity-cost item.',
+        }
+    if _is_correct_value(is_correct):
+        return {
+            'label': 'Solid keep',
+            'style': 'green',
+            'message': 'Correct. Keep the pattern, not just the letter.',
+        }
+    return {
+        'label': 'Teachable miss',
+        'style': 'amber',
+        'message': 'This is worth a quick cleanup pass rather than a dramatic content overhaul.',
+    }
+
+def _coaching_note(row, explanation, median_time):
+    system = row.get('system') or 'this domain'
+    subject = row.get('subject') or system
+    time_spent = row.get('timeSpent') or 0
+    if row.get('isCorrect') is None:
+        return f"Next time, make sure {subject} items do not become omissions. Even a best-guess answer is better than donating the point to the void."
+    if _is_wrong_value(row.get('isCorrect')) and time_spent <= max(12, int(median_time * 0.45)):
+        return f"Slow down just enough to name the discriminator before clicking. {system} misses here look more impulsive than blind."
+    if _is_wrong_value(row.get('isCorrect')) and time_spent >= max(90, int(median_time * 1.6)):
+        return f"You were close. Rebuild the reasoning chain for {system} questions from the last line backward until the answer feels inevitable."
+    if _is_correct_value(row.get('isCorrect')) and time_spent >= max(90, int(median_time * 1.6)):
+        return f"Correct, but expensive. Review this one so the same {system} pattern costs less time on the next pass."
+    return f"Keep the core rule from this {subject} item in active memory; the pattern is more valuable than memorizing the exact stem."
+
+def _build_review_summary(mode, rows):
+    answered_rows = [row for row in rows if row.get('isCorrect') is not None]
+    correct_rows = [row for row in rows if _is_correct_value(row.get('isCorrect'))]
+    wrong_rows = [row for row in rows if _is_wrong_value(row.get('isCorrect'))]
+    total = len(rows)
+    answered = len(answered_rows)
+    correct = len(correct_rows)
+    wrong = len(wrong_rows)
+    omitted = total - answered
+    score = round((correct / answered) * 100) if answered else 0
+    completion = _safe_pct(answered, total)
+
+    time_values = []
+    for row in answered_rows:
+        coerced = _coerce_number(row.get('timeSpent'))
+        if coerced is not None:
+            row['timeSpent'] = int(round(coerced))
+            time_values.append(row['timeSpent'])
+    median_time = int(statistics.median(time_values)) if time_values else 0
+    fast_threshold = max(12, int(median_time * 0.45)) if median_time else 12
+    slow_threshold = max(90, int(median_time * 1.6)) if median_time else 90
+
+    def aggregate(key, limit=5):
+        buckets = {}
+        for row in answered_rows:
+            name = row.get(key) or 'Unlabeled'
+            bucket = buckets.setdefault(name, {'name': name, 'correct': 0, 'answered': 0})
+            bucket['answered'] += 1
+            if _is_correct_value(row.get('isCorrect')):
+                bucket['correct'] += 1
+        values = []
+        for bucket in buckets.values():
+            bucket['missed'] = bucket['answered'] - bucket['correct']
+            bucket['accuracy'] = _safe_pct(bucket['correct'], bucket['answered'])
+            values.append(bucket)
+        strong = [item for item in sorted(values, key=lambda item: (-item['accuracy'], -item['answered'], item['name'])) if item['correct'] > 0][:limit]
+        focus_candidates = [item for item in values if item['missed'] > 0]
+        focus = sorted(focus_candidates or values, key=lambda item: (item['accuracy'], -item['missed'], -item['answered'], item['name']))[:limit]
+        return strong, focus
+
+    strong_systems, focus_systems = aggregate('system')
+    strong_subjects, focus_subjects = aggregate('subject')
+
+    word_buckets = {
+        'short': {'label': 'Short stems', 'correct': 0, 'answered': 0},
+        'medium': {'label': 'Medium stems', 'correct': 0, 'answered': 0},
+        'long': {'label': 'Long stems', 'correct': 0, 'answered': 0},
+        'very_long': {'label': 'Very long stems', 'correct': 0, 'answered': 0},
+    }
+    media = {'answered': 0, 'correct': 0}
+    text_only = {'answered': 0, 'correct': 0}
+    blocks = {}
+    near_misses = []
+    rapid_misses = []
+
+    for row in rows:
+        wc = _stem_word_count(row.get('text', ''))
+        bucket_key = _stem_bucket(wc)
+        row['wordCount'] = wc
+        row['wordBucket'] = bucket_key
+        row['isMediaQuestion'] = bool(row.get('imageUrls') or row.get('tables') or row.get('optionTable'))
+        explanation = _simplify_explanation(row.get('explanation', ''))
+        row['explanationSummary'] = explanation['summary']
+        row['explanationCore'] = explanation['core']
+        row['explanationFull'] = explanation['full']
+        row['insightTone'] = _insight_tone(row.get('isCorrect'), row.get('timeSpent'), median_time)
+        row['coachingNote'] = _coaching_note(row, explanation, median_time)
+
+        if row.get('isCorrect') is not None:
+            word_buckets[bucket_key]['answered'] += 1
+            if _is_correct_value(row.get('isCorrect')):
+                word_buckets[bucket_key]['correct'] += 1
+            media_bucket = media if row['isMediaQuestion'] else text_only
+            media_bucket['answered'] += 1
+            if _is_correct_value(row.get('isCorrect')):
+                media_bucket['correct'] += 1
+
+        if row.get('block'):
+            block = blocks.setdefault(row['block'], {'block': row['block'], 'correct': 0, 'answered': 0, 'total': 0})
+            block['total'] += 1
+            if row.get('isCorrect') is not None:
+                block['answered'] += 1
+                if _is_correct_value(row.get('isCorrect')):
+                    block['correct'] += 1
+
+        if _is_wrong_value(row.get('isCorrect')) and row.get('timeSpent') is not None:
+            candidate = {
+                'questionId': row.get('questionId'),
+                'system': row.get('system') or 'Unlabeled',
+                'subject': row.get('subject') or 'Unlabeled',
+                'timeSpent': row.get('timeSpent'),
+                'block': row.get('block'),
+                'prompt': row.get('text', '')[:180].strip(),
+                'correctAnswer': row.get('correctAnswer'),
+                'selectedOption': row.get('selectedOption'),
+            }
+            if row['timeSpent'] >= slow_threshold:
+                near_misses.append(candidate)
+            if row['timeSpent'] <= fast_threshold:
+                rapid_misses.append(candidate)
+
+    block_stats = []
+    for block in sorted(blocks.values(), key=lambda item: item['block']):
+        block['accuracy'] = _safe_pct(block['correct'], block['answered'])
+        block_stats.append(block)
+
+    strongest_block = max(block_stats, key=lambda item: item['accuracy'], default=None)
+    weakest_block = min(block_stats, key=lambda item: item['accuracy'], default=None)
+
+    media['accuracy'] = _safe_pct(media['correct'], media['answered'])
+    text_only['accuracy'] = _safe_pct(text_only['correct'], text_only['answered'])
+    word_stats = []
+    for key in ('short', 'medium', 'long', 'very_long'):
+        bucket = word_buckets[key]
+        if bucket['answered']:
+            word_stats.append({
+                'bucket': bucket['label'],
+                'correct': bucket['correct'],
+                'answered': bucket['answered'],
+                'accuracy': _safe_pct(bucket['correct'], bucket['answered']),
+            })
+
+    if block_stats:
+        block_accuracies = [block['accuracy'] for block in block_stats]
+        spread = max(block_accuracies) - min(block_accuracies)
+        stability = round(max(0.0, 100 - spread), 1)
+        first_half = block_accuracies[:max(1, len(block_accuracies)//2)]
+        second_half = block_accuracies[max(1, len(block_accuracies)//2):] or block_accuracies[-1:]
+        endurance_delta = statistics.mean(second_half) - statistics.mean(first_half)
+        endurance = round(max(0.0, min(100.0, 70 + endurance_delta)), 1)
+    else:
+        stability = 0.0
+        endurance = 0.0
+
+    readiness = round(min(100.0, 0.55 * score + 0.2 * completion + 0.15 * stability + 0.1 * max(media['accuracy'], text_only['accuracy'])), 1)
+
+    priority_buckets = {}
+    for row in answered_rows:
+        key = f"{row.get('system') or 'Unlabeled'}__{row.get('subject') or 'Unlabeled'}"
+        bucket = priority_buckets.setdefault(key, {
+            'system': row.get('system') or 'Unlabeled',
+            'subject': row.get('subject') or 'Unlabeled',
+            'correct': 0,
+            'answered': 0,
+        })
+        bucket['answered'] += 1
+        if _is_correct_value(row.get('isCorrect')):
+            bucket['correct'] += 1
+    study_priorities = []
+    for bucket in priority_buckets.values():
+        bucket['missed'] = bucket['answered'] - bucket['correct']
+        bucket['accuracy'] = _safe_pct(bucket['correct'], bucket['answered'])
+        study_priorities.append(bucket)
+    actionable_priorities = [item for item in study_priorities if item['missed'] > 0]
+    study_priorities = sorted(actionable_priorities or study_priorities, key=lambda item: (item['accuracy'], -item['missed'], -item['answered'], item['system']))[:8]
+
+    exam_label = {
+        'free120': 'Sample exam review',
+        'nbme120': 'NBME 120 review',
+        'test1': 'Test 1 review',
+        'test2': 'Test 2 review',
+    }.get(mode, 'Exam review')
+    tone = 'encouraging' if score >= 65 else ('mixed' if score >= 50 else 'urgent')
+    conversational_headline = (
+        f"{exam_label}: {correct} right out of {answered} answered ({score}%). "
+        + (
+            "There is real traction here, but the misses are concentrated enough to be fixable."
+            if tone == 'encouraging' else
+            "Some pieces are working, but the weak spots are still expensive."
+            if tone == 'mixed' else
+            "The misses cluster into a repairable set of patterns, which is better than chaos."
+        )
+    )
+
+    return {
+        'answered': answered,
+        'correct': correct,
+        'wrong': wrong,
+        'omitted': omitted,
+        'score': score,
+        'completion': completion,
+        'readiness': readiness,
+        'stability': stability,
+        'endurance': endurance,
+        'medianTime': median_time,
+        'fastThreshold': fast_threshold,
+        'slowThreshold': slow_threshold,
+        'media': media,
+        'textOnly': text_only,
+        'blockStats': block_stats,
+        'strongestBlock': strongest_block,
+        'weakestBlock': weakest_block,
+        'strongSystems': strong_systems,
+        'focusSystems': focus_systems,
+        'strongSubjects': strong_subjects,
+        'focusSubjects': focus_subjects,
+        'wordStats': word_stats,
+        'studyPriorities': study_priorities,
+        'nearMisses': near_misses[:8],
+        'rapidMisses': rapid_misses[:8],
+        'conversationalHeadline': conversational_headline,
+        'tone': tone,
+    }
+
 @app.route('/api/qbank/test/<int:test_id>/review', methods=['GET'])
 def qbank_test_review(test_id):
     user = get_current_user()
@@ -470,12 +798,16 @@ def qbank_test_review(test_id):
             'selectedOption': selected,
             'correctAnswer': question.get('correct_answer'),
             'isCorrect': answer.get('is_correct') if answer else None,
+            'timeSpent': answer.get('time_spent') if answer else None,
+            'answeredAt': answer.get('answered_at') if answer else None,
             'explanation': question.get('explanation', ''),
         })
+    summary = _build_review_summary(test_session['mode'], rows)
     return jsonify({
         'testSessionId': test_id,
         'mode': test_session['mode'],
         'totalQuestions': len(question_ids),
+        'summary': summary,
         'rows': rows,
     })
 

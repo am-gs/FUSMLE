@@ -87,30 +87,80 @@ body.reverse .option-item:hover{background:#2f3b46}
 /* ---- Loading / complete ---- */
 .loading-state{text-align:center;padding:80px 20px;color:#888}
 #completeState{max-width:1000px;margin:0 auto;text-align:center;padding:50px 20px}
-.review-table{width:100%;border-collapse:collapse;margin-top:18px;background:#fff;text-align:left}
-.review-table th,.review-table td{border-bottom:1px solid #eee;padding:8px;font-size:13px;vertical-align:top}
-.review-table th{background:#f1f5f9;color:#445}
-.review-correct{color:var(--correct);font-weight:600}.review-wrong{color:var(--wrong);font-weight:600}.review-empty{color:#999}
-.review-summary{font-size:15px;margin:0 auto 18px auto;max-width:920px;padding:12px 16px;background:#f1f5f9;border-radius:6px;text-align:center}
-.review-list{text-align:left;max-width:920px;margin:0 auto}
-.rev-card{border:1px solid #e3e8ee;border-radius:8px;padding:16px 18px;margin-bottom:14px;background:#fff}
-.rev-head{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}
-.rev-badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:12px}
-.rev-badge.ok{background:#e6f4ea;color:#2e7d32}
-.rev-badge.bad{background:#fdecea;color:#c62828}
-.rev-badge.omit{background:#eceff1;color:#607d8b}
-.rev-meta{font-size:12px;color:#888}
-.rev-stem{font-size:14px;line-height:1.6;margin-bottom:12px;white-space:pre-wrap;color:#222}
-.rev-img img{max-width:100%;max-height:320px;border:1px solid #ddd;border-radius:4px;margin:6px 0;display:block}
-.rev-opts{margin-bottom:12px}
-.rev-opt{padding:7px 12px;border:1px solid #eee;border-radius:4px;margin-bottom:5px;font-size:14px}
-.rev-opt.correct{background:#e6f4ea;border-color:#2e7d32}
-.rev-opt.chosen-wrong{background:#fdecea;border-color:#c62828}
-.rev-tag{font-size:11px;font-weight:700;padding:1px 7px;border-radius:10px;margin-left:6px;white-space:nowrap}
-.rev-tag.ok{background:#2e7d32;color:#fff}
-.rev-tag.you{background:#1565c0;color:#fff}
-.rev-exp{background:#f4f8fc;border-left:4px solid var(--accent);border-radius:4px;padding:12px 14px;font-size:13px;line-height:1.7;white-space:pre-wrap;color:#333}
-.rev-exp-h{font-weight:700;color:var(--accent);margin-bottom:4px}
+	.review-shell{max-width:1120px;margin:0 auto;text-align:left}
+	.review-hero{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:20px;align-items:center;border-radius:18px;padding:24px 26px;margin-bottom:18px;color:#fff;background:linear-gradient(135deg,#1c5277 0%,#22689a 55%,#2f88c6 100%);box-shadow:0 18px 44px rgba(21,70,107,.18)}
+	.review-hero.tone-encouraging{background:linear-gradient(135deg,#14532d 0%,#1c7c43 55%,#2da660 100%)}
+	.review-hero.tone-urgent{background:linear-gradient(135deg,#7f1d1d 0%,#b91c1c 55%,#d97706 100%)}
+	.review-kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;opacity:.78;margin-bottom:8px}
+	.review-hero h3{font-size:30px;line-height:1.15;font-weight:700;margin-bottom:10px}
+	.review-hero p{font-size:15px;line-height:1.65;max-width:760px;opacity:.96}
+	.review-score-orb{height:160px;width:160px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);box-shadow:inset 0 0 0 8px rgba(255,255,255,.08)}
+	.review-score-orb strong{font-size:48px;line-height:1;font-weight:800}
+	.review-score-orb span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.78;margin-top:6px}
+	.review-metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
+	.review-metric-card{background:#fff;border:1px solid #dfe7ef;border-radius:14px;padding:16px 16px 14px 16px;box-shadow:0 8px 20px rgba(28,82,119,.06)}
+	.review-metric-label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#678}
+	.review-metric-value{font-size:29px;font-weight:800;color:#173b55;line-height:1.05;margin-top:8px}
+	.review-metric-sub{font-size:12px;color:#6d7d8c;margin-top:6px;line-height:1.45}
+	.review-panels{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px;margin-bottom:18px}
+	.review-panel{grid-column:span 6;background:#fff;border:1px solid #dfe7ef;border-radius:16px;padding:18px 18px 16px 18px;box-shadow:0 8px 24px rgba(28,82,119,.06)}
+	.review-panel.wide{grid-column:span 12}
+	.review-panel h4{display:flex;align-items:center;gap:9px;font-size:16px;font-weight:800;color:#183e5b;margin-bottom:12px}
+	.review-panel h4 i{color:#1e88e5}
+	.review-note{font-size:13px;line-height:1.6;color:#64748b;margin-bottom:12px}
+	.review-points{display:grid;gap:10px}
+	.review-point{padding:12px 13px;border-radius:12px;background:#f7fafc;border:1px solid #e5edf5}
+	.review-point strong{display:block;font-size:14px;color:#173b55;margin-bottom:4px}
+	.review-point span{font-size:13px;line-height:1.55;color:#556575}
+	.review-blocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+	.review-block-card{border-radius:14px;padding:14px;border:1px solid #dfe7ef;background:linear-gradient(180deg,#f8fbff 0%,#eef5fb 100%)}
+	.review-block-card.best{border-color:#4caf50;background:linear-gradient(180deg,#edf9f0 0%,#daf0df 100%)}
+	.review-block-card.worst{border-color:#ef9a9a;background:linear-gradient(180deg,#fff6f6 0%,#fde9e9 100%)}
+	.review-block-card .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#60748a}
+	.review-block-card .score{font-size:26px;font-weight:800;color:#173b55;margin:7px 0 3px}
+	.review-block-card .meta{font-size:12px;color:#6d7d8c}
+	.review-mini-table{width:100%;border-collapse:separate;border-spacing:0 8px}
+	.review-mini-table td{font-size:13px;padding:0;color:#304254;vertical-align:top}
+	.review-mini-table td:last-child{text-align:right;font-weight:700;white-space:nowrap}
+	.review-chip-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+	.review-chip{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:700;background:#eef5fb;color:#24557c;border:1px solid #d9e6f2}
+	.review-callout{background:linear-gradient(180deg,#f8fbff 0%,#f2f7fd 100%);border:1px solid #d7e5f3;border-radius:16px;padding:16px 18px;margin-bottom:16px;font-size:14px;line-height:1.65;color:#35526a}
+	.review-list{text-align:left;max-width:1120px;margin:0 auto}
+	.rev-card{border:1px solid #dce7f1;border-radius:18px;padding:18px 18px 16px 18px;margin-bottom:16px;background:#fff;box-shadow:0 10px 28px rgba(28,82,119,.06)}
+	.rev-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+	.rev-head-main{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+	.rev-badge,.rev-tone{font-size:11px;font-weight:800;padding:6px 10px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
+	.rev-badge.ok{background:#e7f7ed;color:#1f7a38}
+	.rev-badge.bad{background:#fdecec;color:#b42318}
+	.rev-badge.omit{background:#edf2f7;color:#475467}
+	.rev-tone.green{background:#e7f7ed;color:#1f7a38}
+	.rev-tone.red{background:#fdecec;color:#b42318}
+	.rev-tone.amber{background:#fff5e6;color:#b54708}
+	.rev-tone.blue{background:#e8f1ff;color:#175cd3}
+	.rev-tone.slate{background:#eef2f6;color:#475467}
+	.rev-meta{display:flex;flex-wrap:wrap;gap:7px;font-size:12px;color:#66788a}
+	.rev-meta-pill{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:999px;background:#f5f8fb;border:1px solid #e3ebf2}
+	.rev-convo{border-radius:14px;padding:13px 14px;margin-bottom:14px;background:linear-gradient(180deg,#f8fbff 0%,#f2f7fd 100%);border:1px solid #d9e5f2}
+	.rev-convo-title{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#24557c;margin-bottom:5px}
+	.rev-convo-text{font-size:14px;line-height:1.6;color:#304254}
+	.rev-stem{font-size:14px;line-height:1.7;margin-bottom:12px;white-space:pre-wrap;color:#1f2937}
+	.rev-img img{max-width:100%;max-height:360px;border:1px solid #d9e2ec;border-radius:10px;margin:8px 0;display:block;background:#fff}
+	.rev-opts{margin-bottom:14px}
+	.rev-opt{padding:10px 12px;border:1px solid #e6edf3;border-radius:10px;margin-bottom:7px;font-size:14px;line-height:1.55;background:#fff}
+	.rev-opt.correct{background:#ebf8ef;border-color:#9bd0a9}
+	.rev-opt.chosen-wrong{background:#fff2f0;border-color:#efb4ab}
+	.rev-tag{font-size:11px;font-weight:800;padding:3px 8px;border-radius:999px;margin-left:7px;white-space:nowrap;display:inline-block}
+	.rev-tag.ok{background:#1f7a38;color:#fff}
+	.rev-tag.you{background:#175cd3;color:#fff}
+	.rev-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+	.rev-panel{border:1px solid #e4ebf2;border-radius:14px;padding:13px 13px 12px 13px;background:#fafcff}
+	.rev-panel h5{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#25557b;margin-bottom:7px}
+	.rev-panel p{font-size:13px;line-height:1.65;color:#3f5368;white-space:pre-wrap}
+	.rev-details{margin-top:10px;border-top:1px dashed #d7e2ec;padding-top:10px}
+	.rev-details summary{cursor:pointer;font-size:12px;font-weight:800;color:#24557c;list-style:none}
+	.rev-details summary::-webkit-details-marker{display:none}
+	.rev-exp{margin-top:10px;background:#f8fbff;border-left:4px solid var(--accent);border-radius:8px;padding:12px 13px;font-size:13px;line-height:1.7;white-space:pre-wrap;color:#334155}
+	.rev-exp-h{font-weight:800;color:var(--accent);margin-bottom:4px}
 /* ---- Modals ---- */
 .fred-modal{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:60;display:none;align-items:center;justify-content:center}
 .fred-modal.open{display:flex}
@@ -534,13 +584,12 @@ if(!r.ok)throw new Error('HTTP '+r.status);
 var d=await r.json();
 document.getElementById('completeTitle').textContent=d.mode==='free120'?'Sample Exam Review':(d.mode==='nbme120'?'NBME 120 Review':(d.mode==='test2'?'Test 2 Review':'Test Review'));
 var reviewRows=d.rows||[];
-var correct=reviewRows.filter(function(row){return isCorrectValue(row.isCorrect)}).length;
-var wrong=reviewRows.filter(function(row){return isWrongValue(row.isCorrect)}).length;
-var answered=correct+wrong;
-var pct=answered>0?Math.round(correct/answered*100):0;
-var html='<div class="review-summary">Answered <strong>'+answered+'</strong> of <strong>'+reviewRows.length+'</strong> &middot; Correct <strong>'+correct+'</strong> &middot; Wrong <strong>'+wrong+'</strong> &middot; Score <strong>'+pct+'%</strong><br><span style="font-size:12px;color:#777">Review every item with the correct answer and full explanation below.</span></div>';
+var summary=d.summary||buildFallbackReviewSummary(reviewRows,d.mode);
+var html='<div class="review-shell">';
+html+=renderReviewHeader(summary,d.mode,reviewRows.length);
 html+='<div class="review-list">';
 reviewRows.forEach(function(row,i){html+=renderSolutionCard(row,i);});
+html+='</div>';
 html+='</div>';
 document.getElementById('completeStats').innerHTML=html;
 }catch(e){
@@ -548,13 +597,102 @@ document.getElementById('completeStats').innerHTML='Exam complete, but review fa
 }
 }
 
+function formatPct(v){return (Math.round((Number(v)||0)*10)/10).toFixed(1)+'%'}
+function formatReviewNumber(v){return typeof v==='number'?String(v):'—'}
+function reviewModeLabel(mode){
+return mode==='free120'?'Step 1 Sample Exam':(mode==='nbme120'?'NBME 120 Simulation':(mode==='test2'?'Test 2':(mode==='test1'?'Test 1':'Practice Test')));
+}
+function renderReviewMetricCard(label,value,sub){
+return '<div class="review-metric-card"><div class="review-metric-label">'+esc(label)+'</div><div class="review-metric-value">'+value+'</div><div class="review-metric-sub">'+sub+'</div></div>';
+}
+function renderMiniRows(rows,iconClass){
+if(!rows||!rows.length)return '<div class="review-note">No usable data yet.</div>';
+var html='<table class="review-mini-table"><tbody>';
+rows.forEach(function(row){
+html+='<tr><td><span style="font-weight:700;color:#173b55">'+esc(row.name||row.system||'Unlabeled')+'</span><br><span style="font-size:12px;color:#6d7d8c">'+formatReviewNumber(row.correct)+'/'+formatReviewNumber(row.answered)+' correct</span></td><td>'+formatPct(row.accuracy||0)+'</td></tr>';
+});
+html+='</tbody></table>';
+return html;
+}
+function renderBlockCards(blockStats,summary){
+if(!blockStats||!blockStats.length)return '<div class="review-note">Block-level data appears after at least one answered item.</div>';
+return '<div class="review-blocks">'+blockStats.map(function(block){
+var cls='review-block-card';
+if(summary.strongestBlock&&block.block===summary.strongestBlock.block)cls+=' best';
+if(summary.weakestBlock&&block.block===summary.weakestBlock.block)cls+=' worst';
+return '<div class="'+cls+'"><div class="lbl">Block '+block.block+'</div><div class="score">'+formatPct(block.accuracy||0)+'</div><div class="meta">'+block.correct+'/'+block.answered+' correct'+(block.total?' · '+block.total+' total':'')+'</div></div>';
+}).join('')+'</div>';
+}
+function renderPromptBullets(items){
+if(!items||!items.length)return '<div class="review-note">Nothing obvious here. Rare silence from analytics; suspicious, but pleasant.</div>';
+return '<div class="review-points">'+items.map(function(item){
+var line=(item.prompt?esc(item.prompt).replace(/\.\.\.$/,''):'').replace(/\s+/g,' ');
+var meta=[item.system,item.subject,item.timeSpent!=null?(item.timeSpent+'s'):null].filter(Boolean).join(' · ');
+return '<div class="review-point"><strong>'+esc(item.questionId||'Question')+'</strong><span>'+esc(meta)+(line?'<br>'+line:'')+'</span></div>';
+}).join('')+'</div>';
+}
+function renderWordChips(wordStats){
+if(!wordStats||!wordStats.length)return '<div class="review-note">No stem-length signal yet.</div>';
+return '<div class="review-chip-row">'+wordStats.map(function(bucket){
+return '<span class="review-chip"><i class="fas fa-align-left"></i> '+esc(bucket.bucket)+': <strong>'+formatPct(bucket.accuracy||0)+'</strong></span>';
+}).join('')+'</div>';
+}
+function renderStudyPriorityRows(rows){
+if(!rows||!rows.length)return '<div class="review-note">No study-priority pairs yet.</div>';
+return '<table class="review-mini-table"><tbody>'+rows.map(function(row){
+return '<tr><td><span style="font-weight:700;color:#173b55">'+esc(row.system||'Unlabeled')+'</span><br><span style="font-size:12px;color:#6d7d8c">'+esc(row.subject||'')+' · '+row.missed+' misses in '+row.answered+'</span></td><td>'+formatPct(row.accuracy||0)+'</td></tr>';
+}).join('')+'</tbody></table>';
+}
+function buildFallbackReviewSummary(rows,mode){
+var summary={answered:0,correct:0,wrong:0,omitted:0,score:0,completion:0,readiness:0,stability:0,endurance:0,medianTime:0,media:{answered:0,correct:0,accuracy:0},textOnly:{answered:0,correct:0,accuracy:0},blockStats:[],strongSystems:[],focusSystems:[],strongSubjects:[],focusSubjects:[],wordStats:[],studyPriorities:[],nearMisses:[],rapidMisses:[],conversationalHeadline:reviewModeLabel(mode)+' review loaded.'};
+var correct=rows.filter(function(row){return isCorrectValue(row.isCorrect)}).length;
+var wrong=rows.filter(function(row){return isWrongValue(row.isCorrect)}).length;
+summary.answered=correct+wrong;summary.correct=correct;summary.wrong=wrong;summary.omitted=rows.length-summary.answered;
+summary.score=summary.answered?Math.round(correct/summary.answered*100):0;
+summary.completion=rows.length?Math.round((summary.answered/rows.length)*1000)/10:0;
+summary.conversationalHeadline=reviewModeLabel(mode)+': '+correct+' right out of '+summary.answered+' answered ('+summary.score+'%).';
+summary.tone=summary.score>=65?'encouraging':(summary.score>=50?'mixed':'urgent');
+return summary;
+}
+function renderReviewHeader(summary,mode,totalQuestions){
+var toneClass='tone-'+(summary.tone||'mixed');
+var headline=summary.conversationalHeadline||('Review loaded for '+reviewModeLabel(mode)+'.');
+var hero='<section class="review-hero '+toneClass+'"><div><div class="review-kicker">'+esc(reviewModeLabel(mode))+' · post-exam review</div><h3>'+esc(headline)+'</h3><p>This review is built to answer the useful questions fast: where the points went, what is actually fixable, and which misses look like knowledge gaps versus tempo problems.</p></div><div class="review-score-orb"><strong>'+formatReviewNumber(summary.score)+'</strong><span>score %</span></div></section>';
+var metrics='<section class="review-metric-grid">'+
+renderReviewMetricCard('Answered',formatReviewNumber(summary.answered)+' / '+formatReviewNumber(totalQuestions||summary.answered),'Completion '+formatPct(summary.completion||0))+
+renderReviewMetricCard('Correct',formatReviewNumber(summary.correct),formatReviewNumber(summary.wrong)+' incorrect · '+formatReviewNumber(summary.omitted)+' omitted')+
+renderReviewMetricCard('Readiness',formatReviewNumber(summary.readiness||0),formatReviewNumber(summary.stability||0)+' stability · '+formatReviewNumber(summary.endurance||0)+' endurance')+
+renderReviewMetricCard('Pace',summary.medianTime?formatReviewNumber(summary.medianTime)+'s':'—',summary.medianTime?'Median time per answered item':'No timing data captured')+
+renderReviewMetricCard('Media',formatPct(summary.media&&summary.media.accuracy||0),(summary.media&&summary.media.correct||0)+' / '+(summary.media&&summary.media.answered||0)+' on image/table items')+
+renderReviewMetricCard('Text-only',formatPct(summary.textOnly&&summary.textOnly.accuracy||0),(summary.textOnly&&summary.textOnly.correct||0)+' / '+(summary.textOnly&&summary.textOnly.answered||0)+' on text-only items')+
+'</section>';
+var blocks='<section class="review-panel wide"><h4><i class="fas fa-wave-square"></i>Block-by-block rhythm</h4><div class="review-note">This is where stamina, rhythm, and block-level collapse stop pretending to be abstract.</div>'+renderBlockCards(summary.blockStats||[],summary)+'</section>';
+var strengths='<section class="review-panel"><h4><i class="fas fa-arrow-trend-up"></i>What held up</h4><div class="review-note">Keep these patterns warm. They are already paying rent.</div>'+renderMiniRows(summary.strongSystems||[])+'</section>';
+var focus='<section class="review-panel"><h4><i class="fas fa-bullseye"></i>What needs the first repair pass</h4><div class="review-note">These are the categories most worth touching before doing more generic “review everything” theater.</div>'+renderMiniRows(summary.focusSystems||[])+'</section>';
+var patterns='<section class="review-panel"><h4><i class="fas fa-stopwatch"></i>Stem + pacing signal</h4>'+renderWordChips(summary.wordStats||[])+'<div class="review-callout">Fast wrong answers usually mean a click-speed problem. Slow wrong answers usually mean you saw part of the pattern but did not close the loop. Both are fixable; they are just different jobs.</div></section>';
+var study='<section class="review-panel"><h4><i class="fas fa-layer-group"></i>Study-first topic pairs</h4><div class="review-note">Best place to target the next block of review without lighting your whole schedule on fire.</div>'+renderStudyPriorityRows(summary.studyPriorities||[])+'</section>';
+var near='<section class="review-panel"><h4><i class="fas fa-magnifying-glass-chart"></i>Almost-there misses</h4><div class="review-note">Long dwell time on a wrong answer usually means partial recognition. That is annoying, but promising.</div>'+renderPromptBullets(summary.nearMisses||[])+'</section>';
+var rapid='<section class="review-panel"><h4><i class="fas fa-bolt"></i>Rapid misses</h4><div class="review-note">These usually deserve a pace fix before a content overhaul.</div>'+renderPromptBullets(summary.rapidMisses||[])+'</section>';
+return hero+metrics+'<section class="review-panels">'+blocks+strengths+focus+patterns+study+near+rapid+'</section>';
+}
+function renderExplanationHtml(text){
+return esc(text||'No explanation available.').replace(/\n/g,'<br>');
+}
 function renderSolutionCard(row,i){
 var ok=isCorrectValue(row.isCorrect);
 var wrongAns=isWrongValue(row.isCorrect);
 var badge=ok?'<span class="rev-badge ok">Correct</span>':(wrongAns?'<span class="rev-badge bad">Incorrect</span>':'<span class="rev-badge omit">Omitted</span>');
 var blockLbl=row.block?('Block '+row.block+' &middot; Item '+row.blockQuestion):('Item '+(i+1));
+var tone=row.insightTone||{label:(ok?'Correct':(wrongAns?'Incorrect':'Omitted')),style:(ok?'green':(wrongAns?'amber':'slate')),message:''};
+var metaHtml='<span class="rev-meta-pill"><i class="fas fa-layer-group"></i> '+blockLbl+'</span>';
+if(row.system)metaHtml+='<span class="rev-meta-pill"><i class="fas fa-dna"></i> '+esc(row.system)+'</span>';
+if(row.subject)metaHtml+='<span class="rev-meta-pill"><i class="fas fa-book-open"></i> '+esc(row.subject)+'</span>';
+if(row.timeSpent!=null)metaHtml+='<span class="rev-meta-pill"><i class="fas fa-stopwatch"></i> '+esc(String(row.timeSpent))+'s</span>';
+if(row.wordBucket)metaHtml+='<span class="rev-meta-pill"><i class="fas fa-align-left"></i> '+esc(String(row.wordBucket).replace('_',' '))+' stem</span>';
+if(row.isMediaQuestion)metaHtml+='<span class="rev-meta-pill"><i class="fas fa-image"></i> media item</span>';
 var h='<div class="rev-card">';
-h+='<div class="rev-head">'+badge+'<span class="rev-meta">'+blockLbl+(row.subject?(' &middot; '+esc(row.subject)):'')+'</span></div>';
+h+='<div class="rev-head"><div class="rev-head-main">'+badge+'<span class="rev-tone '+esc(tone.style||'slate')+'">'+esc(tone.label||'Review note')+'</span></div><div class="rev-meta">'+metaHtml+'</div></div>';
+h+='<div class="rev-convo"><div class="rev-convo-title">What this means</div><div class="rev-convo-text">'+esc(tone.message||'')+(row.coachingNote?('<br><br>'+esc(row.coachingNote)):'')+'</div></div>';
 h+='<div class="rev-stem">'+renderQuestionText({text:row.text||'',tables:row.tables||[]})+'</div>';
 var imgs=(row.imageUrls&&row.imageUrls.length)?row.imageUrls:[];
 if(imgs.length){h+='<div class="rev-img">'+imgs.map(function(u){return '<img src="'+API+u+'" onerror="this.style.display=\'none\'">'}).join('')+'</div>';}
@@ -583,11 +721,16 @@ if(idx+1===row.correctAnswer)tag+=' <span class="rev-tag ok">Correct answer</spa
 if(row.selectedOption&&idx+1===row.selectedOption)tag+=' <span class="rev-tag you">Your answer</span>';
 h+='<div class="'+cls+'"><span class="option-letter">'+esc(letter)+'.</span> '+esc(o.text||'')+tag+'</div>';
 });
-h+='</div>';
-}
-h+='<div class="rev-exp"><div class="rev-exp-h">Explanation</div>'+(row.explanation?esc(row.explanation):'No explanation available.')+'</div>';
-h+='</div>';
-return h;
+	h+='</div>';
+	}
+	h+='<div class="rev-grid">';
+	h+='<div class="rev-panel"><h5>What it was testing</h5><p>'+renderExplanationHtml(row.explanationSummary||row.explanation||'No explanation available.')+'</p></div>';
+	h+='<div class="rev-panel"><h5>Why the right answer wins</h5><p>'+renderExplanationHtml(row.explanationCore||row.explanation||'No explanation available.')+'</p></div>';
+	h+='<div class="rev-panel"><h5>How to remember it next time</h5><p>'+renderExplanationHtml(row.coachingNote||tone.message||'Keep the mechanism and the decisive clue together.')+'</p></div>';
+	h+='</div>';
+	h+='<details class="rev-details"><summary>Open the full explanation</summary><div class="rev-exp"><div class="rev-exp-h">Full explanation</div>'+renderExplanationHtml(row.explanationFull||row.explanation||'No explanation available.')+'</div></details>';
+	h+='</div>';
+	return h;
 }
 
 function isCorrectValue(value){return value===true||value===1||value==='1'}
