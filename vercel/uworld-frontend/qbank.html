@@ -758,7 +758,7 @@ panels+='<div class="enh-panel enh-kind-'+esc(kind)+(i===0?' active':'')+'" id="
 });
 var conflict='';
 if(ee.answerLetterConflict){
-conflict='<div class="enh-conflict"><b>Note:</b> this enhanced write-up references option '+esc(ee.enhancedAnswerLetter||'?')+', while the keyed answer is option '+esc(ee.qbankCorrectLetter||'?')+'. This is a labeled-figure item, so both point to the same structure — trust the highlighted correct answer above.</div>';
+conflict='<div class="enh-conflict"><b>Answer mismatch:</b> this enhanced write-up cites option '+esc(ee.enhancedAnswerLetter||'?')+', but the exam\'s keyed answer is option '+esc(ee.qbankCorrectLetter||'?')+' (highlighted above). This can happen with labeled-figure items or where the write-up disagrees with the key — where they differ, trust the keyed answer above.</div>';
 }
 return '<div class="enh-wrap"><div class="enh-top"><div class="enh-title"><i class="fas fa-wand-magic-sparkles"></i> Enhanced breakdown</div><span class="enh-badge">SOTA</span></div>'
 +'<div class="enh-tabs">'+tabs+'</div>'+panels+conflict+'</div>';

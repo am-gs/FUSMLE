@@ -1,6 +1,6 @@
 {
   "source": "NBME120APRILEXPLIANTIONS.MD",
-  "questionCount": 97,
+  "questionCount": 118,
   "covered": [
     1,
     2,
@@ -47,6 +47,27 @@
     43,
     44,
     45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
     68,
     69,
     70,
@@ -685,7 +706,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔═══════════════════════════════════════════════════════╗\n\n║          PSYCHOSIS DIFFERENTIAL BY DURATION            ║\n\n╠═══════════════════════════════════════════════════════╣\n\n║                                                       ║\n\n║  < 1 DAY     → Substance intoxication/withdrawal      ║\n\n║  < 1 MONTH   → Brief Psychotic Disorder               ║\n\n║  1-6 MONTHS  → Schizophreniform Disorder               ║\n\n║  > 6 MONTHS  → Schizophrenia                           ║\n\n║                                                       ║\n\n║  ANY DURATION + FULL MOOD EPISODE:                     ║\n\n║  ├─ Mania + psychosis → BIPOLAR I ✓                    ║\n\n║  └─ Depression + psychosis → MDD with psychotic        ║\n\n║     features OR Schizoaffective                        ║\n\n║                                                       ║\n\n║  KEY DISTINGUISHER:                                    ║\n\n║  \"Do mood symptoms DOMINATE the picture?\"              ║\n\n║  YES → Mood disorder with psychotic features           ║\n\n║  NO  → Primary psychotic disorder                      ║\n\n╚═══════════════════════════════════════════════════════╝\n\nIF psychosis + full manic syndrome (pressured speech, grandiosity, decreased sleep) → THEN Bipolar I with psychotic features"
         }
       ],
@@ -714,7 +735,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔═══════════════════════════════════════════════════╗\n\n║     ACID SUPPRESSION HIERARCHY                     ║\n\n╠═══════════════════════════════════════════════════╣\n\n║                                                   ║\n\n║  MOST POTENT → PPIs (omeprazole, pantoprazole)    ║\n\n║  │  Irreversible H⁺/K⁺ ATPase inhibition          ║\n\n║  │  → Near-complete acid suppression               ║\n\n║  │  → HIGHEST pH                                   ║\n\n║  │                                                 ║\n\n║  MODERATE → H₂ blockers (cimetidine, ranitidine)   ║\n\n║  │  Competitive H₂ receptor antagonism              ║\n\n║  │  → Partial acid suppression                     ║\n\n║  │  → MODERATE pH elevation                        ║\n\n║  │                                                 ║\n\n║  LEAST → Antacids (CaCO₃, Mg(OH)₂, Al(OH)₃)      ║\n\n║     Direct neutralization                          ║\n\n║     → Transient pH elevation                       ║\n\n╚═══════════════════════════════════════════════════╝\n\nIF comparing PPI vs H₂ blocker → THEN PPI always = higher pH curve"
         }
       ],
@@ -743,7 +764,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔═══════════════════════════════════════════════════════╗\n\n║   COLON CANCER METASTATIC PATHWAY                      ║\n\n╠═══════════════════════════════════════════════════════╣\n\n║                                                       ║\n\n║  RIGHT COLON                                          ║\n\n║  ↓                                                    ║\n\n║  Superior mesenteric vein                              ║\n\n║  ↓                                                    ║\n\n║  Portal vein                                           ║\n\n║  ↓                                                    ║\n\n║  ══════ LIVER (1st met site) ══════                    ║\n\n║  ↓                                                    ║\n\n║  Hepatic veins                                         ║\n\n║  ↓                                                    ║\n\n║  ══════ INFERIOR VENA CAVA ✓ ══════                    ║\n\n║  ↓                                                    ║\n\n║  Right heart                                           ║\n\n║  ↓                                                    ║\n\n║  ══════ LUNGS (2nd met site) ══════                    ║\n\n╚═══════════════════════════════════════════════════════╝\n\nIF colon cancer with liver AND lung mets → cancer reached lungs via IVC (liver → hepatic veins → IVC → lungs)"
         }
       ],
@@ -795,7 +816,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔═══════════════════════════════════════════════════╗\n\n║          GALLSTONE TYPES                           ║\n\n╠═══════════════════════════════════════════════════╣\n\n║                                                   ║\n\n║  CHOLESTEROL STONES (80% in Western countries)     ║\n\n║  ├─ Yellow-green, radiolucent                      ║\n\n║  ├─ Risk: Female, Fat, Forty, Fertile              ║\n\n║  ├─ Mechanism: ↑ cholesterol / ↓ bile salts        ║\n\n║  │                                                 ║\n\n║  BLACK PIGMENT STONES ✓                            ║\n\n║  ├─ Small, dark, radiopaque                        ║\n\n║  ├─ Risk: HEMOLYSIS (sickle cell, spherocytosis)   ║\n\n║  ├─ Mechanism: ↑ unconjugated bilirubin            ║\n\n║  │             → calcium bilirubinate              ║\n\n║  │                                                 ║\n\n║  BROWN PIGMENT STONES                              ║\n\n║  ├─ Soft, earthy, found in bile ducts              ║\n\n║  ├─ Risk: Biliary INFECTION / parasites            ║\n\n║  └─ Mechanism: bacterial β-glucuronidase           ║\n\n╚═══════════════════════════════════════════════════╝\n\nIF hemolytic disease + gallstones → THEN pigment stones from unconjugated bilirubin overload"
         }
       ],
@@ -824,7 +845,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔═══════════════════════════════════════════════════════╗\n\n║     MEN SYNDROMES                                      ║\n\n╠═══════════════════════════════════════════════════════╣\n\n║                                                       ║\n\n║  MEN 1 (\"3 P's\")                                      ║\n\n║  ├─ Parathyroid hyperplasia                            ║\n\n║  ├─ Pituitary adenoma                                  ║\n\n║  ├─ Pancreatic tumors (gastrinoma, insulinoma)         ║\n\n║  └─ Gene: MENIN (tumor suppressor, chr 11)             ║\n\n║                                                       ║\n\n║  MEN 2A ✓                                              ║\n\n║  ├─ Medullary Thyroid Carcinoma (MTC)                  ║\n\n║  ├─ Pheochromocytoma                                   ║\n\n║  ├─ Parathyroid hyperplasia                            ║\n\n║  └─ Gene: RET (PROTO-ONCOGENE, chr 10)                 ║\n\n║                                                       ║\n\n║  MEN 2B                                                ║\n\n║  ├─ Medullary Thyroid Carcinoma (MTC)                  ║\n\n║  ├─ Pheochromocytoma                                   ║\n\n║  ├─ Mucosal neuromas + Marfanoid habitus               ║\n\n║  └─ Gene: RET (proto-oncogene, chr 10)                 ║\n\n║                                                       ║\n\n║  ⚠️ MEN 1 = tumor SUPPRESSOR (loss of function)        ║\n\n║  ⚠️ MEN 2 = proto-ONCOGENE (gain of function)          ║\n\n╚═══════════════════════════════════════════════════════╝\n\nIF MTC + pheo + parathyroid tumor → THEN MEN 2A → RET proto-oncogene (gain-of-function)"
         }
       ],
@@ -853,7 +874,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔═══════════════════════════════════════════════════════╗\n\n║     PRECOCIOUS PUBERTY CLASSIFICATION                  ║\n\n╠═══════════════════════════════════════════════════════╣\n\n║                                                       ║\n\n║  CENTRAL (Gonadotropin-DEPENDENT) ✓                    ║\n\n║  ├─ FSH/LH: ELEVATED                                  ║\n\n║  ├─ Cause: Premature GnRH neuron activation            ║\n\n║  ├─ Features: TRUE puberty (all stages progress)       ║\n\n║  ├─ Etiologies: Idiopathic (#1), CNS tumors            ║\n\n║  │   (hamartoma), hydrocephalus                        ║\n\n║  └─ Treatment: GnRH agonist (leuprolide)               ║\n\n║                                                       ║\n\n║  PERIPHERAL (Gonadotropin-INDEPENDENT)                 ║\n\n║  ├─ FSH/LH: LOW (suppressed by feedback)               ║\n\n║  ├─ Cause: Autonomous sex steroid production            ║\n\n║  ├─ Etiologies:                                        ║\n\n║  │   ├─ McCune-Albright (GNAS mutation)                ║\n\n║  │   ├─ Congenital adrenal hyperplasia                 ║\n\n║  │   ├─ Ovarian/testicular tumors                      ║\n\n║  │   └─ Exogenous hormone exposure                     ║\n\n║  └─ Treatment: Treat underlying cause                  ║\n\n╚═══════════════════════════════════════════════════════╝\n\nIF precocious puberty + elevated FSH/LH → THEN CENTRAL (GnRH neuron activation). IF suppressed FSH/LH → THEN PERIPHERAL.\n\n📘 BLOCK 2: QUESTIONS 21–40"
         }
       ],
@@ -882,7 +903,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔═══════════════════════════════════════════════════════╗\n\n║     HYPOGONADISM CLASSIFICATION                        ║\n\n╠═══════════════════════════════════════════════════════╣\n\n║                                                       ║\n\n║  HYPERGONADOTROPIC (↑FSH/LH, ↓Testosterone)           ║\n\n║  = PRIMARY gonadal failure                             ║\n\n║  ├─ Klinefelter (47,XXY) ✓ — most common               ║\n\n║  │   ├─ Tall, eunuchoid, gynecomastia                  ║\n\n║  │   ├─ Small firm testes                              ║\n\n║  │   └─ Cause: X chromosome nondisjunction             ║\n\n║  ├─ Turner (45,X) — in females                         ║\n\n║  ├─ Bilateral cryptorchidism                           ║\n\n║  └─ Gonadal dysgenesis                                 ║\n\n║                                                       ║\n\n║  HYPOGONADOTROPIC (↓FSH/LH, ↓Testosterone)            ║\n\n║  = SECONDARY/CENTRAL failure                           ║\n\n║  ├─ Kallmann syndrome (GnRH deficiency + anosmia)      ║\n\n║  ├─ Pituitary tumor/surgery                            ║\n\n║  ├─ Constitutional delay                               ║\n\n║  └─ Hyperprolactinemia                                 ║\n\n╚═══════════════════════════════════════════════════════╝\n\nIF delayed puberty + ↑↑FSH/LH + ↓↓testosterone + tall/gynecomastia/small testes → THEN Klinefelter (47,XXY) = X chromosome nondisjunction"
         }
       ],
@@ -980,7 +1001,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔═══════════════════════════════════════════════════════╗\n\n║     PARKINSON DISEASE PHARMACOTHERAPY                  ║\n\n╠═══════════════════════════════════════════════════════╣\n\n║                                                       ║\n\n║  Tyrosine                                             ║\n\n║    ↓ (tyrosine hydroxylase — rate-limiting)            ║\n\n║  L-DOPA                                               ║\n\n║    ↓ (AADC — blocked peripherally by CARBIDOPA)       ║\n\n║  DOPAMINE                                             ║\n\n║    ↓ (MAO-B — blocked by SELEGILINE/RASAGILINE) ✓     ║\n\n║  DOPAC → HVA                                         ║\n\n║                                                       ║\n\n║  Also: COMT inhibitors (entacapone, tolcapone)        ║\n\n║  → Block peripheral levodopa metabolism               ║\n\n║                                                       ║\n\n║  FIRST-LINE: Carbidopa-Levodopa                       ║\n\n║  ADJUNCTS: MAO-B inhibitors, COMT inhibitors,         ║\n\n║            dopamine agonists, amantadine               ║\n\n╚═══════════════════════════════════════════════════════╝\n\nIF PD + breakthrough on levodopa + \"inhibit enzyme\" → THEN MAO-B inhibitor (selegiline/rasagiline)"
         }
       ],
@@ -1032,7 +1053,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP — NMS vs SEROTONIN SYNDROME",
+          "title": "🗺 CONCEPT MAP — NMS vs SEROTONIN SYNDROME",
           "body": "╔═══════════════════════════════════════════════════════╗\n\n║     NMS vs SEROTONIN SYNDROME                          ║\n\n╠═══════════════════════════════════════════════════════╣\n\n║                                                       ║\n\n║              NMS ✓              SEROTONIN SYNDROME     ║\n\n║  ┌──────────────────┬──────────────────────┐           ║\n\n║  │ Drug: Antipsych  │ Drug: SSRI/MAOI/     │           ║\n\n║  │ (D₂ antagonist)  │ serotonergic agents  │           ║\n\n║  ├──────────────────┼──────────────────────┤           ║\n\n║  │ Onset: Days-Wks  │ Onset: Hours         │           ║\n\n║  ├──────────────────┼──────────────────────┤           ║\n\n║  │ RIGIDITY         │ CLONUS/Hyperreflexia │           ║\n\n║  │ (lead-pipe)      │ (myoclonus)          │           ║\n\n║  ├──────────────────┼──────────────────────┤           ║\n\n║  │ ↑↑ CK            │ ↑ CK (less severe)   │           ║\n\n║  ├──────────────────┼──────────────────────┤           ║\n\n║  │ Tx: Dantrolene   │ Tx: Cyproheptadine   │           ║\n\n║  │ + Bromocriptine  │                      │           ║\n\n║  └──────────────────┴──────────────────────┘           ║\n\n╚═══════════════════════════════════════════════════════╝\n\nIF antipsychotic + fever + autonomic instability + AMS → THEN NMS → expect lead-pipe RIGIDITY"
         }
       ],
@@ -1061,7 +1082,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔═══════════════════════════════════════════════════════╗\n\n║     RENAL MASSES BY LOCATION                           ║\n\n╠═══════════════════════════════════════════════════════╣\n\n║                                                       ║\n\n║  RENAL CORTEX (parenchyma):                           ║\n\n║  ├─ Renal Cell Carcinoma (clear cell most common)     ║\n\n║  ├─ Oncocytoma (benign)                               ║\n\n║  ├─ Angiomyolipoma (benign, tuberous sclerosis)       ║\n\n║  └─ [Wilms tumor](/rare-disease/nephroblastoma) (children)                            ║\n\n║                                                       ║\n\n║  RENAL PELVIS (urothelium): ✓                         ║\n\n║  ├─ Urothelial (Transitional Cell) Carcinoma          ║\n\n║  │   Risk factors:                                    ║\n\n║  │   ├─ Smoking (#1)                                  ║\n\n║  │   ├─ Aromatic amines (naphthylamine, benzidine)    ║\n\n║  │   ├─ Cyclophosphamide                              ║\n\n║  │   └─ Phenacetin                                    ║\n\n║  └─ Squamous cell carcinoma (chronic irritation,      ║\n\n║     Schistosoma haematobium)                          ║\n\n╚═══════════════════════════════════════════════════════╝\n\nIF renal pelvis mass + aromatic amine exposure + smoking → THEN urothelial carcinoma"
         }
       ],
@@ -1153,7 +1174,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔════════════════════════════════════════════╗\n\n║       PURINE DEGRADATION → GOUT           ║\n\n╠════════════════════════════════════════════╣\n\n║                                            ║\n\n║  Adenosine ──→ Inosine ──→ Hypoxanthine   ║\n\n║                                ↓           ║\n\n║                        Xanthine Oxidase    ║\n\n║                                ↓           ║\n\n║                           Xanthine         ║\n\n║                                ↓           ║\n\n║                        Xanthine Oxidase    ║\n\n║                                ↓           ║\n\n║                         URIC ACID ✓        ║\n\n║                                ↓           ║\n\n║                    Crystal deposition      ║\n\n║                                ↓           ║\n\n║                         GOUT (podagra)     ║\n\n║                                            ║\n\n║  TRIGGERS: Alcohol (beer), shellfish,      ║\n\n║  organ meats, thiazides, loop diuretics    ║\n\n║                                            ║\n\n║  TREATMENT:                                ║\n\n║  Acute: NSAIDs, colchicine, steroids       ║\n\n║  Chronic: Allopurinol (XO inhibitor),      ║\n\n║           Febuxostat, Probenecid            ║\n\n╚════════════════════════════════════════════╝\n\nIF acute 1st MTP arthritis + purine-rich diet + alcohol → THEN gout → purine degradation pathway"
         }
       ],
@@ -1205,7 +1226,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔════════════════════════════════════════════════════╗\n\n║     GERM LAYER DERIVATIVES                         ║\n\n╠════════════════════════════════════════════════════╣\n\n║                                                    ║\n\n║  ECTODERM:                                         ║\n\n║  ├─ Epidermis, hair, nails, sweat glands           ║\n\n║  ├─ CNS (neuroectoderm)                            ║\n\n║  ├─ Lens of eye, inner ear                         ║\n\n║  └─ Anterior pituitary (Rathke pouch)              ║\n\n║                                                    ║\n\n║  MESODERM: ✓                                       ║\n\n║  ├─ Muscle (skeletal, smooth, cardiac)             ║\n\n║  ├─ Bone, cartilage, connective tissue             ║\n\n║  ├─ BLOOD VESSELS + LYMPHATICS ✓                   ║\n\n║  ├─ Kidneys, ureters, gonads                       ║\n\n║  ├─ Spleen                                         ║\n\n║  └─ Serous membranes (pleura, pericardium)         ║\n\n║                                                    ║\n\n║  ENDODERM:                                         ║\n\n║  ├─ GI epithelial lining                           ║\n\n║  ├─ Liver, pancreas, gallbladder                   ║\n\n║  ├─ Lungs (epithelium)                             ║\n\n║  ├─ Thyroid, parathyroid (from pharyngeal pouches) ║\n\n║  └─ Bladder epithelium                             ║\n\n║                                                    ║\n\n║  NEURAL CREST (4th germ layer):                    ║\n\n║  ├─ Melanocytes, Schwann cells                     ║\n\n║  ├─ Adrenal medulla                                ║\n\n║  ├─ PNS ganglia, cranial nerve ganglia             ║\n\n║  ├─ Aorticopulmonary septum                        ║\n\n║  └─ Craniofacial bones/cartilage                   ║\n\n╚════════════════════════════════════════════════════╝\n\nIF lymphatic or vascular malformation → THEN mesoderm"
         }
       ],
@@ -1326,7 +1347,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔════════════════════════════════════════════════════╗\n\n║     CLINICAL TRIAL PHASES                          ║\n\n╠════════════════════════════════════════════════════╣\n\n║                                                    ║\n\n║  Phase 0: Microdosing (10-15 people)               ║\n\n║           Sub-therapeutic doses, PK only            ║\n\n║                                                    ║\n\n║  Phase 1: SAFETY + DOSING ✓                        ║\n\n║           Small group (20-100)                     ║\n\n║           HEALTHY VOLUNTEERS                       ║\n\n║           Max tolerated dose + PK                  ║\n\n║                                                    ║\n\n║  Phase 2: EFFICACY + SAFETY                        ║\n\n║           Medium group (100-300)                   ║\n\n║           PATIENTS with disease                    ║\n\n║           Optimal dosing                           ║\n\n║                                                    ║\n\n║  Phase 3: COMPARISON (RCT)                         ║\n\n║           Large group (1000-3000+)                 ║\n\n║           Drug vs placebo/standard                 ║\n\n║           Required for FDA approval                ║\n\n║                                                    ║\n\n║  Phase 4: POST-MARKETING SURVEILLANCE              ║\n\n║           Detect rare/long-term adverse effects    ║\n\n║           After FDA approval                       ║\n\n╚════════════════════════════════════════════════════╝\n\nIF healthy volunteers + safety/dosing + small sample → THEN Phase 1"
         }
       ],
@@ -1401,7 +1422,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔════════════════════════════════════════════════════╗\n\n║   MYELOPROLIFERATIVE NEOPLASMS & MUTATIONS         ║\n\n╠════════════════════════════════════════════════════╣\n\n║                                                    ║\n\n║  POLYCYTHEMIA VERA ✓                               ║\n\n║  ├─ ↑↑ RBCs (Hgb/Hct), ↑WBC, ↑Plt                ║\n\n║  ├─ Splenomegaly, plethora, pruritus after bath    ║\n\n║  ├─ JAK2 V617F mutation (>95%) ✓                   ║\n\n║  └─ ↓ EPO (distinguishes from secondary)           ║\n\n║                                                    ║\n\n║  ESSENTIAL THROMBOCYTHEMIA                         ║\n\n║  ├─ ↑↑ Platelets (>450K)                           ║\n\n║  ├─ JAK2 (50%), CALR, or MPL mutations             ║\n\n║                                                    ║\n\n║  PRIMARY MYELOFIBROSIS                             ║\n\n║  ├─ Bone marrow fibrosis, teardrop cells           ║\n\n║  ├─ Massive splenomegaly                           ║\n\n║  ├─ JAK2, CALR, or MPL mutations                   ║\n\n║                                                    ║\n\n║  CML                                               ║\n\n║  ├─ t(9;22) BCR-ABL (Philadelphia chromosome)      ║\n\n║  └─ ↑↑ WBC with left shift                        ║\n\n╚════════════════════════════════════════════════════╝\n\nIF ↑↑ Hgb/Hct + ↑Plt + splenomegaly → THEN Polycythemia Vera → JAK2 V617F"
         }
       ],
@@ -1476,6 +1497,825 @@
       ],
       "sectionCount": 2,
       "qbankCorrectLetter": "D",
+      "answerLetterConflict": false
+    },
+    "46": {
+      "questionNumber": 46,
+      "questionId": "nbme120_q046",
+      "correctAnswerLetter": "E",
+      "stemSnippet": "45-year-old woman… park ranger at 10,000 feet × 2 years… now at sea level… JVD, 2+ pedal edema. Which of the following has DECREASED?\n Correct Answer: E) Right ventricular diastolic compliance",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "45-year-old woman… park ranger at 10,000 feet × 2 years… now at sea level… JVD, 2+ pedal edema. Which of the following has DECREASED?\n✅ Correct Answer: E) Right ventricular diastolic compliance"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Living at 10,000 feet × 2 years = chronic high altitude = chronic hypoxia\n🔑 JVD + pedal edema = right heart failure signs\n🔑 Chronic hypoxia → pulmonary vasoconstriction → pulmonary hypertension → RV hypertrophy → RV wall thickens → RV compliance DECREASES"
+        },
+        {
+          "kind": "blueprint",
+          "icon": "🧠",
+          "title": "MULTI-STEP LOGIC",
+          "body": "[Step 1] Chronic altitude → chronic hypoxia\n[Step 2] Hypoxic pulmonary vasoconstriction → ↑ pulmonary vascular resistance\n[Step 3] ↑ PVR → pulmonary hypertension\n[Step 4] RV pressure overload → RV hypertrophy → RV wall thickens\n[Step 5] Thicker RV wall → ↓ RV diastolic COMPLIANCE ✓\n[Step 6] ↓ Compliance → ↑ RV filling pressure → JVD + edema"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Height of P waves in lead I — P waves INCREASE (right atrial enlargement = P pulmonale). Not decreased.\nB) Height of R waves in V1 — R waves in V1 INCREASE with RV hypertrophy. Not decreased.\nC) Hematocrit — Hematocrit INCREASES (secondary polycythemia from chronic hypoxia → ↑ EPO). Not decreased.\nD) Pulmonary vascular resistance — PVR INCREASES from chronic hypoxic vasoconstriction. Not decreased.\nF) RV wall thickness — RV wall thickness INCREASES (hypertrophy from pressure overload). Not decreased."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF chronic high altitude + right heart failure signs → THEN RV hypertrophy → decreased RV diastolic compliance"
+        }
+      ],
+      "sectionCount": 5,
+      "qbankCorrectLetter": "E",
+      "answerLetterConflict": false
+    },
+    "47": {
+      "questionNumber": 47,
+      "questionId": "nbme120_q047",
+      "correctAnswerLetter": "A",
+      "stemSnippet": "7-year-old boy… BP 135/85 in right upper extremity, 80/40 in right lower extremity… O₂ sat 99% both arms… grade 1/6 systolic ejection murmur at left sternal border + left paravertebral area. Remainder of exam most likely shows?\n Correct Answer: A) Delayed femoral pulses",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "7-year-old boy… BP 135/85 in right upper extremity, 80/40 in right lower extremity… O₂ sat 99% both arms… grade 1/6 systolic ejection murmur at left sternal border + left paravertebral area. Remainder of exam most likely shows?\n✅ Correct Answer: A) Delayed femoral pulses"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Upper extremity HTN (135/85) + Lower extremity hypotension (80/40) = >20 mmHg gradient = classic for coarctation of the aorta\n🔑 Murmur at left sternal border + paravertebral area = flow through collaterals / across coarctation\n🔑 Equal O₂ sat in both arms = coarctation is distal to left subclavian artery (post-ductal)\n🔑 Coarctation → delayed and diminished femoral pulses (radio-femoral delay)"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "B) Increased JVP — JVD = right heart failure. Coarctation causes LEFT heart pressure overload, not right-sided congestion.\nC) Nontender inguinal mass — Suggests inguinal hernia or lymphadenopathy. Unrelated to coarctation.\nD) Pulsatile abdominal mass — Suggests abdominal aortic aneurysm. Seen in elderly with atherosclerosis, not a 7-year-old with coarctation.\nE) Pulsus paradoxus — Seen in cardiac tamponade, severe asthma, constrictive pericarditis. Not a feature of coarctation."
+        },
+        {
+          "kind": "conceptmap",
+          "icon": "🗺️",
+          "title": "CONCEPT MAP",
+          "body": "╔══════════════════════════════════════════════════════╗\n║     COARCTATION OF THE AORTA                         ║\n╠══════════════════════════════════════════════════════╣\n║                                                      ║\n║  LOCATION: Juxtaductal (near ligamentum arteriosum)  ║\n║                                                      ║\n║  CLASSIC FINDINGS:                                   ║\n║  ├─ Upper extremity HTN                              ║\n║  ├─ Lower extremity hypotension                      ║\n║  ├─ BP gradient >20 mmHg (arms > legs) ✓             ║\n║  ├─ Delayed/diminished femoral pulses ✓              ║\n║  ├─ Systolic murmur (left sternal border,            ║\n║  │   interscapular)                                  ║\n║  └─ Rib notching on CXR (collateral intercostals)    ║\n║                                                      ║\n║  ASSOCIATIONS:                                       ║\n║  ├─ Turner syndrome (45,X)                           ║\n║  ├─ Bicuspid aortic valve                            ║\n║  └─ Berry aneurysms (circle of Willis)               ║\n╚══════════════════════════════════════════════════════╝"
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF upper extremity HTN + lower extremity hypotension in a child → THEN coarctation → delayed femoral pulses"
+        }
+      ],
+      "sectionCount": 5,
+      "qbankCorrectLetter": "A",
+      "answerLetterConflict": false
+    },
+    "48": {
+      "questionNumber": 48,
+      "questionId": "nbme120_q048",
+      "correctAnswerLetter": "A",
+      "stemSnippet": "52-year-old woman… fatigue, constipation, frequent urination… Ca²⁺ 11.1, PTH decreased… CXR: bilateral hilar lymphadenopathy + interstitial infiltrates. Cause of hypercalcemia?\n Correct Answer: A) Calcitriol production by activated macrophages",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "52-year-old woman… fatigue, constipation, frequent urination… Ca²⁺ 11.1, PTH decreased… CXR: bilateral hilar lymphadenopathy + interstitial infiltrates. Cause of hypercalcemia?\n✅ Correct Answer: A) Calcitriol production by activated macrophages"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Bilateral hilar lymphadenopathy + interstitial infiltrates = sarcoidosis\n🔑 Hypercalcemia (Ca 11.1) + LOW PTH = PTH-independent hypercalcemia\n🔑 Sarcoidosis → granulomatous macrophages express 1α-hydroxylase → convert 25-OH vitamin D → 1,25-(OH)₂ vitamin D (calcitriol) → ↑ calcium absorption → hypercalcemia\n🔑 PTH is suppressed by the elevated calcium (negative feedback)"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "B) Local bone resorption by metastases — Would see lytic bone lesions on imaging. No malignancy described. Sarcoidosis = granulomatous, not neoplastic.\nC) PTHrP secretion — PTHrP = humoral hypercalcemia of malignancy (squamous cell lung CA, renal cell CA). No malignancy here; bilateral hilar LAD + infiltrates = sarcoidosis, not cancer.\nD) Secretion of PTH — PTH is DECREASED in this patient. Primary hyperparathyroidism would show ELEVATED PTH.\nE) Secretion of TSH — TSH doesn't cause hypercalcemia. This presentation is classic sarcoidosis."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF hypercalcemia + low PTH + bilateral hilar LAD → THEN sarcoidosis → macrophage calcitriol production"
+        }
+      ],
+      "sectionCount": 4,
+      "qbankCorrectLetter": "A",
+      "answerLetterConflict": false
+    },
+    "49": {
+      "questionNumber": 49,
+      "questionId": "nbme120_q049",
+      "correctAnswerLetter": "C",
+      "stemSnippet": "34-year-old man… 2-year recurrent abdominal pain + diarrhea… 25-lb weight loss… copious, loose, oily, foul-smelling stools… 6-8 BMs/day… recurrent acute pancreatitis since age 21… BMI 18. Treatment with which enzyme?\n Correct Answer: C) Lipase",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "34-year-old man… 2-year recurrent abdominal pain + diarrhea… 25-lb weight loss… copious, loose, oily, foul-smelling stools… 6-8 BMs/day… recurrent acute pancreatitis since age 21… BMI 18. Treatment with which enzyme?\n✅ Correct Answer: C) Lipase"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Oily, foul-smelling stools = steatorrhea = fat malabsorption\n🔑 Recurrent pancreatitis since age 21 = chronic pancreatitis → exocrine pancreatic insufficiency\n🔑 Weight loss + malnutrition (BMI 18) = malabsorption\n🔑 Pancreatic insufficiency → lipase deficiency is the primary cause of steatorrhea\n🔑 Treatment = pancreatic enzyme replacement (primarily lipase)"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Amylase — Amylase deficiency → carbohydrate maldigestion. Salivary amylase partially compensates. Steatorrhea = fat, not carbs.\nB) Lactase — Lactase deficiency → lactose intolerance (bloating, watery diarrhea after dairy). Not oily/foul-smelling stools.\nD) Protease — Protease deficiency → protein maldigestion. The DOMINANT feature (steatorrhea) is from lipase deficiency. Lipase has NO alternative source.\nE) Tryptase — Tryptase is a mast cell enzyme (elevated in mastocytosis/anaphylaxis). Not a digestive enzyme."
+        },
+        {
+          "kind": "conceptmap",
+          "icon": "🗺️",
+          "title": "KEY CONCEPT",
+          "body": "╔══════════════════════════════════════════════════════╗\n║  WHY LIPASE IS THE CRITICAL ENZYME                   ║\n╠══════════════════════════════════════════════════════╣\n║                                                      ║\n║  Pancreatic lipase has NO backup source:             ║\n║  ├─ Amylase → salivary amylase compensates           ║\n║  ├─ Protease → gastric pepsin partially compensates  ║\n║  └─ LIPASE → NO alternative enzyme ✓                 ║\n║                                                      ║\n║  Therefore: Pancreatic insufficiency →                ║\n║  FAT malabsorption (steatorrhea) is the              ║\n║  EARLIEST and MOST PROMINENT symptom                 ║\n╚══════════════════════════════════════════════════════╝"
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF steatorrhea + chronic pancreatitis → THEN lipase replacement"
+        }
+      ],
+      "sectionCount": 5,
+      "qbankCorrectLetter": "C",
+      "answerLetterConflict": false
+    },
+    "50": {
+      "questionNumber": 50,
+      "questionId": "nbme120_q050",
+      "correctAnswerLetter": "C",
+      "stemSnippet": "46-year-old man from India… fever, RUQ pain… liver abscess on ultrasound… treated with metronidazole + paromomycin. Rationale for paromomycin?\n Correct Answer: C) Eradication of intestinal organisms",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "46-year-old man from India… fever, RUQ pain… liver abscess on ultrasound… treated with metronidazole + paromomycin. Rationale for paromomycin?\n✅ Correct Answer: C) Eradication of intestinal organisms"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 From India + liver abscess + metronidazole = amebic liver abscess (Entamoeba histolytica)\n🔑 Metronidazole = kills trophozoites in tissue (liver)\n🔑 Paromomycin = luminal agent → kills cysts in the intestinal lumen\n🔑 Without luminal agent → cysts persist in gut → risk of relapse/reinfection"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Avoidance of drug resistance — Paromomycin isn't added to prevent resistance. It targets a DIFFERENT compartment (lumen vs tissue).\nB) Effective penetration into liver — Paromomycin is POORLY absorbed from the GI tract — it does NOT penetrate the liver. That's metronidazole's job.\nD) Prevention of CNS infection — Amebic CNS infection is extremely rare. Paromomycin doesn't cross the blood-brain barrier."
+        },
+        {
+          "kind": "conceptmap",
+          "icon": "🗺️",
+          "title": "CONCEPT MAP",
+          "body": "╔══════════════════════════════════════════════════════╗\n║     AMEBIC LIVER ABSCESS TREATMENT                   ║\n╠══════════════════════════════════════════════════════╣\n║                                                      ║\n║  TISSUE AGENT (kills trophozoites in liver):         ║\n║  └─ METRONIDAZOLE ✓                                  ║\n║                                                      ║\n║  LUMINAL AGENT (kills cysts in intestine):           ║\n║  └─ PAROMOMYCIN ✓ (or iodoquinol, diloxanide)       ║\n║                                                      ║\n║  WHY BOTH?                                           ║\n║  ├─ Metronidazole alone → cysts persist in gut       ║\n║  ├─ Cysts → reinfection / transmission               ║\n║  └─ Paromomycin eradicates intestinal reservoir ✓    ║\n║                                                      ║\n║  Paromomycin = aminoglycoside                        ║\n║  → Poorly absorbed → stays in GI lumen               ║\n║  → Perfect for luminal eradication                   ║\n╚══════════════════════════════════════════════════════╝"
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF amebic abscess + metronidazole + paromomycin → paromomycin's role = eradicate intestinal cysts"
+        }
+      ],
+      "sectionCount": 5,
+      "qbankCorrectLetter": "C",
+      "answerLetterConflict": false
+    },
+    "51": {
+      "questionNumber": 51,
+      "questionId": "nbme120_q051",
+      "correctAnswerLetter": "D",
+      "stemSnippet": "3-year-old boy… 2-day bulging left eye… eye pain… MRI: 2-cm mass involving ocular muscles… biopsy: malignant cells with striations. Diagnosis?\n Correct Answer: D) Rhabdomyosarcoma",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "3-year-old boy… 2-day bulging left eye… eye pain… MRI: 2-cm mass involving ocular muscles… biopsy: malignant cells with striations. Diagnosis?\n✅ Correct Answer: D) Rhabdomyosarcoma"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Child (3 years old) + orbital mass involving ocular muscles\n🔑 Malignant cells with STRIATIONS = skeletal muscle differentiation = rhabdomyosarcoma\n🔑 Rhabdomyosarcoma = most common soft tissue sarcoma in children\n🔑 Orbit is one of the most common sites (along with head/neck, GU tract)"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Neuroblastoma — Arises from neural crest (adrenal medulla). Can metastasize to orbit but wouldn't show STRIATIONS. Would show Homer-Wright rosettes.\nB) Pheochromocytoma — Adrenal medulla tumor. Doesn't present as orbital mass. No striations.\nC) Retinoblastoma — Arises from RETINA, not ocular muscles. Presents with leukocoria. No striations.\nE) Thyroid cancer — Doesn't present as orbital mass in a 3-year-old. No striations."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF child + orbital mass + malignant cells with striations → THEN rhabdomyosarcoma"
+        }
+      ],
+      "sectionCount": 4,
+      "qbankCorrectLetter": "D",
+      "answerLetterConflict": false
+    },
+    "52": {
+      "questionNumber": 52,
+      "questionId": "nbme120_q052",
+      "correctAnswerLetter": "E",
+      "stemSnippet": "37-year-old carpenter… puncture wound to left hand 4 days ago… now fever 39°C, tachycardia, hypotension, tachypnea… hand: swelling, erythema, 2-cm necrotic wound… WBC 14K… PCO₂ <32. Most likely organism?\n Correct Answer: E) Staphylococcus aureus",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "37-year-old carpenter… puncture wound to left hand 4 days ago… now fever 39°C, tachycardia, hypotension, tachypnea… hand: swelling, erythema, 2-cm necrotic wound… WBC 14K… PCO₂ <32. Most likely organism?\n✅ Correct Answer: E) Staphylococcus aureus"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Puncture wound → skin flora inoculation\n🔑 4 days later → cellulitis/abscess with systemic sepsis (fever, tachycardia, hypotension, tachypnea)\n🔑 Necrotic wound = aggressive soft tissue infection\n🔑 S. aureus = #1 cause of skin/soft tissue infections from traumatic wounds\n🔑 PCO₂ <32 = respiratory alkalosis from tachypnea (compensating for sepsis/metabolic acidosis)"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Clostridium tetani — Causes tetanus (muscle spasms, lockjaw). Doesn't cause wound necrosis with sepsis.\nB) Mycobacterium abscessus — Atypical mycobacterium → chronic, indolent infection. Doesn't cause acute sepsis in 4 days.\nC) Pasteurella multocida — Classically from CAT/DOG bites. This is a puncture wound from carpentry, not animal bite.\nD) Pseudomonas aeruginosa — Associated with puncture wounds through SHOES (nail through sneaker). This is a hand wound from carpentry. S. aureus is more common for general skin wounds."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF traumatic wound + acute cellulitis/necrosis + sepsis → THEN S. aureus (#1 skin pathogen)"
+        }
+      ],
+      "sectionCount": 4,
+      "qbankCorrectLetter": "E",
+      "answerLetterConflict": false
+    },
+    "53": {
+      "questionNumber": 53,
+      "questionId": "nbme120_q053",
+      "correctAnswerLetter": "A",
+      "stemSnippet": "24-year-old woman… MVC 1 month ago… weakness of both hands + intrinsic hand muscle atrophy… increased tone + hyperreflexia in lower extremities… Babinski bilateral… absent pinprick at/below clavicles. Lesion at which spinal level?\n Correct Answer: A) C5",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "24-year-old woman… MVC 1 month ago… weakness of both hands + intrinsic hand muscle atrophy… increased tone + hyperreflexia in lower extremities… Babinski bilateral… absent pinprick at/below clavicles. Lesion at which spinal level?\n✅ Correct Answer: A) C5"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Hand weakness + intrinsic hand muscle atrophy = lower motor neuron signs at C8-T1 (anterior horn cells)\n🔑 Increased tone + hyperreflexia + Babinski in lower extremities = upper motor neuron signs BELOW the lesion\n🔑 Normal biceps/triceps reflexes = C5-C7 segments intact\n🔑 Absent pinprick at/below clavicles = sensory level at approximately C4-C5\n🔑 Clavicle dermatome = C4 → loss at and below clavicles = lesion at C5"
+        },
+        {
+          "kind": "blueprint",
+          "icon": "🧠",
+          "title": "MULTI-STEP LOGIC",
+          "body": "The lesion must spare C5-C7 reflexes (normal biceps C5-C6, triceps C7), cause LMN signs at C8-T1 (hand atrophy), cause UMN signs below (legs), and produce a sensory level at the clavicles. With a lesion at C5: sensory loss begins at the C5 dermatome (includes clavicular area), corticospinal tract damage at C5 → UMN signs below, and anterior horn damage extending to C8-T1 → hand weakness."
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "B) C7 — Sensory level would be at the hand/forearm, not clavicles. Triceps reflex would be affected.\nC) T1 — Sensory level would be at the medial arm/axilla, not clavicles. Too low to explain clavicular sensory loss.\nD) T3 — Sensory level at nipple line area. Too low; wouldn't explain hand muscle atrophy (C8-T1).\nE) T5 — Sensory level at inframammary fold. Far too low for the upper extremity findings."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF sensory loss at clavicles + hand atrophy + UMN signs in legs → THEN C5 level lesion"
+        }
+      ],
+      "sectionCount": 5,
+      "qbankCorrectLetter": "C",
+      "answerLetterConflict": true
+    },
+    "54": {
+      "questionNumber": 54,
+      "questionId": "nbme120_q054",
+      "correctAnswerLetter": "D",
+      "stemSnippet": "33-year-old man… progressive dyspnea on exertion… BMI 46… BP 140/90… O₂ sat 98%… lungs clear… no edema. Pulmonary function testing results?\n Correct Answer: D) FEV₁ 84%, FVC 78%, TLC 78%, DLCO 92%",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "33-year-old man… progressive dyspnea on exertion… BMI 46… BP 140/90… O₂ sat 98%… lungs clear… no edema. Pulmonary function testing results?\n✅ Correct Answer: D) FEV₁ 84%, FVC 78%, TLC 78%, DLCO 92%"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Morbid obesity (BMI 46) = chest wall restriction\n🔑 No lung disease (lungs clear, O₂ sat 98%, no smoking)\n🔑 Obesity → restrictive pattern: ↓ FVC, ↓ TLC; FEV₁/FVC ratio normal or increased; DLCO normal (parenchyma is normal)"
+        },
+        {
+          "kind": "blueprint",
+          "icon": "🧠",
+          "title": "MULTI-STEP LOGIC",
+          "body": "[Step 1] Obesity → extrapulmonary restriction\n[Step 2] Restrictive pattern: ↓FVC, ↓TLC\n[Step 3] FEV₁/FVC ratio: Normal (both decrease proportionally)\n[Step 4] DLCO: NORMAL (lung tissue is healthy) — distinguishes from intrinsic lung disease (where DLCO would be decreased)\n[Step 5] Answer D: FEV₁ 84%, FVC 78%, TLC 78%, DLCO 92% → Mild restriction, normal DLCO ✓"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) FEV₁ 19%, FVC 40%, TLC 110%, DLCO 35% — ↑TLC + ↓↓DLCO = severe COPD/emphysema. Obstructive, not restrictive.\nB) FEV₁ 43%, FVC 40%, TLC 40%, DLCO 28% — Severely decreased DLCO = intrinsic lung disease (pulmonary fibrosis). Obesity doesn't damage parenchyma.\nC) FEV₁ 65%, FVC 76%, TLC 96%, DLCO 70% — Decreased DLCO with near-normal TLC = early ILD or pulmonary vascular disease. Doesn't fit pure obesity.\nE) FEV₁ 95%, FVC 102%, TLC 98%, DLCO 89% — Completely normal PFTs. A BMI of 46 would cause at least mild restriction."
+        },
+        {
+          "kind": "conceptmap",
+          "icon": "🗺️",
+          "title": "CONCEPT MAP",
+          "body": "╔══════════════════════════════════════════════════════╗\n║  RESTRICTIVE vs OBSTRUCTIVE PFTs                     ║\n╠══════════════════════════════════════════════════════╣\n║                                                      ║\n║  OBSTRUCTIVE (asthma, COPD):                         ║\n║  ├─ ↓ FEV₁ (disproportionate)                       ║\n║  ├─ ↓ FEV₁/FVC ratio (<0.7)                         ║\n║  ├─ ↑ TLC, ↑ RV (air trapping)                      ║\n║  └─ ↓ DLCO (emphysema) or normal (asthma)           ║\n║                                                      ║\n║  RESTRICTIVE:                                        ║\n║  ├─ ↓ FVC, ↓ TLC                                    ║\n║  ├─ FEV₁/FVC ratio normal or ↑                      ║\n║  ├─ INTRINSIC (fibrosis): ↓↓ DLCO                   ║\n║  └─ EXTRINSIC (obesity, kyphosis): NORMAL DLCO ✓    ║\n╚══════════════════════════════════════════════════════╝"
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF obesity + restrictive PFTs + normal DLCO → THEN extrapulmonary restriction (chest wall)"
+        }
+      ],
+      "sectionCount": 6,
+      "qbankCorrectLetter": "D",
+      "answerLetterConflict": false
+    },
+    "55": {
+      "questionNumber": 55,
+      "questionId": "nbme120_q055",
+      "correctAnswerLetter": "C",
+      "stemSnippet": "67-year-old woman, G2P2… 6-month decreased libido… menopause at 51… hot flashes resolved 10 years ago… normal bowel/urinary function… happy marriage. Most likely pelvic exam finding?\n Correct Answer: C) Decreased vaginal rugation",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "67-year-old woman, G2P2… 6-month decreased libido… menopause at 51… hot flashes resolved 10 years ago… normal bowel/urinary function… happy marriage. Most likely pelvic exam finding?\n✅ Correct Answer: C) Decreased vaginal rugation"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Postmenopausal (menopause at 51, now 67 = 16 years postmenopausal)\n🔑 Decreased libido = common postmenopausal complaint\n🔑 Estrogen deficiency → vaginal atrophy → decreased rugation, thinning of vaginal epithelium, dryness"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Bulging anterior vaginal wall — = Cystocele (bladder prolapse). No urinary symptoms described.\nB) Bulging posterior vaginal wall — = Rectocele. No bowel symptoms described.\nD) Palpable ovaries bilaterally — Postmenopausal ovaries should be ATROPHIED and NOT palpable. Palpable ovaries = concerning for malignancy.\nE) Uterine size 8 cm — Normal premenopausal uterus = 7-8 cm. Postmenopausal uterus should be SMALLER (atrophied)."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF postmenopausal woman → THEN vaginal atrophy → decreased rugation (from estrogen deficiency)"
+        }
+      ],
+      "sectionCount": 4,
+      "qbankCorrectLetter": "C",
+      "answerLetterConflict": false
+    },
+    "56": {
+      "questionNumber": 56,
+      "questionId": "nbme120_q056",
+      "correctAnswerLetter": "E",
+      "stemSnippet": "47-year-old woman… type 1 DM × 35 years… HbA1c 12%… \"I hope that's okay. I haven't been able to get it lower.\" Most appropriate initial response?\n Correct Answer: E) \"What is your understanding of what your hemoglobin A1c should be?\"",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "47-year-old woman… type 1 DM × 35 years… HbA1c 12%… \"I hope that's okay. I haven't been able to get it lower.\" Most appropriate initial response?\n✅ Correct Answer: E) \"What is your understanding of what your hemoglobin A1c should be?\""
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 HbA1c 12% = very poorly controlled diabetes\n🔑 Patient says \"I hope that's okay\" = may not understand the target\n🔑 \"I haven't been able to get it lower\" = acknowledges difficulty, not defiance\n🔑 Best initial approach = assess the patient's understanding before educating or judging"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) \"Do you ever skip a dose of insulin?\" — Accusatory. Assumes non-compliance without first understanding the patient's knowledge base.\nB) \"Noncompliance can be deadly\" — Threatening and judgmental. Shuts down communication.\nC) \"Inform me of recent traumas/stresses contributing to poor compliance\" — Labels the patient as \"poorly compliant\" — judgmental framing.\nD) \"Tell me about the kinds of foods you eat\" — Reasonable but premature. First assess whether the patient knows the target HbA1c."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF poorly controlled chronic disease + patient uncertainty → THEN first assess the patient's understanding"
+        }
+      ],
+      "sectionCount": 4,
+      "qbankCorrectLetter": "E",
+      "answerLetterConflict": false
+    },
+    "57": {
+      "questionNumber": 57,
+      "questionId": "nbme120_q057",
+      "correctAnswerLetter": "D",
+      "stemSnippet": "Investigators conduct a study evaluating finasteride on prostate cancer incidence in 500 patients. They recruit an additional 1000 patients. Effect on the study?\n Correct Answer: D) Less chance of a Type II error",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "Investigators conduct a study evaluating finasteride on prostate cancer incidence in 500 patients. They recruit an additional 1000 patients. Effect on the study?\n✅ Correct Answer: D) Less chance of a Type II error"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Increasing sample size from 500 → 1500\n🔑 Type II error (β) = failing to detect a real difference (false negative)\n🔑 Power = 1 − β → increasing sample size → increases power → decreases Type II error\n🔑 Type I error (α) is set by the investigator (usually 0.05) and does NOT change with sample size"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Greater chance of Type I error — Type I error (α) is pre-set (0.05). Sample size doesn't change α.\nB) Greater chance of Type II error — OPPOSITE — larger sample DECREASES Type II error.\nC) Less chance of Type I error — α is fixed by the investigator. Sample size doesn't reduce it.\nE) Impossible to predict — The relationship between sample size and power is well-established."
+        },
+        {
+          "kind": "conceptmap",
+          "icon": "🗺️",
+          "title": "CONCEPT MAP",
+          "body": "╔══════════════════════════════════════════════════════╗\n║     SAMPLE SIZE & ERROR TYPES                        ║\n╠══════════════════════════════════════════════════════╣\n║                                                      ║\n║  TYPE I ERROR (α):                                   ║\n║  ├─ False positive (rejecting true H₀)               ║\n║  ├─ Set by investigator (usually 0.05)               ║\n║  └─ NOT affected by sample size                      ║\n║                                                      ║\n║  TYPE II ERROR (β):                                  ║\n║  ├─ False negative (failing to reject false H₀)      ║\n║  ├─ DECREASED by ↑ sample size ✓                     ║\n║  └─ Power = 1 − β (↑ sample → ↑ power)              ║\n║                                                      ║\n║  FACTORS THAT INCREASE POWER:                        ║\n║  ├─ ↑ Sample size ✓                                  ║\n║  ├─ ↑ Effect size                                    ║\n║  ├─ ↑ α (less stringent threshold)                   ║\n║  └─ ↓ Variance in the population                     ║\n╚══════════════════════════════════════════════════════╝"
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF sample size increases → THEN power increases → less chance of Type II error"
+        }
+      ],
+      "sectionCount": 5,
+      "qbankCorrectLetter": "D",
+      "answerLetterConflict": false
+    },
+    "58": {
+      "questionNumber": 58,
+      "questionId": "nbme120_q058",
+      "correctAnswerLetter": "D",
+      "stemSnippet": "56-year-old woman… recurrent UTIs + left flank pain × 2 years… renal US: left hydronephrosis… MRI shown with arrow indicating hydronephrosis. Obstruction at which anatomic location?\n Correct Answer: D) Ureteropelvic junction",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "56-year-old woman… recurrent UTIs + left flank pain × 2 years… renal US: left hydronephrosis… MRI shown with arrow indicating hydronephrosis. Obstruction at which anatomic location?\n✅ Correct Answer: D) Ureteropelvic junction"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Left-sided hydronephrosis = dilation of renal pelvis/calyces\n🔑 Recurrent UTIs = stasis from obstruction\n🔑 Hydronephrosis WITHOUT hydroureter (only renal collecting system dilated) = obstruction at the ureteropelvic junction (UPJ)\n🔑 UPJ obstruction = most common site of upper urinary tract obstruction\n🔑 If the ureter were also dilated (hydroureter), the obstruction would be more distal"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Bladder neck — Would cause BILATERAL hydronephrosis + hydroureter. This is unilateral.\nB) Mid ureter — Would cause hydronephrosis AND proximal hydroureter (ureter dilated above the obstruction).\nC) Renal calyx — Calyceal obstruction would cause focal calyceal dilation, not the entire renal pelvis. Very rare.\nE) Ureterovesical junction — Would cause hydroureter (entire ureter dilated) + hydronephrosis."
+        },
+        {
+          "kind": "conceptmap",
+          "icon": "🗺️",
+          "title": "KEY CONCEPT",
+          "body": "╔══════════════════════════════════════════════════════╗\n║  LEVEL OF OBSTRUCTION → PATTERN OF DILATION          ║\n╠══════════════════════════════════════════════════════╣\n║                                                      ║\n║  UPJ obstruction ✓:                                  ║\n║  └─ Hydronephrosis ONLY (no hydroureter)             ║\n║                                                      ║\n║  Mid-ureter obstruction:                             ║\n║  └─ Hydronephrosis + proximal hydroureter            ║\n║                                                      ║\n║  UVJ obstruction:                                    ║\n║  └─ Hydronephrosis + FULL hydroureter                ║\n║                                                      ║\n║  Bladder outlet obstruction:                         ║\n║  └─ BILATERAL hydronephrosis + bilateral hydroureter ║\n╚══════════════════════════════════════════════════════╝"
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF unilateral hydronephrosis WITHOUT hydroureter → THEN UPJ obstruction"
+        }
+      ],
+      "sectionCount": 5,
+      "qbankCorrectLetter": "D",
+      "answerLetterConflict": false
+    },
+    "59": {
+      "questionNumber": 59,
+      "questionId": "nbme120_q059",
+      "correctAnswerLetter": "E",
+      "stemSnippet": "13-year-old boy… left hip pain + right knee pain × 2 weeks… fever 38.2°C… right knee effusion… MRI: hyperintensity in left ischium (osteomyelitis)… cultures grow Mycobacterium avium complex… HIV negative. Immunologic abnormality?\n Correct Answer: E) Dysfunctional interferon-γ receptors",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "13-year-old boy… left hip pain + right knee pain × 2 weeks… fever 38.2°C… right knee effusion… MRI: hyperintensity in left ischium (osteomyelitis)… cultures grow Mycobacterium avium complex… HIV negative. Immunologic abnormality?\n✅ Correct Answer: E) Dysfunctional interferon-γ receptors"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Mycobacterium avium complex (MAC) infection in an HIV-negative child\n🔑 Osteomyelitis from MAC = disseminated mycobacterial disease\n🔑 HIV negative = not AIDS-related MAC\n🔑 Disseminated non-tuberculous mycobacterial infection → think IFN-γ/IL-12 pathway defect\n🔑 IFN-γ receptor deficiency = Mendelian susceptibility to mycobacterial disease (MSMD)"
+        },
+        {
+          "kind": "blueprint",
+          "icon": "🧠",
+          "title": "MULTI-STEP LOGIC",
+          "body": "[Step 1] MAC infection in HIV-negative child → unusual (MAC is typically opportunistic)\n[Step 2] Disseminated mycobacterial disease without HIV → defect in IFN-γ/IL-12 axis\n[Step 3] IFN-γ is CRITICAL for macrophage activation → macrophages need IFN-γ to kill intracellular organisms (mycobacteria are intracellular)\n[Step 4] Dysfunctional IFN-γ receptors ✓ → macrophages cannot be activated → cannot contain mycobacterial infection"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Absent C5 — Terminal complement deficiency → recurrent Neisseria infections. Not mycobacterial.\nB) Bilobed neutrophil nuclei with abnormal granules — Specific granule deficiency / Chédiak-Higashi. Would cause recurrent bacterial infections, not specifically disseminated MAC.\nC) Decreased CD8+ T-lymphocyte count — Not a classic cause of MAC susceptibility. CD4+ deficiency (HIV) is.\nD) Decreased serum IgG — Hypogammaglobulinemia → recurrent encapsulated bacterial infections. Not mycobacterial."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF disseminated MAC in HIV-negative patient → THEN IFN-γ/IL-12 pathway defect (IFN-γ receptor dysfunction)"
+        }
+      ],
+      "sectionCount": 5,
+      "qbankCorrectLetter": "E",
+      "answerLetterConflict": false
+    },
+    "60": {
+      "questionNumber": 60,
+      "questionId": "nbme120_q060",
+      "correctAnswerLetter": "G",
+      "stemSnippet": "53-year-old woman… 2-cm subcutaneous mass at previous biopsy site (resected 3 years ago)… photomicrograph shown. Which cell type caused the mass?\n Correct Answer: G) Myofibroblasts",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "53-year-old woman… 2-cm subcutaneous mass at previous biopsy site (resected 3 years ago)… photomicrograph shown. Which cell type caused the mass?\n✅ Correct Answer: G) Myofibroblasts"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Recurrent mass at previous surgical/biopsy site = scar-related proliferation\n🔑 Subcutaneous location\n🔑 Recurrence at same site after prior resection = desmoid tumor (aggressive fibromatosis) or keloid/hypertrophic scar\n🔑 Myofibroblasts = cells responsible for wound contraction and scar formation\n🔑 Desmoid tumors are composed of proliferating myofibroblasts"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Macrophages — Would suggest granuloma or foreign body reaction. Not a discrete recurring mass at a scar site.\nB) Mast cells — Mast cell proliferation = mastocytosis. Not scar-related.\nC) Melanocytic cells — Would suggest melanoma recurrence. No pigmented lesion described.\nD) Mesothelial cells — Mesothelioma. Occurs in pleura/peritoneum, not subcutaneous tissue at a scar.\nE) Myeloblasts — Chloroma/granulocytic sarcoma (AML). No hematologic malignancy described.\nF) Myocytes — Skeletal muscle tumors would show striations. Not scar-related."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF recurrent mass at prior surgical site + fibroblastic proliferation → THEN myofibroblasts (desmoid tumor / aggressive fibromatosis)"
+        }
+      ],
+      "sectionCount": 4,
+      "qbankCorrectLetter": "G",
+      "answerLetterConflict": false
+    },
+    "61": {
+      "questionNumber": 61,
+      "questionId": "nbme120_q061",
+      "correctAnswerLetter": "C",
+      "stemSnippet": "36-year-old woman… hypertension on lisinopril… no period × 6 months… weight gain despite exercise… uterus = 24-week size… US: oligohydramnios + fetal abnormalities (misshapen cranium, pericardial effusion, small bladder, echogenic bowel). Cause of fetal abnormalities?\n Correct Answer: C) Fetal renal hemodynamics",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "36-year-old woman… hypertension on lisinopril… no period × 6 months… weight gain despite exercise… uterus = 24-week size… US: oligohydramnios + fetal abnormalities (misshapen cranium, pericardial effusion, small bladder, echogenic bowel). Cause of fetal abnormalities?\n✅ Correct Answer: C) Fetal renal hemodynamics"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Lisinopril = ACE inhibitor\n🔑 Pregnant (uterus = 24-week size) but didn't know (thought it was menopause/weight gain)\n🔑 ACE inhibitors are TERATOGENIC — especially in 2nd/3rd trimester\n🔑 Oligohydramnios = decreased amniotic fluid → from decreased fetal urine output\n🔑 ACE inhibitors → decrease fetal renal perfusion → renal tubular dysgenesis → ↓ fetal urine → oligohydramnios\n🔑 Fetal abnormalities (skull deformity, small bladder) = consequences of oligohydramnios (Potter sequence) + direct renal toxicity"
+        },
+        {
+          "kind": "blueprint",
+          "icon": "🧠",
+          "title": "MULTI-STEP LOGIC",
+          "body": "[Step 1] Pregnant woman on ACE inhibitor (lisinopril) → ACE inhibitors are teratogenic\n[Step 2] ACE inhibitor mechanism of fetal harm: blocks angiotensin II → ↓ fetal renal blood flow → renal tubular dysgenesis → ↓ fetal urine production → oligohydramnios\n[Step 3] Oligohydramnios consequences: pulmonary hypoplasia, limb deformities, cranial deformities (misshapen cranium) ✓, small bladder ✓\n[Step 4] Interference with FETAL RENAL HEMODYNAMICS ✓"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Fetal lung/epithelial differentiation — Pulmonary hypoplasia is a CONSEQUENCE of oligohydramnios, not the primary mechanism.\nB) Fetal lung/surfactant development — Surfactant deficiency = prematurity (RDS). ACE inhibitors don't directly affect surfactant.\nD) Maternal placental perfusion — ACE inhibitors can lower maternal BP, but the primary fetal toxicity is through FETAL renal hemodynamics.\nE) Maternal prostaglandin synthesis — Prostaglandin inhibition = NSAIDs. Not ACE inhibitor mechanism."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF pregnant + ACE inhibitor + oligohydramnios + fetal anomalies → THEN interference with fetal renal hemodynamics"
+        }
+      ],
+      "sectionCount": 5,
+      "qbankCorrectLetter": "C",
+      "answerLetterConflict": false
+    },
+    "62": {
+      "questionNumber": 62,
+      "questionId": "nbme120_q062",
+      "correctAnswerLetter": "C",
+      "stemSnippet": "64-year-old woman dies en route to ED… sudden respiratory distress… photomicrograph of lung tissue at autopsy. Most likely underlying cause of death?\n Correct Answer: C) Massive myocardial infarction",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "64-year-old woman dies en route to ED… sudden respiratory distress… photomicrograph of lung tissue at autopsy. Most likely underlying cause of death?\n✅ Correct Answer: C) Massive myocardial infarction"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Sudden death with respiratory distress\n🔑 Lung photomicrograph at autopsy → likely shows pulmonary edema (pink, proteinaceous fluid in alveoli)\n🔑 Acute pulmonary edema from sudden left heart failure = massive MI → cardiogenic pulmonary edema\n🔑 The question asks for the underlying cause (not the lung finding itself)"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Bilateral bronchopneumonia — Would show neutrophilic infiltrate with bacteria. Not sudden death — develops over days.\nB) Bronchial asthma — Would show mucus plugging, eosinophils, smooth muscle hypertrophy. The photomicrograph likely shows edema.\nD) Thromboembolus in bronchial artery — Bronchial artery embolism is extremely rare. Pulmonary artery thromboembolism would show thrombus in pulmonary vessels.\nE) Viral pneumonia — Would show interstitial lymphocytic infiltrate. Develops over days, not sudden death."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF sudden death + lung showing pulmonary edema → THEN acute MI → cardiogenic pulmonary edema"
+        }
+      ],
+      "sectionCount": 4,
+      "qbankCorrectLetter": "C",
+      "answerLetterConflict": false
+    },
+    "63": {
+      "questionNumber": 63,
+      "questionId": "nbme120_q063",
+      "correctAnswerLetter": "E",
+      "stemSnippet": "78-year-old man… mechanical aortic valve on warfarin… started ciprofloxacin + rifampin for mycobacterial infection… warfarin dose doubled 4 days ago… INR still 1.0-1.1. Most likely cause?\n Correct Answer: E) Induction of cytochrome enzymes",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "78-year-old man… mechanical aortic valve on warfarin… started ciprofloxacin + rifampin for mycobacterial infection… warfarin dose doubled 4 days ago… INR still 1.0-1.1. Most likely cause?\n✅ Correct Answer: E) Induction of cytochrome enzymes"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Warfarin dose was DOUBLED but INR barely changed (1.0 → 1.1)\n🔑 Rifampin = potent CYP450 inducer (one of the strongest known)\n🔑 Rifampin induces CYP2C9 and CYP3A4 → accelerates warfarin metabolism → warfarin becomes LESS effective\n🔑 Even doubling the warfarin dose can't overcome rifampin's powerful enzyme induction"
+        },
+        {
+          "kind": "blueprint",
+          "icon": "🧠",
+          "title": "MULTI-STEP LOGIC",
+          "body": "[Step 1] Patient on warfarin (needs therapeutic INR 2.5-3.5 for mechanical valve)\n[Step 2] Started rifampin → potent CYP450 INDUCER\n[Step 3] CYP induction → ↑ warfarin metabolism → ↓ warfarin effect\n[Step 4] INR stays low despite doubling warfarin dose ✓\n[Step 5] Mechanism = INDUCTION of cytochrome enzymes ✓"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Decreased protein binding — Would INCREASE free warfarin → INCREASE INR. Opposite of what's seen.\nB) Eradication of gut flora — Gut flora produce vitamin K. Eradicating them would DECREASE vitamin K → INCREASE INR. Opposite effect.\nC) Increased alcohol intake — Chronic alcohol induces CYP450, but the stem's intake is unchanged. Not the cause.\nD) Increased vegetable consumption — ↑ Vitamin K intake → ↓ INR. Possible, but rifampin is the classic and most powerful explanation."
+        },
+        {
+          "kind": "conceptmap",
+          "icon": "🗺️",
+          "title": "CONCEPT MAP",
+          "body": "╔══════════════════════════════════════════════════════╗\n║     CYP450 INDUCERS & INHIBITORS                     ║\n╠══════════════════════════════════════════════════════╣\n║                                                      ║\n║  INDUCERS (↑ drug metabolism → ↓ drug effect):       ║\n║  ├─ Barbiturates                                     ║\n║  ├─ Phenytoin                                        ║\n║  ├─ RIFAMPIN ✓ (strongest!)                          ║\n║  ├─ Griseofulvin                                     ║\n║  ├─ Carbamazepine                                    ║\n║  ├─ Chronic alcohol                                  ║\n║  ├─ St. John's Wort                                  ║\n║  └─ Modafinil                                        ║\n║                                                      ║\n║  INHIBITORS (↓ drug metabolism → ↑ drug effect):     ║\n║  ├─ Cimetidine                                       ║\n║  ├─ Azole antifungals (ketoconazole)                 ║\n║  ├─ Macrolides (erythromycin)                        ║\n║  ├─ Grapefruit juice                                 ║\n║  ├─ Isoniazid                                        ║\n║  ├─ Acute alcohol                                    ║\n║  └─ Ritonavir                                        ║\n╚══════════════════════════════════════════════════════╝"
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF warfarin + rifampin + low INR despite dose increase → THEN CYP450 enzyme induction by rifampin"
+        }
+      ],
+      "sectionCount": 6,
+      "qbankCorrectLetter": "E",
+      "answerLetterConflict": false
+    },
+    "64": {
+      "questionNumber": 64,
+      "questionId": "nbme120_q064",
+      "correctAnswerLetter": "A",
+      "stemSnippet": "80-year-old African American woman… 5-month reduced vision (worse in right eye)… needs brighter light for sewing… no eye pain… dilated fundoscopic exam shown. Which factor most increased her risk?\n Correct Answer: A) Age",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "80-year-old African American woman… 5-month reduced vision (worse in right eye)… needs brighter light for sewing… no eye pain… dilated fundoscopic exam shown. Which factor most increased her risk?\n✅ Correct Answer: A) Age"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Progressive bilateral vision loss (worse in one eye) + needs brighter light = age-related macular degeneration (AMD)\n🔑 Fundoscopic findings (drusen, pigmentary changes, or geographic atrophy) = AMD\n🔑 Age is the #1 risk factor for AMD (hence the name \"age-related\")\n🔑 Other risk factors: smoking, family history, Caucasian race, female sex"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "B) Alcohol consumption — Not a major established risk factor for AMD. Minimal here.\nC) Ethnicity — AMD is actually MORE common in CAUCASIANS. African American ethnicity is relatively PROTECTIVE.\nD) Family history — Her family history is glaucoma (mother) and diabetes (father). Neither is AMD.\nE) Hypertension — A minor/debated risk factor. Age is far stronger."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF progressive central vision loss + drusen on fundoscopy + elderly → THEN AMD → #1 risk factor = AGE"
+        }
+      ],
+      "sectionCount": 4,
+      "qbankCorrectLetter": "A",
+      "answerLetterConflict": false
+    },
+    "65": {
+      "questionNumber": 65,
+      "questionId": "nbme120_q065",
+      "correctAnswerLetter": "E",
+      "stemSnippet": "4-year-old boy… ALL on induction chemo (L-asparaginase, dexamethasone, doxorubicin, vincristine)… fever 38.2°C… pallor, alopecia, oral ulcers… central line without erythema… blood culture: gram-negative rods. Mechanism of susceptibility?\n Correct Answer: E) Neutropenia",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "4-year-old boy… ALL on induction chemo (L-asparaginase, dexamethasone, doxorubicin, vincristine)… fever 38.2°C… pallor, alopecia, oral ulcers… central line without erythema… blood culture: gram-negative rods. Mechanism of susceptibility?\n✅ Correct Answer: E) Neutropenia"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 ALL on induction chemotherapy = cytotoxic drugs destroying rapidly dividing cells\n🔑 Pallor (anemia) + alopecia (hair loss) + oral ulcers (mucositis) = bone marrow suppression\n🔑 Fever + gram-negative bacteremia = febrile neutropenia\n🔑 Chemotherapy → neutropenia = #1 cause of infection susceptibility in cancer patients on chemo"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "A) Deficiency of terminal complement — → Neisseria infections specifically. Not the mechanism of chemo immunosuppression.\nB) Hypogammaglobulinemia — Can occur in ALL, but the ACUTE susceptibility during induction is from NEUTROPENIA.\nC) Impaired T-lymphocyte function — → opportunistic infections (PCP, CMV, fungi). Gram-negative rod bacteremia is more characteristic of neutropenia.\nD) Inhibition of TNF-α function — Anti-TNF drugs (infliximab). Not the mechanism of chemotherapy."
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF cancer patient on chemo + fever + bacteremia → THEN neutropenia is the mechanism"
+        }
+      ],
+      "sectionCount": 4,
+      "qbankCorrectLetter": "E",
+      "answerLetterConflict": false
+    },
+    "66": {
+      "questionNumber": 66,
+      "questionId": "nbme120_q066",
+      "correctAnswerLetter": "A",
+      "stemSnippet": "RCT comparing wound healing after cesarean delivery… 1000 women… wound infection: 12/1000 (Procedure A) vs 18/1000 (Procedure B). Best estimate of absolute risk reduction?\n Correct Answer: A) (18/1000) – (12/1000)",
+      "sections": [
+        {
+          "kind": "overview",
+          "icon": "🧠",
+          "title": "Snapshot",
+          "body": "RCT comparing wound healing after cesarean delivery… 1000 women… wound infection: 12/1000 (Procedure A) vs 18/1000 (Procedure B). Best estimate of absolute risk reduction?\n✅ Correct Answer: A) (18/1000) – (12/1000)"
+        },
+        {
+          "kind": "clues",
+          "icon": "🔑",
+          "title": "HIGHLIGHTED VIGNETTE CLUES",
+          "body": "🔑 Absolute Risk Reduction (ARR) = Risk in control group − Risk in treatment group\n🔑 ARR = 18/1000 − 12/1000 = 6/1000 = 0.6%\n🔑 This is a straightforward formula question"
+        },
+        {
+          "kind": "distractors",
+          "icon": "🧩",
+          "title": "DISTRACTOR ANALYSIS",
+          "body": "B) 0.85 × (12/1000) — Multiplying by enrollment rate is irrelevant. ARR uses the observed rates.\nC) 0.85 × (18/1000) — Same error — enrollment rate doesn't factor into ARR.\nD) 0.85 × (18/1000 − 12/1000) — Incorrectly adjusts ARR by enrollment rate.\nE) [(1.2/100) − (1.8/100)] / (1.8/100) — This is RELATIVE risk reduction (RRR), not ARR; also reversed."
+        },
+        {
+          "kind": "conceptmap",
+          "icon": "🗺️",
+          "title": "CONCEPT MAP",
+          "body": "╔══════════════════════════════════════════════════════╗\n║     RISK REDUCTION FORMULAS                          ║\n╠══════════════════════════════════════════════════════╣\n║                                                      ║\n║  ARR = Risk(control) − Risk(treatment) ✓             ║\n║      = 18/1000 − 12/1000 = 6/1000                   ║\n║                                                      ║\n║  RRR = ARR / Risk(control)                           ║\n║      = (6/1000) / (18/1000) = 33%                    ║\n║                                                      ║\n║  NNT = 1 / ARR                                       ║\n║      = 1 / (6/1000) = 167                            ║\n║                                                      ║\n║  Relative Risk = Risk(treatment) / Risk(control)     ║\n║      = (12/1000) / (18/1000) = 0.67                  ║\n╚══════════════════════════════════════════════════════╝"
+        },
+        {
+          "kind": "objective",
+          "icon": "🎯",
+          "title": "Key takeaway",
+          "body": "IF asked for ARR → THEN subtract: Risk(control) − Risk(treatment)"
+        }
+      ],
+      "sectionCount": 5,
+      "qbankCorrectLetter": "A",
       "answerLetterConflict": false
     },
     "68": {
@@ -1608,7 +2448,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║     HORSESHOE KIDNEY                                 ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  EMBRYOLOGY:                                         ║\n\n║  ├─ Inferior poles fuse during ascent ✓               ║\n\n║  ├─ Trapped under IMA → cannot ascend fully           ║\n\n║  └─ Located at L3-L5 (lower than normal)             ║\n\n║                                                      ║\n\n║  ASSOCIATIONS:                                       ║\n\n║  ├─ Turner syndrome (45,X)                           ║\n\n║  ├─ Trisomy 18 (Edwards)                             ║\n\n║  ├─ Recurrent UTIs ✓                                 ║\n\n║  ├─ Hydronephrosis (UPJ obstruction)                 ║\n\n║  └─ Renal stones                                     ║\n\n║                                                      ║\n\n║  Usually asymptomatic — incidental finding            ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF U-shaped kidney → THEN horseshoe kidney → fusion of inferior poles during ascent"
         }
       ],
@@ -1706,7 +2546,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║     DIABETES INSIPIDUS                               ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  CENTRAL DI ✓:                                       ║\n\n║  ├─ Problem: ↓ ADH production/secretion              ║\n\n║  ├─ Site: Supraoptic nucleus (hypothalamus) ✓        ║\n\n║  ├─ Water deprivation test: urine stays dilute       ║\n\n║  ├─ Desmopressin (ADH analog): urine CONCENTRATES ✓ ║\n\n║  └─ Causes: surgery, trauma, tumors, idiopathic     ║\n\n║                                                      ║\n\n║  NEPHROGENIC DI:                                     ║\n\n║  ├─ Problem: Kidneys don't respond to ADH            ║\n\n║  ├─ Site: Collecting duct (V2 receptor/aquaporins)   ║\n\n║  ├─ Water deprivation test: urine stays dilute       ║\n\n║  ├─ Desmopressin: urine STAYS DILUTE                 ║\n\n║  └─ Causes: Lithium, hypercalcemia, hypokalemia     ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF dilute urine + responds to exogenous ADH → THEN central DI → supraoptic nucleus dysfunction"
         }
       ],
@@ -1735,7 +2575,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║     TESTICULAR TUMORS — HISTOLOGY                    ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  SEMINOMA ✓:                                         ║\n\n║  ├─ Most common testicular GCT                       ║\n\n║  ├─ \"Fried egg\" cells: clear cytoplasm,              ║\n\n║  │   central round nucleus ✓                         ║\n\n║  ├─ Lymphocytic infiltrate                           ║\n\n║  ├─ ↑ hCG (10%), ↑ PLAP                             ║\n\n║  ├─ NEVER ↑ AFP                                      ║\n\n║  └─ Radiosensitive (excellent prognosis)             ║\n\n║                                                      ║\n\n║  [EMBRYONAL CARCINOMA](/rare-disease/embryonal-carcinoma):                                ║\n\n║  ├─ Pleomorphic, hemorrhagic, necrotic               ║\n\n║  ├─ ↑ hCG, ↑ AFP                                    ║\n\n║  └─ Most aggressive GCT                              ║\n\n║                                                      ║\n\n║  YOLK SAC TUMOR:                                     ║\n\n║  ├─ Most common in children <3                       ║\n\n║  ├─ Schiller-Duval bodies                            ║\n\n║  └─ ↑↑ AFP                                           ║\n\n║                                                      ║\n\n║  CHORIOCARCINOMA:                                    ║\n\n║  ├─ Syncytiotrophoblasts + cytotrophoblasts           ║\n\n║  ├─ ↑↑ hCG                                           ║\n\n║  └─ Hematogenous spread (hemorrhagic mets)           ║\n\n║                                                      ║\n\n║  TERATOMA:                                           ║\n\n║  ├─ All 3 germ layers                                ║\n\n║  └─ Mature (benign in children) vs immature          ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF testicular mass + round cells + clear cytoplasm + central nucleus → THEN seminoma"
         }
       ],
@@ -1775,7 +2615,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  RENAL ARTERY STENOSIS — TWO MAJOR CAUSES            ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  FIBROMUSCULAR DYSPLASIA ✓:                          ║\n\n║  ├─ Young women (15-50 years) ✓                      ║\n\n║  ├─ Affects DISTAL 2/3 of renal artery               ║\n\n║  ├─ \"String of beads\" on angiography                 ║\n\n║  ├─ Medial fibroplasia (most common subtype)         ║\n\n║  └─ Treatment: angioplasty (excellent response)      ║\n\n║                                                      ║\n\n║  ATHEROSCLEROTIC RAS:                                ║\n\n║  ├─ Older patients (>50 years)                       ║\n\n║  ├─ Affects PROXIMAL 1/3 of renal artery             ║\n\n║  ├─ Risk factors: smoking, DM, hyperlipidemia        ║\n\n║  └─ Treatment: medical (ACEi/ARB) ± stenting         ║\n\n║                                                      ║\n\n║  BOTH CAUSE:                                         ║\n\n║  ├─ Secondary hypertension                           ║\n\n║  ├─ Abdominal bruit ✓                                ║\n\n║  └─ Activation of RAAS → ↑ renin → ↑ aldosterone    ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF young woman + severe HTN + abdominal bruit → THEN fibromuscular dysplasia\n\n📘 BLOCK 5: QUESTIONS 81–100"
         }
       ],
@@ -1798,7 +2638,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║     2×2 TABLE FOR THIS PROBLEM                       ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║              Disease+    Disease-    Total            ║\n\n║  Test+         20         9,992     10,012            ║\n\n║  Test-         60        89,928     89,988            ║\n\n║  Total         80        99,920    100,000            ║\n\n║                                                      ║\n\n║  Sensitivity = 20/80 = 25%                           ║\n\n║  Specificity = 89,928/99,920 = 90%                   ║\n\n║  PPV = 20/10,012 = 0.2% (very low!)                  ║\n\n║  NPV = 89,928/89,988 = 99.9%                        ║\n\n║                                                      ║\n\n║  KEY LESSON: Low prevalence → low PPV                ║\n\n║  Even with 90% specificity, most positives           ║\n\n║  are FALSE positives when prevalence is low          ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF asked for false positives → THEN = (Non-diseased) × (1 − Specificity)"
         }
       ],
@@ -1850,7 +2690,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║     DiGEORGE SYNDROME (22q11.2 DELETION)             ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  EMBRYOLOGY:                                         ║\n\n║  ├─ Failed development of 3rd & 4th pharyngeal       ║\n\n║  │   pouches                                         ║\n\n║  ├─ 3rd pouch → thymus + inferior parathyroids       ║\n\n║  └─ 4th pouch → superior parathyroids                ║\n\n║                                                      ║\n\n║  CLINICAL FEATURES (CATCH-22):                       ║\n\n║  ├─ Cardiac: interrupted aortic arch ✓,              ║\n\n║  │   tetralogy of Fallot, truncus arteriosus         ║\n\n║  ├─ Abnormal facies ✓                                ║\n\n║  ├─ Thymic aplasia → T-cell immunodeficiency         ║\n\n║  ├─ [Cleft palate](/rare-disease/cleft-palate)                                     ║\n\n║  └─ Hypocalcemia ✓ (absent parathyroids)             ║\n\n║                                                      ║\n\n║  GENETICS: 22q11.2 microdeletion ✓                   ║\n\n║  (TBX1 gene)                                         ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF conotruncal heart defect + hypocalcemia + facial dysmorphism → THEN DiGeorge → chromosome 22"
         }
       ],
@@ -1925,7 +2765,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  DEVELOPMENTAL ABNORMALITIES                         ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  MALFORMATION:                                       ║\n\n║  ├─ Intrinsically abnormal development               ║\n\n║  ├─ Occurs during organogenesis                      ║\n\n║  └─ Examples: VSD, cleft lip, spina bifida           ║\n\n║                                                      ║\n\n║  DISRUPTION:                                         ║\n\n║  ├─ Breakdown of previously normal structure          ║\n\n║  ├─ Extrinsic destruction                            ║\n\n║  └─ Examples: Amniotic band syndrome                 ║\n\n║                                                      ║\n\n║  DEFORMATION ✓:                                      ║\n\n║  ├─ Abnormal mechanical forces on normal tissue ✓    ║\n\n║  ├─ Extrinsic compression                            ║\n\n║  └─ Examples: Clubfoot from oligohydramnios ✓,       ║\n\n║     plagiocephaly, torticollis                       ║\n\n║                                                      ║\n\n║  DYSPLASIA:                                          ║\n\n║  ├─ Abnormal cellular organization                   ║\n\n║  └─ Examples: [Achondroplasia](/rare-disease/achondroplasia), ectodermal dysplasia   ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF oligohydramnios + positional abnormality (clubfoot) → THEN deformation (mechanical compression)"
         }
       ],
@@ -1954,7 +2794,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  CHEST EXAM FINDINGS BY PATHOLOGY                    ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  PNEUMOTHORAX ✓:                                     ║\n\n║  ├─ Breath sounds: ↓↓                                ║\n\n║  ├─ Percussion: HYPERRESONANT ✓                      ║\n\n║  ├─ Fremitus: ↓↓                                     ║\n\n║  └─ Trachea: shifts AWAY (if tension)                ║\n\n║                                                      ║\n\n║  PLEURAL EFFUSION:                                   ║\n\n║  ├─ Breath sounds: ↓↓                                ║\n\n║  ├─ Percussion: DULL                                 ║\n\n║  ├─ Fremitus: ↓↓                                     ║\n\n║  └─ Trachea: shifts AWAY (if large)                  ║\n\n║                                                      ║\n\n║  CONSOLIDATION (pneumonia):                          ║\n\n║  ├─ Breath sounds: Bronchial (↑)                     ║\n\n║  ├─ Percussion: DULL                                 ║\n\n║  ├─ Fremitus: ↑↑                                     ║\n\n║  └─ Trachea: midline                                 ║\n\n║                                                      ║\n\n║  KEY DIFFERENTIATOR:                                 ║\n\n║  Hyperresonant = AIR (pneumothorax)                  ║\n\n║  Dull = FLUID or SOLID (effusion/consolidation)      ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF penetrating trauma + tracheal deviation away + hyperresonance → THEN tension pneumothorax"
         }
       ],
@@ -2040,7 +2880,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  ARACHIDONIC ACID METABOLITES                        ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  CYCLOOXYGENASE (COX) PATHWAY:                       ║\n\n║  ├─ PGE₂ → pain, fever, vasodilation                ║\n\n║  ├─ PGI₂ (prostacyclin) → vasodilation,             ║\n\n║  │   inhibits platelet aggregation                   ║\n\n║  ├─ PGF₂α → uterine contraction                    ║\n\n║  └─ TXA₂ → platelet aggregation, vasoconstriction   ║\n\n║                                                      ║\n\n║  LIPOXYGENASE PATHWAY:                               ║\n\n║  ├─ LTB₄ → NEUTROPHIL CHEMOTAXIS ✓                  ║\n\n║  ├─ LTC₄/D₄/E₄ → bronchospasm, vasoconstriction,   ║\n\n║  │   ↑ vascular permeability (slow-reacting          ║\n\n║  │   substances of anaphylaxis)                      ║\n\n║  └─ Lipoxins → ANTI-inflammatory (stop signal)      ║\n\n║                                                      ║\n\n║  KEY RULE:                                           ║\n\n║  LTB₄ = #1 neutrophil chemoattractant ✓              ║\n\n║  (along with C5a, IL-8, bacterial products)          ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF acute inflammation + neutrophil infiltration → THEN LTB₄ (leukotriene) is the chemoattractant"
         }
       ],
@@ -2069,7 +2909,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  PSYCHOTIC DISORDERS — DURATION CRITERIA              ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  BRIEF PSYCHOTIC DISORDER ✓:                         ║\n\n║  ├─ Duration: 1 day to <1 month ✓                    ║\n\n║  ├─ Full return to premorbid functioning              ║\n\n║  ├─ Often has identifiable stressor ✓                ║\n\n║  └─ Psychotic symptoms present ✓                     ║\n\n║                                                      ║\n\n║  SCHIZOPHRENIFORM DISORDER:                          ║\n\n║  ├─ Duration: 1-6 months                             ║\n\n║  └─ Same symptoms as schizophrenia                   ║\n\n║                                                      ║\n\n║  SCHIZOPHRENIA:                                      ║\n\n║  ├─ Duration: ≥6 months                              ║\n\n║  ├─ ≥1 month active-phase symptoms                   ║\n\n║  └─ Functional decline                               ║\n\n║                                                      ║\n\n║  SCHIZOAFFECTIVE DISORDER:                           ║\n\n║  ├─ Schizophrenia + mood episode                     ║\n\n║  └─ Psychosis present WITHOUT mood symptoms          ║\n\n║      for ≥2 weeks                                    ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF psychotic symptoms <1 month + identifiable stressor + previously normal → THEN brief psychotic disorder"
         }
       ],
@@ -2098,7 +2938,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  CSF PROFILES IN MENINGITIS                          ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  BACTERIAL:                                          ║\n\n║  ├─ WBC: ↑↑↑ (>1000) — NEUTROPHILS                  ║\n\n║  ├─ Glucose: ↓↓ (<40 mg/dL)                         ║\n\n║  ├─ Protein: ↑↑ (>100 mg/dL)                        ║\n\n║  └─ Opening pressure: ↑↑                             ║\n\n║                                                      ║\n\n║  VIRAL ✓:                                            ║\n\n║  ├─ WBC: ↑ (10-500) — LYMPHOCYTES ✓                  ║\n\n║  ├─ Glucose: NORMAL ✓                                ║\n\n║  ├─ Protein: mildly ↑ (50-100) ✓                     ║\n\n║  └─ Opening pressure: normal or mildly ↑ ✓           ║\n\n║                                                      ║\n\n║  FUNGAL/TB:                                          ║\n\n║  ├─ WBC: ↑ — LYMPHOCYTES                             ║\n\n║  ├─ Glucose: ↓↓ (LOW — like bacterial)               ║\n\n║  ├─ Protein: ↑↑                                      ║\n\n║  └─ Opening pressure: ↑↑                             ║\n\n║                                                      ║\n\n║  #1 CAUSE OF VIRAL MENINGITIS:                       ║\n\n║  ENTEROVIRUS ✓ (summer/fall peak) ✓                  ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF lymphocytic CSF + normal glucose + summer + child → THEN enterovirus meningitis"
         }
       ],
@@ -2219,7 +3059,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  IMMUNE CHECKPOINT INHIBITORS                        ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  T-CELL ACTIVATION:                                  ║\n\n║  ├─ Signal 1: TCR + MHC/antigen                      ║\n\n║  ├─ Signal 2: CD28 + B7 (co-stimulation)             ║\n\n║  └─ CTLA-4 competes with CD28 for B7 binding         ║\n\n║     → INHIBITS T-cell activation (off switch)        ║\n\n║                                                      ║\n\n║  CHECKPOINT INHIBITORS (block the off switch):       ║\n\n║  ├─ Anti-CTLA-4: IPILIMUMAB ✓                       ║\n\n║  │   └─ First approved for metastatic melanoma ✓     ║\n\n║  ├─ Anti-PD-1: Nivolumab, Pembrolizumab              ║\n\n║  │   └─ Melanoma, NSCLC, many others                 ║\n\n║  └─ Anti-PD-L1: Atezolizumab, Durvalumab            ║\n\n║                                                      ║\n\n║  SIDE EFFECTS (autoimmune):                          ║\n\n║  ├─ Colitis, hepatitis, dermatitis                   ║\n\n║  ├─ Hypophysitis, thyroiditis                        ║\n\n║  └─ Pneumonitis                                      ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF metastatic melanoma + immunotherapy → THEN anti-CTLA-4 (ipilimumab) = checkpoint blockade"
         }
       ],
@@ -2271,7 +3111,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  PERTUSSIS (WHOOPING COUGH)                          ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  ORGANISM: Bordetella pertussis                      ║\n\n║  ├─ Gram-negative coccobacillus                      ║\n\n║  ├─ Toxin: pertussis toxin (ADP-ribosylation of Gi)  ║\n\n║  └─ Virulence: filamentous hemagglutinin, pertactin  ║\n\n║                                                      ║\n\n║  STAGES:                                             ║\n\n║  ├─ Catarrhal (1-2 weeks): URI symptoms              ║\n\n║  ├─ Paroxysmal (2-6 weeks): whooping cough ✓         ║\n\n║  │   ├─ Paroxysmal cough fits ✓                      ║\n\n║  │   ├─ Inspiratory whoop ✓                          ║\n\n║  │   ├─ Post-tussive emesis ✓                        ║\n\n║  │   └─ Lymphocytosis (unique!)                      ║\n\n║  └─ Convalescent (weeks-months): gradual resolution  ║\n\n║                                                      ║\n\n║  TREATMENT: MACROLIDE ✓                              ║\n\n║  ├─ Azithromycin (preferred in infants)              ║\n\n║  ├─ Erythromycin                                     ║\n\n║  └─ Clarithromycin                                   ║\n\n║                                                      ║\n\n║  PREVENTION: DTaP vaccine (children)                 ║\n\n║              Tdap vaccine (adolescents/adults)        ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF paroxysmal cough + whoop + post-tussive emesis + unvaccinated infant → THEN pertussis → macrolide\n\n✅ BLOCKS 1–5 (QUESTIONS 1–100) COMPLETE\n📊 CUMULATIVE PERFORMANCE DASHBOARD\nBlock\tQuestions\tTopics Covered\nBlock 1\tQ1–Q20\tPulmonary embolism/FVL, RA, brainstem anatomy, HIV, AIN, syringomyelia, PAD, motivational interviewing, caloric insufficiency, content validity, Chagas\nCONTINUE\nAnalyzed query\n\nContinuing with Block 6: Questions 101–119 to complete the entire 119-question set.\n\n📘 BLOCK 6: QUESTIONS 101–119"
         }
       ],
@@ -2346,7 +3186,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  NMJ DISORDERS — ELECTROPHYSIOLOGY                   ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  NORMAL:                                             ║\n\n║  EPP = 10 mV | MEPP = 1 mV | ACh response = 1 mV   ║\n\n║                                                      ║\n\n║  LAMBERT-EATON (LEMS) ✓:                             ║\n\n║  ├─ EPP = ↓↓ (3 mV) ✓ — fewer vesicles released     ║\n\n║  ├─ MEPP = NORMAL (1 mV) ✓ — each vesicle normal    ║\n\n║  ├─ ACh response = NORMAL (1 mV) ✓ — receptors OK   ║\n\n║  ├─ Anti-VGCC antibodies (presynaptic)               ║\n\n║  ├─ Associated with SCLC ✓                           ║\n\n║  └─ Improves with repeated stimulation               ║\n\n║                                                      ║\n\n║  MYASTHENIA GRAVIS:                                  ║\n\n║  ├─ EPP = ↓                                          ║\n\n║  ├─ MEPP = ↓ — receptor blockade                     ║\n\n║  ├─ ACh response = ↓ — receptor blockade             ║\n\n║  ├─ Anti-AChR antibodies (postsynaptic)              ║\n\n║  └─ Worsens with repeated stimulation                ║\n\n║                                                      ║\n\n║  [BOTULISM](/rare-disease/botulism):                                           ║\n\n║  ├─ EPP = ↓↓                                         ║\n\n║  ├─ MEPP = NORMAL — vesicle content OK               ║\n\n║  ├─ ACh response = NORMAL — receptors OK             ║\n\n║  ├─ Toxin cleaves SNARE proteins                     ║\n\n║  └─ Similar pattern to LEMS!                         ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF lung cancer + muscle weakness + ↓ EPP + normal MEPP + normal ACh response → THEN Lambert-Eaton syndrome"
         }
       ],
@@ -2444,7 +3284,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  ANTIFUNGAL MECHANISMS                               ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  ERGOSTEROL SYNTHESIS PATHWAY:                       ║\n\n║  Squalene → [squalene epoxidase] → Squalene epoxide ║\n\n║  → ... → Lanosterol → [14α-demethylase] → Ergosterol║\n\n║                                                      ║\n\n║  TERBINAFINE ✓:                                      ║\n\n║  ├─ Inhibits squalene epoxidase ✓                    ║\n\n║  ├─ First-line for dermatophytes ✓                   ║\n\n║  └─ Accumulates in keratin (skin, nails, hair)       ║\n\n║                                                      ║\n\n║  AZOLES (fluconazole, itraconazole, etc.):           ║\n\n║  ├─ Inhibit 14α-demethylase (CYP450)                ║\n\n║  └─ Broad-spectrum antifungal                        ║\n\n║                                                      ║\n\n║  AMPHOTERICIN B:                                     ║\n\n║  ├─ Binds ergosterol → forms pores                   ║\n\n║  └─ Broad-spectrum, nephrotoxic                      ║\n\n║                                                      ║\n\n║  ECHINOCANDINS:                                      ║\n\n║  ├─ Inhibit β-glucan synthase                        ║\n\n║  └─ Candida, Aspergillus (NOT dermatophytes)         ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF dermatophyte infection (tinea) → THEN terbinafine → inhibits squalene monooxygenase (epoxidase)"
         }
       ],
@@ -2473,7 +3313,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  INTERNUCLEAR OPHTHALMOPLEGIA (INO)                  ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  LESION: Medial Longitudinal Fasciculus (MLF)        ║\n\n║                                                      ║\n\n║  LEFT INO ✓ (LEFT MLF lesion):                       ║\n\n║  ├─ LEFT eye fails to ADDUCT on rightward gaze ✓     ║\n\n║  ├─ RIGHT eye abducts with nystagmus                 ║\n\n║  └─ Convergence usually preserved                    ║\n\n║                                                      ║\n\n║  RULE: \"The side of the INO = the side of the        ║\n\n║         eye that CAN'T adduct = the side of the      ║\n\n║         MLF lesion\" ✓                                ║\n\n║                                                      ║\n\n║  CAUSES:                                             ║\n\n║  ├─ Young patient: Multiple sclerosis (bilateral)    ║\n\n║  └─ Older patient: Stroke (unilateral)               ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF eye can't adduct on contralateral gaze + normal convergence → THEN INO → ipsilateral MLF lesion"
         }
       ],
@@ -2496,7 +3336,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  HYPERTENSIVE RETINOPATHY (Keith-Wagener-Barker)     ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  Grade I:  Arteriolar narrowing (\"silver/copper       ║\n\n║            wiring\")                                  ║\n\n║                                                      ║\n\n║  Grade II: AV NICKING ✓ (arteriole compresses        ║\n\n║            venule at crossing)                       ║\n\n║            → Indicates CHRONIC HTN ✓                 ║\n\n║                                                      ║\n\n║  Grade III: Flame hemorrhages + cotton-wool spots     ║\n\n║             + hard exudates                          ║\n\n║                                                      ║\n\n║  Grade IV: PAPILLEDEMA (optic disc swelling)          ║\n\n║            → Malignant/accelerated HTN               ║\n\n║            → Medical emergency                       ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF chronic uncontrolled HTN + fundoscopy → THEN AV nicking (hypertensive retinopathy)"
         }
       ],
@@ -2565,7 +3405,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  NORMAL DISTRIBUTION — KEY PERCENTAGES               ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  Mean ± 1 SD → 68% of values                        ║\n\n║  Mean ± 2 SD → 95% of values                        ║\n\n║  Mean ± 3 SD → 99.7% of values                      ║\n\n║                                                      ║\n\n║  BELOW the mean → 50% ✓                              ║\n\n║  ABOVE the mean → 50%                                ║\n\n║                                                      ║\n\n║  In normal distribution:                             ║\n\n║  Mean = Median = Mode                                ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF normal distribution + \"50% of individuals\" → THEN above or below the MEAN"
         }
       ],
@@ -2594,7 +3434,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  PLATELET DISORDERS — ADHESION vs AGGREGATION        ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  ADHESION (platelet → subendothelium):               ║\n\n║  ├─ Requires: vWF + GPIb                             ║\n\n║  ├─ Tested by: RISTOCETIN                            ║\n\n║  ├─ vWF deficiency → von Willebrand disease          ║\n\n║  └─ GPIb deficiency → Bernard-Soulier syndrome       ║\n\n║     (large platelets, thrombocytopenia)               ║\n\n║                                                      ║\n\n║  AGGREGATION (platelet → platelet) ✓:                ║\n\n║  ├─ Requires: GPIIb/IIIa + FIBRINOGEN                ║\n\n║  ├─ Tested by: aggregometry (ADP, thrombin, etc.)    ║\n\n║  ├─ GPIIb/IIIa deficiency → GLANZMANN ✓              ║\n\n║  │   ├─ Normal ristocetin ✓                          ║\n\n║  │   ├─ Absent aggregation to ALL agonists ✓         ║\n\n║  │   └─ Normal platelet count and morphology ✓       ║\n\n║  └─ Autosomal recessive                              ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF normal ristocetin + absent aggregation + normal platelet count → THEN Glanzmann thrombasthenia → GPIIb/IIIa defect"
         }
       ],
@@ -2623,7 +3463,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  POPULATION GENETICS CONCEPTS                        ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  FOUNDER EFFECT ✓:                                   ║\n\n║  ├─ Small group establishes new population            ║\n\n║  ├─ Specific alleles overrepresented                  ║\n\n║  ├─ Geographic isolation maintains frequency ✓        ║\n\n║  └─ Examples:                                        ║\n\n║     ├─ BRCA2 in Iceland ✓                            ║\n\n║     ├─ Ellis-van Creveld in Amish                    ║\n\n║     └─ Tay-Sachs in Ashkenazi Jews                   ║\n\n║                                                      ║\n\n║  GENETIC DRIFT:                                      ║\n\n║  ├─ Random changes in allele frequency               ║\n\n║  ├─ More significant in SMALL populations            ║\n\n║  └─ Founder effect is a TYPE of genetic drift        ║\n\n║                                                      ║\n\n║  BOTTLENECK:                                         ║\n\n║  ├─ Drastic reduction in population size              ║\n\n║  ├─ Survivors' alleles dominate                       ║\n\n║  └─ Different from founder effect (catastrophic       ║\n\n║     event vs. migration)                             ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF specific mutation highly prevalent in isolated population → THEN founder effect → geographic isolation"
         }
       ],
@@ -2652,7 +3492,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  CARDIAC TUMORS                                      ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  MOST COMMON PRIMARY TUMOR (adults): MYXOMA ✓        ║\n\n║  ├─ Location: LEFT ATRIUM (75%) ✓                    ║\n\n║  ├─ Attached to interatrial septum (fossa ovalis)    ║\n\n║  ├─ Pedunculated ✓ → ball-valve obstruction          ║\n\n║  ├─ Symptoms: syncope ✓, dyspnea, \"tumor plop\"      ║\n\n║  ├─ Can embolize → stroke                            ║\n\n║  ├─ Histology: stellate cells in myxoid stroma       ║\n\n║  └─ [Carney complex](/rare-disease/carney-complex): familial myxomas + skin          ║\n\n║     pigmentation + endocrine tumors                  ║\n\n║                                                      ║\n\n║  MOST COMMON PRIMARY TUMOR (children): RHABDOMYOMA   ║\n\n║  ├─ Associated with TUBEROUS SCLEROSIS               ║\n\n║  └─ Often multiple, in ventricles                    ║\n\n║                                                      ║\n\n║  MOST COMMON CARDIAC TUMOR OVERALL: METASTASIS       ║\n\n║  (lung, breast, melanoma, lymphoma)                  ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF pedunculated intracardiac mass + syncope + adult → THEN myxoma → left atrium"
         }
       ],
@@ -2681,7 +3521,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  TRANSPLANT REJECTION — TIMELINE                     ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  HYPERACUTE ✓ (minutes to hours):                    ║\n\n║  ├─ Preformed antibodies in RECIPIENT ✓              ║\n\n║  ├─ Type II hypersensitivity                         ║\n\n║  ├─ Complement activation → thrombosis               ║\n\n║  ├─ Graft becomes cyanotic/mottled immediately       ║\n\n║  └─ Prevention: crossmatch + ABO typing              ║\n\n║                                                      ║\n\n║  ACUTE (days to weeks):                              ║\n\n║  ├─ Cellular: CD8+ T cells attack graft              ║\n\n║  │   (vasculitis, interstitial lymphocytic infiltrate)║\n\n║  ├─ Humoral: antibodies against donor HLA            ║\n\n║  └─ Treatment: ↑ immunosuppression                   ║\n\n║                                                      ║\n\n║  CHRONIC (months to years):                          ║\n\n║  ├─ Vascular intimal fibrosis (\"graft vasculopathy\") ║\n\n║  ├─ Gradual loss of graft function                   ║\n\n║  └─ Irreversible                                     ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF graft failure within minutes + hemorrhage/thrombosis → THEN hyperacute rejection → preformed recipient antibodies"
         }
       ],
@@ -2727,7 +3567,7 @@
         {
           "kind": "conceptmap",
           "icon": "🗺️",
-          "title": "🗺️ CONCEPT MAP",
+          "title": "🗺 CONCEPT MAP",
           "body": "╔══════════════════════════════════════════════════════╗\n\n║  ANKLE SPRAINS — MECHANISM & ANATOMY                 ║\n\n╠══════════════════════════════════════════════════════╣\n\n║                                                      ║\n\n║  INVERSION INJURY ✓ (most common — 85%):             ║\n\n║  ├─ Foot turns INWARD                                ║\n\n║  ├─ Injures LATERAL ligaments ✓                      ║\n\n║  │   ├─ ATFL (anterior talofibular) — most common ✓  ║\n\n║  │   ├─ CFL (calcaneofibular)                        ║\n\n║  │   └─ PTFL (posterior talofibular) — least common  ║\n\n║  ├─ Tenderness DISTAL to lateral malleolus ✓         ║\n\n║  └─ Positive anterior drawer test                    ║\n\n║                                                      ║\n\n║  EVERSION INJURY (less common — 15%):                ║\n\n║  ├─ Foot turns OUTWARD                               ║\n\n║  ├─ Injures MEDIAL (deltoid) ligament                ║\n\n║  ├─ Deltoid is STRONGER → often fracture instead     ║\n\n║  └─ Tenderness at MEDIAL malleolus                   ║\n\n║                                                      ║\n\n║  HIGH ANKLE SPRAIN (syndesmotic):                    ║\n\n║  ├─ Dorsiflexion + external rotation                 ║\n\n║  ├─ Injures anterior tibiofibular ligament           ║\n\n║  ├─ Tenderness ABOVE malleoli                        ║\n\n║  └─ Positive squeeze test                            ║\n\n╚══════════════════════════════════════════════════════╝\n\nIF lateral ankle tenderness + twisted foot → THEN inversion injury → lateral ligament sprain (ATFL most common)"
         }
       ],
