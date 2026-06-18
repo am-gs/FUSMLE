@@ -241,6 +241,19 @@ class ApiContractTests(unittest.TestCase):
         self.assertTrue(question["rendering_flag"]["suppressImages"])
         self.assertIn("Gram stain", question["rendering_flag"]["reason"])
 
+    def test_nbme120_review_attaches_enhanced_explanation(self):
+        from index import get_enhanced_explanation
+        enhanced = get_enhanced_explanation("nbme120_q001")
+        self.assertIsNotNone(enhanced)
+        self.assertTrue(enhanced["sections"])
+        kinds = {section["kind"] for section in enhanced["sections"]}
+        self.assertIn("clues", kinds)
+        # Non-sample questions get no enhanced payload.
+        self.assertIsNone(get_enhanced_explanation("form30_page-174"))
+        # Labeled-figure answer-letter conflict is surfaced, not silently overridden.
+        conflict = get_enhanced_explanation("nbme120_q043")
+        self.assertTrue(conflict["answerLetterConflict"])
+
     def test_answer_submission_is_persisted_in_test_state(self):
         client = app.test_client()
         headers = self.auth_headers()

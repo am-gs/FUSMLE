@@ -163,6 +163,28 @@ body.reverse .option-item:hover{background:#2f3b46}
 	.rev-details summary::-webkit-details-marker{display:none}
 	.rev-exp{margin-top:10px;background:#f8fbff;border-left:4px solid var(--accent);border-radius:8px;padding:12px 13px;font-size:13px;line-height:1.7;white-space:pre-wrap;color:#334155}
 	.rev-exp-h{font-weight:800;color:var(--accent);margin-bottom:4px}
+	/* ---- Enhanced (SOTA) explanation ---- */
+	.enh-wrap{margin-top:14px;border:1px solid #d8c5f5;border-radius:16px;background:linear-gradient(180deg,#faf7ff 0%,#f4eeff 100%);padding:14px 14px 8px 14px}
+	.enh-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+	.enh-title{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:800;color:#5b2a9e;letter-spacing:.02em}
+	.enh-title i{color:#7c3aed}
+	.enh-badge{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;background:#ede4ff;color:#6d28d9;border:1px solid #d6c2f7;border-radius:999px;padding:4px 9px}
+	.enh-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+	.enh-tab{cursor:pointer;font-size:11.5px;font-weight:700;border-radius:999px;padding:6px 11px;border:1px solid #d9c7f6;background:#fff;color:#5b2a9e;display:flex;align-items:center;gap:6px;transition:all .12s}
+	.enh-tab:hover{background:#f2ebff}
+	.enh-tab.active{background:#6d28d9;border-color:#6d28d9;color:#fff;box-shadow:0 4px 12px rgba(109,40,217,.25)}
+	.enh-panel{display:none;border-left:4px solid var(--enh,#7c3aed);background:#fff;border-radius:10px;padding:13px 14px;font-size:13px;line-height:1.7;color:#33405a}
+	.enh-panel.active{display:block;animation:enhFade .18s ease}
+	@keyframes enhFade{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:none}}
+	.enh-clue{display:flex;gap:8px;align-items:flex-start;padding:4px 0;border-bottom:1px dashed #ece3fb}
+	.enh-clue:last-child{border-bottom:none}
+	.enh-clue .k{color:#d97706;flex-shrink:0}
+	.enh-step{display:inline-block;font-size:11px;font-weight:800;color:#1d4ed8;background:#e8f0ff;border:1px solid #c9ddff;border-radius:6px;padding:1px 7px;margin-right:6px}
+	.enh-map{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;line-height:1.35;white-space:pre;overflow-x:auto;background:#1e1b2e;color:#e9e2ff;border-radius:10px;padding:12px 14px}
+	.enh-table{width:100%;border-collapse:collapse;margin:6px 0;font-size:12.5px}
+	.enh-table td{border:1px solid #e6ddf6;padding:6px 9px;vertical-align:top;color:#3b3357}
+	.enh-table tr:first-child td{background:#f3edff;font-weight:700;color:#4c1d95}
+	.enh-conflict{margin-top:8px;font-size:12px;color:#92400e;background:#fff7e6;border:1px solid #fcd9a6;border-radius:8px;padding:8px 10px}
 /* ---- Modals ---- */
 .fred-modal{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:60;display:none;align-items:center;justify-content:center}
 .fred-modal.open{display:flex}
@@ -689,6 +711,64 @@ return hero+metrics+'<section class="review-panels">'+blocks+strengths+focus+pat
 function renderExplanationHtml(text){
 return esc(text||'No explanation available.').replace(/\n/g,'<br>');
 }
+var ENH_SEQ=0;
+function renderEnhancedBody(kind,body){
+var lines=String(body||'').split('\n');
+// Concept map (box-drawing art) -> monospace block
+if(/[╔╠╚║│├└┌┐┘]/.test(body)){
+return '<div class="enh-map">'+esc(body)+'</div>';
+}
+// Tab-separated table (e.g. Choice\tWhy It's Wrong)
+var tabRows=lines.filter(function(l){return l.indexOf('\t')>-1});
+if(tabRows.length>=2){
+var html='<table class="enh-table">';
+lines.forEach(function(l){
+if(l.indexOf('\t')>-1){
+html+='<tr>'+l.split('\t').map(function(c){return '<td>'+esc(c.trim())+'</td>'}).join('')+'</tr>';
+}else if(l.trim()){
+html+='<tr><td colspan="3">'+esc(l.trim())+'</td></tr>';
+}
+});
+return html+'</table>';
+}
+// Clue / step formatting
+var out=[];
+lines.forEach(function(raw){
+var l=raw.trim();
+if(!l){return;}
+if(l.indexOf('🔑')===0){
+out.push('<div class="enh-clue"><span class="k">🔑</span><span>'+esc(l.replace(/^🔑\s*/,''))+'</span></div>');
+}else{
+var withStep=esc(l).replace(/\[Step\s*(\d+)\]/g,'<span class="enh-step">Step $1</span>');
+out.push('<div>'+withStep+'</div>');
+}
+});
+return out.join('');
+}
+function renderEnhancedExplanation(ee){
+if(!ee||!ee.sections||!ee.sections.length){return '';}
+var gid='enh'+(ENH_SEQ++);
+var tabs='',panels='';
+ee.sections.forEach(function(s,i){
+var kind=s.kind||'other';
+var title=(s.title||'Section').replace(/\s+/g,' ').trim();
+if(title.length>30)title=title.slice(0,30)+'…';
+tabs+='<div class="enh-tab'+(i===0?' active':'')+'" onclick="enhSwitch(\''+gid+'\','+i+')"><span>'+(s.icon||'📝')+'</span>'+esc(title)+'</div>';
+panels+='<div class="enh-panel enh-kind-'+esc(kind)+(i===0?' active':'')+'" id="'+gid+'_p'+i+'"><h6>'+(s.icon||'📝')+' '+esc(s.title||'')+'</h6>'+renderEnhancedBody(kind,s.body)+'</div>';
+});
+var conflict='';
+if(ee.answerLetterConflict){
+conflict='<div class="enh-conflict"><b>Note:</b> this enhanced write-up references option '+esc(ee.enhancedAnswerLetter||'?')+', while the keyed answer is option '+esc(ee.qbankCorrectLetter||'?')+'. This is a labeled-figure item, so both point to the same structure — trust the highlighted correct answer above.</div>';
+}
+return '<div class="enh-wrap"><div class="enh-top"><div class="enh-title"><i class="fas fa-wand-magic-sparkles"></i> Enhanced breakdown</div><span class="enh-badge">SOTA</span></div>'
++'<div class="enh-tabs">'+tabs+'</div>'+panels+conflict+'</div>';
+}
+function enhSwitch(gid,i){
+var wrap=document.getElementById(gid+'_p0');if(!wrap)return;
+var root=wrap.closest('.enh-wrap');
+root.querySelectorAll('.enh-tab').forEach(function(t,j){t.classList.toggle('active',j===i)});
+root.querySelectorAll('.enh-panel').forEach(function(p,j){p.classList.toggle('active',j===i)});
+}
 function renderSolutionCard(row,i){
 var ok=isCorrectValue(row.isCorrect);
 var wrongAns=isWrongValue(row.isCorrect);
@@ -739,6 +819,7 @@ h+='<div class="'+cls+'"><span class="option-letter">'+esc(letter)+'.</span> '+e
 	h+='<div class="rev-panel"><h5>Why the right answer wins</h5><p>'+renderExplanationHtml(row.explanationCore||row.explanation||'No explanation available.')+'</p></div>';
 	h+='<div class="rev-panel"><h5>How to remember it next time</h5><p>'+renderExplanationHtml(row.coachingNote||tone.message||'Keep the mechanism and the decisive clue together.')+'</p></div>';
 	h+='</div>';
+	if(row.enhancedExplanation){h+=renderEnhancedExplanation(row.enhancedExplanation);}
 	h+='<details class="rev-details"><summary>Open the full explanation</summary><div class="rev-exp"><div class="rev-exp-h">Full explanation</div>'+renderExplanationHtml(row.explanationFull||row.explanation||'No explanation available.')+'</div></details>';
 	h+='</div>';
 	return h;

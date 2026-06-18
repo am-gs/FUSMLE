@@ -14,6 +14,32 @@ from nbme120 import generate_nbme120, generate_test1, generate_test2
 from test2_render_flags import TEST2_RENDER_FLAGS
 from free120_questions import FREE120_QUESTIONS
 
+_ENHANCED_EXPLANATIONS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'nbme120_enhanced_explanations.json')
+try:
+    with open(_ENHANCED_EXPLANATIONS_PATH, encoding='utf-8') as _fh:
+        _ENHANCED_EXPLANATIONS = json.load(_fh).get('records', {})
+except (OSError, ValueError):
+    _ENHANCED_EXPLANATIONS = {}
+
+
+def get_enhanced_explanation(question_id):
+    """Return the SOTA enhanced explanation for an NBME 120 sample question, if present."""
+    if not question_id:
+        return None
+    match = re.match(r'nbme120_q0*(\d+)$', str(question_id))
+    if not match:
+        return None
+    record = _ENHANCED_EXPLANATIONS.get(str(int(match.group(1))))
+    if not record or not record.get('sections'):
+        return None
+    return {
+        'source': 'NBME 120 April sample — enhanced breakdown',
+        'sections': record['sections'],
+        'answerLetterConflict': record.get('answerLetterConflict', False),
+        'enhancedAnswerLetter': record.get('correctAnswerLetter'),
+        'qbankCorrectLetter': record.get('qbankCorrectLetter'),
+    }
+
 app = Flask(__name__)
 CORS(app, supports_credentials=False, origins=["*"])
 
@@ -815,6 +841,7 @@ def qbank_test_review(test_id):
             'answeredAt': answer.get('answered_at') if answer else None,
             'explanation': question.get('explanation', ''),
         })
+        rows[-1]['enhancedExplanation'] = get_enhanced_explanation(question_id)
     summary = _build_review_summary(test_session['mode'], rows)
     return jsonify({
         'testSessionId': test_id,
