@@ -4312,5 +4312,14 @@
       "width": 310,
       "height": 416
     }
+  ],
+  "nbme28_q0005": [
+    {
+      "url": "/api/images_crop/nbme28_q0005_img01.webp",
+      "width": 1816,
+      "height": 484,
+      "category": "charts_tables",
+      "label": "serum estradiol during normal menstrual cycle; arrow at preovulatory peak"
+    }
   ]
 }
