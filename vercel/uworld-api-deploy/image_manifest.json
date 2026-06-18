@@ -21,12 +21,26 @@
   ],
   "form30_page-102": [
     {
-      "category": "radiology",
-      "height": 305,
-      "label": "chest_CT_axial_image",
-      "source_page": 103,
-      "url": "/api/images_crop/form30_page-102.webp",
-      "width": 310
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 538,
+      "source_question_number": 3,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//cd600282-cf8b-4e3c-a5b4-3a71bfee7f10/markdown_3/imgs/img_in_image_box_1227_70_1565_325.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A57Z%2F-1%2F%2Fe207185af39ab2aa1c93ebf92d7832ed24c4938997aebae654dea0664564f83e",
+      "url": "/api/images_crop/form30_page-102_ocr.webp",
+      "width": 338,
+      "height": 255
+    }
+  ],
+  "form30_page-105": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 541,
+      "source_question_number": 6,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//284cfeb7-c277-4a3f-8e47-918435d89fbc/markdown_2/imgs/img_in_image_box_600_71_995_366.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A03Z%2F-1%2F%2Fb348e913a530d771d2a80001e34ff1a96fa915da07d46f9e9153fe8c85edeffd",
+      "url": "/api/images_crop/form30_page-105_ocr.webp",
+      "width": 395,
+      "height": 295
     }
   ],
   "form30_page-106": [
@@ -57,14 +71,64 @@
       "width": 445
     }
   ],
+  "form30_page-11": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 501,
+      "source_question_number": 11,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//98e093fd-344b-4d24-8f09-b36b648e1305/markdown_1/imgs/img_in_image_box_1364_74_1545_285.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2F943de2aabfb54d91cff843fcf49fb2aec34ab5a315f863ff46198cc18f2cc25a",
+      "url": "/api/images_crop/form30_page-11_ocr.webp",
+      "width": 181,
+      "height": 211
+    }
+  ],
+  "form30_page-117": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 544,
+      "source_question_number": 18,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fe5d2894-1f1f-4ad3-b55e-3a444b9b5fe2/markdown_4/imgs/img_in_image_box_454_69_1083_362.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A18Z%2F-1%2F%2F9384021c17688424537371f2fb098c5907406d3d37fdb39f5b827dbeb4ec7dc4",
+      "url": "/api/images_crop/form30_page-117_ocr.webp",
+      "width": 629,
+      "height": 293
+    }
+  ],
   "form30_page-118": [
     {
-      "category": "radiology",
-      "height": 445,
-      "label": "chest_xray_AP_lateral_panels",
-      "source_page": 119,
-      "url": "/api/images_crop/form30_page-118.webp",
-      "width": 930
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 545,
+      "source_question_number": 19,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eee9488c-8bdc-419d-85f8-f226d095d0ae/markdown_1/imgs/img_in_image_box_587_72_1001_398.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A59Z%2F-1%2F%2F3bc3e9f52283b80fd92be6374767cc4bc46969a300af6ac664f16629d5eaf7ea",
+      "url": "/api/images_crop/form30_page-118_ocr.webp",
+      "width": 414,
+      "height": 326
+    }
+  ],
+  "form30_page-119": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 545,
+      "source_question_number": 19,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eee9488c-8bdc-419d-85f8-f226d095d0ae/markdown_1/imgs/img_in_image_box_587_72_1001_398.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A59Z%2F-1%2F%2F3bc3e9f52283b80fd92be6374767cc4bc46969a300af6ac664f16629d5eaf7ea",
+      "url": "/api/images_crop/form30_page-119_ocr.webp",
+      "width": 414,
+      "height": 326
+    }
+  ],
+  "form30_page-12": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 501,
+      "source_question_number": 11,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//98e093fd-344b-4d24-8f09-b36b648e1305/markdown_1/imgs/img_in_image_box_1364_74_1545_285.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2F943de2aabfb54d91cff843fcf49fb2aec34ab5a315f863ff46198cc18f2cc25a",
+      "url": "/api/images_crop/form30_page-12_ocr.webp",
+      "width": 181,
+      "height": 211
     }
   ],
   "form30_page-120": [
@@ -87,6 +151,18 @@
       "width": 365
     }
   ],
+  "form30_page-124": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 548,
+      "source_question_number": 25,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//ff4fc3cf-63f7-4a1b-af96-ad35449c36ce/markdown_1/imgs/img_in_image_box_590_70_1002_383.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A55Z%2F-1%2F%2Fea4682722cba02dda2ed293ed7515b52505084f80e859df5d3a86cf4775678d1",
+      "url": "/api/images_crop/form30_page-124_ocr.webp",
+      "width": 412,
+      "height": 313
+    }
+  ],
   "form30_page-125": [
     {
       "category": "clinical",
@@ -99,22 +175,38 @@
   ],
   "form30_page-13": [
     {
-      "category": "histology",
-      "height": 317,
-      "label": "brain_biopsy_photomicrograph",
-      "source_page": 14,
-      "url": "/api/images_crop/form30_page-13.webp",
-      "width": 400
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 502,
+      "source_question_number": 14,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//98e093fd-344b-4d24-8f09-b36b648e1305/markdown_4/imgs/img_in_image_box_1308_69_1566_276.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A05Z%2F-1%2F%2F883873ed790074c5bdd93235ec9752735f8044ce76685bef00a4159571c1fe7c",
+      "url": "/api/images_crop/form30_page-13_ocr.webp",
+      "width": 258,
+      "height": 207
     }
   ],
   "form30_page-134": [
     {
-      "category": "radiology",
-      "height": 585,
-      "label": "sagittal_knee_MRI",
-      "source_page": 135,
-      "url": "/api/images_crop/form30_page-134.webp",
-      "width": 520
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 555,
+      "source_question_number": 35,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bc61427b-3203-4817-b41e-5801c713d870/markdown_0/imgs/img_in_image_box_632_108_960_476.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A14Z%2F-1%2F%2F4780abdffb607d603eed688189c0627b509f44dea19991b68ac43ac8500b61ad",
+      "url": "/api/images_crop/form30_page-134_ocr.webp",
+      "width": 328,
+      "height": 368
+    }
+  ],
+  "form30_page-135": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 555,
+      "source_question_number": 35,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bc61427b-3203-4817-b41e-5801c713d870/markdown_0/imgs/img_in_image_box_632_108_960_476.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A14Z%2F-1%2F%2F4780abdffb607d603eed688189c0627b509f44dea19991b68ac43ac8500b61ad",
+      "url": "/api/images_crop/form30_page-135_ocr.webp",
+      "width": 328,
+      "height": 368
     }
   ],
   "form30_page-137": [
@@ -127,24 +219,50 @@
       "width": 710
     }
   ],
+  "form30_page-143": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 559,
+      "source_question_number": 44,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a0f9534e-7b2a-4074-8045-f7c4c2830f69/markdown_0/imgs/img_in_image_box_691_137_904_393.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A14Z%2F-1%2F%2Fb0081b552caaa43b9ed55cd5f08b290ccc9bfb644644e67056fd0963ea454ad3",
+      "url": "/api/images_crop/form30_page-143_ocr.webp",
+      "width": 213,
+      "height": 256
+    }
+  ],
   "form30_page-144": [
     {
-      "category": "diagram",
-      "height": 395,
-      "label": "purine_metabolism_pathway_diagram",
-      "source_page": 145,
-      "url": "/api/images_crop/form30_page-144.webp",
-      "width": 370
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 559,
+      "source_question_number": 44,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a0f9534e-7b2a-4074-8045-f7c4c2830f69/markdown_0/imgs/img_in_image_box_691_137_904_393.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A14Z%2F-1%2F%2Fb0081b552caaa43b9ed55cd5f08b290ccc9bfb644644e67056fd0963ea454ad3",
+      "url": "/api/images_crop/form30_page-144_ocr.webp",
+      "width": 213,
+      "height": 256
     }
   ],
   "form30_page-148": [
     {
-      "category": "table",
-      "height": 370,
-      "label": "stroke_volume_EDV_answer_table",
-      "source_page": 149,
-      "url": "/api/images_crop/form30_page-148.webp",
-      "width": 420
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 562,
+      "source_question_number": 49,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a0f9534e-7b2a-4074-8045-f7c4c2830f69/markdown_4/imgs/img_in_image_box_222_160_249_353.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A18Z%2F-1%2F%2F74b33d5992e953852b4b81d7a324df7ecc2fb206350a104f0c3134ddfb82c665",
+      "url": "/api/images_crop/form30_page-148_ocr01.webp",
+      "width": 27,
+      "height": 193
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 562,
+      "source_question_number": 49,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a0f9534e-7b2a-4074-8045-f7c4c2830f69/markdown_4/imgs/img_in_image_box_325_127_363_355.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A18Z%2F-1%2F%2Ff82609d8ccfc1d5e353e15c95a5bfbf7ac2f55143f1ccaf007aebd53ad59601b",
+      "url": "/api/images_crop/form30_page-148_ocr02.webp",
+      "width": 38,
+      "height": 228
     }
   ],
   "form30_page-149": [
@@ -169,22 +287,26 @@
   ],
   "form30_page-158": [
     {
-      "category": "diagram",
-      "height": 395,
-      "label": "nephron_transport_experimental_figure",
-      "source_page": 159,
-      "url": "/api/images_crop/form30_page-158.webp",
-      "width": 760
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 567,
+      "source_question_number": 9,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5d48dd0c-a6f8-4585-bb06-da682c2ec0dc/markdown_4/imgs/img_in_image_box_540_119_1042_376.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A57Z%2F-1%2F%2F1e301ce689d032ed15324d013171ee8711c5e236edb05be814120811859035ec",
+      "url": "/api/images_crop/form30_page-158_ocr.webp",
+      "width": 502,
+      "height": 257
     }
   ],
   "form30_page-159": [
     {
-      "category": "clinical",
-      "height": 515,
-      "label": "rectal_area_clinical_photo",
-      "source_page": 160,
-      "url": "/api/images_crop/form30_page-159.webp",
-      "width": 475
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 568,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//623f4f9b-ba35-4cc7-ab25-705afa06fcbc/markdown_0/imgs/img_in_image_box_1229_68_1567_405.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A05Z%2F-1%2F%2F947f630b39b704e1a3e6d1d131805ae1d64990b8c1829faf5dcb3472de5358db",
+      "url": "/api/images_crop/form30_page-159_ocr.webp",
+      "width": 338,
+      "height": 337
     }
   ],
   "form30_page-16": [
@@ -199,12 +321,14 @@
   ],
   "form30_page-161": [
     {
-      "category": "histology",
-      "height": 605,
-      "label": "jaw_mass_aspirate_photomicrograph",
-      "source_page": 162,
-      "url": "/api/images_crop/form30_page-161.webp",
-      "width": 410
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 570,
+      "source_question_number": 12,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//623f4f9b-ba35-4cc7-ab25-705afa06fcbc/markdown_2/imgs/img_in_image_box_1280_65_1572_484.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A06Z%2F-1%2F%2Fe98c1cb77c3e14dcd8352dc5539c8b354da0261600c3cefe246ebf060bf33076",
+      "url": "/api/images_crop/form30_page-161_ocr.webp",
+      "width": 292,
+      "height": 419
     }
   ],
   "form30_page-164": [
@@ -229,22 +353,38 @@
   ],
   "form30_page-174": [
     {
-      "category": "radiology",
-      "height": 415,
-      "label": "abdominal_CT_axial_image",
-      "source_page": 175,
-      "url": "/api/images_crop/form30_page-174.webp",
-      "width": 475
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 575,
+      "source_question_number": 25,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c9027c84-1297-4475-ae27-623913783444/markdown_0/imgs/img_in_image_box_1229_70_1565_339.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A02Z%2F-1%2F%2F4d1614d51a9c024a313454688a5d44ae1d0d94f03badf1df0d9a6ae21e9e6104",
+      "url": "/api/images_crop/form30_page-174_ocr.webp",
+      "width": 336,
+      "height": 269
+    }
+  ],
+  "form30_page-175": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 575,
+      "source_question_number": 25,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c9027c84-1297-4475-ae27-623913783444/markdown_0/imgs/img_in_image_box_1229_70_1565_339.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A02Z%2F-1%2F%2F4d1614d51a9c024a313454688a5d44ae1d0d94f03badf1df0d9a6ae21e9e6104",
+      "url": "/api/images_crop/form30_page-175_ocr.webp",
+      "width": 336,
+      "height": 269
     }
   ],
   "form30_page-18": [
     {
-      "category": "histology",
-      "height": 495,
-      "label": "lung_tissue_photomicrograph",
-      "source_page": 19,
-      "url": "/api/images_crop/form30_page-18.webp",
-      "width": 350
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 506,
+      "source_question_number": 19,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5a67587a-b8ce-409d-88ac-f3ea18c161b6/markdown_4/imgs/img_in_image_box_1325_68_1567_405.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A08Z%2F-1%2F%2F4f29d04daeabc63b2ca9e8da4945e608619e64dc6d6e33d88e333278813c20a0",
+      "url": "/api/images_crop/form30_page-18_ocr.webp",
+      "width": 242,
+      "height": 337
     }
   ],
   "form30_page-182": [
@@ -267,30 +407,50 @@
   ],
   "form30_page-184": [
     {
-      "category": "radiology",
-      "height": 515,
-      "label": "lateral_lumbar_spine_xray",
-      "source_page": 185,
-      "url": "/api/images_crop/form30_page-184.webp",
-      "width": 365
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 578,
+      "source_question_number": 35,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//4561176f-0493-46ad-b4cd-94d421c7f25a/markdown_0/imgs/img_in_image_box_1315_68_1565_411.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2Fe00bc891b4e449a97ce2c9cf65fb68288b882c121146130768ee53939d886f4e",
+      "url": "/api/images_crop/form30_page-184_ocr.webp",
+      "width": 250,
+      "height": 343
     }
   ],
   "form30_page-188": [
     {
-      "category": "table",
-      "height": 130,
-      "label": "urinalysis_table",
-      "source_page": 189,
-      "url": "/api/images_crop/form30_page-188.webp",
-      "width": 275
-    },
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 580,
+      "source_question_number": 39,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//4561176f-0493-46ad-b4cd-94d421c7f25a/markdown_4/imgs/img_in_image_box_1363_71_1565_304.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A05Z%2F-1%2F%2F84e9ee24f2fdfae73e9ae16397195b6f281faa1bc3ae8b9183a2e514008dcec5",
+      "url": "/api/images_crop/form30_page-188_ocr.webp",
+      "width": 202,
+      "height": 233
+    }
+  ],
+  "form30_page-19": [
     {
-      "category": "gross",
-      "height": 370,
-      "label": "gross_pathology_photo",
-      "source_page": 189,
-      "url": "/api/images_crop/form30_page-188_1.webp",
-      "width": 330
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 506,
+      "source_question_number": 19,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5a67587a-b8ce-409d-88ac-f3ea18c161b6/markdown_4/imgs/img_in_image_box_1325_68_1567_405.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A08Z%2F-1%2F%2F4f29d04daeabc63b2ca9e8da4945e608619e64dc6d6e33d88e333278813c20a0",
+      "url": "/api/images_crop/form30_page-19_ocr.webp",
+      "width": 242,
+      "height": 337
+    }
+  ],
+  "form30_page-191": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 582,
+      "source_question_number": 42,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d85ec59a-68cf-432d-a20d-7e477bee4f11/markdown_3/imgs/img_in_image_box_589_67_1004_345.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A06Z%2F-1%2F%2Fd9aa8c545edc619d89539b89951aef6dd8959d4efee6fbfb25423ef7d61e5068",
+      "url": "/api/images_crop/form30_page-191_ocr.webp",
+      "width": 415,
+      "height": 278
     }
   ],
   "form30_page-192": [
@@ -323,58 +483,164 @@
   ],
   "form30_page-198": [
     {
-      "category": "table",
-      "height": 120,
-      "label": "arterial_blood_gas_table",
-      "source_page": 199,
-      "url": "/api/images_crop/form30_page-198.webp",
-      "width": 220
-    },
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 586,
+      "source_question_number": 49,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7fab359a-1b42-4cd6-80ac-80bf73366ae8/markdown_4/imgs/img_in_image_box_1229_69_1566_406.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A01Z%2F-1%2F%2F7ef00efbabf4bb78ade2730f87803b78911f64fb08b71fcd9fb8d52906172eaf",
+      "url": "/api/images_crop/form30_page-198_ocr.webp",
+      "width": 337,
+      "height": 337
+    }
+  ],
+  "form30_page-199": [
     {
-      "category": "radiology",
-      "height": 515,
-      "label": "chest_xray",
-      "source_page": 199,
-      "url": "/api/images_crop/form30_page-198_1.webp",
-      "width": 485
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 586,
+      "source_question_number": 49,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7fab359a-1b42-4cd6-80ac-80bf73366ae8/markdown_4/imgs/img_in_image_box_1229_69_1566_406.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A01Z%2F-1%2F%2F7ef00efbabf4bb78ade2730f87803b78911f64fb08b71fcd9fb8d52906172eaf",
+      "url": "/api/images_crop/form30_page-199_ocr.webp",
+      "width": 337,
+      "height": 337
+    }
+  ],
+  "form30_page-20": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 506,
+      "source_question_number": 19,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5a67587a-b8ce-409d-88ac-f3ea18c161b6/markdown_4/imgs/img_in_image_box_1325_68_1567_405.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A08Z%2F-1%2F%2F4f29d04daeabc63b2ca9e8da4945e608619e64dc6d6e33d88e333278813c20a0",
+      "url": "/api/images_crop/form30_page-20_ocr.webp",
+      "width": 242,
+      "height": 337
+    }
+  ],
+  "form30_page-21": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 506,
+      "source_question_number": 19,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5a67587a-b8ce-409d-88ac-f3ea18c161b6/markdown_4/imgs/img_in_image_box_1325_68_1567_405.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A08Z%2F-1%2F%2F4f29d04daeabc63b2ca9e8da4945e608619e64dc6d6e33d88e333278813c20a0",
+      "url": "/api/images_crop/form30_page-21_ocr.webp",
+      "width": 242,
+      "height": 337
     }
   ],
   "form30_page-22": [
     {
-      "category": "table",
-      "height": 305,
-      "label": "metabolic_effects_answer_table",
-      "source_page": 23,
-      "url": "/api/images_crop/form30_page-22.webp",
-      "width": 385
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 506,
+      "source_question_number": 19,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5a67587a-b8ce-409d-88ac-f3ea18c161b6/markdown_4/imgs/img_in_image_box_1325_68_1567_405.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A08Z%2F-1%2F%2F4f29d04daeabc63b2ca9e8da4945e608619e64dc6d6e33d88e333278813c20a0",
+      "url": "/api/images_crop/form30_page-22_ocr.webp",
+      "width": 242,
+      "height": 337
+    }
+  ],
+  "form30_page-23": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 507,
+      "source_question_number": 24,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6332d787-3feb-4ca9-a8f7-bc07a70d62b3/markdown_1/imgs/img_in_image_box_430_72_839_355.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A54Z%2F-1%2F%2F5b2d74b396dc79834a064f054a8c84de8f87ea24845f06538298b8d535de89a6",
+      "url": "/api/images_crop/form30_page-23_ocr.webp",
+      "width": 409,
+      "height": 283
+    }
+  ],
+  "form30_page-24": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 507,
+      "source_question_number": 24,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6332d787-3feb-4ca9-a8f7-bc07a70d62b3/markdown_1/imgs/img_in_image_box_430_72_839_355.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A54Z%2F-1%2F%2F5b2d74b396dc79834a064f054a8c84de8f87ea24845f06538298b8d535de89a6",
+      "url": "/api/images_crop/form30_page-24_ocr.webp",
+      "width": 409,
+      "height": 283
     }
   ],
   "form30_page-25": [
     {
-      "category": "gross",
-      "height": 443,
-      "label": "brain_autopsy_gross_photo",
-      "source_page": 26,
-      "url": "/api/images_crop/form30_page-25.webp",
-      "width": 640
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 507,
+      "source_question_number": 24,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6332d787-3feb-4ca9-a8f7-bc07a70d62b3/markdown_1/imgs/img_in_image_box_430_72_839_355.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A54Z%2F-1%2F%2F5b2d74b396dc79834a064f054a8c84de8f87ea24845f06538298b8d535de89a6",
+      "url": "/api/images_crop/form30_page-25_ocr.webp",
+      "width": 409,
+      "height": 283
     }
   ],
   "form30_page-30": [
     {
-      "category": "gross",
-      "height": 232,
-      "label": "gross_esophagus_specimen",
-      "source_page": 31,
-      "url": "/api/images_crop/form30_page-30.webp",
-      "width": 510
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 509,
+      "source_question_number": 31,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a53f2dc5-5946-461a-bde3-5ca71d85b0bf/markdown_1/imgs/img_in_image_box_1215_70_1565_223.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A59Z%2F-1%2F%2F08cbcffd08b9a1f737b0f6484879babd97ba7096c0571bdbfee9dfb67ff7e27f",
+      "url": "/api/images_crop/form30_page-30_ocr01.webp",
+      "width": 350,
+      "height": 153
     },
     {
-      "category": "histology",
-      "height": 355,
-      "label": "esophagus_histology_panel",
-      "source_page": 31,
-      "url": "/api/images_crop/form30_page-30_1.webp",
-      "width": 510
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 509,
+      "source_question_number": 31,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a53f2dc5-5946-461a-bde3-5ca71d85b0bf/markdown_1/imgs/img_in_image_box_1215_230_1567_466.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A59Z%2F-1%2F%2F9aebf86ab761e263d2b54ccd5bc68d6f3d4e374cf6bfd08e146633035c9c7910",
+      "url": "/api/images_crop/form30_page-30_ocr02.webp",
+      "width": 352,
+      "height": 236
+    }
+  ],
+  "form30_page-31": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 509,
+      "source_question_number": 31,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a53f2dc5-5946-461a-bde3-5ca71d85b0bf/markdown_1/imgs/img_in_image_box_1215_70_1565_223.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A59Z%2F-1%2F%2F08cbcffd08b9a1f737b0f6484879babd97ba7096c0571bdbfee9dfb67ff7e27f",
+      "url": "/api/images_crop/form30_page-31_ocr01.webp",
+      "width": 350,
+      "height": 153
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 509,
+      "source_question_number": 31,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a53f2dc5-5946-461a-bde3-5ca71d85b0bf/markdown_1/imgs/img_in_image_box_1215_230_1567_466.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A59Z%2F-1%2F%2F9aebf86ab761e263d2b54ccd5bc68d6f3d4e374cf6bfd08e146633035c9c7910",
+      "url": "/api/images_crop/form30_page-31_ocr02.webp",
+      "width": 352,
+      "height": 236
+    }
+  ],
+  "form30_page-32": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 509,
+      "source_question_number": 31,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a53f2dc5-5946-461a-bde3-5ca71d85b0bf/markdown_1/imgs/img_in_image_box_1215_70_1565_223.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A59Z%2F-1%2F%2F08cbcffd08b9a1f737b0f6484879babd97ba7096c0571bdbfee9dfb67ff7e27f",
+      "url": "/api/images_crop/form30_page-32_ocr01.webp",
+      "width": 350,
+      "height": 153
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 509,
+      "source_question_number": 31,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a53f2dc5-5946-461a-bde3-5ca71d85b0bf/markdown_1/imgs/img_in_image_box_1215_230_1567_466.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A59Z%2F-1%2F%2F9aebf86ab761e263d2b54ccd5bc68d6f3d4e374cf6bfd08e146633035c9c7910",
+      "url": "/api/images_crop/form30_page-32_ocr02.webp",
+      "width": 352,
+      "height": 236
     }
   ],
   "form30_page-37": [
@@ -439,22 +705,112 @@
   ],
   "form30_page-53": [
     {
-      "category": "table",
-      "height": 125,
-      "label": "hemolysis_lab_table",
-      "source_page": 54,
-      "url": "/api/images_crop/form30_page-53.webp",
-      "width": 330
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 518,
+      "source_question_number": 4,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f5b385b2-4b0f-4387-a816-bbb35c9f66a4/markdown_2/imgs/img_in_image_box_1350_66_1569_318.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A08Z%2F-1%2F%2F86dee6b8dc3a830cfd4ba5e36e8535f72f5bba78bb65331104ee5a773c4dd096",
+      "url": "/api/images_crop/form30_page-53_ocr01.webp",
+      "width": 219,
+      "height": 252
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 518,
+      "source_question_number": 4,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f5b385b2-4b0f-4387-a816-bbb35c9f66a4/markdown_4/imgs/img_in_image_box_423_65_878_388.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A09Z%2F-1%2F%2F528eb2575a2f2b9aa98a0e7bc30e19cf106241b270983dcb364a21a2fae953ef",
+      "url": "/api/images_crop/form30_page-53_ocr02.webp",
+      "width": 455,
+      "height": 323
+    }
+  ],
+  "form30_page-54": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 518,
+      "source_question_number": 4,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f5b385b2-4b0f-4387-a816-bbb35c9f66a4/markdown_2/imgs/img_in_image_box_1350_66_1569_318.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A08Z%2F-1%2F%2F86dee6b8dc3a830cfd4ba5e36e8535f72f5bba78bb65331104ee5a773c4dd096",
+      "url": "/api/images_crop/form30_page-54_ocr01.webp",
+      "width": 219,
+      "height": 252
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 518,
+      "source_question_number": 4,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f5b385b2-4b0f-4387-a816-bbb35c9f66a4/markdown_4/imgs/img_in_image_box_423_65_878_388.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A09Z%2F-1%2F%2F528eb2575a2f2b9aa98a0e7bc30e19cf106241b270983dcb364a21a2fae953ef",
+      "url": "/api/images_crop/form30_page-54_ocr02.webp",
+      "width": 455,
+      "height": 323
+    }
+  ],
+  "form30_page-55": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 518,
+      "source_question_number": 4,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f5b385b2-4b0f-4387-a816-bbb35c9f66a4/markdown_2/imgs/img_in_image_box_1350_66_1569_318.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A08Z%2F-1%2F%2F86dee6b8dc3a830cfd4ba5e36e8535f72f5bba78bb65331104ee5a773c4dd096",
+      "url": "/api/images_crop/form30_page-55_ocr01.webp",
+      "width": 219,
+      "height": 252
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 518,
+      "source_question_number": 4,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f5b385b2-4b0f-4387-a816-bbb35c9f66a4/markdown_4/imgs/img_in_image_box_423_65_878_388.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A09Z%2F-1%2F%2F528eb2575a2f2b9aa98a0e7bc30e19cf106241b270983dcb364a21a2fae953ef",
+      "url": "/api/images_crop/form30_page-55_ocr02.webp",
+      "width": 455,
+      "height": 323
     }
   ],
   "form30_page-56": [
     {
-      "category": "diagram",
-      "height": 385,
-      "label": "pedigree_with_legend",
-      "source_page": 57,
-      "url": "/api/images_crop/form30_page-56.webp",
-      "width": 325
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 518,
+      "source_question_number": 4,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f5b385b2-4b0f-4387-a816-bbb35c9f66a4/markdown_2/imgs/img_in_image_box_1350_66_1569_318.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A08Z%2F-1%2F%2F86dee6b8dc3a830cfd4ba5e36e8535f72f5bba78bb65331104ee5a773c4dd096",
+      "url": "/api/images_crop/form30_page-56_ocr01.webp",
+      "width": 219,
+      "height": 252
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 518,
+      "source_question_number": 4,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f5b385b2-4b0f-4387-a816-bbb35c9f66a4/markdown_4/imgs/img_in_image_box_423_65_878_388.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A09Z%2F-1%2F%2F528eb2575a2f2b9aa98a0e7bc30e19cf106241b270983dcb364a21a2fae953ef",
+      "url": "/api/images_crop/form30_page-56_ocr02.webp",
+      "width": 455,
+      "height": 323
+    }
+  ],
+  "form30_page-57": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 518,
+      "source_question_number": 4,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f5b385b2-4b0f-4387-a816-bbb35c9f66a4/markdown_2/imgs/img_in_image_box_1350_66_1569_318.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A08Z%2F-1%2F%2F86dee6b8dc3a830cfd4ba5e36e8535f72f5bba78bb65331104ee5a773c4dd096",
+      "url": "/api/images_crop/form30_page-57_ocr01.webp",
+      "width": 219,
+      "height": 252
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 518,
+      "source_question_number": 4,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f5b385b2-4b0f-4387-a816-bbb35c9f66a4/markdown_4/imgs/img_in_image_box_423_65_878_388.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A09Z%2F-1%2F%2F528eb2575a2f2b9aa98a0e7bc30e19cf106241b270983dcb364a21a2fae953ef",
+      "url": "/api/images_crop/form30_page-57_ocr02.webp",
+      "width": 455,
+      "height": 323
     }
   ],
   "form30_page-58": [
@@ -477,12 +833,44 @@
   ],
   "form30_page-59": [
     {
-      "category": "table",
-      "height": 350,
-      "label": "renal_bone_serum_findings_answer_table",
-      "source_page": 60,
-      "url": "/api/images_crop/form30_page-59.webp",
-      "width": 835
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 520,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//20649e44-4529-4d9b-97dd-276de0599723/markdown_0/imgs/img_in_image_box_130_164_161_331.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A03Z%2F-1%2F%2F7a8e1ddce7911ecfdd328610199f783b5fcf7d981a01d795dc3b0b8bd46e5565",
+      "url": "/api/images_crop/form30_page-59_ocr01.webp",
+      "width": 31,
+      "height": 167
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 520,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//20649e44-4529-4d9b-97dd-276de0599723/markdown_0/imgs/img_in_image_box_258_164_292_332.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A03Z%2F-1%2F%2Fcd7c89d26c657e3ac33bfeafe2e80df59bc3903a3aaa1ae04eb1220478a8f698",
+      "url": "/api/images_crop/form30_page-59_ocr02.webp",
+      "width": 34,
+      "height": 168
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_3",
+      "source_chunk_index": 520,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//20649e44-4529-4d9b-97dd-276de0599723/markdown_0/imgs/img_in_image_box_431_164_463_330.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A03Z%2F-1%2F%2F60cde363454ec1a6979953450f0c20b7e7496c7c02e474651a08023d08b18c10",
+      "url": "/api/images_crop/form30_page-59_ocr03.webp",
+      "width": 32,
+      "height": 166
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_4",
+      "source_chunk_index": 520,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//20649e44-4529-4d9b-97dd-276de0599723/markdown_2/imgs/img_in_image_box_597_69_995_381.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2Fb84e60d196dc6ad75a8f7212f3d61571b82b04356c182407e3e42fa707735c1b",
+      "url": "/api/images_crop/form30_page-59_ocr04.webp",
+      "width": 398,
+      "height": 312
     }
   ],
   "form30_page-60": [
@@ -525,6 +913,50 @@
       "width": 560
     }
   ],
+  "form30_page-70": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 524,
+      "source_question_number": 21,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//873d3d89-413a-4a2b-85cc-2955c85e4c0a/markdown_3/imgs/img_in_image_box_509_70_789_257.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A54Z%2F-1%2F%2F8f171f5f3c7612a5f9433ea0b4e4f2f62ba092fc2106c328bc2efbe6b38df178",
+      "url": "/api/images_crop/form30_page-70_ocr01.webp",
+      "width": 280,
+      "height": 187
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 524,
+      "source_question_number": 21,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//873d3d89-413a-4a2b-85cc-2955c85e4c0a/markdown_3/imgs/img_in_image_box_803_69_1086_259.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A54Z%2F-1%2F%2F265af8c5d27eb337f020514224d726eefecb04f2412973e04e618c456b0de663",
+      "url": "/api/images_crop/form30_page-70_ocr02.webp",
+      "width": 283,
+      "height": 190
+    }
+  ],
+  "form30_page-71": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 524,
+      "source_question_number": 21,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//873d3d89-413a-4a2b-85cc-2955c85e4c0a/markdown_3/imgs/img_in_image_box_509_70_789_257.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A54Z%2F-1%2F%2F8f171f5f3c7612a5f9433ea0b4e4f2f62ba092fc2106c328bc2efbe6b38df178",
+      "url": "/api/images_crop/form30_page-71_ocr01.webp",
+      "width": 280,
+      "height": 187
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 524,
+      "source_question_number": 21,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//873d3d89-413a-4a2b-85cc-2955c85e4c0a/markdown_3/imgs/img_in_image_box_803_69_1086_259.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A54Z%2F-1%2F%2F265af8c5d27eb337f020514224d726eefecb04f2412973e04e618c456b0de663",
+      "url": "/api/images_crop/form30_page-71_ocr02.webp",
+      "width": 283,
+      "height": 190
+    }
+  ],
   "form30_page-72": [
     {
       "category": "gross",
@@ -541,6 +973,18 @@
       "source_page": 73,
       "url": "/api/images_crop/form30_page-72_1.webp",
       "width": 425
+    }
+  ],
+  "form30_page-76": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 526,
+      "source_question_number": 27,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e2275572-8f59-4442-8a7e-c8a42d453e19/markdown_3/imgs/img_in_image_box_600_71_993_341.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A00Z%2F-1%2F%2F0413a934b68de2f4f6f0f43cc5d3ea94b1bc232befbdad39f6f1950fd63428fe",
+      "url": "/api/images_crop/form30_page-76_ocr.webp",
+      "width": 393,
+      "height": 270
     }
   ],
   "form30_page-77": [
@@ -565,12 +1009,36 @@
   ],
   "form30_page-89": [
     {
-      "category": "diagram",
-      "height": 465,
-      "label": "spinal_cord_cross_section_labeled",
-      "source_page": 90,
-      "url": "/api/images_crop/form30_page-89.webp",
-      "width": 705
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 532,
+      "source_question_number": 40,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a6760e7e-746c-45b5-b442-e3309d8a823b/markdown_0/imgs/img_in_image_box_561_122_1033_419.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A56Z%2F-1%2F%2Fe3c1dde1fde6ebc80cc9c8e6e8eb17c2d086339528366de8fff9b0e0d1ee2e88",
+      "url": "/api/images_crop/form30_page-89_ocr.webp",
+      "width": 472,
+      "height": 297
+    }
+  ],
+  "form30_page-92": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 534,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b29aa2e5-482a-4cfb-81b5-b070ca1b6fdb/markdown_2/imgs/img_in_image_box_1324_69_1566_411.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A15Z%2F-1%2F%2Fdde1cab725cfc5ceffb97c12623d034b2d7e900e10f392b1037915ed745ee134",
+      "url": "/api/images_crop/form30_page-92_ocr01.webp",
+      "width": 242,
+      "height": 342
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 534,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b29aa2e5-482a-4cfb-81b5-b070ca1b6fdb/markdown_3/imgs/img_in_image_box_556_68_1034_451.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A17Z%2F-1%2F%2Fcf6521ef1966faad3b3e71ce4c7ef44a2a3f1f2853288adc98e24cf933333de7",
+      "url": "/api/images_crop/form30_page-92_ocr02.webp",
+      "width": 478,
+      "height": 383
     }
   ],
   "form30_page-93": [
@@ -583,34 +1051,92 @@
       "width": 415
     }
   ],
+  "form30_page-94": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 534,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b29aa2e5-482a-4cfb-81b5-b070ca1b6fdb/markdown_2/imgs/img_in_image_box_1324_69_1566_411.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A15Z%2F-1%2F%2Fdde1cab725cfc5ceffb97c12623d034b2d7e900e10f392b1037915ed745ee134",
+      "url": "/api/images_crop/form30_page-94_ocr01.webp",
+      "width": 242,
+      "height": 342
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 534,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b29aa2e5-482a-4cfb-81b5-b070ca1b6fdb/markdown_3/imgs/img_in_image_box_556_68_1034_451.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A17Z%2F-1%2F%2Fcf6521ef1966faad3b3e71ce4c7ef44a2a3f1f2853288adc98e24cf933333de7",
+      "url": "/api/images_crop/form30_page-94_ocr02.webp",
+      "width": 478,
+      "height": 383
+    }
+  ],
   "form30_page-95": [
     {
-      "category": "table",
-      "height": 285,
-      "label": "newborn_cbc_table",
-      "source_page": 96,
-      "url": "/api/images_crop/form30_page-95.webp",
-      "width": 875
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 534,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b29aa2e5-482a-4cfb-81b5-b070ca1b6fdb/markdown_2/imgs/img_in_image_box_1324_69_1566_411.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A15Z%2F-1%2F%2Fdde1cab725cfc5ceffb97c12623d034b2d7e900e10f392b1037915ed745ee134",
+      "url": "/api/images_crop/form30_page-95_ocr01.webp",
+      "width": 242,
+      "height": 342
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 534,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b29aa2e5-482a-4cfb-81b5-b070ca1b6fdb/markdown_3/imgs/img_in_image_box_556_68_1034_451.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A17Z%2F-1%2F%2Fcf6521ef1966faad3b3e71ce4c7ef44a2a3f1f2853288adc98e24cf933333de7",
+      "url": "/api/images_crop/form30_page-95_ocr02.webp",
+      "width": 478,
+      "height": 383
     }
   ],
   "form30_page-96": [
     {
-      "category": "gross",
-      "height": 515,
-      "label": "mitral_valve_gross_specimen",
-      "source_page": 97,
-      "url": "/api/images_crop/form30_page-96.webp",
-      "width": 385
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 534,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b29aa2e5-482a-4cfb-81b5-b070ca1b6fdb/markdown_2/imgs/img_in_image_box_1324_69_1566_411.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A15Z%2F-1%2F%2Fdde1cab725cfc5ceffb97c12623d034b2d7e900e10f392b1037915ed745ee134",
+      "url": "/api/images_crop/form30_page-96_ocr01.webp",
+      "width": 242,
+      "height": 342
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 534,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b29aa2e5-482a-4cfb-81b5-b070ca1b6fdb/markdown_3/imgs/img_in_image_box_556_68_1034_451.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A17Z%2F-1%2F%2Fcf6521ef1966faad3b3e71ce4c7ef44a2a3f1f2853288adc98e24cf933333de7",
+      "url": "/api/images_crop/form30_page-96_ocr02.webp",
+      "width": 478,
+      "height": 383
     }
   ],
   "form30_page-97": [
     {
-      "category": "histology",
-      "height": 565,
-      "label": "hepatitis_histology_photomicrograph",
-      "source_page": 98,
-      "url": "/api/images_crop/form30_page-97.webp",
-      "width": 715
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 534,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b29aa2e5-482a-4cfb-81b5-b070ca1b6fdb/markdown_2/imgs/img_in_image_box_1324_69_1566_411.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A15Z%2F-1%2F%2Fdde1cab725cfc5ceffb97c12623d034b2d7e900e10f392b1037915ed745ee134",
+      "url": "/api/images_crop/form30_page-97_ocr01.webp",
+      "width": 242,
+      "height": 342
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 534,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b29aa2e5-482a-4cfb-81b5-b070ca1b6fdb/markdown_3/imgs/img_in_image_box_556_68_1034_451.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A17Z%2F-1%2F%2Fcf6521ef1966faad3b3e71ce4c7ef44a2a3f1f2853288adc98e24cf933333de7",
+      "url": "/api/images_crop/form30_page-97_ocr02.webp",
+      "width": 478,
+      "height": 383
     }
   ],
   "form30_page-98": [
@@ -623,14 +1149,40 @@
       "width": 700
     }
   ],
+  "form31_page-0": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 586,
+      "source_question_number": 49,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7fab359a-1b42-4cd6-80ac-80bf73366ae8/markdown_4/imgs/img_in_image_box_1229_69_1566_406.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A01Z%2F-1%2F%2F7ef00efbabf4bb78ade2730f87803b78911f64fb08b71fcd9fb8d52906172eaf",
+      "url": "/api/images_crop/form31_page-0_ocr.webp",
+      "width": 337,
+      "height": 337
+    }
+  ],
+  "form31_page-100": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 696,
+      "source_question_number": 12,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c9258b04-4583-4ae9-8910-57b317d32a5e/markdown_3/imgs/img_in_image_box_414_37_883_126.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A11Z%2F-1%2F%2F3b8f69c19baa657304eaef35df3854c4c9fde9056b131cec78f2e7d6f6c1ebef",
+      "url": "/api/images_crop/form31_page-100_ocr.webp",
+      "width": 469,
+      "height": 89
+    }
+  ],
   "form31_page-102": [
     {
-      "category": "diagrams_flowcharts",
-      "height": 415,
-      "label": "labeled brainstem photograph",
-      "source_page": 103,
-      "url": "/api/images_crop/form31_page-102.webp",
-      "width": 270
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 698,
+      "source_question_number": 14,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6e85bd80-7b55-439b-ae79-4034e2e73bbf/markdown_0/imgs/img_in_image_box_402_2_923_277.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A09Z%2F-1%2F%2F563e5aee7cb7993dd23249094efbafd898f12230abf73c7d01136ce461f3b66b",
+      "url": "/api/images_crop/form31_page-102_ocr.webp",
+      "width": 521,
+      "height": 275
     }
   ],
   "form31_page-104": [
@@ -645,12 +1197,14 @@
   ],
   "form31_page-105": [
     {
-      "category": "histology_pathology",
-      "height": 339,
-      "label": "microscopy image of tissue/organism",
-      "source_page": 106,
-      "url": "/api/images_crop/form31_page-105.webp",
-      "width": 255
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 701,
+      "source_question_number": 17,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6e85bd80-7b55-439b-ae79-4034e2e73bbf/markdown_3/imgs/img_in_image_box_19_8_930_394.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A12Z%2F-1%2F%2F3c40e545afdd2e4dc9983a7b110ff7005031edc820ec2e695d9229b006b700d7",
+      "url": "/api/images_crop/form31_page-105_ocr.webp",
+      "width": 911,
+      "height": 386
     }
   ],
   "form31_page-107": [
@@ -701,6 +1255,54 @@
       "width": 518
     }
   ],
+  "form31_page-12": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 599,
+      "source_question_number": 15,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//0e23e03c-53a8-4d99-9a27-c25bd0db50e7/markdown_1/imgs/img_in_image_box_18_16_470_417.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A15Z%2F-1%2F%2F80afb78b78125fbfbe728ad465959d46a4783db2483e0b9049da0a32c6021342",
+      "url": "/api/images_crop/form31_page-12_ocr.webp",
+      "width": 452,
+      "height": 401
+    }
+  ],
+  "form31_page-125": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 722,
+      "source_question_number": 38,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//297b3ab1-6a4c-4d1d-a62a-77640f9ad6ed/markdown_3/imgs/img_in_image_box_51_301_418_845.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A10Z%2F-1%2F%2F3855f869eecf04fcc1a3fc67fca71baceb529f5020a78f49d25c19744faf1edc",
+      "url": "/api/images_crop/form31_page-125_ocr.webp",
+      "width": 367,
+      "height": 544
+    }
+  ],
+  "form31_page-127": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 724,
+      "source_question_number": 40,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a543e8f3-5b77-41a1-8031-8c8b66cddf68/markdown_1/imgs/img_in_image_box_3_48_588_510.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A09Z%2F-1%2F%2F28e15b7930d5a9e211ac018b0df78953397381005b939b0f716b50c0df986f02",
+      "url": "/api/images_crop/form31_page-127_ocr.webp",
+      "width": 585,
+      "height": 462
+    }
+  ],
+  "form31_page-128": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 724,
+      "source_question_number": 40,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a543e8f3-5b77-41a1-8031-8c8b66cddf68/markdown_1/imgs/img_in_image_box_3_48_588_510.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A09Z%2F-1%2F%2F28e15b7930d5a9e211ac018b0df78953397381005b939b0f716b50c0df986f02",
+      "url": "/api/images_crop/form31_page-128_ocr.webp",
+      "width": 585,
+      "height": 462
+    }
+  ],
   "form31_page-129": [
     {
       "category": "tables",
@@ -719,6 +1321,18 @@
       "source_page": 131,
       "url": "/api/images_crop/form31_page-130.webp",
       "width": 522
+    }
+  ],
+  "form31_page-131": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 727,
+      "source_question_number": 44,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d438165d-8f0c-4690-baeb-2fea07bc558c/markdown_0/imgs/img_in_image_box_413_50_892_338.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A16Z%2F-1%2F%2Fea407c95353d9076542e11825bdc995254ccee7046e35cbd244b4fb045862044",
+      "url": "/api/images_crop/form31_page-131_ocr.webp",
+      "width": 479,
+      "height": 288
     }
   ],
   "form31_page-137": [
@@ -741,6 +1355,18 @@
       "width": 590
     }
   ],
+  "form31_page-141": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 739,
+      "source_question_number": 7,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6a09f12b-b13b-436d-b353-274be83c9a86/markdown_3/imgs/img_in_image_box_16_2_351_495.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2F52a4db9960be64fbcececfb6982d598f2df5ed0b9a87875bca285a2239f1afe1",
+      "url": "/api/images_crop/form31_page-141_ocr.webp",
+      "width": 335,
+      "height": 493
+    }
+  ],
   "form31_page-144": [
     {
       "category": "clinical_images",
@@ -761,6 +1387,18 @@
       "width": 457
     }
   ],
+  "form31_page-151": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 750,
+      "source_question_number": 18,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d6f2b42b-4003-4800-af73-48492f9b1eaa/markdown_4/imgs/img_in_image_box_7_8_308_443.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A11Z%2F-1%2F%2F65107f9a3a18330df01cb32f5887e3c282c8fd931623400cb8b23a51e300cbe9",
+      "url": "/api/images_crop/form31_page-151_ocr.webp",
+      "width": 301,
+      "height": 435
+    }
+  ],
   "form31_page-157": [
     {
       "category": "gross_pathology",
@@ -779,6 +1417,28 @@
       "source_page": 159,
       "url": "/api/images_crop/form31_page-158.webp",
       "width": 245
+    }
+  ],
+  "form31_page-159": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 758,
+      "source_question_number": 26,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//cfe028f5-d115-457b-85f1-0ff57fe97482/markdown_2/imgs/img_in_image_box_385_28_646_285.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A00Z%2F-1%2F%2Fc92e069da9813799be24b9296b3979eb73f701eb4e1aa963e7f2c72989ff4728",
+      "url": "/api/images_crop/form31_page-159_ocr01.webp",
+      "width": 261,
+      "height": 257
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 758,
+      "source_question_number": 26,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//cfe028f5-d115-457b-85f1-0ff57fe97482/markdown_2/imgs/img_in_image_box_654_29_913_286.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A00Z%2F-1%2F%2F48986d898503f0c15ffb096e73359b50d9f6364a200980702b873d473fa0595a",
+      "url": "/api/images_crop/form31_page-159_ocr02.webp",
+      "width": 259,
+      "height": 257
     }
   ],
   "form31_page-163": [
@@ -803,12 +1463,14 @@
   ],
   "form31_page-17": [
     {
-      "category": "tables",
-      "height": 209,
-      "label": "arterial blood gas answer-choice table",
-      "source_page": 18,
-      "url": "/api/images_crop/form31_page-17.webp",
-      "width": 390
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 604,
+      "source_question_number": 20,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5327ee9c-f785-46a1-81f2-c95e7e5d81a9/markdown_1/imgs/img_in_image_box_34_16_528_361.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A03Z%2F-1%2F%2Fbb17e7c472b1a8bd8690ddef53955ce6dfb079d6227bc17486349e3406891e7e",
+      "url": "/api/images_crop/form31_page-17_ocr.webp",
+      "width": 494,
+      "height": 345
     }
   ],
   "form31_page-170": [
@@ -851,6 +1513,18 @@
       "width": 527
     }
   ],
+  "form31_page-179": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 779,
+      "source_question_number": 47,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//ee3fadbb-0241-42d7-875d-73e1795a8b22/markdown_2/imgs/img_in_image_box_177_525_432_919.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A18Z%2F-1%2F%2F9fc57d59a252ff95e4404c4a91e51fe29b5aea50dfc1a35f52bc5b9c7fdf8d7c",
+      "url": "/api/images_crop/form31_page-179_ocr.webp",
+      "width": 255,
+      "height": 394
+    }
+  ],
   "form31_page-180": [
     {
       "category": "tables",
@@ -871,6 +1545,18 @@
       "width": 496
     }
   ],
+  "form31_page-22": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 609,
+      "source_question_number": 25,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2594d6fa-2593-457f-a383-d8287e259f1b/markdown_1/imgs/img_in_image_box_16_5_599_391.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A03Z%2F-1%2F%2Febde93482e77d37e90d72812950f62032bf780418f4b5cfe9aec6984cffb16ab",
+      "url": "/api/images_crop/form31_page-22_ocr.webp",
+      "width": 583,
+      "height": 386
+    }
+  ],
   "form31_page-25": [
     {
       "category": "clinical_images",
@@ -879,6 +1565,18 @@
       "source_page": 26,
       "url": "/api/images_crop/form31_page-25.webp",
       "width": 587
+    }
+  ],
+  "form31_page-26": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 613,
+      "source_question_number": 29,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b9796492-f489-489c-a83c-b46b984bb7da/markdown_0/imgs/img_in_image_box_67_31_805_465.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A15Z%2F-1%2F%2Ff7b669028a6128a25b84aa1ce1dfb94a15530c4ff3a4127b0a4e01627700af67",
+      "url": "/api/images_crop/form31_page-26_ocr.webp",
+      "width": 738,
+      "height": 434
     }
   ],
   "form31_page-29": [
@@ -891,14 +1589,72 @@
       "width": 690
     }
   ],
+  "form31_page-36": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 626,
+      "source_question_number": 42,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//ac74ebe3-45db-41f5-9ad6-602034ddc093/markdown_3/imgs/img_in_image_box_15_14_622_423.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A57Z%2F-1%2F%2F3c5c2e688766c70ae00767f0d8c41db10ccd04359a251d188925a794084f0e4f",
+      "url": "/api/images_crop/form31_page-36_ocr.webp",
+      "width": 607,
+      "height": 409
+    }
+  ],
+  "form31_page-37": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 627,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//ac74ebe3-45db-41f5-9ad6-602034ddc093/markdown_4/imgs/img_in_image_box_38_23_529_392.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A57Z%2F-1%2F%2Fec411db3be5fd2aa0aa57005a450ffcfd0710e963957701ae04a9d42cd54cb05",
+      "url": "/api/images_crop/form31_page-37_ocr01.webp",
+      "width": 491,
+      "height": 369
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 627,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//ac74ebe3-45db-41f5-9ad6-602034ddc093/markdown_4/imgs/img_in_image_box_549_21_917_392.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A57Z%2F-1%2F%2F036da607d112a1f4ed77f956665d1b877a229175ce67a0e393c0adf2c953c325",
+      "url": "/api/images_crop/form31_page-37_ocr02.webp",
+      "width": 368,
+      "height": 371
+    }
+  ],
+  "form31_page-41": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 631,
+      "source_question_number": 47,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8c812034-2dad-4dcd-bd8b-0086236781b3/markdown_3/imgs/img_in_image_box_54_25_623_268.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A05Z%2F-1%2F%2F44127489eb4920f420266024d5628f26540d11666aa3d50bd927fd18441d6de0",
+      "url": "/api/images_crop/form31_page-41_ocr01.webp",
+      "width": 569,
+      "height": 243
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 631,
+      "source_question_number": 47,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8c812034-2dad-4dcd-bd8b-0086236781b3/markdown_3/imgs/img_in_image_box_53_298_639_478.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A05Z%2F-1%2F%2Fe21cbbe770394f88491ace78494c01bd2eead4b8e788f9707458c45233c2acc9",
+      "url": "/api/images_crop/form31_page-41_ocr02.webp",
+      "width": 586,
+      "height": 180
+    }
+  ],
   "form31_page-42": [
     {
-      "category": "gross_pathology",
-      "height": 382,
-      "label": "gross specimen photograph",
-      "source_page": 43,
-      "url": "/api/images_crop/form31_page-42.webp",
-      "width": 609
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 632,
+      "source_question_number": 48,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8c812034-2dad-4dcd-bd8b-0086236781b3/markdown_4/imgs/img_in_image_box_542_0_759_236.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A06Z%2F-1%2F%2Fa0c77a9bc03c247fa72481ed7ab9a972c44189f440644dddab97cc267d493113",
+      "url": "/api/images_crop/form31_page-42_ocr.webp",
+      "width": 217,
+      "height": 236
     }
   ],
   "form31_page-43": [
@@ -909,6 +1665,18 @@
       "source_page": 44,
       "url": "/api/images_crop/form31_page-43.webp",
       "width": 880
+    }
+  ],
+  "form31_page-45": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 635,
+      "source_question_number": 1,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8afe0c2e-f79c-4dde-ac42-44eade34601d/markdown_1/imgs/img_in_image_box_474_366_832_741.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A10Z%2F-1%2F%2Fe9fb26553b720489a9bc8c63e83a8334313aac3d2cc0627a25b001422400dd49",
+      "url": "/api/images_crop/form31_page-45_ocr.webp",
+      "width": 358,
+      "height": 375
     }
   ],
   "form31_page-47": [
@@ -961,6 +1729,28 @@
       "width": 470
     }
   ],
+  "form31_page-65": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 657,
+      "source_question_number": 23,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c43cb865-83fd-4eca-bbdf-1bd267f7baba/markdown_4/imgs/img_in_image_box_9_5_425_286.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A05Z%2F-1%2F%2F10a67d4cff1d8e24961ada2f14e7db91e685b18d514e59b71ec71b2d32450181",
+      "url": "/api/images_crop/form31_page-65_ocr01.webp",
+      "width": 416,
+      "height": 281
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 657,
+      "source_question_number": 23,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c43cb865-83fd-4eca-bbdf-1bd267f7baba/markdown_4/imgs/img_in_image_box_8_298_427_578.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A05Z%2F-1%2F%2F8bcb02fb84a9b54370ca8343d05ab5abc543c2e8cd58289c3a4dc1acaa490d74",
+      "url": "/api/images_crop/form31_page-65_ocr02.webp",
+      "width": 419,
+      "height": 280
+    }
+  ],
   "form31_page-73": [
     {
       "category": "gross_pathology",
@@ -979,6 +1769,42 @@
       "width": 428
     }
   ],
+  "form31_page-75": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 668,
+      "source_question_number": 34,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9ac05598-e749-450d-8767-bc079b44aac8/markdown_0/imgs/img_in_image_box_3_3_404_597.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A09Z%2F-1%2F%2Fa6ad1efd70fe8ad12860458d5576d3242c7b465e55c41ddd62c9d7c157e4201b",
+      "url": "/api/images_crop/form31_page-75_ocr.webp",
+      "width": 401,
+      "height": 594
+    }
+  ],
+  "form31_page-79": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 674,
+      "source_question_number": 40,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e3d137cc-2b17-4a00-9508-79012d608561/markdown_1/imgs/img_in_image_box_8_6_341_502.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A10Z%2F-1%2F%2F5807bb6e7a89b6c8484a5c5f9c085067aa523236d763b1b95247caac2e094b6d",
+      "url": "/api/images_crop/form31_page-79_ocr.webp",
+      "width": 333,
+      "height": 496
+    }
+  ],
+  "form31_page-80": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 675,
+      "source_question_number": 41,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e3d137cc-2b17-4a00-9508-79012d608561/markdown_2/imgs/img_in_image_box_9_11_313_501.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A11Z%2F-1%2F%2Fe6f2a2724252c3cfe5d3839b6dbcddc61b7fdabeb2528aaa5c54f84bbebcf19a",
+      "url": "/api/images_crop/form31_page-80_ocr.webp",
+      "width": 304,
+      "height": 490
+    }
+  ],
   "form31_page-84": [
     {
       "category": "histology_pathology",
@@ -987,6 +1813,30 @@
       "source_page": 85,
       "url": "/api/images_crop/form31_page-84.webp",
       "width": 405
+    }
+  ],
+  "form31_page-85": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 681,
+      "source_question_number": 47,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//ced6a860-bf2d-4a22-aa47-09232579cf5f/markdown_3/imgs/img_in_image_box_436_39_913_295.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A11Z%2F-1%2F%2Fb525b05ff9c381f183ec22b9d89ff196429609fa05c2f103ad71f0d76a5ba255",
+      "url": "/api/images_crop/form31_page-85_ocr.webp",
+      "width": 477,
+      "height": 256
+    }
+  ],
+  "form31_page-87": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 683,
+      "source_question_number": 49,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bbb24e33-5a05-4c30-9915-8d748e9d5eaa/markdown_0/imgs/img_in_image_box_8_11_533_490.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A58Z%2F-1%2F%2Fcf587b1acc8a5e3aa5f24a49fbb47ac0e83769b55648adde5e02d013bb0353fd",
+      "url": "/api/images_crop/form31_page-87_ocr.webp",
+      "width": 525,
+      "height": 479
     }
   ],
   "form31_page-89": [
@@ -1011,22 +1861,72 @@
   ],
   "form31_page-91": [
     {
-      "category": "radiology",
-      "height": 455,
-      "label": "shoulder/humerus x-ray",
-      "source_page": 92,
-      "url": "/api/images_crop/form31_page-91.webp",
-      "width": 303
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 687,
+      "source_question_number": 3,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bbb24e33-5a05-4c30-9915-8d748e9d5eaa/markdown_3/imgs/img_in_image_box_517_93_780_503.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A00Z%2F-1%2F%2Fcb420f91fe2c7f8e1b7d9cf8b20d08c94ab85564362d264b5f92cfed3ed7e063",
+      "url": "/api/images_crop/form31_page-91_ocr.webp",
+      "width": 263,
+      "height": 410
+    }
+  ],
+  "form31_page-92": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 688,
+      "source_question_number": 4,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//143d25a5-e4f9-459a-8ff1-1198133cf18d/markdown_0/imgs/img_in_image_box_512_35_855_285.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A58Z%2F-1%2F%2F37a6a7fb414cf4a44be7120151761b0f6f3325dcd2ea82371353783574d0b20d",
+      "url": "/api/images_crop/form31_page-92_ocr.webp",
+      "width": 343,
+      "height": 250
+    }
+  ],
+  "form31_page-93": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 689,
+      "source_question_number": 5,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//143d25a5-e4f9-459a-8ff1-1198133cf18d/markdown_1/imgs/img_in_image_box_10_4_265_385.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A59Z%2F-1%2F%2F2294bda49450817e87e5f3d40ce15eb30fcfddea189c49571e954d449e90730f",
+      "url": "/api/images_crop/form31_page-93_ocr.webp",
+      "width": 255,
+      "height": 381
+    }
+  ],
+  "form31_page-95": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 691,
+      "source_question_number": 7,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//143d25a5-e4f9-459a-8ff1-1198133cf18d/markdown_3/imgs/img_in_image_box_8_6_229_416.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A00Z%2F-1%2F%2F130e4ccd1e47167c6b24fa7b19cf18cd6d00d0067390f894952f07ed5d097f83",
+      "url": "/api/images_crop/form31_page-95_ocr01.webp",
+      "width": 221,
+      "height": 410
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 691,
+      "source_question_number": 7,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//143d25a5-e4f9-459a-8ff1-1198133cf18d/markdown_3/imgs/img_in_image_box_238_6_681_421.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A00Z%2F-1%2F%2Fe2b6b83f57bf2468b1cfc662d0324e07930ab3b0f3935cd9871de9319c5f1374",
+      "url": "/api/images_crop/form31_page-95_ocr02.webp",
+      "width": 443,
+      "height": 415
     }
   ],
   "form31_page-96": [
     {
-      "category": "charts_graphs",
-      "height": 376,
-      "label": "drug effect on heart rate, AV conduction and contractility",
-      "source_page": 97,
-      "url": "/api/images_crop/form31_page-96.webp",
-      "width": 605
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 692,
+      "source_question_number": 8,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//143d25a5-e4f9-459a-8ff1-1198133cf18d/markdown_3/imgs/img_in_image_box_9_610_278_789.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A00Z%2F-1%2F%2F7d414435a1ff751ec418eb39090057c3fdcd55cf7422545fbb6387f08ed68a46",
+      "url": "/api/images_crop/form31_page-96_ocr.webp",
+      "width": 269,
+      "height": 179
     }
   ],
   "form31_page-97": [
@@ -1047,636 +1947,6 @@
       "source_page": 100,
       "url": "/api/images_crop/form31_page-99.webp",
       "width": 533
-    }
-  ],
-  "nbme27_page-10": [
-    {
-      "category": "clinical_images",
-      "height": 320,
-      "label": "labeled cardiac CT scans",
-      "source_page": 11,
-      "url": "/api/images_crop/nbme27_page-10.webp",
-      "width": 700
-    }
-  ],
-  "nbme27_page-100": [
-    {
-      "category": "clinical_images",
-      "height": 415,
-      "label": "bone marrow/adipose photomicrograph",
-      "source_page": 101,
-      "url": "/api/images_crop/nbme27_page-100.webp",
-      "width": 285
-    }
-  ],
-  "nbme27_page-103": [
-    {
-      "category": "charts_tables",
-      "height": 200,
-      "label": "coagulation studies table",
-      "source_page": 104,
-      "url": "/api/images_crop/nbme27_page-103.webp",
-      "width": 585
-    }
-  ],
-  "nbme27_page-106": [
-    {
-      "category": "clinical_images",
-      "height": 530,
-      "label": "skin lesion photograph",
-      "source_page": 107,
-      "url": "/api/images_crop/nbme27_page-106.webp",
-      "width": 310
-    }
-  ],
-  "nbme27_page-116": [
-    {
-      "category": "clinical_images",
-      "height": 480,
-      "label": "wrist/hand x-rays",
-      "source_page": 117,
-      "url": "/api/images_crop/nbme27_page-116.webp",
-      "width": 605
-    }
-  ],
-  "nbme27_page-121": [
-    {
-      "category": "charts_tables",
-      "height": 250,
-      "label": "mucus/cilia/macrophage table",
-      "source_page": 122,
-      "url": "/api/images_crop/nbme27_page-121.webp",
-      "width": 470
-    }
-  ],
-  "nbme27_page-124": [
-    {
-      "category": "clinical_images",
-      "height": 265,
-      "label": "uterus/adnexa gross specimen",
-      "source_page": 125,
-      "url": "/api/images_crop/nbme27_page-124.webp",
-      "width": 430
-    },
-    {
-      "category": "clinical_images",
-      "height": 270,
-      "label": "uterine/cervical histology",
-      "source_page": 125,
-      "url": "/api/images_crop/nbme27_page-124_2.webp",
-      "width": 430
-    }
-  ],
-  "nbme27_page-126": [
-    {
-      "category": "charts_tables",
-      "height": 275,
-      "label": "plasma drug concentration over time",
-      "source_page": 127,
-      "url": "/api/images_crop/nbme27_page-126.webp",
-      "width": 345
-    }
-  ],
-  "nbme27_page-127": [
-    {
-      "category": "charts_tables",
-      "height": 190,
-      "label": "cancer antigen table",
-      "source_page": 128,
-      "url": "/api/images_crop/nbme27_page-127.webp",
-      "width": 525
-    }
-  ],
-  "nbme27_page-13": [
-    {
-      "category": "charts_tables",
-      "height": 195,
-      "label": "normal vs diseased distributions graph",
-      "source_page": 14,
-      "url": "/api/images_crop/nbme27_page-13.webp",
-      "width": 370
-    }
-  ],
-  "nbme27_page-134": [
-    {
-      "category": "charts_tables",
-      "height": 125,
-      "label": "sodium and lithium concentration table",
-      "source_page": 135,
-      "url": "/api/images_crop/nbme27_page-134.webp",
-      "width": 520
-    }
-  ],
-  "nbme27_page-135": [
-    {
-      "category": "charts_tables",
-      "height": 215,
-      "label": "acid-base parameters table",
-      "source_page": 136,
-      "url": "/api/images_crop/nbme27_page-135.webp",
-      "width": 710
-    }
-  ],
-  "nbme27_page-140": [
-    {
-      "category": "clinical_images",
-      "height": 190,
-      "label": "ECG rhythm strip",
-      "source_page": 141,
-      "url": "/api/images_crop/nbme27_page-140.webp",
-      "width": 360
-    }
-  ],
-  "nbme27_page-143": [
-    {
-      "category": "clinical_images",
-      "height": 340,
-      "label": "liver biopsy photomicrograph",
-      "source_page": 144,
-      "url": "/api/images_crop/nbme27_page-143.webp",
-      "width": 510
-    }
-  ],
-  "nbme27_page-148": [
-    {
-      "category": "charts_tables",
-      "height": 275,
-      "label": "allele frequency histogram",
-      "source_page": 149,
-      "url": "/api/images_crop/nbme27_page-148.webp",
-      "width": 440
-    }
-  ],
-  "nbme27_page-149": [
-    {
-      "category": "charts_tables",
-      "height": 385,
-      "label": "sarcoma tumor growth graphs",
-      "source_page": 150,
-      "url": "/api/images_crop/nbme27_page-149.webp",
-      "width": 735
-    }
-  ],
-  "nbme27_page-15": [
-    {
-      "category": "charts_tables",
-      "height": 520,
-      "label": "bicarbonate-pH relationship graph",
-      "source_page": 16,
-      "url": "/api/images_crop/nbme27_page-15.webp",
-      "width": 330
-    }
-  ],
-  "nbme27_page-151": [
-    {
-      "category": "charts_tables",
-      "height": 195,
-      "label": "management group crossover table",
-      "source_page": 152,
-      "url": "/api/images_crop/nbme27_page-151.webp",
-      "width": 435
-    }
-  ],
-  "nbme27_page-156": [
-    {
-      "category": "charts_tables",
-      "height": 100,
-      "label": "cholesterol/HDL/triglyceride table",
-      "source_page": 157,
-      "url": "/api/images_crop/nbme27_page-156.webp",
-      "width": 550
-    }
-  ],
-  "nbme27_page-158": [
-    {
-      "category": "charts_tables",
-      "height": 335,
-      "label": "serum and urine chemistries table",
-      "source_page": 159,
-      "url": "/api/images_crop/nbme27_page-158.webp",
-      "width": 300
-    }
-  ],
-  "nbme27_page-159": [
-    {
-      "category": "charts_tables",
-      "height": 330,
-      "label": "lipid/chemistry laboratory values",
-      "source_page": 160,
-      "url": "/api/images_crop/nbme27_page-159.webp",
-      "width": 560
-    }
-  ],
-  "nbme27_page-160": [
-    {
-      "category": "charts_tables",
-      "height": 380,
-      "label": "patient lab values table",
-      "source_page": 161,
-      "url": "/api/images_crop/nbme27_page-160.webp",
-      "width": 740
-    },
-    {
-      "category": "charts_tables",
-      "height": 405,
-      "label": "peripheral blood smear",
-      "source_page": 161,
-      "url": "/api/images_crop/nbme27_page-160_2.webp",
-      "width": 315
-    }
-  ],
-  "nbme27_page-162": [
-    {
-      "category": "charts_tables",
-      "height": 270,
-      "label": "family pedigree",
-      "source_page": 163,
-      "url": "/api/images_crop/nbme27_page-162.webp",
-      "width": 255
-    }
-  ],
-  "nbme27_page-164": [
-    {
-      "category": "charts_tables",
-      "height": 260,
-      "label": "lab value list",
-      "source_page": 165,
-      "url": "/api/images_crop/nbme27_page-164.webp",
-      "width": 340
-    }
-  ],
-  "nbme27_page-176": [
-    {
-      "category": "charts_tables",
-      "height": 150,
-      "label": "CBC/coagulation table",
-      "source_page": 177,
-      "url": "/api/images_crop/nbme27_page-176.webp",
-      "width": 595
-    }
-  ],
-  "nbme27_page-180": [
-    {
-      "category": "charts_tables",
-      "height": 140,
-      "label": "antiestrogenic/estrogenic effects table",
-      "source_page": 181,
-      "url": "/api/images_crop/nbme27_page-180.webp",
-      "width": 420
-    }
-  ],
-  "nbme27_page-183": [
-    {
-      "category": "clinical_images",
-      "height": 445,
-      "label": "renal/tissue photomicrograph",
-      "source_page": 184,
-      "url": "/api/images_crop/nbme27_page-183.webp",
-      "width": 315
-    }
-  ],
-  "nbme27_page-184": [
-    {
-      "category": "charts_tables",
-      "height": 80,
-      "label": "CD4/CD8 table",
-      "source_page": 185,
-      "url": "/api/images_crop/nbme27_page-184.webp",
-      "width": 375
-    }
-  ],
-  "nbme27_page-186": [
-    {
-      "category": "diagrams",
-      "height": 260,
-      "label": "cross-sectional anatomy diagram",
-      "source_page": 187,
-      "url": "/api/images_crop/nbme27_page-186.webp",
-      "width": 275
-    }
-  ],
-  "nbme27_page-188": [
-    {
-      "category": "clinical_images",
-      "height": 380,
-      "label": "sagittal brain MRI",
-      "source_page": 189,
-      "url": "/api/images_crop/nbme27_page-188.webp",
-      "width": 470
-    }
-  ],
-  "nbme27_page-190": [
-    {
-      "category": "charts_tables",
-      "height": 190,
-      "label": "potassium/chloride/bicarbonate answer table",
-      "source_page": 191,
-      "url": "/api/images_crop/nbme27_page-190.webp",
-      "width": 575
-    }
-  ],
-  "nbme27_page-191": [
-    {
-      "category": "diagrams",
-      "height": 465,
-      "label": "brainstem/cerebellum labeled diagram",
-      "source_page": 192,
-      "url": "/api/images_crop/nbme27_page-191.webp",
-      "width": 520
-    }
-  ],
-  "nbme27_page-192": [
-    {
-      "category": "charts_tables",
-      "height": 170,
-      "label": "blood pressure/glucose/cholesterol table",
-      "source_page": 193,
-      "url": "/api/images_crop/nbme27_page-192.webp",
-      "width": 270
-    }
-  ],
-  "nbme27_page-193": [
-    {
-      "category": "clinical_images",
-      "height": 485,
-      "label": "chest x-ray",
-      "source_page": 194,
-      "url": "/api/images_crop/nbme27_page-193.webp",
-      "width": 455
-    }
-  ],
-  "nbme27_page-197": [
-    {
-      "category": "clinical_images",
-      "height": 420,
-      "label": "GI/colon photomicrograph panels",
-      "source_page": 198,
-      "url": "/api/images_crop/nbme27_page-197.webp",
-      "width": 605
-    }
-  ],
-  "nbme27_page-22": [
-    {
-      "category": "charts_tables",
-      "height": 295,
-      "label": "cardiac output vs right atrial pressure graph",
-      "source_page": 23,
-      "url": "/api/images_crop/nbme27_page-22.webp",
-      "width": 520
-    }
-  ],
-  "nbme27_page-23": [
-    {
-      "category": "charts_tables",
-      "height": 125,
-      "label": "lung exam findings table",
-      "source_page": 24,
-      "url": "/api/images_crop/nbme27_page-23.webp",
-      "width": 610
-    }
-  ],
-  "nbme27_page-29": [
-    {
-      "category": "charts_tables",
-      "height": 380,
-      "label": "cancer survival curves",
-      "source_page": 30,
-      "url": "/api/images_crop/nbme27_page-29.webp",
-      "width": 445
-    }
-  ],
-  "nbme27_page-3": [
-    {
-      "category": "clinical_images",
-      "height": 360,
-      "label": "cellulitis leg photo + Gram stain",
-      "source_page": 4,
-      "url": "/api/images_crop/nbme27_page-3.webp",
-      "width": 800
-    }
-  ],
-  "nbme27_page-31": [
-    {
-      "category": "clinical_images",
-      "height": 540,
-      "label": "sagittal cerebellum specimen",
-      "source_page": 32,
-      "url": "/api/images_crop/nbme27_page-31.webp",
-      "width": 385
-    }
-  ],
-  "nbme27_page-32": [
-    {
-      "category": "charts_tables",
-      "height": 85,
-      "label": "normal epp/mepp/ACh table",
-      "source_page": 33,
-      "url": "/api/images_crop/nbme27_page-32.webp",
-      "width": 860
-    },
-    {
-      "category": "charts_tables",
-      "height": 205,
-      "label": "botulism electrophysiology choice table",
-      "source_page": 33,
-      "url": "/api/images_crop/nbme27_page-32_2.webp",
-      "width": 515
-    }
-  ],
-  "nbme27_page-36": [
-    {
-      "category": "clinical_images",
-      "height": 480,
-      "label": "gastric mucosa labeled photomicrograph",
-      "source_page": 37,
-      "url": "/api/images_crop/nbme27_page-36.webp",
-      "width": 295
-    }
-  ],
-  "nbme27_page-37": [
-    {
-      "category": "clinical_images",
-      "height": 465,
-      "label": "head CT",
-      "source_page": 38,
-      "url": "/api/images_crop/nbme27_page-37.webp",
-      "width": 340
-    }
-  ],
-  "nbme27_page-46": [
-    {
-      "category": "charts_tables",
-      "height": 115,
-      "label": "urine specific gravity and osmolality table",
-      "source_page": 47,
-      "url": "/api/images_crop/nbme27_page-46.webp",
-      "width": 340
-    }
-  ],
-  "nbme27_page-47": [
-    {
-      "category": "charts_tables",
-      "height": 295,
-      "label": "serum and urine studies table",
-      "source_page": 48,
-      "url": "/api/images_crop/nbme27_page-47.webp",
-      "width": 285
-    }
-  ],
-  "nbme27_page-59": [
-    {
-      "category": "clinical_images",
-      "height": 505,
-      "label": "resected kidney gross specimen",
-      "source_page": 60,
-      "url": "/api/images_crop/nbme27_page-59.webp",
-      "width": 275
-    }
-  ],
-  "nbme27_page-6": [
-    {
-      "category": "clinical_images",
-      "height": 340,
-      "label": "colon biopsy photomicrograph",
-      "source_page": 7,
-      "url": "/api/images_crop/nbme27_page-6.webp",
-      "width": 405
-    }
-  ],
-  "nbme27_page-71": [
-    {
-      "category": "clinical_images",
-      "height": 310,
-      "label": "abdominal infant skin photograph",
-      "source_page": 72,
-      "url": "/api/images_crop/nbme27_page-71.webp",
-      "width": 450
-    }
-  ],
-  "nbme27_page-72": [
-    {
-      "category": "clinical_images",
-      "height": 300,
-      "label": "lower extremity skin photograph",
-      "source_page": 73,
-      "url": "/api/images_crop/nbme27_page-72.webp",
-      "width": 365
-    }
-  ],
-  "nbme27_page-73": [
-    {
-      "category": "clinical_images",
-      "height": 465,
-      "label": "cerebral angiogram",
-      "source_page": 74,
-      "url": "/api/images_crop/nbme27_page-73.webp",
-      "width": 385
-    }
-  ],
-  "nbme27_page-77": [
-    {
-      "category": "charts_tables",
-      "height": 225,
-      "label": "blood flow percentage table",
-      "source_page": 78,
-      "url": "/api/images_crop/nbme27_page-77.webp",
-      "width": 510
-    }
-  ],
-  "nbme27_page-78": [
-    {
-      "category": "charts_tables",
-      "height": 125,
-      "label": "exercise stress test table",
-      "source_page": 79,
-      "url": "/api/images_crop/nbme27_page-78.webp",
-      "width": 630
-    }
-  ],
-  "nbme27_page-80": [
-    {
-      "category": "charts_tables",
-      "height": 115,
-      "label": "LH/DHEA/testosterone labs",
-      "source_page": 81,
-      "url": "/api/images_crop/nbme27_page-80.webp",
-      "width": 630
-    }
-  ],
-  "nbme27_page-81": [
-    {
-      "category": "charts_tables",
-      "height": 280,
-      "label": "CBC/differential table",
-      "source_page": 82,
-      "url": "/api/images_crop/nbme27_page-81.webp",
-      "width": 720
-    }
-  ],
-  "nbme27_page-84": [
-    {
-      "category": "charts_tables",
-      "height": 165,
-      "label": "pancreatic enzyme activity table",
-      "source_page": 85,
-      "url": "/api/images_crop/nbme27_page-84.webp",
-      "width": 490
-    }
-  ],
-  "nbme27_page-9": [
-    {
-      "category": "charts_tables",
-      "height": 245,
-      "label": "erythrocyte color/size/shape table",
-      "source_page": 10,
-      "url": "/api/images_crop/nbme27_page-9.webp",
-      "width": 590
-    }
-  ],
-  "nbme27_page-91": [
-    {
-      "category": "charts_tables",
-      "height": 130,
-      "label": "peristalsis/sphincter tone table",
-      "source_page": 92,
-      "url": "/api/images_crop/nbme27_page-91.webp",
-      "width": 335
-    }
-  ],
-  "nbme27_page-92": [
-    {
-      "category": "clinical_images",
-      "height": 300,
-      "label": "hand deformity photograph",
-      "source_page": 93,
-      "url": "/api/images_crop/nbme27_page-92.webp",
-      "width": 375
-    },
-    {
-      "category": "charts_tables",
-      "height": 240,
-      "label": "motor deficit table",
-      "source_page": 93,
-      "url": "/api/images_crop/nbme27_page-92_2.webp",
-      "width": 360
-    }
-  ],
-  "nbme27_page-95": [
-    {
-      "category": "clinical_images",
-      "height": 465,
-      "label": "peripheral blood smear",
-      "source_page": 96,
-      "url": "/api/images_crop/nbme27_page-95.webp",
-      "width": 380
-    },
-    {
-      "category": "charts_tables",
-      "height": 160,
-      "label": "blood smear/CBC table",
-      "source_page": 96,
-      "url": "/api/images_crop/nbme27_page-95_2.webp",
-      "width": 630
     }
   ],
   "free120_2021_q010": [
@@ -1871,6 +2141,554 @@
       }
     }
   ],
+  "nbme27_page-10": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 10,
+      "source_question_number": 11,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2b6cca65-dc1a-4418-8451-26841a93500a/markdown_0/imgs/img_in_image_box_690_361_1440_910.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A39Z%2F-1%2F%2Ff8c24ebcec591e61fda5c6a4305178905b91f4f7c2636fc5e5e12eaa00e8ea96",
+      "url": "/api/images_crop/nbme27_page-10_ocr01.webp",
+      "width": 750,
+      "height": 549
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 10,
+      "source_question_number": 11,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2b6cca65-dc1a-4418-8451-26841a93500a/markdown_0/imgs/img_in_image_box_1463_359_2214_906.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A40Z%2F-1%2F%2F5a585697558af8d8cb007431e7f26952d52cb1f4f29e7801c7d33ab5a29a6a6a",
+      "url": "/api/images_crop/nbme27_page-10_ocr02.webp",
+      "width": 751,
+      "height": 547
+    }
+  ],
+  "nbme27_page-100": [
+    {
+      "category": "clinical_images",
+      "height": 415,
+      "label": "bone marrow/adipose photomicrograph",
+      "source_page": 101,
+      "url": "/api/images_crop/nbme27_page-100.webp",
+      "width": 285
+    }
+  ],
+  "nbme27_page-103": [
+    {
+      "category": "charts_tables",
+      "height": 200,
+      "label": "coagulation studies table",
+      "source_page": 104,
+      "url": "/api/images_crop/nbme27_page-103.webp",
+      "width": 585
+    }
+  ],
+  "nbme27_page-105": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 105,
+      "source_question_number": 7,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7f637548-1f3b-493a-85d6-f0786dbaeb28/markdown_1/imgs/img_in_image_box_2184_166_2835_1169.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A47Z%2F-1%2F%2Fd58ae2716dfa32ab8854034f39f932664f7c9bef54aceea50e6d837e917c400e",
+      "url": "/api/images_crop/nbme27_page-105_ocr.webp",
+      "width": 651,
+      "height": 1003
+    }
+  ],
+  "nbme27_page-106": [
+    {
+      "category": "clinical_images",
+      "height": 530,
+      "label": "skin lesion photograph",
+      "source_page": 107,
+      "url": "/api/images_crop/nbme27_page-106.webp",
+      "width": 310
+    }
+  ],
+  "nbme27_page-114": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 114,
+      "source_question_number": 16,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e5de145f-4378-4b39-8f2a-2c6efdf125db/markdown_1/imgs/img_in_image_box_924_172_1411_1048.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A00Z%2F-1%2F%2Ff8ce7bca5707aa3733a5fe0849c4c7a6f98553f6397eaae5b403f7699c6fd3f1",
+      "url": "/api/images_crop/nbme27_page-114_ocr.webp",
+      "width": 487,
+      "height": 876
+    }
+  ],
+  "nbme27_page-115": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 115,
+      "source_question_number": 17,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e5de145f-4378-4b39-8f2a-2c6efdf125db/markdown_1/imgs/img_in_image_box_1433_169_1982_1049.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A00Z%2F-1%2F%2F415a0e2d1eeedf7278f23c0a4c1926b7c7f0ec2dd520c4a7a4047a67a653f012",
+      "url": "/api/images_crop/nbme27_page-115_ocr.webp",
+      "width": 549,
+      "height": 880
+    }
+  ],
+  "nbme27_page-116": [
+    {
+      "category": "clinical_images",
+      "height": 480,
+      "label": "wrist/hand x-rays",
+      "source_page": 117,
+      "url": "/api/images_crop/nbme27_page-116.webp",
+      "width": 605
+    }
+  ],
+  "nbme27_page-121": [
+    {
+      "category": "charts_tables",
+      "height": 250,
+      "label": "mucus/cilia/macrophage table",
+      "source_page": 122,
+      "url": "/api/images_crop/nbme27_page-121.webp",
+      "width": 470
+    }
+  ],
+  "nbme27_page-123": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 123,
+      "source_question_number": 25,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d3e72105-c736-4d0c-956a-035b4fd2ebd9/markdown_4/imgs/img_in_image_box_2070_171_2833_593.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A45Z%2F-1%2F%2Fae2d24d8de401304d176e88003ff005adcf28544c940c2e0ee427a27cb670d1c",
+      "url": "/api/images_crop/nbme27_page-123_ocr01.webp",
+      "width": 763,
+      "height": 422
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 123,
+      "source_question_number": 25,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d3e72105-c736-4d0c-956a-035b4fd2ebd9/markdown_4/imgs/img_in_image_box_2071_623_2814_1103.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A45Z%2F-1%2F%2Fed00a7cc51725f39c5a9a1486ad2eeceab46bea473f2e9fb505b3459c15fc4de",
+      "url": "/api/images_crop/nbme27_page-123_ocr02.webp",
+      "width": 743,
+      "height": 480
+    }
+  ],
+  "nbme27_page-124": [
+    {
+      "category": "clinical_images",
+      "height": 265,
+      "label": "uterus/adnexa gross specimen",
+      "source_page": 125,
+      "url": "/api/images_crop/nbme27_page-124.webp",
+      "width": 430
+    },
+    {
+      "category": "clinical_images",
+      "height": 270,
+      "label": "uterine/cervical histology",
+      "source_page": 125,
+      "url": "/api/images_crop/nbme27_page-124_2.webp",
+      "width": 430
+    }
+  ],
+  "nbme27_page-125": [
+    {
+      "url": "/api/images_crop/nbme27_page-125.webp",
+      "width": 635,
+      "height": 491,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-126": [
+    {
+      "category": "charts_tables",
+      "height": 275,
+      "label": "plasma drug concentration over time",
+      "source_page": 127,
+      "url": "/api/images_crop/nbme27_page-126.webp",
+      "width": 345
+    }
+  ],
+  "nbme27_page-127": [
+    {
+      "category": "charts_tables",
+      "height": 190,
+      "label": "cancer antigen table",
+      "source_page": 128,
+      "url": "/api/images_crop/nbme27_page-127.webp",
+      "width": 525
+    }
+  ],
+  "nbme27_page-13": [
+    {
+      "category": "charts_tables",
+      "height": 195,
+      "label": "normal vs diseased distributions graph",
+      "source_page": 14,
+      "url": "/api/images_crop/nbme27_page-13.webp",
+      "width": 370
+    }
+  ],
+  "nbme27_page-134": [
+    {
+      "category": "charts_tables",
+      "height": 125,
+      "label": "sodium and lithium concentration table",
+      "source_page": 135,
+      "url": "/api/images_crop/nbme27_page-134.webp",
+      "width": 520
+    }
+  ],
+  "nbme27_page-135": [
+    {
+      "category": "charts_tables",
+      "height": 215,
+      "label": "acid-base parameters table",
+      "source_page": 136,
+      "url": "/api/images_crop/nbme27_page-135.webp",
+      "width": 710
+    }
+  ],
+  "nbme27_page-139": [
+    {
+      "url": "/api/images_crop/nbme27_page-139.webp",
+      "width": 1010,
+      "height": 412,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-140": [
+    {
+      "category": "clinical_images",
+      "height": 190,
+      "label": "ECG rhythm strip",
+      "source_page": 141,
+      "url": "/api/images_crop/nbme27_page-140.webp",
+      "width": 360
+    }
+  ],
+  "nbme27_page-141": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 139,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2b6442bc-a98b-4c4e-b3c6-a645cbe5cdbb/markdown_3/imgs/img_in_image_box_947_168_1954_837.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A46Z%2F-1%2F%2F1f1196ab19aea11479937e0c3748a43ffe976fd73ff1cb2b5c550e77348cc6d5",
+      "url": "/api/images_crop/nbme27_page-141_ocr.webp",
+      "width": 1007,
+      "height": 669
+    }
+  ],
+  "nbme27_page-142": [
+    {
+      "url": "/api/images_crop/nbme27_page-142.webp",
+      "width": 1008,
+      "height": 669,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-143": [
+    {
+      "category": "clinical_images",
+      "height": 340,
+      "label": "liver biopsy photomicrograph",
+      "source_page": 144,
+      "url": "/api/images_crop/nbme27_page-143.webp",
+      "width": 510
+    }
+  ],
+  "nbme27_page-147": [
+    {
+      "url": "/api/images_crop/nbme27_page-147.webp",
+      "width": 881,
+      "height": 550,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-148": [
+    {
+      "category": "charts_tables",
+      "height": 275,
+      "label": "allele frequency histogram",
+      "source_page": 149,
+      "url": "/api/images_crop/nbme27_page-148.webp",
+      "width": 440
+    }
+  ],
+  "nbme27_page-149": [
+    {
+      "category": "charts_tables",
+      "height": 385,
+      "label": "sarcoma tumor growth graphs",
+      "source_page": 150,
+      "url": "/api/images_crop/nbme27_page-149.webp",
+      "width": 735
+    }
+  ],
+  "nbme27_page-15": [
+    {
+      "category": "charts_tables",
+      "height": 520,
+      "label": "bicarbonate-pH relationship graph",
+      "source_page": 16,
+      "url": "/api/images_crop/nbme27_page-15.webp",
+      "width": 330
+    }
+  ],
+  "nbme27_page-151": [
+    {
+      "category": "charts_tables",
+      "height": 195,
+      "label": "management group crossover table",
+      "source_page": 152,
+      "url": "/api/images_crop/nbme27_page-151.webp",
+      "width": 435
+    }
+  ],
+  "nbme27_page-156": [
+    {
+      "category": "charts_tables",
+      "height": 100,
+      "label": "cholesterol/HDL/triglyceride table",
+      "source_page": 157,
+      "url": "/api/images_crop/nbme27_page-156.webp",
+      "width": 550
+    }
+  ],
+  "nbme27_page-158": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 156,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a8d3d99a-8737-49ca-89ff-99042b517050/markdown_0/imgs/img_in_image_box_1821_160_2341_929.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A37Z%2F-1%2F%2F4144b09b9681089b9251799c8913278235574e927de73111f00aaf1e6aa398bc",
+      "url": "/api/images_crop/nbme27_page-158_ocr.webp",
+      "width": 520,
+      "height": 769
+    }
+  ],
+  "nbme27_page-159": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 156,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a8d3d99a-8737-49ca-89ff-99042b517050/markdown_0/imgs/img_in_image_box_1821_160_2341_929.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A37Z%2F-1%2F%2F4144b09b9681089b9251799c8913278235574e927de73111f00aaf1e6aa398bc",
+      "url": "/api/images_crop/nbme27_page-159_ocr.webp",
+      "width": 520,
+      "height": 769
+    }
+  ],
+  "nbme27_page-160": [
+    {
+      "category": "charts_tables",
+      "height": 380,
+      "label": "patient lab values table",
+      "source_page": 161,
+      "url": "/api/images_crop/nbme27_page-160.webp",
+      "width": 740
+    },
+    {
+      "category": "charts_tables",
+      "height": 405,
+      "label": "peripheral blood smear",
+      "source_page": 161,
+      "url": "/api/images_crop/nbme27_page-160_2.webp",
+      "width": 315
+    }
+  ],
+  "nbme27_page-161": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 158,
+      "source_question_number": 13,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a8d3d99a-8737-49ca-89ff-99042b517050/markdown_2/imgs/img_in_image_box_2547_162_2833_689.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A40Z%2F-1%2F%2Fe0a195e24506202ec7521252ca662cd38b6908bfe9bc332bfe02d99bb776c5e1",
+      "url": "/api/images_crop/nbme27_page-161_ocr.webp",
+      "width": 286,
+      "height": 527
+    }
+  ],
+  "nbme27_page-162": [
+    {
+      "category": "charts_tables",
+      "height": 270,
+      "label": "family pedigree",
+      "source_page": 163,
+      "url": "/api/images_crop/nbme27_page-162.webp",
+      "width": 255
+    }
+  ],
+  "nbme27_page-164": [
+    {
+      "category": "charts_tables",
+      "height": 260,
+      "label": "lab value list",
+      "source_page": 165,
+      "url": "/api/images_crop/nbme27_page-164.webp",
+      "width": 340
+    }
+  ],
+  "nbme27_page-176": [
+    {
+      "category": "charts_tables",
+      "height": 150,
+      "label": "CBC/coagulation table",
+      "source_page": 177,
+      "url": "/api/images_crop/nbme27_page-176.webp",
+      "width": 595
+    }
+  ],
+  "nbme27_page-180": [
+    {
+      "category": "charts_tables",
+      "height": 140,
+      "label": "antiestrogenic/estrogenic effects table",
+      "source_page": 181,
+      "url": "/api/images_crop/nbme27_page-180.webp",
+      "width": 420
+    }
+  ],
+  "nbme27_page-182": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 178,
+      "source_question_number": 34,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2ca56348-ac13-4d92-9da1-9319c254fee4/markdown_3/imgs/img_in_image_box_2023_167_2547_979.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A41Z%2F-1%2F%2Fe632b01f1db2a07b274943cf47488f47fe780683f3ad4d3c74dadf371893a875",
+      "url": "/api/images_crop/nbme27_page-182_ocr.webp",
+      "width": 524,
+      "height": 812
+    }
+  ],
+  "nbme27_page-183": [
+    {
+      "category": "clinical_images",
+      "height": 445,
+      "label": "renal/tissue photomicrograph",
+      "source_page": 184,
+      "url": "/api/images_crop/nbme27_page-183.webp",
+      "width": 315
+    }
+  ],
+  "nbme27_page-184": [
+    {
+      "category": "charts_tables",
+      "height": 80,
+      "label": "CD4/CD8 table",
+      "source_page": 185,
+      "url": "/api/images_crop/nbme27_page-184.webp",
+      "width": 375
+    }
+  ],
+  "nbme27_page-185": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 181,
+      "source_question_number": 37,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5062e562-f605-42de-8f42-7ba0776c6ecc/markdown_1/imgs/img_in_image_box_2298_223_2778_710.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A45Z%2F-1%2F%2Ff1e50bcb67a8adede7c0589fef67ef2c72b20ce84fcba7733c91621d13eca287",
+      "url": "/api/images_crop/nbme27_page-185_ocr.webp",
+      "width": 480,
+      "height": 487
+    }
+  ],
+  "nbme27_page-186": [
+    {
+      "category": "diagrams",
+      "height": 260,
+      "label": "cross-sectional anatomy diagram",
+      "source_page": 187,
+      "url": "/api/images_crop/nbme27_page-186.webp",
+      "width": 275
+    }
+  ],
+  "nbme27_page-187": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 183,
+      "source_question_number": 39,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5062e562-f605-42de-8f42-7ba0776c6ecc/markdown_3/imgs/img_in_image_box_1775_172_2567_817.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A47Z%2F-1%2F%2Ff98a16d6128c6c42f14cebfea490153d55e0516b790b8a4ea11f82b2246b223a",
+      "url": "/api/images_crop/nbme27_page-187_ocr.webp",
+      "width": 792,
+      "height": 645
+    }
+  ],
+  "nbme27_page-188": [
+    {
+      "category": "clinical_images",
+      "height": 380,
+      "label": "sagittal brain MRI",
+      "source_page": 189,
+      "url": "/api/images_crop/nbme27_page-188.webp",
+      "width": 470
+    }
+  ],
+  "nbme27_page-190": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 186,
+      "source_question_number": 42,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7b86dbf9-c15c-4e89-99f7-e4dd2b51b176/markdown_1/imgs/img_in_image_box_911_317_2032_1250.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A03Z%2F-1%2F%2F2e5c98cb3e98e2f0e3d3e2df855a7d38a69d509486adb7f8c7c4e1ec9a406268",
+      "url": "/api/images_crop/nbme27_page-190_ocr.webp",
+      "width": 1121,
+      "height": 933
+    }
+  ],
+  "nbme27_page-191": [
+    {
+      "category": "diagrams",
+      "height": 465,
+      "label": "brainstem/cerebellum labeled diagram",
+      "source_page": 192,
+      "url": "/api/images_crop/nbme27_page-191.webp",
+      "width": 520
+    }
+  ],
+  "nbme27_page-192": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 188,
+      "source_question_number": 44,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7b86dbf9-c15c-4e89-99f7-e4dd2b51b176/markdown_3/imgs/img_in_image_box_1971_169_2834_1056.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A05Z%2F-1%2F%2Fc263de0830e9732b4fb1b19448969c419f9cee0d8130f2eb6f40e13168dc5eb0",
+      "url": "/api/images_crop/nbme27_page-192_ocr.webp",
+      "width": 863,
+      "height": 887
+    }
+  ],
+  "nbme27_page-193": [
+    {
+      "category": "clinical_images",
+      "height": 485,
+      "label": "chest x-ray",
+      "source_page": 194,
+      "url": "/api/images_crop/nbme27_page-193.webp",
+      "width": 455
+    }
+  ],
+  "nbme27_page-195": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 191,
+      "source_question_number": 47,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3f528197-5809-4637-ac6b-95ee4b14b3ea/markdown_2/imgs/img_in_image_box_916_166_1444_938.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2F3957931596a4c30f906c4b7056d731b7a84550f7f9b4bcbc40eeb6f58aa10c36",
+      "url": "/api/images_crop/nbme27_page-195_ocr01.webp",
+      "width": 528,
+      "height": 772
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 191,
+      "source_question_number": 47,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3f528197-5809-4637-ac6b-95ee4b14b3ea/markdown_2/imgs/img_in_image_box_1460_168_1986_937.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2Fd14d2249e0110e5049bd82f68a29c56fd5cf10062126e49ac3b1d50a550d4ecd",
+      "url": "/api/images_crop/nbme27_page-195_ocr02.webp",
+      "width": 526,
+      "height": 769
+    }
+  ],
   "nbme27_page-196": [
     {
       "url": "/api/images_crop/nbme27_page-196.webp",
@@ -1885,122 +2703,48 @@
       "category": "image"
     }
   ],
-  "nbme27_page-187": [
+  "nbme27_page-197": [
     {
-      "url": "/api/images_crop/nbme27_page-187.webp",
-      "width": 793,
-      "height": 647,
-      "category": "image"
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 193,
+      "source_question_number": 49,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3f528197-5809-4637-ac6b-95ee4b14b3ea/markdown_3/imgs/img_in_image_box_2151_170_2834_981.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A05Z%2F-1%2F%2F64d8f90c7a67a62951655182b5805028e2695dc542ed0acf63850ee8aef40916",
+      "url": "/api/images_crop/nbme27_page-197_ocr.webp",
+      "width": 683,
+      "height": 811
     }
   ],
-  "nbme27_page-185": [
+  "nbme27_page-2": [
     {
-      "url": "/api/images_crop/nbme27_page-185.webp",
-      "width": 484,
-      "height": 488,
-      "category": "image"
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 2,
+      "source_question_number": 3,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b83e80e5-20a7-45bd-bd87-51ecdcec9797/markdown_3/imgs/img_in_image_box_693_171_2215_788.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A42Z%2F-1%2F%2F8850c8d7419da8da659de6bd7ce450787472317c00a8ce175e511479932ca211",
+      "url": "/api/images_crop/nbme27_page-2_ocr.webp",
+      "width": 1522,
+      "height": 617
     }
   ],
-  "nbme27_page-182": [
+  "nbme27_page-22": [
     {
-      "url": "/api/images_crop/nbme27_page-182.webp",
-      "width": 526,
-      "height": 816,
-      "category": "image"
+      "category": "charts_tables",
+      "height": 295,
+      "label": "cardiac output vs right atrial pressure graph",
+      "source_page": 23,
+      "url": "/api/images_crop/nbme27_page-22.webp",
+      "width": 520
     }
   ],
-  "nbme27_page-161": [
+  "nbme27_page-23": [
     {
-      "url": "/api/images_crop/nbme27_page-161.webp",
-      "width": 285,
-      "height": 526,
-      "category": "image"
-    }
-  ],
-  "nbme27_page-147": [
-    {
-      "url": "/api/images_crop/nbme27_page-147.webp",
-      "width": 881,
-      "height": 550,
-      "category": "image"
-    }
-  ],
-  "nbme27_page-142": [
-    {
-      "url": "/api/images_crop/nbme27_page-142.webp",
-      "width": 1008,
-      "height": 669,
-      "category": "image"
-    }
-  ],
-  "nbme27_page-125": [
-    {
-      "url": "/api/images_crop/nbme27_page-125.webp",
-      "width": 635,
-      "height": 491,
-      "category": "image"
-    }
-  ],
-  "nbme27_page-123": [
-    {
-      "url": "/api/images_crop/nbme27_page-123.webp",
-      "width": 766,
-      "height": 425,
-      "category": "image"
-    },
-    {
-      "url": "/api/images_crop/nbme27_page-123_1.webp",
-      "width": 744,
-      "height": 481,
-      "category": "image"
-    }
-  ],
-  "nbme27_page-105": [
-    {
-      "url": "/api/images_crop/nbme27_page-105.webp",
-      "width": 652,
-      "height": 995,
-      "category": "image"
-    }
-  ],
-  "nbme27_page-99": [
-    {
-      "url": "/api/images_crop/nbme27_page-99.webp",
-      "width": 554,
-      "height": 815,
-      "category": "image"
-    }
-  ],
-  "nbme27_page-87": [
-    {
-      "url": "/api/images_crop/nbme27_page-87.webp",
-      "width": 685,
-      "height": 800,
-      "category": "image"
-    }
-  ],
-  "nbme27_page-76": [
-    {
-      "url": "/api/images_crop/nbme27_page-76.webp",
-      "width": 1011,
-      "height": 589,
-      "category": "image"
-    }
-  ],
-  "nbme27_page-35": [
-    {
-      "url": "/api/images_crop/nbme27_page-35.webp",
-      "width": 619,
-      "height": 811,
-      "category": "image"
-    }
-  ],
-  "nbme27_page-30": [
-    {
-      "url": "/api/images_crop/nbme27_page-30.webp",
-      "width": 725,
-      "height": 808,
-      "category": "image"
+      "category": "charts_tables",
+      "height": 125,
+      "label": "lung exam findings table",
+      "source_page": 24,
+      "url": "/api/images_crop/nbme27_page-23.webp",
+      "width": 610
     }
   ],
   "nbme27_page-28": [
@@ -2011,20 +2755,164 @@
       "category": "image"
     }
   ],
-  "nbme27_page-139": [
+  "nbme27_page-29": [
     {
-      "url": "/api/images_crop/nbme27_page-139.webp",
-      "width": 1010,
-      "height": 412,
-      "category": "image"
+      "category": "charts_tables",
+      "height": 380,
+      "label": "cancer survival curves",
+      "source_page": 30,
+      "url": "/api/images_crop/nbme27_page-29.webp",
+      "width": 445
+    }
+  ],
+  "nbme27_page-3": [
+    {
+      "category": "clinical_images",
+      "height": 360,
+      "label": "cellulitis leg photo + Gram stain",
+      "source_page": 4,
+      "url": "/api/images_crop/nbme27_page-3.webp",
+      "width": 800
+    }
+  ],
+  "nbme27_page-30": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 31,
+      "source_question_number": 32,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bab08fc1-66fb-49ce-a03e-e159071b74f1/markdown_1/imgs/img_in_image_box_2109_171_2834_979.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A40Z%2F-1%2F%2F35bdaea8a48c1dc219a298abc92e4f0df5428574be6400730d8a94825decc787",
+      "url": "/api/images_crop/nbme27_page-30_ocr.webp",
+      "width": 725,
+      "height": 808
+    }
+  ],
+  "nbme27_page-31": [
+    {
+      "category": "clinical_images",
+      "height": 540,
+      "label": "sagittal cerebellum specimen",
+      "source_page": 32,
+      "url": "/api/images_crop/nbme27_page-31.webp",
+      "width": 385
+    }
+  ],
+  "nbme27_page-32": [
+    {
+      "category": "charts_tables",
+      "height": 85,
+      "label": "normal epp/mepp/ACh table",
+      "source_page": 33,
+      "url": "/api/images_crop/nbme27_page-32.webp",
+      "width": 860
+    },
+    {
+      "category": "charts_tables",
+      "height": 205,
+      "label": "botulism electrophysiology choice table",
+      "source_page": 33,
+      "url": "/api/images_crop/nbme27_page-32_2.webp",
+      "width": 515
+    }
+  ],
+  "nbme27_page-35": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 36,
+      "source_question_number": 37,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e1c12b52-4828-4f78-9913-d71792cc87f7/markdown_1/imgs/img_in_image_box_1139_323_1756_1134.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A41Z%2F-1%2F%2Fad8b9f901f71814d20d46805819ca5f713c3e5bc7bb60ceacd56a5e2b6b3a02a",
+      "url": "/api/images_crop/nbme27_page-35_ocr.webp",
+      "width": 617,
+      "height": 811
+    }
+  ],
+  "nbme27_page-36": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 37,
+      "source_question_number": 38,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e1c12b52-4828-4f78-9913-d71792cc87f7/markdown_2/imgs/img_in_image_box_2139_169_2834_981.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A42Z%2F-1%2F%2Fcbe12ac08843d664f82e97b1c5b80733fd6bc338e90d3795d57ce9f476e398c8",
+      "url": "/api/images_crop/nbme27_page-36_ocr.webp",
+      "width": 695,
+      "height": 812
+    }
+  ],
+  "nbme27_page-37": [
+    {
+      "category": "clinical_images",
+      "height": 465,
+      "label": "head CT",
+      "source_page": 38,
+      "url": "/api/images_crop/nbme27_page-37.webp",
+      "width": 340
+    }
+  ],
+  "nbme27_page-46": [
+    {
+      "category": "charts_tables",
+      "height": 115,
+      "label": "urine specific gravity and osmolality table",
+      "source_page": 47,
+      "url": "/api/images_crop/nbme27_page-46.webp",
+      "width": 340
+    }
+  ],
+  "nbme27_page-47": [
+    {
+      "category": "charts_tables",
+      "height": 295,
+      "label": "serum and urine studies table",
+      "source_page": 48,
+      "url": "/api/images_crop/nbme27_page-47.webp",
+      "width": 285
     }
   ],
   "nbme27_page-58": [
     {
-      "url": "/api/images_crop/nbme27_page-58.webp",
-      "width": 496,
-      "height": 650,
-      "category": "image"
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 59,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2310fca4-b141-4c8e-a935-8addb958ad87/markdown_4/imgs/img_in_image_box_2334_170_2831_886.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A44Z%2F-1%2F%2Ffa5af27d0c759b0e21677d26c93b9f4d7155c050870af06c76d715fbd59a791c",
+      "url": "/api/images_crop/nbme27_page-58_ocr.webp",
+      "width": 497,
+      "height": 716
+    }
+  ],
+  "nbme27_page-59": [
+    {
+      "category": "clinical_images",
+      "height": 505,
+      "label": "resected kidney gross specimen",
+      "source_page": 60,
+      "url": "/api/images_crop/nbme27_page-59.webp",
+      "width": 275
+    }
+  ],
+  "nbme27_page-6": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 6,
+      "source_question_number": 7,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//912403ae-baf4-4992-b15c-99044025f32d/markdown_1/imgs/img_in_image_box_2025_171_2833_821.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A40Z%2F-1%2F%2F11471ed088568b88179481160703db0e52fab5e43b8af4044914e64648bc7447",
+      "url": "/api/images_crop/nbme27_page-6_ocr.webp",
+      "width": 808,
+      "height": 650
+    }
+  ],
+  "nbme27_page-69": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 70,
+      "source_question_number": 21,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//323a447d-434c-441a-a1d3-6fdd7b881076/markdown_1/imgs/img_in_image_box_966_170_1932_887.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A41Z%2F-1%2F%2Fbac91180f9223df6dd23b34235c8af3a709cef73748ca92194893582079f3666",
+      "url": "/api/images_crop/nbme27_page-69_ocr.webp",
+      "width": 966,
+      "height": 717
     }
   ],
   "nbme27_page-70": [
@@ -2033,6 +2921,1316 @@
       "width": 968,
       "height": 718,
       "category": "image"
+    }
+  ],
+  "nbme27_page-71": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 72,
+      "source_question_number": 23,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//323a447d-434c-441a-a1d3-6fdd7b881076/markdown_2/imgs/img_in_image_box_2022_170_2834_727.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A42Z%2F-1%2F%2F742226a52b03e347bd570fe3b1d55154fc232b6ef157b9421423c2334d0dabbd",
+      "url": "/api/images_crop/nbme27_page-71_ocr.webp",
+      "width": 812,
+      "height": 557
+    }
+  ],
+  "nbme27_page-72": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 73,
+      "source_question_number": 24,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//323a447d-434c-441a-a1d3-6fdd7b881076/markdown_3/imgs/img_in_image_box_2166_168_2835_980.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A43Z%2F-1%2F%2Fb007b761cf9f316cb63c2a69831eee50012282fcc2897111e00087b2d33f0f5f",
+      "url": "/api/images_crop/nbme27_page-72_ocr.webp",
+      "width": 669,
+      "height": 812
+    }
+  ],
+  "nbme27_page-73": [
+    {
+      "category": "clinical_images",
+      "height": 465,
+      "label": "cerebral angiogram",
+      "source_page": 74,
+      "url": "/api/images_crop/nbme27_page-73.webp",
+      "width": 385
+    }
+  ],
+  "nbme27_page-75": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 76,
+      "source_question_number": 27,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9341a47b-d07f-4f79-9a0a-34aab9b9758f/markdown_2/imgs/img_in_image_box_951_161_1954_758.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A42Z%2F-1%2F%2Ff21f1d5db446efe75ca728be1b79d84b8cae4bef9490b37f276a5db1730f58ce",
+      "url": "/api/images_crop/nbme27_page-75_ocr.webp",
+      "width": 1003,
+      "height": 597
+    }
+  ],
+  "nbme27_page-76": [
+    {
+      "url": "/api/images_crop/nbme27_page-76.webp",
+      "width": 1011,
+      "height": 589,
+      "category": "image"
+    }
+  ],
+  "nbme27_page-77": [
+    {
+      "category": "charts_tables",
+      "height": 225,
+      "label": "blood flow percentage table",
+      "source_page": 78,
+      "url": "/api/images_crop/nbme27_page-77.webp",
+      "width": 510
+    }
+  ],
+  "nbme27_page-78": [
+    {
+      "category": "charts_tables",
+      "height": 125,
+      "label": "exercise stress test table",
+      "source_page": 79,
+      "url": "/api/images_crop/nbme27_page-78.webp",
+      "width": 630
+    }
+  ],
+  "nbme27_page-80": [
+    {
+      "category": "charts_tables",
+      "height": 115,
+      "label": "LH/DHEA/testosterone labs",
+      "source_page": 81,
+      "url": "/api/images_crop/nbme27_page-80.webp",
+      "width": 630
+    }
+  ],
+  "nbme27_page-81": [
+    {
+      "category": "charts_tables",
+      "height": 280,
+      "label": "CBC/differential table",
+      "source_page": 82,
+      "url": "/api/images_crop/nbme27_page-81.webp",
+      "width": 720
+    }
+  ],
+  "nbme27_page-84": [
+    {
+      "category": "charts_tables",
+      "height": 165,
+      "label": "pancreatic enzyme activity table",
+      "source_page": 85,
+      "url": "/api/images_crop/nbme27_page-84.webp",
+      "width": 490
+    }
+  ],
+  "nbme27_page-87": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 88,
+      "source_question_number": 39,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c4103aef-811c-415e-a701-57908c3e2eb4/markdown_3/imgs/img_in_image_box_2166_147_2855_966.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A44Z%2F-1%2F%2Fc2ef796316cc9b84fefd34e0706da864dd3819a597a6dbd5afd7bd0cc277ab34",
+      "url": "/api/images_crop/nbme27_page-87_ocr.webp",
+      "width": 689,
+      "height": 819
+    }
+  ],
+  "nbme27_page-9": [
+    {
+      "category": "charts_tables",
+      "height": 245,
+      "label": "erythrocyte color/size/shape table",
+      "source_page": 10,
+      "url": "/api/images_crop/nbme27_page-9.webp",
+      "width": 590
+    }
+  ],
+  "nbme27_page-91": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 92,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a6dc8007-2c86-4457-85c3-b5bb1c1cdfd5/markdown_2/imgs/img_in_image_box_2116_188_2819_692.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A43Z%2F-1%2F%2F61e5c34a6dd906bbb3c9895404a95fd1c697b64d85a938f5ea0dc895b4b5fd2c",
+      "url": "/api/images_crop/nbme27_page-91_ocr.webp",
+      "width": 703,
+      "height": 504
+    }
+  ],
+  "nbme27_page-92": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 93,
+      "source_question_number": 44,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a6dc8007-2c86-4457-85c3-b5bb1c1cdfd5/markdown_3/imgs/img_in_image_box_1084_290_1824_816.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A44Z%2F-1%2F%2F3fbefb8e23a7d69df22353ac1f34c2252f134e31dce099f855cd52ec8987db17",
+      "url": "/api/images_crop/nbme27_page-92_ocr.webp",
+      "width": 740,
+      "height": 526
+    }
+  ],
+  "nbme27_page-94": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 95,
+      "source_question_number": 46,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//00d7b91f-23a3-4648-bea2-3bb8c5f7c6ed/markdown_0/imgs/img_in_image_box_2131_169_2834_1171.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A43Z%2F-1%2F%2F25e34cdfb24a9ac8db61a823cde396d00495a3860b18a5752815f2a4547f8bbe",
+      "url": "/api/images_crop/nbme27_page-94_ocr.webp",
+      "width": 703,
+      "height": 1002
+    }
+  ],
+  "nbme27_page-95": [
+    {
+      "category": "clinical_images",
+      "height": 465,
+      "label": "peripheral blood smear",
+      "source_page": 96,
+      "url": "/api/images_crop/nbme27_page-95.webp",
+      "width": 380
+    },
+    {
+      "category": "charts_tables",
+      "height": 160,
+      "label": "blood smear/CBC table",
+      "source_page": 96,
+      "url": "/api/images_crop/nbme27_page-95_2.webp",
+      "width": 630
+    }
+  ],
+  "nbme27_page-99": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 99,
+      "source_question_number": 1,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9a204480-8f67-465b-a781-e2922d8e1a43/markdown_0/imgs/img_in_image_box_2280_168_2834_983.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A41Z%2F-1%2F%2F7662ba455e6a3c80d3d8a2cc0c6c201a96c572eb5e5b19e85407e30ee7399ec7",
+      "url": "/api/images_crop/nbme27_page-99_ocr.webp",
+      "width": 554,
+      "height": 815
+    }
+  ],
+  "nbme28_q0002": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 196,
+      "source_question_number": 2,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//0f8d155c-d33e-4236-be86-5350b2f0cf5e/markdown_2/imgs/img_in_image_box_1981_172_2586_733.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A11Z%2F-1%2F%2F79cf0eaa6ecaa753872bb0b0e921e7ba60054c68cc65747f1e34610b6f0e2490",
+      "url": "/api/images_crop/nbme28_q0002_ocr.webp",
+      "width": 605,
+      "height": 561
+    }
+  ],
+  "nbme28_q0014": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 202,
+      "source_question_number": 14,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//81a932c2-2430-4689-b0c0-5e7860eb2c3f/markdown_0/imgs/img_in_image_box_1429_170_2431_840.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A52Z%2F-1%2F%2F2901eccdc6623ecaf00de025204c571f7f0ac9209ed9ae3b827e3d21b49742cd",
+      "url": "/api/images_crop/nbme28_q0014_ocr.webp",
+      "width": 1002,
+      "height": 670
+    }
+  ],
+  "nbme28_q0026": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 211,
+      "source_question_number": 26,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//800c98ce-c303-46e5-98f7-e1effe8f98e9/markdown_1/imgs/img_in_image_box_74_991_195_1272.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A18Z%2F-1%2F%2Fb9fe1ec5b7758ba64afaaec9baa454a701356addeb8b417742924edd94bc7c33",
+      "url": "/api/images_crop/nbme28_q0026_ocr01.webp",
+      "width": 121,
+      "height": 281
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 211,
+      "source_question_number": 26,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//800c98ce-c303-46e5-98f7-e1effe8f98e9/markdown_1/imgs/img_in_image_box_1530_264_2343_952.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A18Z%2F-1%2F%2F59480fa315bd42da03888555ef9cc8b75bbd3764feddd1e10bc3cb246c5371b1",
+      "url": "/api/images_crop/nbme28_q0026_ocr02.webp",
+      "width": 813,
+      "height": 688
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_3",
+      "source_chunk_index": 211,
+      "source_question_number": 26,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//800c98ce-c303-46e5-98f7-e1effe8f98e9/markdown_2/imgs/img_in_image_box_1177_212_2687_1020.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A20Z%2F-1%2F%2F8867591554ebb5e820367778c8456b11c23fc7cff23e5f1d44737b997895b1fa",
+      "url": "/api/images_crop/nbme28_q0026_ocr03.webp",
+      "width": 1510,
+      "height": 808
+    }
+  ],
+  "nbme28_q0027": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 212,
+      "source_question_number": 27,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//800c98ce-c303-46e5-98f7-e1effe8f98e9/markdown_3/imgs/img_in_image_box_1441_226_2423_799.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A21Z%2F-1%2F%2F64ca66d2e986d8ef4d6a93cfbdc96d26a175800f0b5a4d7a692f96cbe8df496e",
+      "url": "/api/images_crop/nbme28_q0027_ocr.webp",
+      "width": 982,
+      "height": 573
+    }
+  ],
+  "nbme28_q0033": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 218,
+      "source_question_number": 33,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//4391843e-475f-4659-ad46-0c998f895496/markdown_3/imgs/img_in_image_box_71_1004_196_1286.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A44Z%2F-1%2F%2Fed6c1eadb3ca92f39e8404cf57c1764650983cbe48adfb88521a711be6a6be18",
+      "url": "/api/images_crop/nbme28_q0033_ocr01.webp",
+      "width": 125,
+      "height": 282
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 218,
+      "source_question_number": 33,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//4391843e-475f-4659-ad46-0c998f895496/markdown_3/imgs/img_in_image_box_1429_256_2449_992.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A44Z%2F-1%2F%2F4c289c10717b7dd642b92a3d29f31844646f22dd29487ba71f2b877f1daf915f",
+      "url": "/api/images_crop/nbme28_q0033_ocr02.webp",
+      "width": 1020,
+      "height": 736
+    }
+  ],
+  "nbme28_q0041": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 220,
+      "source_question_number": 41,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//10ab2f41-f384-487b-ad7a-671ebe93b92b/markdown_1/imgs/img_in_image_box_1585_173_2398_705.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A42Z%2F-1%2F%2F8d4c748f4140d77fa4fe7c0fc87669d59119278d39d0feb4931df57c38d441ef",
+      "url": "/api/images_crop/nbme28_q0041_ocr.webp",
+      "width": 813,
+      "height": 532
+    }
+  ],
+  "nbme28_q0046": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 224,
+      "source_question_number": 46,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d44a257e-6ca5-42ad-9da6-4f145f363e9d/markdown_1/imgs/img_in_image_box_2982_170_3794_975.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A38Z%2F-1%2F%2F2760fd0e67c1090e34182dcff1d549f5a4665a0548aa40c0781668f8f0d506ee",
+      "url": "/api/images_crop/nbme28_q0046_ocr.webp",
+      "width": 812,
+      "height": 805
+    }
+  ],
+  "nbme28_q0056": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 229,
+      "source_question_number": 6,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//00982ebf-5a06-4b8a-aa81-ada077b45287/markdown_1/imgs/img_in_image_box_1549_298_2290_908.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A19Z%2F-1%2F%2F0297d253bcad739aec7dc0941d9cdd56296b84466eb45799b99c9237728f2f7f",
+      "url": "/api/images_crop/nbme28_q0056_ocr.webp",
+      "width": 741,
+      "height": 610
+    }
+  ],
+  "nbme28_q0064": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 234,
+      "source_question_number": 14,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f30efc7e-f315-4b8c-bd13-23e7bb70517f/markdown_4/imgs/img_in_image_box_3253_168_3795_973.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A45Z%2F-1%2F%2F8c60b08ed70889aa5a29a9a93820dc7b5963ec643f07d4f959e23a2b5e5eb9e3",
+      "url": "/api/images_crop/nbme28_q0064_ocr.webp",
+      "width": 542,
+      "height": 805
+    }
+  ],
+  "nbme28_q0067": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 236,
+      "source_question_number": 17,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//44d27b2c-0060-4630-ae47-6b76ea9b44c0/markdown_4/imgs/img_in_image_box_1563_157_2407_1114.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A45Z%2F-1%2F%2Fd1c5c106b07003ffc585d11e72167c9626f3b5416d9adbe24c432fb976a5169c",
+      "url": "/api/images_crop/nbme28_q0067_ocr.webp",
+      "width": 844,
+      "height": 957
+    }
+  ],
+  "nbme28_q0079": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 243,
+      "source_question_number": 29,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9fc69f82-df19-4d8a-925c-1af29b7558f4/markdown_4/imgs/img_in_image_box_3171_169_3795_692.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A23Z%2F-1%2F%2F5dc419fa75b9cad70b3a341a3baed7d27a1c5548d42e36ca052baf70d517560f",
+      "url": "/api/images_crop/nbme28_q0079_ocr.webp",
+      "width": 624,
+      "height": 523
+    }
+  ],
+  "nbme28_q0080": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 243,
+      "source_question_number": 29,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9fc69f82-df19-4d8a-925c-1af29b7558f4/markdown_4/imgs/img_in_image_box_3171_169_3795_692.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A23Z%2F-1%2F%2F5dc419fa75b9cad70b3a341a3baed7d27a1c5548d42e36ca052baf70d517560f",
+      "url": "/api/images_crop/nbme28_q0080_ocr.webp",
+      "width": 624,
+      "height": 523
+    }
+  ],
+  "nbme28_q0081": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 243,
+      "source_question_number": 29,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9fc69f82-df19-4d8a-925c-1af29b7558f4/markdown_4/imgs/img_in_image_box_3171_169_3795_692.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A23Z%2F-1%2F%2F5dc419fa75b9cad70b3a341a3baed7d27a1c5548d42e36ca052baf70d517560f",
+      "url": "/api/images_crop/nbme28_q0081_ocr.webp",
+      "width": 624,
+      "height": 523
+    }
+  ],
+  "nbme28_q0082": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 243,
+      "source_question_number": 29,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9fc69f82-df19-4d8a-925c-1af29b7558f4/markdown_4/imgs/img_in_image_box_3171_169_3795_692.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A23Z%2F-1%2F%2F5dc419fa75b9cad70b3a341a3baed7d27a1c5548d42e36ca052baf70d517560f",
+      "url": "/api/images_crop/nbme28_q0082_ocr.webp",
+      "width": 624,
+      "height": 523
+    }
+  ],
+  "nbme28_q0086": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 245,
+      "source_question_number": 36,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//16a292a0-1b18-4e18-80ca-5cec32864fa0/markdown_1/imgs/img_in_image_box_1685_248_2165_869.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A38Z%2F-1%2F%2Fcad384d4e869f1fd15b46d7a0bce7db9cf85330a1d21f28133cfad73615fcede",
+      "url": "/api/images_crop/nbme28_q0086_ocr.webp",
+      "width": 480,
+      "height": 621
+    }
+  ],
+  "nbme28_q0088": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 247,
+      "source_question_number": 38,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//16a292a0-1b18-4e18-80ca-5cec32864fa0/markdown_3/imgs/img_in_image_box_2982_167_3790_717.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A42Z%2F-1%2F%2Fbd0c89074d7a7ed09b664352c218519601e094f1524f3a258a3d90a7f290625a",
+      "url": "/api/images_crop/nbme28_q0088_ocr.webp",
+      "width": 808,
+      "height": 550
+    }
+  ],
+  "nbme28_q0089": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 247,
+      "source_question_number": 38,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//16a292a0-1b18-4e18-80ca-5cec32864fa0/markdown_3/imgs/img_in_image_box_2982_167_3790_717.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A42Z%2F-1%2F%2Fbd0c89074d7a7ed09b664352c218519601e094f1524f3a258a3d90a7f290625a",
+      "url": "/api/images_crop/nbme28_q0089_ocr.webp",
+      "width": 808,
+      "height": 550
+    }
+  ],
+  "nbme28_q0090": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 247,
+      "source_question_number": 38,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//16a292a0-1b18-4e18-80ca-5cec32864fa0/markdown_3/imgs/img_in_image_box_2982_167_3790_717.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A42Z%2F-1%2F%2Fbd0c89074d7a7ed09b664352c218519601e094f1524f3a258a3d90a7f290625a",
+      "url": "/api/images_crop/nbme28_q0090_ocr.webp",
+      "width": 808,
+      "height": 550
+    }
+  ],
+  "nbme28_q0091": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 247,
+      "source_question_number": 38,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//16a292a0-1b18-4e18-80ca-5cec32864fa0/markdown_3/imgs/img_in_image_box_2982_167_3790_717.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A42Z%2F-1%2F%2Fbd0c89074d7a7ed09b664352c218519601e094f1524f3a258a3d90a7f290625a",
+      "url": "/api/images_crop/nbme28_q0091_ocr.webp",
+      "width": 808,
+      "height": 550
+    }
+  ],
+  "nbme28_q0092": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 247,
+      "source_question_number": 38,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//16a292a0-1b18-4e18-80ca-5cec32864fa0/markdown_3/imgs/img_in_image_box_2982_167_3790_717.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A42Z%2F-1%2F%2Fbd0c89074d7a7ed09b664352c218519601e094f1524f3a258a3d90a7f290625a",
+      "url": "/api/images_crop/nbme28_q0092_ocr.webp",
+      "width": 808,
+      "height": 550
+    }
+  ],
+  "nbme28_q0093": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 247,
+      "source_question_number": 38,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//16a292a0-1b18-4e18-80ca-5cec32864fa0/markdown_3/imgs/img_in_image_box_2982_167_3790_717.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A42Z%2F-1%2F%2Fbd0c89074d7a7ed09b664352c218519601e094f1524f3a258a3d90a7f290625a",
+      "url": "/api/images_crop/nbme28_q0093_ocr.webp",
+      "width": 808,
+      "height": 550
+    }
+  ],
+  "nbme28_q0095": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 249,
+      "source_question_number": 45,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//0a992822-a86e-4abe-92af-2f44025c348c/markdown_0/imgs/img_in_image_box_2982_169_3793_897.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A52Z%2F-1%2F%2F56892af905abd2ee0af8a4a963b2e4437b37cb3fe53b4b4acd5fbe434045e4a0",
+      "url": "/api/images_crop/nbme28_q0095_ocr.webp",
+      "width": 811,
+      "height": 728
+    }
+  ],
+  "nbme28_q0096": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 250,
+      "source_question_number": 46,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//0a992822-a86e-4abe-92af-2f44025c348c/markdown_1/imgs/img_in_image_box_3137_170_3795_1169.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A53Z%2F-1%2F%2F1ca5f49cdffa03288041117f9857b294145c3bafdd28756b95d1b6c91d6d8a6c",
+      "url": "/api/images_crop/nbme28_q0096_ocr.webp",
+      "width": 658,
+      "height": 999
+    }
+  ],
+  "nbme28_q0097": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 250,
+      "source_question_number": 46,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//0a992822-a86e-4abe-92af-2f44025c348c/markdown_1/imgs/img_in_image_box_3137_170_3795_1169.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A53Z%2F-1%2F%2F1ca5f49cdffa03288041117f9857b294145c3bafdd28756b95d1b6c91d6d8a6c",
+      "url": "/api/images_crop/nbme28_q0097_ocr.webp",
+      "width": 658,
+      "height": 999
+    }
+  ],
+  "nbme28_q0106": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 255,
+      "source_question_number": 6,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d444c0f4-4166-40b0-8208-7a79586c1423/markdown_1/imgs/img_in_image_box_3255_166_3799_977.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A59Z%2F-1%2F%2Fd6f75f987df6053d6db53d21d220956679b1ec196428fadb761579bf9fa6f825",
+      "url": "/api/images_crop/nbme28_q0106_ocr01.webp",
+      "width": 544,
+      "height": 811
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 255,
+      "source_question_number": 6,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d444c0f4-4166-40b0-8208-7a79586c1423/markdown_3/imgs/img_in_image_box_1403_170_2457_938.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A01Z%2F-1%2F%2F1d7bee3301cb17f0eb95949678b219eb3dae3e4ddf02de7d50c99c9090bf523a",
+      "url": "/api/images_crop/nbme28_q0106_ocr02.webp",
+      "width": 1054,
+      "height": 768
+    }
+  ],
+  "nbme28_q0113": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 257,
+      "source_question_number": 13,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f636a87d-1e8f-4e7f-bfa9-7af4d68c58dc/markdown_3/imgs/img_in_image_box_2768_172_3509_823.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A47Z%2F-1%2F%2Fbc7282687f1f60388bbee6f20114d9b7693999503c698f0b696eb157a2ef206b",
+      "url": "/api/images_crop/nbme28_q0113_ocr.webp",
+      "width": 741,
+      "height": 651
+    }
+  ],
+  "nbme28_q0114": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 257,
+      "source_question_number": 13,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f636a87d-1e8f-4e7f-bfa9-7af4d68c58dc/markdown_3/imgs/img_in_image_box_2768_172_3509_823.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A47Z%2F-1%2F%2Fbc7282687f1f60388bbee6f20114d9b7693999503c698f0b696eb157a2ef206b",
+      "url": "/api/images_crop/nbme28_q0114_ocr.webp",
+      "width": 741,
+      "height": 651
+    }
+  ],
+  "nbme28_q0117": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 260,
+      "source_question_number": 17,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f937acba-5309-40d2-ac32-33ae5a367c41/markdown_2/imgs/img_in_image_box_1450_170_2414_888.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A52Z%2F-1%2F%2F50d81fa255156d8eb2ab239ee0a3238adcc3877a79fffb8c3dc5f506fbf88111",
+      "url": "/api/images_crop/nbme28_q0117_ocr.webp",
+      "width": 964,
+      "height": 718
+    }
+  ],
+  "nbme28_q0118": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 260,
+      "source_question_number": 17,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f937acba-5309-40d2-ac32-33ae5a367c41/markdown_2/imgs/img_in_image_box_1450_170_2414_888.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A52Z%2F-1%2F%2F50d81fa255156d8eb2ab239ee0a3238adcc3877a79fffb8c3dc5f506fbf88111",
+      "url": "/api/images_crop/nbme28_q0118_ocr.webp",
+      "width": 964,
+      "height": 718
+    }
+  ],
+  "nbme28_q0119": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 260,
+      "source_question_number": 17,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f937acba-5309-40d2-ac32-33ae5a367c41/markdown_2/imgs/img_in_image_box_1450_170_2414_888.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A52Z%2F-1%2F%2F50d81fa255156d8eb2ab239ee0a3238adcc3877a79fffb8c3dc5f506fbf88111",
+      "url": "/api/images_crop/nbme28_q0119_ocr.webp",
+      "width": 964,
+      "height": 718
+    }
+  ],
+  "nbme28_q0120": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 260,
+      "source_question_number": 17,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f937acba-5309-40d2-ac32-33ae5a367c41/markdown_2/imgs/img_in_image_box_1450_170_2414_888.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A52Z%2F-1%2F%2F50d81fa255156d8eb2ab239ee0a3238adcc3877a79fffb8c3dc5f506fbf88111",
+      "url": "/api/images_crop/nbme28_q0120_ocr.webp",
+      "width": 964,
+      "height": 718
+    }
+  ],
+  "nbme28_q0121": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 260,
+      "source_question_number": 17,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f937acba-5309-40d2-ac32-33ae5a367c41/markdown_2/imgs/img_in_image_box_1450_170_2414_888.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A52Z%2F-1%2F%2F50d81fa255156d8eb2ab239ee0a3238adcc3877a79fffb8c3dc5f506fbf88111",
+      "url": "/api/images_crop/nbme28_q0121_ocr.webp",
+      "width": 964,
+      "height": 718
+    }
+  ],
+  "nbme28_q0132": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 267,
+      "source_question_number": 32,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//95e7d5c8-4482-4762-be5c-21242e9280de/markdown_2/imgs/img_in_image_box_1487_274_2378_843.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A42Z%2F-1%2F%2F9f1f2f1c2ac16bba901d3ac8c32dc8103b58fa90edc2664a0f81e09a7fd43e88",
+      "url": "/api/images_crop/nbme28_q0132_ocr.webp",
+      "width": 891,
+      "height": 569
+    }
+  ],
+  "nbme28_q0133": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 268,
+      "source_question_number": 33,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//95e7d5c8-4482-4762-be5c-21242e9280de/markdown_3/imgs/img_in_image_box_3279_168_3794_855.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A44Z%2F-1%2F%2Fbc7f49f78cd63e96524c95ce83c49c6095a69d15b568c964f237a926ffe12ee5",
+      "url": "/api/images_crop/nbme28_q0133_ocr.webp",
+      "width": 515,
+      "height": 687
+    }
+  ],
+  "nbme28_q0142": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 271,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fce50b17-49f3-4988-b622-25075ee9d146/markdown_4/imgs/img_in_image_box_2557_170_3373_716.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A54Z%2F-1%2F%2F56ad95fb5a67c5bac075db4e2650ebc98c417d1e4675f4710043f67d586f7d4b",
+      "url": "/api/images_crop/nbme28_q0142_ocr.webp",
+      "width": 816,
+      "height": 546
+    }
+  ],
+  "nbme28_q0144": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 271,
+      "source_question_number": 43,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fce50b17-49f3-4988-b622-25075ee9d146/markdown_4/imgs/img_in_image_box_2557_170_3373_716.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A54Z%2F-1%2F%2F56ad95fb5a67c5bac075db4e2650ebc98c417d1e4675f4710043f67d586f7d4b",
+      "url": "/api/images_crop/nbme28_q0144_ocr.webp",
+      "width": 816,
+      "height": 546
+    }
+  ],
+  "nbme28_q0145": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 272,
+      "source_question_number": 46,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//aa34b591-f298-4917-98fe-2cd99754a418/markdown_4/imgs/img_in_image_box_3258_161_3798_673.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A24Z%2F-1%2F%2Fe2d7c7a2eb32128e1ef522e3432e725bb0d8fe4e9e653e52f1e2c29055ba0600",
+      "url": "/api/images_crop/nbme28_q0145_ocr.webp",
+      "width": 540,
+      "height": 512
+    }
+  ],
+  "nbme28_q0146": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 272,
+      "source_question_number": 46,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//aa34b591-f298-4917-98fe-2cd99754a418/markdown_4/imgs/img_in_image_box_3258_161_3798_673.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A24Z%2F-1%2F%2Fe2d7c7a2eb32128e1ef522e3432e725bb0d8fe4e9e653e52f1e2c29055ba0600",
+      "url": "/api/images_crop/nbme28_q0146_ocr.webp",
+      "width": 540,
+      "height": 512
+    }
+  ],
+  "nbme28_q0147": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 272,
+      "source_question_number": 46,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//aa34b591-f298-4917-98fe-2cd99754a418/markdown_4/imgs/img_in_image_box_3258_161_3798_673.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A24Z%2F-1%2F%2Fe2d7c7a2eb32128e1ef522e3432e725bb0d8fe4e9e653e52f1e2c29055ba0600",
+      "url": "/api/images_crop/nbme28_q0147_ocr.webp",
+      "width": 540,
+      "height": 512
+    }
+  ],
+  "nbme28_q0148": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 272,
+      "source_question_number": 46,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//aa34b591-f298-4917-98fe-2cd99754a418/markdown_4/imgs/img_in_image_box_3258_161_3798_673.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A24Z%2F-1%2F%2Fe2d7c7a2eb32128e1ef522e3432e725bb0d8fe4e9e653e52f1e2c29055ba0600",
+      "url": "/api/images_crop/nbme28_q0148_ocr.webp",
+      "width": 540,
+      "height": 512
+    }
+  ],
+  "nbme28_q0149": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 272,
+      "source_question_number": 46,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//aa34b591-f298-4917-98fe-2cd99754a418/markdown_4/imgs/img_in_image_box_3258_161_3798_673.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A24Z%2F-1%2F%2Fe2d7c7a2eb32128e1ef522e3432e725bb0d8fe4e9e653e52f1e2c29055ba0600",
+      "url": "/api/images_crop/nbme28_q0149_ocr.webp",
+      "width": 540,
+      "height": 512
+    }
+  ],
+  "nbme28_q0155": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 277,
+      "source_question_number": 6,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//1a282d99-d57e-4b01-93e9-82497ca0c388/markdown_2/imgs/img_in_image_box_1170_171_1945_715.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A52Z%2F-1%2F%2F96f6f3c5eb9eda17f97f21066dfdfb526cb47ef132fb64f002010def8a1eab1d",
+      "url": "/api/images_crop/nbme28_q0155_ocr01.webp",
+      "width": 775,
+      "height": 544
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 277,
+      "source_question_number": 6,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//1a282d99-d57e-4b01-93e9-82497ca0c388/markdown_2/imgs/img_in_image_box_1972_172_2693_713.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A52Z%2F-1%2F%2F78269330f633ac14c95c155fc1f44f76f030e914ccffdc7398a2ac5ef61bedba",
+      "url": "/api/images_crop/nbme28_q0155_ocr02.webp",
+      "width": 721,
+      "height": 541
+    }
+  ],
+  "nbme28_q0160": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 280,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8e3cfda0-5893-49f4-9903-eedd4964a80e/markdown_0/imgs/img_in_image_box_3182_168_3801_861.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A58Z%2F-1%2F%2F34e2a29aa4cee595394ec27cce11a98421ce32d6634f483cd3cb3fddffb02668",
+      "url": "/api/images_crop/nbme28_q0160_ocr.webp",
+      "width": 619,
+      "height": 693
+    }
+  ],
+  "nbme28_q0161": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 280,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8e3cfda0-5893-49f4-9903-eedd4964a80e/markdown_0/imgs/img_in_image_box_3182_168_3801_861.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A58Z%2F-1%2F%2F34e2a29aa4cee595394ec27cce11a98421ce32d6634f483cd3cb3fddffb02668",
+      "url": "/api/images_crop/nbme28_q0161_ocr.webp",
+      "width": 619,
+      "height": 693
+    }
+  ],
+  "nbme28_q0162": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 280,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8e3cfda0-5893-49f4-9903-eedd4964a80e/markdown_0/imgs/img_in_image_box_3182_168_3801_861.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A58Z%2F-1%2F%2F34e2a29aa4cee595394ec27cce11a98421ce32d6634f483cd3cb3fddffb02668",
+      "url": "/api/images_crop/nbme28_q0162_ocr.webp",
+      "width": 619,
+      "height": 693
+    }
+  ],
+  "nbme28_q0174": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 285,
+      "source_question_number": 25,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//10bbea08-ebf5-4a5b-93cf-bceb1c6f5057/markdown_0/imgs/img_in_image_box_2978_162_3796_742.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A49Z%2F-1%2F%2F51ad1a0b04567d1316656b9214b9b6abd20352749cef8c2b085046d1ef360c74",
+      "url": "/api/images_crop/nbme28_q0174_ocr.webp",
+      "width": 818,
+      "height": 580
+    }
+  ],
+  "nbme28_q0181": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 288,
+      "source_question_number": 32,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//35466f19-3a8c-4dbd-8f67-3b048a127700/markdown_2/imgs/img_in_image_box_2291_209_2725_708.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A26Z%2F-1%2F%2F45764ef1eb25956c1cb3f2f87b625158d27f3556fc605681a8b677665aa127b1",
+      "url": "/api/images_crop/nbme28_q0181_ocr.webp",
+      "width": 434,
+      "height": 499
+    }
+  ],
+  "nbme28_q0182": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 289,
+      "source_question_number": 33,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//4999d5d4-3d61-4470-a57f-fb34f947f9db/markdown_0/imgs/img_in_image_box_1448_168_2413_887.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A23Z%2F-1%2F%2Fc4a7866e0f228c60fd4328b79ed91b9e0a36e7317e2619c3e56cbde37e65712d",
+      "url": "/api/images_crop/nbme28_q0182_ocr.webp",
+      "width": 965,
+      "height": 719
+    }
+  ],
+  "nbme28_q0191": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 292,
+      "source_question_number": 42,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//4999d5d4-3d61-4470-a57f-fb34f947f9db/markdown_2/imgs/img_in_image_box_2976_170_3794_849.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A26Z%2F-1%2F%2Fbb72a8021288a9e10c190d04a9c7474907372a8ed983235677abf7247d1d86bf",
+      "url": "/api/images_crop/nbme28_q0191_ocr.webp",
+      "width": 818,
+      "height": 679
+    }
+  ],
+  "nbme28_q0196": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 297,
+      "source_question_number": 47,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//97ff2d63-70be-4d0d-bc87-17c323bf3a4b/markdown_2/imgs/img_in_image_box_3167_171_3792_790.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2F3e6bcb6981601512f507ae60791fc2710612772c2e59528f0236c51019ed6fb2",
+      "url": "/api/images_crop/nbme28_q0196_ocr.webp",
+      "width": 625,
+      "height": 619
+    }
+  ],
+  "nbme28_q0197": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 298,
+      "source_question_number": 48,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//97ff2d63-70be-4d0d-bc87-17c323bf3a4b/markdown_3/imgs/img_in_image_box_3271_165_3795_926.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A06Z%2F-1%2F%2F0658de8141b50710421967f03ddaa390bd1514cca68de30a71ed4f5efe24fe1c",
+      "url": "/api/images_crop/nbme28_q0197_ocr.webp",
+      "width": 524,
+      "height": 761
+    }
+  ],
+  "nbme28_q0198": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 299,
+      "source_question_number": 49,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//97ff2d63-70be-4d0d-bc87-17c323bf3a4b/markdown_4/imgs/img_in_image_box_3098_171_3795_979.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A07Z%2F-1%2F%2F6c61b836aac1daf69353697b71b2c6ccb1ae8e676668321a2d490eade8c61a11",
+      "url": "/api/images_crop/nbme28_q0198_ocr.webp",
+      "width": 697,
+      "height": 808
+    }
+  ],
+  "nbme29_q0006": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 306,
+      "source_question_number": 6,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//4873564c-3531-4ede-9116-c36358b0670f/markdown_2/imgs/img_in_image_box_398_94_735_519.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A27Z%2F-1%2F%2F6a68dce75bd33c7d23c398ca246f88e6ff864600b6b3e0de53834bf92232e38a",
+      "url": "/api/images_crop/nbme29_q0006_ocr01.webp",
+      "width": 337,
+      "height": 425
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 306,
+      "source_question_number": 6,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//4873564c-3531-4ede-9116-c36358b0670f/markdown_2/imgs/img_in_image_box_751_182_1199_519.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A27Z%2F-1%2F%2Fe707998d59b2b148453eb6026328d36e527c128c41dd9ac6c293aece6bd962e9",
+      "url": "/api/images_crop/nbme29_q0006_ocr02.webp",
+      "width": 448,
+      "height": 337
+    }
+  ],
+  "nbme29_q0008": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 308,
+      "source_question_number": 8,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//4873564c-3531-4ede-9116-c36358b0670f/markdown_4/imgs/img_in_image_box_534_93_1062_490.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A28Z%2F-1%2F%2Fd396d24c17ab8dc3b6318dce9cdc7e3640aa482aa5bc1d9378c6b14e06595aa0",
+      "url": "/api/images_crop/nbme29_q0008_ocr.webp",
+      "width": 528,
+      "height": 397
+    }
+  ],
+  "nbme29_q0015": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 315,
+      "source_question_number": 15,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3d447bcf-c751-4f94-975e-768b89d31f9f/markdown_0/imgs/img_in_image_box_1014_90_1300_521.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A02Z%2F-1%2F%2F35dc9cabcc1aa23173659e9b1ecc05d36521e3a64bdb052cb2079f6ae57991a3",
+      "url": "/api/images_crop/nbme29_q0015_ocr.webp",
+      "width": 286,
+      "height": 431
+    }
+  ],
+  "nbme29_q0018": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 318,
+      "source_question_number": 18,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3d447bcf-c751-4f94-975e-768b89d31f9f/markdown_4/imgs/img_in_image_box_530_95_1068_396.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2F879dbcda5cf92947b6bc4481fa14493f9ece705fb365cde2f49fd7c70c9d4340",
+      "url": "/api/images_crop/nbme29_q0018_ocr01.webp",
+      "width": 538,
+      "height": 301
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 318,
+      "source_question_number": 18,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3d447bcf-c751-4f94-975e-768b89d31f9f/markdown_4/imgs/img_in_image_box_526_418_1069_728.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2F2c31a40342ad5728152eb868f0dbf2a1b80d246107aa1bd7165ecbef5c1f0bbb",
+      "url": "/api/images_crop/nbme29_q0018_ocr02.webp",
+      "width": 543,
+      "height": 310
+    }
+  ],
+  "nbme29_q0024": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 324,
+      "source_question_number": 24,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7641c49-5a34-40d2-be92-b04d8e8a33b1/markdown_4/imgs/img_in_image_box_1250_89_1562_548.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A50Z%2F-1%2F%2F7037842abb8ddf6d1ac3538fad4a284bc09e4b99aea7ccd28f49d2a3fb7d1a72",
+      "url": "/api/images_crop/nbme29_q0024_ocr.webp",
+      "width": 312,
+      "height": 459
+    }
+  ],
+  "nbme29_q0027": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 327,
+      "source_question_number": 27,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e1980eec-5ce4-48b7-a95b-c722560659e9/markdown_2/imgs/img_in_image_box_1298_94_1561_367.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A55Z%2F-1%2F%2F3b565683b997affdc42ee6502eb879c0cb268e98adc2f05ec16d6f47ba64863d",
+      "url": "/api/images_crop/nbme29_q0027_ocr.webp",
+      "width": 263,
+      "height": 273
+    }
+  ],
+  "nbme29_q0036": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 335,
+      "source_question_number": 36,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//22651b7a-cc87-4a7a-90dd-a6fce24dd9c9/markdown_1/imgs/img_in_image_box_1179_92_1563_629.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A53Z%2F-1%2F%2F5b46bfa5bd0e02e32d475bfd769e4f0fe94e8f3e7a8955c3641153f98c5a6b42",
+      "url": "/api/images_crop/nbme29_q0036_ocr.webp",
+      "width": 384,
+      "height": 537
+    }
+  ],
+  "nbme29_q0048": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 347,
+      "source_question_number": 48,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//cf5d1d12-0345-4351-ac38-5cf898cb3674/markdown_3/imgs/img_in_image_box_1221_95_1400_382.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A25Z%2F-1%2F%2Fc48de132d107d43958bc9cc5cdc5b52c4e953042eda3a654fde65ca41ed54060",
+      "url": "/api/images_crop/nbme29_q0048_ocr.webp",
+      "width": 179,
+      "height": 287
+    }
+  ],
+  "nbme29_q0057": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 356,
+      "source_question_number": 7,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8e1e67fc-ff51-4ac7-b912-d0cb55919964/markdown_2/imgs/img_in_image_box_1258_91_1564_548.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A56Z%2F-1%2F%2F94b9d119ee60e31474126049623b7bbfc8229cefc6adf0f576f086b84efab2b8",
+      "url": "/api/images_crop/nbme29_q0057_ocr01.webp",
+      "width": 306,
+      "height": 457
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 356,
+      "source_question_number": 7,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8e1e67fc-ff51-4ac7-b912-d0cb55919964/markdown_3/imgs/img_in_image_box_522_94_1073_506.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A56Z%2F-1%2F%2F480f9594a8853b8f6f98a9f30e335dbac09b8d15bc56d94bb9d8cb54559b08fe",
+      "url": "/api/images_crop/nbme29_q0057_ocr02.webp",
+      "width": 551,
+      "height": 412
+    }
+  ],
+  "nbme29_q0060": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 359,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//41259b03-3c93-40aa-993c-369eee3b28b7/markdown_0/imgs/img_in_image_box_1112_93_1559_406.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A53Z%2F-1%2F%2F152110090ad487fab6b50310861510925a6bc825ce7472a211286e5346b4e8f3",
+      "url": "/api/images_crop/nbme29_q0060_ocr.webp",
+      "width": 447,
+      "height": 313
+    }
+  ],
+  "nbme29_q0061": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 360,
+      "source_question_number": 11,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//41259b03-3c93-40aa-993c-369eee3b28b7/markdown_1/imgs/img_in_image_box_640_176_964_604.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A53Z%2F-1%2F%2Fecada3d7fd90d04ae3b8436fc1e81addba9be28909f6aa2472991f8090904e93",
+      "url": "/api/images_crop/nbme29_q0061_ocr.webp",
+      "width": 324,
+      "height": 428
+    }
+  ],
+  "nbme29_q0062": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 361,
+      "source_question_number": 12,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//41259b03-3c93-40aa-993c-369eee3b28b7/markdown_2/imgs/img_in_image_box_1145_90_1562_462.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A54Z%2F-1%2F%2Ff8e6b94098318c700568a802ace1ae4efd94c7a41dc15ce8b7e22a1616e62aff",
+      "url": "/api/images_crop/nbme29_q0062_ocr.webp",
+      "width": 417,
+      "height": 372
+    }
+  ],
+  "nbme29_q0064": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 363,
+      "source_question_number": 14,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//41259b03-3c93-40aa-993c-369eee3b28b7/markdown_4/imgs/img_in_image_box_1285_95_1558_497.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A55Z%2F-1%2F%2Fd4790a59c44136c964314a055a1339cc964356fdb46fce6c9fdbe480672bf110",
+      "url": "/api/images_crop/nbme29_q0064_ocr.webp",
+      "width": 273,
+      "height": 402
+    }
+  ],
+  "nbme29_q0072": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 371,
+      "source_question_number": 22,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//06534c97-a02b-4352-9eeb-98b2656df950/markdown_3/imgs/img_in_image_box_519_90_1078_391.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A50Z%2F-1%2F%2F55afcd8186af9eaa8ac35962c1bbe6f65439878818c539eabd8b5a39dda43f09",
+      "url": "/api/images_crop/nbme29_q0072_ocr.webp",
+      "width": 559,
+      "height": 301
+    }
+  ],
+  "nbme29_q0076": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 375,
+      "source_question_number": 26,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//503d85d7-4c6f-4681-8c30-f40621b78ea7/markdown_2/imgs/img_in_image_box_427_93_783_543.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A49Z%2F-1%2F%2F566679bd6728694753f96addb0bbc3fcf928ec20b8e227efbb8cc4f1f79dc716",
+      "url": "/api/images_crop/nbme29_q0076_ocr01.webp",
+      "width": 356,
+      "height": 450
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 375,
+      "source_question_number": 26,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//503d85d7-4c6f-4681-8c30-f40621b78ea7/markdown_2/imgs/img_in_image_box_800_94_1169_543.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A49Z%2F-1%2F%2F250b1298cf56e39c7478cd8ca8dd740e8479046ac553b0007936c890b3d8af34",
+      "url": "/api/images_crop/nbme29_q0076_ocr02.webp",
+      "width": 369,
+      "height": 449
+    }
+  ],
+  "nbme29_q0091": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 390,
+      "source_question_number": 41,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bfed6407-60c4-4259-b87b-9e97c3cce029/markdown_1/imgs/img_in_image_box_1085_94_1559_483.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A18Z%2F-1%2F%2Fb969c64b837554c9599f0f82547ca92fded4a82ea74325ee1e67b38f4bdbac27",
+      "url": "/api/images_crop/nbme29_q0091_ocr.webp",
+      "width": 474,
+      "height": 389
+    }
+  ],
+  "nbme29_q0110": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 408,
+      "source_question_number": 10,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//81891e85-3e62-4cb9-bdf6-d46a73c5887d/markdown_0/imgs/img_in_image_box_1081_93_1559_544.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A53Z%2F-1%2F%2F1be323a9082839e9ee2517ce9886240f5bc0d27a1aefa5f4bc70369b61891d47",
+      "url": "/api/images_crop/nbme29_q0110_ocr.webp",
+      "width": 478,
+      "height": 451
+    }
+  ],
+  "nbme29_q0116": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 414,
+      "source_question_number": 16,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3213310a-b5c1-4366-8958-205ff83dcf75/markdown_1/imgs/img_in_image_box_533_220_1062_723.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A51Z%2F-1%2F%2Fc0a2e332b76daae510102a70dc988e9a877109067a7655db0f9145aca5985def",
+      "url": "/api/images_crop/nbme29_q0116_ocr.webp",
+      "width": 529,
+      "height": 503
+    }
+  ],
+  "nbme29_q0120": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 418,
+      "source_question_number": 20,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c4d73d04-7831-407e-bbe5-b6d0398edd9a/markdown_1/imgs/img_in_image_box_550_91_1045_646.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A15Z%2F-1%2F%2Fd375c2591ab299210a7435d77833226d18b964f53939d418926f766a8d54c983",
+      "url": "/api/images_crop/nbme29_q0120_ocr.webp",
+      "width": 495,
+      "height": 555
+    }
+  ],
+  "nbme29_q0122": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 420,
+      "source_question_number": 22,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c4d73d04-7831-407e-bbe5-b6d0398edd9a/markdown_2/imgs/img_in_image_box_499_146_1097_515.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A16Z%2F-1%2F%2F9a5bfed8b0f6667464e7b2df2393ab864220b9459459e6495c6ce333e91039c6",
+      "url": "/api/images_crop/nbme29_q0122_ocr.webp",
+      "width": 598,
+      "height": 369
+    }
+  ],
+  "nbme29_q0126": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 424,
+      "source_question_number": 26,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//55774324-02a3-4260-ad8b-f44f8cb8dda0/markdown_1/imgs/img_in_image_box_1309_92_1560_720.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A29Z%2F-1%2F%2Feb4947aa0628b15bc1e3f280774e7a3b36cc30339c8f8f648f0f1832edb12cde",
+      "url": "/api/images_crop/nbme29_q0126_ocr.webp",
+      "width": 251,
+      "height": 628
+    }
+  ],
+  "nbme29_q0128": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 426,
+      "source_question_number": 28,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//55774324-02a3-4260-ad8b-f44f8cb8dda0/markdown_4/imgs/img_in_image_box_391_127_864_916.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A31Z%2F-1%2F%2F58fca63b717956241e18336e047b0b0ca63a9bf39e3a369a569d763023d9f1e4",
+      "url": "/api/images_crop/nbme29_q0128_ocr.webp",
+      "width": 473,
+      "height": 789
+    }
+  ],
+  "nbme29_q0129": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 426,
+      "source_question_number": 28,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//55774324-02a3-4260-ad8b-f44f8cb8dda0/markdown_4/imgs/img_in_image_box_391_127_864_916.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A31Z%2F-1%2F%2F58fca63b717956241e18336e047b0b0ca63a9bf39e3a369a569d763023d9f1e4",
+      "url": "/api/images_crop/nbme29_q0129_ocr.webp",
+      "width": 473,
+      "height": 789
+    }
+  ],
+  "nbme29_q0149": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 446,
+      "source_question_number": 49,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3e95565c-a5e1-4cbe-bd20-b8233ebf5271/markdown_4/imgs/img_in_image_box_1113_92_1560_391.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A09Z%2F-1%2F%2F9f1280d0e2f0b3af4e3ef3d0baca6d8bc250154f42b95fc7afa9f2a2b1085f05",
+      "url": "/api/images_crop/nbme29_q0149_ocr.webp",
+      "width": 447,
+      "height": 299
+    }
+  ],
+  "nbme29_q0156": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 453,
+      "source_question_number": 6,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//98342845-134d-467c-bdcb-3fec513e832a/markdown_1/imgs/img_in_image_box_1215_93_1561_321.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A10Z%2F-1%2F%2F355fd1816002c6c6abe6bf575082dd8aa20392791651e7c2ede1659f22211114",
+      "url": "/api/images_crop/nbme29_q0156_ocr.webp",
+      "width": 346,
+      "height": 228
+    }
+  ],
+  "nbme29_q0178": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 474,
+      "source_question_number": 28,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//1d99de5f-770b-413e-9ab7-9f91ee3c6a02/markdown_4/imgs/img_in_image_box_533_94_1062_489.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A17Z%2F-1%2F%2F0b2f7d253c82675f7059bfa0b6be45125e607043893e7d72001e7c1069ea065b",
+      "url": "/api/images_crop/nbme29_q0178_ocr.webp",
+      "width": 529,
+      "height": 395
+    }
+  ],
+  "nbme29_q0181": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 477,
+      "source_question_number": 31,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3f7b4d6e-d0c3-470c-8335-f599eba06419/markdown_1/imgs/img_in_image_box_1111_93_1560_507.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A57Z%2F-1%2F%2Ffc36628d66121411a25aa7441a39dc1231693fb520d43981d84fe3ac338b3357",
+      "url": "/api/images_crop/nbme29_q0181_ocr.webp",
+      "width": 449,
+      "height": 414
+    }
+  ],
+  "nbme29_q0188": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 484,
+      "source_question_number": 38,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7009c396-8cf0-4669-b4ea-b971839232ec/markdown_4/imgs/img_in_image_box_508_95_1088_338.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A18Z%2F-1%2F%2F2877e1af705650ce6da9cc0cc6ab5214b80317e586bdb06c4e83fc544092e704",
+      "url": "/api/images_crop/nbme29_q0188_ocr.webp",
+      "width": 580,
+      "height": 243
+    }
+  ],
+  "nbme29_q0190": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 486,
+      "source_question_number": 40,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//362481e6-ea17-4f90-86a0-b6b0060c7544/markdown_1/imgs/img_in_image_box_575_165_1030_543.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2Fed934b4ef1792a5f2caaafbf4cb45ad8976993682998583e3872a6d02f29d36a",
+      "url": "/api/images_crop/nbme29_q0190_ocr01.webp",
+      "width": 455,
+      "height": 378
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 486,
+      "source_question_number": 40,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//362481e6-ea17-4f90-86a0-b6b0060c7544/markdown_1/imgs/img_in_image_box_35_565_105_721.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2F4a98e3d2f0b49e167fb57d0a5f337ddd508438c6f71e64327fa3312fe2e73f7b",
+      "url": "/api/images_crop/nbme29_q0190_ocr02.webp",
+      "width": 70,
+      "height": 156
+    }
+  ],
+  "nbme29_q0191": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 486,
+      "source_question_number": 40,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//362481e6-ea17-4f90-86a0-b6b0060c7544/markdown_1/imgs/img_in_image_box_575_165_1030_543.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2Fed934b4ef1792a5f2caaafbf4cb45ad8976993682998583e3872a6d02f29d36a",
+      "url": "/api/images_crop/nbme29_q0191_ocr01.webp",
+      "width": 455,
+      "height": 378
+    },
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_2",
+      "source_chunk_index": 486,
+      "source_question_number": 40,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//362481e6-ea17-4f90-86a0-b6b0060c7544/markdown_1/imgs/img_in_image_box_35_565_105_721.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2F4a98e3d2f0b49e167fb57d0a5f337ddd508438c6f71e64327fa3312fe2e73f7b",
+      "url": "/api/images_crop/nbme29_q0191_ocr02.webp",
+      "width": 70,
+      "height": 156
+    }
+  ],
+  "nbme29_q0192": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 487,
+      "source_question_number": 42,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//362481e6-ea17-4f90-86a0-b6b0060c7544/markdown_3/imgs/img_in_image_box_487_90_773_507.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A05Z%2F-1%2F%2F5fc5f0f8fa159d223f392106476ec43a682d0409e304edab0a65502b70c9d1b9",
+      "url": "/api/images_crop/nbme29_q0192_ocr.webp",
+      "width": 286,
+      "height": 417
+    }
+  ],
+  "nbme29_q0200": [
+    {
+      "category": "ocr_extract",
+      "label": "paddleocr_form_asset_1",
+      "source_chunk_index": 495,
+      "source_question_number": 50,
+      "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//68c55ae2-69ae-401b-a147-e282a0c607d6/markdown_0/imgs/img_in_image_box_1228_92_1562_542.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A39%3A52Z%2F-1%2F%2F49347b6c6fae4fe72b3831e98198afeba2f8129e297900666d31dacc38d70f63",
+      "url": "/api/images_crop/nbme29_q0200_ocr.webp",
+      "width": 334,
+      "height": 450
     }
   ]
 }

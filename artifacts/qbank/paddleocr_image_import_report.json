@@ -1,0 +1,5966 @@
+{
+  "source_markdown": "/home/FORMS-27-33-REDUCED.pdf_by_PaddleOCR-VL-1.6.md",
+  "download_manifest": "/home/FUSMLE/artifacts/ocr_assets/download_manifest.json",
+  "chunk_count": 783,
+  "prefix_windows": {
+    "nbme27": [
+      0,
+      193
+    ],
+    "nbme28": [
+      196,
+      300
+    ],
+    "nbme29": [
+      301,
+      495
+    ],
+    "form30": [
+      496,
+      586
+    ],
+    "form31": [
+      586,
+      782
+    ]
+  },
+  "updated_questions": [
+    {
+      "question_id": "nbme27_page-10",
+      "chunk_idx": 10,
+      "chunk_question_number": 11,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme27_page-10_ocr01.webp",
+        "/api/images_crop/nbme27_page-10_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-158",
+      "chunk_idx": 156,
+      "chunk_question_number": 10,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-158_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-141",
+      "chunk_idx": 139,
+      "chunk_question_number": 43,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-141_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-30",
+      "chunk_idx": 31,
+      "chunk_question_number": 32,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-30_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-159",
+      "chunk_idx": 156,
+      "chunk_question_number": 10,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-159_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-105",
+      "chunk_idx": 105,
+      "chunk_question_number": 7,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-105_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-123",
+      "chunk_idx": 123,
+      "chunk_question_number": 25,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme27_page-123_ocr01.webp",
+        "/api/images_crop/nbme27_page-123_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-195",
+      "chunk_idx": 191,
+      "chunk_question_number": 47,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme27_page-195_ocr01.webp",
+        "/api/images_crop/nbme27_page-195_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-69",
+      "chunk_idx": 70,
+      "chunk_question_number": 21,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-69_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-87",
+      "chunk_idx": 88,
+      "chunk_question_number": 39,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-87_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-161",
+      "chunk_idx": 158,
+      "chunk_question_number": 13,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-161_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-71",
+      "chunk_idx": 72,
+      "chunk_question_number": 23,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-71_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-182",
+      "chunk_idx": 178,
+      "chunk_question_number": 34,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-182_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-192",
+      "chunk_idx": 188,
+      "chunk_question_number": 44,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-192_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-72",
+      "chunk_idx": 73,
+      "chunk_question_number": 24,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-72_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-35",
+      "chunk_idx": 36,
+      "chunk_question_number": 37,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-35_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-36",
+      "chunk_idx": 37,
+      "chunk_question_number": 38,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-36_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-91",
+      "chunk_idx": 92,
+      "chunk_question_number": 43,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-91_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-92",
+      "chunk_idx": 93,
+      "chunk_question_number": 44,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-92_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-185",
+      "chunk_idx": 181,
+      "chunk_question_number": 37,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-185_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-75",
+      "chunk_idx": 76,
+      "chunk_question_number": 27,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-75_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-2",
+      "chunk_idx": 2,
+      "chunk_question_number": 3,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-2_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-94",
+      "chunk_idx": 95,
+      "chunk_question_number": 46,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-94_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-114",
+      "chunk_idx": 114,
+      "chunk_question_number": 16,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-114_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-187",
+      "chunk_idx": 183,
+      "chunk_question_number": 39,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-187_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-58",
+      "chunk_idx": 59,
+      "chunk_question_number": 10,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-58_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-115",
+      "chunk_idx": 115,
+      "chunk_question_number": 17,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-115_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-197",
+      "chunk_idx": 193,
+      "chunk_question_number": 49,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-197_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-6",
+      "chunk_idx": 6,
+      "chunk_question_number": 7,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-6_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-190",
+      "chunk_idx": 186,
+      "chunk_question_number": 42,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-190_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme27_page-99",
+      "chunk_idx": 99,
+      "chunk_question_number": 1,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme27_page-99_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0002",
+      "chunk_idx": 196,
+      "chunk_question_number": 2,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0002_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0014",
+      "chunk_idx": 202,
+      "chunk_question_number": 14,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0014_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0026",
+      "chunk_idx": 211,
+      "chunk_question_number": 26,
+      "previous_asset_count": 3,
+      "new_asset_count": 3,
+      "urls": [
+        "/api/images_crop/nbme28_q0026_ocr01.webp",
+        "/api/images_crop/nbme28_q0026_ocr02.webp",
+        "/api/images_crop/nbme28_q0026_ocr03.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0027",
+      "chunk_idx": 212,
+      "chunk_question_number": 27,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0027_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0033",
+      "chunk_idx": 218,
+      "chunk_question_number": 33,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme28_q0033_ocr01.webp",
+        "/api/images_crop/nbme28_q0033_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0041",
+      "chunk_idx": 220,
+      "chunk_question_number": 41,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0041_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0046",
+      "chunk_idx": 224,
+      "chunk_question_number": 46,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0046_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0056",
+      "chunk_idx": 229,
+      "chunk_question_number": 6,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0056_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0064",
+      "chunk_idx": 234,
+      "chunk_question_number": 14,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0064_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0067",
+      "chunk_idx": 236,
+      "chunk_question_number": 17,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0067_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0079",
+      "chunk_idx": 243,
+      "chunk_question_number": 29,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0079_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0080",
+      "chunk_idx": 243,
+      "chunk_question_number": 29,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0080_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0081",
+      "chunk_idx": 243,
+      "chunk_question_number": 29,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0081_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0082",
+      "chunk_idx": 243,
+      "chunk_question_number": 29,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0082_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0086",
+      "chunk_idx": 245,
+      "chunk_question_number": 36,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0086_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0088",
+      "chunk_idx": 247,
+      "chunk_question_number": 38,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0088_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0089",
+      "chunk_idx": 247,
+      "chunk_question_number": 38,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0089_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0090",
+      "chunk_idx": 247,
+      "chunk_question_number": 38,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0090_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0091",
+      "chunk_idx": 247,
+      "chunk_question_number": 38,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0091_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0092",
+      "chunk_idx": 247,
+      "chunk_question_number": 38,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0092_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0093",
+      "chunk_idx": 247,
+      "chunk_question_number": 38,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0093_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0095",
+      "chunk_idx": 249,
+      "chunk_question_number": 45,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0095_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0096",
+      "chunk_idx": 250,
+      "chunk_question_number": 46,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0096_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0097",
+      "chunk_idx": 250,
+      "chunk_question_number": 46,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0097_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0106",
+      "chunk_idx": 255,
+      "chunk_question_number": 6,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme28_q0106_ocr01.webp",
+        "/api/images_crop/nbme28_q0106_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0113",
+      "chunk_idx": 257,
+      "chunk_question_number": 13,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0113_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0114",
+      "chunk_idx": 257,
+      "chunk_question_number": 13,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0114_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0117",
+      "chunk_idx": 260,
+      "chunk_question_number": 17,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0117_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0118",
+      "chunk_idx": 260,
+      "chunk_question_number": 17,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0118_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0119",
+      "chunk_idx": 260,
+      "chunk_question_number": 17,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0119_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0120",
+      "chunk_idx": 260,
+      "chunk_question_number": 17,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0120_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0121",
+      "chunk_idx": 260,
+      "chunk_question_number": 17,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0121_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0132",
+      "chunk_idx": 267,
+      "chunk_question_number": 32,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0132_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0133",
+      "chunk_idx": 268,
+      "chunk_question_number": 33,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0133_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0142",
+      "chunk_idx": 271,
+      "chunk_question_number": 43,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0142_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0144",
+      "chunk_idx": 271,
+      "chunk_question_number": 43,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0144_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0145",
+      "chunk_idx": 272,
+      "chunk_question_number": 46,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0145_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0146",
+      "chunk_idx": 272,
+      "chunk_question_number": 46,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0146_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0147",
+      "chunk_idx": 272,
+      "chunk_question_number": 46,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0147_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0148",
+      "chunk_idx": 272,
+      "chunk_question_number": 46,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0148_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0149",
+      "chunk_idx": 272,
+      "chunk_question_number": 46,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0149_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0155",
+      "chunk_idx": 277,
+      "chunk_question_number": 6,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme28_q0155_ocr01.webp",
+        "/api/images_crop/nbme28_q0155_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0160",
+      "chunk_idx": 280,
+      "chunk_question_number": 10,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0160_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0161",
+      "chunk_idx": 280,
+      "chunk_question_number": 10,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0161_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0162",
+      "chunk_idx": 280,
+      "chunk_question_number": 10,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0162_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0174",
+      "chunk_idx": 285,
+      "chunk_question_number": 25,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0174_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0181",
+      "chunk_idx": 288,
+      "chunk_question_number": 32,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0181_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0182",
+      "chunk_idx": 289,
+      "chunk_question_number": 33,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0182_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0191",
+      "chunk_idx": 292,
+      "chunk_question_number": 42,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0191_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0196",
+      "chunk_idx": 297,
+      "chunk_question_number": 47,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0196_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0197",
+      "chunk_idx": 298,
+      "chunk_question_number": 48,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0197_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme28_q0198",
+      "chunk_idx": 299,
+      "chunk_question_number": 49,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme28_q0198_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0006",
+      "chunk_idx": 306,
+      "chunk_question_number": 6,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme29_q0006_ocr01.webp",
+        "/api/images_crop/nbme29_q0006_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0008",
+      "chunk_idx": 308,
+      "chunk_question_number": 8,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0008_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0015",
+      "chunk_idx": 315,
+      "chunk_question_number": 15,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0015_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0018",
+      "chunk_idx": 318,
+      "chunk_question_number": 18,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme29_q0018_ocr01.webp",
+        "/api/images_crop/nbme29_q0018_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0024",
+      "chunk_idx": 324,
+      "chunk_question_number": 24,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0024_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0027",
+      "chunk_idx": 327,
+      "chunk_question_number": 27,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0027_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0036",
+      "chunk_idx": 335,
+      "chunk_question_number": 36,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0036_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0048",
+      "chunk_idx": 347,
+      "chunk_question_number": 48,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0048_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0057",
+      "chunk_idx": 356,
+      "chunk_question_number": 7,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme29_q0057_ocr01.webp",
+        "/api/images_crop/nbme29_q0057_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0060",
+      "chunk_idx": 359,
+      "chunk_question_number": 10,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0060_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0061",
+      "chunk_idx": 360,
+      "chunk_question_number": 11,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0061_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0062",
+      "chunk_idx": 361,
+      "chunk_question_number": 12,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0062_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0064",
+      "chunk_idx": 363,
+      "chunk_question_number": 14,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0064_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0072",
+      "chunk_idx": 371,
+      "chunk_question_number": 22,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0072_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0076",
+      "chunk_idx": 375,
+      "chunk_question_number": 26,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme29_q0076_ocr01.webp",
+        "/api/images_crop/nbme29_q0076_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0091",
+      "chunk_idx": 390,
+      "chunk_question_number": 41,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0091_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0110",
+      "chunk_idx": 408,
+      "chunk_question_number": 10,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0110_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0116",
+      "chunk_idx": 414,
+      "chunk_question_number": 16,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0116_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0120",
+      "chunk_idx": 418,
+      "chunk_question_number": 20,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0120_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0122",
+      "chunk_idx": 420,
+      "chunk_question_number": 22,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0122_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0126",
+      "chunk_idx": 424,
+      "chunk_question_number": 26,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0126_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0128",
+      "chunk_idx": 426,
+      "chunk_question_number": 28,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0128_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0129",
+      "chunk_idx": 426,
+      "chunk_question_number": 28,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0129_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0149",
+      "chunk_idx": 446,
+      "chunk_question_number": 49,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0149_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0156",
+      "chunk_idx": 453,
+      "chunk_question_number": 6,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0156_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0178",
+      "chunk_idx": 474,
+      "chunk_question_number": 28,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0178_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0181",
+      "chunk_idx": 477,
+      "chunk_question_number": 31,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0181_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0188",
+      "chunk_idx": 484,
+      "chunk_question_number": 38,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0188_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0190",
+      "chunk_idx": 486,
+      "chunk_question_number": 40,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme29_q0190_ocr01.webp",
+        "/api/images_crop/nbme29_q0190_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0191",
+      "chunk_idx": 486,
+      "chunk_question_number": 40,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/nbme29_q0191_ocr01.webp",
+        "/api/images_crop/nbme29_q0191_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0192",
+      "chunk_idx": 487,
+      "chunk_question_number": 42,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0192_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "nbme29_q0200",
+      "chunk_idx": 495,
+      "chunk_question_number": 50,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/nbme29_q0200_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-118",
+      "chunk_idx": 545,
+      "chunk_question_number": 19,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-118_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-174",
+      "chunk_idx": 575,
+      "chunk_question_number": 25,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-174_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-119",
+      "chunk_idx": 545,
+      "chunk_question_number": 19,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-119_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-175",
+      "chunk_idx": 575,
+      "chunk_question_number": 25,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-175_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-198",
+      "chunk_idx": 586,
+      "chunk_question_number": 49,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-198_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-102",
+      "chunk_idx": 538,
+      "chunk_question_number": 3,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-102_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-11",
+      "chunk_idx": 501,
+      "chunk_question_number": 11,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-11_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-30",
+      "chunk_idx": 509,
+      "chunk_question_number": 31,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-30_ocr01.webp",
+        "/api/images_crop/form30_page-30_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-158",
+      "chunk_idx": 567,
+      "chunk_question_number": 9,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-158_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-159",
+      "chunk_idx": 568,
+      "chunk_question_number": 10,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-159_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-12",
+      "chunk_idx": 501,
+      "chunk_question_number": 11,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-12_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-105",
+      "chunk_idx": 541,
+      "chunk_question_number": 6,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-105_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-31",
+      "chunk_idx": 509,
+      "chunk_question_number": 31,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-31_ocr01.webp",
+        "/api/images_crop/form30_page-31_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-32",
+      "chunk_idx": 509,
+      "chunk_question_number": 31,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-32_ocr01.webp",
+        "/api/images_crop/form30_page-32_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-13",
+      "chunk_idx": 502,
+      "chunk_question_number": 14,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-13_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-124",
+      "chunk_idx": 548,
+      "chunk_question_number": 25,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-124_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-143",
+      "chunk_idx": 559,
+      "chunk_question_number": 44,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-143_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-199",
+      "chunk_idx": 586,
+      "chunk_question_number": 49,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-199_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-70",
+      "chunk_idx": 524,
+      "chunk_question_number": 21,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-70_ocr01.webp",
+        "/api/images_crop/form30_page-70_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-144",
+      "chunk_idx": 559,
+      "chunk_question_number": 44,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-144_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-161",
+      "chunk_idx": 570,
+      "chunk_question_number": 12,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-161_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-89",
+      "chunk_idx": 532,
+      "chunk_question_number": 40,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-89_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-71",
+      "chunk_idx": 524,
+      "chunk_question_number": 21,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-71_ocr01.webp",
+        "/api/images_crop/form30_page-71_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-53",
+      "chunk_idx": 518,
+      "chunk_question_number": 4,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-53_ocr01.webp",
+        "/api/images_crop/form30_page-53_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-54",
+      "chunk_idx": 518,
+      "chunk_question_number": 4,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-54_ocr01.webp",
+        "/api/images_crop/form30_page-54_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-184",
+      "chunk_idx": 578,
+      "chunk_question_number": 35,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-184_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-55",
+      "chunk_idx": 518,
+      "chunk_question_number": 4,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-55_ocr01.webp",
+        "/api/images_crop/form30_page-55_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-92",
+      "chunk_idx": 534,
+      "chunk_question_number": 43,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-92_ocr01.webp",
+        "/api/images_crop/form30_page-92_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-19",
+      "chunk_idx": 506,
+      "chunk_question_number": 19,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-19_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-18",
+      "chunk_idx": 506,
+      "chunk_question_number": 19,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-18_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-56",
+      "chunk_idx": 518,
+      "chunk_question_number": 4,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-56_ocr01.webp",
+        "/api/images_crop/form30_page-56_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-148",
+      "chunk_idx": 562,
+      "chunk_question_number": 49,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-148_ocr01.webp",
+        "/api/images_crop/form30_page-148_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-94",
+      "chunk_idx": 534,
+      "chunk_question_number": 43,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-94_ocr01.webp",
+        "/api/images_crop/form30_page-94_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-20",
+      "chunk_idx": 506,
+      "chunk_question_number": 19,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-20_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-57",
+      "chunk_idx": 518,
+      "chunk_question_number": 4,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-57_ocr01.webp",
+        "/api/images_crop/form30_page-57_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-21",
+      "chunk_idx": 506,
+      "chunk_question_number": 19,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-21_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-76",
+      "chunk_idx": 526,
+      "chunk_question_number": 27,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-76_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-95",
+      "chunk_idx": 534,
+      "chunk_question_number": 43,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-95_ocr01.webp",
+        "/api/images_crop/form30_page-95_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-188",
+      "chunk_idx": 580,
+      "chunk_question_number": 39,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-188_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-96",
+      "chunk_idx": 534,
+      "chunk_question_number": 43,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-96_ocr01.webp",
+        "/api/images_crop/form30_page-96_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-22",
+      "chunk_idx": 506,
+      "chunk_question_number": 19,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-22_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-59",
+      "chunk_idx": 520,
+      "chunk_question_number": 10,
+      "previous_asset_count": 4,
+      "new_asset_count": 4,
+      "urls": [
+        "/api/images_crop/form30_page-59_ocr01.webp",
+        "/api/images_crop/form30_page-59_ocr02.webp",
+        "/api/images_crop/form30_page-59_ocr03.webp",
+        "/api/images_crop/form30_page-59_ocr04.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-97",
+      "chunk_idx": 534,
+      "chunk_question_number": 43,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form30_page-97_ocr01.webp",
+        "/api/images_crop/form30_page-97_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-134",
+      "chunk_idx": 555,
+      "chunk_question_number": 35,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-134_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-24",
+      "chunk_idx": 507,
+      "chunk_question_number": 24,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-24_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-23",
+      "chunk_idx": 507,
+      "chunk_question_number": 24,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-23_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-135",
+      "chunk_idx": 555,
+      "chunk_question_number": 35,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-135_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-25",
+      "chunk_idx": 507,
+      "chunk_question_number": 24,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-25_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-117",
+      "chunk_idx": 544,
+      "chunk_question_number": 18,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-117_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form30_page-191",
+      "chunk_idx": 582,
+      "chunk_question_number": 42,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form30_page-191_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-26",
+      "chunk_idx": 613,
+      "chunk_question_number": 29,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-26_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-100",
+      "chunk_idx": 696,
+      "chunk_question_number": 12,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-100_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-45",
+      "chunk_idx": 635,
+      "chunk_question_number": 1,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-45_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-102",
+      "chunk_idx": 698,
+      "chunk_question_number": 14,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-102_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-65",
+      "chunk_idx": 657,
+      "chunk_question_number": 23,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form31_page-65_ocr01.webp",
+        "/api/images_crop/form31_page-65_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-159",
+      "chunk_idx": 758,
+      "chunk_question_number": 26,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form31_page-159_ocr01.webp",
+        "/api/images_crop/form31_page-159_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-141",
+      "chunk_idx": 739,
+      "chunk_question_number": 7,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-141_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-85",
+      "chunk_idx": 681,
+      "chunk_question_number": 47,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-85_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-12",
+      "chunk_idx": 599,
+      "chunk_question_number": 15,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-12_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-179",
+      "chunk_idx": 779,
+      "chunk_question_number": 47,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-179_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-105",
+      "chunk_idx": 701,
+      "chunk_question_number": 17,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-105_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-87",
+      "chunk_idx": 683,
+      "chunk_question_number": 49,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-87_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-125",
+      "chunk_idx": 722,
+      "chunk_question_number": 38,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-125_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-36",
+      "chunk_idx": 626,
+      "chunk_question_number": 42,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-36_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-17",
+      "chunk_idx": 604,
+      "chunk_question_number": 20,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-17_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-91",
+      "chunk_idx": 687,
+      "chunk_question_number": 3,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-91_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-37",
+      "chunk_idx": 627,
+      "chunk_question_number": 43,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form31_page-37_ocr01.webp",
+        "/api/images_crop/form31_page-37_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-92",
+      "chunk_idx": 688,
+      "chunk_question_number": 4,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-92_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-0",
+      "chunk_idx": 586,
+      "chunk_question_number": 49,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-0_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-128",
+      "chunk_idx": 724,
+      "chunk_question_number": 40,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-128_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-127",
+      "chunk_idx": 724,
+      "chunk_question_number": 40,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-127_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-75",
+      "chunk_idx": 668,
+      "chunk_question_number": 34,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-75_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-93",
+      "chunk_idx": 689,
+      "chunk_question_number": 5,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-93_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-131",
+      "chunk_idx": 727,
+      "chunk_question_number": 44,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-131_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-95",
+      "chunk_idx": 691,
+      "chunk_question_number": 7,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form31_page-95_ocr01.webp",
+        "/api/images_crop/form31_page-95_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-151",
+      "chunk_idx": 750,
+      "chunk_question_number": 18,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-151_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-22",
+      "chunk_idx": 609,
+      "chunk_question_number": 25,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-22_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-96",
+      "chunk_idx": 692,
+      "chunk_question_number": 8,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-96_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-41",
+      "chunk_idx": 631,
+      "chunk_question_number": 47,
+      "previous_asset_count": 2,
+      "new_asset_count": 2,
+      "urls": [
+        "/api/images_crop/form31_page-41_ocr01.webp",
+        "/api/images_crop/form31_page-41_ocr02.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-79",
+      "chunk_idx": 674,
+      "chunk_question_number": 40,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-79_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-42",
+      "chunk_idx": 632,
+      "chunk_question_number": 48,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-42_ocr.webp"
+      ]
+    },
+    {
+      "question_id": "form31_page-80",
+      "chunk_idx": 675,
+      "chunk_question_number": 41,
+      "previous_asset_count": 1,
+      "new_asset_count": 1,
+      "urls": [
+        "/api/images_crop/form31_page-80_ocr.webp"
+      ]
+    }
+  ],
+  "skipped_questions": [
+    {
+      "question_id": "nbme27_page-82",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 83
+    },
+    {
+      "question_id": "nbme27_page-174",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 171
+    },
+    {
+      "question_id": "nbme27_page-26",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 26
+    },
+    {
+      "question_id": "nbme27_page-27",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 27
+    },
+    {
+      "question_id": "nbme27_page-8",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 8
+    },
+    {
+      "question_id": "nbme27_page-118",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 118
+    },
+    {
+      "question_id": "nbme27_page-44",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 45
+    },
+    {
+      "question_id": "nbme27_page-81",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 82
+    },
+    {
+      "question_id": "nbme27_page-45",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 46
+    },
+    {
+      "question_id": "nbme27_page-63",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 64
+    },
+    {
+      "question_id": "nbme27_page-137",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 135
+    },
+    {
+      "question_id": "nbme27_page-101",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 101
+    },
+    {
+      "question_id": "nbme27_page-138",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 136
+    },
+    {
+      "question_id": "nbme27_page-155",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 153
+    },
+    {
+      "question_id": "nbme27_page-119",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 119
+    },
+    {
+      "question_id": "nbme27_page-64",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 65
+    },
+    {
+      "question_id": "nbme27_page-7",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 7
+    },
+    {
+      "question_id": "nbme27_page-65",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 66
+    },
+    {
+      "question_id": "nbme27_page-28",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 29
+    },
+    {
+      "question_id": "nbme27_page-156",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 154
+    },
+    {
+      "question_id": "nbme27_page-175",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 172
+    },
+    {
+      "question_id": "nbme27_page-83",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 84
+    },
+    {
+      "question_id": "nbme27_page-100",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 100
+    },
+    {
+      "question_id": "nbme27_page-102",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 102
+    },
+    {
+      "question_id": "nbme27_page-46",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 47
+    },
+    {
+      "question_id": "nbme27_page-9",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 9
+    },
+    {
+      "question_id": "nbme27_page-176",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 173
+    },
+    {
+      "question_id": "nbme27_page-139",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 137
+    },
+    {
+      "question_id": "nbme27_page-177",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 174
+    },
+    {
+      "question_id": "nbme27_page-157",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 155
+    },
+    {
+      "question_id": "nbme27_page-29",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 30
+    },
+    {
+      "question_id": "nbme27_page-47",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 48
+    },
+    {
+      "question_id": "nbme27_page-120",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 120
+    },
+    {
+      "question_id": "nbme27_page-121",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 121
+    },
+    {
+      "question_id": "nbme27_page-140",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 138
+    },
+    {
+      "question_id": "nbme27_page-11",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 11
+    },
+    {
+      "question_id": "nbme27_page-84",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 85
+    },
+    {
+      "question_id": "nbme27_page-85",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 86
+    },
+    {
+      "question_id": "nbme27_page-122",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 122
+    },
+    {
+      "question_id": "nbme27_page-104",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 104
+    },
+    {
+      "question_id": "nbme27_page-48",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 49
+    },
+    {
+      "question_id": "nbme27_page-49",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 50
+    },
+    {
+      "question_id": "nbme27_page-178",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 175
+    },
+    {
+      "question_id": "nbme27_page-68",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 69
+    },
+    {
+      "question_id": "nbme27_page-12",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 12
+    },
+    {
+      "question_id": "nbme27_page-66",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 67
+    },
+    {
+      "question_id": "nbme27_page-103",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 103
+    },
+    {
+      "question_id": "nbme27_page-160",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 157
+    },
+    {
+      "question_id": "nbme27_page-67",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 68
+    },
+    {
+      "question_id": "nbme27_page-142",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 140
+    },
+    {
+      "question_id": "nbme27_page-86",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 87
+    },
+    {
+      "question_id": "nbme27_page-31",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 32
+    },
+    {
+      "question_id": "nbme27_page-50",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 51
+    },
+    {
+      "question_id": "nbme27_page-179",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 175
+    },
+    {
+      "question_id": "nbme27_page-124",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 124
+    },
+    {
+      "question_id": "nbme27_page-32",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 33
+    },
+    {
+      "question_id": "nbme27_page-106",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 106
+    },
+    {
+      "question_id": "nbme27_page-143",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 141
+    },
+    {
+      "question_id": "nbme27_page-13",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 13
+    },
+    {
+      "question_id": "nbme27_page-180",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 176
+    },
+    {
+      "question_id": "nbme27_page-33",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 34
+    },
+    {
+      "question_id": "nbme27_page-51",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 52
+    },
+    {
+      "question_id": "nbme27_page-14",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 14
+    },
+    {
+      "question_id": "nbme27_page-70",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 71
+    },
+    {
+      "question_id": "nbme27_page-107",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 107
+    },
+    {
+      "question_id": "nbme27_page-88",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 89
+    },
+    {
+      "question_id": "nbme27_page-144",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 142
+    },
+    {
+      "question_id": "nbme27_page-125",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 125
+    },
+    {
+      "question_id": "nbme27_page-89",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 90
+    },
+    {
+      "question_id": "nbme27_page-181",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 177
+    },
+    {
+      "question_id": "nbme27_page-52",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 53
+    },
+    {
+      "question_id": "nbme27_page-162",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 159
+    },
+    {
+      "question_id": "nbme27_page-145",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 143
+    },
+    {
+      "question_id": "nbme27_page-126",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 126
+    },
+    {
+      "question_id": "nbme27_page-90",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 91
+    },
+    {
+      "question_id": "nbme27_page-34",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 35
+    },
+    {
+      "question_id": "nbme27_page-53",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 54
+    },
+    {
+      "question_id": "nbme27_page-16",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 16
+    },
+    {
+      "question_id": "nbme27_page-164",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 161
+    },
+    {
+      "question_id": "nbme27_page-15",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 15
+    },
+    {
+      "question_id": "nbme27_page-163",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 160
+    },
+    {
+      "question_id": "nbme27_page-146",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 144
+    },
+    {
+      "question_id": "nbme27_page-17",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 17
+    },
+    {
+      "question_id": "nbme27_page-108",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 108
+    },
+    {
+      "question_id": "nbme27_page-127",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 126
+    },
+    {
+      "question_id": "nbme27_page-109",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 109
+    },
+    {
+      "question_id": "nbme27_page-183",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 179
+    },
+    {
+      "question_id": "nbme27_page-73",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 74
+    },
+    {
+      "question_id": "nbme27_page-128",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 127
+    },
+    {
+      "question_id": "nbme27_page-110",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 110
+    },
+    {
+      "question_id": "nbme27_page-0",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 0
+    },
+    {
+      "question_id": "nbme27_page-37",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 38
+    },
+    {
+      "question_id": "nbme27_page-54",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 55
+    },
+    {
+      "question_id": "nbme27_page-18",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 18
+    },
+    {
+      "question_id": "nbme27_page-196",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 192
+    },
+    {
+      "question_id": "nbme27_page-55",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 56
+    },
+    {
+      "question_id": "nbme27_page-165",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 162
+    },
+    {
+      "question_id": "nbme27_page-166",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 163
+    },
+    {
+      "question_id": "nbme27_page-74",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 75
+    },
+    {
+      "question_id": "nbme27_page-111",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 111
+    },
+    {
+      "question_id": "nbme27_page-148",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 146
+    },
+    {
+      "question_id": "nbme27_page-184",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 180
+    },
+    {
+      "question_id": "nbme27_page-147",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 145
+    },
+    {
+      "question_id": "nbme27_page-19",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 19
+    },
+    {
+      "question_id": "nbme27_page-129",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 127
+    },
+    {
+      "question_id": "nbme27_page-38",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme27_page-1",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 1
+    },
+    {
+      "question_id": "nbme27_page-20",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 20
+    },
+    {
+      "question_id": "nbme27_page-56",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 57
+    },
+    {
+      "question_id": "nbme27_page-112",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 112
+    },
+    {
+      "question_id": "nbme27_page-39",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 40
+    },
+    {
+      "question_id": "nbme27_page-194",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 190
+    },
+    {
+      "question_id": "nbme27_page-57",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 58
+    },
+    {
+      "question_id": "nbme27_page-186",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 182
+    },
+    {
+      "question_id": "nbme27_page-93",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 94
+    },
+    {
+      "question_id": "nbme27_page-130",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 128
+    },
+    {
+      "question_id": "nbme27_page-149",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 147
+    },
+    {
+      "question_id": "nbme27_page-113",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 113
+    },
+    {
+      "question_id": "nbme27_page-131",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 129
+    },
+    {
+      "question_id": "nbme27_page-167",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 164
+    },
+    {
+      "question_id": "nbme27_page-150",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 148
+    },
+    {
+      "question_id": "nbme27_page-40",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 41
+    },
+    {
+      "question_id": "nbme27_page-169",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 166
+    },
+    {
+      "question_id": "nbme27_page-132",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 130
+    },
+    {
+      "question_id": "nbme27_page-21",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 21
+    },
+    {
+      "question_id": "nbme27_page-77",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 78
+    },
+    {
+      "question_id": "nbme27_page-193",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 189
+    },
+    {
+      "question_id": "nbme27_page-151",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 149
+    },
+    {
+      "question_id": "nbme27_page-3",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 3
+    },
+    {
+      "question_id": "nbme27_page-4",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 4
+    },
+    {
+      "question_id": "nbme27_page-76",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 77
+    },
+    {
+      "question_id": "nbme27_page-41",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 42
+    },
+    {
+      "question_id": "nbme27_page-168",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 165
+    },
+    {
+      "question_id": "nbme27_page-152",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 150
+    },
+    {
+      "question_id": "nbme27_page-22",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 22
+    },
+    {
+      "question_id": "nbme27_page-188",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 184
+    },
+    {
+      "question_id": "nbme27_page-189",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 185
+    },
+    {
+      "question_id": "nbme27_page-96",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 96
+    },
+    {
+      "question_id": "nbme27_page-170",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 167
+    },
+    {
+      "question_id": "nbme27_page-59",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 60
+    },
+    {
+      "question_id": "nbme27_page-95",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 96
+    },
+    {
+      "question_id": "nbme27_page-78",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 79
+    },
+    {
+      "question_id": "nbme27_page-133",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 131
+    },
+    {
+      "question_id": "nbme27_page-42",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 43
+    },
+    {
+      "question_id": "nbme27_page-60",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 61
+    },
+    {
+      "question_id": "nbme27_page-97",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 97
+    },
+    {
+      "question_id": "nbme27_page-23",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 23
+    },
+    {
+      "question_id": "nbme27_page-153",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 151
+    },
+    {
+      "question_id": "nbme27_page-5",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 5
+    },
+    {
+      "question_id": "nbme27_page-171",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 168
+    },
+    {
+      "question_id": "nbme27_page-117",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 117
+    },
+    {
+      "question_id": "nbme27_page-79",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 80
+    },
+    {
+      "question_id": "nbme27_page-134",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 132
+    },
+    {
+      "question_id": "nbme27_page-116",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 116
+    },
+    {
+      "question_id": "nbme27_page-98",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 98
+    },
+    {
+      "question_id": "nbme27_page-80",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 81
+    },
+    {
+      "question_id": "nbme27_page-24",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 24
+    },
+    {
+      "question_id": "nbme27_page-172",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 169
+    },
+    {
+      "question_id": "nbme27_page-154",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 152
+    },
+    {
+      "question_id": "nbme27_page-135",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme27_page-61",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 62
+    },
+    {
+      "question_id": "nbme27_page-43",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 44
+    },
+    {
+      "question_id": "nbme27_page-25",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 25
+    },
+    {
+      "question_id": "nbme27_page-191",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 187
+    },
+    {
+      "question_id": "nbme27_page-173",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 170
+    },
+    {
+      "question_id": "nbme27_page-62",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 63
+    },
+    {
+      "question_id": "nbme27_page-136",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 134
+    },
+    {
+      "question_id": "nbme28_q0001",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0003",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 197
+    },
+    {
+      "question_id": "nbme28_q0004",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0005",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0006",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 198
+    },
+    {
+      "question_id": "nbme28_q0007",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 198
+    },
+    {
+      "question_id": "nbme28_q0008",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 199
+    },
+    {
+      "question_id": "nbme28_q0009",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 200
+    },
+    {
+      "question_id": "nbme28_q0010",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 200
+    },
+    {
+      "question_id": "nbme28_q0011",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 201
+    },
+    {
+      "question_id": "nbme28_q0012",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0013",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0015",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 203
+    },
+    {
+      "question_id": "nbme28_q0016",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0017",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 204
+    },
+    {
+      "question_id": "nbme28_q0018",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 205
+    },
+    {
+      "question_id": "nbme28_q0019",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 206
+    },
+    {
+      "question_id": "nbme28_q0020",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 207
+    },
+    {
+      "question_id": "nbme28_q0021",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 207
+    },
+    {
+      "question_id": "nbme28_q0022",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 208
+    },
+    {
+      "question_id": "nbme28_q0023",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 208
+    },
+    {
+      "question_id": "nbme28_q0024",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 209
+    },
+    {
+      "question_id": "nbme28_q0025",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 210
+    },
+    {
+      "question_id": "nbme28_q0028",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 213
+    },
+    {
+      "question_id": "nbme28_q0029",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 214
+    },
+    {
+      "question_id": "nbme28_q0030",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 215
+    },
+    {
+      "question_id": "nbme28_q0031",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 216
+    },
+    {
+      "question_id": "nbme28_q0032",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 217
+    },
+    {
+      "question_id": "nbme28_q0034",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0035",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 219
+    },
+    {
+      "question_id": "nbme28_q0036",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 219
+    },
+    {
+      "question_id": "nbme28_q0037",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 219
+    },
+    {
+      "question_id": "nbme28_q0038",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 219
+    },
+    {
+      "question_id": "nbme28_q0039",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 219
+    },
+    {
+      "question_id": "nbme28_q0040",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0042",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0043",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 221
+    },
+    {
+      "question_id": "nbme28_q0044",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 222
+    },
+    {
+      "question_id": "nbme28_q0045",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 223
+    },
+    {
+      "question_id": "nbme28_q0047",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 225
+    },
+    {
+      "question_id": "nbme28_q0048",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 226
+    },
+    {
+      "question_id": "nbme28_q0049",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0050",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0051",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 227
+    },
+    {
+      "question_id": "nbme28_q0052",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 227
+    },
+    {
+      "question_id": "nbme28_q0053",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 227
+    },
+    {
+      "question_id": "nbme28_q0054",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 228
+    },
+    {
+      "question_id": "nbme28_q0055",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 228
+    },
+    {
+      "question_id": "nbme28_q0057",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 230
+    },
+    {
+      "question_id": "nbme28_q0058",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 231
+    },
+    {
+      "question_id": "nbme28_q0059",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 231
+    },
+    {
+      "question_id": "nbme28_q0060",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0061",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 232
+    },
+    {
+      "question_id": "nbme28_q0062",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0063",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 233
+    },
+    {
+      "question_id": "nbme28_q0065",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 235
+    },
+    {
+      "question_id": "nbme28_q0066",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0068",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0069",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 237
+    },
+    {
+      "question_id": "nbme28_q0070",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0071",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 239
+    },
+    {
+      "question_id": "nbme28_q0072",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 239
+    },
+    {
+      "question_id": "nbme28_q0073",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0074",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0075",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0076",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 240
+    },
+    {
+      "question_id": "nbme28_q0077",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 241
+    },
+    {
+      "question_id": "nbme28_q0078",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 242
+    },
+    {
+      "question_id": "nbme28_q0083",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0084",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0085",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0087",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 246
+    },
+    {
+      "question_id": "nbme28_q0094",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 248
+    },
+    {
+      "question_id": "nbme28_q0098",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 251
+    },
+    {
+      "question_id": "nbme28_q0099",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 251
+    },
+    {
+      "question_id": "nbme28_q0100",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0101",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0102",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 252
+    },
+    {
+      "question_id": "nbme28_q0103",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 253
+    },
+    {
+      "question_id": "nbme28_q0104",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0105",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 254
+    },
+    {
+      "question_id": "nbme28_q0107",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0108",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 256
+    },
+    {
+      "question_id": "nbme28_q0109",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 256
+    },
+    {
+      "question_id": "nbme28_q0110",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 256
+    },
+    {
+      "question_id": "nbme28_q0111",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 256
+    },
+    {
+      "question_id": "nbme28_q0112",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 256
+    },
+    {
+      "question_id": "nbme28_q0115",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 258
+    },
+    {
+      "question_id": "nbme28_q0116",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 259
+    },
+    {
+      "question_id": "nbme28_q0122",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 261
+    },
+    {
+      "question_id": "nbme28_q0123",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 261
+    },
+    {
+      "question_id": "nbme28_q0124",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 262
+    },
+    {
+      "question_id": "nbme28_q0125",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 262
+    },
+    {
+      "question_id": "nbme28_q0126",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 263
+    },
+    {
+      "question_id": "nbme28_q0127",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 264
+    },
+    {
+      "question_id": "nbme28_q0128",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 264
+    },
+    {
+      "question_id": "nbme28_q0129",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 264
+    },
+    {
+      "question_id": "nbme28_q0130",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 265
+    },
+    {
+      "question_id": "nbme28_q0131",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 266
+    },
+    {
+      "question_id": "nbme28_q0134",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 269
+    },
+    {
+      "question_id": "nbme28_q0135",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 269
+    },
+    {
+      "question_id": "nbme28_q0136",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0137",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 269
+    },
+    {
+      "question_id": "nbme28_q0138",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 269
+    },
+    {
+      "question_id": "nbme28_q0139",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 269
+    },
+    {
+      "question_id": "nbme28_q0140",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 270
+    },
+    {
+      "question_id": "nbme28_q0141",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0143",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0150",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 273
+    },
+    {
+      "question_id": "nbme28_q0151",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0152",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 274
+    },
+    {
+      "question_id": "nbme28_q0153",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 275
+    },
+    {
+      "question_id": "nbme28_q0154",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 276
+    },
+    {
+      "question_id": "nbme28_q0156",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 278
+    },
+    {
+      "question_id": "nbme28_q0157",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 278
+    },
+    {
+      "question_id": "nbme28_q0158",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 279
+    },
+    {
+      "question_id": "nbme28_q0159",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0163",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 281
+    },
+    {
+      "question_id": "nbme28_q0164",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 281
+    },
+    {
+      "question_id": "nbme28_q0165",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 281
+    },
+    {
+      "question_id": "nbme28_q0166",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 282
+    },
+    {
+      "question_id": "nbme28_q0167",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 282
+    },
+    {
+      "question_id": "nbme28_q0168",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 283
+    },
+    {
+      "question_id": "nbme28_q0169",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 283
+    },
+    {
+      "question_id": "nbme28_q0170",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 284
+    },
+    {
+      "question_id": "nbme28_q0171",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 284
+    },
+    {
+      "question_id": "nbme28_q0172",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0173",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0175",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 286
+    },
+    {
+      "question_id": "nbme28_q0176",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 286
+    },
+    {
+      "question_id": "nbme28_q0177",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 286
+    },
+    {
+      "question_id": "nbme28_q0178",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 286
+    },
+    {
+      "question_id": "nbme28_q0179",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 286
+    },
+    {
+      "question_id": "nbme28_q0180",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 287
+    },
+    {
+      "question_id": "nbme28_q0183",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0184",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0185",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0186",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0187",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0188",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0189",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 290
+    },
+    {
+      "question_id": "nbme28_q0190",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 291
+    },
+    {
+      "question_id": "nbme28_q0192",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 293
+    },
+    {
+      "question_id": "nbme28_q0193",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme28_q0194",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 295
+    },
+    {
+      "question_id": "nbme28_q0195",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 296
+    },
+    {
+      "question_id": "nbme28_q0199",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 300
+    },
+    {
+      "question_id": "nbme29_q0001",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 301
+    },
+    {
+      "question_id": "nbme29_q0002",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 302
+    },
+    {
+      "question_id": "nbme29_q0003",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 303
+    },
+    {
+      "question_id": "nbme29_q0004",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 304
+    },
+    {
+      "question_id": "nbme29_q0005",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 305
+    },
+    {
+      "question_id": "nbme29_q0007",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 307
+    },
+    {
+      "question_id": "nbme29_q0009",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 309
+    },
+    {
+      "question_id": "nbme29_q0010",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 310
+    },
+    {
+      "question_id": "nbme29_q0011",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 311
+    },
+    {
+      "question_id": "nbme29_q0012",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 312
+    },
+    {
+      "question_id": "nbme29_q0013",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 313
+    },
+    {
+      "question_id": "nbme29_q0014",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 314
+    },
+    {
+      "question_id": "nbme29_q0016",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 316
+    },
+    {
+      "question_id": "nbme29_q0017",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 317
+    },
+    {
+      "question_id": "nbme29_q0019",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 319
+    },
+    {
+      "question_id": "nbme29_q0020",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 320
+    },
+    {
+      "question_id": "nbme29_q0021",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 321
+    },
+    {
+      "question_id": "nbme29_q0022",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 322
+    },
+    {
+      "question_id": "nbme29_q0023",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme29_q0025",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 325
+    },
+    {
+      "question_id": "nbme29_q0026",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 326
+    },
+    {
+      "question_id": "nbme29_q0028",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 328
+    },
+    {
+      "question_id": "nbme29_q0029",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 329
+    },
+    {
+      "question_id": "nbme29_q0030",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 330
+    },
+    {
+      "question_id": "nbme29_q0031",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 331
+    },
+    {
+      "question_id": "nbme29_q0032",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 332
+    },
+    {
+      "question_id": "nbme29_q0033",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 333
+    },
+    {
+      "question_id": "nbme29_q0034",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 334
+    },
+    {
+      "question_id": "nbme29_q0035",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 334
+    },
+    {
+      "question_id": "nbme29_q0037",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 336
+    },
+    {
+      "question_id": "nbme29_q0038",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 337
+    },
+    {
+      "question_id": "nbme29_q0039",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 338
+    },
+    {
+      "question_id": "nbme29_q0040",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 339
+    },
+    {
+      "question_id": "nbme29_q0041",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 340
+    },
+    {
+      "question_id": "nbme29_q0042",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 341
+    },
+    {
+      "question_id": "nbme29_q0043",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 342
+    },
+    {
+      "question_id": "nbme29_q0044",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 343
+    },
+    {
+      "question_id": "nbme29_q0045",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 344
+    },
+    {
+      "question_id": "nbme29_q0046",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 345
+    },
+    {
+      "question_id": "nbme29_q0047",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 346
+    },
+    {
+      "question_id": "nbme29_q0049",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 348
+    },
+    {
+      "question_id": "nbme29_q0050",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 349
+    },
+    {
+      "question_id": "nbme29_q0051",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 350
+    },
+    {
+      "question_id": "nbme29_q0052",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 351
+    },
+    {
+      "question_id": "nbme29_q0053",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 352
+    },
+    {
+      "question_id": "nbme29_q0054",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 353
+    },
+    {
+      "question_id": "nbme29_q0055",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 354
+    },
+    {
+      "question_id": "nbme29_q0056",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 355
+    },
+    {
+      "question_id": "nbme29_q0058",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 357
+    },
+    {
+      "question_id": "nbme29_q0059",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 358
+    },
+    {
+      "question_id": "nbme29_q0063",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 362
+    },
+    {
+      "question_id": "nbme29_q0065",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 364
+    },
+    {
+      "question_id": "nbme29_q0066",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 365
+    },
+    {
+      "question_id": "nbme29_q0067",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 366
+    },
+    {
+      "question_id": "nbme29_q0068",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 367
+    },
+    {
+      "question_id": "nbme29_q0069",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme29_q0070",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 369
+    },
+    {
+      "question_id": "nbme29_q0071",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 370
+    },
+    {
+      "question_id": "nbme29_q0073",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme29_q0074",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 373
+    },
+    {
+      "question_id": "nbme29_q0075",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 374
+    },
+    {
+      "question_id": "nbme29_q0077",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 376
+    },
+    {
+      "question_id": "nbme29_q0078",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 377
+    },
+    {
+      "question_id": "nbme29_q0079",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 378
+    },
+    {
+      "question_id": "nbme29_q0080",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 379
+    },
+    {
+      "question_id": "nbme29_q0081",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 380
+    },
+    {
+      "question_id": "nbme29_q0082",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 381
+    },
+    {
+      "question_id": "nbme29_q0083",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 382
+    },
+    {
+      "question_id": "nbme29_q0084",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 383
+    },
+    {
+      "question_id": "nbme29_q0085",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 384
+    },
+    {
+      "question_id": "nbme29_q0086",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 385
+    },
+    {
+      "question_id": "nbme29_q0087",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 386
+    },
+    {
+      "question_id": "nbme29_q0088",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 387
+    },
+    {
+      "question_id": "nbme29_q0089",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 388
+    },
+    {
+      "question_id": "nbme29_q0090",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 389
+    },
+    {
+      "question_id": "nbme29_q0092",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 391
+    },
+    {
+      "question_id": "nbme29_q0093",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 392
+    },
+    {
+      "question_id": "nbme29_q0094",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 393
+    },
+    {
+      "question_id": "nbme29_q0095",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 394
+    },
+    {
+      "question_id": "nbme29_q0096",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 395
+    },
+    {
+      "question_id": "nbme29_q0097",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 396
+    },
+    {
+      "question_id": "nbme29_q0098",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 397
+    },
+    {
+      "question_id": "nbme29_q0099",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 398
+    },
+    {
+      "question_id": "nbme29_q0100",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 399
+    },
+    {
+      "question_id": "nbme29_q0101",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 400
+    },
+    {
+      "question_id": "nbme29_q0102",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 401
+    },
+    {
+      "question_id": "nbme29_q0103",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 402
+    },
+    {
+      "question_id": "nbme29_q0104",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 403
+    },
+    {
+      "question_id": "nbme29_q0105",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 404
+    },
+    {
+      "question_id": "nbme29_q0106",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 405
+    },
+    {
+      "question_id": "nbme29_q0107",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 406
+    },
+    {
+      "question_id": "nbme29_q0108",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 406
+    },
+    {
+      "question_id": "nbme29_q0109",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 407
+    },
+    {
+      "question_id": "nbme29_q0111",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 409
+    },
+    {
+      "question_id": "nbme29_q0112",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme29_q0113",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 411
+    },
+    {
+      "question_id": "nbme29_q0114",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 412
+    },
+    {
+      "question_id": "nbme29_q0115",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 413
+    },
+    {
+      "question_id": "nbme29_q0117",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 415
+    },
+    {
+      "question_id": "nbme29_q0118",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme29_q0119",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 417
+    },
+    {
+      "question_id": "nbme29_q0121",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 419
+    },
+    {
+      "question_id": "nbme29_q0123",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 421
+    },
+    {
+      "question_id": "nbme29_q0124",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 422
+    },
+    {
+      "question_id": "nbme29_q0125",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 423
+    },
+    {
+      "question_id": "nbme29_q0127",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 425
+    },
+    {
+      "question_id": "nbme29_q0130",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 427
+    },
+    {
+      "question_id": "nbme29_q0131",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 428
+    },
+    {
+      "question_id": "nbme29_q0132",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 429
+    },
+    {
+      "question_id": "nbme29_q0133",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 430
+    },
+    {
+      "question_id": "nbme29_q0134",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 431
+    },
+    {
+      "question_id": "nbme29_q0135",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 432
+    },
+    {
+      "question_id": "nbme29_q0136",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 433
+    },
+    {
+      "question_id": "nbme29_q0137",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 434
+    },
+    {
+      "question_id": "nbme29_q0138",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 435
+    },
+    {
+      "question_id": "nbme29_q0139",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 436
+    },
+    {
+      "question_id": "nbme29_q0140",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 437
+    },
+    {
+      "question_id": "nbme29_q0141",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 438
+    },
+    {
+      "question_id": "nbme29_q0142",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 439
+    },
+    {
+      "question_id": "nbme29_q0143",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 440
+    },
+    {
+      "question_id": "nbme29_q0144",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 441
+    },
+    {
+      "question_id": "nbme29_q0145",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 442
+    },
+    {
+      "question_id": "nbme29_q0146",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 443
+    },
+    {
+      "question_id": "nbme29_q0147",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 444
+    },
+    {
+      "question_id": "nbme29_q0148",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 445
+    },
+    {
+      "question_id": "nbme29_q0150",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 447
+    },
+    {
+      "question_id": "nbme29_q0151",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 448
+    },
+    {
+      "question_id": "nbme29_q0152",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 449
+    },
+    {
+      "question_id": "nbme29_q0153",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 450
+    },
+    {
+      "question_id": "nbme29_q0154",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 451
+    },
+    {
+      "question_id": "nbme29_q0155",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 452
+    },
+    {
+      "question_id": "nbme29_q0157",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 454
+    },
+    {
+      "question_id": "nbme29_q0158",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 455
+    },
+    {
+      "question_id": "nbme29_q0159",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 456
+    },
+    {
+      "question_id": "nbme29_q0160",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 457
+    },
+    {
+      "question_id": "nbme29_q0161",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 458
+    },
+    {
+      "question_id": "nbme29_q0162",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 459
+    },
+    {
+      "question_id": "nbme29_q0163",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 460
+    },
+    {
+      "question_id": "nbme29_q0164",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 461
+    },
+    {
+      "question_id": "nbme29_q0165",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 462
+    },
+    {
+      "question_id": "nbme29_q0166",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 463
+    },
+    {
+      "question_id": "nbme29_q0167",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 464
+    },
+    {
+      "question_id": "nbme29_q0168",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 465
+    },
+    {
+      "question_id": "nbme29_q0169",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme29_q0170",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 467
+    },
+    {
+      "question_id": "nbme29_q0171",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 468
+    },
+    {
+      "question_id": "nbme29_q0172",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme29_q0173",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 469
+    },
+    {
+      "question_id": "nbme29_q0174",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 470
+    },
+    {
+      "question_id": "nbme29_q0175",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 471
+    },
+    {
+      "question_id": "nbme29_q0176",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 472
+    },
+    {
+      "question_id": "nbme29_q0177",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 473
+    },
+    {
+      "question_id": "nbme29_q0179",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 475
+    },
+    {
+      "question_id": "nbme29_q0180",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 476
+    },
+    {
+      "question_id": "nbme29_q0182",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 478
+    },
+    {
+      "question_id": "nbme29_q0183",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 479
+    },
+    {
+      "question_id": "nbme29_q0184",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 480
+    },
+    {
+      "question_id": "nbme29_q0185",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme29_q0186",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 482
+    },
+    {
+      "question_id": "nbme29_q0187",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 483
+    },
+    {
+      "question_id": "nbme29_q0189",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 485
+    },
+    {
+      "question_id": "nbme29_q0193",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "nbme29_q0194",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 489
+    },
+    {
+      "question_id": "nbme29_q0195",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 490
+    },
+    {
+      "question_id": "nbme29_q0196",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 491
+    },
+    {
+      "question_id": "nbme29_q0197",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 492
+    },
+    {
+      "question_id": "nbme29_q0198",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 493
+    },
+    {
+      "question_id": "nbme29_q0199",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 494
+    },
+    {
+      "question_id": "form30_page-45",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 514
+    },
+    {
+      "question_id": "form30_page-155",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 564
+    },
+    {
+      "question_id": "form30_page-44",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 513
+    },
+    {
+      "question_id": "form30_page-27",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 508
+    },
+    {
+      "question_id": "form30_page-82",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 529
+    },
+    {
+      "question_id": "form30_page-63",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 522
+    },
+    {
+      "question_id": "form30_page-26",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 508
+    },
+    {
+      "question_id": "form30_page-81",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 529
+    },
+    {
+      "question_id": "form30_page-100",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 537
+    },
+    {
+      "question_id": "form30_page-64",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 522
+    },
+    {
+      "question_id": "form30_page-101",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 537
+    },
+    {
+      "question_id": "form30_page-137",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 557
+    },
+    {
+      "question_id": "form30_page-138",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 557
+    },
+    {
+      "question_id": "form30_page-8",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 500
+    },
+    {
+      "question_id": "form30_page-7",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-46",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 515
+    },
+    {
+      "question_id": "form30_page-28",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 508
+    },
+    {
+      "question_id": "form30_page-9",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 500
+    },
+    {
+      "question_id": "form30_page-65",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 522
+    },
+    {
+      "question_id": "form30_page-176",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 576
+    },
+    {
+      "question_id": "form30_page-156",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 565
+    },
+    {
+      "question_id": "form30_page-83",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 530
+    },
+    {
+      "question_id": "form30_page-194",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 583
+    },
+    {
+      "question_id": "form30_page-157",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 566
+    },
+    {
+      "question_id": "form30_page-139",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 558
+    },
+    {
+      "question_id": "form30_page-120",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 546
+    },
+    {
+      "question_id": "form30_page-84",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 530
+    },
+    {
+      "question_id": "form30_page-121",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 547
+    },
+    {
+      "question_id": "form30_page-103",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 539
+    },
+    {
+      "question_id": "form30_page-47",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 515
+    },
+    {
+      "question_id": "form30_page-85",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 530
+    },
+    {
+      "question_id": "form30_page-10",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-29",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 508
+    },
+    {
+      "question_id": "form30_page-48",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 515
+    },
+    {
+      "question_id": "form30_page-67",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 523
+    },
+    {
+      "question_id": "form30_page-104",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 540
+    },
+    {
+      "question_id": "form30_page-66",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 522
+    },
+    {
+      "question_id": "form30_page-177",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 576
+    },
+    {
+      "question_id": "form30_page-141",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 558
+    },
+    {
+      "question_id": "form30_page-122",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 547
+    },
+    {
+      "question_id": "form30_page-86",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 530
+    },
+    {
+      "question_id": "form30_page-140",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 558
+    },
+    {
+      "question_id": "form30_page-123",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 547
+    },
+    {
+      "question_id": "form30_page-178",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 576
+    },
+    {
+      "question_id": "form30_page-142",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 558
+    },
+    {
+      "question_id": "form30_page-179",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 576
+    },
+    {
+      "question_id": "form30_page-160",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 569
+    },
+    {
+      "question_id": "form30_page-68",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 523
+    },
+    {
+      "question_id": "form30_page-87",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 531
+    },
+    {
+      "question_id": "form30_page-49",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 516
+    },
+    {
+      "question_id": "form30_page-69",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 523
+    },
+    {
+      "question_id": "form30_page-14",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 503
+    },
+    {
+      "question_id": "form30_page-195",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 583
+    },
+    {
+      "question_id": "form30_page-50",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 516
+    },
+    {
+      "question_id": "form30_page-107",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 543
+    },
+    {
+      "question_id": "form30_page-106",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 542
+    },
+    {
+      "question_id": "form30_page-15",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 504
+    },
+    {
+      "question_id": "form30_page-125",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 549
+    },
+    {
+      "question_id": "form30_page-34",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 511
+    },
+    {
+      "question_id": "form30_page-51",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 516
+    },
+    {
+      "question_id": "form30_page-88",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 531
+    },
+    {
+      "question_id": "form30_page-181",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 576
+    },
+    {
+      "question_id": "form30_page-180",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 576
+    },
+    {
+      "question_id": "form30_page-162",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-33",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 510
+    },
+    {
+      "question_id": "form30_page-126",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 550
+    },
+    {
+      "question_id": "form30_page-52",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 517
+    },
+    {
+      "question_id": "form30_page-108",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-145",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 560
+    },
+    {
+      "question_id": "form30_page-109",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 543
+    },
+    {
+      "question_id": "form30_page-163",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 571
+    },
+    {
+      "question_id": "form30_page-72",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 525
+    },
+    {
+      "question_id": "form30_page-182",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 577
+    },
+    {
+      "question_id": "form30_page-16",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 505
+    },
+    {
+      "question_id": "form30_page-36",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 512
+    },
+    {
+      "question_id": "form30_page-35",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-73",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 525
+    },
+    {
+      "question_id": "form30_page-90",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 533
+    },
+    {
+      "question_id": "form30_page-17",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 505
+    },
+    {
+      "question_id": "form30_page-147",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 561
+    },
+    {
+      "question_id": "form30_page-127",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 551
+    },
+    {
+      "question_id": "form30_page-146",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 560
+    },
+    {
+      "question_id": "form30_page-91",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 533
+    },
+    {
+      "question_id": "form30_page-165",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 573
+    },
+    {
+      "question_id": "form30_page-111",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 543
+    },
+    {
+      "question_id": "form30_page-129",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 553
+    },
+    {
+      "question_id": "form30_page-37",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 513
+    },
+    {
+      "question_id": "form30_page-0",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 496
+    },
+    {
+      "question_id": "form30_page-1",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 497
+    },
+    {
+      "question_id": "form30_page-196",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-110",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 543
+    },
+    {
+      "question_id": "form30_page-164",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 572
+    },
+    {
+      "question_id": "form30_page-192",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 583
+    },
+    {
+      "question_id": "form30_page-38",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 513
+    },
+    {
+      "question_id": "form30_page-75",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 525
+    },
+    {
+      "question_id": "form30_page-93",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-185",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 579
+    },
+    {
+      "question_id": "form30_page-166",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 573
+    },
+    {
+      "question_id": "form30_page-112",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 543
+    },
+    {
+      "question_id": "form30_page-74",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 525
+    },
+    {
+      "question_id": "form30_page-186",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 579
+    },
+    {
+      "question_id": "form30_page-130",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 553
+    },
+    {
+      "question_id": "form30_page-113",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 543
+    },
+    {
+      "question_id": "form30_page-39",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 513
+    },
+    {
+      "question_id": "form30_page-131",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 553
+    },
+    {
+      "question_id": "form30_page-168",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 573
+    },
+    {
+      "question_id": "form30_page-40",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 513
+    },
+    {
+      "question_id": "form30_page-167",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 573
+    },
+    {
+      "question_id": "form30_page-2",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 497
+    },
+    {
+      "question_id": "form30_page-187",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 579
+    },
+    {
+      "question_id": "form30_page-3",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-149",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 563
+    },
+    {
+      "question_id": "form30_page-77",
+      "reason": "non_unique_chunk_match",
+      "hits": [
+        521,
+        527
+      ]
+    },
+    {
+      "question_id": "form30_page-58",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 519
+    },
+    {
+      "question_id": "form30_page-132",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 554
+    },
+    {
+      "question_id": "form30_page-4",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 497
+    },
+    {
+      "question_id": "form30_page-114",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 543
+    },
+    {
+      "question_id": "form30_page-150",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 564
+    },
+    {
+      "question_id": "form30_page-41",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 513
+    },
+    {
+      "question_id": "form30_page-151",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 564
+    },
+    {
+      "question_id": "form30_page-169",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 573
+    },
+    {
+      "question_id": "form30_page-78",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 527
+    },
+    {
+      "question_id": "form30_page-152",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-115",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 543
+    },
+    {
+      "question_id": "form30_page-189",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 581
+    },
+    {
+      "question_id": "form30_page-170",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 573
+    },
+    {
+      "question_id": "form30_page-42",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 513
+    },
+    {
+      "question_id": "form30_page-79",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 527
+    },
+    {
+      "question_id": "form30_page-133",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 554
+    },
+    {
+      "question_id": "form30_page-60",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-153",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 564
+    },
+    {
+      "question_id": "form30_page-190",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 581
+    },
+    {
+      "question_id": "form30_page-197",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 585
+    },
+    {
+      "question_id": "form30_page-116",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 543
+    },
+    {
+      "question_id": "form30_page-171",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 573
+    },
+    {
+      "question_id": "form30_page-6",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 499
+    },
+    {
+      "question_id": "form30_page-43",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 513
+    },
+    {
+      "question_id": "form30_page-193",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 583
+    },
+    {
+      "question_id": "form30_page-61",
+      "reason": "non_unique_chunk_match",
+      "hits": [
+        521,
+        527
+      ]
+    },
+    {
+      "question_id": "form30_page-5",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-80",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form30_page-98",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 535
+    },
+    {
+      "question_id": "form30_page-154",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 564
+    },
+    {
+      "question_id": "form30_page-62",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 522
+    },
+    {
+      "question_id": "form30_page-172",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 574
+    },
+    {
+      "question_id": "form30_page-173",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 574
+    },
+    {
+      "question_id": "form30_page-136",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 556
+    },
+    {
+      "question_id": "form30_page-99",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 536
+    },
+    {
+      "question_id": "form30_page-183",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 577
+    },
+    {
+      "question_id": "form30_page-128",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 552
+    },
+    {
+      "question_id": "form31_page-63",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 654
+    },
+    {
+      "question_id": "form31_page-118",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 714
+    },
+    {
+      "question_id": "form31_page-155",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 754
+    },
+    {
+      "question_id": "form31_page-137",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 733
+    },
+    {
+      "question_id": "form31_page-44",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 634
+    },
+    {
+      "question_id": "form31_page-7",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 593
+    },
+    {
+      "question_id": "form31_page-81",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 676
+    },
+    {
+      "question_id": "form31_page-174",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 774
+    },
+    {
+      "question_id": "form31_page-138",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 734
+    },
+    {
+      "question_id": "form31_page-27",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 614
+    },
+    {
+      "question_id": "form31_page-119",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 716
+    },
+    {
+      "question_id": "form31_page-8",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 595
+    },
+    {
+      "question_id": "form31_page-101",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 697
+    },
+    {
+      "question_id": "form31_page-64",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 656
+    },
+    {
+      "question_id": "form31_page-156",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 755
+    },
+    {
+      "question_id": "form31_page-9",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 596
+    },
+    {
+      "question_id": "form31_page-175",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 775
+    },
+    {
+      "question_id": "form31_page-82",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 677
+    },
+    {
+      "question_id": "form31_page-120",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 717
+    },
+    {
+      "question_id": "form31_page-83",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 678
+    },
+    {
+      "question_id": "form31_page-29",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 617
+    },
+    {
+      "question_id": "form31_page-28",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 615
+    },
+    {
+      "question_id": "form31_page-47",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 638
+    },
+    {
+      "question_id": "form31_page-46",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 636
+    },
+    {
+      "question_id": "form31_page-176",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 776
+    },
+    {
+      "question_id": "form31_page-66",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 658
+    },
+    {
+      "question_id": "form31_page-10",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 597
+    },
+    {
+      "question_id": "form31_page-157",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 756
+    },
+    {
+      "question_id": "form31_page-177",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 777
+    },
+    {
+      "question_id": "form31_page-103",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 699
+    },
+    {
+      "question_id": "form31_page-139",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 735
+    },
+    {
+      "question_id": "form31_page-11",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 598
+    },
+    {
+      "question_id": "form31_page-30",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 618
+    },
+    {
+      "question_id": "form31_page-121",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 718
+    },
+    {
+      "question_id": "form31_page-48",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 639
+    },
+    {
+      "question_id": "form31_page-84",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 680
+    },
+    {
+      "question_id": "form31_page-158",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 757
+    },
+    {
+      "question_id": "form31_page-140",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 737
+    },
+    {
+      "question_id": "form31_page-178",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 778
+    },
+    {
+      "question_id": "form31_page-31",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 619
+    },
+    {
+      "question_id": "form31_page-122",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 719
+    },
+    {
+      "question_id": "form31_page-104",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 700
+    },
+    {
+      "question_id": "form31_page-49",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 640
+    },
+    {
+      "question_id": "form31_page-68",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 660
+    },
+    {
+      "question_id": "form31_page-13",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 600
+    },
+    {
+      "question_id": "form31_page-123",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 720
+    },
+    {
+      "question_id": "form31_page-86",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 682
+    },
+    {
+      "question_id": "form31_page-160",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 759
+    },
+    {
+      "question_id": "form31_page-50",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 641
+    },
+    {
+      "question_id": "form31_page-124",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 721
+    },
+    {
+      "question_id": "form31_page-143",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 741
+    },
+    {
+      "question_id": "form31_page-69",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 661
+    },
+    {
+      "question_id": "form31_page-106",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 702
+    },
+    {
+      "question_id": "form31_page-33",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 621
+    },
+    {
+      "question_id": "form31_page-180",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 780
+    },
+    {
+      "question_id": "form31_page-161",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 760
+    },
+    {
+      "question_id": "form31_page-14",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 601
+    },
+    {
+      "question_id": "form31_page-144",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 742
+    },
+    {
+      "question_id": "form31_page-107",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 703
+    },
+    {
+      "question_id": "form31_page-70",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 662
+    },
+    {
+      "question_id": "form31_page-88",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 684
+    },
+    {
+      "question_id": "form31_page-51",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 642
+    },
+    {
+      "question_id": "form31_page-89",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 685
+    },
+    {
+      "question_id": "form31_page-71",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 663
+    },
+    {
+      "question_id": "form31_page-34",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 623
+    },
+    {
+      "question_id": "form31_page-15",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 602
+    },
+    {
+      "question_id": "form31_page-182",
+      "reason": "chunk_image_count_too_high",
+      "chunk_idx": 782,
+      "image_count": 172
+    },
+    {
+      "question_id": "form31_page-145",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 743
+    },
+    {
+      "question_id": "form31_page-53",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 644
+    },
+    {
+      "question_id": "form31_page-52",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 643
+    },
+    {
+      "question_id": "form31_page-16",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 603
+    },
+    {
+      "question_id": "form31_page-72",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 664
+    },
+    {
+      "question_id": "form31_page-163",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 762
+    },
+    {
+      "question_id": "form31_page-126",
+      "reason": "non_unique_chunk_match",
+      "hits": [
+        723,
+        731
+      ]
+    },
+    {
+      "question_id": "form31_page-35",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 624
+    },
+    {
+      "question_id": "form31_page-109",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 705
+    },
+    {
+      "question_id": "form31_page-146",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 744
+    },
+    {
+      "question_id": "form31_page-90",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 686
+    },
+    {
+      "question_id": "form31_page-164",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 763
+    },
+    {
+      "question_id": "form31_page-54",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 645
+    },
+    {
+      "question_id": "form31_page-73",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 665
+    },
+    {
+      "question_id": "form31_page-181",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 781
+    },
+    {
+      "question_id": "form31_page-165",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 764
+    },
+    {
+      "question_id": "form31_page-110",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 706
+    },
+    {
+      "question_id": "form31_page-55",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 646
+    },
+    {
+      "question_id": "form31_page-147",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 745
+    },
+    {
+      "question_id": "form31_page-18",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 605
+    },
+    {
+      "question_id": "form31_page-74",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 666
+    },
+    {
+      "question_id": "form31_page-148",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 746
+    },
+    {
+      "question_id": "form31_page-19",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 606
+    },
+    {
+      "question_id": "form31_page-111",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 707
+    },
+    {
+      "question_id": "form31_page-129",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 725
+    },
+    {
+      "question_id": "form31_page-166",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 766
+    },
+    {
+      "question_id": "form31_page-1",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 587
+    },
+    {
+      "question_id": "form31_page-38",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 628
+    },
+    {
+      "question_id": "form31_page-56",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 647
+    },
+    {
+      "question_id": "form31_page-130",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 726
+    },
+    {
+      "question_id": "form31_page-112",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 708
+    },
+    {
+      "question_id": "form31_page-20",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 607
+    },
+    {
+      "question_id": "form31_page-39",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 629
+    },
+    {
+      "question_id": "form31_page-149",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 747
+    },
+    {
+      "question_id": "form31_page-167",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 767
+    },
+    {
+      "question_id": "form31_page-2",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 588
+    },
+    {
+      "question_id": "form31_page-94",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 690
+    },
+    {
+      "question_id": "form31_page-57",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 648
+    },
+    {
+      "question_id": "form31_page-150",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 748
+    },
+    {
+      "question_id": "form31_page-76",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 669
+    },
+    {
+      "question_id": "form31_page-113",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 709
+    },
+    {
+      "question_id": "form31_page-21",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 608
+    },
+    {
+      "question_id": "form31_page-168",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 768
+    },
+    {
+      "question_id": "form31_page-58",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 649
+    },
+    {
+      "question_id": "form31_page-40",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 630
+    },
+    {
+      "question_id": "form31_page-132",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 728
+    },
+    {
+      "question_id": "form31_page-77",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 670
+    },
+    {
+      "question_id": "form31_page-3",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 589
+    },
+    {
+      "question_id": "form31_page-114",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 710
+    },
+    {
+      "question_id": "form31_page-169",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 769
+    },
+    {
+      "question_id": "form31_page-78",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 672
+    },
+    {
+      "question_id": "form31_page-115",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 711
+    },
+    {
+      "question_id": "form31_page-152",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 751
+    },
+    {
+      "question_id": "form31_page-59",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 650
+    },
+    {
+      "question_id": "form31_page-133",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 729
+    },
+    {
+      "question_id": "form31_page-23",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 610
+    },
+    {
+      "question_id": "form31_page-5",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 591
+    },
+    {
+      "question_id": "form31_page-4",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 590
+    },
+    {
+      "question_id": "form31_page-60",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 651
+    },
+    {
+      "question_id": "form31_page-170",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 770
+    },
+    {
+      "question_id": "form31_page-134",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 730
+    },
+    {
+      "question_id": "form31_page-153",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 752
+    },
+    {
+      "question_id": "form31_page-97",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 693
+    },
+    {
+      "question_id": "form31_page-171",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 771
+    },
+    {
+      "question_id": "form31_page-43",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 633
+    },
+    {
+      "question_id": "form31_page-61",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 652
+    },
+    {
+      "question_id": "form31_page-135",
+      "reason": "non_unique_chunk_match",
+      "hits": []
+    },
+    {
+      "question_id": "form31_page-117",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 713
+    },
+    {
+      "question_id": "form31_page-6",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 592
+    },
+    {
+      "question_id": "form31_page-24",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 611
+    },
+    {
+      "question_id": "form31_page-154",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 753
+    },
+    {
+      "question_id": "form31_page-116",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 712
+    },
+    {
+      "question_id": "form31_page-62",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 653
+    },
+    {
+      "question_id": "form31_page-25",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 612
+    },
+    {
+      "question_id": "form31_page-136",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 732
+    },
+    {
+      "question_id": "form31_page-172",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 772
+    },
+    {
+      "question_id": "form31_page-99",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 695
+    },
+    {
+      "question_id": "form31_page-173",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 773
+    },
+    {
+      "question_id": "form31_page-98",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 694
+    },
+    {
+      "question_id": "form31_page-32",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 620
+    },
+    {
+      "question_id": "form31_page-67",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 659
+    },
+    {
+      "question_id": "form31_page-108",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 704
+    },
+    {
+      "question_id": "form31_page-162",
+      "reason": "matched_chunk_has_no_images",
+      "chunk_idx": 761
+    }
+  ],
+  "summary": {
+    "updated_questions": 197,
+    "imported_assets": 235,
+    "replaced_existing_image_sets": 197,
+    "added_new_image_sets": 0,
+    "skipped_questions": 782
+  }
+}
