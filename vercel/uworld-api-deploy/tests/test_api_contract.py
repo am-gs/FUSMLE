@@ -225,21 +225,21 @@ class ApiContractTests(unittest.TestCase):
         self.assertEqual(payload["totalQuestions"], 120)
         self.assertEqual([len(block["questionIds"]) for block in payload["blocks"]], [20] * 6)
 
-    def test_test2_known_bad_media_is_flagged_and_suppressed(self):
+    def test_test2_has_no_suppressed_media_or_taken_form_items(self):
+        # After the Plan B parity repair, Test 2 should carry no known-bad media
+        # (nothing suppressed) and no items from the already-taken official form.
+        from test2_render_flags import TEST2_RENDER_FLAGS
+        self.assertEqual(TEST2_RENDER_FLAGS, {})
         client = app.test_client()
         headers = self.auth_headers()
         payload = client.post("/api/qbank/generate-test2", json={}, headers=headers).get_json()
         sid = payload["testSessionId"]
-        q1 = client.get(f"/api/qbank/test/{sid}/question/1", headers=headers)
-        self.assertEqual(q1.status_code, 200)
-        question = q1.get_json()["question"]
-        self.assertEqual(question["id"], "form31_page-43")
-        self.assertEqual(question["imageUrls"], [])
-        self.assertEqual(question["image_assets"], [])
-        self.assertEqual(question["image_url"], "")
-        self.assertIsNotNone(question["rendering_flag"])
-        self.assertTrue(question["rendering_flag"]["suppressImages"])
-        self.assertIn("Gram stain", question["rendering_flag"]["reason"])
+        for qid in payload["questionIds"]:
+            self.assertFalse(str(qid).startswith("nbme120_q"),
+                             f"Test 2 leaked an official-sample item: {qid}")
+        for idx in (1, 21, 41):
+            question = client.get(f"/api/qbank/test/{sid}/question/{idx}", headers=headers).get_json()["question"]
+            self.assertIsNone(question["rendering_flag"])
 
     def test_nbme120_review_attaches_enhanced_explanation(self):
         from index import get_enhanced_explanation

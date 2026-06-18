@@ -1,0 +1,40 @@
+{"slot": "form31_page-43", "chosen": "nbme28_q0121", "strategy": "clean-image", "system": "Multisystem", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "nbme28_q0156", "chosen": "nbme28_q0144", "strategy": "clean-image", "system": "Multisystem", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "form30_page-107", "chosen": "form30_page-156", "strategy": "text-only", "system": "GI", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "form30_page-142", "chosen": "form30_page-155", "strategy": "text-only", "system": "Cardiovascular", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "form31_page-100", "chosen": "form31_page-22", "strategy": "clean-image", "system": "Cardiovascular", "difficulty": "easy", "has_image": true, "confidence": "high"}
+{"slot": "nbme28_q0189", "chosen": "nbme28_q0135", "strategy": "text-only", "system": "Multisystem", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "nbme29_q0009", "chosen": "nbme29_q0170", "strategy": "text-only", "system": "Multisystem", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "nbme29_q0193", "chosen": "nbme28_q0104", "strategy": "text-only", "system": "Multisystem", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "form31_page-117", "chosen": "form31_page-15", "strategy": "clean-image", "system": "Renal/Urinary", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "form31_page-121", "chosen": "form31_page-5", "strategy": "text-only", "system": "Cardiovascular", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "nbme27_page-106", "chosen": "nbme27_page-139", "strategy": "clean-image", "system": "Cardiovascular", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "form30_page-103", "chosen": "form30_page-73", "strategy": "text-only", "system": "Renal/Urinary", "difficulty": "easy", "has_image": false, "confidence": "high"}
+{"slot": "form31_page-104", "chosen": "form31_page-31", "strategy": "text-only", "system": "Respiratory", "difficulty": "easy", "has_image": false, "confidence": "high"}
+{"slot": "form31_page-96", "chosen": "form31_page-95", "strategy": "clean-image", "system": "MSK/Skin", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "nbme29_q0025", "chosen": "form31_page-172", "strategy": "clean-image", "system": "Respiratory", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "form31_page-12", "chosen": "form31_page-87", "strategy": "clean-image", "system": "Behavioral/Nervous & Special Senses", "difficulty": "hard", "has_image": true, "confidence": "high"}
+{"slot": "form30_page-105", "chosen": "nbme27_page-185", "strategy": "clean-image", "system": "MSK/Skin", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "form30_page-12", "chosen": "form30_page-9", "strategy": "text-only", "system": "Reproductive/Endocrine", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "form31_page-158", "chosen": "nbme28_q0120", "strategy": "clean-image", "system": "MSK/Skin", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "nbme27_page-16", "chosen": "nbme27_page-82", "strategy": "text-only", "system": "MSK/Skin", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "form30_page-152", "chosen": "nbme27_page-98", "strategy": "text-only", "system": "Multisystem", "difficulty": "easy", "has_image": false, "confidence": "high"}
+{"slot": "form31_page-42", "chosen": "nbme27_page-2", "strategy": "clean-image", "system": "Cardiovascular", "difficulty": "easy", "has_image": true, "confidence": "high"}
+{"slot": "form30_page-138", "chosen": "form30_page-120", "strategy": "text-only", "system": "Reproductive/Endocrine", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "form31_page-0", "chosen": "form31_page-14", "strategy": "text-only", "system": "Hemat/Lymph/Immune", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "nbme27_page-127", "chosen": "nbme27_page-50", "strategy": "text-only", "system": "Behavioral/Nervous & Special Senses", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "nbme27_page-158", "chosen": "nbme27_page-40", "strategy": "text-only", "system": "Multisystem", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "nbme28_q0014", "chosen": "nbme28_q0162", "strategy": "text-only", "system": "Reproductive/Endocrine", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "nbme29_q0072", "chosen": "nbme29_q0143", "strategy": "text-only", "system": "Behavioral/Nervous & Special Senses", "difficulty": "hard", "has_image": false, "confidence": "high"}
+{"slot": "form31_page-107", "chosen": "form31_page-41", "strategy": "clean-image", "system": "Respiratory", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "form31_page-127", "chosen": "form31_page-34", "strategy": "text-only", "system": "Reproductive/Endocrine", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "nbme27_page-135", "chosen": "nbme27_page-164", "strategy": "clean-image", "system": "Behavioral/Nervous & Special Senses", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "form30_page-60", "chosen": "nbme28_q0116", "strategy": "text-only", "system": "Multisystem", "difficulty": "easy", "has_image": false, "confidence": "high"}
+{"slot": "form30_page-93", "chosen": "nbme29_q0148", "strategy": "text-only", "system": "Multisystem", "difficulty": "easy", "has_image": false, "confidence": "high"}
+{"slot": "form30_page-188", "chosen": "form30_page-117", "strategy": "clean-image", "system": "Renal/Urinary", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "nbme29_q0092", "chosen": "form30_page-149", "strategy": "clean-image", "system": "Cardiovascular", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "nbme27_page-58", "chosen": "nbme27_page-188", "strategy": "clean-image", "system": "Renal/Urinary", "difficulty": "easy", "has_image": true, "confidence": "high"}
+{"slot": "form31_page-56", "chosen": "form30_page-181", "strategy": "text-only", "system": "Reproductive/Endocrine", "difficulty": "hard", "has_image": false, "confidence": "high"}
+{"slot": "form31_page-171", "chosen": "form31_page-35", "strategy": "text-only", "system": "Cardiovascular", "difficulty": "medium", "has_image": false, "confidence": "high"}
+{"slot": "form31_page-25", "chosen": "nbme27_page-71", "strategy": "clean-image", "system": "MSK/Skin", "difficulty": "medium", "has_image": true, "confidence": "high"}
+{"slot": "nbme29_q0128", "chosen": "nbme28_q0163", "strategy": "text-only", "system": "Multisystem", "difficulty": "easy", "has_image": false, "confidence": "high"}
