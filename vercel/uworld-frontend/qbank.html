@@ -664,6 +664,14 @@ var meta=[item.system,item.subject,item.timeSpent!=null?(item.timeSpent+'s'):nul
 return '<div class="review-point"><strong>'+esc(item.questionId||'Question')+'</strong><span>'+esc(meta)+(line?'<br>'+line:'')+'</span></div>';
 }).join('')+'</div>';
 }
+function renderDifficultyChips(rows){
+if(!rows||!rows.length)return '<div class="review-note">No difficulty-labeled items answered yet.</div>';
+var color={easy:'#16a34a',medium:'#d97706',hard:'#dc2626'};
+return '<div class="review-chip-row">'+rows.map(function(r){
+var c=color[r.level]||'#475569';
+return '<div class="review-chip" style="border-color:'+c+'"><strong style="text-transform:capitalize">'+esc(r.level)+'</strong><span>'+formatPct(r.accuracy||0)+'</span><small>'+(r.correct||0)+' / '+(r.answered||0)+'</small></div>';
+}).join('')+'</div>';
+}
 function renderWordChips(wordStats){
 if(!wordStats||!wordStats.length)return '<div class="review-note">No stem-length signal yet.</div>';
 return '<div class="review-chip-row">'+wordStats.map(function(bucket){
@@ -698,15 +706,17 @@ renderReviewMetricCard('Readiness',formatReviewNumber(summary.readiness||0),form
 renderReviewMetricCard('Pace',summary.medianTime?formatReviewNumber(summary.medianTime)+'s':'—',summary.medianTime?'Median time per answered item':'No timing data captured')+
 renderReviewMetricCard('Media',formatPct(summary.media&&summary.media.accuracy||0),(summary.media&&summary.media.correct||0)+' / '+(summary.media&&summary.media.answered||0)+' on image/table items')+
 renderReviewMetricCard('Text-only',formatPct(summary.textOnly&&summary.textOnly.accuracy||0),(summary.textOnly&&summary.textOnly.correct||0)+' / '+(summary.textOnly&&summary.textOnly.answered||0)+' on text-only items')+
+(summary.highYield&&summary.highYield.answered?renderReviewMetricCard('High-yield',formatPct(summary.highYield.accuracy||0),(summary.highYield.correct||0)+' / '+(summary.highYield.answered||0)+' on high-yield items'):'')+
 '</section>';
 var blocks='<section class="review-panel wide"><h4><i class="fas fa-wave-square"></i>Block-by-block rhythm</h4><div class="review-note">This is where stamina, rhythm, and block-level collapse stop pretending to be abstract.</div>'+renderBlockCards(summary.blockStats||[],summary)+'</section>';
 var strengths='<section class="review-panel"><h4><i class="fas fa-arrow-trend-up"></i>What held up</h4><div class="review-note">Keep these patterns warm. They are already paying rent.</div>'+renderMiniRows(summary.strongSystems||[])+'</section>';
 var focus='<section class="review-panel"><h4><i class="fas fa-bullseye"></i>What needs the first repair pass</h4><div class="review-note">These are the categories most worth touching before doing more generic “review everything” theater.</div>'+renderMiniRows(summary.focusSystems||[])+'</section>';
+var difficulty='<section class="review-panel"><h4><i class="fas fa-gauge-high"></i>Accuracy by difficulty</h4><div class="review-note">Where the points leak relative to item difficulty — easy misses cost the most.</div>'+renderDifficultyChips(summary.difficultyBreakdown||[])+'</section>';
 var patterns='<section class="review-panel"><h4><i class="fas fa-stopwatch"></i>Stem + pacing signal</h4>'+renderWordChips(summary.wordStats||[])+'<div class="review-callout">Fast wrong answers usually mean a click-speed problem. Slow wrong answers usually mean you saw part of the pattern but did not close the loop. Both are fixable; they are just different jobs.</div></section>';
 var study='<section class="review-panel"><h4><i class="fas fa-layer-group"></i>Study-first topic pairs</h4><div class="review-note">Best place to target the next block of review without lighting your whole schedule on fire.</div>'+renderStudyPriorityRows(summary.studyPriorities||[])+'</section>';
 var near='<section class="review-panel"><h4><i class="fas fa-magnifying-glass-chart"></i>Almost-there misses</h4><div class="review-note">Long dwell time on a wrong answer usually means partial recognition. That is annoying, but promising.</div>'+renderPromptBullets(summary.nearMisses||[])+'</section>';
 var rapid='<section class="review-panel"><h4><i class="fas fa-bolt"></i>Rapid misses</h4><div class="review-note">These usually deserve a pace fix before a content overhaul.</div>'+renderPromptBullets(summary.rapidMisses||[])+'</section>';
-return hero+metrics+'<section class="review-panels">'+blocks+strengths+focus+patterns+study+near+rapid+'</section>';
+return hero+metrics+'<section class="review-panels">'+blocks+strengths+focus+difficulty+patterns+study+near+rapid+'</section>';
 }
 function renderExplanationHtml(text){
 return esc(text||'No explanation available.').replace(/\n/g,'<br>');

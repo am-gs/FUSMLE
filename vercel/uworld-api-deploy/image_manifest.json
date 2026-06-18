@@ -4321,5 +4321,14 @@
       "category": "charts_tables",
       "label": "serum estradiol during normal menstrual cycle; arrow at preovulatory peak"
     }
+  ],
+  "nbme28_q0116": [
+    {
+      "url": "/api/images_crop/nbme28_q0116_img01.webp",
+      "width": 1762,
+      "height": 1842,
+      "category": "charts_tables",
+      "label": "SERM bone-fracture study: % with new fracture by group (placebo/SERM 60mg/120mg)"
+    }
   ]
 }

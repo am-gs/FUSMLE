@@ -242,3 +242,26 @@ This repo should be understandable to multiple agent runtimes.
 - `REVIEW.md` = review-agent checklist
 
 If these files diverge, update them so `AGENTS.md` remains the ground truth.
+
+## 17. Queryable qbank index (fast retrieval)
+
+The curated qbank ships with a compact, queryable index so exam assembly and
+analytics never need to parse the full `gold_runtime.json` (~4 MB).
+
+- `vercel/uworld-api-deploy/qbank_index.json` — per-question metadata: `id, form,
+  system, subject, discipline, difficulty, high_yield, has_image, has_table,
+  n_options, word_count, concept_fingerprint, source_pdf_page, pdf_verified,
+  exam_ready` + aggregate `counts`.
+- `vercel/uworld-api-deploy/qbank_query.py` — `QBankIndex` loader with
+  `query(...)`, `distribution(field)`, and `build_blueprint(system_targets)`,
+  plus a CLI (`counts`, `query`, `distribution`, `provenance`).
+- Regenerate the index after editing `gold_runtime.json` (the generator block is
+  reproducible from the question file; keep fields in sync).
+- `source_pdf_page` / `pdf_verified` record provenance from cross-checking against
+  the compiled source PDF via the PaddleOCR-VL parse.
+
+### Post-exam review tracking metrics
+The review API (`/api/qbank/test/:id/review`) emits per-question `difficulty`,
+`highYield`, `discipline`, and `isMediaQuestion`, and the summary exposes
+`difficultyBreakdown` and `highYield` accuracy so the post-exam review can break
+performance down by difficulty and high-yield status.

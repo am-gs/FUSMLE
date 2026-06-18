@@ -644,6 +644,27 @@ def _build_review_summary(mode, rows):
     strong_systems, focus_systems = aggregate('system')
     strong_subjects, focus_subjects = aggregate('subject')
 
+    # Difficulty calibration: accuracy by labeled question difficulty.
+    difficulty_breakdown = []
+    for level in ('easy', 'medium', 'hard'):
+        sub = [r for r in answered_rows if (r.get('difficulty') or 'unknown') == level]
+        if sub:
+            corr = sum(1 for r in sub if _is_correct_value(r.get('isCorrect')))
+            difficulty_breakdown.append({
+                'level': level,
+                'correct': corr,
+                'answered': len(sub),
+                'accuracy': _safe_pct(corr, len(sub)),
+            })
+    # High-yield vs standard performance.
+    hy_rows = [r for r in answered_rows if r.get('highYield')]
+    hy_correct = sum(1 for r in hy_rows if _is_correct_value(r.get('isCorrect')))
+    high_yield_stat = {
+        'answered': len(hy_rows),
+        'correct': hy_correct,
+        'accuracy': _safe_pct(hy_correct, len(hy_rows)),
+    }
+
     word_buckets = {
         'short': {'label': 'Short stems', 'correct': 0, 'answered': 0},
         'medium': {'label': 'Medium stems', 'correct': 0, 'answered': 0},
@@ -797,6 +818,8 @@ def _build_review_summary(mode, rows):
         'focusSystems': focus_systems,
         'strongSubjects': strong_subjects,
         'focusSubjects': focus_subjects,
+        'difficultyBreakdown': difficulty_breakdown,
+        'highYield': high_yield_stat,
         'wordStats': word_stats,
         'studyPriorities': study_priorities,
         'nearMisses': near_misses[:8],
@@ -828,7 +851,10 @@ def qbank_test_review(test_id):
             'blockQuestion': idx % 20 + 1 if test_session['mode'] in ('nbme120', 'free120', 'test1', 'test2') else None,
             'questionId': question_id,
             'subject': question.get('subject', ''),
-            'system': question.get('system', ''),
+            'system': question.get('system', '') or question.get('organ_system', ''),
+            'discipline': question.get('discipline', ''),
+            'difficulty': question.get('difficulty_band') or question.get('difficulty') or 'unknown',
+            'highYield': bool(question.get('high_yield')),
             'text': question.get('text', ''),
             'options': question.get('options', []),
             'optionTable': question.get('option_table'),
