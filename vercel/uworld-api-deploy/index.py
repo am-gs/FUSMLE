@@ -40,6 +40,84 @@ def get_enhanced_explanation(question_id):
         'qbankCorrectLetter': record.get('qbankCorrectLetter'),
     }
 
+
+# ---------------------------------------------------------------------------
+# OpenEvidence-sourced Test 2 explanations + per-question psychometrics.
+_OE_EXPLANATIONS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'test2_openevidence_explanations.json')
+try:
+    with open(_OE_EXPLANATIONS_PATH, encoding='utf-8') as _fh:
+        _OE_EXPLANATIONS = json.load(_fh)
+except (OSError, ValueError):
+    _OE_EXPLANATIONS = {}
+
+
+def get_openevidence_report(question_id):
+    """Return the OpenEvidence deep-dive report + exam metrics for a Test 2 qid."""
+    if not question_id:
+        return None
+    record = _OE_EXPLANATIONS.get(str(question_id))
+    if not record or not record.get('narrativeHtml'):
+        return None
+    return {
+        'source': 'OpenEvidence — exam deep dive',
+        'oeNum': record.get('oeNum'),
+        'title': record.get('title'),
+        'narrativeHtml': record['narrativeHtml'],
+        'metrics': record.get('metrics', {}),
+    }
+
+
+def _pct_correct_from_pvalue(pvalue):
+    """NBME p-value is the proportion answering correctly. Return integer percent."""
+    try:
+        return int(round(float(pvalue) * 100))
+    except (TypeError, ValueError):
+        return None
+
+
+def _performance_badge(row, oe, median_time, fast_threshold, slow_threshold):
+    """Build a motivational, performance-aware badge from result + OE psychometrics."""
+    is_correct = _is_correct_value(row.get('isCorrect'))
+    is_wrong = _is_wrong_value(row.get('isCorrect'))
+    if not is_correct and not is_wrong:
+        return None
+    metrics = (oe or {}).get('metrics') or {}
+    diff = (metrics.get('difficulty') or row.get('difficulty') or '').lower()
+    pct = _pct_correct_from_pvalue(metrics.get('pValue'))
+    is_hard = ('hard' in diff) or (pct is not None and pct <= 45)
+    is_easy = ('easy' in diff) or (pct is not None and pct >= 75)
+    t = _coerce_number(row.get('timeSpent'))
+    fast = t is not None and median_time and t <= fast_threshold
+    slow = t is not None and median_time and t >= slow_threshold
+    pct_phrase = f"only ~{pct}% of test-takers get this right" if (pct is not None and pct <= 55) else (
+        f"~{pct}% get this right" if pct is not None else None)
+
+    if is_correct and is_hard:
+        return {'tone': 'celebrate', 'emoji': '🌟', 'title': 'Clutch — hard item nailed',
+                'text': 'You locked in a genuinely tough question' + (f' — {pct_phrase}.' if pct_phrase else '.')
+                        + (' Fast, too. ⚡' if fast else '')}
+    if is_correct and is_easy and fast:
+        return {'tone': 'speed', 'emoji': '⚡', 'title': 'Fast & accurate',
+                'text': 'Quick, confident, and correct on a high-yield gimme. That is exactly the pace you want on the easy ones to bank time for the hard ones.'}
+    if is_correct and fast:
+        return {'tone': 'speed', 'emoji': '⚡', 'title': 'Efficient',
+                'text': 'Answered well under your median time and got it right — efficient decisioning.'}
+    if is_correct:
+        return {'tone': 'solid', 'emoji': '✅', 'title': 'Solid',
+                'text': 'Correct.' + (f' {pct_phrase[0].upper()+pct_phrase[1:]}.' if pct_phrase else '')}
+    if is_wrong and is_easy and fast:
+        return {'tone': 'careless', 'emoji': '⏱️', 'title': 'Slow down — avoidable miss',
+                'text': 'Quick miss on an item most people get. This is a reread/anchoring slip, not a knowledge gap — the cheapest points to win back.'}
+    if is_wrong and is_hard:
+        return {'tone': 'tough', 'emoji': '💪', 'title': 'Hard item — expected stretch',
+                'text': 'A legitimately difficult question' + (f' ({pct_phrase}).' if pct_phrase else '.')
+                        + ' Study the pattern below; this is high-leverage learning, not a red flag.'}
+    if is_wrong and slow:
+        return {'tone': 'pace', 'emoji': '🐢', 'title': 'Long deliberation, still missed',
+                'text': 'You spent well over your median here and still missed it — a signal to flag this concept for focused review rather than grinding in the moment.'}
+    return {'tone': 'review', 'emoji': '📌', 'title': 'Review target',
+            'text': 'Missed — walk the reasoning chain below so the next encounter is automatic.'}
+
 app = Flask(__name__)
 CORS(app, supports_credentials=False, origins=["*"])
 
@@ -676,6 +754,8 @@ def _build_review_summary(mode, rows):
     blocks = {}
     near_misses = []
     rapid_misses = []
+    celebrations = []
+    badge_counts = {}
 
     for row in rows:
         wc = _stem_word_count(row.get('text', ''))
@@ -689,6 +769,19 @@ def _build_review_summary(mode, rows):
         row['explanationFull'] = explanation['full']
         row['insightTone'] = _insight_tone(row.get('isCorrect'), row.get('timeSpent'), median_time)
         row['coachingNote'] = _coaching_note(row, explanation, median_time)
+        badge = _performance_badge(row, row.get('oeReport'), median_time, fast_threshold, slow_threshold)
+        row['performanceBadge'] = badge
+        if badge:
+            badge_counts[badge['tone']] = badge_counts.get(badge['tone'], 0) + 1
+            if badge['tone'] == 'celebrate':
+                celebrations.append({
+                    'questionId': row.get('questionId'),
+                    'block': row.get('block'),
+                    'blockQuestion': row.get('blockQuestion'),
+                    'system': row.get('system') or 'Unlabeled',
+                    'title': (row.get('oeReport') or {}).get('title') or row.get('subject') or 'Hard item',
+                    'pctCorrect': _pct_correct_from_pvalue(((row.get('oeReport') or {}).get('metrics') or {}).get('pValue')),
+                })
 
         if row.get('isCorrect') is not None:
             word_buckets[bucket_key]['answered'] += 1
@@ -824,6 +917,8 @@ def _build_review_summary(mode, rows):
         'studyPriorities': study_priorities,
         'nearMisses': near_misses[:8],
         'rapidMisses': rapid_misses[:8],
+        'celebrations': sorted(celebrations, key=lambda c: (c['pctCorrect'] if c['pctCorrect'] is not None else 999))[:8],
+        'badgeCounts': badge_counts,
         'conversationalHeadline': conversational_headline,
         'tone': tone,
     }
@@ -868,6 +963,7 @@ def qbank_test_review(test_id):
             'explanation': question.get('explanation', ''),
         })
         rows[-1]['enhancedExplanation'] = get_enhanced_explanation(question_id)
+        rows[-1]['oeReport'] = get_openevidence_report(question_id) if test_session['mode'] == 'test2' else None
     summary = _build_review_summary(test_session['mode'], rows)
     return jsonify({
         'testSessionId': test_id,

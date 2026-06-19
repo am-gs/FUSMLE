@@ -16994,7 +16994,7 @@
         "text": "Transpeptidase"
       }
     ],
-    "correct_answer": 3,
+    "correct_answer": 4,
     "explanation": "Levofloxacin is a fluoroquinolone antibiotic that inhibits bacterial DNA replication by targeting DNA gyrase and topoisomerase IV. Resistance in *Pseudomonas aeruginosa* most commonly results from chromosomal mutations in the genes encoding these topoisomerases (e.g., *gyrA*, *parC*), which alter the drug-binding site and prevent inhibition.<br><br>**Distractors:**<br>- **A) Dihydrofolate reductase:** Target of trimethoprim; mutations confer trimethoprim resistance, not fluoroquinolone resistance.<br>- **B) \u03b2-Lactamase:** Hydrolyzes \u03b2-lactam rings, conferring resistance to penicillins and cephalosporins, not fluoroquinolones.<br>- **C) 30S ribosomal subunit:** Target of aminoglycosides and tetracyclines; alterations confer resistance to those classes, not fluoroquinolones.<br>- **E) Transpeptidase (penicillin-binding proteins):** Target of \u03b2-lactam antibiotics; alterations confer \u03b2-lactam resistance, not fluoroquinolone resistance.",
     "subject": "Multisystem",
     "system": "Multisystem",
@@ -17023,7 +17023,8 @@
       }
     ],
     "exam_ready": true,
-    "option_parse_error": false
+    "option_parse_error": false,
+    "answer_key_corrected": true
   },
   {
     "id": "nbme28_q0122",

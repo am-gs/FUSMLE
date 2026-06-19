@@ -254,6 +254,41 @@ class ApiContractTests(unittest.TestCase):
         conflict = get_enhanced_explanation("nbme120_q043")
         self.assertTrue(conflict["answerLetterConflict"])
 
+    def test_openevidence_report_present_for_all_test2_questions(self):
+        from index import get_openevidence_report
+        report = get_openevidence_report("nbme28_q0121")
+        self.assertIsNotNone(report)
+        self.assertTrue(report["narrativeHtml"].strip())
+        self.assertIn("difficulty", report["metrics"])
+        # Unknown qid yields nothing.
+        self.assertIsNone(get_openevidence_report("does_not_exist_q999"))
+
+    def test_test2_review_attaches_oe_report_and_performance_badges(self):
+        client = app.test_client()
+        headers = self.auth_headers()
+        payload = client.post("/api/qbank/generate-test2", json={}, headers=headers).get_json()
+        sid = payload["testSessionId"]
+        qids = payload["questionIds"]
+        # Answer first three items so the review has graded rows + a badge per row.
+        for qid in qids[:3]:
+            client.post(f"/api/qbank/test/{sid}/submit",
+                        json={"questionId": qid, "selectedOption": 1, "timeSpent": 30}, headers=headers)
+        review = client.get(f"/api/qbank/test/{sid}/review", headers=headers).get_json()
+        rows = review["rows"]
+        self.assertEqual(len(rows), 120)
+        # Every test2 row carries an OpenEvidence report with metrics.
+        with_oe = [r for r in rows if r.get("oeReport")]
+        self.assertEqual(len(with_oe), 120)
+        self.assertTrue(with_oe[0]["oeReport"]["narrativeHtml"].strip())
+        # Graded rows carry a performance badge; ungraded ones do not.
+        graded = [r for r in rows if r.get("isCorrect") is not None]
+        self.assertTrue(graded and all(r.get("performanceBadge") for r in graded))
+        ungraded = [r for r in rows if r.get("isCorrect") is None]
+        self.assertTrue(all(r.get("performanceBadge") is None for r in ungraded))
+        # Summary exposes celebration + badge aggregates.
+        self.assertIn("celebrations", review["summary"])
+        self.assertIn("badgeCounts", review["summary"])
+
     def test_answer_submission_is_persisted_in_test_state(self):
         client = app.test_client()
         headers = self.auth_headers()

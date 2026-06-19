@@ -185,6 +185,58 @@ body.reverse .option-item:hover{background:#2f3b46}
 	.enh-table td{border:1px solid #e6ddf6;padding:6px 9px;vertical-align:top;color:#3b3357}
 	.enh-table tr:first-child td{background:#f3edff;font-weight:700;color:#4c1d95}
 	.enh-conflict{margin-top:8px;font-size:12px;color:#92400e;background:#fff7e6;border:1px solid #fcd9a6;border-radius:8px;padding:8px 10px}
+	/* ---- Performance badge banner ---- */
+	.pbadge{display:flex;gap:11px;align-items:flex-start;border-radius:13px;padding:11px 14px;margin:0 0 13px 0;border:1px solid transparent}
+	.pbadge .pb-emoji{font-size:22px;line-height:1.1;flex:none}
+	.pbadge .pb-title{font-weight:800;font-size:13.5px;letter-spacing:.2px;margin-bottom:2px}
+	.pbadge .pb-text{font-size:12.8px;line-height:1.5;opacity:.95}
+	.pbadge.celebrate{background:linear-gradient(135deg,#fff7e0 0%,#ffeccb 100%);border-color:#f6cf7a;color:#7a4d05}
+	.pbadge.speed{background:linear-gradient(135deg,#e6f7ff 0%,#d4eefb 100%);border-color:#8fcdee;color:#0b4a6b}
+	.pbadge.solid{background:linear-gradient(135deg,#eafaf0 0%,#d8f3e3 100%);border-color:#94d9b1;color:#13633b}
+	.pbadge.careless{background:linear-gradient(135deg,#fff4e6 0%,#ffe6cc 100%);border-color:#f3b777;color:#92400e}
+	.pbadge.tough{background:linear-gradient(135deg,#f3eeff 0%,#e7dcff 100%);border-color:#c4a8f0;color:#5b21b6}
+	.pbadge.pace,.pbadge.review{background:linear-gradient(135deg,#fdeef0 0%,#f9dde1 100%);border-color:#eaa9b2;color:#9f1d31}
+	/* ---- OpenEvidence deep dive ---- */
+	.oe-wrap{margin-top:14px;border:1px solid #b9e0d3;border-radius:16px;background:linear-gradient(180deg,#f3fbf8 0%,#ecf8f3 100%);padding:14px 15px 12px 15px}
+	.oe-top{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:10px}
+	.oe-title{font-weight:800;color:#0f6b52;font-size:14px;display:flex;align-items:center;gap:7px}
+	.oe-badge{font-size:10px;font-weight:800;letter-spacing:.6px;background:#0f6b52;color:#fff;border-radius:999px;padding:3px 9px}
+	.oe-src{font-size:11px;color:#5b8a7c;margin-left:auto}
+	.oe-metrics{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px}
+	.oe-chip{font-size:11.5px;background:#fff;border:1px solid #cfe9df;border-radius:999px;padding:4px 10px;color:#26544a}
+	.oe-chip strong{color:#0f6b52}
+	.oe-chip.diff-hard{background:#fbeef0;border-color:#eab3bd;color:#9f1d31}
+	.oe-chip.diff-easy{background:#eafaf0;border-color:#9bd9b6;color:#13633b}
+	.oe-chip.diff-moderate{background:#fff6e6;border-color:#f0cd8d;color:#8a5a09}
+	.oe-mcw{font-size:12px;background:#fff6f6;border:1px solid #f0c7cb;border-radius:9px;padding:8px 11px;margin-bottom:10px;color:#8a2330}
+	.oe-mcw b{color:#b3253a}
+	.oe-toggle{cursor:pointer;font-size:12.5px;font-weight:700;color:#0f6b52;background:#dff2ea;border:1px solid #b9e0d3;border-radius:9px;padding:7px 12px;display:inline-flex;align-items:center;gap:7px;user-select:none}
+	.oe-toggle:hover{background:#d2ece1}
+	.oe-body{margin-top:11px;font-size:13px;line-height:1.6;color:#26333a;max-height:560px;overflow-y:auto;padding-right:6px}
+	.oe-body.collapsed{display:none}
+	.oe-body p{margin:0 0 9px 0}
+	.oe-body b{color:#143a4d}
+	.oe-h{font-size:12px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:#0f6b52;margin:14px 0 7px 0;padding-bottom:4px;border-bottom:1px dashed #bfe2d7}
+	.oe-body code{background:#e8f4ef;border-radius:4px;padding:1px 5px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:#0f6b52}
+	.oe-flow{display:flex;flex-direction:column;align-items:stretch;gap:0;margin:10px 0}
+	.oe-step{background:#fff;border:1px solid #cfe6dd;border-left:4px solid #2fa483;border-radius:9px;padding:8px 12px;font-size:12.5px;color:#274;box-shadow:0 2px 6px rgba(15,107,82,.05)}
+	.oe-step-final{border-left-color:#16a34a;background:linear-gradient(135deg,#eafaf0 0%,#dcf5e6 100%);font-weight:700;color:#13633b}
+	.oe-flow-arrow{align-self:center;color:#5bb39a;font-size:15px;line-height:1;margin:3px 0}
+	.oe-map{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;line-height:1.35;white-space:pre;overflow-x:auto;background:#10241d;color:#cdf5e6;border-radius:10px;padding:13px 15px;margin:10px 0}
+	.oe-table{width:100%;border-collapse:collapse;margin:9px 0;font-size:12.3px}
+	.oe-table th{background:#0f6b52;color:#fff;padding:7px 9px;text-align:left;font-weight:700}
+	.oe-table td{border:1px solid #d3e9e1;padding:6px 9px;vertical-align:top;color:#2c4a42}
+	.oe-table tbody tr:nth-child(even){background:#f3fbf8}
+	.oe-pre{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.8px;white-space:pre-wrap;background:#eef7f3;border-radius:9px;padding:10px 12px;color:#26544a;margin:9px 0}
+	.oe-quote{border-left:4px solid #f0b429;background:#fffaf0;border-radius:8px;padding:9px 13px;margin:10px 0;font-size:12.6px;color:#7a4d05}
+	/* ---- Celebrations panel ---- */
+	.review-celebrate{border-radius:16px;padding:18px 20px;margin-bottom:18px;background:linear-gradient(135deg,#fff7e0 0%,#ffe9c4 60%,#ffe0e6 100%);border:1px solid #f3d089}
+	.review-celebrate h4{display:flex;align-items:center;gap:9px;font-size:16px;font-weight:800;color:#8a5a09;margin-bottom:5px}
+	.review-celebrate .rc-sub{font-size:13px;color:#9a6a1c;margin-bottom:12px}
+	.rc-chips{display:flex;flex-wrap:wrap;gap:9px}
+	.rc-chip{background:#fff;border:1px solid #f0cd8d;border-radius:11px;padding:8px 12px;font-size:12.5px;color:#6b4708;box-shadow:0 4px 12px rgba(180,120,20,.08)}
+	.rc-chip strong{display:block;color:#8a3a05;font-size:12.8px;margin-bottom:2px}
+	.rc-chip span{color:#b3253a;font-weight:700}
 /* ---- Modals ---- */
 .fred-modal{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:60;display:none;align-items:center;justify-content:center}
 .fred-modal.open{display:flex}
@@ -716,7 +768,17 @@ var patterns='<section class="review-panel"><h4><i class="fas fa-stopwatch"></i>
 var study='<section class="review-panel"><h4><i class="fas fa-layer-group"></i>Study-first topic pairs</h4><div class="review-note">Best place to target the next block of review without lighting your whole schedule on fire.</div>'+renderStudyPriorityRows(summary.studyPriorities||[])+'</section>';
 var near='<section class="review-panel"><h4><i class="fas fa-magnifying-glass-chart"></i>Almost-there misses</h4><div class="review-note">Long dwell time on a wrong answer usually means partial recognition. That is annoying, but promising.</div>'+renderPromptBullets(summary.nearMisses||[])+'</section>';
 var rapid='<section class="review-panel"><h4><i class="fas fa-bolt"></i>Rapid misses</h4><div class="review-note">These usually deserve a pace fix before a content overhaul.</div>'+renderPromptBullets(summary.rapidMisses||[])+'</section>';
-return hero+metrics+'<section class="review-panels">'+blocks+strengths+focus+difficulty+patterns+study+near+rapid+'</section>';
+return hero+metrics+renderCelebrations(summary)+'<section class="review-panels">'+blocks+strengths+focus+difficulty+patterns+study+near+rapid+'</section>';
+}
+function renderCelebrations(summary){
+var c=(summary&&summary.celebrations)||[];
+if(!c.length)return '';
+var chips=c.map(function(x){
+var pct=(x.pctCorrect!=null)?('<span>only '+x.pctCorrect+'% get this right</span>'):'';
+var loc=x.block?('Block '+x.block+(x.blockQuestion?(' · Q'+x.blockQuestion):'')):'';
+return '<div class="rc-chip"><strong>'+esc(x.title||'Hard item')+'</strong>'+esc(loc)+(pct?' · '+pct:'')+'</div>';
+}).join('');
+return '<section class="review-celebrate"><h4>🌟 Hard-won points</h4><div class="rc-sub">You nailed '+c.length+' genuinely difficult item'+(c.length===1?'':'s')+' that most test-takers miss. This is exactly the kind of performance that moves a real score — bank the confidence.</div><div class="rc-chips">'+chips+'</div></section>';
 }
 function renderExplanationHtml(text){
 return esc(text||'No explanation available.').replace(/\n/g,'<br>');
@@ -779,6 +841,38 @@ var root=wrap.closest('.enh-wrap');
 root.querySelectorAll('.enh-tab').forEach(function(t,j){t.classList.toggle('active',j===i)});
 root.querySelectorAll('.enh-panel').forEach(function(p,j){p.classList.toggle('active',j===i)});
 }
+function renderPerformanceBadge(b){
+if(!b)return '';
+return '<div class="pbadge '+esc(b.tone||'solid')+'"><div class="pb-emoji">'+(b.emoji||'✅')+'</div><div><div class="pb-title">'+esc(b.title||'')+'</div><div class="pb-text">'+esc(b.text||'')+'</div></div></div>';
+}
+var OE_SEQ=0;
+function renderOeReport(oe,defaultOpen){
+if(!oe||!oe.narrativeHtml)return '';
+var gid='oe'+(OE_SEQ++);
+var m=oe.metrics||{};
+var chips='';
+function pct(p){var f=parseFloat(p);return isNaN(f)?null:Math.round(f*100);}
+var pc=pct(m.pValue);
+if(m.difficulty){var dc=String(m.difficulty).toLowerCase();var cls=dc.indexOf('hard')>-1?'diff-hard':(dc.indexOf('easy')>-1?'diff-easy':'diff-moderate');chips+='<span class="oe-chip '+cls+'"><strong>Difficulty</strong> '+esc(m.difficulty)+'</span>';}
+if(pc!=null)chips+='<span class="oe-chip"><strong>'+pc+'%</strong> answer correctly</span>';
+if(m.cognitiveLevel)chips+='<span class="oe-chip"><strong>Cognitive</strong> '+esc(m.cognitiveLevel)+'</span>';
+if(m.dIndex)chips+='<span class="oe-chip"><strong>Discrimination</strong> '+esc(String(m.dIndex))+'</span>';
+if(m.rpb)chips+='<span class="oe-chip"><strong>r<sub>pb</sub></strong> '+esc(String(m.rpb))+'</span>';
+if(m.discipline)chips+='<span class="oe-chip">'+esc(m.discipline)+'</span>';
+var mcw=m.mostCommonWrong?('<div class="oe-mcw"><b>Most common wrong answer:</b> '+esc(m.mostCommonWrong)+'</div>'):'';
+var open=defaultOpen?'':' collapsed';
+var caret=defaultOpen?'fa-chevron-up':'fa-chevron-down';
+return '<div class="oe-wrap"><div class="oe-top"><div class="oe-title"><i class="fas fa-microscope"></i> OpenEvidence deep dive</div><span class="oe-badge">SOTA</span><span class="oe-src">'+esc(oe.title||'')+'</span></div>'
++(chips?'<div class="oe-metrics">'+chips+'</div>':'')
++mcw
++'<div class="oe-toggle" onclick="oeToggle(\''+gid+'\',this)"><i class="fas '+caret+'"></i> '+(defaultOpen?'Hide':'Show')+' full breakdown</div>'
++'<div class="oe-body'+open+'" id="'+gid+'">'+oe.narrativeHtml+'</div></div>';
+}
+function oeToggle(id,el){
+var b=document.getElementById(id);if(!b)return;
+var hidden=b.classList.toggle('collapsed');
+el.innerHTML='<i class="fas '+(hidden?'fa-chevron-down':'fa-chevron-up')+'"></i> '+(hidden?'Show':'Hide')+' full breakdown';
+}
 function renderSolutionCard(row,i){
 var ok=isCorrectValue(row.isCorrect);
 var wrongAns=isWrongValue(row.isCorrect);
@@ -793,6 +887,7 @@ if(row.wordBucket)metaHtml+='<span class="rev-meta-pill"><i class="fas fa-align-
 if(row.isMediaQuestion)metaHtml+='<span class="rev-meta-pill"><i class="fas fa-image"></i> media item</span>';
 var h='<div class="rev-card">';
 h+='<div class="rev-head"><div class="rev-head-main">'+badge+'<span class="rev-tone '+esc(tone.style||'slate')+'">'+esc(tone.label||'Review note')+'</span></div><div class="rev-meta">'+metaHtml+'</div></div>';
+if(row.performanceBadge)h+=renderPerformanceBadge(row.performanceBadge);
 h+='<div class="rev-convo"><div class="rev-convo-title">What this means</div><div class="rev-convo-text">'+esc(tone.message||'')+(row.coachingNote?('<br><br>'+esc(row.coachingNote)):'')+'</div></div>';
 h+='<div class="rev-stem">'+renderQuestionText({text:row.text||'',tables:row.tables||[]})+'</div>';
 var imgs=(row.imageUrls&&row.imageUrls.length)?row.imageUrls:[];
@@ -829,6 +924,7 @@ h+='<div class="'+cls+'"><span class="option-letter">'+esc(letter)+'.</span> '+e
 	h+='<div class="rev-panel"><h5>Why the right answer wins</h5><p>'+renderExplanationHtml(row.explanationCore||row.explanation||'No explanation available.')+'</p></div>';
 	h+='<div class="rev-panel"><h5>How to remember it next time</h5><p>'+renderExplanationHtml(row.coachingNote||tone.message||'Keep the mechanism and the decisive clue together.')+'</p></div>';
 	h+='</div>';
+	if(row.oeReport){h+=renderOeReport(row.oeReport,wrongAns);}
 	if(row.enhancedExplanation){h+=renderEnhancedExplanation(row.enhancedExplanation);}
 	h+='<details class="rev-details"><summary>Open the full explanation</summary><div class="rev-exp"><div class="rev-exp-h">Full explanation</div>'+renderExplanationHtml(row.explanationFull||row.explanation||'No explanation available.')+'</div></details>';
 	h+='</div>';
