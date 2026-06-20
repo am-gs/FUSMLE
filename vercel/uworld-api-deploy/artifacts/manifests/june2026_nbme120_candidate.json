@@ -716,7 +716,7 @@
       "questionIds": [
         "nbme28_q0096",
         "nbme29_q0024",
-        "form30_page-125",
+        "form30_page-184",
         "nbme27_page-2",
         "form31_page-64",
         "form30_page-120",
@@ -1401,12 +1401,12 @@
       }
     }
   ],
-  "manifest_version": 2,
+  "manifest_version": 3,
   "provenance": {
     "test2_parity_repair": {
-      "replaced": 40,
-      "replaced_broken_media": 30,
-      "replaced_already_taken": 10,
+      "replaced": 1,
+      "replaced_broken_media": 1,
+      "replaced_already_taken": 0,
       "excluded_taken_forms": [
         "session23_nbme120_official",
         "session24_nbme120_simulation"

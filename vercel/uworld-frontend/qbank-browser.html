@@ -1,138 +1,475 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QBank Browser · FUuSMLE</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:#f3f6fa;color:#1f2d3d}
-header{background:#10314a;color:#fff;padding:14px 22px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-header h1{font-size:18px;margin:0;font-weight:700}
-header .stat{font-size:13px;opacity:.85}
-.wrap{max-width:1180px;margin:0 auto;padding:18px 22px 60px}
-.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;background:#fff;padding:14px;border-radius:12px;box-shadow:0 6px 16px rgba(20,60,90,.06);margin-bottom:16px}
-.filters select,.filters input{padding:8px 10px;border:1px solid #cfdbe6;border-radius:8px;font-size:13px;background:#fff}
-.filters input[type=text]{flex:1;min-width:200px}
-.chip{font-size:12px;background:#eaf2fa;color:#24557c;border-radius:999px;padding:3px 9px;font-weight:600}
-.qcard{background:#fff;border:1px solid #e2eaf2;border-radius:12px;margin-bottom:12px;overflow:hidden}
-.qhead{padding:14px 16px;cursor:pointer;display:flex;gap:12px;align-items:flex-start}
-.qhead:hover{background:#f7fafd}
-.qmeta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
-.tag{font-size:11px;padding:2px 8px;border-radius:6px;font-weight:700;background:#eef3f8;color:#37536b}
-.tag.easy{background:#e7f6ec;color:#1b7a3d}.tag.medium{background:#fdf1e3;color:#aa6411}.tag.hard{background:#fcebec;color:#b32430}
-.tag.img{background:#eae6fb;color:#5b3fb0}.tag.hy{background:#fff5d6;color:#9a7400}
-.qstem{font-size:14px;line-height:1.55;color:#26384a}
-.qid{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#7488a0;white-space:nowrap}
-.qbody{display:none;padding:4px 16px 18px;border-top:1px solid #eef2f6}
-.qbody.open{display:block}
-.qbody img{max-width:100%;max-height:420px;border:1px solid #dde6ee;border-radius:8px;margin:10px 0;display:block}
-.opt{padding:8px 12px;border:1px solid #e2eaf2;border-radius:8px;margin:6px 0;font-size:13.5px}
-.opt.correct{background:#e7f6ec;border-color:#7fc99a;font-weight:600}
-.opt .lt{font-weight:700;margin-right:8px;color:#37536b}
-.optbl{border-collapse:collapse;width:100%;margin:8px 0;font-size:13px}
-.optbl th,.optbl td{border:1px solid #dde6ee;padding:6px 9px;text-align:center}
-.optbl tr.correct{background:#e7f6ec;font-weight:600}
-.expl{background:#f7fafd;border-left:3px solid #4a90c2;padding:10px 14px;border-radius:6px;margin-top:10px;font-size:13.5px;line-height:1.6;color:#34465a}
-.ans{font-weight:700;color:#1b7a3d;margin-top:10px}
-.pager{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:18px}
-.pager button{padding:8px 16px;border:1px solid #cfdbe6;background:#fff;border-radius:8px;cursor:pointer;font-weight:600}
-.pager button:disabled{opacity:.4;cursor:default}
-.prov{font-size:11px;color:#8295a8;margin-top:8px}
-.loading{text-align:center;padding:40px;color:#7488a0}
-</style>
-</head>
-<body>
-<header>
-  <h1>QBank Browser</h1>
-  <span class="stat" id="totalStat">Loading…</span>
-  <span class="stat">Source of truth: curated 5-form pool + official samples</span>
-</header>
-<div class="wrap">
-  <div class="filters">
-    <input type="text" id="search" placeholder="Search stem / id / system…">
-    <select id="form"><option value="">All forms</option></select>
-    <select id="system"><option value="">All systems</option></select>
-    <select id="difficulty"><option value="">All difficulty</option><option>easy</option><option>medium</option><option>hard</option></select>
-    <select id="hasImage"><option value="">Image: any</option><option value="1">Has image</option><option value="0">Text only</option></select>
-  </div>
-  <div id="list"><div class="loading">Loading questions…</div></div>
-  <div class="pager">
-    <button id="prev">◀ Prev</button>
-    <span id="pageInfo"></span>
-    <button id="next">Next ▶</button>
-  </div>
-</div>
-<script>
-var API=window.location.origin;
-var state={offset:0,limit:25,total:0};
-function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
-function val(id){return document.getElementById(id).value;}
-function qstr(){
-  var p=new URLSearchParams();
-  if(val('search'))p.set('q',val('search'));
-  if(val('form'))p.set('form',val('form'));
-  if(val('system'))p.set('system',val('system'));
-  if(val('difficulty'))p.set('difficulty',val('difficulty'));
-  if(val('hasImage'))p.set('has_image',val('hasImage'));
-  p.set('limit',state.limit);p.set('offset',state.offset);
-  return p.toString();
-}
-function renderOptions(it){
-  if(it.optionTable&&it.optionTable.columns){
-    var t='<table class="optbl"><thead><tr><th></th>'+it.optionTable.columns.map(function(c){return '<th>'+esc(c)+'</th>'}).join('')+'</tr></thead><tbody>';
-    (it.optionTable.rows||[]).forEach(function(r,i){
-      var cls=(it.correctAnswer===i+1)?' class="correct"':'';
-      t+='<tr'+cls+'><td><b>'+esc(r[0])+'</b></td>'+r.slice(1).map(function(c){return '<td>'+esc(c)+'</td>'}).join('')+'</tr>';
-    });
-    return t+'</tbody></table>';
-  }
-  return (it.options||[]).map(function(o,i){
-    var correct=(it.correctAnswer===i+1);
-    return '<div class="opt'+(correct?' correct':'')+'"><span class="lt">'+esc(o.letter||String.fromCharCode(65+i))+'.</span>'+esc(o.text)+(correct?' ✓':'')+'</div>';
-  }).join('');
-}
-function card(it){
-  var imgs=(it.imageUrls||[]).map(function(u){return '<img loading="lazy" src="'+API+u+'" onerror="this.style.opacity=.3;this.alt=\'image unavailable\'">'}).join('');
-  var tags='<span class="tag">'+esc(it.form||'')+'</span><span class="tag">'+esc(it.system||'')+'</span>'+
-    '<span class="tag '+esc(it.difficulty)+'">'+esc(it.difficulty)+'</span>'+
-    (it.hasImage?'<span class="tag img">image</span>':'')+(it.highYield?'<span class="tag hy">high-yield</span>':'');
-  var prov=it.sourcePdfPage!=null?('<div class="prov">Source PDF page '+it.sourcePdfPage+(it.pdfVerified?' · cross-checked':'')+'</div>'):'';
-  var ans=it.correctLetter?('<div class="ans">Correct: '+esc(it.correctLetter)+(it.correctText?'. '+esc(it.correctText):'')+'</div>'):'';
-  return '<div class="qcard"><div class="qhead" onclick="this.nextElementSibling.classList.toggle(\'open\')">'+
-    '<div style="flex:1"><div class="qmeta">'+tags+'</div><div class="qstem">'+esc(it.stem.slice(0,240))+(it.stem.length>240?'…':'')+'</div></div>'+
-    '<div class="qid">'+esc(it.id)+'</div></div>'+
-    '<div class="qbody"><div class="qstem">'+esc(it.stem)+'</div>'+imgs+renderOptions(it)+ans+
-    (it.explanation?'<div class="expl">'+esc(it.explanation).replace(/&lt;br&gt;/g,'<br>')+'</div>':'')+prov+'</div></div>';
-}
-function load(){
-  document.getElementById('list').innerHTML='<div class="loading">Loading…</div>';
-  fetch(API+'/api/qbank/browse?'+qstr()).then(function(r){return r.json()}).then(function(d){
-    state.total=d.total;
-    if(d.facets){
-      fillFacet('form',d.facets.forms);fillFacet('system',d.facets.systems);
-    }
-    document.getElementById('totalStat').textContent=d.total+' questions match';
-    document.getElementById('list').innerHTML=d.items.length?d.items.map(card).join(''):'<div class="loading">No questions match these filters.</div>';
-    var from=d.total?state.offset+1:0,to=Math.min(state.offset+state.limit,d.total);
-    document.getElementById('pageInfo').textContent=from+'–'+to+' of '+d.total;
-    document.getElementById('prev').disabled=state.offset<=0;
-    document.getElementById('next').disabled=to>=d.total;
-    window.scrollTo(0,0);
-  });
-}
-var facetsFilled={};
-function fillFacet(id,vals){
-  if(facetsFilled[id])return;facetsFilled[id]=true;
-  var sel=document.getElementById(id),cur=sel.value;
-  vals.forEach(function(v){var o=document.createElement('option');o.value=v;o.textContent=v;sel.appendChild(o)});
-  sel.value=cur;
-}
-['form','system','difficulty','hasImage'].forEach(function(id){document.getElementById(id).onchange=function(){state.offset=0;load()}});
-var t;document.getElementById('search').oninput=function(){clearTimeout(t);t=setTimeout(function(){state.offset=0;load()},300)};
-document.getElementById('prev').onclick=function(){state.offset=Math.max(0,state.offset-state.limit);load()};
-document.getElementById('next').onclick=function(){state.offset+=state.limit;load()};
-load();
-</script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>QBank Browser · FUuSMLE</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    Arial, sans-serif;
+                background: #f3f6fa;
+                color: #1f2d3d;
+            }
+            header {
+                background: #10314a;
+                color: #fff;
+                padding: 14px 22px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                flex-wrap: wrap;
+            }
+            header h1 {
+                font-size: 18px;
+                margin: 0;
+                font-weight: 700;
+            }
+            header .stat {
+                font-size: 13px;
+                opacity: 0.85;
+            }
+            .wrap {
+                max-width: 1180px;
+                margin: 0 auto;
+                padding: 18px 22px 60px;
+            }
+            .filters {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                align-items: center;
+                background: #fff;
+                padding: 14px;
+                border-radius: 12px;
+                box-shadow: 0 6px 16px rgba(20, 60, 90, 0.06);
+                margin-bottom: 16px;
+            }
+            .filters select,
+            .filters input {
+                padding: 8px 10px;
+                border: 1px solid #cfdbe6;
+                border-radius: 8px;
+                font-size: 13px;
+                background: #fff;
+            }
+            .filters input[type="text"] {
+                flex: 1;
+                min-width: 200px;
+            }
+            .chip {
+                font-size: 12px;
+                background: #eaf2fa;
+                color: #24557c;
+                border-radius: 999px;
+                padding: 3px 9px;
+                font-weight: 600;
+            }
+            .qcard {
+                background: #fff;
+                border: 1px solid #e2eaf2;
+                border-radius: 12px;
+                margin-bottom: 12px;
+                overflow: hidden;
+            }
+            .qhead {
+                padding: 14px 16px;
+                cursor: pointer;
+                display: flex;
+                gap: 12px;
+                align-items: flex-start;
+            }
+            .qhead:hover {
+                background: #f7fafd;
+            }
+            .qmeta {
+                display: flex;
+                gap: 6px;
+                flex-wrap: wrap;
+                margin-bottom: 6px;
+            }
+            .tag {
+                font-size: 11px;
+                padding: 2px 8px;
+                border-radius: 6px;
+                font-weight: 700;
+                background: #eef3f8;
+                color: #37536b;
+            }
+            .tag.easy {
+                background: #e7f6ec;
+                color: #1b7a3d;
+            }
+            .tag.medium {
+                background: #fdf1e3;
+                color: #aa6411;
+            }
+            .tag.hard {
+                background: #fcebec;
+                color: #b32430;
+            }
+            .tag.img {
+                background: #eae6fb;
+                color: #5b3fb0;
+            }
+            .tag.hy {
+                background: #fff5d6;
+                color: #9a7400;
+            }
+            .qstem {
+                font-size: 14px;
+                line-height: 1.55;
+                color: #26384a;
+            }
+            .qid {
+                font-family: ui-monospace, Menlo, monospace;
+                font-size: 12px;
+                color: #7488a0;
+                white-space: nowrap;
+            }
+            .qbody {
+                display: none;
+                padding: 4px 16px 18px;
+                border-top: 1px solid #eef2f6;
+            }
+            .qbody.open {
+                display: block;
+            }
+            .qbody img {
+                max-width: 100%;
+                max-height: 420px;
+                border: 1px solid #dde6ee;
+                border-radius: 8px;
+                margin: 10px 0;
+                display: block;
+            }
+            .opt {
+                padding: 8px 12px;
+                border: 1px solid #e2eaf2;
+                border-radius: 8px;
+                margin: 6px 0;
+                font-size: 13.5px;
+            }
+            .opt.correct {
+                background: #e7f6ec;
+                border-color: #7fc99a;
+                font-weight: 600;
+            }
+            .opt .lt {
+                font-weight: 700;
+                margin-right: 8px;
+                color: #37536b;
+            }
+            .optbl {
+                border-collapse: collapse;
+                width: 100%;
+                margin: 8px 0;
+                font-size: 13px;
+            }
+            .optbl th,
+            .optbl td {
+                border: 1px solid #dde6ee;
+                padding: 6px 9px;
+                text-align: center;
+            }
+            .optbl tr.correct {
+                background: #e7f6ec;
+                font-weight: 600;
+            }
+            .expl {
+                background: #f7fafd;
+                border-left: 3px solid #4a90c2;
+                padding: 10px 14px;
+                border-radius: 6px;
+                margin-top: 10px;
+                font-size: 13.5px;
+                line-height: 1.6;
+                color: #34465a;
+            }
+            .ans {
+                font-weight: 700;
+                color: #1b7a3d;
+                margin-top: 10px;
+            }
+            .pager {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+                margin-top: 18px;
+            }
+            .pager button {
+                padding: 8px 16px;
+                border: 1px solid #cfdbe6;
+                background: #fff;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: 600;
+            }
+            .pager button:disabled {
+                opacity: 0.4;
+                cursor: default;
+            }
+            .prov {
+                font-size: 11px;
+                color: #8295a8;
+                margin-top: 8px;
+            }
+            .loading {
+                text-align: center;
+                padding: 40px;
+                color: #7488a0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>QBank Browser</h1>
+            <span class="stat" id="totalStat">Loading…</span>
+            <span class="stat"
+                >Source of truth: curated 5-form pool + official samples</span
+            >
+        </header>
+        <div class="wrap">
+            <div class="filters">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search stem / id / system…"
+                />
+                <select id="form">
+                    <option value="">All forms</option>
+                </select>
+                <select id="system">
+                    <option value="">All systems</option>
+                </select>
+                <select id="difficulty">
+                    <option value="">All difficulty</option>
+                    <option>easy</option>
+                    <option>medium</option>
+                    <option>hard</option>
+                </select>
+                <select id="hasImage">
+                    <option value="">Image: any</option>
+                    <option value="1">Has image</option>
+                    <option value="0">Text only</option>
+                </select>
+            </div>
+            <div id="list"><div class="loading">Loading questions…</div></div>
+            <div class="pager">
+                <button id="prev">◀ Prev</button>
+                <span id="pageInfo"></span>
+                <button id="next">Next ▶</button>
+            </div>
+        </div>
+        <script>
+            var API = window.location.origin;
+            var state = { offset: 0, limit: 25, total: 0 };
+            function esc(s) {
+                return (s || "")
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;");
+            }
+            function val(id) {
+                return document.getElementById(id).value;
+            }
+            function qstr() {
+                var p = new URLSearchParams();
+                if (val("search")) p.set("q", val("search"));
+                if (val("form")) p.set("form", val("form"));
+                if (val("system")) p.set("system", val("system"));
+                if (val("difficulty")) p.set("difficulty", val("difficulty"));
+                if (val("hasImage")) p.set("has_image", val("hasImage"));
+                p.set("limit", state.limit);
+                p.set("offset", state.offset);
+                return p.toString();
+            }
+            function renderOptions(it) {
+                if (it.optionTable && it.optionTable.columns) {
+                    var t =
+                        '<table class="optbl"><thead><tr><th></th>' +
+                        it.optionTable.columns
+                            .map(function (c) {
+                                return "<th>" + esc(c) + "</th>";
+                            })
+                            .join("") +
+                        "</tr></thead><tbody>";
+                    (it.optionTable.rows || []).forEach(function (r, i) {
+                        var cls =
+                            it.correctAnswer === i + 1
+                                ? ' class="correct"'
+                                : "";
+                        t +=
+                            "<tr" +
+                            cls +
+                            "><td><b>" +
+                            esc(r[0]) +
+                            "</b></td>" +
+                            r
+                                .slice(1)
+                                .map(function (c) {
+                                    return "<td>" + esc(c) + "</td>";
+                                })
+                                .join("") +
+                            "</tr>";
+                    });
+                    return t + "</tbody></table>";
+                }
+                return (it.options || [])
+                    .map(function (o, i) {
+                        var correct = it.correctAnswer === i + 1;
+                        return (
+                            '<div class="opt' +
+                            (correct ? " correct" : "") +
+                            '"><span class="lt">' +
+                            esc(o.letter || String.fromCharCode(65 + i)) +
+                            ".</span>" +
+                            esc(o.text) +
+                            (correct ? " ✓" : "") +
+                            "</div>"
+                        );
+                    })
+                    .join("");
+            }
+            function card(it) {
+                var imgs = (it.imageUrls || [])
+                    .map(function (u) {
+                        return (
+                            '<img loading="lazy" src="' +
+                            API +
+                            u +
+                            '" onerror="this.style.opacity=.3;this.alt=\'image unavailable\'">'
+                        );
+                    })
+                    .join("");
+                var tags =
+                    '<span class="tag">' +
+                    esc(it.form || "") +
+                    '</span><span class="tag">' +
+                    esc(it.system || "") +
+                    "</span>" +
+                    '<span class="tag ' +
+                    esc(it.difficulty) +
+                    '">' +
+                    esc(it.difficulty) +
+                    "</span>" +
+                    (it.hasImage ? '<span class="tag img">image</span>' : "") +
+                    (it.highYield
+                        ? '<span class="tag hy">high-yield</span>'
+                        : "");
+                var prov =
+                    it.sourcePdfPage != null
+                        ? '<div class="prov">Source PDF page ' +
+                          it.sourcePdfPage +
+                          (it.pdfVerified ? " · cross-checked" : "") +
+                          "</div>"
+                        : "";
+                var ans = it.correctLetter
+                    ? '<div class="ans">Correct: ' +
+                      esc(it.correctLetter) +
+                      (it.correctText ? ". " + esc(it.correctText) : "") +
+                      "</div>"
+                    : "";
+                return (
+                    '<div class="qcard"><div class="qhead" onclick="this.nextElementSibling.classList.toggle(\'open\')">' +
+                    '<div style="flex:1"><div class="qmeta">' +
+                    tags +
+                    '</div><div class="qstem">' +
+                    esc(it.stem.slice(0, 240)) +
+                    (it.stem.length > 240 ? "…" : "") +
+                    "</div></div>" +
+                    '<div class="qid">' +
+                    esc(it.id) +
+                    "</div></div>" +
+                    '<div class="qbody"><div class="qstem">' +
+                    esc(it.stem) +
+                    "</div>" +
+                    imgs +
+                    renderOptions(it) +
+                    ans +
+                    (it.explanation
+                        ? '<div class="expl">' +
+                          esc(it.explanation).replace(/&lt;br&gt;/g, "<br>") +
+                          "</div>"
+                        : "") +
+                    prov +
+                    "</div></div>"
+                );
+            }
+            function load() {
+                document.getElementById("list").innerHTML =
+                    '<div class="loading">Loading…</div>';
+                fetch(API + "/api/qbank/browse?" + qstr())
+                    .then(function (r) {
+                        return r.json();
+                    })
+                    .then(function (d) {
+                        state.total = d.total;
+                        if (d.facets) {
+                            fillFacet("form", d.facets.forms);
+                            fillFacet("system", d.facets.systems);
+                        }
+                        document.getElementById("totalStat").textContent =
+                            d.total + " questions match";
+                        document.getElementById("list").innerHTML = d.items
+                            .length
+                            ? d.items.map(card).join("")
+                            : '<div class="loading">No questions match these filters.</div>';
+                        var from = d.total ? state.offset + 1 : 0,
+                            to = Math.min(state.offset + state.limit, d.total);
+                        document.getElementById("pageInfo").textContent =
+                            from + "–" + to + " of " + d.total;
+                        document.getElementById("prev").disabled =
+                            state.offset <= 0;
+                        document.getElementById("next").disabled =
+                            to >= d.total;
+                        window.scrollTo(0, 0);
+                    });
+            }
+            var facetsFilled = {};
+            function fillFacet(id, vals) {
+                if (facetsFilled[id]) return;
+                facetsFilled[id] = true;
+                var sel = document.getElementById(id),
+                    cur = sel.value;
+                vals.forEach(function (v) {
+                    var o = document.createElement("option");
+                    o.value = v;
+                    o.textContent = v;
+                    sel.appendChild(o);
+                });
+                sel.value = cur;
+            }
+            ["form", "system", "difficulty", "hasImage"].forEach(function (id) {
+                document.getElementById(id).onchange = function () {
+                    state.offset = 0;
+                    load();
+                };
+            });
+            var t;
+            document.getElementById("search").oninput = function () {
+                clearTimeout(t);
+                t = setTimeout(function () {
+                    state.offset = 0;
+                    load();
+                }, 300);
+            };
+            document.getElementById("prev").onclick = function () {
+                state.offset = Math.max(0, state.offset - state.limit);
+                load();
+            };
+            document.getElementById("next").onclick = function () {
+                state.offset += state.limit;
+                load();
+            };
+            load();
+        </script>
+        <script src="assets/js/audit-notice.js"></script>
+    </body>
 </html>

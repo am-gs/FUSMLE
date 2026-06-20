@@ -1,0 +1,174 @@
+# NBME 28 answer-key audit (2026-06-19)
+
+- Checked runtime items: **199**
+- Confirmed discrepancies: **131**
+- Ambiguous/manual-adjudication items: **25**
+- Matches: **43**
+
+## Evidence base
+
+- Runtime: `vercel/uworld-api-deploy/gold_runtime.json`
+- Source PDF: `NBME_Form28.pdf`
+- Method: page-by-page `pdftotext` extraction of each page-local `Correct Answer`, mapped to sequential `nbme28_q0001`…`nbme28_q0199` runtime items; spot-checked directly against stems/options.
+
+## Confirmed discrepancies
+
+- `nbme28_q0016` (PDF page 16): runtime `D` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0017` (PDF page 17): runtime `A` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0018` (PDF page 18): runtime `E` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0019` (PDF page 19): runtime `D` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0020` (PDF page 20): runtime `A` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0021` (PDF page 21): runtime `C` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0022` (PDF page 22): runtime `B` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0023` (PDF page 23): runtime `C` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0024` (PDF page 24): runtime `E` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0025` (PDF page 25): runtime `C` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0027` (PDF page 27): runtime `B` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0028` (PDF page 28): runtime `A` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0029` (PDF page 29): runtime `B` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0030` (PDF page 30): runtime `0` -> PDF `B`; issue=`invalid_scoring_metadata_and_wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0031` (PDF page 31): runtime `A` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0032` (PDF page 32): runtime `C` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0035` (PDF page 35): runtime `C` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0037` (PDF page 37): runtime `0` -> PDF `C`; issue=`invalid_scoring_metadata_and_wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0038` (PDF page 38): runtime `A` -> PDF `F`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0039` (PDF page 39): runtime `C` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0040` (PDF page 40): runtime `B` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0041` (PDF page 41): runtime `E` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0042` (PDF page 42): runtime `C` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0043` (PDF page 43): runtime `B` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0045` (PDF page 45): runtime `C` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0046` (PDF page 46): runtime `E` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0047` (PDF page 47): runtime `B` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0048` (PDF page 48): runtime `A` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0049` (PDF page 49): runtime `D` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0051` (PDF page 51): runtime `0` -> PDF `D`; issue=`invalid_scoring_metadata_and_wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0052` (PDF page 52): runtime `E` -> PDF `F`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0054` (PDF page 54): runtime `D` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0055` (PDF page 55): runtime `C` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0058` (PDF page 58): runtime `D` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0059` (PDF page 59): runtime `A` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0060` (PDF page 60): runtime `0` -> PDF `A`; issue=`invalid_scoring_metadata_and_wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0061` (PDF page 61): runtime `C` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0063` (PDF page 63): runtime `A` -> PDF `F`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0064` (PDF page 64): runtime `B` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0065` (PDF page 65): runtime `D` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0067` (PDF page 67): runtime `C` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0069` (PDF page 69): runtime `E` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0071` (PDF page 71): runtime `C` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0072` (PDF page 72): runtime `B` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0076` (PDF page 76): runtime `B` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0077` (PDF page 77): runtime `A` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0080` (PDF page 80): runtime `B` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0082` (PDF page 82): runtime `C` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0085` (PDF page 85): runtime `D` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0087` (PDF page 87): runtime `A` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0088` (PDF page 88): runtime `0` -> PDF `A`; issue=`invalid_scoring_metadata_and_wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0089` (PDF page 89): runtime `D` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0090` (PDF page 90): runtime `E` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0091` (PDF page 91): runtime `D` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0094` (PDF page 94): runtime `C` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0095` (PDF page 95): runtime `D` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0096` (PDF page 96): runtime `C` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0097` (PDF page 97): runtime `0` -> PDF `C`; issue=`invalid_scoring_metadata_and_wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0098` (PDF page 98): runtime `E` -> PDF `F`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0099` (PDF page 99): runtime `C` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0101` (PDF page 101): runtime `D` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0102` (PDF page 102): runtime `C` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0105` (PDF page 105): runtime `E` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0106` (PDF page 106): runtime `A` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0107` (PDF page 107): runtime `D` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0108` (PDF page 108): runtime `E` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0109` (PDF page 109): runtime `A` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0110` (PDF page 110): runtime `D` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0111` (PDF page 111): runtime `A` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0112` (PDF page 112): runtime `C` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0114` (PDF page 114): runtime `C` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0115` (PDF page 115): runtime `D` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0116` (PDF page 116): runtime `B` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0117` (PDF page 117): runtime `D` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0118` (PDF page 118): runtime `B` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0119` (PDF page 119): runtime `D` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0123` (PDF page 123): runtime `A` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0124` (PDF page 124): runtime `B` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0125` (PDF page 125): runtime `E` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0126` (PDF page 126): runtime `A` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0128` (PDF page 128): runtime `0` -> PDF `D`; issue=`invalid_scoring_metadata_and_wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0129` (PDF page 129): runtime `C` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0130` (PDF page 130): runtime `A` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0131` (PDF page 131): runtime `E` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0135` (PDF page 135): runtime `C` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0136` (PDF page 136): runtime `F` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0137` (PDF page 137): runtime `B` -> PDF `F`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0138` (PDF page 138): runtime `0` -> PDF `B`; issue=`invalid_scoring_metadata_and_wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0139` (PDF page 139): runtime `C` -> PDF `F`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0141` (PDF page 141): runtime `D` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0142` (PDF page 142): runtime `B` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0144` (PDF page 144): runtime `D` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0145` (PDF page 145): runtime `B` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0146` (PDF page 146): runtime `C` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0147` (PDF page 147): runtime `E` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0148` (PDF page 148): runtime `C` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0149` (PDF page 149): runtime `D` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0150` (PDF page 150): runtime `B` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0152` (PDF page 152): runtime `B` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0154` (PDF page 154): runtime `E` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0155` (PDF page 155): runtime `C` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0156` (PDF page 156): runtime `A` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0157` (PDF page 157): runtime `D` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0158` (PDF page 158): runtime `C` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0159` (PDF page 159): runtime `D` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0160` (PDF page 160): runtime `A` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0162` (PDF page 162): runtime `B` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0163` (PDF page 163): runtime `A` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0164` (PDF page 164): runtime `D` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0165` (PDF page 165): runtime `E` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0167` (PDF page 167): runtime `C` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0168` (PDF page 168): runtime `B` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0169` (PDF page 169): runtime `F` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0172` (PDF page 172): runtime `A` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0173` (PDF page 173): runtime `B` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0174` (PDF page 174): runtime `A` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0175` (PDF page 175): runtime `D` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0176` (PDF page 176): runtime `C` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0177` (PDF page 177): runtime `A` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0181` (PDF page 181): runtime `D` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0182` (PDF page 182): runtime `C` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0183` (PDF page 183): runtime `A` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0185` (PDF page 185): runtime `C` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0187` (PDF page 187): runtime `A` -> PDF `E`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0188` (PDF page 188): runtime `F` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0190` (PDF page 190): runtime `D` -> PDF `C`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0192` (PDF page 192): runtime `E` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0194` (PDF page 194): runtime `A` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0195` (PDF page 195): runtime `B` -> PDF `A`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0197` (PDF page 197): runtime `B` -> PDF `D`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+- `nbme28_q0198` (PDF page 198): runtime `D` -> PDF `B`; issue=`wrong_answer_key`; impact=Question will be scored incorrectly, or may be unscorable if current runtime metadata is invalid.
+
+## Ambiguous or manual-adjudication items
+
+- `nbme28_q0026` (PDF page 26): pdf=`C`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0033` (PDF page 33): pdf=`C`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0034` (PDF page 34): pdf=`C`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0056` (PDF page 56): pdf=`C`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0062` (PDF page 62): pdf=`C`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0070` (PDF page 70): pdf=`E`, runtime_correct=`0`, option_count=`1`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0073` (PDF page 73): pdf=`B`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0084` (PDF page 84): pdf=`C`, runtime_correct=`0`, option_count=`1`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0086` (PDF page 86): pdf=`D`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0100` (PDF page 100): pdf=`C`, runtime_correct=`0`, option_count=`1`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0127` (PDF page 127): pdf=`A`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0132` (PDF page 132): pdf=`E`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0134` (PDF page 134): pdf=`B`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0140` (PDF page 140): pdf=`C`, runtime_correct=`0`, option_count=`2`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0143` (PDF page 143): pdf=`B`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0151` (PDF page 151): pdf=`B`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0170` (PDF page 170): pdf=`F`, runtime_correct=`3`, option_count=`5`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0178` (PDF page 178): pdf=`A`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0180` (PDF page 180): pdf=`B`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0184` (PDF page 184): pdf=`A`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0186` (PDF page 186): pdf=`C`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0189` (PDF page 189): pdf=`F`, runtime_correct=`3`, option_count=`5`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0193` (PDF page 193): pdf=`E`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0196` (PDF page 196): pdf=`B`, runtime_correct=`0`, option_count=`0`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`
+- `nbme28_q0199` (PDF page 199): pdf=`D`, runtime_correct=`2`, option_count=`2`; issue=`runtime_option_set_truncated_or_misaligned_vs_pdf`

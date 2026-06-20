@@ -1,0 +1,58 @@
+{
+  "auditDate": "2026-06-19",
+  "scope": "Form 30-derived questions only (gold_runtime ids starting with form30_page-)",
+  "runtimeFile": "vercel/uworld-api-deploy/gold_runtime.json",
+  "countChecked": 200,
+  "methods": {
+    "structuralChecks": [
+      "validated every Form 30 runtime row has a correct_answer within option range",
+      "validated every Form 30 runtime correct_answer points to an option whose id and letter match the 1-based answer index",
+      "validated Form 30 items embedded in artifacts/exports/test1_exam.json and artifacts/exports/test2_exam.json have internally consistent correctAnswer.index and correctAnswer.letter values"
+    ],
+    "manualAdjudication": [
+      "reviewed the 20 Form 30 rows listed in artifacts/evals/session45_answer_audit.json as OE/runtime mismatches",
+      "manually checked representative high-risk rows against the actual runtime stem/options/explanation and, where present, source-linked image metadata"
+    ],
+    "sourceLimitations": [
+      "no local Form 30 PDF or official answer-key artifact was present in the repo during this audit",
+      "existing session45 audit artifacts rely on an external OE comparison and were not treated as source truth"
+    ]
+  },
+  "confirmedMismatches": [],
+  "ambiguousItems": [],
+  "otherFindings": [
+    {
+      "type": "derivative_audit_artifact_bug",
+      "file": "artifacts/evals/session45_answer_audit.json",
+      "summary": "The session45 artifact appears to mis-map 1-based answer indexes to letters/option numbers for Form 30 rows, producing false OE/runtime mismatch signals.",
+      "examples": [
+        {
+          "questionId": "form30_page-155",
+          "goldRuntimeCorrectAnswer": 2,
+          "goldRuntimeCorrectLetter": "B",
+          "exportedCorrectAnswer": { "index": 2, "letter": "B" },
+          "session45ReportedRuntimeCorrectOptionNumber": 3,
+          "session45ReportedRuntimeCorrectLetter": "C"
+        },
+        {
+          "questionId": "form30_page-174",
+          "goldRuntimeCorrectAnswer": 5,
+          "goldRuntimeCorrectLetter": "E",
+          "exportedCorrectAnswer": { "index": 5, "letter": "E" },
+          "session45ReportedRuntimeCorrectOptionNumber": 6,
+          "session45ReportedRuntimeCorrectLetter": "F"
+        },
+        {
+          "questionId": "form30_page-101",
+          "goldRuntimeCorrectAnswer": 2,
+          "goldRuntimeCorrectLetter": "B",
+          "exportedCorrectAnswer": { "index": 2, "letter": "B" },
+          "session45ReportedRuntimeCorrectOptionNumber": 3,
+          "session45ReportedRuntimeCorrectLetter": "C"
+        }
+      ],
+      "impact": "This is evidence against using session45 as proof that Form 30 qbank keys are wrong. It does not, by itself, show a defect in gold_runtime.json."
+    }
+  ],
+  "recommendedNextAction": "If you want stronger source-of-truth verification beyond repo-internal consistency and manual content adjudication, add the actual Form 30 source PDF and/or official answer key artifact to the repo, then rerun a form-scoped comparison directly against those sources."
+}

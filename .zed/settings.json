@@ -1,0 +1,14 @@
+{
+  "terminal": {
+    "working_directory": "current_project_directory",
+    "dock": "bottom",
+    "button": true,
+    "shell": "system",
+  },
+  "tasks": {
+    "enabled": true,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+}

@@ -11,7 +11,11 @@
     { "source": "/history", "destination": "/history.html" },
     { "source": "/performance", "destination": "/performance.html" },
     { "source": "/settings", "destination": "/settings.html" },
+    { "source": "/nidhi-report", "destination": "/nidhi_report.html" },
     { "source": "/", "destination": "/index.html" },
-    { "source": "/api/(.*)", "destination": "https://uworld-api-deploy.vercel.app/api/$1" }
+    {
+      "source": "/api/(.*)",
+      "destination": "https://uworld-api-deploy.vercel.app/api/$1"
+    }
   ]
 }

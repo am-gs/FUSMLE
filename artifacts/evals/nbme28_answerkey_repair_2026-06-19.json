@@ -1,0 +1,1187 @@
+{
+  "repaired_from": "artifacts/evals/nbme28_answerkey_audit_2026-06-19.json",
+  "runtime_path": "vercel/uworld-api-deploy/gold_runtime.json",
+  "applied_count": 131,
+  "applied": [
+    {
+      "question_id": "nbme28_q0016",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 16,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0017",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 17,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0018",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 18,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0019",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 19,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0020",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 20,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0021",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 21,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0022",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 22,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0023",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 23,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0024",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 24,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0025",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 25,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0027",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 27,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0028",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 28,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0029",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 29,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0030",
+      "old_correct_answer": 0,
+      "old_letter": null,
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 30,
+      "issue": "invalid_scoring_metadata_and_wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0031",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 31,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0032",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 32,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0035",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 35,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0037",
+      "old_correct_answer": 0,
+      "old_letter": null,
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 37,
+      "issue": "invalid_scoring_metadata_and_wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0038",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 6,
+      "new_letter": "F",
+      "source_pdf_page": 38,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0039",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 39,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0040",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 40,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0041",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 41,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0042",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 42,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0043",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 43,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0045",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 45,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0046",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 46,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0047",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 47,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0048",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 48,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0049",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 49,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0051",
+      "old_correct_answer": 0,
+      "old_letter": null,
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 51,
+      "issue": "invalid_scoring_metadata_and_wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0052",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 6,
+      "new_letter": "F",
+      "source_pdf_page": 52,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0054",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 54,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0055",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 55,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0058",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 58,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0059",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 59,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0060",
+      "old_correct_answer": 0,
+      "old_letter": null,
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 60,
+      "issue": "invalid_scoring_metadata_and_wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0061",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 61,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0063",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 6,
+      "new_letter": "F",
+      "source_pdf_page": 63,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0064",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 64,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0065",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 65,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0067",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 67,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0069",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 69,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0071",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 71,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0072",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 72,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0076",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 76,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0077",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 77,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0080",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 80,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0082",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 82,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0085",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 85,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0087",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 87,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0088",
+      "old_correct_answer": 0,
+      "old_letter": null,
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 88,
+      "issue": "invalid_scoring_metadata_and_wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0089",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 89,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0090",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 90,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0091",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 91,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0094",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 94,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0095",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 95,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0096",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 96,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0097",
+      "old_correct_answer": 0,
+      "old_letter": null,
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 97,
+      "issue": "invalid_scoring_metadata_and_wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0098",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 6,
+      "new_letter": "F",
+      "source_pdf_page": 98,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0099",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 99,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0101",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 101,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0102",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 102,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0105",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 105,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0106",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 106,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0107",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 107,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0108",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 108,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0109",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 109,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0110",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 110,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0111",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 111,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0112",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 112,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0114",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 114,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0115",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 115,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0116",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 116,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0117",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 117,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0118",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 118,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0119",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 119,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0123",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 123,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0124",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 124,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0125",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 125,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0126",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 126,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0128",
+      "old_correct_answer": 0,
+      "old_letter": null,
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 128,
+      "issue": "invalid_scoring_metadata_and_wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0129",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 129,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0130",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 130,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0131",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 131,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0135",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 135,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0136",
+      "old_correct_answer": 6,
+      "old_letter": "F",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 136,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0137",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 6,
+      "new_letter": "F",
+      "source_pdf_page": 137,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0138",
+      "old_correct_answer": 0,
+      "old_letter": null,
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 138,
+      "issue": "invalid_scoring_metadata_and_wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0139",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 6,
+      "new_letter": "F",
+      "source_pdf_page": 139,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0141",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 141,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0142",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 142,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0144",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 144,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0145",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 145,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0146",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 146,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0147",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 147,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0148",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 148,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0149",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 149,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0150",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 150,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0152",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 152,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0154",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 154,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0155",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 155,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0156",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 156,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0157",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 157,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0158",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 158,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0159",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 159,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0160",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 160,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0162",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 162,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0163",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 163,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0164",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 164,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0165",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 165,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0167",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 167,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0168",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 168,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0169",
+      "old_correct_answer": 6,
+      "old_letter": "F",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 169,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0172",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 172,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0173",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 173,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0174",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 174,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0175",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 175,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0176",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 176,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0177",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 177,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0181",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 181,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0182",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 182,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0183",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 183,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0185",
+      "old_correct_answer": 3,
+      "old_letter": "C",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 185,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0187",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 5,
+      "new_letter": "E",
+      "source_pdf_page": 187,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0188",
+      "old_correct_answer": 6,
+      "old_letter": "F",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 188,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0190",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 3,
+      "new_letter": "C",
+      "source_pdf_page": 190,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0192",
+      "old_correct_answer": 5,
+      "old_letter": "E",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 192,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0194",
+      "old_correct_answer": 1,
+      "old_letter": "A",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 194,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0195",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 1,
+      "new_letter": "A",
+      "source_pdf_page": 195,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0197",
+      "old_correct_answer": 2,
+      "old_letter": "B",
+      "new_correct_answer": 4,
+      "new_letter": "D",
+      "source_pdf_page": 197,
+      "issue": "wrong_answer_key"
+    },
+    {
+      "question_id": "nbme28_q0198",
+      "old_correct_answer": 4,
+      "old_letter": "D",
+      "new_correct_answer": 2,
+      "new_letter": "B",
+      "source_pdf_page": 198,
+      "issue": "wrong_answer_key"
+    }
+  ],
+  "note": "NBME 28 rows patched from PDF-backed confirmed discrepancies only. Ambiguous rows intentionally left unchanged."
+}

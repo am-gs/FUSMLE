@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FUSMLE Audit Update — Session 45</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <style>
+            body {
+                background: #f4f7fb;
+                color: #243447;
+                font-family:
+                    "Open Sans",
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    sans-serif;
+                margin: 0;
+            }
+            .top-bar {
+                background: #0f3a5f;
+                color: #fff;
+                padding: 16px 24px;
+                border-bottom: 3px solid #1e88e5;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            .container-wrap {
+                max-width: 960px;
+                margin: 36px auto 56px;
+                padding: 0 18px;
+            }
+            .card-surface {
+                background: #fff;
+                border: 1px solid #d9e2ec;
+                border-radius: 12px;
+                box-shadow: 0 10px 30px rgba(15, 58, 95, 0.08);
+                padding: 24px;
+                margin-bottom: 20px;
+            }
+            .hero {
+                border-top: 5px solid #1e88e5;
+            }
+            .eyebrow {
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                font-weight: 700;
+                color: #5f6c7b;
+                margin-bottom: 8px;
+            }
+            h1 {
+                font-size: 32px;
+                line-height: 1.15;
+                margin: 0 0 10px;
+                color: #102a43;
+                font-weight: 800;
+            }
+            .subtext {
+                font-size: 16px;
+                color: #52606d;
+                margin-bottom: 0;
+            }
+            .score-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 14px;
+                margin-top: 24px;
+            }
+            .metric {
+                border: 1px solid #e6edf5;
+                border-radius: 10px;
+                padding: 16px;
+                background: #fbfdff;
+            }
+            .metric-label {
+                font-size: 12px;
+                color: #7b8794;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 0.04em;
+                margin-bottom: 8px;
+            }
+            .metric-value {
+                font-size: 30px;
+                font-weight: 800;
+                color: #0f3a5f;
+                line-height: 1.1;
+            }
+            .metric-note {
+                font-size: 13px;
+                color: #52606d;
+                margin-top: 6px;
+            }
+            .pill {
+                display: inline-block;
+                font-size: 12px;
+                font-weight: 700;
+                border-radius: 999px;
+                padding: 6px 10px;
+                margin-right: 8px;
+                margin-bottom: 8px;
+            }
+            .pill-blue {
+                background: #e3f2fd;
+                color: #1565c0;
+            }
+            .pill-red {
+                background: #fdecea;
+                color: #b42318;
+            }
+            .pill-green {
+                background: #e8f5e9;
+                color: #2e7d32;
+            }
+            .timeline {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .timeline li {
+                padding-left: 22px;
+                position: relative;
+                margin-bottom: 16px;
+                color: #334e68;
+                line-height: 1.6;
+            }
+            .timeline li::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #1e88e5;
+                position: absolute;
+                left: 0;
+                top: 9px;
+            }
+            .alert-soft {
+                border-left: 4px solid #1e88e5;
+                background: #f7fbff;
+                padding: 16px 18px;
+                border-radius: 8px;
+                color: #24415d;
+            }
+            .small-muted {
+                color: #7b8794;
+                font-size: 13px;
+            }
+            table td,
+            table th {
+                vertical-align: top !important;
+                font-size: 14px;
+            }
+            .footer-note {
+                text-align: center;
+                color: #7b8794;
+                font-size: 13px;
+                margin-top: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top-bar">
+            <div
+                style="
+                    font-size: 22px;
+                    font-weight: 800;
+                    letter-spacing: 0.02em;
+                "
+            >
+                <i class="fas fa-dna"></i> FUuSMLE
+            </div>
+            <div style="font-size: 14px; font-weight: 600; opacity: 0.95">
+                Audit update for Nidhi Tiyyagura
+            </div>
+        </div>
+
+        <div class="container-wrap">
+            <div class="card-surface hero">
+                <div class="eyebrow">Session 45 · Test 2 audit</div>
+                <h1>
+                    We re-audited your exam and found a scoring discrepancy.
+                </h1>
+                <p class="subtext">
+                    We manually rescored your submitted answers against a
+                    curated answer key and independently reviewed disputed
+                    items. This audit found that the original automatic scoring
+                    path was not fully reliable for this exam.
+                </p>
+
+                <div class="score-grid">
+                    <div class="metric">
+                        <div class="metric-label">Corrected score</div>
+                        <div class="metric-value">52 / 120</div>
+                        <div class="metric-note">
+                            Your corrected total after manual audit.
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Corrected accuracy</div>
+                        <div class="metric-value">43.3%</div>
+                        <div class="metric-note">Rounded from 52 ÷ 120.</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Net change</div>
+                        <div class="metric-value">+1 question</div>
+                        <div class="metric-note">
+                            Compared with the prior 51/120 scoring output.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-surface">
+                <h3 style="font-size: 22px; font-weight: 800; color: #102a43">
+                    What happened
+                </h3>
+                <div class="mb-2">
+                    <span class="pill pill-blue"
+                        >Submitted answers preserved</span
+                    >
+                    <span class="pill pill-red"
+                        >Automatic scoring had errors</span
+                    >
+                    <span class="pill pill-green">Manual audit completed</span>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        Your <strong>submitted responses</strong> were treated
+                        as the source of truth for what you actually answered.
+                    </li>
+                    <li>
+                        We found that the app’s original scoring path for this
+                        exam was unreliable because the runtime answer
+                        comparison was not consistent with the submitted option
+                        indexing.
+                    </li>
+                    <li>
+                        We also found a small number of questions where
+                        embedded/exported answer metadata was inconsistent, so
+                        we did <strong>not</strong> trust those fields blindly.
+                    </li>
+                    <li>
+                        We rescored the full exam using a curated key, then
+                        independently re-reviewed disputed items before
+                        finalizing the corrected total.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card-surface">
+                <h3 style="font-size: 22px; font-weight: 800; color: #102a43">
+                    Items you specifically asked us to verify
+                </h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered mb-0">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Block / Item</th>
+                                <th>Exam Position</th>
+                                <th>Your Answer</th>
+                                <th>Final Correct Answer</th>
+                                <th>Audit Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Block 2, Item 15</td>
+                                <td>Q35</td>
+                                <td>H</td>
+                                <td>A</td>
+                                <td><strong>Incorrect</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Block 2, Item 16</td>
+                                <td>Q36</td>
+                                <td>E</td>
+                                <td>E</td>
+                                <td><strong>Correct</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Block 3, Item 2</td>
+                                <td>Q42</td>
+                                <td>C</td>
+                                <td>C</td>
+                                <td><strong>Correct</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card-surface">
+                <h3 style="font-size: 22px; font-weight: 800; color: #102a43">
+                    Bottom line
+                </h3>
+                <div class="alert-soft">
+                    <strong
+                        >Your exam was not rescored by changing your
+                        answers.</strong
+                    >
+                    It was rescored by auditing the scoring logic and correcting
+                    answer-key inconsistencies on disputed questions. After that
+                    review, your corrected score is <strong>52 / 120</strong>.
+                </div>
+                <p class="small-muted mt-3 mb-0">
+                    If you want, we can also provide a full question-by-question
+                    audit trail for the entire exam.
+                </p>
+            </div>
+
+            <div class="footer-note">
+                FUuSMLE audit report · Session 45 · generated from manual review
+                artifacts in the exam workspace
+            </div>
+        </div>
+    </body>
+</html>

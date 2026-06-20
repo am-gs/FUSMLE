@@ -1,8 +1,12 @@
 """QBank backed by the curated gold pool (gold_runtime.json).
 Falls back to legacy static_questions if the runtime file is absent.
 """
-import copy, random, os, json
-from typing import List, Dict, Optional
+
+import copy
+import json
+import os
+import random
+from typing import Dict, List, Optional
 
 _DIR = os.path.dirname(__file__)
 _RUNTIME = os.path.join(_DIR, "gold_runtime.json")
@@ -18,8 +22,9 @@ try:
     _BY_ID = {q["id"]: q for q in ALL_QUESTIONS}
     _SOURCE = "gold_runtime"
 except FileNotFoundError:  # legacy fallback
-    from static_questions import QUESTIONS  # type: ignore
     from free120_questions import FREE120_QUESTIONS  # type: ignore
+    from static_questions import QUESTIONS  # type: ignore
+
     ALL_QUESTIONS = [copy.deepcopy(q) for q in QUESTIONS] + list(FREE120_QUESTIONS)
     _BY_ID = {q["id"]: q for q in ALL_QUESTIONS}
     _SOURCE = "legacy_static"
@@ -29,8 +34,27 @@ def load_questions() -> List[Dict]:
     return ALL_QUESTIONS
 
 
+def is_exam_safe_question(question: Optional[Dict]) -> bool:
+    if not isinstance(question, dict):
+        return False
+    if not bool(question.get("exam_ready", True)):
+        return False
+    if bool(question.get("option_parse_error")):
+        return False
+    options = question.get("options") or []
+    if not isinstance(options, list) or not options:
+        return False
+    option_ids = {
+        opt.get("id")
+        for opt in options
+        if isinstance(opt, dict) and isinstance(opt.get("id"), int)
+    }
+    correct_answer = question.get("correct_answer")
+    return isinstance(correct_answer, int) and correct_answer in option_ids
+
+
 def _ready() -> List[Dict]:
-    return [q for q in ALL_QUESTIONS if q.get("exam_ready", True)]
+    return [q for q in ALL_QUESTIONS if is_exam_safe_question(q)]
 
 
 def get_subject_counts() -> Dict[str, int]:
@@ -45,13 +69,22 @@ def get_system_counts() -> Dict[str, int]:
     return get_subject_counts()
 
 
-def get_question_by_id(question_id: str) -> Optional[Dict]:
+def get_question_by_id(
+    question_id: str, require_exam_safe: bool = False
+) -> Optional[Dict]:
     q = _BY_ID.get(question_id)
-    return copy.deepcopy(q) if q else None
+    if not q:
+        return None
+    if require_exam_safe and not is_exam_safe_question(q):
+        return None
+    return copy.deepcopy(q)
 
 
-def generate_test(total_questions: int, subjects: List[str] = None,
-                  systems: List[str] = None) -> List[str]:
+def generate_test(
+    total_questions: int,
+    subjects: Optional[List[str]] = None,
+    systems: Optional[List[str]] = None,
+) -> List[str]:
     pool = _ready()
     wanted = set()
     for grp in (subjects or [], systems or []):
@@ -59,7 +92,11 @@ def generate_test(total_questions: int, subjects: List[str] = None,
             if s and s.strip():
                 wanted.add(s.strip())
     if wanted:
-        filt = [q for q in pool if (q.get("organ_system") in wanted) or (q.get("subject") in wanted)]
+        filt = [
+            q
+            for q in pool
+            if (q.get("organ_system") in wanted) or (q.get("subject") in wanted)
+        ]
         if len(filt) >= min(total_questions, 5):
             pool = filt
     num = min(total_questions, len(pool))
@@ -67,5 +104,10 @@ def generate_test(total_questions: int, subjects: List[str] = None,
 
 
 def get_user_progress_counts(user_id: int) -> Dict:
-    return {"total_answered": 0, "correct_answers": 0, "accuracy": 0,
-            "by_subject": {}, "by_system": {}}
+    return {
+        "total_answered": 0,
+        "correct_answers": 0,
+        "accuracy": 0,
+        "by_subject": {},
+        "by_system": {},
+    }

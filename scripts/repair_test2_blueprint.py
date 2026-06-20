@@ -63,8 +63,11 @@ def main():
     pool = json.loads(GOLD.read_text())
     qmap = {q["id"]: q for q in pool}
     flags = ast.literal_eval(FLAGS_PY.read_text().split("=", 1)[1].strip())
-    taken = json.loads(TAKEN.read_text())
-    taken_ids = set(taken["session23"]) | set(taken["session24"])
+    if TAKEN.exists():
+        taken = json.loads(TAKEN.read_text())
+        taken_ids = set(taken["session23"]) | set(taken["session24"])
+    else:
+        taken_ids = set()
 
     test2_ids = [qid for b in manifest["blocks"] for qid in b["questionIds"]]
     test2_set = set(test2_ids)
@@ -205,6 +208,9 @@ def main():
     }
     if "--apply" in sys.argv:
         MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
+        api_manifest_path = API / "artifacts" / "manifests" / "june2026_nbme120_candidate.json"
+        api_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+        api_manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
         FLAGS_PY.write_text(
             "# All previously broken-media Test 2 items were replaced with accurate\n"
             "# qbank items (Plan B parity repair). No known-bad media remain in Test 2.\n"

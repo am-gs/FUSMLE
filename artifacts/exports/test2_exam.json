@@ -2671,7 +2671,7 @@
       "questionIds": [
         "nbme28_q0096",
         "nbme29_q0024",
-        "form30_page-125",
+        "form30_page-184",
         "nbme27_page-2",
         "form31_page-64",
         "form30_page-120",
@@ -2784,46 +2784,65 @@
           "renderingFlag": null
         },
         {
-          "examPosition": 63,
-          "blockItem": 3,
-          "id": "form30_page-125",
-          "sourceForm": "form30",
-          "subject": "MSK/Skin",
-          "system": "MSK/Skin",
-          "discipline": "Microbiology",
-          "difficulty": "easy",
-          "stem": "A 27-year-old man comes to the physician because he is concerned about his skin. He says that he has had similar problems with hypopigmented skin for 2 years but that the condition has been exacerbated in recent months. A photograph of the affected skin is shown. The remainder of the physical examination shows no other abnormalities. Which of the following is the most likely causal organism?",
+          "id": "form30_page-184",
+          "text": "A 35-year-old woman comes to the physician because of severe nonradiating low back pain for 2 weeks. She recently began a vigorous exercise program. Her back pain has been partially relieved by bed rest and aspirin. She has ulcerative colitis that has been treated with corticosteroid therapy for 5 years and is currently in remission. Physical examination shows mild localized tenderness over several lumbar vertebrae. A lateral x-ray of the lumbar spine is shown. Which of the following best explains these radiographic findings?",
           "options": [
             {
+              "id": 1,
               "letter": "A",
-              "text": "Candida albicans"
+              "text": "Ankylosing spondylitis"
             },
             {
+              "id": 2,
               "letter": "B",
-              "text": "Epidermophyton floccosum"
+              "text": "Multiple herniated discs"
             },
             {
+              "id": 3,
               "letter": "C",
-              "text": "Malassezia furfur"
+              "text": "Osteitis deformans (Paget disease)"
             },
             {
+              "id": 4,
               "letter": "D",
-              "text": "Microsporum canis"
+              "text": "Osteoporosis"
             },
             {
+              "id": 5,
               "letter": "E",
-              "text": "Trichophyton mentagrophytes"
+              "text": "Tuberculosis"
             }
           ],
-          "correctAnswer": {
-            "index": 3,
-            "letter": "C"
-          },
-          "explanation": "Tinea versicolor is a superficial infection of the epidermis caused by Malassezia furfur. Clinically, it is characterized by hypopigmented and hyperpigmented macules and patches with a fine scale. The infection has a predilection for sites with increased sebum production such as the chest and back. Patients commonly notice the rash after spending time outdoors, as Malassezia furfur inhibits tanning of the affected areas, making them more noticeable when compared to the unaffected neighboring skin. A potassium hydroxide preparation of a skin scraping can be diagnostic and will show fungal spores and short hyphae along the edges of epidermal cells. Tinea versicolor may be treated using topical antifungal preparations including topical ketoconazole or selenium sulfide preparations.<br><br>**Distractors:**<br>- **A. Candida albicans** — Causes cutaneous candidiasis in moist intertriginous areas, presenting with erythematous plaques with satellite pustules, not hypopigmented non-tanning macules.<br>- **B. Epidermophyton floccosum** — A dermatophyte that causes tinea pedis, tinea cruris, and tinea corporis with pruritic, scaly, annular lesions; it does not cause tinea versicolor.<br>- **D. Microsporum canis** — A zoophilic dermatophyte that causes tinea corporis (ringworm) with inflammatory, scaly, annular plaques; not associated with hypopigmented macules on the trunk.<br>- **E. Trichophyton mentagrophytes** — A dermatophyte that causes tinea pedis and tinea corporis; dermatophytes invade keratinized tissue and produce scaly, annular lesions rather than the discolored macules of tinea versicolor.",
-          "images": [
-            "/api/images_crop/form30_page-125_ocr.webp"
+          "correct_answer": 4,
+          "explanation": "Osteoporosis is a common condition that is characterized by the progressive loss of bone mineral density leading to decreased bone strength. This decreased bone mineral density often leads to fragility fractures, which can greatly decrease mobility and even increase the risk for death in elderly individuals. The disease classically affects postmenopausal women with inflammatory disorders, and individuals with metabolic or endocrine disorders such as hypercortisolism or long-term steroid use, as in this patient with chronic ulcerative colitis. Glucocorticoids significantly alter calcium metabolism by decreasing gastrointestinal calcium absorption, enhancing osteoclastogenesis, and inhibiting osteoblast differentiation. Primary prevention of osteoporosis is indicated in the setting of chronic glucocorticoid use to prevent premature, pathologic fragility fractures. Vitamin D and calcium are recommended for all patients at low risk for fracture. Patients at moderate to high risk for fracture are treated with calcium, vitamin D, and oral bisphosphonates, such as alendronate. Bisphosphonates have been shown to reduce fracture risk and increase bone density and are the mainstay of osteoporosis treatment and prevention in patients that are at moderate to high risk for bone mineral density loss caused by corticosteroid use. In this case, this young patient sustained a fracture during exercise, which for most persons would not present high risk. Her x-ray shows compression fracture deformities of the lumbar spine, an uncommon injury in a young person, suggesting an underlying diagnosis of osteoporosis.<br><br>Distractors:<br>- **A. Ankylosing spondylitis:** Associated with IBD but causes sacroiliitis and bamboo spine, not acute vertebral compression fractures; typically presents with chronic inflammatory back pain and stiffness rather than acute fracture after exercise.<br>- **B. Multiple herniated discs:** Would typically cause radiating pain and possible neurologic deficits; disc herniation does not produce vertebral body compression deformities on x-ray.<br>- **C. Osteitis deformans (Paget disease):** Typically affects older adults and causes bone enlargement and deformity, not fragility compression fractures in a young patient.<br>- **E. Tuberculosis (Pott disease):** Causes destructive vertebral lesions and kyphosis due to granulomatous infection, not multiple compression fractures secondary to metabolic bone loss.",
+          "subject": "MSK/Skin",
+          "system": "MSK/Skin",
+          "discipline": "Pathology",
+          "organ_system": "MSK/Skin",
+          "difficulty_band": "easy",
+          "difficulty_1to5": 2,
+          "item_type": "clinical_vignette",
+          "concept_fingerprint": "steroid-induced osteoporosis compression fracture",
+          "high_yield": false,
+          "form": "Form 30",
+          "imageUrls": [
+            "/api/images_crop/form30_page-184_ocr.webp"
           ],
-          "renderingFlag": null
+          "image_url": "/api/images_crop/form30_page-184_ocr.webp",
+          "image_assets": [
+            {
+              "category": "ocr_extract",
+              "label": "paddleocr_form_asset_1",
+              "source_chunk_index": 578,
+              "source_question_number": 35,
+              "source_url": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//4561176f-0493-46ad-b4cd-94d421c7f25a/markdown_0/imgs/img_in_image_box_1315_68_1565_411.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-18T05%3A40%3A04Z%2F-1%2F%2Fe00bc891b4e449a97ce2c9cf65fb68288b882c121146130768ee53939d886f4e",
+              "url": "/api/images_crop/form30_page-184_ocr.webp",
+              "width": 250,
+              "height": 343
+            }
+          ],
+          "exam_ready": true,
+          "option_parse_error": false
         },
         {
           "examPosition": 64,
