@@ -4,6 +4,7 @@ import sys
 import unittest
 
 API_DIR = pathlib.Path(__file__).resolve().parents[1]
+ROOT = pathlib.Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(API_DIR))
 
 from database import create_test_session
@@ -420,6 +421,45 @@ class ApiContractTests(unittest.TestCase):
         self.assertEqual(
             [len(block["questionIds"]) for block in payload["blocks"]], [20] * 6
         )
+
+    def test_nidhi_test3_input_artifacts_exist_and_record_known_uncertainty(self):
+        inventory_path = (
+            ROOT / "artifacts" / "research" / "nidhi_test3_taken_exam_inventory.json"
+        )
+        exclusion_path = (
+            ROOT / "artifacts" / "research" / "nidhi_test3_exclusion_set.json"
+        )
+        weakness_path = (
+            ROOT / "artifacts" / "research" / "nidhi_test3_weakness_profile.json"
+        )
+
+        self.assertTrue(inventory_path.exists())
+        self.assertTrue(exclusion_path.exists())
+        self.assertTrue(weakness_path.exists())
+
+        inventory = json.loads(inventory_path.read_text())
+        exclusion = json.loads(exclusion_path.read_text())
+        weakness = json.loads(weakness_path.read_text())
+
+        alias_entry = next(
+            item for item in inventory["examSets"] if item["slug"] == "test1"
+        )
+        session24_entry = next(
+            item
+            for item in inventory["examSets"]
+            if item["slug"] == "session24_nbme120_simulation"
+        )
+        official_entry = next(
+            item for item in inventory["examSets"] if item["slug"] == "nbme120_official"
+        )
+
+        self.assertEqual(alias_entry["aliasOf"], "test2")
+        self.assertEqual(alias_entry["concreteQuestionIds"], [])
+        self.assertEqual(session24_entry["status"], "unresolved_label_only")
+        self.assertEqual(official_entry["questionCount"], 119)
+        self.assertTrue(exclusion["strictModeWouldFail"])
+        self.assertEqual(weakness["sourceSessions"], ["session45:test2"])
+        self.assertTrue(weakness["weakQuestionIds"])
 
     def test_test2_has_no_suppressed_media_or_taken_form_items(self):
         # After the Plan B parity repair, Test 2 should carry no known-bad media
