@@ -1,0 +1,35 @@
+{
+  "mode": "preview",
+  "databaseBackend": "sqlite",
+  "runtimePath": "vercel/uworld-api-deploy/gold_runtime.json",
+  "repairArtifact": "artifacts/evals/nbme28_answerkey_repair_2026-06-19.json",
+  "repairedQuestionCount": 131,
+  "impactedSessionCount": 2,
+  "changedAnswerRowCount": 0,
+  "sessionSummaries": [
+    {
+      "sessionId": 3,
+      "userId": 6,
+      "mode": "test2",
+      "impactedQuestionCount": 4,
+      "changedAnswerRows": 0,
+      "storedSessionScore": null,
+      "recomputedSessionScore": 7,
+      "changedRows": []
+    },
+    {
+      "sessionId": 15,
+      "userId": 20,
+      "mode": "test2",
+      "impactedQuestionCount": 1,
+      "changedAnswerRows": 0,
+      "storedSessionScore": null,
+      "recomputedSessionScore": 0,
+      "changedRows": []
+    }
+  ],
+  "notes": [
+    "This script performs a mechanical rescore using current runtime correct_answer values.",
+    "It does not apply manual/adjudicated overrides such as the curated 52/120 session-45 correction."
+  ]
+}

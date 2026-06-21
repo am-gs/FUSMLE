@@ -1,0 +1,89 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "FUuSMLE Logo" [ref=e4] [cursor=pointer]:
+        - /url: dashboard.html
+        - img "FUuSMLE Logo" [ref=e5]
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - generic [ref=e9]:
+            - generic [ref=e10]: 
+            - text: nidhitiyyagura@gmail.com
+  - list [ref=e12]:
+    - listitem [ref=e13]:
+      - link " Dashboard" [ref=e14] [cursor=pointer]:
+        - /url: dashboard.html
+        - generic [ref=e15]: 
+        - text: Dashboard
+    - listitem [ref=e16]:
+      - link " Create Test" [ref=e17] [cursor=pointer]:
+        - /url: createtest.html
+        - generic [ref=e18]: 
+        - text: Create Test
+    - listitem [ref=e19]:
+      - link " My Results" [ref=e20] [cursor=pointer]:
+        - /url: history.html
+        - generic [ref=e21]: 
+        - text: My Results
+    - listitem [ref=e22]:
+      - link " Performance" [ref=e23] [cursor=pointer]:
+        - /url: performance.html
+        - generic [ref=e24]: 
+        - text: Performance
+    - listitem [ref=e25]:
+      - link " Settings" [ref=e26] [cursor=pointer]:
+        - /url: settings.html
+        - generic [ref=e27]: 
+        - text: Settings
+    - listitem [ref=e28]:
+      - link " Logout" [ref=e29] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e30]: 
+        - text: Logout
+  - generic [ref=e31]:
+    - generic [ref=e32]:
+      - heading "Welcome back, nidhitiyyagura!" [level=2] [ref=e33]
+      - paragraph [ref=e34]: Pick up where you left off, or start a new practice exam.
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e38]: 
+        - generic [ref=e39]: "0"
+        - generic [ref=e40]: Questions Answered
+      - generic [ref=e41]:
+        - generic [ref=e43]: 
+        - generic [ref=e44]: "0"
+        - generic [ref=e45]: Correct
+      - generic [ref=e46]:
+        - generic [ref=e48]: "%"
+        - generic [ref=e49]: 0%
+        - generic [ref=e50]: Accuracy
+      - generic [ref=e51]:
+        - generic [ref=e53]: 
+        - generic [ref=e54]: 0s
+        - generic [ref=e55]: Avg Time / Question
+    - generic [ref=e56]:
+      - generic [ref=e58]:
+        - heading " Recent Activity" [level=5] [ref=e59]:
+          - generic [ref=e60]: 
+          - text: Recent Activity
+        - list [ref=e61]:
+          - listitem [ref=e62]:
+            - generic [ref=e63]: 
+            - text: No questions answered yet. Start a test to see your activity here.
+      - generic [ref=e65]:
+        - heading " Quick Start" [level=5] [ref=e66]:
+          - generic [ref=e67]: 
+          - text: Quick Start
+        - link " Create a Custom Test" [ref=e68] [cursor=pointer]:
+          - /url: createtest.html
+          - generic [ref=e69]: 
+          - text: Create a Custom Test
+        - link " Step 1 Sample Exam" [ref=e70] [cursor=pointer]:
+          - /url: createtest.html
+          - generic [ref=e71]: 
+          - text: Step 1 Sample Exam
+        - link " NBME 120 Exam Simulation" [ref=e72] [cursor=pointer]:
+          - /url: createtest.html
+          - generic [ref=e73]: 
+          - text: NBME 120 Exam Simulation
+        - paragraph [ref=e74]: 6 blocks • 20 questions • 30 minutes each, matching the real NBME format.

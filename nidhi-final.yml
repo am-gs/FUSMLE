@@ -1,0 +1,172 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "FUuSMLE Logo" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+        - img "FUuSMLE Logo" [ref=e5]
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link " Help" [ref=e9] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e10]: 
+            - text: Help
+        - listitem [ref=e11]:
+          - link " Settings" [ref=e12] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e13]: 
+            - text: Settings
+        - listitem [ref=e14]:
+          - generic [ref=e15]:
+            - generic [ref=e16]: 
+            - text: nidhitiyyagura@gmail.com
+  - list [ref=e18]:
+    - listitem [ref=e19]:
+      - link " Dashboard" [ref=e20] [cursor=pointer]:
+        - /url: dashboard.html
+        - generic [ref=e21]: 
+        - text: Dashboard
+    - listitem [ref=e22]:
+      - link " Create Test" [ref=e23] [cursor=pointer]:
+        - /url: createtest.html
+        - generic [ref=e24]: 
+        - text: Create Test
+    - listitem [ref=e25]:
+      - link " QBank" [ref=e26] [cursor=pointer]:
+        - /url: qbank.html
+        - generic [ref=e27]: 
+        - text: QBank
+    - listitem [ref=e28]:
+      - link " My Results" [ref=e29] [cursor=pointer]:
+        - /url: history.html
+        - generic [ref=e30]: 
+        - text: My Results
+    - listitem [ref=e31]:
+      - link " Performance" [ref=e32] [cursor=pointer]:
+        - /url: performance.html
+        - generic [ref=e33]: 
+        - text: Performance
+    - listitem [ref=e34]:
+      - link " Settings" [ref=e35] [cursor=pointer]:
+        - /url: settings.html
+        - generic [ref=e36]: 
+        - text: Settings
+    - listitem [ref=e37]:
+      - link " Logout" [ref=e38] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e39]: 
+        - text: Logout
+  - generic [ref=e40]:
+    - heading " Create New Test" [level=3] [ref=e41]:
+      - generic [ref=e42]: 
+      - text: Create New Test
+    - paragraph [ref=e43]: Select test settings and subjects to generate a custom practice test.
+    - generic [ref=e44]:
+      - generic [ref=e46]:
+        - heading " Test Settings" [level=5] [ref=e47]:
+          - generic [ref=e48]: 
+          - text: Test Settings
+        - generic [ref=e49]:
+          - strong [ref=e51]: Test Mode
+          - generic [ref=e52] [cursor=pointer]:
+            - generic [ref=e54]: 
+            - generic [ref=e55]:
+              - generic [ref=e56]: Tutor Mode
+              - generic [ref=e57]: See answers and explanations as you go
+          - generic [ref=e58] [cursor=pointer]:
+            - generic [ref=e60]: 
+            - generic [ref=e61]:
+              - generic [ref=e62]: Timed Mode
+              - generic [ref=e63]: Simulate exam conditions with a timer
+        - generic [ref=e64]:
+          - strong [ref=e66]: Question Mode
+          - generic [ref=e67] [cursor=pointer]:
+            - generic [ref=e69]: 
+            - generic [ref=e70]:
+              - generic [ref=e71]: Standard
+              - generic [ref=e72]: Questions from all selected subjects
+          - generic [ref=e73] [cursor=pointer]:
+            - generic [ref=e75]: 
+            - generic [ref=e76]:
+              - generic [ref=e77]: Custom
+              - generic [ref=e78]: Choose specific question types
+        - generic [ref=e79]:
+          - strong [ref=e81]: Number of Questions
+          - generic [ref=e82]:
+            - button "-" [ref=e83] [cursor=pointer]
+            - spinbutton [ref=e84]: "40"
+            - button "+" [ref=e85] [cursor=pointer]
+          - text: Max 200 questions per test.
+        - generic [ref=e86]:
+          - strong [ref=e88]: Test Duration (Timed Mode)
+          - generic [ref=e89]:
+            - spinbutton [ref=e90]: "1"
+            - text: hrs
+            - spinbutton [ref=e91]: "0"
+            - text: mins
+        - generic [ref=e92]:
+          - strong [ref=e94]: Question Sorting
+          - combobox [ref=e95]:
+            - option "Random" [selected]
+            - option "By Subject"
+            - option "By Difficulty"
+            - option "By Unused First"
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - checkbox "Include previously marked questions" [ref=e98]
+            - generic [ref=e99]: Include previously marked questions
+          - generic [ref=e100]:
+            - checkbox "Include previously incorrect questions" [ref=e101]
+            - generic [ref=e102]: Include previously incorrect questions
+          - generic [ref=e103]:
+            - checkbox "Shuffle answer options" [ref=e104]
+            - generic [ref=e105]: Shuffle answer options
+        - generic [ref=e106]:
+          - strong [ref=e108]: Exam Simulation
+          - button " TEST 2" [ref=e109] [cursor=pointer]:
+            - generic [ref=e110]: 
+            - text: TEST 2
+          - generic [ref=e111]: Deterministic June 2026-style NBME 120 reconstruction · 120 questions · 6 blocks · 30 min/block · timed
+          - button " 🧬 NBME 120 Exam Simulation" [ref=e112] [cursor=pointer]:
+            - generic [ref=e113]: 
+            - text: 🧬 NBME 120 Exam Simulation
+          - generic [ref=e114]: Generate 6 blocks of 20 questions each (30 min per block)
+          - button " Step 1 Sample Exam" [ref=e115] [cursor=pointer]:
+            - generic [ref=e116]: 
+            - text: Step 1 Sample Exam
+          - generic [ref=e117]: Full-length 120-question sample exam · 6 blocks · 30 minutes each
+      - generic [ref=e118]:
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - heading " Subjects" [level=5] [ref=e121]:
+              - generic [ref=e122]: 
+              - text: Subjects
+            - generic [ref=e123]:
+              - button "Select All" [ref=e124] [cursor=pointer]
+              - button "Deselect All" [ref=e125] [cursor=pointer]
+          - paragraph [ref=e126]: Select subjects to include in your test. Numbers indicate available questions.
+          - heading " Systems Expand" [level=6] [ref=e129] [cursor=pointer]:
+            - generic [ref=e130]: 
+            - text: Systems
+            - generic [ref=e131]: Expand
+        - text: 
+        - generic [ref=e132]:
+          - generic [ref=e134]:
+            - strong [ref=e136]: "1250"
+            - text: Unused
+          - generic [ref=e138]:
+            - strong [ref=e140]: "45"
+            - text: Incorrect
+          - generic [ref=e142]:
+            - strong [ref=e144]: "12"
+            - text: Marked
+          - generic [ref=e146]:
+            - strong [ref=e148]: "8"
+            - text: Omitted
+          - generic [ref=e150]:
+            - strong [ref=e152]: "890"
+            - text: Correct
+        - generic [ref=e153]:
+          - button " GENERATE TEST" [ref=e154] [cursor=pointer]:
+            - generic [ref=e155]: 
+            - text: GENERATE TEST
+          - paragraph [ref=e156]: "Estimated time: 2 minutes for 40 questions"

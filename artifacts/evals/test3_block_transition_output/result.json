@@ -1,0 +1,11 @@
+{
+  "checks": {},
+  "user": {
+    "email": "test3.block.1781994712954@example.com"
+  },
+  "startUrl": "https://usmaili.vercel.app/qbank.html?session=73&block=1&mode=timed&time=30&exam=test3",
+  "error": {
+    "message": "page.waitForSelector: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#nextBtn') to be visible\u001b[22m\n\u001b[2m    63 × locator resolved to hidden <button id=\"nextBtn\" class=\"navbtn primary\">…</button>\u001b[22m\n",
+    "stack": "page.waitForSelector: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#nextBtn') to be visible\u001b[22m\n\u001b[2m    63 × locator resolved to hidden <button id=\"nextBtn\" class=\"navbtn primary\">…</button>\u001b[22m\n\n    at /Users/nirav/Documents/FUSMLE/artifacts/evals/test3_block_transition_audit.js:57:20"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "frontend": "https://usmaili.vercel.app",
+  "checks": {
+    "registerAndRedirect": true,
+    "launchTest3": true,
+    "blockQuestionCount20": true,
+    "submitAutoAdvances": true,
+    "historyShowsTest3": true,
+    "resumeReturnsToProgress": true
+  },
+  "consoleMessages": [
+    {
+      "type": "error",
+      "text": "Failed to load stats: TypeError: Failed to fetch\n    at HTMLDocument.<anonymous> (https://usmaili.vercel.app/dashboard.html:352:17)\n    at l (https://code.jquery.com/jquery-3.3.1.slim.min.js:2:29567)\n    at c (https://code.jquery.com/jquery-3.3.1.slim.min.js:2:29869)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_CLOSED"
+    }
+  ],
+  "requestFailures": [
+    {
+      "url": "https://usmaili.vercel.app/api/stats/overview",
+      "method": "GET",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://via.placeholder.com/120x28/ffffff?text=FUuSMLE",
+      "method": "GET",
+      "failure": {
+        "errorText": "net::ERR_CONNECTION_CLOSED"
+      }
+    }
+  ],
+  "responseFailures": [],
+  "user": {
+    "email": "test3.audit.1781994593821@example.com"
+  },
+  "qbankUrl": "https://usmaili.vercel.app/qbank.html?session=71&block=1&mode=timed&time=30&exam=test3",
+  "firstQuestion": {
+    "questionPosition": "Question 1 of 20",
+    "navCount": 20,
+    "itemId": "Question 1 of 20",
+    "renderFlagVisible": false,
+    "renderFlagText": null,
+    "imageVisible": true,
+    "imageSrc": "https://usmaili.vercel.app/api/images_crop/form31_page-0_ocr.webp",
+    "optionCount": 5
+  },
+  "afterSubmit": {
+    "questionPosition": "Question 2 of 20"
+  },
+  "historyRows": [
+    "Test 3Jun 20, 2026 04:29 PM1 / 120 answered · next up Block 1100% In progress Resume Block 1"
+  ],
+  "historyTest3Row": "Test 3Jun 20, 2026 04:29 PM1 / 120 answered · next up Block 1100% In progress Resume Block 1",
+  "resumed": {
+    "url": "https://usmaili.vercel.app/qbank.html?session=71&block=1&mode=timed&time=30&question=1&exam=test3",
+    "questionPosition": "Question 2 of 20"
+  },
+  "finalUrl": "https://usmaili.vercel.app/qbank.html?session=71&block=1&mode=timed&time=30&question=1&exam=test3"
+}

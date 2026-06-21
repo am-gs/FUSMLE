@@ -1,0 +1,156 @@
+{
+  "user": "nidhitiyyagura@gmail.com",
+  "sourceSessions": [
+    "session45:test2"
+  ],
+  "correctnessBasis": "independent_adjudication_only",
+  "metadataBasis": [
+    "artifacts/evals/session45_independent_adjudication.md",
+    "artifacts/evals/session45_answer_audit.json",
+    "vercel/uworld-api-deploy/qbank_index.json"
+  ],
+  "weights": {
+    "systems": {
+      "MSK/Skin": 1.15
+    },
+    "disciplines": {
+      "Gross Anatomy/Embryology": 1.2,
+      "Pathology": 1.1
+    },
+    "difficulty": {
+      "medium": 1.12
+    }
+  },
+  "weakQuestionIds": [
+    "nbme28_q0113",
+    "form31_page-15",
+    "nbme27_page-14",
+    "nbme28_q0016",
+    "nbme28_q0043",
+    "nbme28_q0096",
+    "nbme28_q0131",
+    "nbme27_page-178"
+  ],
+  "weaknessEvidence": [
+    {
+      "questionId": "nbme28_q0113",
+      "position": 21,
+      "slot": "B2.I1",
+      "system": "Multisystem",
+      "discipline": "Pathology",
+      "difficulty": "hard",
+      "conceptFingerprint": "kernicterus hemolytic disease newborn brain",
+      "auditTitle": "Kernicterus / Hemolytic Disease of the Newborn",
+      "selectedLetter": "D",
+      "adjudicationNotes": "Kernicterus → severe unconjugated hyperbilirubinemia from hemolytic disease of newborn"
+    },
+    {
+      "questionId": "form31_page-15",
+      "position": 29,
+      "slot": "B2.I9",
+      "system": "Renal/Urinary",
+      "discipline": "Physiology",
+      "difficulty": "medium",
+      "conceptFingerprint": "Obstructive uropathy metabolic acidosis compensation",
+      "auditTitle": "Obstructive Uropathy / Compensated Metabolic Acidosis",
+      "selectedLetter": "C",
+      "adjudicationNotes": "Obstructive uropathy AKI with metabolic acidosis + respiratory compensation"
+    },
+    {
+      "questionId": "nbme27_page-14",
+      "position": 34,
+      "slot": "B2.I14",
+      "system": "MSK/Skin",
+      "discipline": "Pathology",
+      "difficulty": "medium",
+      "conceptFingerprint": "Kaposi sarcoma histology",
+      "auditTitle": "Kaposi Sarcoma / Spindle Cells with Slit-Like Spaces",
+      "selectedLetter": "B",
+      "adjudicationNotes": "Kaposi sarcoma → spindle cells with slit-like vascular spaces"
+    },
+    {
+      "questionId": "nbme28_q0016",
+      "position": 35,
+      "slot": "B2.I15",
+      "system": "MSK/Skin",
+      "discipline": "Gross Anatomy/Embryology",
+      "difficulty": "medium",
+      "conceptFingerprint": "scaphoid fracture snuffbox FOOSH",
+      "auditTitle": "Scaphoid Fracture / Anatomic Snuffbox",
+      "selectedLetter": "H",
+      "adjudicationNotes": "Snuffbox tenderness = scaphoid"
+    },
+    {
+      "questionId": "nbme28_q0043",
+      "position": 56,
+      "slot": "B3.I16",
+      "system": "GI",
+      "discipline": "Gross Anatomy/Embryology",
+      "difficulty": "medium",
+      "conceptFingerprint": "Zenker diverticulum vagus motor innervation",
+      "auditTitle": "Zenker Diverticulum / Vagus Nerve Motor Fibers",
+      "selectedLetter": "B",
+      "adjudicationNotes": "Inferior pharyngeal constrictors receive motor fibers from vagus via pharyngeal plexus"
+    },
+    {
+      "questionId": "nbme28_q0096",
+      "position": 61,
+      "slot": "B4.I1",
+      "system": "Cardiovascular",
+      "discipline": "Microbiology",
+      "difficulty": "medium",
+      "conceptFingerprint": "Staphylococcus aureus endocarditis",
+      "auditTitle": "Infective Endocarditis / Viridans Streptococci vs. S. aureus",
+      "selectedLetter": "C",
+      "adjudicationNotes": "Damaged valve + recent dental work + alpha hemolysis + subacute course = viridans strep / *Streptococcus mitis*"
+    },
+    {
+      "questionId": "nbme28_q0131",
+      "position": 96,
+      "slot": "B5.I16",
+      "system": "Behavioral/Nervous & Special Senses",
+      "discipline": "Gross Anatomy/Embryology",
+      "difficulty": "medium",
+      "conceptFingerprint": "cervical cord lateral column ventral horn lesion",
+      "auditTitle": "Syringomyelia / Central Cord Lesion",
+      "selectedLetter": "E",
+      "adjudicationNotes": "Syringomyelia: central cervical lesion affecting crossing pain fibers + bilateral ventral horns"
+    },
+    {
+      "questionId": "nbme27_page-178",
+      "position": 113,
+      "slot": "B6.I13",
+      "system": "MSK/Skin",
+      "discipline": "Gross Anatomy/Embryology",
+      "difficulty": "medium",
+      "conceptFingerprint": "periosteum fracture callus osteoprogenitor",
+      "auditTitle": "Fracture Healing / Periosteum",
+      "selectedLetter": "C",
+      "adjudicationNotes": "Periosteum supplies osteoprogenitor cells for fracture healing"
+    }
+  ],
+  "evidenceCounts": {
+    "systems": {
+      "Behavioral/Nervous & Special Senses": 1,
+      "Cardiovascular": 1,
+      "GI": 1,
+      "MSK/Skin": 3,
+      "Multisystem": 1,
+      "Renal/Urinary": 1
+    },
+    "disciplines": {
+      "Gross Anatomy/Embryology": 4,
+      "Microbiology": 1,
+      "Pathology": 2,
+      "Physiology": 1
+    },
+    "difficulty": {
+      "hard": 1,
+      "medium": 7
+    }
+  },
+  "notes": [
+    "Weakness weighting is intentionally bounded and only elevated for categories with at least two independently adjudicated misses.",
+    "The profile is limited to independently adjudicated score-critical misses from session45:test2; it is not a claim about all 68 incorrect answers."
+  ]
+}

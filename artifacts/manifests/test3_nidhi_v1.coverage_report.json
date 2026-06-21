@@ -1,0 +1,411 @@
+{
+  "exam_slug": "test3_nidhi_v1",
+  "mode": "surrogate",
+  "selectionStatus": "surrogate_repo_local",
+  "strictModeWouldFail": true,
+  "constraints": {
+    "sourceForms": [
+      "NBME 27",
+      "NBME 28",
+      "NBME 29",
+      "Form 30",
+      "Form 31"
+    ],
+    "totalQuestions": 120,
+    "blockSizes": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "hardExcludedQuestionIds": 239,
+    "hardExcludedConceptFingerprints": 120,
+    "unresolvedPriorSourceLabels": [
+      "session24_nbme120_simulation"
+    ],
+    "weaknessProfileSourceSessions": [
+      "session45:test2"
+    ]
+  },
+  "availability": {
+    "postIdAndConceptExclusionPoolSize": 746,
+    "postIdOnlyPoolSize": 750,
+    "bySystemWithoutFallback": {
+      "Behavioral/Nervous & Special Senses": 107,
+      "Cardiovascular": 53,
+      "GI": 84,
+      "General Principles": 131,
+      "Hemat/Lymph/Immune": 84,
+      "MSK/Skin": 69,
+      "Multisystem": 21,
+      "Renal/Urinary": 48,
+      "Reproductive/Endocrine": 87,
+      "Respiratory": 62
+    },
+    "bySystemWithFallback": {
+      "Behavioral/Nervous & Special Senses": 108,
+      "Cardiovascular": 53,
+      "GI": 85,
+      "General Principles": 132,
+      "Hemat/Lymph/Immune": 85,
+      "MSK/Skin": 69,
+      "Multisystem": 21,
+      "Renal/Urinary": 48,
+      "Reproductive/Endocrine": 87,
+      "Respiratory": 62
+    }
+  },
+  "targets": {
+    "rawBlueprintCounts": {
+      "General Principles": 13.2,
+      "Hemat/Lymph/Immune": 9.6,
+      "Behavioral/Nervous & Special Senses": 13.2,
+      "MSK/Skin": 9.6,
+      "Cardiovascular": 10.8,
+      "Respiratory": 9.6,
+      "GI": 9.6,
+      "Renal/Urinary": 7.2,
+      "Reproductive/Endocrine": 14.4,
+      "Multisystem": 22.8
+    },
+    "baseIntegerTargets": {
+      "General Principles": 13,
+      "Hemat/Lymph/Immune": 10,
+      "Behavioral/Nervous & Special Senses": 13,
+      "MSK/Skin": 10,
+      "Cardiovascular": 11,
+      "Respiratory": 9,
+      "GI": 10,
+      "Renal/Urinary": 7,
+      "Reproductive/Endocrine": 14,
+      "Multisystem": 23
+    },
+    "adjustedSystemTargets": {
+      "General Principles": 13,
+      "Hemat/Lymph/Immune": 10,
+      "Behavioral/Nervous & Special Senses": 13,
+      "MSK/Skin": 10,
+      "Cardiovascular": 11,
+      "Respiratory": 10,
+      "GI": 10,
+      "Renal/Urinary": 7,
+      "Reproductive/Endocrine": 15,
+      "Multisystem": 21
+    },
+    "difficultyTargets": {
+      "easy": 23,
+      "medium": 82,
+      "hard": 15
+    },
+    "blockDifficultyTargets": [
+      {
+        "medium": 14,
+        "easy": 5,
+        "hard": 1
+      },
+      {
+        "medium": 15,
+        "easy": 3,
+        "hard": 2
+      },
+      {
+        "medium": 13,
+        "easy": 3,
+        "hard": 4
+      },
+      {
+        "medium": 14,
+        "easy": 5,
+        "hard": 1
+      },
+      {
+        "medium": 15,
+        "easy": 3,
+        "hard": 2
+      },
+      {
+        "medium": 11,
+        "easy": 4,
+        "hard": 5
+      }
+    ],
+    "blockImageTargets": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "imageTarget": 30
+  },
+  "adjustments": [
+    {
+      "system": "Multisystem",
+      "kind": "availability_cap",
+      "from": 23,
+      "to": 21,
+      "reason": "five-form post-exclusion pool cannot meet the pure blueprint-derived count"
+    },
+    {
+      "system": "Respiratory",
+      "kind": "redistribution",
+      "from": 9,
+      "to": 10,
+      "reason": "absorbs blueprint capacity displaced by capped systems while staying closest to raw Step 1 proportions"
+    },
+    {
+      "system": "Reproductive/Endocrine",
+      "kind": "redistribution",
+      "from": 14,
+      "to": 15,
+      "reason": "absorbs blueprint capacity displaced by capped systems while staying closest to raw Step 1 proportions"
+    }
+  ],
+  "actual": {
+    "systemCounts": {
+      "Behavioral/Nervous & Special Senses": 13,
+      "Cardiovascular": 11,
+      "GI": 10,
+      "General Principles": 13,
+      "Hemat/Lymph/Immune": 10,
+      "MSK/Skin": 10,
+      "Multisystem": 21,
+      "Renal/Urinary": 7,
+      "Reproductive/Endocrine": 15,
+      "Respiratory": 10
+    },
+    "difficultyCounts": {
+      "easy": 23,
+      "hard": 15,
+      "medium": 82
+    },
+    "formCounts": {
+      "Form 30": 25,
+      "Form 31": 23,
+      "NBME 27": 24,
+      "NBME 28": 24,
+      "NBME 29": 24
+    },
+    "imageCount": 30,
+    "pdfVerifiedCount": 0,
+    "weaknessWeightedQuestionCount": 98,
+    "selectionDiagnostics": {
+      "selectedDifficulty": {
+        "easy": 23,
+        "hard": 15,
+        "medium": 82
+      },
+      "selectedForms": {
+        "Form 30": 25,
+        "Form 31": 23,
+        "NBME 27": 24,
+        "NBME 28": 24,
+        "NBME 29": 24
+      },
+      "selectedImageCount": 30
+    },
+    "perBlock": [
+      {
+        "questionCount": 20,
+        "systemCounts": {
+          "Behavioral/Nervous & Special Senses": 3,
+          "Cardiovascular": 2,
+          "GI": 1,
+          "General Principles": 2,
+          "Hemat/Lymph/Immune": 2,
+          "MSK/Skin": 2,
+          "Multisystem": 4,
+          "Renal/Urinary": 1,
+          "Reproductive/Endocrine": 2,
+          "Respiratory": 1
+        },
+        "difficultyCounts": {
+          "easy": 5,
+          "hard": 1,
+          "medium": 14
+        },
+        "imageCount": 7,
+        "forms": {
+          "Form 30": 6,
+          "Form 31": 2,
+          "NBME 27": 5,
+          "NBME 28": 3,
+          "NBME 29": 4
+        }
+      },
+      {
+        "questionCount": 20,
+        "systemCounts": {
+          "Behavioral/Nervous & Special Senses": 2,
+          "Cardiovascular": 1,
+          "GI": 2,
+          "General Principles": 3,
+          "Hemat/Lymph/Immune": 2,
+          "MSK/Skin": 1,
+          "Multisystem": 4,
+          "Renal/Urinary": 1,
+          "Reproductive/Endocrine": 2,
+          "Respiratory": 2
+        },
+        "difficultyCounts": {
+          "easy": 3,
+          "hard": 2,
+          "medium": 15
+        },
+        "imageCount": 5,
+        "forms": {
+          "Form 30": 5,
+          "Form 31": 3,
+          "NBME 27": 3,
+          "NBME 28": 5,
+          "NBME 29": 4
+        }
+      },
+      {
+        "questionCount": 20,
+        "systemCounts": {
+          "Behavioral/Nervous & Special Senses": 2,
+          "Cardiovascular": 2,
+          "GI": 2,
+          "General Principles": 2,
+          "Hemat/Lymph/Immune": 2,
+          "MSK/Skin": 1,
+          "Multisystem": 4,
+          "Renal/Urinary": 1,
+          "Reproductive/Endocrine": 2,
+          "Respiratory": 2
+        },
+        "difficultyCounts": {
+          "easy": 2,
+          "hard": 4,
+          "medium": 14
+        },
+        "imageCount": 5,
+        "forms": {
+          "Form 30": 3,
+          "Form 31": 5,
+          "NBME 27": 4,
+          "NBME 28": 4,
+          "NBME 29": 4
+        }
+      },
+      {
+        "questionCount": 20,
+        "systemCounts": {
+          "Behavioral/Nervous & Special Senses": 2,
+          "Cardiovascular": 2,
+          "GI": 2,
+          "General Principles": 2,
+          "Hemat/Lymph/Immune": 1,
+          "MSK/Skin": 2,
+          "Multisystem": 3,
+          "Renal/Urinary": 1,
+          "Reproductive/Endocrine": 3,
+          "Respiratory": 2
+        },
+        "difficultyCounts": {
+          "easy": 4,
+          "hard": 1,
+          "medium": 15
+        },
+        "imageCount": 6,
+        "forms": {
+          "Form 30": 4,
+          "Form 31": 5,
+          "NBME 27": 4,
+          "NBME 28": 3,
+          "NBME 29": 4
+        }
+      },
+      {
+        "questionCount": 20,
+        "systemCounts": {
+          "Behavioral/Nervous & Special Senses": 2,
+          "Cardiovascular": 2,
+          "GI": 2,
+          "General Principles": 2,
+          "Hemat/Lymph/Immune": 1,
+          "MSK/Skin": 2,
+          "Multisystem": 3,
+          "Renal/Urinary": 1,
+          "Reproductive/Endocrine": 3,
+          "Respiratory": 2
+        },
+        "difficultyCounts": {
+          "easy": 5,
+          "hard": 2,
+          "medium": 13
+        },
+        "imageCount": 5,
+        "forms": {
+          "Form 30": 5,
+          "Form 31": 4,
+          "NBME 27": 3,
+          "NBME 28": 4,
+          "NBME 29": 4
+        }
+      },
+      {
+        "questionCount": 20,
+        "systemCounts": {
+          "Behavioral/Nervous & Special Senses": 2,
+          "Cardiovascular": 2,
+          "GI": 1,
+          "General Principles": 2,
+          "Hemat/Lymph/Immune": 2,
+          "MSK/Skin": 2,
+          "Multisystem": 3,
+          "Renal/Urinary": 2,
+          "Reproductive/Endocrine": 3,
+          "Respiratory": 1
+        },
+        "difficultyCounts": {
+          "easy": 4,
+          "hard": 5,
+          "medium": 11
+        },
+        "imageCount": 2,
+        "forms": {
+          "Form 30": 2,
+          "Form 31": 4,
+          "NBME 27": 5,
+          "NBME 28": 5,
+          "NBME 29": 4
+        }
+      }
+    ]
+  },
+  "integrity": {
+    "uniqueQuestionIdCount": 120,
+    "duplicateQuestionIdLeakage": 0,
+    "duplicateFingerprints": {},
+    "excludedQuestionIdOverlap": [],
+    "excludedConceptFingerprintOverlap": [],
+    "conceptFingerprintFallbackQuestionIds": [],
+    "conceptFingerprintFallbackCount": 0,
+    "strictModeBlockingLabels": [
+      {
+        "slug": "session24_nbme120_simulation",
+        "reason": "No concrete repo-local question IDs found for the label-only simulation source.",
+        "strictModeWouldFail": true
+      }
+    ],
+    "checks": {
+      "totalQuestionCount": true,
+      "uniqueQuestionIds": true,
+      "blockSizes": true,
+      "sourceFormsRestricted": true,
+      "excludedQuestionIdOverlap": true,
+      "conceptFingerprintDuplicatesWithinManifest": true,
+      "excludedConceptFingerprintFallbackLogged": true
+    }
+  },
+  "notes": [
+    "All 120 slots are personalized deterministic blueprint-fit selections from the allowed five-form pool; this artifact makes no exact-recovery claim for any slot.",
+    "The starting Step 1 blueprint target was capped only where availability forced it, most notably Multisystem after the post-exclusion pool fell to 21 items.",
+    "Any prior concept-fingerprint overlap would have been logged explicitly as a fallback. This build should remain at zero unless the five-form pool becomes insufficient."
+  ]
+}

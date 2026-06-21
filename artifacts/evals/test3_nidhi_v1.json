@@ -1,0 +1,92 @@
+{
+  "exam_slug": "test3_nidhi_v1",
+  "status": "pass",
+  "mode": "surrogate",
+  "strictModeWouldFail": true,
+  "checks": [
+    {
+      "name": "manifest_slug",
+      "passed": true,
+      "actual": "test3_nidhi_v1",
+      "expected": "test3_nidhi_v1"
+    },
+    {
+      "name": "block_sizes",
+      "passed": true,
+      "actual": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "expected": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "name": "total_questions",
+      "passed": true,
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "name": "export_exam_slug",
+      "passed": true,
+      "actual": "test3",
+      "expected": "test3"
+    },
+    {
+      "name": "excluded_question_overlap",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "duplicate_fingerprints",
+      "passed": true,
+      "actual": {},
+      "expected": {}
+    },
+    {
+      "name": "concept_fallback_count",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    }
+  ],
+  "summary": {
+    "systemCounts": {
+      "Behavioral/Nervous & Special Senses": 13,
+      "Cardiovascular": 11,
+      "GI": 10,
+      "General Principles": 13,
+      "Hemat/Lymph/Immune": 10,
+      "MSK/Skin": 10,
+      "Multisystem": 21,
+      "Renal/Urinary": 7,
+      "Reproductive/Endocrine": 15,
+      "Respiratory": 10
+    },
+    "difficultyCounts": {
+      "easy": 23,
+      "hard": 15,
+      "medium": 82
+    },
+    "imageCount": 30,
+    "conceptFingerprintFallbackCount": 0,
+    "unresolvedSourceLabels": [
+      "session24_nbme120_simulation"
+    ]
+  },
+  "notes": [
+    "This eval is artifact-level only; backend/frontend wiring is intentionally out of scope for Task 3.",
+    "Surrogate mode is clearly labeled so later routing can decide whether to ship or gate on stricter evidence."
+  ]
+}

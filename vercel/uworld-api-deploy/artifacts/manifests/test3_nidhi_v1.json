@@ -1,0 +1,2820 @@
+{
+  "exam_slug": "test3_nidhi_v1",
+  "title": "TEST 3 — Nidhi Personalized NBME-Style Reconstruction",
+  "strategy": "deterministic_fixed_manifest",
+  "manifest_version": 1,
+  "mode": "surrogate",
+  "strict_mode_blocked_by_unresolved_sources": true,
+  "source_forms": [
+    "NBME 27",
+    "NBME 28",
+    "NBME 29",
+    "Form 30",
+    "Form 31"
+  ],
+  "source_proxy_form": "NBME 120-style personalized five-form reconstruction",
+  "selection_basis": "personalized_blueprint_reconstruction",
+  "selection_inputs": {
+    "inventory_artifact": "artifacts/research/nidhi_test3_taken_exam_inventory.json",
+    "exclusion_artifact": "artifacts/research/nidhi_test3_exclusion_set.json",
+    "weakness_artifact": "artifacts/research/nidhi_test3_weakness_profile.json",
+    "unresolved_sources": [
+      "session24_nbme120_simulation"
+    ],
+    "strict_mode_would_fail": true
+  },
+  "blueprint_targets": {
+    "raw_counts": {
+      "General Principles": 13.2,
+      "Hemat/Lymph/Immune": 9.6,
+      "Behavioral/Nervous & Special Senses": 13.2,
+      "MSK/Skin": 9.6,
+      "Cardiovascular": 10.8,
+      "Respiratory": 9.6,
+      "GI": 9.6,
+      "Renal/Urinary": 7.2,
+      "Reproductive/Endocrine": 14.4,
+      "Multisystem": 22.8
+    },
+    "base_integer_targets": {
+      "General Principles": 13,
+      "Hemat/Lymph/Immune": 10,
+      "Behavioral/Nervous & Special Senses": 13,
+      "MSK/Skin": 10,
+      "Cardiovascular": 11,
+      "Respiratory": 9,
+      "GI": 10,
+      "Renal/Urinary": 7,
+      "Reproductive/Endocrine": 14,
+      "Multisystem": 23
+    },
+    "adjusted_targets": {
+      "General Principles": 13,
+      "Hemat/Lymph/Immune": 10,
+      "Behavioral/Nervous & Special Senses": 13,
+      "MSK/Skin": 10,
+      "Cardiovascular": 11,
+      "Respiratory": 10,
+      "GI": 10,
+      "Renal/Urinary": 7,
+      "Reproductive/Endocrine": 15,
+      "Multisystem": 21
+    },
+    "difficulty_targets": {
+      "easy": 23,
+      "medium": 82,
+      "hard": 15
+    },
+    "block_difficulty_targets": [
+      {
+        "medium": 14,
+        "easy": 5,
+        "hard": 1
+      },
+      {
+        "medium": 15,
+        "easy": 3,
+        "hard": 2
+      },
+      {
+        "medium": 13,
+        "easy": 3,
+        "hard": 4
+      },
+      {
+        "medium": 14,
+        "easy": 5,
+        "hard": 1
+      },
+      {
+        "medium": 15,
+        "easy": 3,
+        "hard": 2
+      },
+      {
+        "medium": 11,
+        "easy": 4,
+        "hard": 5
+      }
+    ],
+    "block_image_targets": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  "total_questions": 120,
+  "block_sizes": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20
+  ],
+  "blocks": [
+    {
+      "block": 1,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "form31_page-0",
+        "form31_page-92",
+        "nbme28_q0133",
+        "form30_page-60",
+        "form30_page-93",
+        "nbme27_page-147",
+        "nbme29_q0128",
+        "nbme27_page-165",
+        "form30_page-142",
+        "form30_page-145",
+        "form30_page-28",
+        "nbme27_page-16",
+        "nbme27_page-177",
+        "nbme27_page-49",
+        "nbme28_q0042",
+        "nbme28_q0185",
+        "nbme29_q0010",
+        "nbme29_q0086",
+        "nbme29_q0140",
+        "form30_page-152"
+      ],
+      "selection_rationale_by_question": {
+        "form31_page-0": "weakness-weighted-blueprint-fit",
+        "form31_page-92": "weakness-weighted-blueprint-fit",
+        "nbme28_q0133": "weakness-weighted-blueprint-fit",
+        "form30_page-60": "weakness-weighted-blueprint-fit",
+        "form30_page-93": "blueprint-fit",
+        "nbme27_page-147": "blueprint-fit",
+        "nbme29_q0128": "blueprint-fit",
+        "nbme27_page-165": "weakness-weighted-blueprint-fit",
+        "form30_page-142": "weakness-weighted-blueprint-fit",
+        "form30_page-145": "weakness-weighted-blueprint-fit",
+        "form30_page-28": "weakness-weighted-blueprint-fit",
+        "nbme27_page-16": "weakness-weighted-blueprint-fit",
+        "nbme27_page-177": "weakness-weighted-blueprint-fit",
+        "nbme27_page-49": "weakness-weighted-blueprint-fit",
+        "nbme28_q0042": "weakness-weighted-blueprint-fit",
+        "nbme28_q0185": "weakness-weighted-blueprint-fit",
+        "nbme29_q0010": "weakness-weighted-blueprint-fit",
+        "nbme29_q0086": "weakness-weighted-blueprint-fit",
+        "nbme29_q0140": "weakness-weighted-blueprint-fit",
+        "form30_page-152": "blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "form31_page-0": {
+          "examPosition": 1,
+          "blockItem": 1,
+          "form": "Form 31",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "ABO hemolytic transfusion reaction",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-92": {
+          "examPosition": 2,
+          "blockItem": 2,
+          "form": "Form 31",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "dermis dermatome embryologic origin",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.5456,
+          "weaknessComponents": {
+            "system": 1.15,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0133": {
+          "examPosition": 3,
+          "blockItem": 3,
+          "form": "NBME 28",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "subdural hematoma bridging veins",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-60": {
+          "examPosition": 4,
+          "blockItem": 4,
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "c-ANCA necrotizing granulomatous vasculitis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.1,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-93": {
+          "examPosition": 5,
+          "blockItem": 5,
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Genetics",
+          "conceptFingerprint": "Zellweger absent peroxisomes VLCFA accumulation",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-147": {
+          "examPosition": 6,
+          "blockItem": 6,
+          "form": "NBME 27",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Biostatistics/Epidemiology",
+          "conceptFingerprint": "skewed distribution central tendency",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0128": {
+          "examPosition": 7,
+          "blockItem": 7,
+          "form": "NBME 29",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Streptococcal superantigen toxic shock mechanism",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-165": {
+          "examPosition": 8,
+          "blockItem": 8,
+          "form": "NBME 27",
+          "broadSystem": "General Principles",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "cleft lip maxillary nasal prominence fusion",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-142": {
+          "examPosition": 9,
+          "blockItem": 9,
+          "form": "Form 30",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "AL amyloidosis light chain precursor",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-145": {
+          "examPosition": 10,
+          "blockItem": 10,
+          "form": "Form 30",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Weber syndrome midbrain stroke",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-28": {
+          "examPosition": 11,
+          "blockItem": 11,
+          "form": "Form 30",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Potter sequence deformation oligohydramnios",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-16": {
+          "examPosition": 12,
+          "blockItem": 12,
+          "form": "NBME 27",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "infraspinatus external rotation scapular spine",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.5456,
+          "weaknessComponents": {
+            "system": 1.15,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-177": {
+          "examPosition": 13,
+          "blockItem": 13,
+          "form": "NBME 27",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "sphenoethmoidal recess superior to superior concha",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-49": {
+          "examPosition": 14,
+          "blockItem": 14,
+          "form": "NBME 27",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "pelvic splanchnic nerve erectile dysfunction",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0042": {
+          "examPosition": 15,
+          "blockItem": 15,
+          "form": "NBME 28",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "subclavian steal supraclavicular bruit",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0185": {
+          "examPosition": 16,
+          "blockItem": 16,
+          "form": "NBME 28",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "vitelline duct ileum umbilical fistula",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0010": {
+          "examPosition": 17,
+          "blockItem": 17,
+          "form": "NBME 29",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "anemia chronic disease iron trapping hepcidin",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0086": {
+          "examPosition": 18,
+          "blockItem": 18,
+          "form": "NBME 29",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "oligodendrocytes inhibit CNS axon regeneration",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0140": {
+          "examPosition": 19,
+          "blockItem": 19,
+          "form": "NBME 29",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "testicular artery collateral supply",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-152": {
+          "examPosition": 20,
+          "blockItem": 20,
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Genetics",
+          "conceptFingerprint": "Turner syndrome cystic hygroma newborn",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        }
+      }
+    },
+    {
+      "block": 2,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "nbme28_q0002",
+        "nbme27_page-160",
+        "nbme27_page-9",
+        "nbme29_q0193",
+        "nbme27_page-161",
+        "form30_page-81",
+        "form30_page-138",
+        "form30_page-180",
+        "form30_page-183",
+        "form30_page-4",
+        "form31_page-150",
+        "form31_page-24",
+        "nbme28_q0058",
+        "nbme28_q0077",
+        "nbme28_q0150",
+        "nbme29_q0089",
+        "nbme29_q0138",
+        "nbme29_q0169",
+        "form31_page-173",
+        "nbme28_q0010"
+      ],
+      "selection_rationale_by_question": {
+        "nbme28_q0002": "weakness-weighted-blueprint-fit",
+        "nbme27_page-160": "weakness-weighted-blueprint-fit",
+        "nbme27_page-9": "weakness-weighted-blueprint-fit",
+        "nbme29_q0193": "weakness-weighted-blueprint-fit",
+        "nbme27_page-161": "blueprint-fit",
+        "form30_page-81": "weakness-weighted-blueprint-fit",
+        "form30_page-138": "weakness-weighted-blueprint-fit",
+        "form30_page-180": "weakness-weighted-blueprint-fit",
+        "form30_page-183": "weakness-weighted-blueprint-fit",
+        "form30_page-4": "weakness-weighted-blueprint-fit",
+        "form31_page-150": "weakness-weighted-blueprint-fit",
+        "form31_page-24": "weakness-weighted-blueprint-fit",
+        "nbme28_q0058": "weakness-weighted-blueprint-fit",
+        "nbme28_q0077": "weakness-weighted-blueprint-fit",
+        "nbme28_q0150": "weakness-weighted-blueprint-fit",
+        "nbme29_q0089": "weakness-weighted-blueprint-fit",
+        "nbme29_q0138": "weakness-weighted-blueprint-fit",
+        "nbme29_q0169": "weakness-weighted-blueprint-fit",
+        "form31_page-173": "blueprint-fit",
+        "nbme28_q0010": "blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "nbme28_q0002": {
+          "examPosition": 21,
+          "blockItem": 1,
+          "form": "NBME 28",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": true,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "anterior cerebellum unconscious proprioception",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-160": {
+          "examPosition": 22,
+          "blockItem": 2,
+          "form": "NBME 27",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "ileocolic artery SMA cecum",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-9": {
+          "examPosition": 23,
+          "blockItem": 3,
+          "form": "NBME 27",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "iron deficiency microcytic hypochromic anemia",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0193": {
+          "examPosition": 24,
+          "blockItem": 4,
+          "form": "NBME 29",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "scleroderma interstitial fibrosis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-161": {
+          "examPosition": 25,
+          "blockItem": 5,
+          "form": "NBME 27",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Genetics",
+          "conceptFingerprint": "mitochondrial heteroplasmy maternal inheritance",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-81": {
+          "examPosition": 26,
+          "blockItem": 6,
+          "form": "Form 30",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "hemochromatosis iron cardiomyopathy cirrhosis diabetes",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.1,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-138": {
+          "examPosition": 27,
+          "blockItem": 7,
+          "form": "Form 30",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "diabetic neuropathy sodium channel nociceptor",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-180": {
+          "examPosition": 28,
+          "blockItem": 8,
+          "form": "Form 30",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Retrohepatic hepatic vein IVC avulsion trauma",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-183": {
+          "examPosition": 29,
+          "blockItem": 9,
+          "form": "Form 30",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Ruptured abdominal aortic aneurysm presentation",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-4": {
+          "examPosition": 30,
+          "blockItem": 10,
+          "form": "Form 30",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "ureter common iliac crossing",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-150": {
+          "examPosition": 31,
+          "blockItem": 11,
+          "form": "Form 31",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "follicular lymphoma t(14;18) BCL2 overexpression",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-24": {
+          "examPosition": 32,
+          "blockItem": 12,
+          "form": "Form 31",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Maxillary sinus hiatus semilunaris drainage",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0058": {
+          "examPosition": 33,
+          "blockItem": 13,
+          "form": "NBME 28",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "hyperthyroidism differential diagnosis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0077": {
+          "examPosition": 34,
+          "blockItem": 14,
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "hereditary hemochromatosis intestinal iron absorption",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0150": {
+          "examPosition": 35,
+          "blockItem": 15,
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "esophageal atresia tracheoesophageal fistula embryology",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0089": {
+          "examPosition": 36,
+          "blockItem": 16,
+          "form": "NBME 29",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "piriformis lateral hip rotation anatomy",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.5456,
+          "weaknessComponents": {
+            "system": 1.15,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0138": {
+          "examPosition": 37,
+          "blockItem": 17,
+          "form": "NBME 29",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Eustachian tube nasopharynx middle ear anatomy",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0169": {
+          "examPosition": 38,
+          "blockItem": 18,
+          "form": "NBME 29",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "diaphragm embryology Bochdalek",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-173": {
+          "examPosition": 39,
+          "blockItem": 19,
+          "form": "Form 31",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Biostatistics/Epidemiology",
+          "conceptFingerprint": "sample size confidence interval width",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0010": {
+          "examPosition": 40,
+          "blockItem": 20,
+          "form": "NBME 28",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Biostatistics/Epidemiology",
+          "conceptFingerprint": "incidence proportion new cases at-risk population",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        }
+      }
+    },
+    {
+      "block": 3,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "form31_page-171",
+        "form31_page-43",
+        "form31_page-96",
+        "nbme29_q0036",
+        "nbme28_q0118",
+        "nbme27_page-175",
+        "nbme28_q0172",
+        "nbme28_q0173",
+        "nbme29_q0001",
+        "form30_page-107",
+        "form30_page-176",
+        "form30_page-8",
+        "form31_page-123",
+        "form31_page-167",
+        "nbme27_page-153",
+        "nbme27_page-173",
+        "nbme27_page-96",
+        "nbme29_q0045",
+        "nbme29_q0133",
+        "nbme28_q0023"
+      ],
+      "selection_rationale_by_question": {
+        "form31_page-171": "weakness-weighted-blueprint-fit",
+        "form31_page-43": "weakness-weighted-blueprint-fit",
+        "form31_page-96": "weakness-weighted-blueprint-fit",
+        "nbme29_q0036": "weakness-weighted-blueprint-fit",
+        "nbme28_q0118": "blueprint-fit",
+        "nbme27_page-175": "blueprint-fit",
+        "nbme28_q0172": "weakness-weighted-blueprint-fit",
+        "nbme28_q0173": "weakness-weighted-blueprint-fit",
+        "nbme29_q0001": "blueprint-fit",
+        "form30_page-107": "weakness-weighted-blueprint-fit",
+        "form30_page-176": "weakness-weighted-blueprint-fit",
+        "form30_page-8": "weakness-weighted-blueprint-fit",
+        "form31_page-123": "weakness-weighted-blueprint-fit",
+        "form31_page-167": "weakness-weighted-blueprint-fit",
+        "nbme27_page-153": "weakness-weighted-blueprint-fit",
+        "nbme27_page-173": "weakness-weighted-blueprint-fit",
+        "nbme27_page-96": "weakness-weighted-blueprint-fit",
+        "nbme29_q0045": "weakness-weighted-blueprint-fit",
+        "nbme29_q0133": "weakness-weighted-blueprint-fit",
+        "nbme28_q0023": "blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "form31_page-171": {
+          "examPosition": 41,
+          "blockItem": 1,
+          "form": "Form 31",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Takayasu arteritis granulomatous histology",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-43": {
+          "examPosition": 42,
+          "blockItem": 2,
+          "form": "Form 31",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Neisseria meningitidis adrenal hemorrhage shock",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.12,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-96": {
+          "examPosition": 43,
+          "blockItem": 3,
+          "form": "Form 31",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "posterior thigh mass compressing sciatic nerve",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.5456,
+          "weaknessComponents": {
+            "system": 1.15,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0036": {
+          "examPosition": 44,
+          "blockItem": 4,
+          "form": "NBME 29",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "ITP peripheral platelet destruction megakaryocytes",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0118": {
+          "examPosition": 45,
+          "blockItem": 5,
+          "form": "NBME 28",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Genetics",
+          "conceptFingerprint": "CF sibling carrier risk",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-175": {
+          "examPosition": 46,
+          "blockItem": 6,
+          "form": "NBME 27",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "lead ferrochelatase heme inhibition",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0172": {
+          "examPosition": 47,
+          "blockItem": 7,
+          "form": "NBME 28",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "accessory nipple milk line puberty",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0173": {
+          "examPosition": 48,
+          "blockItem": 8,
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "malignant pericardial effusion breast metastasis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.1,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0001": {
+          "examPosition": 49,
+          "blockItem": 9,
+          "form": "NBME 29",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "ketogenesis acetyl-CoA starvation diabetes oxaloacetate",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-107": {
+          "examPosition": 50,
+          "blockItem": 10,
+          "form": "Form 30",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "p53 colorectal carcinoma molecular pathogenesis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-176": {
+          "examPosition": 51,
+          "blockItem": 11,
+          "form": "Form 30",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "reflux nephropathy vesicoureteral reflux",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-8": {
+          "examPosition": 52,
+          "blockItem": 12,
+          "form": "Form 30",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Weber syndrome midbrain CN III palsy hemiparesis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-123": {
+          "examPosition": 53,
+          "blockItem": 13,
+          "form": "Form 31",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "NRDS surfactant deficiency atelectasis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-167": {
+          "examPosition": 54,
+          "blockItem": 14,
+          "form": "Form 31",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Sepsis-induced DIC diagnosis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-153": {
+          "examPosition": 55,
+          "blockItem": 15,
+          "form": "NBME 27",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "necrotizing enterocolitis premature neonate",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-173": {
+          "examPosition": 56,
+          "blockItem": 16,
+          "form": "NBME 27",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "recurrent lobar pneumonia bronchoscopy obstruction",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-96": {
+          "examPosition": 57,
+          "blockItem": 17,
+          "form": "NBME 27",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "cardiogenic shock hemodynamic profile",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0045": {
+          "examPosition": 58,
+          "blockItem": 18,
+          "form": "NBME 29",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "GBS demyelinating polyneuropathy",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0133": {
+          "examPosition": 59,
+          "blockItem": 19,
+          "form": "NBME 29",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "cervical cancer bilateral ureteral obstruction",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0023": {
+          "examPosition": 60,
+          "blockItem": 20,
+          "form": "NBME 28",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Behavioral Science",
+          "conceptFingerprint": "physician reassurance parental anxiety",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        }
+      }
+    },
+    {
+      "block": 4,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "form31_page-25",
+        "nbme27_page-114",
+        "nbme27_page-158",
+        "nbme28_q0156",
+        "nbme29_q0009",
+        "nbme29_q0060",
+        "nbme28_q0188",
+        "form30_page-139",
+        "form30_page-87",
+        "form31_page-121",
+        "form31_page-156",
+        "form31_page-21",
+        "nbme27_page-166",
+        "nbme27_page-86",
+        "nbme29_q0071",
+        "nbme29_q0173",
+        "form30_page-190",
+        "form30_page-41",
+        "form31_page-1",
+        "nbme28_q0075"
+      ],
+      "selection_rationale_by_question": {
+        "form31_page-25": "weakness-weighted-blueprint-fit",
+        "nbme27_page-114": "weakness-weighted-blueprint-fit",
+        "nbme27_page-158": "weakness-weighted-blueprint-fit",
+        "nbme28_q0156": "weakness-weighted-blueprint-fit",
+        "nbme29_q0009": "weakness-weighted-blueprint-fit",
+        "nbme29_q0060": "weakness-weighted-blueprint-fit",
+        "nbme28_q0188": "weakness-weighted-blueprint-fit",
+        "form30_page-139": "weakness-weighted-blueprint-fit",
+        "form30_page-87": "weakness-weighted-blueprint-fit",
+        "form31_page-121": "weakness-weighted-blueprint-fit",
+        "form31_page-156": "weakness-weighted-blueprint-fit",
+        "form31_page-21": "weakness-weighted-blueprint-fit",
+        "nbme27_page-166": "weakness-weighted-blueprint-fit",
+        "nbme27_page-86": "weakness-weighted-blueprint-fit",
+        "nbme29_q0071": "weakness-weighted-blueprint-fit",
+        "nbme29_q0173": "weakness-weighted-blueprint-fit",
+        "form30_page-190": "weakness-weighted-blueprint-fit",
+        "form30_page-41": "blueprint-fit",
+        "form31_page-1": "weakness-weighted-blueprint-fit",
+        "nbme28_q0075": "blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "form31_page-25": {
+          "examPosition": 61,
+          "blockItem": 1,
+          "form": "Form 31",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "osteosarcoma long bone metaphysis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.4168,
+          "weaknessComponents": {
+            "system": 1.15,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-114": {
+          "examPosition": 62,
+          "blockItem": 2,
+          "form": "NBME 27",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "carcinoid syndrome bronchial tumor",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-158": {
+          "examPosition": 63,
+          "blockItem": 3,
+          "form": "NBME 27",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Immunology",
+          "conceptFingerprint": "Anti-GBM pulmonary-renal syndrome",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.12,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0156": {
+          "examPosition": 64,
+          "blockItem": 4,
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Immunology",
+          "conceptFingerprint": "dermatomyositis gottron heliotrope proximal weakness",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.12,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0009": {
+          "examPosition": 65,
+          "blockItem": 5,
+          "form": "NBME 29",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Immunology",
+          "conceptFingerprint": "type III hypersensitivity immune complex",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.12,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0060": {
+          "examPosition": 66,
+          "blockItem": 6,
+          "form": "NBME 29",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "fibrinous peritonitis frosted liver",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0188": {
+          "examPosition": 67,
+          "blockItem": 7,
+          "form": "NBME 28",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "ulnar tibial nerve diabetic neuropathy localization",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-139": {
+          "examPosition": 68,
+          "blockItem": 8,
+          "form": "Form 30",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Methemoglobinemia nitrate poisoning",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-87": {
+          "examPosition": 69,
+          "blockItem": 9,
+          "form": "Form 30",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "basal forebrain cortical cholinergic pathway",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-121": {
+          "examPosition": 70,
+          "blockItem": 10,
+          "form": "Form 31",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "peripartum cardiomyopathy diagnosis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-156": {
+          "examPosition": 71,
+          "blockItem": 11,
+          "form": "Form 31",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "obesity hypoventilation syndrome",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-21": {
+          "examPosition": 72,
+          "blockItem": 12,
+          "form": "Form 31",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "hepatitis C cryoglobulinemia purpura nephritis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-166": {
+          "examPosition": 73,
+          "blockItem": 13,
+          "form": "NBME 27",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "angiodysplasia GI hemorrhage complication",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-86": {
+          "examPosition": 74,
+          "blockItem": 14,
+          "form": "NBME 27",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "cervical fusion atlantoaxial compensatory strain",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.5456,
+          "weaknessComponents": {
+            "system": 1.15,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0071": {
+          "examPosition": 75,
+          "blockItem": 15,
+          "form": "NBME 29",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "VSD holosystolic murmur thrill",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0173": {
+          "examPosition": 76,
+          "blockItem": 16,
+          "form": "NBME 29",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "varicocele left testicular vein drainage",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-190": {
+          "examPosition": 77,
+          "blockItem": 17,
+          "form": "Form 30",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "ectopic thyroid mediastinum radioiodine uptake",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-41": {
+          "examPosition": 78,
+          "blockItem": 18,
+          "form": "Form 30",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "porphyria cutanea tarda heme synthesis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-1": {
+          "examPosition": 79,
+          "blockItem": 19,
+          "form": "Form 31",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "5α-reductase deficiency prostate hypoplasia",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0075": {
+          "examPosition": 80,
+          "blockItem": 20,
+          "form": "NBME 28",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Biostatistics/Epidemiology",
+          "conceptFingerprint": "cohort study exposure outcome incidence",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        }
+      }
+    },
+    {
+      "block": 5,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "form30_page-55",
+        "nbme27_page-23",
+        "nbme28_q0189",
+        "nbme29_q0116",
+        "form31_page-54",
+        "nbme28_q0006",
+        "nbme28_q0024",
+        "form30_page-130",
+        "form30_page-154",
+        "form30_page-99",
+        "form31_page-113",
+        "form31_page-164",
+        "form31_page-175",
+        "nbme27_page-89",
+        "nbme28_q0183",
+        "nbme29_q0166",
+        "form30_page-63",
+        "nbme27_page-61",
+        "nbme29_q0145",
+        "nbme29_q0147"
+      ],
+      "selection_rationale_by_question": {
+        "form30_page-55": "weakness-weighted-blueprint-fit",
+        "nbme27_page-23": "weakness-weighted-blueprint-fit",
+        "nbme28_q0189": "weakness-weighted-blueprint-fit",
+        "nbme29_q0116": "weakness-weighted-blueprint-fit",
+        "form31_page-54": "weakness-weighted-blueprint-fit",
+        "nbme28_q0006": "blueprint-fit",
+        "nbme28_q0024": "blueprint-fit",
+        "form30_page-130": "weakness-weighted-blueprint-fit",
+        "form30_page-154": "weakness-weighted-blueprint-fit",
+        "form30_page-99": "weakness-weighted-blueprint-fit",
+        "form31_page-113": "weakness-weighted-blueprint-fit",
+        "form31_page-164": "weakness-weighted-blueprint-fit",
+        "form31_page-175": "weakness-weighted-blueprint-fit",
+        "nbme27_page-89": "weakness-weighted-blueprint-fit",
+        "nbme28_q0183": "weakness-weighted-blueprint-fit",
+        "nbme29_q0166": "weakness-weighted-blueprint-fit",
+        "form30_page-63": "blueprint-fit",
+        "nbme27_page-61": "blueprint-fit",
+        "nbme29_q0145": "weakness-weighted-blueprint-fit",
+        "nbme29_q0147": "weakness-weighted-blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "form30_page-55": {
+          "examPosition": 81,
+          "blockItem": 1,
+          "form": "Form 30",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "cystocele anterior vaginal wall prolapse",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-23": {
+          "examPosition": 82,
+          "blockItem": 2,
+          "form": "NBME 27",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "pleural effusion physical exam",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0189": {
+          "examPosition": 83,
+          "blockItem": 3,
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Borrelia Leptospira spirochete taxonomy",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.12,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0116": {
+          "examPosition": 84,
+          "blockItem": 4,
+          "form": "NBME 29",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "pituitary adenoma MRI sella turcica",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.344,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-54": {
+          "examPosition": 85,
+          "blockItem": 5,
+          "form": "Form 31",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": true,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "sural nerve sensory biopsy",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0006": {
+          "examPosition": 86,
+          "blockItem": 6,
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "Hartnup disease tryptophan niacin",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0024": {
+          "examPosition": 87,
+          "blockItem": 7,
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Immunology",
+          "conceptFingerprint": "TNF granuloma maintenance TB reactivation",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-130": {
+          "examPosition": 88,
+          "blockItem": 8,
+          "form": "Form 30",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "carcinoid small intestine serotonin syndrome",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-154": {
+          "examPosition": 89,
+          "blockItem": 9,
+          "form": "Form 30",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Distal biceps rupture musculocutaneous nerve",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.5456,
+          "weaknessComponents": {
+            "system": 1.15,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-99": {
+          "examPosition": 90,
+          "blockItem": 10,
+          "form": "Form 30",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "radial head subluxation nursemaid elbow toddler traction",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.5456,
+          "weaknessComponents": {
+            "system": 1.15,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-113": {
+          "examPosition": 91,
+          "blockItem": 11,
+          "form": "Form 31",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "anterior duodenal ulcer perforation",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-164": {
+          "examPosition": 92,
+          "blockItem": 12,
+          "form": "Form 31",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "neonatal RDS surfactant deficiency",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-175": {
+          "examPosition": 93,
+          "blockItem": 13,
+          "form": "Form 31",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "preeclampsia placental atherosis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-89": {
+          "examPosition": 94,
+          "blockItem": 14,
+          "form": "NBME 27",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "struvite staghorn proteus urease alkaline urine",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0183": {
+          "examPosition": 95,
+          "blockItem": 15,
+          "form": "NBME 28",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "benzene AML occupational exposure",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0166": {
+          "examPosition": 96,
+          "blockItem": 16,
+          "form": "NBME 29",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "aortic stenosis physical diagnosis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-63": {
+          "examPosition": 97,
+          "blockItem": 17,
+          "form": "Form 30",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "familial hyperchylomicronemia lipoprotein lipase deficiency",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-61": {
+          "examPosition": 98,
+          "blockItem": 18,
+          "form": "NBME 27",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Biostatistics/Epidemiology",
+          "conceptFingerprint": "empirical rule tail proportion",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0145": {
+          "examPosition": 99,
+          "blockItem": 19,
+          "form": "NBME 29",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Dandy-Walker metencephalon embryology",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0147": {
+          "examPosition": 100,
+          "blockItem": 20,
+          "form": "NBME 29",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "Left dominant coronary artery anatomy",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        }
+      }
+    },
+    {
+      "block": 6,
+      "timeLimitMinutes": 30,
+      "questionIds": [
+        "form31_page-114",
+        "nbme27_page-116",
+        "form31_page-11",
+        "nbme28_q0112",
+        "nbme28_q0123",
+        "nbme29_q0003",
+        "nbme29_q0066",
+        "form30_page-17",
+        "form30_page-40",
+        "form31_page-40",
+        "nbme27_page-163",
+        "nbme27_page-54",
+        "nbme28_q0001",
+        "nbme28_q0139",
+        "nbme29_q0035",
+        "nbme29_q0199",
+        "form31_page-28",
+        "nbme27_page-132",
+        "nbme27_page-68",
+        "nbme28_q0019"
+      ],
+      "selection_rationale_by_question": {
+        "form31_page-114": "weakness-weighted-blueprint-fit",
+        "nbme27_page-116": "weakness-weighted-blueprint-fit",
+        "form31_page-11": "weakness-weighted-blueprint-fit",
+        "nbme28_q0112": "blueprint-fit",
+        "nbme28_q0123": "blueprint-fit",
+        "nbme29_q0003": "weakness-weighted-blueprint-fit",
+        "nbme29_q0066": "blueprint-fit",
+        "form30_page-17": "weakness-weighted-blueprint-fit",
+        "form30_page-40": "weakness-weighted-blueprint-fit",
+        "form31_page-40": "weakness-weighted-blueprint-fit",
+        "nbme27_page-163": "weakness-weighted-blueprint-fit",
+        "nbme27_page-54": "weakness-weighted-blueprint-fit",
+        "nbme28_q0001": "weakness-weighted-blueprint-fit",
+        "nbme28_q0139": "weakness-weighted-blueprint-fit",
+        "nbme29_q0035": "weakness-weighted-blueprint-fit",
+        "nbme29_q0199": "weakness-weighted-blueprint-fit",
+        "form31_page-28": "blueprint-fit",
+        "nbme27_page-132": "weakness-weighted-blueprint-fit",
+        "nbme27_page-68": "blueprint-fit",
+        "nbme28_q0019": "weakness-weighted-blueprint-fit"
+      },
+      "selection_details_by_question": {
+        "form31_page-114": {
+          "examPosition": 101,
+          "blockItem": 1,
+          "form": "Form 31",
+          "broadSystem": "GI",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "sigmoid colon diverticulosis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-116": {
+          "examPosition": 102,
+          "blockItem": 2,
+          "form": "NBME 27",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": true,
+          "discipline": "Pathology",
+          "conceptFingerprint": "insulin omission weight loss diabulimia",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-11": {
+          "examPosition": 103,
+          "blockItem": 3,
+          "form": "Form 31",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "SVC syndrome collateral venous return",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0112": {
+          "examPosition": 104,
+          "blockItem": 4,
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Burkholderia mallei glanders",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0123": {
+          "examPosition": 105,
+          "blockItem": 5,
+          "form": "NBME 28",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Microbiology",
+          "conceptFingerprint": "Nosocomial candidemia central venous catheter",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0003": {
+          "examPosition": 106,
+          "blockItem": 6,
+          "form": "NBME 29",
+          "broadSystem": "Cardiovascular",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "RCA occlusion causes inferior STEMI",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0066": {
+          "examPosition": 107,
+          "blockItem": 7,
+          "form": "NBME 29",
+          "broadSystem": "Multisystem",
+          "difficultyBand": "hard",
+          "difficulty1to5": 4,
+          "hasImage": false,
+          "discipline": "Biochemistry",
+          "conceptFingerprint": "I-cell disease M6P tagging defect",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-17": {
+          "examPosition": 108,
+          "blockItem": 8,
+          "form": "Form 30",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "iron deficiency microcytic anemia",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form30_page-40": {
+          "examPosition": 109,
+          "blockItem": 9,
+          "form": "Form 30",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Osgood-Schlatter tibial tubercle apophysitis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.4168,
+          "weaknessComponents": {
+            "system": 1.15,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-40": {
+          "examPosition": 110,
+          "blockItem": 10,
+          "form": "Form 31",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Sertoli-Leydig tumor virilization",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-163": {
+          "examPosition": 111,
+          "blockItem": 11,
+          "form": "NBME 27",
+          "broadSystem": "Reproductive/Endocrine",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "primary hyperparathyroidism hypercalcemia hypophosphatemia osteoporosis",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-54": {
+          "examPosition": 112,
+          "blockItem": 12,
+          "form": "NBME 27",
+          "broadSystem": "Respiratory",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "squamous cell lung cancer PTHrP hypercalcemia",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0001": {
+          "examPosition": 113,
+          "blockItem": 13,
+          "form": "NBME 28",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "ureteral stone renal colic hematuria",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0139": {
+          "examPosition": 114,
+          "blockItem": 14,
+          "form": "NBME 28",
+          "broadSystem": "Renal/Urinary",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "uremia chronic kidney disease anemia pruritus",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0035": {
+          "examPosition": 115,
+          "blockItem": 15,
+          "form": "NBME 29",
+          "broadSystem": "Hemat/Lymph/Immune",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "Folate deficiency anemia alcoholism",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.232,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme29_q0199": {
+          "examPosition": 116,
+          "blockItem": 16,
+          "form": "NBME 29",
+          "broadSystem": "MSK/Skin",
+          "difficultyBand": "medium",
+          "difficulty1to5": 3,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "FDP tendon DIP flexion",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.5456,
+          "weaknessComponents": {
+            "system": 1.15,
+            "discipline": 1.2,
+            "difficulty": 1.12
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "form31_page-28": {
+          "examPosition": 117,
+          "blockItem": 17,
+          "form": "Form 31",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Nutrition",
+          "conceptFingerprint": "caloric deficit weight loss calculation",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-132": {
+          "examPosition": 118,
+          "blockItem": 18,
+          "form": "NBME 27",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Gross Anatomy/Embryology",
+          "conceptFingerprint": "C5 C6 radiculopathy shoulder abduction",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.2,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.2,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme27_page-68": {
+          "examPosition": 119,
+          "blockItem": 19,
+          "form": "NBME 27",
+          "broadSystem": "General Principles",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Genetics",
+          "conceptFingerprint": "maternal UPD7 imprinting growth",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.0,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.0,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        },
+        "nbme28_q0019": {
+          "examPosition": 120,
+          "blockItem": 20,
+          "form": "NBME 28",
+          "broadSystem": "Behavioral/Nervous & Special Senses",
+          "difficultyBand": "easy",
+          "difficulty1to5": 2,
+          "hasImage": false,
+          "discipline": "Pathology",
+          "conceptFingerprint": "primary cerebral neuroblastoma small blue cell",
+          "pdfVerified": false,
+          "sourcePdfPage": null,
+          "weaknessWeight": 1.1,
+          "weaknessComponents": {
+            "system": 1.0,
+            "discipline": 1.1,
+            "difficulty": 1.0
+          },
+          "fingerprintExclusionFallback": false
+        }
+      }
+    }
+  ]
+}

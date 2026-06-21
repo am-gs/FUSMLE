@@ -1,0 +1,381 @@
+{
+  "run_id": "trun_7f0d77aad14040b4980cca67c0a6d6f2",
+  "interaction_id": "trun_7f0d77aad14040b4980cca67c0a6d6f2",
+  "result_url": "https://platform.parallel.ai/play/deep-research/trun_7f0d77aad14040b4980cca67c0a6d6f2",
+  "status": "completed",
+  "output": {
+    "basis": [
+      {
+        "field": "executive_summary",
+        "reasoning": "",
+        "citations": [],
+        "confidence": ""
+      },
+      {
+        "field": "the_june_2026_coding_model_landscape_who_actually_wins",
+        "reasoning": "**Crafting benchmark JSON**\n\nI need to create a JSON that includes a direct answer listing benchmarks, and the excerpts have relevant supporting details like GPT-5.4 and Claude Opus 4.6. So, I\u2019m setting \"supported\" to true. I\u2019ll make sure to provide a brief scratchpad reasoning as well, but I don\u2019t want it to be exhaustive, so I'll specify \"completeness\" as false. Let\u2019s start crafting this JSON right away!",
+        "citations": [
+          {
+            "url": "https://www.morphllm.com/swe-bench-pro",
+            "excerpts": [
+              "Jun 9, 2026 \u2014 SWE-bench Pro Leaderboard (2026): Every Model Score, Claude Fable 5 Leads at 80.3%. Full SWE-bench Pro leaderboard, June 9, 2026."
+            ],
+            "title": "SWE-bench Pro Leaderboard (2026): Every Model Score ..."
+          },
+          {
+            "url": "https://www.nxcode.io/resources/news/gpt-5-4-complete-guide-features-pricing-models-2026",
+            "excerpts": [
+              "Key Takeaways. OpenAI's most capable model ever: GPT 5.4 scores 57.7% on SWE-bench Pro, 75% on OSWorld (surpassing the 72.4% human expert baseline), and 83% on GDPval knowledge work -- all in one unified model."
+            ],
+            "title": "GPT 5.4 Complete Guide 2026: Features, Pricing, Benchmarks ..."
+          },
+          {
+            "url": "https://deepmind.google/models/gemini/pro/",
+            "excerpts": [
+              "Gemini 3.1 raises the bar across a wide range of benchmarks. SWE-Bench Verified Agentic coding Single attempt 80.6% Competitive coding problems from Codeforces"
+            ],
+            "title": "Gemini 3.1 Pro"
+          },
+          {
+            "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+            "excerpts": [
+              "Feb 17, 2026 \u2014 Pricing remains the same as Sonnet 4.5, starting at $3/$15 per million tokens. Sonnet 4.6 brings much-improved coding skills to more of our"
+            ],
+            "title": "Introducing Claude Sonnet 4.6"
+          },
+          {
+            "url": "https://www.anthropic.com/news/claude-haiku-4-5",
+            "excerpts": [
+              "Oct 15, 2025 \u2014 Today, Claude Haiku 4.5 gives you similar levels of coding performance but at one-third the cost and more than twice the speed. Chart comparing"
+            ],
+            "title": "Introducing Claude Haiku 4.5"
+          },
+          {
+            "url": "https://openai.com/index/introducing-gpt-5-4",
+            "excerpts": [],
+            "title": "Introducing GPT-5.4 | OpenAI"
+          },
+          {
+            "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+            "excerpts": [
+              "Mar 17, 2026 \u2014 In benchmarks, GPT\u20115.4 mini consistently outperforms GPT\u20115\u2011mini at similar latencies and approaches GPT\u20115.4\u2011level pass rates while running much"
+            ],
+            "title": "Introducing GPT-5.4 mini and nano"
+          },
+          {
+            "url": "https://www.morphllm.com/ai-coding-agent",
+            "excerpts": [
+              "Jun 9, 2026 \u2014 Codex CLI tops Terminal-Bench 2.1 at 83.4%, Claude Code at 78.9%. OpenCode (172k stars, MIT) is the most-starred open source agent."
+            ],
+            "title": "Best AI Coding Agent (2026): Ranked by Terminal-Bench ..."
+          },
+          {
+            "url": "https://z.ai/blog/glm-5.2",
+            "excerpts": [
+              "4 days ago \u2014 We're introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability"
+            ],
+            "title": "GLM-5.2: Built for Long-Horizon Tasks"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "per_model_profile_where_each_one_wins_and_fails",
+        "reasoning": "**Evaluating completeness and support**\n\nI need to create a structured response that includes a scratchpad and boolean options for completeness and support. I see that the field answer lists various models along with some citation placeholders, but it lacks a clear recommendation and explicit routing policy.\n\nWhile it does mention relevant models and provides some examples, it doesn't fully meet the completeness criteria. I have to assess whether the content aligns with the provided excerpts, which it seems to do, but claims and ratings need further verification.**Crafting response structure**\n\nI see that the excerpts include pricing and some factual support, but there's no explicit mention of a \"routing policy.\" So it seems that while the support might be true due to the excerpts backing many statements, certain claims may also stem from unspecified sources. I\u2019m marking the support as true but completeness as false. Now, I need to build a JSON response with fields for scratchpad, completeness, and supported, ensuring the scratchpad captures my reasoning steps clearly.",
+        "citations": [
+          {
+            "url": "https://www.anthropic.com/news/claude-opus-4-8",
+            "excerpts": [
+              "May 28, 2026 \u2014 Our latest model, Claude Opus 4.8, is an upgrade to our Opus class of models, with stronger performance across coding, agentic tasks,"
+            ],
+            "title": "Introducing Claude Opus 4.8"
+          },
+          {
+            "url": "https://www.mindstudio.ai/blog/claude-opus-4-8-effort-levels-explained",
+            "excerpts": [
+              "May 29, 2026 \u2014 The quality difference between High and Max on a simple task is negligible \u2014 but the cost and latency difference is real. Cost and Speed"
+            ],
+            "title": "Claude Opus 4.8 Effort Levels Explained: Low, Medium, ..."
+          },
+          {
+            "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+            "excerpts": [
+              "Feb 17, 2026 \u2014 Pricing remains the same as Sonnet 4.5, starting at $3/$15 per million tokens. Sonnet 4.6 brings much-improved coding skills to more of our"
+            ],
+            "title": "Introducing Claude Sonnet 4.6"
+          },
+          {
+            "url": "https://theaicareerlab.com/blog/which-claude-model-should-you-use",
+            "excerpts": [
+              "May 20, 2026 \u2014 If you're a claude.ai user who just wants one default, pick Sonnet 4.6 unless the task is. Sonnet is the best workhorse default for most"
+            ],
+            "title": "Which Claude Model Should You Use? Opus 4.8 vs Sonnet ..."
+          },
+          {
+            "url": "https://www.anthropic.com/news/claude-haiku-4-5",
+            "excerpts": [
+              "Oct 15, 2025 \u2014 Today, Claude Haiku 4.5 gives you similar levels of coding performance but at one-third the cost and more than twice the speed. Chart comparing"
+            ],
+            "title": "Introducing Claude Haiku 4.5"
+          },
+          {
+            "url": "https://caylent.com/blog/claude-haiku-4-5-deep-dive-cost-capabilities-and-the-multi-agent-opportunity",
+            "excerpts": [
+              "Oct 15, 2025 \u2014 Running 10,000 tasks per month would cost about $700 with Haiku 4.5, compared to $2,100 with Sonnet 4.5. The 3x price difference remains even"
+            ],
+            "title": "Claude Haiku 4.5 Deep Dive: Cost, Capabilities, and the ..."
+          },
+          {
+            "url": "https://www.morphllm.com/sonnet-vs-haiku",
+            "excerpts": [
+              "Mar 31, 2026 \u2014 Claude Sonnet 4.5 costs 3.75x more than Haiku 4.5. Sonnet handles multi-step reasoning and code generation. Haiku handles classification,"
+            ],
+            "title": "Sonnet vs Haiku: Claude Model Comparison for Developers"
+          },
+          {
+            "url": "https://openai.com/index/introducing-gpt-5-4",
+            "excerpts": [],
+            "title": "Introducing GPT-5.4 | OpenAI"
+          },
+          {
+            "url": "https://www.nxcode.io/resources/news/gpt-5-4-complete-guide-features-pricing-models-2026",
+            "excerpts": [
+              "Key Takeaways. OpenAI's most capable model ever: GPT 5.4 scores 57.7% on SWE-bench Pro, 75% on OSWorld (surpassing the 72.4% human expert baseline), and 83% on GDPval knowledge work -- all in one unified model."
+            ],
+            "title": "GPT 5.4 Complete Guide 2026: Features, Pricing, Benchmarks ..."
+          },
+          {
+            "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+            "excerpts": [
+              "Mar 17, 2026 \u2014 In benchmarks, GPT\u20115.4 mini consistently outperforms GPT\u20115\u2011mini at similar latencies and approaches GPT\u20115.4\u2011level pass rates while running much"
+            ],
+            "title": "Introducing GPT-5.4 mini and nano"
+          },
+          {
+            "url": "https://ai.google.dev/gemini-api/docs/pricing",
+            "excerpts": [
+              "3 days ago \u2014 Context caching price, Free of charge, $0.15 $1.00 / 1,000,000 tokens per hour (storage price) ; Grounding with Google Search \u00b7 Not available"
+            ],
+            "title": "Gemini Developer API pricing"
+          },
+          {
+            "url": "https://deepmind.google/models/gemini/pro/",
+            "excerpts": [
+              "Gemini 3.1 raises the bar across a wide range of benchmarks. SWE-Bench Verified Agentic coding Single attempt 80.6% Competitive coding problems from Codeforces"
+            ],
+            "title": "Gemini 3.1 Pro"
+          },
+          {
+            "url": "http://tldl.io/resources/google-gemini-api-pricing",
+            "excerpts": [
+              "Feb 27, 2026 \u2014 TL;DR \u2014 Gemini API Prices (March 2026). Gemini 3.1 Pro (preview): $2.00/$12.00 per 1M tokens; Gemini 2.5 Pro: $1.25/$10.00 per 1M tokens (\u2264200K context)"
+            ],
+            "title": "Gemini API Pricing 2026: 2.5 Pro at $1.25/M (Free Tier ... - TLDL"
+          },
+          {
+            "url": "https://www.reddit.com/r/singularity/comments/1s2b8ue/how_is_gemini_31_at_the_top_of_swebench/",
+            "excerpts": [
+              "Genuinely confused. In my personal experience, it's nowhere near as reliable or capable as Claude Opus 4.6 or GPT 5.4 for real-world coding tasks. Those"
+            ],
+            "title": "How is Gemini 3.1 at the top of SWE-bench? : r/singularity"
+          },
+          {
+            "url": "https://z.ai/blog/glm-5.2",
+            "excerpts": [
+              "4 days ago \u2014 We're introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability"
+            ],
+            "title": "GLM-5.2: Built for Long-Horizon Tasks"
+          },
+          {
+            "url": "https://fireworks.ai/blog/glm-5p2",
+            "excerpts": [
+              "4 days ago \u2014 Experience the power of GLM 5.2, now live on Fireworks. As the premier choice for coding and long-horizon agentic tasks, GLM 5.2 is built to"
+            ],
+            "title": "GLM 5.2 is live on Fireworks inference, day zero."
+          },
+          {
+            "url": "https://www.reddit.com/r/LLM/comments/1sm5hty/glm51_topped_swebench_pro_and_hit_3_on_code_arena/",
+            "excerpts": [
+              "Claude Sonnet 4.6 it's better than both Sonnet. GLM5.1 is better than nerfed claude 4.6, claude 4.7 and gpt 5.4 xhigh."
+            ],
+            "title": "GLM5.1 topped SWE-Bench Pro and hit #3 on Code Arena"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "pricing_latency_and_tool_use_capability_side_by_side",
+        "reasoning": "**Structuring upgrade data**\n\nI see that Excerpt 5 talks about the Opus 4.8 upgrade but doesn\u2019t mention prices. Excerpt 4 has Sonnet 4.6 pricing at $3/$15 per million tokens, while Excerpt 0 compares Haiku 4.5 costs. Excerpt 1 shows some mini benchmarks for GPT-5.4, and Excerpt 6 discusses GLM-5.2 long-horizon but might not fully back everything up. With this info, I'm noting that completeness is false but supported is true due to some backing. I'll craft the JSON accordingly, including my scratchpad reasoning.",
+        "citations": [
+          {
+            "url": "https://www.anthropic.com/news/claude-haiku-4-5",
+            "excerpts": [
+              "Oct 15, 2025 \u2014 Today, Claude Haiku 4.5 gives you similar levels of coding performance but at one-third the cost and more than twice the speed. Chart comparing"
+            ],
+            "title": "Introducing Claude Haiku 4.5"
+          },
+          {
+            "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+            "excerpts": [
+              "Mar 17, 2026 \u2014 In benchmarks, GPT\u20115.4 mini consistently outperforms GPT\u20115\u2011mini at similar latencies and approaches GPT\u20115.4\u2011level pass rates while running much"
+            ],
+            "title": "Introducing GPT-5.4 mini and nano"
+          },
+          {
+            "url": "https://deepmind.google/models/gemini/flash/",
+            "excerpts": [
+              "Here are just a few ways you can use Gemini 3.5 Flash's agentic capabilities at speed. ... Tool use. Function calling; Structured output; Search as a tool; Code"
+            ],
+            "title": "Gemini 3.5 Flash"
+          },
+          {
+            "url": "https://deepmind.google/models/gemini/pro/",
+            "excerpts": [
+              "Gemini 3.1 raises the bar across a wide range of benchmarks. SWE-Bench Verified Agentic coding Single attempt 80.6% Competitive coding problems from Codeforces"
+            ],
+            "title": "Gemini 3.1 Pro"
+          },
+          {
+            "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+            "excerpts": [
+              "Feb 17, 2026 \u2014 Pricing remains the same as Sonnet 4.5, starting at $3/$15 per million tokens. Sonnet 4.6 brings much-improved coding skills to more of our"
+            ],
+            "title": "Introducing Claude Sonnet 4.6"
+          },
+          {
+            "url": "https://www.anthropic.com/news/claude-opus-4-8",
+            "excerpts": [
+              "May 28, 2026 \u2014 Our latest model, Claude Opus 4.8, is an upgrade to our Opus class of models, with stronger performance across coding, agentic tasks,"
+            ],
+            "title": "Introducing Claude Opus 4.8"
+          },
+          {
+            "url": "https://z.ai/blog/glm-5.2",
+            "excerpts": [
+              "4 days ago \u2014 We're introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability"
+            ],
+            "title": "GLM-5.2: Built for Long-Horizon Tasks"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "real_world_routing_patterns_and_case_studies",
+        "reasoning": "Assessment reasoning:\n- The field_description asks for a June 2026 model/provider stack evaluation for Hermes with a focus on frontier coding quality, tool use, latency, and cost. It requests a source-backed recommendation with citations and explicit routing policy.\n- The provided field_answer contains several case studies and mentions routing concepts but does not present a single, clear recommendation comparing all listed models/providers or an explicit, cohesive routing policy tailored to Hermes. Itmostly compiles excerpts and references rather than delivering a definitive, prioritized stack and a concrete routing policy.\n- Therefore, completeness is false because the answer does not fully meet the prompt\u2019s demand for a decisive, source-backed recommendation and explicit routing policy.\n- The excerpts supplied do support portions of the content (e.g., cost figures, references to Hermes, OpenRouter, vLLM, and routing concepts), so the answer is at least partially grounded in the excerpts. Thus, supported is true.",
+        "citations": [
+          {
+            "url": "https://tylerfolkman.substack.com/p/i-tested-6-ai-models-across-3-providers",
+            "excerpts": [
+              "This gives me primary access to Kimi, Qwen, DeepSeek, and GLM. It is where most daily work lands. OpenRouter: about $70/month in my budget."
+            ],
+            "title": "I Routed 2,415 AI Agent Turns Across 6 Models. It Cost $76.77"
+          },
+          {
+            "url": "http://magnitude.dev/",
+            "excerpts": [
+              "Magnitude is a coding agent that runs on 90% open models, escalating to frontier models only when the work demands it."
+            ],
+            "title": "Magnitude: Frontier coding at half the cost"
+          },
+          {
+            "url": "https://developers.redhat.com/articles/2026/06/02/deploy-hermes-agent-openshift-ai-vllm-model-serving",
+            "excerpts": [
+              "Jun 2, 2026 \u2014 This article demonstrates how to deploy Hermes Agent model serving, giving you a production-grade AI agent that learns and remembers."
+            ],
+            "title": "Deploy Hermes Agent on OpenShift AI with vLLM model ..."
+          },
+          {
+            "url": "https://hermes-agent.nousresearch.com/docs/integrations/providers",
+            "excerpts": [
+              "vLLM, to advanced routing and fallback configurations. Hermes routes these tasks to your main chat model. You can override each task individually to route it."
+            ],
+            "title": "AI Providers | Hermes Agent - nous research"
+          },
+          {
+            "url": "https://www.truefoundry.com/blog/llm-routing-cost-quality-aware-model-selection",
+            "excerpts": [
+              "Jun 8, 2026 \u2014 Routing is the policy that picks one per request, navigating three goals that pull against each other: cost, latency, and quality. This post"
+            ],
+            "title": "Intelligent LLM Routing: Cost & Quality-Aware Selection"
+          },
+          {
+            "url": "https://addyosmani.com/blog/agent-harness-engineering/",
+            "excerpts": [
+              "Apr 19, 2026 \u2014 A harness is every piece of code, configuration, and execution logic that isn't the model itself. A raw model is not an agent."
+            ],
+            "title": "Agent Harness Engineering"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+            "excerpts": [
+              "Prompt caching optimizes your API usage by allowing resuming from specific prefixes in your prompts. This significantly reduces processing time and costs for"
+            ],
+            "title": "Prompt caching - Claude API Docs"
+          },
+          {
+            "url": "https://particula.tech/blog/anthropic-prompt-cache-ttl-5-minute-regression-debugging",
+            "excerpts": [
+              "Apr 28, 2026 \u2014 The break-even point is the number of reads you complete per write before expiry. the break-even count stays around 3 reads per hour. Reads to"
+            ],
+            "title": "Why Your Anthropic Cache Hit Rate Collapsed - Particula Tech"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "synthesis_a_concrete_routing_policy_for_hermes",
+        "reasoning": "",
+        "citations": [],
+        "confidence": ""
+      }
+    ],
+    "content": {
+      "executive_summary": "- **Frontier Coding Leader (Vendor-Reported)**: Claude Opus 4.8 hits 69.2% on SWE-bench Pro vs. GLM 5.1 at 58.4% and GPT-5.4 at 57.7%; on the standardized Scale SEAL run, GPT-5.4 (xHigh) takes the lead at 59.1% with Muse Spark at 55.0% and Opus 4.6 (thinking) at 51.9% -> Hermes should default the \"frontier tier\" to **Opus 4.8 (effort=high)** for hard-architecture tasks and route UP only when Opus itself fails twice.\n- **Cost-Per-Solved-Point Champion**: Claude Haiku 4.5 sits at ~$0.13 of output per SWE-bench Pro point, vs. ~$0.25 for GPT-5.4 and ~$0.26 for Gemini 3.1 Pro -> Route the bulk of subagent/tool-execution traffic through **Haiku 4.5** and save 60-70% on daily volume.\n- **Open-Weights Frontrunner**: GLM 5.2 (released June 16, 2026) scores 62.1 on SWE-bench Pro and 81.0 on Terminal-Bench 2.1, trailing Opus 4.8 by ~1 point on FrontierSWE and ~13 points on SWE-Marathon -> Use **GLM 5.2 on Fireworks** ($1.40/$4.40 per M, 80% cache hit discount at $0.26/M) as an MIT-licensed escape hatch when quota or cost caps bite.\n- **Long-Horizon Workhorse**: Claude Sonnet 4.6 carries the 1M context window (beta) with \"context compaction,\" adaptive thinking, programmatic tool calling, and 80.2% on SWE-bench Verified -> Route full-repo retrieval, large migrations, and \"memory-heavy\" agent sessions through **Sonnet 4.6** rather than Opus.\n- **Latency-Tier Winner**: Claude Haiku 4.5 runs 4-5x faster than Sonnet 4.5 at one-third the cost; GPT-5.4 mini (xhigh) reaches 60.0% Terminal-Bench 2.0 with strong perf/latency tradeoff -> Token-efficient and live-coding subtasks should ride **Haiku 4.5** or **GPT-5.4 mini**.\n- **Real-World Routing Evidence**: Tyler Folkman's 2,415-turn audit landed at $76.77 (94% cheaper than all-GPT-5.5), with 82.2% of turns handled by Kimi K2.6 at $64.79, GPT-5.5 reserved for 9.9% of \"earned\" turns, and GLM 5.1 used at <1% -> The cheapest-fallback-by-default pattern measurably matches frontier quality in production.\n- **Tool-Use Reliability Gap**: GPT-5.4 mini scores 42.9% on Toolathon but 93.4% on \u03c42-bench (telecom); Opus 4.8 leads computer use at 84% on Online-Mind2Web -> Tool-error tolerance is parameter-dependent, so Hermes should record per-tool failure counts and re-route after two consecutive tool errors.\n- **Cache Economics Floor**: Anthropic prompt cache break-even is roughly 3 reads per write within the 5-minute TTL; cache writes cost 1.25x of base and reads 0.1x -> Hermes must structure prompts so tool definitions and system prompts become stable cache prefixes and only the diff pushes to the model.\n- **Open-Weight 90% Routing Pattern**: Magnitude reports \"60% less than Claude Code with no drop in performance\" by running 90% on open models and escalating only on hard traces -> A pure cost-driven production strategy is genuinely viable; the 10% frontier tail preserves quality where it matters.\n- **Provider Agility Is Built-In**: Hermes Agent from Nous Research uses OPENAI_BASE_URL to swap between vLLM, OpenRouter, NVIDIA NIM, and the Nous Portal without code changes -> Hermes-stack design should treat the router as the abstraction and providers as replaceable implementations.\n- **Risk Failure Case**: One Reddit tester said \"Opus 4.6 is fast but lacks depth, whereas GPT 5.4 goes deeper but is a bit slower\" when given the same task in Claude Code vs. Codex -> The same harness can produce different outcomes on the same prompt, so routing by model alone is not enough; Hermes must also pin the harness (claude-code, codex-cli, opencode) per route.\n- **Verification Gap**: \"Vendor-reported\" SWE-bench Pro scores run 10-30 points above standardized Scale SEAL scores; some \"Claude Fable\" entries on the morphllm leaderboard appear inflated or synthetic -> Prefer standardized + Scale SEAL numbers for routing thresholds; treat vendor scores as ceiling estimates.",
+      "the_june_2026_coding_model_landscape_who_actually_wins": "The four standard leaderboards paint overlapping but distinct pictures. Standardized (Scale SEAL, identical harness) is the only apples-to-apples measure because vendors use tuned scaffolds that inflate their numbers by 10-30 points. Terminal-Bench 2.0 and Terminal-Bench 2.1 measure end-to-end agent capability inside an actual coding-agent harness, not raw model skill. SWE-bench Verified still anchors single-instance coding capability.\n\n### Coding Benchmark State of the Art (June 2026)\n\n| Benchmark | Rank | Model | Score | Source |\n|---|---|---|---|---|\n| SWE-bench Pro (Scale SEAL) | 1 | GPT-5.4 (xHigh) | 59.1% | [the_june_2026_coding_model_landscape_who_actually_wins[0]] [4] |\n| SWE-bench Pro (Scale SEAL) | 4 | Claude Opus 4.6 (thinking) | 51.9% | [the_june_2026_coding_model_landscape_who_actually_wins[0]] [4] |\n| SWE-bench Pro (Scale SEAL) | 5 | Gemini 3.1 Pro (thinking) | 46.1% | [the_june_2026_coding_model_landscape_who_actually_wins[0]] [4] |\n| SWE-bench Pro (Scale SEAL) | 11 | Claude Haiku 4.5 | 39.5% | [the_june_2026_coding_model_landscape_who_actually_wins[0]] [4] |\n| SWE-bench Pro (vendor) | 1 | Claude Opus 4.8 | 69.2% | [the_june_2026_coding_model_landscape_who_actually_wins[0]] [4] |\n| SWE-bench Pro (vendor) | 3 | GLM-5.1 | 58.4% | [the_june_2026_coding_model_landscape_who_actually_wins[0]] [4] |\n| SWE-bench Pro (vendor) | 4 | GPT-5.4 | 57.7% | [the_june_2026_coding_model_landscape_who_actually_wins[1]] [30] |\n| SWE-bench Verified | 1 | Gemini 3.1 Pro (thinking high) | 80.6% | [the_june_2026_coding_model_landscape_who_actually_wins[2]] [36] |\n| SWE-bench Verified | 1 | GLM-5 (V4-Pro-Max open-weights) | 80.6% | [the_june_2026_coding_model_landscape_who_actually_wins[0]] [4] |\n| SWE-bench Verified | 3 | Claude Sonnet 4.6 | 80.2% | [the_june_2026_coding_model_landscape_who_actually_wins[3]] [11] |\n| SWE-bench Verified | 4 | Claude Haiku 4.5 | 73.3% | [the_june_2026_coding_model_landscape_who_actually_wins[4]] [52] |\n| Terminal-Bench 2.0 | 1 | GPT-5.4 | 75.1% | [the_june_2026_coding_model_landscape_who_actually_wins[5]] [33] |\n| Terminal-Bench 2.0 | 2 | Gemini 3.1 Pro (thinking high) | 68.5% | [the_june_2026_coding_model_landscape_who_actually_wins[2]] [36] |\n| Terminal-Bench 2.0 (xhigh) | 3 | GPT-5.4 mini | 60.0% | [the_june_2026_coding_model_landscape_who_actually_wins[6]] [29] |\n| Terminal-Bench 2.1 agent | - | Codex CLI + GPT-5.5 | 83.4% | [the_june_2026_coding_model_landscape_who_actually_wins[7]] [47] |\n| Terminal-Bench 2.1 agent | - | Claude Code + Opus 4.8 | 78.9% | [the_june_2026_coding_model_landscape_who_actually_wins[7]] [47] |\n| Terminal-Bench 2.1 (Z.AI self) | - | GLM 5.2 | 81.0% | [the_june_2026_coding_model_landscape_who_actually_wins[8]] [78] |\n\n**Takeaways.** Vendor-reported scores systematically overstate capability (Claude Opus 4.8 jumps from \"not shown on Scale SEAL table\" to 69.2% on the vendor score). Standardized scores should drive Hermes routing thresholds. The end-to-end agent benchmark (Terminal-Bench 2.1) shows that the harness matters as much as the model: switching Codex CLI to GLM 5.2 is mechanically similar to swapping Claude Code for Opus 4.8, but the same Hermes harness will likely produce different results.",
+      "per_model_profile_where_each_one_wins_and_fails": "### Claude Opus 4.8 (Frontier Tier, May 28, 2026)\n\nOpus 4.8 is Anthropic's most capable engine. Pricing is $5/M input and $25/M output in regular mode and $10/$50 in \"fast\" mode (2.5x speed). The model exposes five effort levels (low / medium / high / extra / max) via the budget_tokens/effort parameter; **high** is the default and **max** produces noticeable quality only on genuinely complex tasks where errors are costly. On computer use, Opus 4.8 leads with 84% on Online-Mind2Web. Failure mode in practice: Reddit's vibecoding thread notes that \"Opus 4.8 is definitely more stable than 4.7 [but] tends to hallucinate shader optimizations and can lose context on lower-level GPU memory.\" [per_model_profile_where_each_one_wins_and_fails[0]] [12] / [per_model_profile_where_each_one_wins_and_fails[1]] [61]\n\n### Claude Sonnet 4.6 (Workhorse Tier, Feb 17, 2026)\n\nSonnet 4.6 stays at $3/$15 per M tokens (Sonnet 4.5 pricing) and adds a 1M-token context window in beta, \"context compaction,\" adaptive and extended thinking, programmatic tool calling, tool search, MCP connectors, and OfficeQA parity with Opus 4.6. It scores 80.2% on SWE-bench Verified with a prompt modification. Sonnet 4.6 is the \"best workhorse default for most\" agents, per an Anthropic-aligned review at theaicareerlab.com, and the official guidance recommends finding \"an ideal balance of speed and reliable performance\" depending on the use case. [per_model_profile_where_each_one_wins_and_fails[2]] [11] / [per_model_profile_where_each_one_wins_and_fails[3]] [50]\n\n### Claude Haiku 4.5 (Speed/Cost Tier, Oct 15, 2025)\n\nHaiku 4.5 is priced at $1/$5 per M, scores 73.3% on SWE-bench Verified, and \"achieves 90% of Sonnet 4.5's performance\" in Augment's agentic eval. Anthropic states it is \"more than twice the speed\" of Claude Sonnet 4 and \"up to 4-5 times faster than Sonnet 4.5.\" Caylent's deep dive shows that 10,000 multi-agent tasks per month cost ~$700 with Haiku 4.5 vs. ~$2,100 with Sonnet 4.5 (3x cost difference). The recommended stack is \"Haiku handles classification, extraction, and routing at 3x the speed\" while Sonnet does planning and Opus produces the highest-quality low-volume work. [per_model_profile_where_each_one_wins_and_fails[4]] [52] / [per_model_profile_where_each_one_wins_and_fails[5]] [54] / [per_model_profile_where_each_one_wins_and_fails[6]] [56]\n\n### GPT-5.4 and GPT-5.4 mini/nano\n\nGPT-5.4 ships at $2.50/$15 per M tokens (Pro at $30/$180) with a 272K context window and 1M experimental in Codex. Benchmarks: 57.7% on SWE-bench Pro (vendor), **75.1% on Terminal-Bench 2.0** (the highest published score), 59.1% on Scale SEAL standardized, 83% on GDPval. OpenAI advertises it as \"lower latency across reasoning efforts\" vs. GPT-5.3-Codex and claims \"33% fewer errors\" than the previous generation. Variants include GPT-5.4 Pro and GPT-5.4 Thinking; reasoning effort ranges from \"none\" to \"xhigh.\" [per_model_profile_where_each_one_wins_and_fails[7]] [33] / [per_model_profile_where_each_one_wins_and_fails[8]] [30]\n\nGPT-5.4 mini costs $0.75/$4.50 per M and gets 54.4% SWE-bench Pro (xhigh) and 60.0% Terminal-Bench 2.0 (xhigh) - \"approaches GPT-5.4-level pass rates while running much faster.\" GPT-5.4 nano at $0.20/$1.25 gets 52.4% SWE-bench Pro (xhigh) and 46.3% Terminal-Bench. GPT-5.4 mini is \"optimized for coding assistants that need to feel responsive,\" \"computer-using systems,\" and \"subagents that handle narrower subtasks in parallel - like searching a codebase, reviewing a large file, or processing supporting documents.\" On Toolathon, mini scores 42.9% and nano 35.5%; on \u03c42-bench (telecom) they score 93.4% and 92.5%, signaling that tool-selection fidelity is the long pole, not schema execution. [per_model_profile_where_each_one_wins_and_fails[9]] [29]\n\n### Gemini 2.5 Pro, 2.5 Flash, and the Newer 3.1 Pro\n\nThe Google pricing page treats 2.5 Pro at $1.25/$10 per M (\u2264200K) and $2.50/$15 (>200K), with Flash at $0.30/$2.50 and Flash-Lite at $0.10/$0.40. Gemini 3.1 Pro (preview, January 2025 knowledge cutoff) is listed at $2.00/$12.00 (\u2264200K) and $4.00/$18.00 (>200K), with 80.6% on SWE-bench Verified (thinking high), 68.5% on Terminal-Bench 2.0, and 84.9% MRCR v2 at 128k but only 26.3% at 1M, meaning long-context retrieval degrades sharply. The newer Flash (3.5) is described as \"highly capable in vibe coding and agentic coding.\" Grounding with Google Search costs $35 per 1,000 prompts and Maps $25 per 1,000; batch API gives a 50% discount. Reddit user feedback is mixed: \"Gemini 3.1 is nowhere near as reliable or capable as Claude Opus 4.6 or GPT 5.4 for real-world coding tasks\" even though it tops SWE-bench. [per_model_profile_where_each_one_wins_and_fails[10]] [35] / [per_model_profile_where_each_one_wins_and_fails[11]] [36] / [per_model_profile_where_each_one_wins_and_fails[12]] [72] / [per_model_profile_where_each_one_wins_and_fails[13]] [69]\n\n### GLM 5.1 and GLM 5.2 (open weights, MIT)\n\nZ.AI's GLM-5.1 topped SWE-bench Pro open-weights at 58.4% and hit #3 on Code Arena, beating \"nerfed\" Claude Sonnet 4.6. GLM 5.2 (June 16, 2026) jumps to 62.1 on SWE-bench Pro and **81.0 on Terminal-Bench 2.1**, trails Opus 4.8 by ~1% on FrontierSWE and ~13% on SWE-Marathon, and \"ranks second only to the Opus series\" on PostTrainBench. It features 1M lossless context, an \"anti-hack module\" that monitors tool calls to block reward-hacking behaviors like unauthorized curl operations, and is MIT-licensed. Pricing: OpenRouter lists $1.20/M input and $4.10/M output; Fireworks lists $1.40/M input and $4.40/M output with $0.26 cache-hit tokens (an 80% discount), and the model is available day-zero across Hugging Face Inference Providers via Zai, Together AI, Novita, Fireworks, and DeepInfra. [per_model_profile_where_each_one_wins_and_fails[14]] [78] / [per_model_profile_where_each_one_wins_and_fails[15]] [79] / [per_model_profile_where_each_one_wins_and_fails[16]] [17]",
+      "pricing_latency_and_tool_use_capability_side_by_side": "### Per-Million-Token Pricing\n\n| Model | Input $/M | Output $/M | Notes |\n|---|---|---|---|\n| Claude Opus 4.8 (regular) | 5.00 | 25.00 | Anthropic standard |\n| Claude Opus 4.8 (fast) | 10.00 | 50.00 | 2.5x speed |\n| Claude Sonnet 4.6 | 3.00 | 15.00 | Same as 4.5 |\n| Claude Haiku 4.5 | 1.00 | 5.00 | One-third of Sonnet |\n| GPT-5.4 (base) | 2.50 | 15.00 | 272K context |\n| GPT-5.4 Pro | 30.00 | 180.00 | Highest in OpenAI family |\n| GPT-5.4 mini | 0.75 | 4.50 | xhigh 60% T-Bench 2.0 |\n| GPT-5.4 nano | 0.20 | 1.25 | Subagents/pure classification |\n| Gemini 2.5 Pro (\u2264200K) | 1.25 | 10.00 | Doubles above 200K |\n| Gemini 2.5 Pro (>200K) | 2.50 | 15.00 | 200K threshold |\n| Gemini 2.5 Flash | 0.30 | 2.50 | Single tier |\n| Gemini 2.5 Flash-Lite | 0.10 | 0.40 | Cheap tier |\n| Gemini 3.1 Pro preview (\u2264200K) | 2.00 | 12.00 | - |\n| GLM 5.2 (OpenRouter) | 1.20 | 4.10 | Day-zero across 5+ providers |\n| GLM 5.2 (Fireworks) | 1.40 | 4.40 | $0.26 cache hit |\n| Claude Haiku 4.5 (cache read) | ~0.10 | ~0.50 | 0.1x on read |\n\n**Takeaways.** Haiku 4.5 is the cheapest *real* coding model on the Anthropic stack, and Gemini 2.5 Flash-Lite at $0.10/$0.40 is the cheapest *capable* model across all vendors. For a Hermes budget dominated by subagent and tool-execution traffic, the per-M gap between Haiku 4.5 ($1/$5) and Opus 4.8 ($5/$25) is 5x on input, 5x on output - and Opus fast mode is 10x on both axes. GLM 5.2 sits between Haiku 4.5 and Sonnet 4.6, and its Fireworks cache-hit rate ($0.26/M) makes it the most aggressive option for repeated subagent calls.\n\n### Latency Profile (qualitative ordering)\n\n| Model | Latency Tier | Source |\n|---|---|---|\n| Claude Haiku 4.5 | Fastest (4-5x vs. Sonnet 4.5) | [pricing_latency_and_tool_use_capability_side_by_side[0]] [52] |\n| GPT-5.4 mini | \"Fast\" / strong perf-latency tradeoff | [pricing_latency_and_tool_use_capability_side_by_side[1]] [29] |\n| Gemini 2.5 Flash / 3.5 Flash | Sub-second streaming | [pricing_latency_and_tool_use_capability_side_by_side[2]] [21] |\n| GPT-5.4 nano | Comparable to 5.3-Codex | [pricing_latency_and_tool_use_capability_side_by_side[1]] [29] |\n| Gemini 2.5 Pro / 3.1 Pro | Mid-tier at \"Thinking\" settings | [pricing_latency_and_tool_use_capability_side_by_side[3]] [36] |\n| Claude Sonnet 4.6 | Mid, \"responsive\" feel | [pricing_latency_and_tool_use_capability_side_by_side[4]] [11] |\n| Claude Opus 4.8 (regular) | Slow, high quality | [pricing_latency_and_tool_use_capability_side_by_side[5]] [12] |\n| Claude Opus 4.8 (fast) | 2.5x faster, 2x pricier | [pricing_latency_and_tool_use_capability_side_by_side[5]] [12] |\n\n**Takeaways.** For sub-second interactive use, Haiku 4.5 and the Flash family are the only candidates that feel \"live.\" Opus 4.8 (regular) should be reserved for non-interactive batched/agentic tasks where quality matters more than response time.\n\n### Tool Use and Agent Capability\n\nOpus 4.8 leads on computer use (84% Online-Mind2Web) and adds Dynamic Workflows inside Claude Code for codebase-scale migrations. Sonnet 4.6 is the broadest tool stack: programmatic tool calling, MCP support, tool search, fetch, web search, memory, and context compaction. Gemini 3.1 Pro supports function calling, structured output, search-as-tool, and code execution. GPT-5.4 mini has full suite (tool use, function calling, web search, file search, computer use, skills) but only scores 42.9% on Toolathon, suggesting tool-selection errors at low cadence even though \u03c42-bench telecom is 93.4%. GLM 5.2 ships an \"anti-hack module\" that monitors tool calls and blocks reward-hacking patterns (e.g., raw curl) - a meaningful safety net for self-hosted coding agents. [pricing_latency_and_tool_use_capability_side_by_side[5]] [12] / [pricing_latency_and_tool_use_capability_side_by_side[4]] [11] / [pricing_latency_and_tool_use_capability_side_by_side[3]] [36] / [pricing_latency_and_tool_use_capability_side_by_side[1]] [29] / [pricing_latency_and_tool_use_capability_side_by_side[6]] [78]",
+      "real_world_routing_patterns_and_case_studies": "### Case Study 1: Tyler Folkman's 2,415-Turn Audit\n\nFolkman published a Substack audit where 2,415 agent turns across 6 models cost **$76.77** - a 94% saving vs. all-GPT-5.5. The router uses 8 model paths; real usage split was Kimi K2.6 at 82.2% (1,984 turns, $64.79), GPT-5.5 at 9.9% (238 turns, $11.04) for \"max\" reasoning on hard architecture or repeated failures, and local Qwen 3.6 27B at 4.4% (106 turns, $0.00) for private prompts. GLM 5.1 was used at 0.9% of turns (21 turns, $0.15). Folkman concludes that \"most turns did not need frontier intelligence\" and that DeepSeek V4 Flash \"delivers 82% of Claude Opus 4.7's SWE-Bench Pro score at roughly 1/36th of the input price.\" His selection signal was a value_score = SWE-Bench Pro score / input dollars per M tokens. [real_world_routing_patterns_and_case_studies[0]] [75]\n\n### Case Study 2: Magnitude's 90/10 Open Routing\n\nMagnitude is a coding agent that \"runs entirely on open models\" and \"costs 60% less than Claude Code with no drop in performance.\" Architecture is a \"strong leader\" model that escalates only \"when the work demands it.\" Pass-through API pricing with no markup and $5 free credits. Backed by Y Combinator. Implication: a pure cost-driven open-weights strategy is now production-viable - the 10% frontier tail preserves quality where it matters. [real_world_routing_patterns_and_case_studies[1]] [76]\n\n### Case Study 3: Hermes Agent's Native Provider Agility\n\nHermes Agent (Nous Research) is itself an open-source agent designed for multi-provider routing. The Red Hat guide (June 2, 2026) shows it deployed on OpenShift AI with vLLM, using `OPENAI_BASE_URL` to swap between vLLM, OpenRouter, NVIDIA NIM, and the Nous Portal without code changes. The provider integration docs enumerate Anthropic, OpenAI, OpenRouter, vLLM, Ollama, and many more routes. For an engineering agent called Hermes, this means the model layer is a swappable endpoint and the routing policy is the application logic. [real_world_routing_patterns_and_case_studies[2]] [74] / [real_world_routing_patterns_and_case_studies[3]] [77]\n\n### Routing Recommendations from Theory and Engineering Blogs\n\nTrueFoundry's \"Intelligent LLM Routing\" piece frames routing as navigating three competing goals (cost, latency, quality) and recommends tiered policies: cheap-and-fast for classification/extraction, mid tier for reasoning, frontier only for hard determinate asks. Addy Osmani's \"Agent Harness Engineering\" notes that \"a coding agent is the model plus everything you build around it\" and treats the harness as a real artifact that \"tightens every time the agent slips.\" The Anthropic prompt-cache docs show that the **5-minute cache TTL** plus a break-even of ~3 reads per write per hour implies Hermes should keep tool definitions, system prompts, and prior messages as a stable cache prefix, pushing only the conversation diffs forward. [real_world_routing_patterns_and_case_studies[4]] [24] / [real_world_routing_patterns_and_case_studies[5]] [25] / [real_world_routing_patterns_and_case_studies[6]] [60] / [real_world_routing_patterns_and_case_studies[7]] [87]",
+      "synthesis_a_concrete_routing_policy_for_hermes": "The strongest pattern across Folkman's audit, Magnitude's design, the Mindstudio effort table, and the Magnitude 90/10 model is a **four-tier cascade with explicit escalations**. Tier 0 (parsing, classification, simple extraction) is reserved for the cheapest model that still passes task type. Tier 1 (subagent tool execution and live interactive coding) is the sweet spot for fractional cost. Tier 2 is the workhorse that handles retrieval, planning, and review. Tier 3 (frontier with full thinking budget) is reserved for repo-migration, diff synthesis, and any task where Tier 2 has failed twice.\n\n### Recommended Stack (June 2026)\n\n| Layer | Model | Provider | Role | Trigger |\n|---|---|---|---|---|\n| Tier 0 - Subagent Noise | GPT-5.4 nano | OpenAI or Azure | classification, log triage, regex-style extraction | input length < 4K, no tool calls |\n| Tier 0 - Subagent Noise | Claude Haiku 4.5 | Anthropic | classification, log triage | consulting Anthropic stack |\n| Tier 0 - Subagent Noise | Gemini 2.5 Flash-Lite | Google AI Studio | classification < 8K | cost-critical batch |\n| Tier 1 - Tool Execution & Live Coding | Claude Haiku 4.5 | Anthropic | subagent orchestration, tool loops, real-time user feedback | \"more than twice the speed\" of Sonnet and 90% of its capability |\n| Tier 1 - Tool Execution & Live Coding | GPT-5.4 mini xhigh | OpenAI | Toolathon-tuned mini, \"subagents in parallel\" | Toolathon weight \u22650.4 use case |\n| Tier 1 - Tool Execution & Live Coding | Gemini 2.5 Flash | Google AI Studio | when 1M context is useful and budget tight | context > 200K, sub-dollar-per-M routes |\n| Tier 2 - Workhorse | Claude Sonnet 4.6 (effort=high) | Anthropic | planning, large retrieval, full-repo summarization, code review, \"memory-heavy\" sessions | default for new tasks |\n| Tier 2 - Workhorse | GPT-5.4 (effort=high) | OpenAI | architecture work where \"GPT 5.4 goes deeper\" per Reddit | harness=codex-cli or opencode |\n| Tier 2 - Workhorse | GLM 5.2 | Fireworks or OpenRouter | MIT-licensed open weights for cost ceiling, batch | budget or quota bound on Tier 2 |\n| Tier 3 - Frontier | Claude Opus 4.8 (effort=high, then max) | Anthropic | Errors in Tier 2 twice, repo-scale migration, dynamic workflows | Tier 2 fail-2 escalation |\n| Tier 3 - Frontier | GPT-5.4 Pro or xhigh | OpenAI | Terminal-Bench 2.0 75.1% leader, GDPval 83% | where Anthropic is throttled |\n| Tier 3 - Frontier | Gemini 3.1 Pro (thinking high) | Google AI Studio | SWE-bench Verified 80.6%, batch path | 50% batch discount and non-urgent jobs |\n\n### Routing Policy (decision logic)\n\n1. **Default task entry**: Tier 2 (Sonnet 4.6 effort=high). If task is fully classified (single-tool, no reasoning) and prompt < 4K, drop to Tier 1 (Haiku 4.5) or Tier 0 (nano/Flash-Lite).\n2. **Subagent fan-out**: Any sub-task launched by the main agent uses Tier 1 by default and is pinned to Haiku 4.5 if running on Anthropic, GPT-5.4 mini if on OpenAI, or Gemini 2.5 Flash if context > 200K.\n3. **Tool-error escalation**: If a subagent fails two consecutive tool calls on the same tool, escalate that subagent to Tier 2 and the tool's reliability counter rolls a metric the harness uses to gate Tier 3 access.\n4. **Cost ceiling**: When the daily Anthropic bill exceeds a configured price, redirect Tier 2 traffic to GLM 5.2 (Fireworks or OpenRouter) by setting `OPENAI_BASE_URL` to the GLM endpoint - Hermes' provider-agnostic integration means this is a one-line change.\n5. **Long horizon**: When the conversation context exceeds 400K tokens, route to Sonnet 4.6 with context compaction enabled, or to Gemini 3.1 Pro (thinking) with the 1M boundary in mind (and recall 26.3% MRCR at 1M).\n6. **Caching**: Use Anthropic prompt cache (5-min TTL, 1.25x write, ~0.1x read) by separating tool definitions + system prompt as the stable prefix. Break-even is ~3 reads per write per hour, so Hermes should batch turns inside that window whenever possible.\n7. **Batch and discount paths**: For repo-scale migrations and offline sweeps, prefer the Gemini 50% batch path or the Fireworks cache-hit rate ($0.26/M on GLM 5.2).\n8. **Effort dispatch**: When sending to Opus 4.8, start at effort=high and ramp to max only after evidence the task is genuinely complex; the Mindstudio data shows the quality difference between high and max is \"negligible\" on simple tasks but real on math/architecture.\n\n### Failure Modes to Watch\n\n- **Same prompt, different harness**: A Reddit coder reports \"Opus 4.6 is fast but lacks depth, whereas GPT 5.4 goes deeper\" comparing Claude Code vs. Codex on identical prompts. Hermes must pin the harness per route, not just the model.\n- **In-flight inflation**: Vendor scores run 10-30 points above Scale SEAL standardized scores, and recent \"Claude Fable 5\" and \"Claude Fable Latest\" entries on morphllm appear inflated. Pin routing thresholds to standardized scores.\n- **Gemini 3.1 Pro variance**: Top SWE-bench score but Reddit users report \"nowhere near as reliable or capable as Claude Opus 4.6 or GPT 5.4 for real-world coding.\" Treat the 80.6% as ceiling.\n- **Cache write penalty**: Writes cost 1.25x of base and reads 0.1x. If a turn only reads once, caching is net negative.\n- **GLM tool anti-hack**: GLM 5.2's \"anti-hack module\" actively blocks raw curl operations. If Hermes relies on `curl` for proxying, expect refusals - plan around `requests` or `httpx` inside the harness.\n\n### Providers and Cost Tools\n\n- **Anthropic**: Direct API; Claude Code SDK; Anthropic prompt cache for Sonnet/Opus.\n- **OpenAI**: Direct API; Codex CLI; ChatGPT Enterprise gateway.\n- **Google**: AI Studio for 2.5 Pro/Flash; Vertex AI for enterprise; batch API at 50% off.\n- **OpenRouter**: GLM 5.2, Anthropic, OpenAI, Gemini in one bill; auto-router for fallbacks.\n- **Fireworks**: GLM 5.2 day-zero with $0.26 cache-hit tokens; vLLM-compatible.\n- **Together AI, Novita, DeepInfra**: GLM 5.2 mirrors; useful for region-specific serving.\n- **vLLM**: Hermes-Nous-style self-hosting when privacy or cost ceiling applies.\n- **OpenShift AI**: Production Hermes deployment per Red Hat guide; works with NVIDIA NIM."
+    },
+    "type": "json",
+    "beta_fields": null,
+    "mcp_tool_calls": null,
+    "output_schema": {
+      "type": "object",
+      "properties": {
+        "executive_summary": {
+          "type": "string",
+          "title": "Executive Summary"
+        },
+        "the_june_2026_coding_model_landscape_who_actually_wins": {
+          "type": "string",
+          "title": "The June 2026 Coding-Model Landscape: Who Actually Wins"
+        },
+        "per_model_profile_where_each_one_wins_and_fails": {
+          "type": "string",
+          "title": "Per-Model Profile: Where Each One Wins and Fails"
+        },
+        "pricing_latency_and_tool_use_capability_side_by_side": {
+          "type": "string",
+          "title": "Pricing, Latency, and Tool-Use Capability Side-by-Side"
+        },
+        "real_world_routing_patterns_and_case_studies": {
+          "type": "string",
+          "title": "Real-World Routing Patterns and Case Studies"
+        },
+        "synthesis_a_concrete_routing_policy_for_hermes": {
+          "type": "string",
+          "title": "Synthesis: A Concrete Routing Policy for Hermes"
+        }
+      },
+      "required": [
+        "executive_summary",
+        "the_june_2026_coding_model_landscape_who_actually_wins",
+        "per_model_profile_where_each_one_wins_and_fails",
+        "pricing_latency_and_tool_use_capability_side_by_side",
+        "real_world_routing_patterns_and_case_studies",
+        "synthesis_a_concrete_routing_policy_for_hermes"
+      ]
+    }
+  }
+}
