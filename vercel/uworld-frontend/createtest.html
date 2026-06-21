@@ -477,6 +477,25 @@
                             >
                             <button
                                 class="nbme-simulation-btn btn-block"
+                                id="generateTest3Btn"
+                                onclick="startTest3()"
+                                style="
+                                    background: linear-gradient(
+                                        135deg,
+                                        #6a1b9a,
+                                        #4a148c
+                                    );
+                                "
+                            >
+                                <i class="fas fa-flag-checkered"></i> TEST 3
+                            </button>
+                            <small class="text-muted d-block mt-2"
+                                >Deterministic personalized 120-question
+                                surrogate &middot; 6 blocks &middot; 30
+                                min/block &middot; timed</small
+                            >
+                            <button
+                                class="nbme-simulation-btn btn-block mt-3"
                                 id="generateTest2Btn"
                                 onclick="startTest2()"
                                 style="
@@ -972,6 +991,56 @@
                             alert("Network error. Please try again.");
                         });
                 });
+
+                // TEST 3 — deterministic personalized 120-question surrogate, fixed 120 items, timed
+                window.startTest3 = function () {
+                    var btn = document.getElementById("generateTest3Btn");
+                    var label = '<i class="fas fa-flag-checkered"></i> TEST 3';
+                    btn.disabled = true;
+                    btn.innerHTML =
+                        '<i class="fas fa-spinner fa-spin"></i> Loading TEST 3\u2026';
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("POST", "/api/qbank/generate-test3", true);
+                    xhr.setRequestHeader("Content-Type", "application/json");
+                    xhr.setRequestHeader(
+                        "Authorization",
+                        "Bearer " + getAuthToken(),
+                    );
+                    xhr.onload = function () {
+                        try {
+                            var data = JSON.parse(xhr.responseText);
+                            if (
+                                data.testSessionId &&
+                                data.blocks &&
+                                data.blocks.length > 0
+                            ) {
+                                window.location.replace(
+                                    "/qbank.html?session=" +
+                                        data.testSessionId +
+                                        "&block=1&mode=timed&time=30&exam=test3",
+                                );
+                            } else {
+                                alert(
+                                    "Error: " +
+                                        (data.error ||
+                                            "Failed to start TEST 3"),
+                                );
+                                btn.disabled = false;
+                                btn.innerHTML = label;
+                            }
+                        } catch (e) {
+                            alert("Parse error");
+                            btn.disabled = false;
+                            btn.innerHTML = label;
+                        }
+                    };
+                    xhr.onerror = function () {
+                        alert("Network error");
+                        btn.disabled = false;
+                        btn.innerHTML = label;
+                    };
+                    xhr.send("{}");
+                };
 
                 // TEST 2 — deterministic June 2026-style 120 reconstruction, fixed 120 items, timed
                 window.startTest2 = function () {

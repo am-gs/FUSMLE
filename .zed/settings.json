@@ -1,4 +1,9 @@
 {
+  "inlay_hints": {
+    "enabled": true
+  },
+  "soft_wrap": "editor_width",
+  "colorize_brackets": true,
   "terminal": {
     "working_directory": "current_project_directory",
     "dock": "bottom",

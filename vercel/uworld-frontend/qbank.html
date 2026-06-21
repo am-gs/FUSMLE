@@ -1597,6 +1597,10 @@
                     <div class="question-card">
                         <div class="question-text" id="questionText"></div>
                         <div id="renderFlag" class="render-flag"></div>
+                        <div
+                            id="encouragementPopup"
+                            style="display: none"
+                        ></div>
                         <div id="imageContainer"></div>
                         <div id="optionsContainer"></div>
                         <div class="explanation-box" id="explanationBox">
@@ -1850,6 +1854,7 @@
                 cc = 0,
                 wc = 0,
                 aq = 0;
+            var telemetryTimer = null;
             var answerStatsByQuestion = {};
             var blockNum = 0,
                 blockSize = 0,
@@ -1868,6 +1873,56 @@
                     return false;
                 }
                 return true;
+            }
+
+            async function reportTelemetry(eventType, payload) {
+                if (!ts || !getAuthToken()) return;
+                try {
+                    await fetch(API + "/api/qbank/test/" + ts + "/telemetry", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            Authorization: "Bearer " + getAuthToken(),
+                        },
+                        body: JSON.stringify({
+                            eventType: eventType,
+                            questionId: qs[ci] || null,
+                            questionIndex: ci,
+                            block: blockNum || null,
+                            payload: payload || {},
+                        }),
+                    });
+                } catch (e) {}
+            }
+
+            function startTelemetryHeartbeat() {
+                if (telemetryTimer) clearInterval(telemetryTimer);
+                telemetryTimer = setInterval(function () {
+                    if (!st || !ts) return;
+                    reportTelemetry("heartbeat", {
+                        secondsOnQuestion: Math.round((Date.now() - st) / 1000),
+                        mode: md,
+                        examType: examType || null,
+                    });
+                }, 15000);
+            }
+
+            function detectRenderAnomalies(q) {
+                var issues = [];
+                if ((q.text || "").indexOf("[[table:") > -1) {
+                    issues.push("unresolved_table_placeholder");
+                }
+                if (!q.text || !String(q.text).trim()) {
+                    issues.push("blank_question_text");
+                }
+                if (!q.option_table && (!q.options || !q.options.length)) {
+                    issues.push("missing_options");
+                }
+                issues.forEach(function (issueCode) {
+                    reportTelemetry("render_anomaly", {
+                        issueCode: issueCode,
+                    });
+                });
             }
 
             async function init() {
@@ -1970,6 +2025,19 @@
                     }
                     var q = d.question;
                     qs[idx] = q.id;
+                    reportTelemetry("question_loaded", {
+                        mode: md,
+                        examType: examType || null,
+                        expectedImages: (q.imageUrls && q.imageUrls.length
+                            ? q.imageUrls
+                            : q.image_url
+                              ? [q.image_url]
+                              : []
+                        ).length,
+                        expectedTables: (q.tables || []).length,
+                        hasOptionTable: !!q.option_table,
+                    });
+                    detectRenderAnomalies(q);
                     var rf = document.getElementById("renderFlag");
                     if (q.rendering_flag) {
                         rf.style.display = "block";
@@ -1990,6 +2058,7 @@
 
                     document.getElementById("questionText").innerHTML =
                         renderQuestionText(q);
+                    maybeShowTest3Encouragement(idx);
 
                     // Images
                     var ic = document.getElementById("imageContainer");
@@ -2007,10 +2076,24 @@
                                     '<img src="' +
                                     API +
                                     u +
+                                    '" data-telemetry-src="' +
+                                    esc(u) +
                                     '" style="max-width:100%;max-height:440px;border:1px solid #ddd;border-radius:4px;margin:8px auto;display:block" onerror="this.style.display=\'none\'">'
                                 );
                             })
                             .join("");
+                        ic.querySelectorAll("img").forEach(function (img) {
+                            img.addEventListener("error", function () {
+                                reportTelemetry("image_error", {
+                                    imageUrl:
+                                        img.getAttribute(
+                                            "data-telemetry-src",
+                                        ) ||
+                                        img.getAttribute("src") ||
+                                        "",
+                                });
+                            });
+                        });
                     }
 
                     // Options
@@ -2070,8 +2153,13 @@
                         "block";
                     document.getElementById("examMain").scrollTop = 0;
                     updateScoreCounters();
+                    startTelemetryHeartbeat();
                     return true;
                 } catch (e) {
+                    reportTelemetry("client_error", {
+                        location: "loadQ",
+                        message: e.message || "Unknown error",
+                    });
                     document.getElementById("loadingState").innerHTML =
                         "<p>Error: " + e.message + "</p>";
                     return false;
@@ -2242,6 +2330,12 @@
 
                     var ca = d.correctAnswer;
                     syncAnswerStat(qid, d.correct);
+                    reportTelemetry("submit_success", {
+                        selectedOption: so + 1,
+                        correctAnswer: ca,
+                        isCorrect: !!d.correct,
+                        secondsOnQuestion: Math.round((Date.now() - st) / 1000),
+                    });
 
                     // TIMED MODE: no feedback, auto-advance, no explanation shown
                     if (md === "timed") {
@@ -2305,6 +2399,10 @@
                             };
                     }
                 } catch (e) {
+                    reportTelemetry("submit_error", {
+                        message: e.message || "Unknown error",
+                        selectedOption: so === null ? null : so + 1,
+                    });
                     alert("Error: " + e.message);
                     btn.disabled = false;
                     btn.innerHTML = "Submit";
@@ -2315,6 +2413,11 @@
             function navigateQuestion(d) {
                 var ni = ci + d;
                 if (ni < startIdx || ni >= endIdx) return;
+                reportTelemetry("question_navigation", {
+                    fromIndex: ci,
+                    toIndex: ni,
+                    direction: d,
+                });
                 loadQ(ni);
             }
 
@@ -2336,7 +2439,9 @@
                 var pct = total > 0 ? Math.round((cc / total) * 100) : 0;
                 var unanswered = tq - aq;
                 var hideIntermediateScore =
-                    (examType === "test1" || examType === "test2") &&
+                    (examType === "test1" ||
+                        examType === "test2" ||
+                        examType === "test3") &&
                     blockNum > 0 &&
                     blockNum < 6;
                 document.getElementById("questionArea").style.display = "none";
@@ -2365,11 +2470,13 @@
                     var nextExamParam =
                         examType === "free120"
                             ? "&exam=free120"
-                            : examType === "test2"
-                              ? "&exam=test2"
-                              : examType === "test1"
-                                ? "&exam=test1"
-                                : "";
+                            : examType === "test3"
+                              ? "&exam=test3"
+                              : examType === "test2"
+                                ? "&exam=test2"
+                                : examType === "test1"
+                                  ? "&exam=test1"
+                                  : "";
                     btns.innerHTML +=
                         '<button class="navbtn primary" onclick="window.location.href=\'/qbank.html?session=' +
                         ts +
@@ -2410,9 +2517,13 @@
                             ? "Sample Exam Review"
                             : d.mode === "nbme120"
                               ? "NBME 120 Review"
-                              : d.mode === "test2"
-                                ? "Test 2 Review"
-                                : "Test Review";
+                              : d.mode === "test3"
+                                ? "Test 3 Review"
+                                : d.mode === "test2"
+                                  ? "Test 2 Review"
+                                  : d.mode === "test1"
+                                    ? "Test 1 Review"
+                                    : "Test Review";
                     var reviewRows = d.rows || [];
                     var summary =
                         d.summary ||
@@ -2450,11 +2561,13 @@
                     ? "Step 1 Sample Exam"
                     : mode === "nbme120"
                       ? "NBME 120 Simulation"
-                      : mode === "test2"
-                        ? "Test 2"
-                        : mode === "test1"
-                          ? "Test 1"
-                          : "Practice Test";
+                      : mode === "test3"
+                        ? "Test 3"
+                        : mode === "test2"
+                          ? "Test 2"
+                          : mode === "test1"
+                            ? "Test 1"
+                            : "Practice Test";
             }
             function renderReviewMetricCard(label, value, sub) {
                 return (
@@ -3360,11 +3473,17 @@
                     clearInterval(ti);
                     ti = null;
                 }
+                reportTelemetry("suspend", {
+                    secondsOnQuestion: st
+                        ? Math.round((Date.now() - st) / 1000)
+                        : null,
+                });
                 suspendStart = Date.now();
                 document.getElementById("suspendOverlay").style.display =
                     "flex";
             }
             function resumeBlock() {
+                reportTelemetry("resume", {});
                 document.getElementById("suspendOverlay").style.display =
                     "none";
                 // Exclude the paused break from the current item's active time.
@@ -3520,96 +3639,101 @@
                 b.dataset.done = "1";
             }
 
-            function checkNidhiApology() {
-                var urlParams = new URLSearchParams(window.location.search);
-                var session = urlParams.get("session");
-                if (
-                    session === "45" &&
-                    !localStorage.getItem("nidhiApologyShown")
-                ) {
-                    setTimeout(function () {
-                        var popup = document.getElementById("apologyPopup");
-                        if (popup) popup.style.bottom = "20px";
-                    }, 1500);
+            var TEST3_QUOTES = [
+                "You are doing amazing, Nidhi — one clean question at a time. ✨",
+                "Deep breath. Trust your pattern recognition. You know more than you think. 🌷",
+                "Steady and sharp beats rushed and noisy. Keep going. 💪",
+                "You do not need perfect — just the next best decision. 🌟",
+                "Hard question? Good. That means this block is worth your effort. 🫶",
+                "Stay calm, read the stem twice if needed, and collect the point. 🍀",
+                "You’ve trained for this. Let the work show. 💖",
+                "Reset, refocus, and keep stacking wins. 📈",
+            ];
+
+            function getStoredUser() {
+                try {
+                    return (
+                        JSON.parse(
+                            localStorage.getItem("uworldUser") || "{}",
+                        ) || {}
+                    );
+                } catch (e) {
+                    return {};
                 }
             }
 
-            function closeApology() {
-                var popup = document.getElementById("apologyPopup");
-                if (popup) {
-                    popup.style.bottom = "-250px";
-                    localStorage.setItem("nidhiApologyShown", "true");
-                }
+            function isNidhiTest3Session() {
+                var user = getStoredUser();
+                var email = String(user.email || "")
+                    .trim()
+                    .toLowerCase();
+                return (
+                    examType === "test3" && email === "nidhitiyyagura@gmail.com"
+                );
             }
 
-            checkNidhiApology();
+            function closeEncouragement() {
+                var popup = document.getElementById("encouragementPopup");
+                if (!popup) return;
+                popup.style.display = "none";
+                popup.innerHTML = "";
+            }
+
+            function maybeShowTest3Encouragement(idx) {
+                if (!isNidhiTest3Session()) return;
+                var checkpoints = {
+                    0: true,
+                    9: true,
+                    19: true,
+                    39: true,
+                    59: true,
+                    79: true,
+                    99: true,
+                    119: true,
+                };
+                if (!checkpoints[idx]) return;
+                var sessionKey = "test3EncouragementShown:" + ts + ":" + idx;
+                if (sessionStorage.getItem(sessionKey)) return;
+                sessionStorage.setItem(sessionKey, "1");
+                var popup = document.getElementById("encouragementPopup");
+                if (!popup) return;
+                var quote = TEST3_QUOTES[idx % TEST3_QUOTES.length];
+                var questionNumber = idx - startIdx + 1;
+                var blockLabel =
+                    blockNum > 0
+                        ? "Block " +
+                          blockNum +
+                          " • Question " +
+                          questionNumber +
+                          " of " +
+                          tq
+                        : "Question " + (idx + 1);
+                popup.innerHTML =
+                    '<div style="display:flex;align-items:flex-start;gap:12px;background:linear-gradient(135deg,#fff7ea 0%,#ffe9f3 100%);border:1px solid #f3c9da;border-left:5px solid #ff8fb1;border-radius:14px;padding:14px 15px;margin:0 0 18px 0;box-shadow:0 8px 22px rgba(235,120,160,0.12);">' +
+                    '<div style="font-size:24px;line-height:1">🌸</div>' +
+                    '<div style="flex:1;min-width:0">' +
+                    '<div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#b24c74;margin-bottom:4px;">Nidhi boost</div>' +
+                    '<div style="font-size:12px;font-weight:700;color:#9a5c73;margin-bottom:5px;">' +
+                    blockLabel +
+                    "</div>" +
+                    '<div style="font-size:13px;line-height:1.55;color:#6f3450;">' +
+                    esc(quote) +
+                    "</div>" +
+                    "</div>" +
+                    '<button type="button" onclick="closeEncouragement()" style="background:none;border:none;color:#b24c74;font-size:18px;line-height:1;cursor:pointer;padding:0 0 0 8px;">×</button>' +
+                    "</div>";
+                popup.style.display = "block";
+            }
+
+            window.addEventListener("error", function (event) {
+                reportTelemetry("client_error", {
+                    location: "window.error",
+                    message: event.message || "Unhandled error",
+                    source: event.filename || "",
+                });
+            });
             init();
         </script>
-        <!-- Live Apology Popup -->
-        <div
-            id="apologyPopup"
-            style="
-                position: fixed;
-                bottom: -250px;
-                right: 20px;
-                width: 380px;
-                background: #1b5e20;
-                color: #fff;
-                border-radius: 8px;
-                padding: 16px;
-                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-                z-index: 100;
-                transition: bottom 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                display: flex;
-                align-items: flex-start;
-                gap: 12px;
-                border-left: 5px solid #66bb6a;
-                text-align: left;
-            "
-        >
-            <div style="font-size: 32px; line-height: 1">🌸</div>
-            <div>
-                <h5
-                    style="
-                        font-weight: 700;
-                        margin: 0 0 4px 0;
-                        font-size: 16px;
-                        color: #fff;
-                    "
-                >
-                    System Correction!
-                </h5>
-                <p
-                    style="
-                        margin: 0;
-                        font-size: 13px;
-                        opacity: 0.95;
-                        line-height: 1.4;
-                    "
-                >
-                    We detected a grading error on your Block 2, Item 1
-                    (Kernicterus pathology question). Your answer has been
-                    corrected and your score was retroactively increased! We are
-                    so sorry for the glitch, Nidhi! Keep pushing! 💖
-                </p>
-                <button
-                    onclick="closeApology()"
-                    style="
-                        background: none;
-                        border: none;
-                        color: #a5d6a7;
-                        font-size: 11px;
-                        font-weight: 700;
-                        cursor: pointer;
-                        padding: 4px 0 0 0;
-                        text-transform: uppercase;
-                        letter-spacing: 0.5px;
-                    "
-                >
-                    Dismiss
-                </button>
-            </div>
-        </div>
         <script src="assets/js/audit-notice.js"></script>
     </body>
 </html>

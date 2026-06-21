@@ -2,15 +2,19 @@ import datetime
 import json
 import os
 import re
+import secrets
 import statistics
 
 import bcrypt
 from database import (
     create_session,
+    create_telemetry_event,
     create_test_session,
     create_user,
+    delete_render_override,
     delete_session,
     delete_user_sessions,
+    get_render_override,
     get_test_answers,
     get_test_session,
     get_user_by_email,
@@ -18,17 +22,20 @@ from database import (
     get_user_progress,
     get_user_test_sessions,
     init_db,
+    list_render_overrides,
+    list_telemetry_events,
     record_test_answer,
     update_test_session,
     update_user_name,
     update_user_password,
     update_user_progress,
+    upsert_render_override,
     validate_session,
 )
 from flask import Flask, jsonify, make_response, request, send_from_directory
 from flask_cors import CORS
 from free120_questions import FREE120_QUESTIONS
-from nbme120 import generate_nbme120, generate_test1, generate_test2
+from nbme120 import generate_nbme120, generate_test1, generate_test2, generate_test3
 from qbank_data import (
     generate_test,
     get_question_by_id,
@@ -36,6 +43,11 @@ from qbank_data import (
     get_system_counts,
     is_exam_safe_question,
     load_questions,
+)
+from render_overrides import (
+    RenderOverrideValidationError,
+    apply_render_override,
+    validate_override_changes,
 )
 from test2_render_flags import TEST2_RENDER_FLAGS
 
@@ -241,6 +253,112 @@ def normalize_email(email):
     return (email or "").strip().lower()
 
 
+def _render_override_admin_identity():
+    expected_token = (os.environ.get("RENDER_OVERRIDE_ADMIN_TOKEN") or "").strip()
+    provided_token = (request.headers.get("X-Render-Admin-Token") or "").strip()
+    if (
+        expected_token
+        and provided_token
+        and secrets.compare_digest(provided_token, expected_token)
+    ):
+        return {"kind": "token", "label": "token-admin"}
+
+    user = get_current_user()
+    allowed_emails = {
+        normalize_email(email)
+        for email in (os.environ.get("RENDER_OVERRIDE_ADMIN_EMAILS") or "").split(",")
+        if email.strip()
+    }
+    if user and allowed_emails and normalize_email(user.get("email")) in allowed_emails:
+        return {
+            "kind": "user",
+            "label": normalize_email(user.get("email")),
+            "user": user,
+        }
+    return None
+
+
+def _require_render_override_admin():
+    identity = _render_override_admin_identity()
+    if identity:
+        return identity
+    return None
+
+
+def _apply_runtime_question_overrides(question, mode):
+    question_id = question.get("id") if isinstance(question, dict) else None
+    rendering_flag = None
+    if mode == "test2" and question_id in TEST2_RENDER_FLAGS:
+        rendering_flag = TEST2_RENDER_FLAGS[question_id]
+        if rendering_flag.get("suppressImages"):
+            question = dict(question)
+            question["image_url"] = ""
+            question["imageUrls"] = []
+            question["image_assets"] = []
+
+    live_override = get_render_override(question_id) if question_id else None
+    if live_override and live_override.get("active", True):
+        question, override_meta = apply_render_override(question, live_override)
+        if question.get("rendering_flag") is not None:
+            rendering_flag = question.get("rendering_flag")
+        elif override_meta.get("reason"):
+            rendering_flag = {
+                "reason": override_meta["reason"],
+                "updatedAt": override_meta.get("updatedAt"),
+            }
+    return question, rendering_flag, live_override
+
+
+ALLOWED_TELEMETRY_EVENT_TYPES = {
+    "heartbeat",
+    "question_loaded",
+    "image_error",
+    "render_anomaly",
+    "submit_success",
+    "submit_error",
+    "question_navigation",
+    "suspend",
+    "resume",
+    "client_error",
+}
+
+
+def _coerce_optional_int(value, field_name):
+    if value is None or value == "":
+        return None, None, None
+    try:
+        return int(value), None, None
+    except (TypeError, ValueError):
+        return None, jsonify({"error": f"{field_name} must be an integer"}), 400
+
+
+def _validate_telemetry_payload(data):
+    event_type = (data.get("eventType") or "").strip()
+    if event_type not in ALLOWED_TELEMETRY_EVENT_TYPES:
+        return None, jsonify({"error": "Unsupported telemetry event type"}), 400
+    payload = data.get("payload") or {}
+    if not isinstance(payload, dict):
+        return None, jsonify({"error": "payload must be an object"}), 400
+    question_index, error_response, status_code = _coerce_optional_int(
+        data.get("questionIndex"), "questionIndex"
+    )
+    if error_response is not None:
+        return None, error_response, status_code
+    block, error_response, status_code = _coerce_optional_int(
+        data.get("block"), "block"
+    )
+    if error_response is not None:
+        return None, error_response, status_code
+    event = {
+        "event_type": event_type,
+        "question_id": data.get("questionId"),
+        "question_index": question_index,
+        "block": block,
+        "payload": payload,
+    }
+    return event, None, None
+
+
 def auth_response(user, status=200):
     token = create_session(user["id"])
     response = make_response(
@@ -327,6 +445,273 @@ def auth_logout():
         "token", "", expires=0, httponly=True, samesite="Lax", secure=True
     )
     return response
+
+
+@app.route("/api/admin/render-overrides", methods=["GET"])
+def admin_list_render_overrides():
+    identity = _require_render_override_admin()
+    if not identity:
+        return jsonify({"error": "Forbidden"}), 403
+    active_only = (request.args.get("active") or "").lower() in ("1", "true", "yes")
+    rows = list_render_overrides(active_only=active_only)
+    return jsonify({"overrides": rows})
+
+
+@app.route(
+    "/api/admin/render-overrides/<question_id>", methods=["GET", "PUT", "DELETE"]
+)
+def admin_render_override_detail(question_id):
+    identity = _require_render_override_admin()
+    if not identity:
+        return jsonify({"error": "Forbidden"}), 403
+
+    if request.method == "GET":
+        row = get_render_override(question_id)
+        if not row:
+            return jsonify({"error": "Override not found"}), 404
+        return jsonify(row)
+
+    if request.method == "DELETE":
+        delete_render_override(question_id)
+        return jsonify({"ok": True, "questionId": question_id})
+
+    data = request.get_json(silent=True) or {}
+    changes = data.get("changes")
+    reason = (data.get("reason") or "").strip()
+    active = bool(data.get("active", True))
+    try:
+        validate_override_changes(changes)
+    except RenderOverrideValidationError as exc:
+        return jsonify({"error": str(exc)}), 400
+
+    row = upsert_render_override(
+        question_id=question_id,
+        changes=changes,
+        reason=reason,
+        updated_by=identity.get("label", "admin"),
+        active=active,
+    )
+    return jsonify(row)
+
+
+@app.route("/api/admin/telemetry", methods=["GET"])
+def admin_list_telemetry():
+    identity = _require_render_override_admin()
+    if not identity:
+        return jsonify({"error": "Forbidden"}), 403
+    test_session_id = request.args.get("testSessionId")
+    event_type = (request.args.get("eventType") or "").strip() or None
+    limit = request.args.get("limit") or 100
+    try:
+        parsed_test_session_id = int(test_session_id) if test_session_id else None
+        parsed_limit = int(limit)
+    except (TypeError, ValueError):
+        return jsonify({"error": "testSessionId and limit must be integers"}), 400
+    rows = list_telemetry_events(
+        test_session_id=parsed_test_session_id,
+        event_type=event_type,
+        limit=parsed_limit,
+    )
+    return jsonify({"events": rows})
+
+
+@app.route("/api/admin/telemetry/<int:test_id>", methods=["GET"])
+def admin_get_session_telemetry(test_id):
+    identity = _require_render_override_admin()
+    if not identity:
+        return jsonify({"error": "Forbidden"}), 403
+    limit = request.args.get("limit") or 100
+    try:
+        parsed_limit = int(limit)
+    except (TypeError, ValueError):
+        return jsonify({"error": "limit must be an integer"}), 400
+    rows = list_telemetry_events(test_session_id=test_id, limit=parsed_limit)
+    return jsonify({"testSessionId": test_id, "events": rows})
+
+
+MONITORED_NAMED_EXAM_MODES = {"free120", "nbme120", "test1", "test2", "test3"}
+NIDHI_MONITOR_TARGET_MODES = {"test3"}
+MONITOR_PROBLEM_EVENT_TYPES = {
+    "image_error",
+    "render_anomaly",
+    "submit_error",
+    "client_error",
+}
+
+
+def _cron_identity():
+    expected_secret = (os.environ.get("CRON_SECRET") or "").strip()
+    auth_header = (request.headers.get("Authorization") or "").strip()
+    if (
+        expected_secret
+        and auth_header.startswith("Bearer ")
+        and secrets.compare_digest(
+            auth_header.split(" ", 1)[1].strip(), expected_secret
+        )
+    ):
+        return {"kind": "cron", "label": "vercel-cron"}
+    return None
+
+
+def _require_monitor_identity():
+    return _cron_identity() or _require_render_override_admin()
+
+
+def _parse_timestamp(value):
+    if not value:
+        return None
+    if isinstance(value, datetime.datetime):
+        return value if value.tzinfo else value.replace(tzinfo=datetime.timezone.utc)
+    text = str(value).strip()
+    if not text:
+        return None
+    try:
+        if text.endswith("Z"):
+            text = text[:-1] + "+00:00"
+        parsed = datetime.datetime.fromisoformat(text)
+        return parsed if parsed.tzinfo else parsed.replace(tzinfo=datetime.timezone.utc)
+    except ValueError:
+        return None
+
+
+def _monitor_minutes_since(value):
+    parsed = _parse_timestamp(value)
+    if parsed is None:
+        return None
+    now = datetime.datetime.now(datetime.timezone.utc)
+    return max(0, round((now - parsed).total_seconds() / 60, 2))
+
+
+def _build_named_exam_monitor_summary(session):
+    answers = get_test_answers(session["id"])
+    answered = len(answers)
+    total = session.get("total_questions") or 0
+    correct = sum(1 for a in answers if a.get("is_correct") in (True, 1, "1"))
+    completed = bool(session.get("completed")) or (total > 0 and answered >= total)
+    question_ids = json.loads(session["question_ids"])
+    answered_ids = {str(a.get("question_id")) for a in answers}
+    next_index = next(
+        (idx for idx, qid in enumerate(question_ids) if str(qid) not in answered_ids),
+        len(question_ids) - 1,
+    )
+    resume_block = (next_index // 20) + 1 if question_ids else None
+    telemetry_rows = list_telemetry_events(test_session_id=session["id"], limit=100)
+    latest_event = telemetry_rows[0] if telemetry_rows else None
+    issue_events = [
+        row
+        for row in telemetry_rows
+        if row.get("event_type") in MONITOR_PROBLEM_EVENT_TYPES
+    ]
+    latest_issue = issue_events[0] if issue_events else None
+    last_question_loaded = next(
+        (row for row in telemetry_rows if row.get("event_type") == "question_loaded"),
+        None,
+    )
+    return {
+        "sessionId": session["id"],
+        "mode": session["mode"],
+        "label": {
+            "free120": "Step 1 Sample Exam",
+            "nbme120": "NBME 120 Simulation",
+            "test1": "Test 1",
+            "test2": "Test 2",
+            "test3": "Test 3",
+        }.get(session["mode"], session["mode"]),
+        "completed": completed,
+        "answered": answered,
+        "correct": correct,
+        "totalQuestions": total,
+        "resumeBlock": resume_block,
+        "nextQuestionIndex": next_index,
+        "createdAt": session.get("created_at"),
+        "completedAt": session.get("completed_at"),
+        "lastTelemetryAt": latest_event.get("created_at") if latest_event else None,
+        "minutesSinceLastTelemetry": _monitor_minutes_since(
+            latest_event.get("created_at") if latest_event else None
+        ),
+        "latestTelemetryEventType": latest_event.get("event_type")
+        if latest_event
+        else None,
+        "latestQuestionId": last_question_loaded.get("question_id")
+        if last_question_loaded
+        else None,
+        "latestQuestionIndex": last_question_loaded.get("question_index")
+        if last_question_loaded
+        else None,
+        "issueCount": len(issue_events),
+        "latestIssue": latest_issue,
+        "actionNeeded": bool(issue_events),
+    }
+
+
+def _build_named_exam_monitor_snapshot(email):
+    normalized_email = normalize_email(email)
+    user = get_user_by_email(normalized_email)
+    if not user:
+        return {
+            "email": normalized_email,
+            "found": False,
+            "actionNeeded": False,
+            "activeSessions": [],
+            "latestSession": None,
+        }
+    sessions = get_user_test_sessions(user["id"])
+    named_sessions = [
+        session
+        for session in sessions
+        if session.get("mode") in MONITORED_NAMED_EXAM_MODES
+    ]
+    target_sessions = [
+        session
+        for session in named_sessions
+        if session.get("mode") in NIDHI_MONITOR_TARGET_MODES
+    ]
+    active_sessions = [
+        _build_named_exam_monitor_summary(session)
+        for session in target_sessions
+        if not bool(session.get("completed"))
+    ]
+    latest_session = (
+        _build_named_exam_monitor_summary(target_sessions[0])
+        if target_sessions
+        else None
+    )
+    return {
+        "email": normalized_email,
+        "found": True,
+        "user": public_user(user),
+        "actionNeeded": any(session.get("actionNeeded") for session in active_sessions),
+        "activeSessions": active_sessions,
+        "latestSession": latest_session,
+        "checkedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    }
+
+
+@app.route("/api/admin/monitor/nidhi", methods=["GET"])
+def admin_monitor_nidhi():
+    identity = _require_render_override_admin()
+    if not identity:
+        return jsonify({"error": "Forbidden"}), 403
+    target_email = (
+        request.args.get("email")
+        or os.environ.get("NIDHI_MONITOR_EMAIL")
+        or "nidhitiyyagura@gmail.com"
+    )
+    snapshot = _build_named_exam_monitor_snapshot(target_email)
+    snapshot["monitorIdentity"] = identity.get("label")
+    return jsonify(snapshot)
+
+
+@app.route("/api/admin/monitor/nidhi/run", methods=["GET", "POST"])
+def admin_monitor_nidhi_run():
+    identity = _require_monitor_identity()
+    if not identity:
+        return jsonify({"error": "Forbidden"}), 403
+    target_email = os.environ.get("NIDHI_MONITOR_EMAIL") or "nidhitiyyagura@gmail.com"
+    snapshot = _build_named_exam_monitor_snapshot(target_email)
+    snapshot["monitorIdentity"] = identity.get("label")
+    snapshot["ok"] = True
+    return jsonify(snapshot)
 
 
 @app.route("/api/account/profile", methods=["POST"])
@@ -524,6 +909,26 @@ def qbank_generate_test2():
     return jsonify(result)
 
 
+@app.route("/api/qbank/generate-test3", methods=["POST"])
+def qbank_generate_test3():
+    user = get_current_user()
+    if not user:
+        return jsonify({"error": "Unauthorized"}), 401
+    result = generate_test3()
+    all_ids = result["questionIds"]
+
+    test_session_id = create_test_session(
+        user_id=user["id"],
+        mode="test3",
+        question_ids=all_ids,
+        total_questions=len(all_ids),
+        block_info=result["blocks"],
+    )
+
+    result["testSessionId"] = test_session_id
+    return jsonify(result)
+
+
 @app.route("/api/qbank/generate-free120", methods=["POST"])
 def qbank_generate_free120():
     user = get_current_user()
@@ -583,16 +988,12 @@ def qbank_get_question(test_id, question_idx):
             return _unsafe_question_response(question_id)
         return jsonify({"error": "Question not found"}), 404
 
-    rendering_flag = None
+    question, rendering_flag, _ = _apply_runtime_question_overrides(
+        question, test_session.get("mode")
+    )
     image_url = question.get("image_url", "")
     image_urls = question.get("imageUrls", [])
     image_assets = question.get("image_assets", [])
-    if test_session.get("mode") == "test2" and question_id in TEST2_RENDER_FLAGS:
-        rendering_flag = TEST2_RENDER_FLAGS[question_id]
-        if rendering_flag.get("suppressImages"):
-            image_url = ""
-            image_urls = []
-            image_assets = []
 
     # Don't include correct answer in question payload
     safe_question = {
@@ -677,6 +1078,30 @@ def qbank_submit_answer(test_id):
             "isCorrect": is_correct,
         }
     )
+
+
+@app.route("/api/qbank/test/<int:test_id>/telemetry", methods=["POST"])
+def qbank_test_telemetry(test_id):
+    user = get_current_user()
+    if not user:
+        return jsonify({"error": "Unauthorized"}), 401
+    test_session = get_test_session(test_id)
+    if not test_session or test_session["user_id"] != user["id"]:
+        return jsonify({"error": "Test not found"}), 404
+    data = request.get_json(silent=True) or {}
+    event, error_response, status_code = _validate_telemetry_payload(data)
+    if error_response is not None:
+        return error_response, status_code
+    row = create_telemetry_event(
+        test_session_id=test_id,
+        user_id=user["id"],
+        event_type=event["event_type"],
+        payload=event["payload"],
+        question_id=event["question_id"],
+        question_index=event["question_index"],
+        block=event["block"],
+    )
+    return jsonify({"ok": True, "event": row})
 
 
 @app.route("/api/qbank/test/<int:test_id>/state", methods=["GET"])
@@ -1116,6 +1541,7 @@ def _build_review_summary(mode, rows):
         "nbme120": "NBME 120 review",
         "test1": "Test 1 review",
         "test2": "Test 2 review",
+        "test3": "Test 3 review",
     }.get(mode, "Exam review")
     tone = "encouraging" if score >= 65 else ("mixed" if score >= 50 else "urgent")
     conversational_headline = (
@@ -1187,16 +1613,21 @@ def qbank_test_review(test_id):
             if raw_question:
                 return _unsafe_question_response(question_id)
             continue
+        question, rendering_flag, _ = _apply_runtime_question_overrides(
+            question, test_session.get("mode")
+        )
         answer = answers_by_question.get(str(question_id)) or {}
         selected = answer.get("selected_option")
         rows.append(
             {
                 "index": idx,
                 "block": idx // 20 + 1
-                if test_session["mode"] in ("nbme120", "free120", "test1", "test2")
+                if test_session["mode"]
+                in ("nbme120", "free120", "test1", "test2", "test3")
                 else None,
                 "blockQuestion": idx % 20 + 1
-                if test_session["mode"] in ("nbme120", "free120", "test1", "test2")
+                if test_session["mode"]
+                in ("nbme120", "free120", "test1", "test2", "test3")
                 else None,
                 "questionId": question_id,
                 "subject": question.get("subject", ""),
@@ -1213,6 +1644,7 @@ def qbank_test_review(test_id):
                 "tables": question.get("tables", []),
                 "imageUrls": question.get("imageUrls", [])
                 or ([question["image_url"]] if question.get("image_url") else []),
+                "renderingFlag": rendering_flag,
                 "selectedOption": selected,
                 "correctAnswer": question.get("correct_answer"),
                 "isCorrect": answer.get("is_correct") if answer else None,
@@ -1249,6 +1681,7 @@ def qbank_history():
         "nbme120": "NBME 120 Simulation",
         "test1": "Test 1",
         "test2": "Test 2",
+        "test3": "Test 3",
         "timed": "Custom Test (Timed)",
         "tutor": "Custom Test (Tutor)",
     }
@@ -1272,16 +1705,26 @@ def qbank_history():
             len(question_ids) - 1,
         )
         completed = bool(session.get("completed")) or answered >= total
-        block_mode = session["mode"] in ("free120", "nbme120", "test1", "test2")
+        block_mode = session["mode"] in (
+            "free120",
+            "nbme120",
+            "test1",
+            "test2",
+            "test3",
+        )
         resume_block = (next_index // 20) + 1 if block_mode else None
         if block_mode:
             exam_param = (
                 "&exam=free120"
                 if session["mode"] == "free120"
                 else (
-                    "&exam=test2"
-                    if session["mode"] == "test2"
-                    else ("&exam=test1" if session["mode"] == "test1" else "")
+                    "&exam=test3"
+                    if session["mode"] == "test3"
+                    else (
+                        "&exam=test2"
+                        if session["mode"] == "test2"
+                        else ("&exam=test1" if session["mode"] == "test1" else "")
+                    )
                 )
             )
             resume_url = f"qbank.html?session={session['id']}&block={resume_block}&mode=timed&time=30&question={next_index}{exam_param}"
@@ -1297,7 +1740,9 @@ def qbank_history():
                 "totalQuestions": total,
                 "answered": answered,
                 "correct": correct,
-                "score": round(correct / answered * 100) if answered else 0,
+                "score": round(correct / answered * 100)
+                if (completed and answered)
+                else None,
                 "completed": completed,
                 "currentQuestion": session.get("current_question") or 0,
                 "nextQuestionIndex": next_index,

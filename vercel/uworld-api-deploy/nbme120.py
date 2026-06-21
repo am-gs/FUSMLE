@@ -105,13 +105,17 @@ LOCAL_MANIFEST_PATH = (
 TEST2_MANIFEST_PATH = (
     ROOT / "artifacts" / "manifests" / "june2026_nbme120_candidate.json"
 )
+LOCAL_TEST3_MANIFEST_PATH = (
+    Path(__file__).resolve().parent / "artifacts" / "manifests" / "test3_nidhi_v1.json"
+)
+TEST3_MANIFEST_PATH = ROOT / "artifacts" / "manifests" / "test3_nidhi_v1.json"
+LOCAL_TEST3_EXPORT_PATH = (
+    Path(__file__).resolve().parent / "artifacts" / "exports" / "test3_exam.json"
+)
+TEST3_EXPORT_PATH = ROOT / "artifacts" / "exports" / "test3_exam.json"
 
 
-def _load_test2_manifest():
-    manifest_path = (
-        LOCAL_MANIFEST_PATH if LOCAL_MANIFEST_PATH.exists() else TEST2_MANIFEST_PATH
-    )
-    manifest = json.loads(manifest_path.read_text())
+def _validate_fixed_manifest(manifest, exam_name):
     blocks = manifest.get("blocks", [])
     all_ids = [qid for block in blocks for qid in block.get("questionIds", [])]
     available = {q["id"]: q for q in load_questions()}
@@ -123,21 +127,48 @@ def _load_test2_manifest():
     ]
 
     if manifest.get("total_questions") != 120:
-        raise ValueError("Test 2 manifest must contain 120 questions")
+        raise ValueError(f"{exam_name} manifest must contain 120 questions")
     if manifest.get("block_sizes") != [20, 20, 20, 20, 20, 20]:
-        raise ValueError("Test 2 manifest must contain 6 blocks of 20 questions")
+        raise ValueError(f"{exam_name} manifest must contain 6 blocks of 20 questions")
     if len(all_ids) != 120 or len(set(all_ids)) != 120:
-        raise ValueError("Test 2 manifest must contain 120 unique question IDs")
+        raise ValueError(f"{exam_name} manifest must contain 120 unique question IDs")
     if missing_ids:
         raise ValueError(
-            f"Test 2 manifest references missing qbank IDs: {missing_ids[:5]}"
+            f"{exam_name} manifest references missing qbank IDs: {missing_ids[:5]}"
         )
     if unsafe_ids:
         raise ValueError(
-            f"Test 2 manifest references unsafe qbank IDs: {unsafe_ids[:5]}"
+            f"{exam_name} manifest references unsafe qbank IDs: {unsafe_ids[:5]}"
         )
 
-    return manifest, all_ids
+    return all_ids
+
+
+def _load_test2_manifest():
+    manifest_path = (
+        LOCAL_MANIFEST_PATH if LOCAL_MANIFEST_PATH.exists() else TEST2_MANIFEST_PATH
+    )
+    manifest = json.loads(manifest_path.read_text())
+    return manifest, _validate_fixed_manifest(manifest, "Test 2")
+
+
+def _load_test3_manifest():
+    manifest_path = (
+        LOCAL_TEST3_MANIFEST_PATH
+        if LOCAL_TEST3_MANIFEST_PATH.exists()
+        else TEST3_MANIFEST_PATH
+    )
+    manifest = json.loads(manifest_path.read_text())
+    return manifest, _validate_fixed_manifest(manifest, "Test 3")
+
+
+def _load_test3_export():
+    export_path = (
+        LOCAL_TEST3_EXPORT_PATH
+        if LOCAL_TEST3_EXPORT_PATH.exists()
+        else TEST3_EXPORT_PATH
+    )
+    return json.loads(export_path.read_text())
 
 
 def generate_test1():
@@ -178,4 +209,51 @@ def generate_test2(
         "sourceForms": manifest.get("source_forms", []),
         "sourceProxyForm": manifest.get("source_proxy_form"),
         "manifestSlug": manifest.get("exam_slug"),
+    }
+
+
+def generate_test3():
+    """Return the fixed deterministic Nidhi-specific TEST 3 reconstruction."""
+    manifest, all_ids = _load_test3_manifest()
+    export_payload = _load_test3_export()
+    exam = export_payload.get("exam", {})
+    blocks = [
+        {
+            "blockNumber": block["block"],
+            "timeLimit": block.get("timeLimitMinutes", 30),
+            "questionIds": block["questionIds"],
+            "selectionRationaleByQuestion": block.get(
+                "selection_rationale_by_question", {}
+            ),
+            "selectionDetailsByQuestion": block.get(
+                "selection_details_by_question", {}
+            ),
+        }
+        for block in manifest["blocks"]
+    ]
+    return {
+        "format": exam.get("slug", "test3"),
+        "title": exam.get("title", manifest.get("title")),
+        "timed": bool(exam.get("timed", True)),
+        "totalQuestions": manifest["total_questions"],
+        "blocks": blocks,
+        "questionIds": all_ids,
+        "strategy": manifest.get("strategy"),
+        "sourceForms": manifest.get("source_forms", []),
+        "sourceProxyForm": manifest.get("source_proxy_form"),
+        "manifestSlug": manifest.get("exam_slug"),
+        "manifestVersion": exam.get(
+            "manifestVersion", manifest.get("manifest_version")
+        ),
+        "mode": exam.get("mode", manifest.get("mode")),
+        "strictModeWouldFail": exam.get(
+            "strictModeWouldFail",
+            manifest.get("selection_inputs", {}).get("strict_mode_would_fail"),
+        ),
+        "unresolvedSourceLabels": exam.get(
+            "unresolvedSourceLabels",
+            manifest.get("selection_inputs", {}).get("unresolved_sources", []),
+        ),
+        "selectionBasis": manifest.get("selection_basis"),
+        "summary": export_payload.get("summary", {}),
     }

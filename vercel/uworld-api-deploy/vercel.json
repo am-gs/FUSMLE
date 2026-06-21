@@ -18,5 +18,11 @@
   ],
   "env": {
     "PYTHONPATH": "/var/task"
-  }
+  },
+  "crons": [
+    {
+      "path": "/api/admin/monitor/nidhi/run",
+      "schedule": "0 8 * * *"
+    }
+  ]
 }

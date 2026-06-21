@@ -350,7 +350,10 @@
                 }
                 var rows = sessions
                     .map(function (s) {
-                        var score = s.score != null ? s.score : 0;
+                        var score = s.score;
+                        var scoreDisplay = score != null ? score + "%" : "—";
+                        var scoreClassName =
+                            score != null ? scoreClass(score) : "";
                         var statusBadge = s.completed
                             ? '<span class="status-badge status-complete"><i class="fas fa-check"></i> Completed</span>'
                             : '<span class="status-badge status-progress"><i class="fas fa-clock"></i> In progress</span>';
@@ -385,10 +388,10 @@
                             progressText +
                             "</td>" +
                             '<td><span class="score-pill ' +
-                            scoreClass(score) +
+                            scoreClassName +
                             '">' +
-                            score +
-                            "%</span></td>" +
+                            scoreDisplay +
+                            "</span></td>" +
                             "<td>" +
                             statusBadge +
                             "</td>" +
