@@ -23,26 +23,54 @@ def _targets():
     return base
 
 
+# Exported for contract tests: maps each USMLE category to its target count.
+USMLE_TARGETS = {k: {"target": v} for k, v in _targets().items()}
+
+
 def generate_nbme120(exclude_ids=None):
     exclude = set(exclude_ids or [])
     pool = [q for q in load_questions() if q.get("exam_ready", True) and q["id"] not in exclude]
-    by_sys = collections.defaultdict(list)
+    by_cat = collections.defaultdict(list)
     for q in pool:
-        by_sys[q.get("organ_system") or "Multisystem"].append(q)
+        by_cat[q["_category"]].append(q)
     rng = random.Random()
     chosen, fps = [], set()
-    for sysname, n in _targets().items():
-        cand = by_sys.get(sysname, [])[:]
+    for catname, info in USMLE_TARGETS.items():
+        n = info["target"]
+        cand = by_cat.get(catname, [])[:]
         rng.shuffle(cand)
-        picked = 0
+        # Per-category difficulty quotas: ~25% easy, ~50% medium, ~25% hard
+        q_easy = n // 4
+        q_hard = n // 4
+        q_medium = n - q_easy - q_hard
+        quota = {"easy": q_easy, "medium": q_medium, "hard": q_hard}
+        by_diff = {"easy": [], "medium": [], "hard": []}
         for q in cand:
-            if picked >= n:
-                break
-            fp = q.get("concept_fingerprint", "")
-            if fp and fp in fps:
-                continue
-            chosen.append(q); fps.add(fp); picked += 1
-    # backfill to 120 from any ready item
+            by_diff[q["_difficulty"]].append(q)
+        cat_chosen = []
+        # First pass: fill per-difficulty quotas
+        for diff in ("easy", "medium", "hard"):
+            target = quota[diff]
+            for q in by_diff[diff]:
+                if sum(1 for c in cat_chosen if c["_difficulty"] == diff) >= target:
+                    break
+                fp = q.get("concept_fingerprint", "")
+                if fp and fp in fps:
+                    continue
+                cat_chosen.append(q); fps.add(fp)
+        # Second pass: backfill any shortfall with any available question
+        if len(cat_chosen) < n:
+            for q in cand:
+                if len(cat_chosen) >= n:
+                    break
+                if q in cat_chosen:
+                    continue
+                fp = q.get("concept_fingerprint", "")
+                if fp and fp in fps:
+                    continue
+                cat_chosen.append(q); fps.add(fp)
+        chosen.extend(cat_chosen[:n])
+    # Global backfill to 120 if still short
     if len(chosen) < TOTAL:
         rest = [q for q in pool if q not in chosen]
         rng.shuffle(rest)
@@ -58,8 +86,8 @@ def generate_nbme120(exclude_ids=None):
     blocks = []
     for b in range(6):
         blk = chosen[b * 20:(b + 1) * 20]
-        subj = collections.Counter((q.get("organ_system") or "Unknown") for q in blk)
-        diff = collections.Counter((q.get("difficulty_band") or "unknown") for q in blk)
+        subj = collections.Counter(q["_category"] for q in blk)
+        diff = collections.Counter(q["_difficulty"] for q in blk)
         blocks.append({
             "blockNumber": b + 1, "timeLimit": 30,
             "questionIds": [q["id"] for q in blk],

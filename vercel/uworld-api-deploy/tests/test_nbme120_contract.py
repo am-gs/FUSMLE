@@ -6,7 +6,7 @@ API_DIR = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(API_DIR))
 
 from nbme120 import USMLE_TARGETS, generate_nbme120
-from static_questions import QUESTIONS
+from qbank_data import load_questions
 
 
 class Nbme120ContractTests(unittest.TestCase):
@@ -27,7 +27,7 @@ class Nbme120ContractTests(unittest.TestCase):
 
     def test_nbme120_respects_category_targets_and_difficulty_balance(self):
         result = generate_nbme120()
-        questions_by_id = {q["id"]: q for q in QUESTIONS}
+        questions_by_id = {q["id"]: q for q in load_questions()}
 
         category_counts = {category: 0 for category in USMLE_TARGETS}
         difficulty_counts = {"easy": 0, "medium": 0, "hard": 0}
