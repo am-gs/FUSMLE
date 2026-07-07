@@ -70,7 +70,7 @@ if(r.status===401){handleExpiredSession();return;}
 if(r.ok){const s=await r.json();
 const answered=s.totalAnswered||0, correct=s.correctAnswers||0, incorrect=answered-correct;
 let total=0;
-try{const ir=await fetch(API+'/api/qbank/info');if(ir.ok){const info=await ir.json();total=info.totalQuestions||0;}}catch(e){}
+try{const ir=await fetch(API+'/api/qbank/info');if(ir.ok){const info=await ir.json();total=info.totalQuestions||0;}}catch(e){console.warn('Failed to load qbank info for usage total:',e);}
 document.getElementById('overallScore').textContent=(s.accuracy!=null?s.accuracy:0)+'%';
 document.getElementById('scoreBar').style.width=Math.min(s.accuracy||0,100)+'%';
 document.getElementById('totalCorrect').textContent=correct;

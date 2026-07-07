@@ -396,7 +396,7 @@ var qid=String(answer.question_id);
 if(blockQuestionSet.has(qid))answerStatsByQuestion[qid]=!!answer.is_correct;
 });
 recalcAnswerStats();
-}catch(e){}
+}catch(e){console.warn('Failed to hydrate answer stats:',e);}
 }
 
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}

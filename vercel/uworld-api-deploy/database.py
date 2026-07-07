@@ -3,7 +3,7 @@ import json
 import os
 import sqlite3
 import uuid
-from urllib import parse, request as urlrequest
+from urllib import error as urlerror, parse, request as urlrequest
 
 try:
     import psycopg
@@ -60,9 +60,17 @@ def _supabase_request(method, table, body=None, query="", select=True):
         req.add_header("Prefer", "return=representation")
     elif method == "POST":
         req.add_header("Prefer", "resolution=merge-duplicates")
-    with urlrequest.urlopen(req, timeout=15) as response:
-        data = response.read().decode("utf-8")
-        return json.loads(data) if data else None
+    try:
+        with urlrequest.urlopen(req, timeout=15) as response:
+            data = response.read().decode("utf-8")
+    except urlerror.HTTPError as exc:
+        # Preserve the PostgREST error body; the default HTTPError str() drops it,
+        # which otherwise leaves callers with an opaque "HTTP Error 4xx".
+        detail = exc.read().decode("utf-8", "replace") if exc.fp else ""
+        raise RuntimeError(f"Supabase {method} {table} failed (HTTP {exc.code}): {detail}") from exc
+    except urlerror.URLError as exc:
+        raise RuntimeError(f"Supabase {method} {table} request failed: {exc.reason}") from exc
+    return json.loads(data) if data else None
 
 
 def _eq(value):
@@ -238,6 +246,8 @@ def _normalize_test_session(row):
 def create_user(email, password_hash, name=""):
     if USE_SUPABASE:
         rows = _supabase_request("POST", "users", {"email": email, "password_hash": password_hash, "name": name})
+        if not rows:
+            raise RuntimeError("Supabase did not return the created user row")
         return rows[0]["id"]
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -375,6 +385,8 @@ def update_user_progress(user_id, question_id, is_correct, time_spent, subject, 
     }
     if USE_SUPABASE:
         rows = _supabase_request("POST", "user_progress", row)
+        if not rows:
+            raise RuntimeError("Supabase did not return the inserted user_progress row")
         return rows[0]["id"]
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -445,6 +457,8 @@ def create_test_session(user_id, mode, question_ids, total_questions, block_info
             "total_questions": int(total_questions),
             "block_info": block_info,
         })
+        if not rows:
+            raise RuntimeError("Supabase did not return the created test_session row")
         return rows[0]["id"]
     conn = get_db_connection()
     cursor = conn.cursor()

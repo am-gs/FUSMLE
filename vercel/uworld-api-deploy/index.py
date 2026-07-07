@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, make_response, send_from_directory
 from flask_cors import CORS
 import datetime
 import json
+import logging
 import os
 import bcrypt
 from database import init_db, create_user, get_user_by_email, get_user_by_id, create_session, validate_session, delete_session, delete_user_sessions, update_user_name, update_user_password
@@ -13,6 +14,8 @@ from free120_questions import FREE120_QUESTIONS
 
 app = Flask(__name__)
 CORS(app, supports_credentials=False, origins=["*"])
+
+logger = logging.getLogger(__name__)
 
 
 
@@ -118,7 +121,9 @@ def auth_logout():
         try:
             delete_session(token)
         except Exception:
-            pass
+            # Logout stays best-effort (the cookie is cleared regardless), but the
+            # failure must be visible so a persistently failing store is noticed.
+            logger.exception('Failed to revoke session during logout')
     response = make_response(jsonify({'ok': True}))
     response.set_cookie('token', '', expires=0, httponly=True, samesite='Lax', secure=True)
     return response
@@ -160,7 +165,10 @@ def account_change_password():
     try:
         delete_user_sessions(user['id'], keep_session_id=current_token or None)
     except Exception:
-        pass
+        # A silently swallowed failure here is a security hole: the caller would be
+        # told the change succeeded while stolen tokens remain valid. Surface it.
+        logger.exception('Failed to revoke other sessions after password change for user %s', user['id'])
+        return jsonify({'error': 'Password updated, but other active sessions could not be revoked. Please sign in again.'}), 500
     return jsonify({'ok': True})
 
 @app.route('/api/forgot-password', methods=['POST'])
