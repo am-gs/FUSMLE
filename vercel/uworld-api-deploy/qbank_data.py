@@ -41,6 +41,10 @@ def _load_image_manifest() -> Dict[str, List[Dict]]:
             return json.load(f)
     except FileNotFoundError:
         return {}
+    except (json.JSONDecodeError, OSError) as exc:
+        # A corrupt/unreadable manifest must not silently produce imageless
+        # questions and then a mysterious "missing figure" bug downstream.
+        raise RuntimeError(f"Failed to load image manifest {_MANIFEST_PATH}: {exc}") from exc
 
 
 def _annotate_questions(questions: List[Dict], manifest: Dict[str, List[Dict]]) -> None:
@@ -59,18 +63,18 @@ def _annotate_questions(questions: List[Dict], manifest: Dict[str, List[Dict]]) 
 
 try:
     ALL_QUESTIONS = _load_runtime()
-    _IMAGE_MANIFEST = _load_image_manifest()
-    _annotate_questions(ALL_QUESTIONS, _IMAGE_MANIFEST)
-    _BY_ID = {q["id"]: q for q in ALL_QUESTIONS}
     _SOURCE = "gold_runtime"
-except FileNotFoundError:  # legacy fallback
+except FileNotFoundError:  # legacy fallback only when the runtime file is absent
     from static_questions import QUESTIONS  # type: ignore
     from free120_questions import FREE120_QUESTIONS  # type: ignore
     ALL_QUESTIONS = [copy.deepcopy(q) for q in QUESTIONS] + list(FREE120_QUESTIONS)
-    _IMAGE_MANIFEST = _load_image_manifest()
-    _annotate_questions(ALL_QUESTIONS, _IMAGE_MANIFEST)
-    _BY_ID = {q["id"]: q for q in ALL_QUESTIONS}
     _SOURCE = "legacy_static"
+
+# Annotation/index building runs outside the fallback guard: a present-but-broken
+# runtime file should raise loudly here, not masquerade as a missing-file fallback.
+_IMAGE_MANIFEST = _load_image_manifest()
+_annotate_questions(ALL_QUESTIONS, _IMAGE_MANIFEST)
+_BY_ID = {q["id"]: q for q in ALL_QUESTIONS}
 
 
 def load_questions() -> List[Dict]:
