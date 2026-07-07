@@ -3,6 +3,7 @@ from flask_cors import CORS
 import datetime
 import json
 import os
+import secrets
 import bcrypt
 from database import init_db, create_user, get_user_by_email, get_user_by_id, create_session, validate_session, delete_session, delete_user_sessions, update_user_name, update_user_password
 from database import get_user_progress, update_user_progress, create_test_session, get_test_session, get_user_test_sessions
@@ -12,12 +13,20 @@ from nbme120 import generate_nbme120, generate_test1
 from free120_questions import FREE120_QUESTIONS
 
 app = Flask(__name__)
-CORS(app, supports_credentials=False, origins=["*"])
 
+# Restrict CORS to explicitly allowed origins instead of a wildcard. Configure
+# via ALLOWED_ORIGINS (comma-separated). Defaults to the known frontend origins.
+_default_origins = "https://usmaili.vercel.app"
+ALLOWED_ORIGINS = [
+    origin.strip()
+    for origin in os.environ.get("ALLOWED_ORIGINS", _default_origins).split(",")
+    if origin.strip()
+]
+CORS(app, supports_credentials=False, origins=ALLOWED_ORIGINS)
 
-
-# Secret key for JWT
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
+# Application secret key. Never ship a hardcoded default: use the configured
+# value or fall back to an ephemeral random key so no known secret is baked in.
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY') or secrets.token_hex(32)
 
 # Initialize database
 init_db()
@@ -212,6 +221,8 @@ def qbank_generate_test():
         total_questions = int(total_questions)
     except (TypeError, ValueError):
         return jsonify({'error': 'totalQuestions must be an integer'}), 400
+    if total_questions < 1 or total_questions > 500:
+        return jsonify({'error': 'totalQuestions must be between 1 and 500'}), 400
     subjects = data.get('subjects', [])
     systems = data.get('systems', [])
     
