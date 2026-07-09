@@ -1,5 +1,6 @@
-from flask import Flask, request, jsonify, make_response, send_from_directory
+from flask import Flask, request, jsonify, make_response, send_from_directory, g
 from flask_cors import CORS
+from functools import wraps
 import datetime
 import json
 import os
@@ -45,12 +46,36 @@ def get_current_session():
             return token, session
     return '', None
 
+# Number of questions per block in block-structured exams.
+BLOCK_SIZE = 20
+
 # Helper function to get user from token
 def get_current_user():
     _, session = get_current_session()
     if not session:
         return None
     return get_user_by_id(session['user_id'])
+
+
+def login_required(view):
+    """Reject unauthenticated requests with 401 and expose the authenticated
+    user to the view as ``g.current_user``."""
+    @wraps(view)
+    def wrapper(*args, **kwargs):
+        user = get_current_user()
+        if not user:
+            return jsonify({'error': 'Unauthorized'}), 401
+        g.current_user = user
+        return view(*args, **kwargs)
+    return wrapper
+
+
+def load_owned_test_session(test_id):
+    """Return the test session iff it exists and belongs to the current user."""
+    test_session = get_test_session(test_id)
+    if not test_session or test_session['user_id'] != g.current_user['id']:
+        return None
+    return test_session
 
 def public_user(user):
     name = user.get('name') or ''
@@ -103,11 +128,9 @@ def auth_register():
     return auth_response(user, status=201)
 
 @app.route('/api/session', methods=['GET'])
+@login_required
 def auth_session():
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
-    
+    user = g.current_user
     return jsonify({
         'user': {
             'id': user['id'],
@@ -133,10 +156,9 @@ def auth_logout():
     return response
 
 @app.route('/api/account/profile', methods=['POST'])
+@login_required
 def account_update_profile():
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
+    user = g.current_user
     data = request.get_json(silent=True) or {}
     name = (data.get('name') or '').strip()
     if not name:
@@ -148,10 +170,9 @@ def account_update_profile():
     return jsonify({'user': public_user(updated)})
 
 @app.route('/api/account/password', methods=['POST'])
+@login_required
 def account_change_password():
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
+    user = g.current_user
     data = request.get_json(silent=True) or {}
     current_password = data.get('currentPassword') or ''
     new_password = data.get('newPassword') or ''
@@ -209,11 +230,9 @@ def qbank_info():
     })
 
 @app.route('/api/qbank/generate-test', methods=['POST'])
+@login_required
 def qbank_generate_test():
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
-    
+    user = g.current_user
     data = request.get_json(silent=True) or {}
     mode = data.get('mode') or data.get('testMode', 'tutor')
     total_questions = data.get('totalQuestions') or data.get('questionCount', 40)
@@ -246,10 +265,9 @@ def qbank_generate_test():
 
 # NBME 120 endpoint
 @app.route('/api/qbank/generate-nbme120', methods=['POST'])
+@login_required
 def qbank_generate_nbme120():
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
+    user = g.current_user
     result = generate_nbme120()
     all_ids = result['questionIds']
     
@@ -265,10 +283,9 @@ def qbank_generate_nbme120():
     return jsonify(result)
 
 @app.route('/api/qbank/generate-test1', methods=['POST'])
+@login_required
 def qbank_generate_test1():
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
+    user = g.current_user
     result = generate_test1()
     all_ids = result['questionIds']
 
@@ -284,10 +301,9 @@ def qbank_generate_test1():
     return jsonify(result)
 
 @app.route('/api/qbank/generate-free120', methods=['POST'])
+@login_required
 def qbank_generate_free120():
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
+    user = g.current_user
     question_ids = [question['id'] for question in FREE120_QUESTIONS]
     test_session_id = create_test_session(
         user_id=user['id'],
@@ -305,14 +321,10 @@ def qbank_generate_free120():
     })
 
 @app.route('/api/qbank/test/<int:test_id>/question/<int:question_idx>', methods=['GET'])
+@login_required
 def qbank_get_question(test_id, question_idx):
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
-    
-    # Verify test belongs to user
-    test_session = get_test_session(test_id)
-    if not test_session or test_session['user_id'] != user['id']:
+    test_session = load_owned_test_session(test_id)
+    if not test_session:
         return jsonify({'error': 'Test not found'}), 404
     
     question_ids = json.loads(test_session['question_ids'])
@@ -350,11 +362,9 @@ def qbank_get_question(test_id, question_idx):
     })
 
 @app.route('/api/qbank/test/<int:test_id>/submit', methods=['POST'])
+@login_required
 def qbank_submit_answer(test_id):
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
-    
+    user = g.current_user
     data = request.get_json(silent=True) or {}
     question_id = data.get('questionId')
     selected_option = data.get('selectedOption')
@@ -363,8 +373,8 @@ def qbank_submit_answer(test_id):
     if not question_id or selected_option is None:
         return jsonify({'error': 'Missing questionId or selectedOption'}), 400
 
-    test_session = get_test_session(test_id)
-    if not test_session or test_session['user_id'] != user['id']:
+    test_session = load_owned_test_session(test_id)
+    if not test_session:
         return jsonify({'error': 'Test not found'}), 404
 
     session_question_ids = json.loads(test_session['question_ids'])
@@ -409,12 +419,10 @@ def qbank_submit_answer(test_id):
     })
 
 @app.route('/api/qbank/test/<int:test_id>/state', methods=['GET'])
+@login_required
 def qbank_test_state(test_id):
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
-    test_session = get_test_session(test_id)
-    if not test_session or test_session['user_id'] != user['id']:
+    test_session = load_owned_test_session(test_id)
+    if not test_session:
         return jsonify({'error': 'Test not found'}), 404
     question_ids = json.loads(test_session['question_ids'])
     answers = get_test_answers(test_id)
@@ -430,12 +438,10 @@ def qbank_test_state(test_id):
     })
 
 @app.route('/api/qbank/test/<int:test_id>/review', methods=['GET'])
+@login_required
 def qbank_test_review(test_id):
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
-    test_session = get_test_session(test_id)
-    if not test_session or test_session['user_id'] != user['id']:
+    test_session = load_owned_test_session(test_id)
+    if not test_session:
         return jsonify({'error': 'Test not found'}), 404
     question_ids = json.loads(test_session['question_ids'])
     answers_by_question = {answer['question_id']: answer for answer in get_test_answers(test_id)}
@@ -448,8 +454,8 @@ def qbank_test_review(test_id):
         selected = answer.get('selected_option')
         rows.append({
             'index': idx,
-            'block': idx // 20 + 1 if test_session['mode'] in ('nbme120', 'free120') else None,
-            'blockQuestion': idx % 20 + 1 if test_session['mode'] in ('nbme120', 'free120') else None,
+            'block': idx // BLOCK_SIZE + 1 if test_session['mode'] in ('nbme120', 'free120') else None,
+            'blockQuestion': idx % BLOCK_SIZE + 1 if test_session['mode'] in ('nbme120', 'free120') else None,
             'questionId': question_id,
             'subject': question.get('subject', ''),
             'system': question.get('system', ''),
@@ -471,10 +477,9 @@ def qbank_test_review(test_id):
     })
 
 @app.route('/api/qbank/history', methods=['GET'])
+@login_required
 def qbank_history():
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
+    user = g.current_user
     labels = {
         'free120': 'Step 1 Sample Exam',
         'nbme120': 'NBME 120 Simulation',
@@ -496,7 +501,7 @@ def qbank_history():
         next_index = next((idx for idx, qid in enumerate(question_ids) if str(qid) not in answered_ids), len(question_ids) - 1)
         completed = bool(session.get('completed')) or answered >= total
         block_mode = session['mode'] in ('free120', 'nbme120', 'test1')
-        resume_block = (next_index // 20) + 1 if block_mode else None
+        resume_block = (next_index // BLOCK_SIZE) + 1 if block_mode else None
         if block_mode:
             exam_param = '&exam=free120' if session['mode'] == 'free120' else ('&exam=test1' if session['mode'] == 'test1' else '')
             resume_url = f"qbank.html?session={session['id']}&block={resume_block}&mode=timed&time=30&question={next_index}{exam_param}"
@@ -525,11 +530,9 @@ def qbank_history():
 
 # Stats endpoints
 @app.route('/api/stats/overview', methods=['GET'])
+@login_required
 def stats_overview():
-    user = get_current_user()
-    if not user:
-        return jsonify({'error': 'Unauthorized'}), 401
-    
+    user = g.current_user
     progress = get_user_progress(user['id'])
     
     # Calculate stats
